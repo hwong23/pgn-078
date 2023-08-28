@@ -1,4 +1,4 @@
-name: Manubot
+name: pry2-e4
 on:
   push:
     branches:
@@ -29,22 +29,20 @@ on:
       SPELLCHECK:
         type: boolean
         description: Check spelling
-        default: true
+        default: false
       MANUBOT_USE_DOCKER:
         type: boolean
         description: Use Docker to generate PDF
         default: true
 jobs:
-  manubot:
-    name: Manubot
+  devdocs:
+    name: pry2-e4
     runs-on: ubuntu-latest
-    permissions:
-      contents: write
     env:
       GITHUB_PULL_REQUEST_SHA: ${{ github.event.pull_request.head.sha }}
       # Set SPELLCHECK to true/false for whether to check spelling in this action.
       # For workflow dispatch jobs, this SPELLCHECK setting will be overridden by the user input.
-      SPELLCHECK: true
+      SPELLCHECK: false
     defaults:
       run:
         shell: bash --login {0}
@@ -71,6 +69,18 @@ jobs:
           echo "DEFAULT_BRANCH=${DEFAULT_BRANCH}" >> $GITHUB_ENV
           echo "DEFAULT_BRANCH_REF=refs/heads/$DEFAULT_BRANCH" >> $GITHUB_ENV
           echo "DEFAULT_BRANCH=$DEFAULT_BRANCH"
+          echo "COMPILATION_DATE=$(date +'%d %b %Y')" >> $GITHUB_ENV
+          echo "PROYECTO=PRY02" >> $GITHUB_ENV
+          echo "PROY_DESCR=Arquitectura de Referencia SOA 2.0 del FNA" >> $GITHUB_ENV
+          echo "PR06_NOMBRE=Modelos actualizados de los ítems de arquitectura impactados por el proyecto" >> $GITHUB_ENV
+          echo "PR10_NOMBRE=Detalle de los ítems de la empresa FNA impactados por el proyecto" >> $GITHUB_ENV
+          echo "PR11_NOMBRE=Detalle de los recursos, herramientas, roles, responsabilidades y participantes" >> $GITHUB_ENV
+          echo "PR12_NOMBRE=Diseño detallado y vistas funcional, despliegue, información, integración y tecnología​" >> $GITHUB_ENV
+          echo "PR13_NOMBRE=Modelado en lenguaje y herramienta de diseño del FNA​" >> $GITHUB_ENV
+          echo "PR14_NOMBRE=Administración de las transiciones hacia la arquitectura versión 2.0" >> $GITHUB_ENV
+          echo "PR15_NOMBRE=Inventario de artefactos genéricos y concretos de aceleración de implementación" >> $GITHUB_ENV
+          echo "PR16_NOMBRE=Análisis de impacto y modelos actualizados de los ítems de arquitectura" >> $GITHUB_ENV
+          echo "PR17_NOMBRE=Ítems de arquitectura incrementados en ejecución" >> $GITHUB_ENV
       - name: Cache
         uses: actions/cache@v3
         with:
@@ -84,9 +94,7 @@ jobs:
           activate-environment: manubot
           environment-file: build/environment.yml
           auto-activate-base: false
-          miniforge-variant: Mambaforge
           miniforge-version: 'latest'
-          use-mamba: true
       - name: Install Spellcheck
         if: env.SPELLCHECK == 'true'
         run: bash ci/install-spellcheck.sh
@@ -105,3 +113,15 @@ jobs:
           CI_BUILD_WEB_URL: https://github.com/${{ github.repository }}/commit/${{ github.sha }}/checks
           CI_JOB_WEB_URL: https://github.com/${{ github.repository }}/actions/runs/${{ github.run_id }}
         run: bash ci/deploy.sh
+      - name: Slack Notification
+        uses: rtCamp/action-slack-notify@v2
+        env:
+          SLACK_WEBHOOK: ${{ secrets.SLACK_WEBHOOK }}
+          # SLACK_CHANNEL: general
+          SLACK_COLOR: ${{ job.status }} # or a specific color like 'good' or '#ff00ff'
+          SLACK_ICON: https://github.com/rtCamp.png?size=48
+          SLACK_MESSAGE: ':rocket: ${{ github.event.head_commit.message }}'
+          SLACK_TITLE: fna-dd-f2-e1
+          SLACK_USERNAME: rtCamp
+
+    
