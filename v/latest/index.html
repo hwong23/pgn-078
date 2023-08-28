@@ -4,11 +4,13 @@
   <meta charset="utf-8" />
   <meta name="generator" content="pandoc" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes" />
-  <meta name="author" content="John Doe" />
-  <meta name="author" content="Jane Roe" />
+  <meta name="author" content="Harry Wong, ing." />
+  <meta name="author" content="Wilson Morales, ing." />
+  <meta name="author" content="Sergio Andrés Castro Hernandez, ing." />
+  <meta name="author" content="Viviana M. Martinez, ing." />
   <meta name="dcterms.date" content="2023-08-28" />
-  <meta name="keywords" content="markdown, publishing, manubot" />
-  <title>Manuscript Title</title>
+  <meta name="keywords" content="SOA, madurez, gobierno, FNA" />
+  <title>E-Service Etapa 2. Arquitectura de Referencia SOA 2.0 del FNA</title>
   <style>
     code{white-space: pre-wrap;}
     span.smallcaps{font-variant: small-caps;}
@@ -21,69 +23,6 @@
       margin: 0 0.8em 0.2em -1.6em;
       vertical-align: middle;
     }
-    pre > code.sourceCode { white-space: pre; position: relative; }
-    pre > code.sourceCode > span { display: inline-block; line-height: 1.25; }
-    pre > code.sourceCode > span:empty { height: 1.2em; }
-    .sourceCode { overflow: visible; }
-    code.sourceCode > span { color: inherit; text-decoration: inherit; }
-    div.sourceCode { margin: 1em 0; }
-    pre.sourceCode { margin: 0; }
-    @media screen {
-    div.sourceCode { overflow: auto; }
-    }
-    @media print {
-    pre > code.sourceCode { white-space: pre-wrap; }
-    pre > code.sourceCode > span { text-indent: -5em; padding-left: 5em; }
-    }
-    pre.numberSource code
-      { counter-reset: source-line 0; }
-    pre.numberSource code > span
-      { position: relative; left: -4em; counter-increment: source-line; }
-    pre.numberSource code > span > a:first-child::before
-      { content: counter(source-line);
-        position: relative; left: -1em; text-align: right; vertical-align: baseline;
-        border: none; display: inline-block;
-        -webkit-touch-callout: none; -webkit-user-select: none;
-        -khtml-user-select: none; -moz-user-select: none;
-        -ms-user-select: none; user-select: none;
-        padding: 0 4px; width: 4em;
-        color: #aaaaaa;
-      }
-    pre.numberSource { margin-left: 3em; border-left: 1px solid #aaaaaa;  padding-left: 4px; }
-    div.sourceCode
-      {   }
-    @media screen {
-    pre > code.sourceCode > span > a:first-child::before { text-decoration: underline; }
-    }
-    code span.al { color: #ff0000; font-weight: bold; } /* Alert */
-    code span.an { color: #60a0b0; font-weight: bold; font-style: italic; } /* Annotation */
-    code span.at { color: #7d9029; } /* Attribute */
-    code span.bn { color: #40a070; } /* BaseN */
-    code span.bu { color: #008000; } /* BuiltIn */
-    code span.cf { color: #007020; font-weight: bold; } /* ControlFlow */
-    code span.ch { color: #4070a0; } /* Char */
-    code span.cn { color: #880000; } /* Constant */
-    code span.co { color: #60a0b0; font-style: italic; } /* Comment */
-    code span.cv { color: #60a0b0; font-weight: bold; font-style: italic; } /* CommentVar */
-    code span.do { color: #ba2121; font-style: italic; } /* Documentation */
-    code span.dt { color: #902000; } /* DataType */
-    code span.dv { color: #40a070; } /* DecVal */
-    code span.er { color: #ff0000; font-weight: bold; } /* Error */
-    code span.ex { } /* Extension */
-    code span.fl { color: #40a070; } /* Float */
-    code span.fu { color: #06287e; } /* Function */
-    code span.im { color: #008000; font-weight: bold; } /* Import */
-    code span.in { color: #60a0b0; font-weight: bold; font-style: italic; } /* Information */
-    code span.kw { color: #007020; font-weight: bold; } /* Keyword */
-    code span.op { color: #666666; } /* Operator */
-    code span.ot { color: #007020; } /* Other */
-    code span.pp { color: #bc7a00; } /* Preprocessor */
-    code span.sc { color: #4070a0; } /* SpecialChar */
-    code span.ss { color: #bb6688; } /* SpecialString */
-    code span.st { color: #4070a0; } /* String */
-    code span.va { color: #19177c; } /* Variable */
-    code span.vs { color: #4070a0; } /* VerbatimString */
-    code span.wa { color: #60a0b0; font-weight: bold; font-style: italic; } /* Warning */
     div.csl-bib-body { }
     div.csl-entry {
       clear: both;
@@ -110,425 +49,828 @@
   -->
   <meta name="dc.format" content="text/html" />
   <meta property="og:type" content="article" />
-  <meta name="dc.title" content="Manuscript Title" />
-  <meta name="citation_title" content="Manuscript Title" />
-  <meta property="og:title" content="Manuscript Title" />
-  <meta property="twitter:title" content="Manuscript Title" />
+  <meta name="dc.title" content="Etapa 2. Ejecución Gobierno SOA del FNA. Incremento 1" />
+  <meta name="citation_title" content="Etapa 2. Ejecución Gobierno SOA del FNA. Incremento 1" />
+  <meta property="og:title" content="Etapa 2. Ejecución Gobierno SOA del FNA. Incremento 1" />
+  <meta property="twitter:title" content="Etapa 2. Ejecución Gobierno SOA del FNA. Incremento 1" />
   <meta name="dc.date" content="2023-08-28" />
   <meta name="citation_publication_date" content="2023-08-28" />
   <meta property="article:published_time" content="2023-08-28" />
-  <meta name="dc.modified" content="2023-08-28T21:02:09+00:00" />
-  <meta property="article:modified_time" content="2023-08-28T21:02:09+00:00" />
+  <meta name="dc.modified" content="2023-08-28T21:08:37+00:00" />
+  <meta property="article:modified_time" content="2023-08-28T21:08:37+00:00" />
   <meta name="dc.language" content="en-US" />
   <meta name="citation_language" content="en-US" />
   <meta name="dc.relation.ispartof" content="Manubot" />
   <meta name="dc.publisher" content="Manubot" />
   <meta name="citation_journal_title" content="Manubot" />
   <meta name="citation_technical_report_institution" content="Manubot" />
-  <meta name="citation_author" content="John Doe" />
-  <meta name="citation_author_institution" content="Department of Something, University of Whatever" />
-  <meta name="citation_author_orcid" content="XXXX-XXXX-XXXX-XXXX" />
-  <meta name="twitter:creator" content="@johndoe" />
-  <meta name="citation_author" content="Jane Roe" />
-  <meta name="citation_author_institution" content="Department of Something, University of Whatever" />
-  <meta name="citation_author_institution" content="Department of Whatever, University of Something" />
-  <meta name="citation_author_orcid" content="XXXX-XXXX-XXXX-XXXX" />
+  <meta name="citation_author" content="Harry Wong, ing." />
+  <meta name="citation_author_institution" content="Arquitecto SOA, Stefanini" />
+  <meta name="citation_author" content="Wilson Morales, ing." />
+  <meta name="citation_author_institution" content="Software, Aplicaciones" />
+  <meta name="citation_author" content="Sergio Andrés Castro Hernandez, ing." />
+  <meta name="citation_author_institution" content="SOA, Arquitectura" />
+  <meta name="citation_author" content="Viviana M. Martinez, ing." />
+  <meta name="citation_author_institution" content="Analista, Proyectos" />
   <link rel="canonical" href="https://hwong23.github.io/pgn-078/" />
   <meta property="og:url" content="https://hwong23.github.io/pgn-078/" />
   <meta property="twitter:url" content="https://hwong23.github.io/pgn-078/" />
   <meta name="citation_fulltext_html_url" content="https://hwong23.github.io/pgn-078/" />
   <meta name="citation_pdf_url" content="https://hwong23.github.io/pgn-078/manuscript.pdf" />
   <link rel="alternate" type="application/pdf" href="https://hwong23.github.io/pgn-078/manuscript.pdf" />
-  <link rel="alternate" type="text/html" href="https://hwong23.github.io/pgn-078/v/8c1a803748961dcf6b7e8ed4d5ec8f8ce6d5a2a9/" />
-  <meta name="manubot_html_url_versioned" content="https://hwong23.github.io/pgn-078/v/8c1a803748961dcf6b7e8ed4d5ec8f8ce6d5a2a9/" />
-  <meta name="manubot_pdf_url_versioned" content="https://hwong23.github.io/pgn-078/v/8c1a803748961dcf6b7e8ed4d5ec8f8ce6d5a2a9/manuscript.pdf" />
+  <link rel="alternate" type="text/html" href="https://hwong23.github.io/pgn-078/v/79a07f05ed8d1d2bf4cbb85b646502cd8ff824b6/" />
+  <meta name="manubot_html_url_versioned" content="https://hwong23.github.io/pgn-078/v/79a07f05ed8d1d2bf4cbb85b646502cd8ff824b6/" />
+  <meta name="manubot_pdf_url_versioned" content="https://hwong23.github.io/pgn-078/v/79a07f05ed8d1d2bf4cbb85b646502cd8ff824b6/manuscript.pdf" />
   <meta property="og:type" content="article" />
   <meta property="twitter:card" content="summary_large_image" />
   <link rel="icon" type="image/png" sizes="192x192" href="https://manubot.org/favicon-192x192.png" />
   <link rel="mask-icon" href="https://manubot.org/safari-pinned-tab.svg" color="#ad1457" />
   <meta name="theme-color" content="#ad1457" />
   <!-- end Manubot generated metadata -->
-  
-  <!-- pandoc-eqnos: equation style -->
-  <style>
-    .eqnos { display: inline-block; position: relative; width: 100%; }
-    .eqnos br { display: none; }
-    .eqnos-number { position: absolute; right: 0em; top: 50%; line-height: 0; }
-  </style>
   <!--[if lt IE 9]>
     <script src="//cdnjs.cloudflare.com/ajax/libs/html5shiv/3.7.3/html5shiv-printshiv.min.js"></script>
   <![endif]-->
 </head>
 <body>
 <header id="title-block-header">
-<h1 class="title">Manuscript Title</h1>
+<h1 class="title">E-Service Etapa 2. Arquitectura de Referencia SOA 2.0 del FNA</h1>
 </header>
-<p><small><em>
-This manuscript
-(<a href="https://hwong23.github.io/pgn-078/v/8c1a803748961dcf6b7e8ed4d5ec8f8ce6d5a2a9/">permalink</a>)
-was automatically generated
-from <a href="https://github.com/hwong23/pgn-078/tree/8c1a803748961dcf6b7e8ed4d5ec8f8ce6d5a2a9">hwong23/pgn-078@8c1a803</a>
-on August 28, 2023.
+<p><small><em>Los productos de esta etapa (<a href="https://hwong23.github.io/pgn-078/v/79a07f05ed8d1d2bf4cbb85b646502cd8ff824b6/">Web</a>)
+están basados en el resultado de la consultoría “Arquitectura E-Service”,
+<a href="https://stefaninilatam.sharepoint.com/:f:/r/sites/PROYECTOARQUITECTURAE-SERVICEFNA/Documentos%20compartidos/General/Repositorio%20SOA/Procesos%20Fase%20II/181-2020.%20E-SERV.%20Fase%202-ETAPA%200.%20docx?csf=1&amp;web=1&amp;e=BiNcBP">Sharepoint STEF@79a07f0</a>
+del August 28, 2023.
 </em></small></p>
-<h2 id="authors">Authors</h2>
+<div class="line-block">   <strong>Versión</strong> del producto 1.79a07f0 de 28 Aug 2023</div>
+<p><br></p>
+<h2 id="autores">Autores</h2>
 <ul>
-<li><p><strong>John Doe</strong>
+<li><p><strong>Harry Wong, ing.</strong>
 <br>
-<img src="images/orcid.svg" class="inline_icon" width="16" height="16" alt="ORCID icon" />
-<a href="https://orcid.org/XXXX-XXXX-XXXX-XXXX">XXXX-XXXX-XXXX-XXXX</a>
-· <img src="images/github.svg" class="inline_icon" width="16" height="16" alt="GitHub icon" />
-<a href="https://github.com/johndoe">johndoe</a>
-· <img src="images/twitter.svg" class="inline_icon" width="16" height="16" alt="Twitter icon" />
-<a href="https://twitter.com/johndoe">johndoe</a>
-· <img src="images/mastodon.svg" class="inline_icon" width="16" height="16" alt="Mastodon icon" />
-<a href="https://mastodon.social/@johndoe">@johndoe@mastodon.social</a>
+· <img src="images/github.svg" class="inline_icon" width="16" height="16" alt="Usuario" />
+<a href="https://github.com/e_hwong">e_hwong</a>
 <br>
 <small>
-Department of Something, University of Whatever
-· Funded by Grant XXXXXXXX
+Arquitecto SOA, Stefanini
 </small></p></li>
-<li><p><strong>Jane Roe</strong>
-<sup><a href="#correspondence">✉</a></sup><br>
-<img src="images/orcid.svg" class="inline_icon" width="16" height="16" alt="ORCID icon" />
-<a href="https://orcid.org/XXXX-XXXX-XXXX-XXXX">XXXX-XXXX-XXXX-XXXX</a>
-· <img src="images/github.svg" class="inline_icon" width="16" height="16" alt="GitHub icon" />
-<a href="https://github.com/janeroe">janeroe</a>
+<li><p><strong>Wilson Morales, ing.</strong>
+<br>
+· <img src="images/github.svg" class="inline_icon" width="16" height="16" alt="Usuario" />
+<a href="https://github.com/wmorales">wmorales</a>
 <br>
 <small>
-Department of Something, University of Whatever; Department of Whatever, University of Something
+Software, Aplicaciones
+</small></p></li>
+<li><p><strong>Sergio Andrés Castro Hernandez, ing.</strong>
+<br>
+· <img src="images/github.svg" class="inline_icon" width="16" height="16" alt="Usuario" />
+<a href="https://github.com/fhernandez">fhernandez</a>
+<br>
+<small>
+SOA, Arquitectura
+</small></p></li>
+<li><p><strong>Viviana M. Martinez, ing.</strong>
+<br>
+· <img src="images/github.svg" class="inline_icon" width="16" height="16" alt="Usuario" />
+<a href="https://github.com/vmmartinez">vmmartinez</a>
+<br>
+<small>
+Analista, Proyectos
 </small></p></li>
 </ul>
 <div id="correspondence">
-<p>✉ — Correspondence possible via <a href="https://github.com/hwong23/pgn-078/issues">GitHub Issues</a>
-or email to
-Jane Roe &lt;jane.roe@whatever.edu&gt;.</p>
+<p>✉ — Enviar mensajes a Harry Wong, ing. &lt;e_hwong@stefanini.com&gt;.</p>
 </div>
-<h2 class="page_break_before" id="abstract">Abstract</h2>
-<p>This manuscript is a template (aka “rootstock”) for <a href="https://manubot.org/" title="Manubot">Manubot</a>, a tool for writing scholarly manuscripts.
-Use this template as a starting point for your manuscript.</p>
-<p>The rest of this document is a full list of formatting elements/features supported by Manubot.
-Compare the input (<code>.md</code> files in the <code>/content</code> directory) to the output you see below.</p>
-<h2 id="basic-formatting">Basic formatting</h2>
-<p><strong>Bold</strong> <strong>text</strong></p>
-<p><span class="semibold">Semi-bold text</span></p>
-<p><span class="center">Centered text</span></p>
-<p><span class="right">Right-aligned text</span></p>
-<p><em>Italic</em> <em>text</em></p>
-<p>Combined <em>italics and <strong>bold</strong></em></p>
-<p><del>Strikethrough</del></p>
+<p><br></p>
+<h2 id="objetivo-del-documento">Objetivo del Documento</h2>
+<p>Entrega de los productos de la Etapa 2, PR11 y PR12, del proyecto PR02, Arquitectura de Referencia SOA 2.0 del FNA, flujos de trabajo y personas que ejercitan y conforman (cumplen) con el gobierno SOA del FNA a desplegar a cargo de la oficina de arquitectura.</p>
+<h2 class="page_break_before" id="control-de-cambios">Control de Cambios</h2>
+<table>
+<colgroup>
+<col style="width: 36%" />
+<col style="width: 63%" />
+</colgroup>
+<thead>
+<tr class="header">
+<th>Tema</th>
+<th>PRY02 Arquitectura de Referencia SOA 2.0 del FNA</th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td>Palabras clave</td>
+<td>SOA, E-Service, FNA, Análisis de brecha, GAP, Comparativa</td>
+</tr>
+<tr class="even">
+<td>Autor</td>
+<td></td>
+</tr>
+<tr class="odd">
+<td>Fuente</td>
+<td></td>
+</tr>
+<tr class="even">
+<td>Versión</td>
+<td>1.79a07f0 del 28 Aug 2023</td>
+</tr>
+<tr class="odd">
+<td>Vínculos</td>
+<td><a href="N03a%a20Vsta%20aSegenta%20SOA%20FNA.md">N003a Vista Segmento SOA FNA</a></td>
+</tr>
+</tbody>
+</table>
+<p><br></p>
+<p><br></p>
+<div style="page-break-before: always;">
+
+</div>
+<h2 id="contenidos">Contenidos</h2>
+<div style="page-break-before: always;">
+
+</div>
+<blockquote>
+<p>E-Service. Fase II</p>
+<p>PRY02. Arquitectura de Referencia SOA 2.0 del FNA. Contenido de los Productos Contractuales</p>
+<p>Contrato 1812020</p>
+<p>FNA, Stefanini</p>
+<p>28 Aug 2023</p>
+<p><strong>Versión</strong> 1.79a07f0</p>
+</blockquote>
+<p><br></p>
+<h1 id="producto-16-pr16.-análisis-de-impacto-y-modelos-actualizados-de-los-ítems-de-arquitectura">Producto 16: PR16. Análisis de impacto y modelos actualizados de los ítems de arquitectura</h1>
+<p>Similar al ejercicio del producto 6, Modelos actualizados de los ítems de arquitectura impactados (PR06), del proyecto PRY01 de esta misma consultoría, en este producto hacemos lo propio respecto de los modelos de la arquitectura de referencia 2.0 del FNA. Por tanto, en este producto organizamos y consolidamos en el depósito de arquitectura del FNA (propuesto por esta misma consultoría) la información de los modelos de la arquitectura de referencia SOA 2.0 del FNA. A este lo complementa el análisis de impacto inicial que trate sobre las implicaciones de la adopción de los cambios funcionales y tecnológicos enunciados por esta arquitectura camino a ser el mapa de viaje de la transformación de las capacidades de negocio y de arquitectura del FNA (ver <a href="../../fna-dd-f2-pry2-e1/content/11.detalle%20roles%20recursos.md">Producto 11</a> de este proyecto).</p>
+<p>Al repositorio línea base entregado por el proyecto 1 (anterior a este) agregamos nuevos modelos a razón de la arquitectura de referencia y del ejercicio de este producto.</p>
+<table>
+<thead>
+<tr class="header">
+<th>Tipo de Entrada</th>
+<th style="text-align: right;"></th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td>Arquitectura</td>
+<td style="text-align: right;">12</td>
+</tr>
+<tr class="even">
+<td>Funcional</td>
+<td style="text-align: right;">4</td>
+</tr>
+<tr class="odd">
+<td><strong>Total Contenidos</strong></td>
+<td style="text-align: right;"><strong>1311</strong></td>
+</tr>
+</tbody>
+</table>
+<p><strong>Nota</strong>: los análisis de este producto están dirigidos a cumplir los objetivos del proyecto PRY01, Gobierno SOA: desarrollo, gestión, gobierno de arquitectura y adopción.</p>
+<p><br></p>
+<h2 id="justificación">Justificación</h2>
+<p>Uno de los objetivos nominales, y objeto del proyecto actual, es la creación de la primera versión de la arquitectura de referencia SOA del FNA proyecto. Objetivo que se pliega al de <em>aumentar la relevancia de los modelos de arquitectura del Fondo Nacional</em>. En este proyecto 2 de Fase, II E-Service, los modelos son instrumentos de encuentro para el entendimiento, análisis, y comunicación entre actores, como ingenieros, arquitectos, proveedores, líderes de grupo. Se cumple también la máxima de proyectos anteriores de esta misma consultoría: los modelos, en este caso de la arquitectura de referencia, son el sujeto principal, y la evidencia, de la existencia del gobierno. Por estas razones es que los modelos de referencia SOA 2.0 creados aquí tienen la importancia tal para ser entregados en contribución al repositorio de arquitectura de la empresa.</p>
+<h2 id="contenidos-1">Contenidos</h2>
 <ol type="1">
-<li>Ordered list item</li>
-<li>Ordered list item
-<ol type="a">
-<li>Sub-item</li>
-<li>Sub-item
-<ol type="i">
-<li>Sub-sub-item</li>
-</ol></li>
-</ol></li>
-<li>Ordered list item
-<ol type="a">
-<li>Sub-item</li>
-</ol></li>
+<li>Detalle de ítems de la línea base de arquitectura de referencia 2.0 del FNA</li>
+<li>Repositorio de arquitectura del FNA, versión 0.5, actualizado con arquitectura de referencia</li>
+<li>Consideraciones para la adopción y puesta en marcha de los cambios en las arquitecturas del FNA</li>
+<li>Anexo. Herramienta de navegación del repositorio de arquitectura del FNA versión 0.3</li>
 </ol>
+<p><br></p>
+<h2 id="criterios-de-aceptación">Criterios de Aceptación</h2>
 <ul>
-<li>List item</li>
-<li>List item</li>
-<li>List item</li>
+<li>Repositorio de arquitectura del FNA, actualizado, versión 0.3</li>
+<li>Herramienta de navegación del repositorio de arquitectura del FNA versión 0.3</li>
 </ul>
-<p>subscript: H<sub>2</sub>O is a liquid</p>
-<p>superscript: 2<sup>10</sup> is 1024.</p>
-<p><a href="https://www.google.com/search?q=superscript+generator">unicode superscripts</a>⁰¹²³⁴⁵⁶⁷⁸⁹</p>
-<p><a href="https://www.google.com/search?q=superscript+generator">unicode subscripts</a>₀₁₂₃₄₅₆₇₈₉</p>
-<p>A long paragraph of text.
-Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.
-Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.
-Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur.
-Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
-<p>Putting each sentence on its own line has numerous benefits with regard to <a href="https://asciidoctor.org/docs/asciidoc-recommended-practices/#one-sentence-per-line">editing</a> and <a href="https://rhodesmill.org/brandon/2012/one-sentence-per-line/">version control</a>.</p>
-<p>Line break without starting a new paragraph by putting<br />
-two spaces at end of line.</p>
-<h2 id="document-organization">Document organization</h2>
-<p>Document section headings:</p>
-<h1 id="heading-1">Heading 1</h1>
-<h2 id="heading-2">Heading 2</h2>
-<h3 id="heading-3">Heading 3</h3>
-<h4 id="heading-4">Heading 4</h4>
-<h5 id="heading-5">Heading 5</h5>
-<h6 id="heading-6">Heading 6</h6>
-<h3 class="center page_center" id="a-heading-centered-on-its-own-printed-page">A heading centered on its own printed page</h3>
-<!-- an arbitrary comment. visible in input, but not visible in output. -->
-<p>Horizontal rule:</p>
-<hr />
-<p><code>Heading 1</code>’s are recommended to be reserved for the title of the manuscript.</p>
-<p><code>Heading 2</code>’s are recommended for broad sections such as <em>Abstract</em>, <em>Methods</em>, <em>Conclusion</em>, etc.</p>
-<p><code>Heading 3</code>’s and <code>Heading 4</code>’s are recommended for sub-sections.</p>
-<h2 id="links">Links</h2>
-<p>Bare URL link: <a href="https://manubot.org" class="uri">https://manubot.org</a></p>
-<p><a href="https://manubot.org">Long link with lots of words and stuff and junk and bleep and blah and stuff and other stuff and more stuff yeah</a></p>
-<p><a href="https://manubot.org">Link with text</a></p>
-<p><a href="https://manubot.org" title="Manubot Homepage">Link with hover text</a></p>
-<p><a href="https://manubot.org">Link by reference</a></p>
-<h2 id="citations">Citations</h2>
-<p>Citation by DOI <span class="citation" data-cites="IhliSZDo">[<a href="#ref-IhliSZDo" role="doc-biblioref">1</a>]</span>.</p>
-<p>Citation by PubMed Central ID <span class="citation" data-cites="mSMVRkoc">[<a href="#ref-mSMVRkoc" role="doc-biblioref">2</a>]</span>.</p>
-<p>Citation by PubMed ID <span class="citation" data-cites="pubmed:30718888">[<a href="#ref-pubmed:30718888" role="doc-biblioref"><strong>pubmed:30718888?</strong></a>]</span>.</p>
-<p>Citation by Wikidata ID <span class="citation" data-cites="QhC8yJ7V">[<a href="#ref-QhC8yJ7V" role="doc-biblioref">3</a>]</span>.</p>
-<p>Citation by ISBN <span class="citation" data-cites="zBPP9YKu">[<a href="#ref-zBPP9YKu" role="doc-biblioref">4</a>]</span>.</p>
-<p>Citation by URL <span class="citation" data-cites="1GGGHdsew">[<a href="#ref-1GGGHdsew" role="doc-biblioref">5</a>]</span>.</p>
-<p>Citation by alias <span class="citation" data-cites="PZMP42Ak">[<a href="#ref-PZMP42Ak" role="doc-biblioref">6</a>]</span>.</p>
-<p>Multiple citations can be put inside the same set of brackets <span class="citation" data-cites="IhliSZDo PZMP42Ak zBPP9YKu">[<a href="#ref-IhliSZDo" role="doc-biblioref">1</a>,<a href="#ref-zBPP9YKu" role="doc-biblioref">4</a>,<a href="#ref-PZMP42Ak" role="doc-biblioref">6</a>]</span>.
-Manubot plugins provide easier, more convenient visualization of and navigation between citations <span class="citation" data-cites="YuJbg3zO pubmed:30718888 mSMVRkoc PZMP42Ak">[<a href="#ref-mSMVRkoc" role="doc-biblioref">2</a>,<a href="#ref-PZMP42Ak" role="doc-biblioref">6</a>,<a href="#ref-YuJbg3zO" role="doc-biblioref">7</a>,<a href="#ref-pubmed:30718888" role="doc-biblioref"><strong>pubmed:30718888?</strong></a>]</span>.</p>
-<p>Citation tags (i.e. aliases) can be defined in their own paragraphs using Markdown’s reference link syntax:</p>
-<h2 id="referencing-figures-tables-equations">Referencing figures, tables, equations</h2>
-<p>Figure <a href="#fig:square-image">1</a></p>
-<p>Figure <a href="#fig:wide-image">2</a></p>
-<p>Figure <a href="#fig:tall-image">3</a></p>
-<p>Figure <a href="#fig:vector-image">4</a></p>
-<p>Table <a href="#tbl:bowling-scores">1</a></p>
-<p>Equation <a href="#eq:regular-equation">1</a></p>
-<p>Equation <a href="#eq:long-equation">2</a></p>
-<h2 id="quotes-and-code">Quotes and code</h2>
-<blockquote>
-<p>Quoted text</p>
-</blockquote>
-<blockquote>
-<p>Quoted block of text</p>
-<p>Two roads diverged in a wood, and I—<br />
-I took the one less traveled by,<br />
-And that has made all the difference.</p>
-</blockquote>
-<p>Code <code>in the middle</code> of normal text, aka <code>inline code</code>.</p>
-<p>Code block with Python syntax highlighting:</p>
-<div class="sourceCode" id="cb1"><pre class="sourceCode python"><code class="sourceCode python"><span id="cb1-1"><a href="#cb1-1" aria-hidden="true" tabindex="-1"></a><span class="im">from</span> manubot.cite.doi <span class="im">import</span> expand_short_doi</span>
-<span id="cb1-2"><a href="#cb1-2" aria-hidden="true" tabindex="-1"></a></span>
-<span id="cb1-3"><a href="#cb1-3" aria-hidden="true" tabindex="-1"></a><span class="kw">def</span> test_expand_short_doi():</span>
-<span id="cb1-4"><a href="#cb1-4" aria-hidden="true" tabindex="-1"></a>    doi <span class="op">=</span> expand_short_doi(<span class="st">&quot;10/c3bp&quot;</span>)</span>
-<span id="cb1-5"><a href="#cb1-5" aria-hidden="true" tabindex="-1"></a>    <span class="co"># a string too long to fit within page:</span></span>
-<span id="cb1-6"><a href="#cb1-6" aria-hidden="true" tabindex="-1"></a>    <span class="cf">assert</span> doi <span class="op">==</span> <span class="st">&quot;10.25313/2524-2695-2018-3-vliyanie-enhansera-copia-i-insulyatora-gypsy-na-sintez-ernk-modifikatsii-hromatina-i-svyazyvanie-insulyatornyh-belkov-vtransfetsirovannyh-geneticheskih-konstruktsiyah&quot;</span></span></code></pre></div>
-<p>Code block with no syntax highlighting:</p>
-<pre><code>Exporting HTML manuscript
-Exporting DOCX manuscript
-Exporting PDF manuscript</code></pre>
-<h2 id="figures">Figures</h2>
-<div id="fig:square-image" class="fignos">
+<p><br></p>
+<h2 id="repositorio-de-arquitectura-del-fna-versión-0.5">Repositorio de Arquitectura del FNA, versión 0.5</h2>
+<div id="fig:ac7b2575-439a-43f2-91a2-75b2bd74bab2" class="fignos">
 <figure>
-<img src="https://github.com/manubot/resources/raw/15493970f8882fce22bef829619d3fb37a613ba5/test/square.png" alt="Figure 1: A square image at actual size and with a bottom caption. Loaded from the latest version of image on GitHub." />
-<figcaption aria-hidden="true"><span>Figure 1:</span> <strong>A square image at actual size and with a bottom caption.</strong>
-Loaded from the latest version of image on GitHub.</figcaption>
+<img src="images/repofna.png" alt="Imagen 1: Artefactos del repositorio de arquitectura del FNA." />
+<figcaption aria-hidden="true"><span>Imagen 1:</span> Artefactos del repositorio de arquitectura del FNA.</figcaption>
 </figure>
 </div>
-<div id="fig:wide-image" class="fignos">
+<p><em>Fuente: Diagnóstico SOA. E-Service (2022).</em></p>
+<h2 id="modelo-de-implementación-del-pry02">Modelo de Implementación del PRY02</h2>
+<div id="fig:ff52a463-d82d-4918-b28b-f3b6d5aa0e26" class="fignos">
 <figure>
-<img src="https://github.com/manubot/resources/raw/15493970f8882fce22bef829619d3fb37a613ba5/test/wide.png" alt="Figure 2: An image too wide to fit within page at full size. Loaded from a specific (hashed) version of the image on GitHub." />
-<figcaption aria-hidden="true"><span>Figure 2:</span> <strong>An image too wide to fit within page at full size.</strong>
-Loaded from a specific (hashed) version of the image on GitHub.</figcaption>
+<img src="images/pry2e4.png" alt="Imagen 2: Plan de Implementación del Proyecto Arquitectura de Referencia SOA 2.0 del FNA (PRY02), 2023. Junio 2023 a julio 2023" />
+<figcaption aria-hidden="true"><span>Imagen 2:</span> Plan de Implementación del Proyecto Arquitectura de Referencia SOA 2.0 del FNA (PRY02), 2023. Junio 2023 a julio 2023</figcaption>
 </figure>
 </div>
-<div id="fig:tall-image" class="fignos">
-<figure>
-<img src="https://github.com/manubot/resources/raw/15493970f8882fce22bef829619d3fb37a613ba5/test/tall.png" style="height:3in" alt="Figure 3: A tall image with a specified height. Loaded from a specific (hashed) version of the image on GitHub." />
-<figcaption aria-hidden="true"><span>Figure 3:</span> <strong>A tall image with a specified height.</strong>
-Loaded from a specific (hashed) version of the image on GitHub.</figcaption>
-</figure>
+<p><em>Fuente: Elaboración propia.</em></p>
+<p><br></p>
+<div style="page-break-before: always;">
+
 </div>
-<div id="fig:vector-image" class="fignos">
-<figure>
-<img src="https://raw.githubusercontent.com/manubot/resources/main/test/vector.svg?sanitize=true" class="white" style="height:2.5in" alt="Figure 4: A vector .svg image loaded from GitHub. The parameter sanitize=true is necessary to properly load SVGs hosted via GitHub URLs. White background specified to serve as a backdrop for transparent sections of the image. Note that if you want to export to Word (.docx), you need to download the image and reference it locally (e.g. content/images/vector.svg) instead of using a URL." />
-<figcaption aria-hidden="true"><span>Figure 4:</span> <strong>A vector <code>.svg</code> image loaded from GitHub.</strong>
-The parameter <code>sanitize=true</code> is necessary to properly load SVGs hosted via GitHub URLs.
-White background specified to serve as a backdrop for transparent sections of the image.
-Note that if you want to export to Word (<code>.docx</code>), you need to download the image and reference it locally (e.g. <code>content/images/vector.svg</code>) instead of using a URL.</figcaption>
-</figure>
-</div>
-<h2 id="tables">Tables</h2>
-<div id="tbl:bowling-scores" class="tablenos">
-<table id="tbl:bowling-scores">
-<caption><span>Table 1:</span> A table with a top caption and specified relative column widths.
-</caption>
+<table>
 <colgroup>
-<col style="width: 23%" />
-<col style="width: 19%" />
-<col style="width: 19%" />
-<col style="width: 19%" />
-<col style="width: 19%" />
+<col style="width: 14%" />
+<col style="width: 85%" />
 </colgroup>
 <thead>
 <tr class="header">
-<th style="text-align: left;"><em>Bowling Scores</em></th>
-<th style="text-align: center;">Jane</th>
-<th style="text-align: center;">John</th>
-<th style="text-align: center;">Alice</th>
-<th style="text-align: center;">Bob</th>
+<th>Tema</th>
+<th>Modelos actualizados de los ítems de arquitectura impactados por el proyecto: <strong>Detalle de ítems de la arquitectura de referencia del FNA actualizados</strong></th>
 </tr>
 </thead>
 <tbody>
 <tr class="odd">
-<td style="text-align: left;">Game 1</td>
-<td style="text-align: center;">150</td>
-<td style="text-align: center;">187</td>
-<td style="text-align: center;">210</td>
-<td style="text-align: center;">105</td>
+<td>Palabras clave</td>
+<td>SOA, Arquitectura de Referencia, Diseño, Modelos, Bloques de Construcción</td>
 </tr>
 <tr class="even">
-<td style="text-align: left;">Game 2</td>
-<td style="text-align: center;">98</td>
-<td style="text-align: center;">202</td>
-<td style="text-align: center;">197</td>
-<td style="text-align: center;">102</td>
+<td>Autor</td>
+<td></td>
 </tr>
 <tr class="odd">
-<td style="text-align: left;">Game 3</td>
-<td style="text-align: center;">123</td>
-<td style="text-align: center;">180</td>
-<td style="text-align: center;">238</td>
-<td style="text-align: center;">134</td>
+<td>Fuente</td>
+<td></td>
+</tr>
+<tr class="even">
+<td>Versión</td>
+<td><strong>1.79a07f0</strong> del 28 Aug 2023</td>
+</tr>
+<tr class="odd">
+<td>Vínculos</td>
+<td><a href="onenote:#N001d.sharepoint.com">Ejecución Plan de Trabajo SOA</a>; <a href="onenote:#N003a.com">Procesos de Negocio FNA</a></td>
 </tr>
 </tbody>
 </table>
-</div>
-<div id="tbl:constant-digits" class="tablenos">
-<table id="tbl:constant-digits">
-<caption><span>Table 2:</span> A table too wide to fit within page.
-</caption>
+<p><br></p>
+<h1 id="detalle-de-ítems-de-arquitectura-de-referencia-del-fna-actualizados">Detalle de Ítems de Arquitectura de Referencia del FNA Actualizados</h1>
+<p>En este proyecto denominamos ítems de línea base a los extractos de modelos y sus partes entregados por anteriores consultorías a esta fase de E-Service. El detalle de esta entrega la podemos resumir en el siguiente cuadro.</p>
+<h2 id="extracto-de-modelos-analizados-en-fase-ii-e-service-modelos-de-arquitectura-de-referencia-del-fna">Extracto de Modelos Analizados en Fase II, E-Service: modelos de arquitectura de referencia del FNA</h2>
+<p>Los modelos seleccionados (extractos) que presentamos en el siguiente cuadro confirman la línea base de modelos del FNA. Estos modelos fueron actualizados por el ejercicio actual y por tanto, los entregamos al FNA a razón de este producto, PR06.</p>
+<p>Estos modelos se encuentran por ahora, mientras dura el PRY02, Arquitectura de Referencia SOA 2.0 del FNA, en la siguiente ubicación del repositorio intermedio de entregas, <a href="https://stefaninilatam.sharepoint.com/:f:/r/sites/PROYECTOARQUITECTURAE-SERVICEFNA/Documentos%20compartidos/General/Repositorio%20SOA/Modelos?csf=1&amp;web=1&amp;e=LSEm4L">Repositorio SOA</a>.</p>
+<div id="tbl:relaciones-id" class="tablenos">
+<table id="tbl:relaciones-id">
+<caption><span>Tabla 1:</span> FNA_Arquitectura, proyecto “arquitectura fna.archimate”. Extracto de Modelos Analizados en Fase II, E-Service: arquitectura de referencia FNA. </caption>
 <colgroup>
-<col style="width: 5%" />
-<col style="width: 20%" />
-<col style="width: 19%" />
-<col style="width: 19%" />
-<col style="width: 34%" />
+<col style="width: 68%" />
+<col style="width: 31%" />
 </colgroup>
 <thead>
 <tr class="header">
-<th style="text-align: left;"></th>
-<th style="text-align: left;">Digits 1-33</th>
-<th style="text-align: left;">Digits 34-66</th>
-<th style="text-align: left;">Digits 67-99</th>
-<th style="text-align: left;">Ref.</th>
+<th>Archivo</th>
+<th>Modificación</th>
 </tr>
 </thead>
 <tbody>
 <tr class="odd">
-<td style="text-align: left;">pi</td>
-<td style="text-align: left;">3.14159265358979323846264338327950</td>
-<td style="text-align: left;">288419716939937510582097494459230</td>
-<td style="text-align: left;">781640628620899862803482534211706</td>
-<td style="text-align: left;"><a href="https://www.piday.org/million/"><code>piday.org</code></a></td>
+<td>ae_fna.archimate</td>
+<td>Contenedor principal de arquitectura del FNA</td>
 </tr>
 <tr class="even">
-<td style="text-align: left;">e</td>
-<td style="text-align: left;">2.71828182845904523536028747135266</td>
-<td style="text-align: left;">249775724709369995957496696762772</td>
-<td style="text-align: left;">407663035354759457138217852516642</td>
-<td style="text-align: left;"><a href="https://apod.nasa.gov/htmltest/gifcity/e.2mil"><code>nasa.gov</code></a></td>
+<td>ae_fna_as_is.archimate</td>
+<td>Contenedor secundario de arquitectura del FNA</td>
+</tr>
+<tr class="odd">
+<td>arquitectura fna.archimate</td>
+<td>Contenedor de modelos de aplicación de arquitectura del FNA</td>
+</tr>
+<tr class="even">
+<td>fna_proyectos v2.0.archimate</td>
+<td>Modelos de transición del FNA</td>
 </tr>
 </tbody>
 </table>
 </div>
-<div id="tbl:d6eff951-f8bf-4478-bfda-f9cea54ef6d6" class="tablenos">
-<table id="tbl:">
-<caption><span>Table 3:</span> A table with merged cells using the <code>attributes</code> plugin.
-</caption>
+<p><br></p>
+<h2 id="modelamiento-de-los-bloques-de-construcción-abstractos">Modelamiento de los Bloques de Construcción Abstractos</h2>
+<p>En esta sección cubrimos patrones de modelamiento en Archimate y los patrones de diseño de los componentes genéricos que pueden usarse como procedimientos y fuentes de consulta al modelar conceptos y soluciones relacionadas con las arquitecturas, incluso las de referencia del Fondo Nacional.</p>
+<p>Nota: ArchiMate es una notación completa, con una amplia gama de elementos y relaciones. Basta un subconjunto de elementos ArchiMate y solo un pequeño conjunto de tipos de diagrama son suficientes para la mayoría de los propósitos de modelado.</p>
+<h3 id="vista-tríptico-funcional-negocio-arquitectura-tecnología">Vista Tríptico Funcional: Negocio, Arquitectura, Tecnología</h3>
+<div id="fig:123.png" class="fignos">
+<figure>
+<img src="images/123.png" alt="Imagen 3: Resumen de un Trabajo de Arquitectura. Vista Tríptico Funcional: Negocio, Arquitectura, Tecnología." />
+<figcaption aria-hidden="true"><span>Imagen 3:</span> Resumen de un Trabajo de Arquitectura. Vista Tríptico Funcional: Negocio, Arquitectura, Tecnología.</figcaption>
+</figure>
+</div>
+<p><br></p>
+<div style="page-break-before: always;">
+
+</div>
+<table>
+<colgroup>
+<col style="width: 22%" />
+<col style="width: 77%" />
+</colgroup>
 <thead>
 <tr class="header">
-<th style="text-align: center;"></th>
-<th style="text-align: center;"><strong>Colors</strong> <!-- $colspan="2" --></th>
-<th style="text-align: center;"></th>
+<th>Tema</th>
+<th>Modelos actualizados de los ítems de arquitectura impactados por el proyecto: <strong>Repositorio de arquitectura del FNA, versión 0.5</strong></th>
 </tr>
 </thead>
 <tbody>
 <tr class="odd">
-<td style="text-align: center;"><strong>Size</strong></td>
-<td style="text-align: center;"><strong>Text Color</strong></td>
-<td style="text-align: center;"><strong>Background Color</strong></td>
+<td>Palabras clave</td>
+<td>SOA, Arquitectura de Referencia, Diseño, Modelos, Bloques de Construcción</td>
 </tr>
 <tr class="even">
-<td style="text-align: center;">big</td>
-<td style="text-align: center;">blue</td>
-<td style="text-align: center;">orange</td>
+<td>Autor</td>
+<td></td>
 </tr>
 <tr class="odd">
-<td style="text-align: center;">small</td>
-<td style="text-align: center;">black</td>
-<td style="text-align: center;">white</td>
+<td>Fuente</td>
+<td></td>
+</tr>
+<tr class="even">
+<td>Versión</td>
+<td><strong>1.79a07f0</strong> del 28 Aug 2023</td>
+</tr>
+<tr class="odd">
+<td>Vínculos</td>
+<td><a href="onenote:#N001d.sharepoint.com">Ejecución Plan de Trabajo SOA</a>; <a href="onenote:#N003a.com">Procesos de Negocio FNA</a></td>
+</tr>
+</tbody>
+</table>
+<p><br></p>
+<h1 id="repositorio-de-arquitectura-del-fna-versión-0.5-1">Repositorio de Arquitectura del FNA, versión 0.5</h1>
+<p>Como resultado del ejercicio de desarrollo de la arquitectura de referencia SOA 2.0 del FNA, objeto de este proyecto, el repositorio de modelos versión 0.2 aumenta el número de versionamiento para distinguir este contenido adicional del anterior.</p>
+<p>Esta nueva versión del repositorio de arquitectura del FNA, versión 0.5, contiene modelos temáticos que tratan exclusivamente el proceso y el producto de la arquitectura de referencia. El proceso en este contexto es entendido como las acciones de gestión, mantenimiento, extensión y todo el trabajo alrededor de la temática, que es la arquitectura de referencia. A esto le llamaremos <em>Contenidos #1 del Repositorio</em> versión 0.5.</p>
+<p>Su complemento, el producto, son los modelos de arquitectura de referencia propiamente dichos. A esto le llamaremos <em>Contenidos #2 del Repositorio</em> versión 0.5.</p>
+<h2 id="contenidos-1-del-repositorio-los-procesos-de-la-arquitectura-de-referencia">Contenidos #1 del Repositorio : Los Procesos de la Arquitectura de Referencia</h2>
+<div id="fig:arqrefFNA1.png" class="fignos">
+<figure>
+<img src="images/arqrefFNA1.png" alt="Imagen 4: Repositorio de arquitectura del FNA, versión 0.5. Contenidos #1 del Repositorio: Los Procesos de la Arquitectura de Referencia." />
+<figcaption aria-hidden="true"><span>Imagen 4:</span> Repositorio de arquitectura del FNA, versión 0.5. Contenidos #1 del Repositorio: Los Procesos de la Arquitectura de Referencia.</figcaption>
+</figure>
+</div>
+<h3 id="modelos-de-adopción-agregados-al-repositorio-fna-versión-0.5">Modelos de Adopción Agregados al Repositorio FNA, versión 0.5</h3>
+<div id="fig:arqref.adopcion1.png" class="fignos">
+<figure>
+<img src="images/arqref.adopcion1.png" alt="Imagen 5: Repositorio de arquitectura del FNA, versión 0.5. Modelos de Adopción Entregados." />
+<figcaption aria-hidden="true"><span>Imagen 5:</span> Repositorio de arquitectura del FNA, versión 0.5. Modelos de Adopción Entregados.</figcaption>
+</figure>
+</div>
+<h2 id="repositorio-los-procesos-de-la-arquitectura-de-referencia">Repositorio: Los Procesos de la Arquitectura de Referencia</h2>
+<div id="fig:arqrefFNA2.png" class="fignos">
+<figure>
+<img src="images/arqrefFNA2.png" alt="Imagen 6: Repositorio de arquitectura del FNA, versión 0.5. Contenidos #2 del Repositorio: Modelos de Adopción Entregados Repositorio." />
+<figcaption aria-hidden="true"><span>Imagen 6:</span> Repositorio de arquitectura del FNA, versión 0.5. Contenidos #2 del Repositorio: Modelos de Adopción Entregados Repositorio.</figcaption>
+</figure>
+</div>
+<h3 id="modelos-contenidos-agregados-al-repositorio-fna-versión-0.5">Modelos Contenidos Agregados al Repositorio FNA, versión 0.5</h3>
+<p>A razón del desarrollo de este producto los modelos agregados al repositorio FNA, versión 0.5 son los siguientes.</p>
+<h4 id="modelo-funcional-de-referencia">Modelo Funcional de Referencia</h4>
+<div id="fig:arqref.0.png" class="fignos">
+<figure>
+<img src="images/arqref.0.png" alt="Imagen 7: Repositorio de arquitectura del FNA, versión 0.5. Modelos de arquitectura de referencia entregados." />
+<figcaption aria-hidden="true"><span>Imagen 7:</span> Repositorio de arquitectura del FNA, versión 0.5. Modelos de arquitectura de referencia entregados.</figcaption>
+</figure>
+</div>
+<h4 id="modelo-contextual-de-referencia">Modelo Contextual de Referencia</h4>
+<div id="fig:arqimage1.png" class="fignos">
+<figure>
+<img src="images/arqimage1.png" alt="Imagen 8: Repositorio de arquitectura del FNA, versión 0.5. Modelos de arquitectura de referencia entregados." />
+<figcaption aria-hidden="true"><span>Imagen 8:</span> Repositorio de arquitectura del FNA, versión 0.5. Modelos de arquitectura de referencia entregados.</figcaption>
+</figure>
+</div>
+<div style="page-break-before: always;">
+
+</div>
+<table>
+<colgroup>
+<col style="width: 22%" />
+<col style="width: 77%" />
+</colgroup>
+<thead>
+<tr class="header">
+<th>Tema</th>
+<th>Modelos actualizados de los ítems de arquitectura impactados por el proyecto: <strong>Consideraciones para la adopción y puesta en marcha de los cambios en las arquitecturas del FNA</strong></th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td>Palabras clave</td>
+<td>SOA, Arquitectura de Referencia, Diseño, Modelos, Bloques de Construcción</td>
+</tr>
+<tr class="even">
+<td>Autor</td>
+<td></td>
+</tr>
+<tr class="odd">
+<td>Fuente</td>
+<td></td>
+</tr>
+<tr class="even">
+<td>Versión</td>
+<td><strong>1.79a07f0</strong> del 28 Aug 2023</td>
+</tr>
+<tr class="odd">
+<td>Vínculos</td>
+<td><a href="onenote:#N001d.sharepoint.com">Ejecución Plan de Trabajo SOA</a>; <a href="onenote:#N003a.com">Procesos de Negocio FNA</a></td>
+</tr>
+</tbody>
+</table>
+<p><br></p>
+<h1 id="consideraciones-para-adopción-y-puesta-en-marcha-de-las-arquitecturas-del-fna">Consideraciones para Adopción y Puesta en Marcha de las Arquitecturas del FNA</h1>
+<h2 id="modelo-operativo-para-la-puesta-en-marcha-de-las-arquitecturas-y-transiciones-en-el-fna">Modelo Operativo para la Puesta en Marcha de las Arquitecturas y Transiciones en el FNA</h2>
+<p>Establecemos como entidad principal para la gestión de las transiciones y aumentar las posibilidades de la materialización de la arquitectura de referencia SOA 2.0 que estamos proponiendo en el ejercicio de este proyecto.</p>
+<p>En la imagen siguiente se puede ver a la hoja de ruta, la entidad principal del modelo de puesta en marcha de la arquitectura propuesta.</p>
+<div id="fig:arqrefFNA1.png" class="fignos">
+<figure>
+<img src="images/arqref.Hojaruta.1b.png" alt="Imagen 9: Repositorio de arquitectura del FNA, versión 0.5. Contenidos #1 del Repositorio: Los Procesos de la Arquitectura de Referencia." />
+<figcaption aria-hidden="true"><span>Imagen 9:</span> Repositorio de arquitectura del FNA, versión 0.5. Contenidos #1 del Repositorio: Los Procesos de la Arquitectura de Referencia.</figcaption>
+</figure>
+</div>
+<p>En la parte inferior de la imagen se encuentran las transiciones de la arquitectura. Estas vienen impulsadas por los requerimientos de arquitectura mediados por los espacios de trabajo (en la parte media de la imagen), también llamados proyectos tecnológicos.</p>
+<p>Existe una relación directa entre los requerimientos de arquitectura que los arquitectos del FNA reciben y gestionan (ver Oficina de Arquitectura del FNA) y las transiciones de arquitectura (Plateau, en lenguaje Archimate). Es decir, las los requerimientos se materializan en transiciones. La hoja de ruta, ente principal del modelo, gestiona estas transiciones.</p>
+<p><br></p>
+<div style="page-break-before: always;">
+
+</div>
+<blockquote>
+<p>E-Service. Fase II</p>
+<p>PRY02. Arquitectura de Referencia SOA 2.0 del FNA. Contenido de los Productos Contractuales</p>
+<p>Contrato 1812020</p>
+<p>FNA, Stefanini</p>
+<p>28 Aug 2023</p>
+<p><strong>Versión</strong> 1.79a07f0</p>
+</blockquote>
+<p><br></p>
+<h1 id="producto-7-pr17.-ítems-de-arquitectura-incrementados-en-ejecución">Producto 7: PR17. Ítems de arquitectura incrementados en ejecución</h1>
+<p>Resultado de las primeras actividades del proyecto actual, PRY02, es la creación de modelos dedicados a la arquitectura de referencia SOA 2.0 del FNA. En este producto, PR17, , realizamos la entrega de estos modelos de la consultoría dedicadas a la organización de la información de arquitectura de referencia e ingeniería, instrumentos necesarios todos para la toma de decisiones y comparativas del futuro de la empresa.</p>
+<p>Esta información de ingeniería en la forma de modelos se suma a la entrega producto 06, Modelos actualizados de los ítems de arquitectura impactados por el proyecto (PR06) del proyecto 1, Gobierno SOA del FNA, a la que llamamos la <em>línea base de arquitectura del FNA</em>, que funciona como un inventario inicial de modelos equiparable a un repositorio de arquitectura, versión 0.1.</p>
+<p>A este producto del proyecto, PRY02, y en virtud de las actividades desarrolladas aquí (las cuales han actualizados la línea base de este repositorio) le corresponde hacer entrega de estas modificaciones al FNA.</p>
+<p><br></p>
+<p><strong>Nota</strong>: los análisis de este producto están dirigidos a cumplir los objetivos del proyecto PRY02, Arquitectura de Referencia FNA: desarrollo, gestión, gobierno de arquitectura y adopción.</p>
+<p><br></p>
+<h2 id="justificación-1">Justificación</h2>
+<p>Uno de los objetivos nominales de la gestión de la arquitectura de referencia SOA del FNA, objeto de este proyecto, es <em>aumentar la relevancia de los modelos de arquitectura de la empresa</em>. En este proyecto (PRY02), el conjunto de modelos que conforman la arquitectura de referencia 2.0 del FNA son instrumentos de evolución y de justificación de esta. A partir de estos modelos es posible también devenir análisis, estimaciones comparativas todas acciones necesarias para el proceso de arquitectura del FNA (definido en el proyecto 1 de esta consultoría). Por último, todo esta información debe ser debidamente comunicada a todos los actores (ingenieros, arquitectos, proveedores, líderes de grupo).</p>
+<p>Los modelos de arquitectura de referencia 2.0 del FNA son también sujetos del gobierno, lo cual articula a ambos proyectos, el de gobierno (PRY01) con este.</p>
+<h2 id="contenidos-2">Contenidos</h2>
+<ol type="1">
+<li>Detalle de ítems de arquitectura de referencia SOA 2.0 del FNA</li>
+<li>Modelos actualizados del repositorio de arquitectura del FNA versión 0.3</li>
+<li>Herramienta de navegación del repositorio de arquitectura del FNA</li>
+</ol>
+<p><br></p>
+<h2 id="criterios-de-aceptación-1">Criterios de Aceptación</h2>
+<ul>
+<li>Repositorio de arquitectura del FNA, actualizado, versión 0.3</li>
+<li>Herramienta de navegación del repositorio de arquitectura del FNA</li>
+</ul>
+<p><br></p>
+<h2 id="repositorio-de-arquitectura-del-fna-versión-0.1">Repositorio de Arquitectura del FNA, versión 0.1</h2>
+<div id="fig:e3b8ecf0-1694-43a3-b4a1-5321cb6f90ee" class="fignos">
+<figure>
+<img src="images/repofna.png" alt="Imagen 10: Artefactos del repositorio de arquitectura del FNA." />
+<figcaption aria-hidden="true"><span>Imagen 10:</span> Artefactos del repositorio de arquitectura del FNA.</figcaption>
+</figure>
+</div>
+<p><em>Fuente: Diagnóstico SOA. E-Service (2022).</em></p>
+<h2 id="modelo-de-implementación-del-pry02-1">Modelo de Implementación del PRY02</h2>
+<div id="fig:04f9d192-2438-49f8-b577-405e52db5776" class="fignos">
+<figure>
+<img src="images/pry1gobierno.jpg" alt="Imagen 11: Plan de Implementación del Proyecto Arquitectura de Referencia SOA 2.0 del FNA (PRY02), 2023. Junio 2023 a julio 2023" />
+<figcaption aria-hidden="true"><span>Imagen 11:</span> Plan de Implementación del Proyecto Arquitectura de Referencia SOA 2.0 del FNA (PRY02), 2023. Junio 2023 a julio 2023</figcaption>
+</figure>
+</div>
+<p><em>Fuente: Elaboración propia.</em></p>
+<p><br></p>
+<div style="page-break-before: always;">
+
+</div>
+<table>
+<colgroup>
+<col style="width: 22%" />
+<col style="width: 77%" />
+</colgroup>
+<thead>
+<tr class="header">
+<th>Tema</th>
+<th>Modelos actualizados de los ítems de arquitectura impactados por el proyecto: <strong>Detalle de ítems de la línea base del FNA actualizados</strong></th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td>Palabras clave</td>
+<td>SOA, Contexto, Áreas, Procesos, Objetivos</td>
+</tr>
+<tr class="even">
+<td>Autor</td>
+<td></td>
+</tr>
+<tr class="odd">
+<td>Fuente</td>
+<td></td>
+</tr>
+<tr class="even">
+<td>Versión</td>
+<td><strong>1.79a07f0</strong> del 28 Aug 2023</td>
+</tr>
+<tr class="odd">
+<td>Vínculos</td>
+<td><a href="onenote:#N001d.sharepoint.com">Ejecución Plan de Trabajo SOA</a>; <a href="onenote:#N003a.com">Procesos de Negocio FNA</a></td>
+</tr>
+</tbody>
+</table>
+<p><br></p>
+<h1 id="detalle-de-ítems-de-arquitectura-de-referencia-del-fna-entregados">Detalle de Ítems de Arquitectura de Referencia del FNA Entregados</h1>
+<p>En este proyecto denominamos ítems de arquitectura de referencia a los extractos, modelos y sus partes entregados por esta consultoría, E-Service Fase II. El detalle de esta entrega queda establecido en los siguientes temas.</p>
+<h2 id="extracto-de-modelos-analizados-en-fase-ii-e-service-arquitectura-de-referencia-fna">Extracto de Modelos Analizados en Fase II, E-Service: arquitectura de referencia FNA</h2>
+<p>Los modelos seleccionados (extractos) que presentamos en el siguiente cuadro conforman la arquitectura de referencia del FNA. Estos modelos fueron creados y posteriormente actualizados por el ejercicio actual, y por tanto, los entregamos al FNA a razón de este producto, PR17.</p>
+<p>Estos modelos se encuentran por ahora, mientras dura el PRY02, Arquitectura de Referencia SOA 2.0 del FNA, en la siguiente ubicación del repositorio intermedio de entregas, <a href="https://stefaninilatam.sharepoint.com/:f:/r/sites/PROYECTOARQUITECTURAE-SERVICEFNA/Documentos%20compartidos/General/Repositorio%20SOA/Modelos?csf=1&amp;web=1&amp;e=LSEm4L">Repositorio SOA</a>.</p>
+<div id="tbl:relaciones-id" class="tablenos">
+<table id="tbl:relaciones-id">
+<caption><span>Tabla 2:</span> (Fuente) FNA_Arquitectura, proyecto “arquitectura fna.archimate”. Extracto de Modelos Analizados en Fase II, E-Service: arquitectura de referencia FNA. </caption>
+<colgroup>
+<col style="width: 37%" />
+<col style="width: 62%" />
+</colgroup>
+<thead>
+<tr class="header">
+<th>Tema</th>
+<th>: <strong>Subtema</strong></th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td>arqref.adopcion 1</td>
+<td>Arquitectura de Referencia SOA 2.0 del FNA. Consideraciones para la adopción. Capacidades y requerimientos para la adopción de arquitecturas en el FNA. versión 0.2</td>
+</tr>
+<tr class="even">
+<td>arqref.adopcion 2</td>
+<td>Arquitectura de Referencia SOA 2.0 del FNA. Consideraciones para la adopción. Relación capacidades y requerimientos para la adopción de arquitecturas en el FNA. versión 0.1</td>
+</tr>
+<tr class="odd">
+<td>arqref.adopcion 3</td>
+<td>Arquitectura de Referencia SOA 2.0 del FNA. Consideraciones para la adopción en contexto con Gobierno FNA.. versión 0.2</td>
+</tr>
+<tr class="even">
+<td>arqref. Hoja de ruta. 1b. modelo oper SOA</td>
+<td>Gobierno SOA del FNA. FLUJ03. Flujo de Trabajo Creación y Mantenimiento de Arquitecturas de Referencia FNA. Nivel 1. versión 0.2</td>
+</tr>
+<tr class="odd">
+<td>ArqRef. FLARQ3. 1. Creación y mntto</td>
+<td>Arquitectura de Referencia SOA 2.0 del FNA. FLUJ03. Flujo de Trabajo Creación y Mantenimiento de Arquitecturas de Referencia FNA. Nivel 1. versión 0.2</td>
+</tr>
+<tr class="even">
+<td>ArqRef. FLARQ3. 2. Creación y mntto arqref</td>
+<td>Arquitectura de Referencia SOA 2.0 del FNA. Estructura interna. FLARQ03. Flujo de Trabajo Creación y Mantenimiento de Arquitecturas de Referencia FNA. versión 0.3</td>
+</tr>
+<tr class="odd">
+<td>arqref. Hoja de ruta. 1a. capacidades</td>
+<td></td>
+</tr>
+<tr class="even">
+<td>arqref. Hoja de ruta. 1b. modelo oper SOA</td>
+<td></td>
+</tr>
+<tr class="odd">
+<td>ARQREF.0</td>
+<td></td>
+</tr>
+<tr class="even">
+<td>ARQREF.0 Objetivos 1</td>
+<td></td>
+</tr>
+<tr class="odd">
+<td>ARQREF.0 Objetivos 2</td>
+<td></td>
+</tr>
+<tr class="even">
+<td>ARQREF.0 Objetivos 3</td>
+<td></td>
+</tr>
+<tr class="odd">
+<td>ARQREF.0.Proceso</td>
+<td></td>
+</tr>
+<tr class="even">
+<td>ARQREF.1.Malla Micross</td>
+<td></td>
+</tr>
+<tr class="odd">
+<td>ARQREF.2.Datos</td>
+<td></td>
+</tr>
+<tr class="even">
+<td>ARQREF.3.Entrega</td>
+<td></td>
+</tr>
+<tr class="odd">
+<td>ARQREF.4.FNA</td>
+<td></td>
 </tr>
 </tbody>
 </table>
 </div>
-<h2 id="equations">Equations</h2>
-<p>A LaTeX equation:</p>
-<p><span id="eq:regular-equation" class="eqnos"><span class="math display">\[\int_0^\infty e^{-x^2} dx=\frac{\sqrt{\pi}}{2}\]</span><span class="eqnos-number">(1)</span></span> </p>
-<p>An equation too long to fit within page:</p>
-<p><span id="eq:long-equation" class="eqnos"><span class="math display">\[x = a + b + c + d + e + f + g + h + i + j + k + l + m + n + o + p + q + r + s + t + u + v + w + x + y + z + 1 + 2 + 3 + 4 + 5 + 6 + 7 + 8 + 9\]</span><span class="eqnos-number">(2)</span></span> </p>
-<h2 id="special">Special</h2>
-<p><i class="fas fa-exclamation-triangle"></i> <span class="semibold">WARNING</span> <em>The following features are only supported and intended for <code>.html</code> and <code>.pdf</code> exports.</em>
-<em>Journals are not likely to support them, and they may not display correctly when converted to other formats such as <code>.docx</code>.</em></p>
-<p><a href="https://manubot.org" class="button" title="Manubot Homepage">Link styled as a button</a></p>
-<p>Adding arbitrary HTML attributes to an element using Pandoc’s attribute syntax:</p>
-<div id="some_id_1" class="some_class" style="background: #ad1457; color: white; margin-left: 40px;" title="a paragraph of text" data-color="white" disabled="true">
-<p>Manubot Manubot Manubot Manubot Manubot.
-Manubot Manubot Manubot Manubot.
-Manubot Manubot Manubot.
-Manubot Manubot.
-Manubot.</p>
+<p><br></p>
+<h2 id="criterios-de-desarrollo-de-la-arquitectura-de-referencia-fna">Criterios de Desarrollo de la Arquitectura de Referencia FNA</h2>
+<p>Un aspecto clave para mantener el sentido de completitud y orden de los modelos de la arquitectura de referencia del FNA es la vista de contexto desarrollada por esta consultoría para el Proyecto 2, Arquitectura de Referencia SOA 2.0 del FNA. Esta vista, o cualquier que haga las veces, es también el criterio que permite unir modelos de la arquitectura de referencia del FNA.</p>
+<div id="fig:vistafuncional.png" class="fignos">
+<figure>
+<img src="images/vistafuncional.png" alt="Imagen 12: Vista funcional FNA, 2022, basada en mapa de servicios de la empresa. Criterio de selección de los modelos de la línea base de arquitectura del FNA, 2023." />
+<figcaption aria-hidden="true"><span>Imagen 12:</span> Vista funcional FNA, 2022, basada en mapa de servicios de la empresa. Criterio de selección de los modelos de la línea base de arquitectura del FNA, 2023.</figcaption>
+</figure>
 </div>
-<p>Adding arbitrary HTML attributes to an element with the Manubot <code>attributes</code> plugin (more flexible than Pandoc’s method in terms of which elements you can add attributes to):</p>
-<p>Manubot Manubot Manubot Manubot Manubot.
-Manubot Manubot Manubot Manubot.
-Manubot Manubot Manubot.
-Manubot Manubot.
-Manubot.
-<!-- $id="element_id" class="some_class" $style="color: #ad1457; margin-left: 40px;" $disabled="true" $title="a paragraph of text" $data-color="red" --></p>
-<p>Available background colors for text, images, code, banners, etc:</p>
-<p><code class="white">white</code>
-<code class="lightgrey">lightgrey</code>
-<code class="grey">grey</code>
-<code class="darkgrey">darkgrey</code>
-<code class="black">black</code>
-<code class="lightred">lightred</code>
-<code class="lightyellow">lightyellow</code>
-<code class="lightgreen">lightgreen</code>
-<code class="lightblue">lightblue</code>
-<code class="lightpurple">lightpurple</code>
-<code class="red">red</code>
-<code class="orange">orange</code>
-<code class="yellow">yellow</code>
-<code class="green">green</code>
-<code class="blue">blue</code>
-<code class="purple">purple</code></p>
-<p>Using the <a href="https://fontawesome.com/">Font Awesome</a> icon set:</p>
-<!-- include the Font Awesome library, per: https://fontawesome.com/start -->
-<p><link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.7.2/css/all.css"></p>
-<p><i class="fas fa-check"></i> <i class="fas fa-question"></i> <i class="fas fa-star"></i> <i class="fas fa-bell"></i> <i class="fas fa-times-circle"></i> <i class="fas fa-ellipsis-h"></i></p>
-<p><span class="banner lightgrey"><i class="fas fa-scroll fa-lg"></i> <strong>Light Grey Banner</strong><br>
-useful for <em>general information</em> - <a href="https://manubot.org/">manubot.org</a></span></p>
-<p><span class="banner lightblue"><i class="fas fa-info-circle fa-lg"></i> <strong>Blue Banner</strong><br>
-useful for <em>important information</em> - <a href="https://manubot.org/">manubot.org</a></span></p>
-<p><span class="banner lightred"><i class="fas fa-ban fa-lg"></i> <strong>Light Red Banner</strong><br>
-useful for <em>warnings</em> - <a href="https://manubot.org/">manubot.org</a></span></p>
-<h2 class="page_break_before" id="references">References</h2>
+<p><em>Fuente: Diagnóstico SOA. E-Service (2022).</em></p>
+<p><br></p>
+<h2 id="análisis-de-los-modelos-actualizados">Análisis de los Modelos Actualizados</h2>
+<p>Procedemos a describir los modelos creados concernientes a este producto, arquitectura de referencia del FNA. Mencionaremos detalles como los ítems relevantes que explican el concepto general de esta arquitectura, que es la relación con la misión del Fondo Nacional, las implicaciones necesarias que se extienden a la oficina de arquitectura del FNA (PRY01 de esta consultoría), y a los involucrados a los que impactan los planteamientos que desde estos modelos hacemos.</p>
+<h3 id="relación-arquitectura-y-misión-del-fna">Relación Arquitectura y Misión del FNA</h3>
+<p>El modelo de arquitectura de referencia SOA 2.0 entregado por este proyecto hace relación con la misionalidad de la empresa en aspectos como los segmentos funcionales. Estos segmentos se visualizan en el diagrama conceptual (ver [ARQREF0. Vista Funcional de la Arquitectura de Referencia 2.0. Servicios y Aplicaciones]). Traemos a mención estos segmentos mediados por el carácter público y misional del FNA.</p>
+<h4 id="segmentos-del-modelo-funcional-de-la-arquitectura-de-referencia">Segmentos del Modelo Funcional de la Arquitectura de Referencia</h4>
+<ol type="1">
+<li>Canales. Sitios físicos o electrónicos en relación con los clientes.</li>
+<li>Intermediación con Clientes. Medio físicos o electrónicos de interoperatividad del FNA con los clientes.</li>
+<li>Productos de la Empresa al Cliente. Productos de negocio ofertados, relación con clientes. Son colecciones de servicios que funcionan como una unidad.</li>
+<li>Trámites (procedimientos documentales) FNA. Procesos relacionados con los productos o clientes del FNA. Basados en documentación física o digital. Ejemplo, trámite de afiliaciones y retiros, el retiro de cesantías, aperturas, etc.</li>
+<li>Transacciones FNA. Unidades de intercambio de beneficios y registros de Crédito, Cartera, Garantías, Cuenta AVC.</li>
+<li>Fuentes de Información Referencial Transaccional. Acceso a información requerida por las transacciones del FNA, como listas blancas, seguros, Registraduría.</li>
+<li>Fuentes de Información Provistas. Exposición de entidades y componentes de datos (reportes, esquemas, archivos…) al Bco. de la República, Ministerios, entre otros.</li>
+<li>Procesamiento de información. Procesamiento de lotes diario o eventual del FNA, como contabilidad, elaboración de certificados, envío de mensajes electrónicos, descarga de información, emisión de documentos digitales, indexaciones, etc.</li>
+</ol>
+<h4 id="segmentos-del-modelo-público-de-la-arquitectura-de-referencia">Segmentos del Modelo Público de la Arquitectura de Referencia</h4>
+<ol type="1">
+<li>Intermediación con Gobierno Nacional. Medio físicos o electrónicos de interoperatividad del FNA con entidades del Estado, como la Superintendencia Financiera de Colombia, Min Hacienda y MinTIC.</li>
+<li>Actividad regulatoria del FNA. Procesos de intercambio de funciones regulatorias o sancionatorias e intercambio de información de seguridad debida al cumplimiento exigido por el Gobierno Nacional.</li>
+<li>Fuentes de Información Referencial Pública. Acceso a datos de entidades públicas, como Formatos de Ministerios, Registros de Asobancos, tasas del Bco. de la República.</li>
+<li>Procesamiento de información. Procesamiento de lotes diario o eventual del FNA, como contabilidad, elaboración de certificados, envío de mensajes electrónicos, descarga de información, emisión de documentos digitales, indexaciones, etc.</li>
+</ol>
+<p>Los segmentos están ilustrados en la vista funcional siguiente. Primera versión del modelo de referencia del dominio de servicios y aplicaciones 2.0 del FNA.</p>
+<div id="fig:ARQREF.0.a1.Segmentos.png" class="fignos">
+<figure>
+<img src="images/ARQREF.0.a1.Segmentos.png" alt="Imagen 13: Fondo Nacional del Ahorro - Arquitectura de Referencia 2.0. Vista funcional del dominio de servicios y aplicaciones del FNA." />
+<figcaption aria-hidden="true"><span>Imagen 13:</span> Fondo Nacional del Ahorro - Arquitectura de Referencia 2.0. Vista funcional del dominio de servicios y aplicaciones del FNA.</figcaption>
+</figure>
+</div>
+<p>La arquitectura de referencia, desde la perspectiva funcional, informa el cómo de su organización tecnológica-misional, lo cual es conveniente para la alineación negocio con tecnología.</p>
+<pre><code>Importante: la relación tecnología y negocio está presente en los modelos de la arquitectura de referencia SOA 2.0 del FNA. Gracias a esta relación los modelos se vuelven la clave pueden gestionar la demanda de transición de cada segmento, la demanda de los servicios SOA del Fondo, y si estos responden o no a las necesidades de las vicepresidencias de crédito y de operaciones del Fondo Nacional.</code></pre>
+<p><br></p>
+<div style="page-break-before: always;">
+
+</div>
+<table>
+<colgroup>
+<col style="width: 12%" />
+<col style="width: 87%" />
+</colgroup>
+<thead>
+<tr class="header">
+<th>Tema</th>
+<th>: <strong>Herramienta de navegación del repositorio de arquitectura del FNA</strong></th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td>Palabras clave</td>
+<td>SOA, Arquitectura de Referencia, Diseño, Modelos, Bloques de Construcción</td>
+</tr>
+<tr class="even">
+<td>Autor</td>
+<td></td>
+</tr>
+<tr class="odd">
+<td>Fuente</td>
+<td></td>
+</tr>
+<tr class="even">
+<td>Versión</td>
+<td><strong>1.79a07f0</strong> del 28 Aug 2023</td>
+</tr>
+<tr class="odd">
+<td>Vínculos</td>
+<td><a href="onenote:#N001d.sharepoint.com">Ejecución Plan de Trabajo SOA</a>; <a href="onenote:#N003a.com">Procesos de Negocio FNA</a></td>
+</tr>
+</tbody>
+</table>
+<p><br></p>
+<h1 id="repositorio-de-arquitectura-del-fna-actualizado-con-arquitectura-de-referencia-inicial">Repositorio de Arquitectura del FNA Actualizado con Arquitectura de referencia Inicial</h1>
+<p>El repositorio de arquitectura cumple el rol adicional de impulsar la evolución de la alineación de la tecnología con las áreas misionales del Fondo (objetivo fundamental del gobierno FNA. Ver Proyecto 01 de esta consultoría) dado que el repositorio de arquitectura del FNA contiene ahora información inicial del instrumento de planeación llamado arquitectura de referencia 2.0 del FNA.</p>
+<div id="tbl:contenidos-id" class="tablenos">
+<table id="tbl:contenidos-id">
+<caption><span>Tabla 3:</span> Clasificación de información de modelos agregados al repositorio del FNA, versión 0.5. </caption>
+<thead>
+<tr class="header">
+<th><strong>Contenidos ARQREF 2.0 FNA</strong></th>
+<th></th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td>Adopción</td>
+<td>3</td>
+</tr>
+<tr class="even">
+<td>Arquitectura</td>
+<td>10</td>
+</tr>
+<tr class="odd">
+<td>Hoja de Ruta</td>
+<td>2</td>
+</tr>
+<tr class="even">
+<td>Oficina Arq. FNA</td>
+<td>4</td>
+</tr>
+<tr class="odd">
+<td><strong>Total Contenidos agregados</strong></td>
+<td><strong>19</strong></td>
+</tr>
+</tbody>
+</table>
+</div>
+<p><em>Fuente: elaboración propia.</em></p>
+<p><br></p>
+<p>Para iniciar los proyectos de transición y de gestión de la tecnología para el negocio de FNA, basados en estos modelos, hay que continuar aportando información y llevar los niveles de detalle a más aspectos de la arquitectura, así como evitar los problemas de colaboración del repositorio, como los siguientes:</p>
+<ol type="1">
+<li>Redundancias y el atraso de la información de los modelos y conceptos.</li>
+<li>Incompletitud en el modelamiento de conceptos, como las capacidades de negocio, o los procesos de negocio del FNA.</li>
+<li>Inconsistencia en el lenguaje de modelado. Falta estandarizar nombres y formas de representación de los mismo conceptos entre modelos.</li>
+</ol>
+<p><br></p>
+<h1 id="herramienta-de-navegación-del-repositorio-de-arquitectura-del-fna-versión-0.5">Herramienta de Navegación del Repositorio de Arquitectura del FNA, versión 0.5</h1>
+<p>Para apoyar la gestión de la alineación de la tecnología del Fondo guiada por la arquitectura, hemos creado una herramienta de búsqueda, navegación y clasificación de los contenidos del repositorio del FNA</p>
+<div id="fig:libreria.png" class="fignos">
+<figure>
+<img src="images/libreria.png" alt="Imagen 14: Herramienta para navegación y clasificación de contenidos del FNA." />
+<figcaption aria-hidden="true"><span>Imagen 14:</span> Herramienta para navegación y clasificación de contenidos del FNA.</figcaption>
+</figure>
+</div>
+<p><em>Fuente: elaboración propia.</em></p>
+<h2 id="anexo-2.-modelos-fna-actualizados-por-arquitectura-de-referencia">Anexo 2. Modelos FNA Actualizados por Arquitectura de Referencia</h2>
+<p>La siguiente tabla indica los modelos actualizados por el ejercicio actual y por tanto, entregados al FNA, objeto de este producto, PR17.</p>
+<p>Estos modelos se encuentran por ahora, mientras dura el proyecto en repositorio intermedio de entregas <a href="https://stefaninilatam.sharepoint.com/:f:/r/sites/PROYECTOARQUITECTURAE-SERVICEFNA/Documentos%20compartidos/General/Repositorio%20SOA/Modelos?csf=1&amp;web=1&amp;e=LSEm4L">Repositorio SOA</a>.</p>
+<div id="tbl:relaciones-id" class="tablenos">
+<table id="tbl:relaciones-id">
+<caption><span>Tabla 4:</span> FNA_Arquitectura, proyecto “arquitectura fna.archimate”. Extracto de Modelos Analizados en Fase II, E-Service: arquitectura de referencia FNA. </caption>
+<colgroup>
+<col style="width: 68%" />
+<col style="width: 31%" />
+</colgroup>
+<thead>
+<tr class="header">
+<th>Archivo</th>
+<th>Modificación</th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td>ae_fna.archimate</td>
+<td>Contenedor principal de arquitectura del FNA</td>
+</tr>
+<tr class="even">
+<td>ae_fna_as_is.archimate</td>
+<td>Contenedor secundario de arquitectura del FNA</td>
+</tr>
+<tr class="odd">
+<td>arquitectura fna.archimate</td>
+<td>Contenedor de modelos de aplicación de arquitectura del FNA</td>
+</tr>
+<tr class="even">
+<td>fna_proyectos v2.0.archimate</td>
+<td>Modelos de transición del FNA</td>
+</tr>
+</tbody>
+</table>
+</div>
+<h1 id="anexos">Anexos</h1>
+<h2 id="anexo-1.-migración-de-arquitectura-de-referencia-del-fna-lin01">Anexo 1. Migración de Arquitectura de Referencia del FNA (LIN01)</h2>
+<p>La estrategia de migración de los modelos que planteamos es dividir el trabajo en dos líneas de migración: modelos de línea base (LIN01. Arquitectura Referencia. Incremento 1 en el diagrama del modelo de implementación), y modelos de arquitectura de referencia (LIN02. Arquitectura línea base. Incremento 1).</p>
+<div id="fig:5a.Repositorioarq.png" class="fignos">
+<figure>
+<img src="images/5a.Repositorioarq.png" alt="Imagen 15: Migración de modelos de arquitectura de referencia E-Service, Archimate 3.0 al repositorio Mega Hopex del FNA" />
+<figcaption aria-hidden="true"><span>Imagen 15:</span> Migración de modelos de arquitectura de referencia E-Service, Archimate 3.0 al repositorio Mega Hopex del FNA</figcaption>
+</figure>
+</div>
+<p><em>Fuente: Diagnóstico SOA. E-Service (2022).</em></p>
+<h2 id="anexo-2.-migración-de-línea-base-de-modelos-de-arquitectura-fna-lin02">Anexo 2. Migración de Línea Base de Modelos de Arquitectura FNA (LIN02)</h2>
+<p>La segunda línea de migración presenta mayores complicaciones que la anterior. Se trata de modelos de línea base (LIN02 Arquitectura línea base, en el diagrama del modelo de implementación abajo) que ya describen una realidad existente en el FNA. Por tanto, requiere de tanto más de validación como de depuración.</p>
+<div id="fig:5b.Repositorioarq.png" class="fignos">
+<figure>
+<img src="images/5b.Repositorioarq.png" alt="Imagen 16: Migración de modelos de arquitectura de línea base E-Service, Archimate 3.0 al repositorio Mega Hopex del FNA" />
+<figcaption aria-hidden="true"><span>Imagen 16:</span> Migración de modelos de arquitectura de línea base E-Service, Archimate 3.0 al repositorio Mega Hopex del FNA</figcaption>
+</figure>
+</div>
+<p><em>Fuente: Diagnóstico SOA. E-Service (2022).</em></p>
+<p><br></p>
+<div style="page-break-before: always;">
+
+</div>
+<h1 class="page_break_before" id="referencias">Referencias</h1>
 <!-- Explicitly insert bibliography here -->
 <div id="refs" class="references csl-bib-body" role="doc-bibliography">
-<div id="ref-IhliSZDo" class="csl-entry" role="doc-biblioentry">
-<div class="csl-left-margin">1. </div><div class="csl-right-inline"><strong>Sci-Hub provides access to nearly all scholarly literature</strong> <div class="csl-block">Daniel S Himmelstein, Ariel Rodriguez Romero, Jacob G Levernier, Thomas Anthony Munro, Stephen Reid McLaughlin, Bastian Greshake Tzovaras, Casey S Greene</div> <em>eLife</em> (2018-03-01) <a href="https://doi.org/ckcj">https://doi.org/ckcj</a> <div class="csl-block">DOI: <a href="https://doi.org/10.7554/elife.32822">10.7554/elife.32822</a> · PMID: <a href="https://www.ncbi.nlm.nih.gov/pubmed/29424689">29424689</a> · PMCID: <a href="https://www.ncbi.nlm.nih.gov/pmc/articles/PMC5832410">PMC5832410</a></div></div>
+<p><span class="citation" data-cites="19ZPD5YjC">[<a href="#ref-19ZPD5YjC" role="doc-biblioref">1</a>]</span> <span class="citation" data-cites="hQTPO0iI">[<a href="#ref-hQTPO0iI" role="doc-biblioref">2</a>]</span> <span class="citation" data-cites="l0mriBft">[<a href="#ref-l0mriBft" role="doc-biblioref">3</a>]</span> <span class="citation" data-cites="XhjOmyqw">[<a href="#ref-XhjOmyqw" role="doc-biblioref">4</a>]</span> <span class="citation" data-cites="IGumhWwJ">[<a href="#ref-IGumhWwJ" role="doc-biblioref">5</a>]</span> <span class="citation" data-cites="c3MMLZMM">[<a href="#ref-c3MMLZMM" role="doc-biblioref">6</a>]</span> <span class="citation" data-cites="eu2uss54">[<a href="#ref-eu2uss54" role="doc-biblioref">7</a>]</span></p>
+<div id="ref-19ZPD5YjC" class="csl-entry" role="doc-biblioentry">
+<div class="csl-left-margin">1. </div><div class="csl-right-inline"><strong>E-service. Diagnóstico SOA actual del FNA. Etapa i</strong> <div class="csl-block">Stefanini, FNA</div> (2022-06) <a href="https://hwong23.github.io/fna-devdoc-f1/v/6497aef0f15c3591f0728e4c42cb2c26c13b43aa/">https://hwong23.github.io/fna-devdoc-f1/v/6497aef0f15c3591f0728e4c42cb2c26c13b43aa/</a></div>
 </div>
-<div id="ref-mSMVRkoc" class="csl-entry" role="doc-biblioentry">
-<div class="csl-left-margin">2. </div><div class="csl-right-inline"><strong>Reproducibility of computational workflows is automated using continuous analysis</strong> <div class="csl-block">Brett K Beaulieu-Jones, Casey S Greene</div> <em>Nature biotechnology</em> (2017-04) <a href="https://www.ncbi.nlm.nih.gov/pmc/articles/PMC6103790/">https://www.ncbi.nlm.nih.gov/pmc/articles/PMC6103790/</a> <div class="csl-block">DOI: <a href="https://doi.org/10.1038/nbt.3780">10.1038/nbt.3780</a> · PMID: <a href="https://www.ncbi.nlm.nih.gov/pubmed/28288103">28288103</a> · PMCID: <a href="https://www.ncbi.nlm.nih.gov/pmc/articles/PMC6103790">PMC6103790</a></div></div>
+<div id="ref-hQTPO0iI" class="csl-entry" role="doc-biblioentry">
+<div class="csl-left-margin">2. </div><div class="csl-right-inline"><strong>E-service. Arquitectura de referencia del FNA. Etapa II</strong> <div class="csl-block">Stefanini, FNA</div> (2022-06) <a href="https://hwong23.github.io/fna-devdoc-f1/v/6497aef0f15c3591f0728e4c42cb2c26c13b43aa/">https://hwong23.github.io/fna-devdoc-f1/v/6497aef0f15c3591f0728e4c42cb2c26c13b43aa/</a></div>
 </div>
-<div id="ref-QhC8yJ7V" class="csl-entry" role="doc-biblioentry">
-<div class="csl-left-margin">3. </div><div class="csl-right-inline"><strong>Plan S: Accelerating the transition to full and immediate Open Access to scientific publications</strong> <div class="csl-block">cOAlition S</div> (2018-09-04) <a href="https://www.wikidata.org/wiki/Q56458321">https://www.wikidata.org/wiki/Q56458321</a></div>
+<div id="ref-l0mriBft" class="csl-entry" role="doc-biblioentry">
+<div class="csl-left-margin">3. </div><div class="csl-right-inline"><strong>E-service. Hoja de ruta e iniciativas. Etapa III</strong> <div class="csl-block">Stefanini, FNA</div> (2022-06) <a href="https://hwong23.github.io/fna-devdoc-f1/v/6497aef0f15c3591f0728e4c42cb2c26c13b43aa/">https://hwong23.github.io/fna-devdoc-f1/v/6497aef0f15c3591f0728e4c42cb2c26c13b43aa/</a></div>
 </div>
-<div id="ref-zBPP9YKu" class="csl-entry" role="doc-biblioentry">
-<div class="csl-left-margin">4. </div><div class="csl-right-inline"><strong>Open access</strong> <div class="csl-block">Peter Suber</div> <em>MIT Press</em> (2012) <div class="csl-block">ISBN: 9780262517638</div></div>
+<div id="ref-XhjOmyqw" class="csl-entry" role="doc-biblioentry">
+<div class="csl-left-margin">4. </div><div class="csl-right-inline"><strong>Administración del riesgo de arquitecturas SOA</strong> <div class="csl-block">Open Group</div> <em>TOGAF 9.1. Risk management</em> (2023) <a href="https://pubs.opengroup.org/architecture/togaf9-doc/arch/chap27.html">https://pubs.opengroup.org/architecture/togaf9-doc/arch/chap27.html</a></div>
 </div>
-<div id="ref-1GGGHdsew" class="csl-entry" role="doc-biblioentry">
-<div class="csl-left-margin">5. </div><div class="csl-right-inline"><strong>Open collaborative writing with Manubot</strong> <div class="csl-block">Daniel S Himmelstein, Vincent Rubinetti, David R Slochower, Dongbo Hu, Venkat S Malladi, Casey S Greene, Anthony Gitter</div> <em>Manubot</em> (2020-05-25) <a href="https://greenelab.github.io/meta-review/">https://greenelab.github.io/meta-review/</a></div>
+<div id="ref-IGumhWwJ" class="csl-entry" role="doc-biblioentry">
+<div class="csl-left-margin">5. </div><div class="csl-right-inline"><strong>Métodos de evaluación de arquitecturas de software (extensible a servicios)</strong> <div class="csl-block">P. Shanmugapriya. Department of CSE, SCSVMV University, Enathur, Tamilnadu, INDIA</div> <em>Software architecture evaluation methods – a survey</em> (2012) <a href="https://pubs.opengroup.org/architecture/togaf9-doc/arch/chap27.html">https://pubs.opengroup.org/architecture/togaf9-doc/arch/chap27.html</a></div>
 </div>
-<div id="ref-PZMP42Ak" class="csl-entry" role="doc-biblioentry">
-<div class="csl-left-margin">6. </div><div class="csl-right-inline"><strong>Opportunities and obstacles for deep learning in biology and medicine</strong> <div class="csl-block">Travers Ching, Daniel S Himmelstein, Brett K Beaulieu-Jones, Alexandr A Kalinin, Brian T Do, Gregory P Way, Enrico Ferrero, Paul-Michael Agapow, Michael Zietz, Michael M Hoffman, … Casey S Greene</div> <em>Journal of The Royal Society Interface</em> (2018-04) <a href="https://doi.org/gddkhn">https://doi.org/gddkhn</a> <div class="csl-block">DOI: <a href="https://doi.org/10.1098/rsif.2017.0387">10.1098/rsif.2017.0387</a> · PMID: <a href="https://www.ncbi.nlm.nih.gov/pubmed/29618526">29618526</a> · PMCID: <a href="https://www.ncbi.nlm.nih.gov/pmc/articles/PMC5938574">PMC5938574</a></div></div>
+<div id="ref-c3MMLZMM" class="csl-entry" role="doc-biblioentry">
+<div class="csl-left-margin">6. </div><div class="csl-right-inline"><strong>E-service FNA: Modelo de gobierno. Detalle de los recursos, herramientas, roles y participantes del gobierno SOA</strong> <div class="csl-block">Stefanini, FNA</div> (2023-06) <a href="https://hwong23.github.io/fna-dd-f2-e1/">https://hwong23.github.io/fna-dd-f2-e1/</a></div>
 </div>
-<div id="ref-YuJbg3zO" class="csl-entry" role="doc-biblioentry">
-<div class="csl-left-margin">7. </div><div class="csl-right-inline"><strong>Open collaborative writing with Manubot</strong> <div class="csl-block">Daniel S Himmelstein, Vincent Rubinetti, David R Slochower, Dongbo Hu, Venkat S Malladi, Casey S Greene, Anthony Gitter</div> <em>PLOS Computational Biology</em> (2019-06-24) <a href="https://doi.org/c7np">https://doi.org/c7np</a> <div class="csl-block">DOI: <a href="https://doi.org/10.1371/journal.pcbi.1007128">10.1371/journal.pcbi.1007128</a> · PMID: <a href="https://www.ncbi.nlm.nih.gov/pubmed/31233491">31233491</a> · PMCID: <a href="https://www.ncbi.nlm.nih.gov/pmc/articles/PMC6611653">PMC6611653</a></div></div>
+<div id="ref-eu2uss54" class="csl-entry" role="doc-biblioentry">
+<div class="csl-left-margin">7. </div><div class="csl-right-inline"><strong>Modelo de madurez e implementación SOA</strong> <div class="csl-block">BPTrends, S.Inagantiand, S.Aravamudan</div> (2007-04) <a href="https://hwong23.github.io/fna-dd-f2-e1/">https://hwong23.github.io/fna-dd-f2-e1/</a></div>
 </div>
 </div>
 <!-- default theme -->
