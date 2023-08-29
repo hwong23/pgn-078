@@ -1,7 +1,7 @@
 # Pandoc --defaults for DOCX output.
 # Load on top of common defaults.
 to: docx
-output-file: output/FNA-${TRIGGERING_SHA_7}-ETP4.docx
+output-file: output/PGN-078-${TRIGGERING_SHA_7}.docx
 reference-doc: build/themes/default.docx
 resource-path:
  - '.'
