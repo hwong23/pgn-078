@@ -26,8 +26,8 @@ header-includes: |
   <meta name="dc.date" content="2023-08-30" />
   <meta name="citation_publication_date" content="2023-08-30" />
   <meta property="article:published_time" content="2023-08-30" />
-  <meta name="dc.modified" content="2023-08-30T06:53:21+00:00" />
-  <meta property="article:modified_time" content="2023-08-30T06:53:21+00:00" />
+  <meta name="dc.modified" content="2023-08-30T06:58:50+00:00" />
+  <meta property="article:modified_time" content="2023-08-30T06:58:50+00:00" />
   <meta name="dc.language" content="en-US" />
   <meta name="citation_language" content="en-US" />
   <meta name="dc.relation.ispartof" content="Manubot" />
@@ -48,9 +48,9 @@ header-includes: |
   <meta name="citation_fulltext_html_url" content="https://hwong23.github.io/pgn-078/" />
   <meta name="citation_pdf_url" content="https://hwong23.github.io/pgn-078/manuscript.pdf" />
   <link rel="alternate" type="application/pdf" href="https://hwong23.github.io/pgn-078/manuscript.pdf" />
-  <link rel="alternate" type="text/html" href="https://hwong23.github.io/pgn-078/v/7b14f4646cd1786a2d7f342632a0dcbf45126df6/" />
-  <meta name="manubot_html_url_versioned" content="https://hwong23.github.io/pgn-078/v/7b14f4646cd1786a2d7f342632a0dcbf45126df6/" />
-  <meta name="manubot_pdf_url_versioned" content="https://hwong23.github.io/pgn-078/v/7b14f4646cd1786a2d7f342632a0dcbf45126df6/manuscript.pdf" />
+  <link rel="alternate" type="text/html" href="https://hwong23.github.io/pgn-078/v/d34dac104b572e9c0d37114f146aa872793b1386/" />
+  <meta name="manubot_html_url_versioned" content="https://hwong23.github.io/pgn-078/v/d34dac104b572e9c0d37114f146aa872793b1386/" />
+  <meta name="manubot_pdf_url_versioned" content="https://hwong23.github.io/pgn-078/v/d34dac104b572e9c0d37114f146aa872793b1386/manuscript.pdf" />
   <meta property="og:type" content="article" />
   <meta property="twitter:card" content="summary_large_image" />
   <link rel="icon" type="image/png" sizes="192x192" href="https://manubot.org/favicon-192x192.png" />
@@ -67,7 +67,7 @@ manubot-clear-requests-cache: false
 ...
 
 ---
-title: E-Service Etapa 2. Arquitectura de Referencia SOA 2.0 del FNA
+title: Documento de Arquitectura Migración PGN SIU
 geometry:
   - top=1in
   - bottom=1in
@@ -78,13 +78,13 @@ tablenos-caption-name: Tabla
 ...
 
 
-<small><em>Los productos de esta etapa ([Web](https://hwong23.github.io/pgn-078/v/7b14f4646cd1786a2d7f342632a0dcbf45126df6/))
-están basados en el resultado de la consultoría "Arquitectura E-Service",
-[Sharepoint STEF@7b14f46](https://stefaninilatam.sharepoint.com/:f:/r/sites/PROYECTOARQUITECTURAE-SERVICEFNA/Documentos%20compartidos/General/Repositorio%20SOA/Procesos%20Fase%20II/181-2020.%20E-SERV.%20Fase%202-ETAPA%200.%20docx?csf=1&web=1&e=BiNcBP)
+<small><em>Los productos de esta etapa ([Web](https://hwong23.github.io/pgn-078/v/d34dac104b572e9c0d37114f146aa872793b1386/))
+están basados en el resultado de la Fase 1 del proyecto PGN SIU del 2022,
+[Sharepoint STEF@d34dac1](https://stefaninilatam.sharepoint.com/:f:/r/sites/PROYECTOARQUITECTURAE-SERVICEFNA/Documentos%20compartidos/General/Repositorio%20SOA/Procesos%20Fase%20II/181-2020.%20E-SERV.%20Fase%202-ETAPA%200.%20docx?csf=1&web=1&e=BiNcBP)
 del August 30, 2023.
 </em></small>
 
-|    **Versión** del producto 1.7b14f46 de 30 Aug 2023
+|    **Versión** del producto 1.d34dac1 de 30 Aug 2023
 
 
 
@@ -143,16 +143,16 @@ del August 30, 2023.
 
 
 ## Objetivo del Documento
-Entrega de los productos de la Etapa 2, PR11 y PR12, del proyecto PR02, Arquitectura de Referencia SOA 2.0 del FNA, flujos de trabajo y personas que ejercitan y conforman (cumplen) con el gobierno SOA del FNA a desplegar a cargo de la oficina de arquitectura.
+Entrega de los productos de arquitectura de de la Fase 2, PR11 y PR12, del proyecto de Migracieon SIU del 2023 (Contrato 078-2023).
 
 
 ##  Control de Cambios {.page_break_before}
-| Tema           | PRY02 Arquitectura de Referencia SOA 2.0 del FNA      |
+| Tema           | Migración 078-2023 Fase 2 Migración SIU      |
 |----------------|----------------------------|
 | Palabras clave | SOA, E-Service, FNA, Análisis de brecha, GAP, Comparativa              |
 | Autor          |                            |
 | Fuente         |                            |
-| Versión        | 1.7b14f46 del 30 Aug 2023 |
+| Versión        | 1.d34dac1 del 30 Aug 2023 |
 | Vínculos       | [N003a Vista Segmento SOA FNA](N03a%a20Vsta%20aSegenta%20SOA%20FNA.md) |
 
 <br>
