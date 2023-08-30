@@ -26,8 +26,8 @@ header-includes: |
   <meta name="dc.date" content="2023-08-30" />
   <meta name="citation_publication_date" content="2023-08-30" />
   <meta property="article:published_time" content="2023-08-30" />
-  <meta name="dc.modified" content="2023-08-30T06:47:17+00:00" />
-  <meta property="article:modified_time" content="2023-08-30T06:47:17+00:00" />
+  <meta name="dc.modified" content="2023-08-30T06:53:21+00:00" />
+  <meta property="article:modified_time" content="2023-08-30T06:53:21+00:00" />
   <meta name="dc.language" content="en-US" />
   <meta name="citation_language" content="en-US" />
   <meta name="dc.relation.ispartof" content="Manubot" />
@@ -48,9 +48,9 @@ header-includes: |
   <meta name="citation_fulltext_html_url" content="https://hwong23.github.io/pgn-078/" />
   <meta name="citation_pdf_url" content="https://hwong23.github.io/pgn-078/manuscript.pdf" />
   <link rel="alternate" type="application/pdf" href="https://hwong23.github.io/pgn-078/manuscript.pdf" />
-  <link rel="alternate" type="text/html" href="https://hwong23.github.io/pgn-078/v/058b2e27a2d42dea88cd5a9c7f1372c9059aca3c/" />
-  <meta name="manubot_html_url_versioned" content="https://hwong23.github.io/pgn-078/v/058b2e27a2d42dea88cd5a9c7f1372c9059aca3c/" />
-  <meta name="manubot_pdf_url_versioned" content="https://hwong23.github.io/pgn-078/v/058b2e27a2d42dea88cd5a9c7f1372c9059aca3c/manuscript.pdf" />
+  <link rel="alternate" type="text/html" href="https://hwong23.github.io/pgn-078/v/7b14f4646cd1786a2d7f342632a0dcbf45126df6/" />
+  <meta name="manubot_html_url_versioned" content="https://hwong23.github.io/pgn-078/v/7b14f4646cd1786a2d7f342632a0dcbf45126df6/" />
+  <meta name="manubot_pdf_url_versioned" content="https://hwong23.github.io/pgn-078/v/7b14f4646cd1786a2d7f342632a0dcbf45126df6/manuscript.pdf" />
   <meta property="og:type" content="article" />
   <meta property="twitter:card" content="summary_large_image" />
   <link rel="icon" type="image/png" sizes="192x192" href="https://manubot.org/favicon-192x192.png" />
@@ -78,13 +78,13 @@ tablenos-caption-name: Tabla
 ...
 
 
-<small><em>Los productos de esta etapa ([Web](https://hwong23.github.io/pgn-078/v/058b2e27a2d42dea88cd5a9c7f1372c9059aca3c/))
+<small><em>Los productos de esta etapa ([Web](https://hwong23.github.io/pgn-078/v/7b14f4646cd1786a2d7f342632a0dcbf45126df6/))
 están basados en el resultado de la consultoría "Arquitectura E-Service",
-[Sharepoint STEF@058b2e2](https://stefaninilatam.sharepoint.com/:f:/r/sites/PROYECTOARQUITECTURAE-SERVICEFNA/Documentos%20compartidos/General/Repositorio%20SOA/Procesos%20Fase%20II/181-2020.%20E-SERV.%20Fase%202-ETAPA%200.%20docx?csf=1&web=1&e=BiNcBP)
+[Sharepoint STEF@7b14f46](https://stefaninilatam.sharepoint.com/:f:/r/sites/PROYECTOARQUITECTURAE-SERVICEFNA/Documentos%20compartidos/General/Repositorio%20SOA/Procesos%20Fase%20II/181-2020.%20E-SERV.%20Fase%202-ETAPA%200.%20docx?csf=1&web=1&e=BiNcBP)
 del August 30, 2023.
 </em></small>
 
-|    **Versión** del producto 1.058b2e2 de 30 Aug 2023
+|    **Versión** del producto 1.7b14f46 de 30 Aug 2023
 
 
 
@@ -152,7 +152,7 @@ Entrega de los productos de la Etapa 2, PR11 y PR12, del proyecto PR02, Arquitec
 | Palabras clave | SOA, E-Service, FNA, Análisis de brecha, GAP, Comparativa              |
 | Autor          |                            |
 | Fuente         |                            |
-| Versión        | 1.058b2e2 del 30 Aug 2023 |
+| Versión        | 1.7b14f46 del 30 Aug 2023 |
 | Vínculos       | [N003a Vista Segmento SOA FNA](N03a%a20Vsta%20aSegenta%20SOA%20FNA.md) |
 
 <br>
