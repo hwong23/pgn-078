@@ -70,8 +70,8 @@ jobs:
           echo "DEFAULT_BRANCH_REF=refs/heads/$DEFAULT_BRANCH" >> $GITHUB_ENV
           echo "DEFAULT_BRANCH=$DEFAULT_BRANCH"
           echo "COMPILATION_DATE=$(date +'%d %b %Y')" >> $GITHUB_ENV
-          echo "PROYECTO=PRY02" >> $GITHUB_ENV
-          echo "PROY_DESCR=Arquitectura de Referencia SOA 2.0 del FNA" >> $GITHUB_ENV
+          echo "PROYECTO=Migración 078-2023" >> $GITHUB_ENV
+          echo "PROY_DESCR=Fase 2 Migración SIU" >> $GITHUB_ENV
           echo "PR06_NOMBRE=Modelos actualizados de los ítems de arquitectura impactados por el proyecto" >> $GITHUB_ENV
           echo "PR10_NOMBRE=Detalle de los ítems de la empresa FNA impactados por el proyecto" >> $GITHUB_ENV
           echo "PR11_NOMBRE=Detalle de los recursos, herramientas, roles, responsabilidades y participantes" >> $GITHUB_ENV
