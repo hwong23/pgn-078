@@ -1,4 +1,6 @@
 git checkout arq
+git status
+
 cp -R ~/Downloads/tmpr/pgnarchidoc/* .
 
 git add .
