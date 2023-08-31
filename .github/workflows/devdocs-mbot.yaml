@@ -70,8 +70,8 @@ jobs:
           echo "DEFAULT_BRANCH_REF=refs/heads/$DEFAULT_BRANCH" >> $GITHUB_ENV
           echo "DEFAULT_BRANCH=$DEFAULT_BRANCH"
           echo "COMPILATION_DATE=$(date +'%d %b %Y')" >> $GITHUB_ENV
-          echo "PROYECTO=Migración 078-2023" >> $GITHUB_ENV
-          echo "PROY_DESCR=Fase 2 Migración SIU" >> $GITHUB_ENV
+          echo "PROYECTO=078-2023" >> $GITHUB_ENV
+          echo "PROY_DESCR=Fase 2, PGN Migración Funcional SIU" >> $GITHUB_ENV
       - name: Cache
         uses: actions/cache@v3
         with:
