@@ -6,5 +6,5 @@ git commit -am "$1"
 git push
 git pull
 
-# git checkout main
+git checkout main
 
