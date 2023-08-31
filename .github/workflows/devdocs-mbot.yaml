@@ -72,15 +72,6 @@ jobs:
           echo "COMPILATION_DATE=$(date +'%d %b %Y')" >> $GITHUB_ENV
           echo "PROYECTO=Migración 078-2023" >> $GITHUB_ENV
           echo "PROY_DESCR=Fase 2 Migración SIU" >> $GITHUB_ENV
-          echo "PR06_NOMBRE=Modelos actualizados de los ítems de arquitectura impactados por el proyecto" >> $GITHUB_ENV
-          echo "PR10_NOMBRE=Detalle de los ítems de la empresa FNA impactados por el proyecto" >> $GITHUB_ENV
-          echo "PR11_NOMBRE=Detalle de los recursos, herramientas, roles, responsabilidades y participantes" >> $GITHUB_ENV
-          echo "PR12_NOMBRE=Diseño detallado y vistas funcional, despliegue, información, integración y tecnología​" >> $GITHUB_ENV
-          echo "PR13_NOMBRE=Modelado en lenguaje y herramienta de diseño del FNA​" >> $GITHUB_ENV
-          echo "PR14_NOMBRE=Administración de las transiciones hacia la arquitectura versión 2.0" >> $GITHUB_ENV
-          echo "PR15_NOMBRE=Inventario de artefactos genéricos y concretos de aceleración de implementación" >> $GITHUB_ENV
-          echo "PR16_NOMBRE=Análisis de impacto y modelos actualizados de los ítems de arquitectura" >> $GITHUB_ENV
-          echo "PR17_NOMBRE=Ítems de arquitectura incrementados en ejecución" >> $GITHUB_ENV
       - name: Cache
         uses: actions/cache@v3
         with:
