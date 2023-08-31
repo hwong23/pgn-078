@@ -7,7 +7,7 @@
   <meta name="author" content="Harry Wong, ing." />
   <meta name="dcterms.date" content="2023-08-30" />
   <meta name="keywords" content="SOA, madurez, gobierno, PGN" />
-  <title>Documento de Arquitectura Migración PGN SIU</title>
+  <title>Documento de Arquitectura Migración Funcional PGN SIU</title>
   <style>
     code{white-space: pre-wrap;}
     span.smallcaps{font-variant: small-caps;}
@@ -49,8 +49,8 @@
   <meta name="dc.date" content="2023-08-30" />
   <meta name="citation_publication_date" content="2023-08-30" />
   <meta property="article:published_time" content="2023-08-30" />
-  <meta name="dc.modified" content="2023-08-30T07:20:04+00:00" />
-  <meta property="article:modified_time" content="2023-08-30T07:20:04+00:00" />
+  <meta name="dc.modified" content="2023-08-30T21:18:37+00:00" />
+  <meta property="article:modified_time" content="2023-08-30T21:18:37+00:00" />
   <meta name="dc.language" content="en-US" />
   <meta name="citation_language" content="en-US" />
   <meta name="dc.relation.ispartof" content="Manubot" />
@@ -65,9 +65,9 @@
   <meta name="citation_fulltext_html_url" content="https://hwong23.github.io/pgn-078/" />
   <meta name="citation_pdf_url" content="https://hwong23.github.io/pgn-078/manuscript.pdf" />
   <link rel="alternate" type="application/pdf" href="https://hwong23.github.io/pgn-078/manuscript.pdf" />
-  <link rel="alternate" type="text/html" href="https://hwong23.github.io/pgn-078/v/61dbd4318cf77e8ca3a4978785d9b6d812677962/" />
-  <meta name="manubot_html_url_versioned" content="https://hwong23.github.io/pgn-078/v/61dbd4318cf77e8ca3a4978785d9b6d812677962/" />
-  <meta name="manubot_pdf_url_versioned" content="https://hwong23.github.io/pgn-078/v/61dbd4318cf77e8ca3a4978785d9b6d812677962/manuscript.pdf" />
+  <link rel="alternate" type="text/html" href="https://hwong23.github.io/pgn-078/v/32389e50ce0e096d95370ec17a7e033bcef8f4e5/" />
+  <meta name="manubot_html_url_versioned" content="https://hwong23.github.io/pgn-078/v/32389e50ce0e096d95370ec17a7e033bcef8f4e5/" />
+  <meta name="manubot_pdf_url_versioned" content="https://hwong23.github.io/pgn-078/v/32389e50ce0e096d95370ec17a7e033bcef8f4e5/manuscript.pdf" />
   <meta property="og:type" content="article" />
   <meta property="twitter:card" content="summary_large_image" />
   <link rel="icon" type="image/png" sizes="192x192" href="https://manubot.org/favicon-192x192.png" />
@@ -80,14 +80,15 @@
 </head>
 <body>
 <header id="title-block-header">
-<h1 class="title">Documento de Arquitectura Migración PGN SIU</h1>
+<h1 class="title">Documento de Arquitectura Migración Funcional PGN SIU</h1>
 </header>
-<p><small><em>Los productos de esta etapa (<a href="https://hwong23.github.io/pgn-078/v/61dbd4318cf77e8ca3a4978785d9b6d812677962/">Web</a>)
+<p><small><em>Los productos de esta etapa, Migración Funcional SIU, Contrato 078-2023,
+(<a href="https://hwong23.github.io/pgn-078/v/32389e50ce0e096d95370ec17a7e033bcef8f4e5/">Web</a>)
 están basados en el resultado de la Fase 1 del proyecto PGN SIU del 2022,
-<a href="http://softgic.sharepoint.com">Sharepoint Softgic@61dbd43</a>
+<a href="http://softgic.sharepoint.com">Sharepoint Softgic@32389e5</a>
 del August 30, 2023.
 </em></small></p>
-<div class="line-block">   <strong>Versión</strong> del producto 1.61dbd43 de 30 Aug 2023</div>
+<div class="line-block">   <strong>Versión</strong> del producto 1.32389e5 de 30 Aug 2023</div>
 <p><br></p>
 <h2 id="autores">Autores</h2>
 <ul>
@@ -105,7 +106,8 @@ Arquitecto, Softgic
 </div>
 <p><br></p>
 <h2 id="objetivo-del-documento">Objetivo del Documento</h2>
-<p>Entrega de los productos de arquitectura de de la Fase 2, PR11 y PR12, del proyecto de Migración SIU del 2023 (Contrato 078-2023).</p>
+<p>Descripción de los productos del trabajo de arquitectura de la Fase 2, proyecto Migración Funcional SIU de la Procuraduría General de la Nación (PGN en adelante), Contrato 078-2023.</p>
+<p><br></p>
 <h2 class="page_break_before" id="control-de-cambios">Control de Cambios</h2>
 <table>
 <colgroup>
@@ -133,7 +135,7 @@ Arquitecto, Softgic
 </tr>
 <tr class="even">
 <td>Versión</td>
-<td>1.61dbd43 del 30 Aug 2023</td>
+<td>1.32389e5 del 30 Aug 2023</td>
 </tr>
 <tr class="odd">
 <td>Vínculos</td>
@@ -156,6 +158,7 @@ Arquitecto, Softgic
 <li><a href="#lineabase.1.siu-componente">Lineabase.1.SIU componente</a></li>
 <li><a href="#lineabase.1a.siu-componente">Lineabase.1a.SIU componente</a></li>
 <li><a href="#linebase.2.portal">Linebase.2.Portal</a></li>
+<li><a href="#riesgos.1">Riesgos.1</a></li>
 </ul></li>
 <li><a href="#arquitectura-migración-pgn-siu">Arquitectura Migración PGN SIU</a>
 <ul>
@@ -326,6 +329,12 @@ Arquitecto, Softgic
 1. API Transaccional (Node Js)
 1. API Config (C#)
 1. Persistencia (SQL)</p>
+<p>Asuntos de la Migración:
+* Estrategia CMS central
+* Motor de búsqueda
+* Estatego como BI
+* Conciliación y Doku
+* Gestión de sesiones / caducidad</p>
 <h3 id="catálogo-de-elementos-1">Catálogo de Elementos</h3>
 <table>
 <colgroup>
@@ -476,37 +485,37 @@ Arquitecto, Softgic
 <td style="text-align: left;"></td>
 </tr>
 <tr class="odd">
+<td style="text-align: left;"><strong>Doku (gest. doc.)</strong></td>
+<td style="text-align: left;">application-service</td>
+<td style="text-align: left;"></td>
+<td style="text-align: left;"></td>
+</tr>
+<tr class="even">
 <td style="text-align: left;"><strong>Identidades</strong></td>
 <td style="text-align: left;">application-service</td>
 <td style="text-align: left;"></td>
 <td style="text-align: left;"></td>
 </tr>
-<tr class="even">
+<tr class="odd">
 <td style="text-align: left;"><strong>Interfaz de datos 1</strong></td>
 <td style="text-align: left;">application-service</td>
 <td style="text-align: left;"></td>
 <td style="text-align: left;"></td>
 </tr>
-<tr class="odd">
+<tr class="even">
 <td style="text-align: left;"><strong>Interfaz de datos 2</strong></td>
 <td style="text-align: left;">application-service</td>
 <td style="text-align: left;"></td>
 <td style="text-align: left;"></td>
 </tr>
-<tr class="even">
+<tr class="odd">
 <td style="text-align: left;"><strong>Interfaz de datos 3</strong></td>
 <td style="text-align: left;">application-service</td>
 <td style="text-align: left;"></td>
 <td style="text-align: left;"></td>
 </tr>
-<tr class="odd">
-<td style="text-align: left;"><strong>Proveedores contenidos</strong></td>
-<td style="text-align: left;">application-service</td>
-<td style="text-align: left;"></td>
-<td style="text-align: left;"></td>
-</tr>
 <tr class="even">
-<td style="text-align: left;"><strong>SGDEA (Doku)</strong></td>
+<td style="text-align: left;"><strong>Proveedores contenidos</strong></td>
 <td style="text-align: left;">application-service</td>
 <td style="text-align: left;"></td>
 <td style="text-align: left;"></td>
@@ -680,25 +689,61 @@ Arquitecto, Softgic
 <td style="text-align: left;"><em>plataforma:</em> angular 11<br></td>
 </tr>
 <tr class="odd">
+<td style="text-align: left;"><strong>API externas</strong></td>
+<td style="text-align: left;">application-service</td>
+<td style="text-align: left;"></td>
+<td style="text-align: left;"></td>
+</tr>
+<tr class="even">
 <td style="text-align: left;"><strong>Application Service (NLB)</strong></td>
 <td style="text-align: left;">application-service</td>
 <td style="text-align: left;"></td>
 <td style="text-align: left;"><em>plataforma:</em> angular 11<br></td>
 </tr>
+<tr class="odd">
+<td style="text-align: left;"><strong>Archivos Compartidos</strong></td>
+<td style="text-align: left;">application-service</td>
+<td style="text-align: left;"></td>
+<td style="text-align: left;"></td>
+</tr>
 <tr class="even">
-<td style="text-align: left;"><strong>Interfaz de datos 1</strong></td>
+<td style="text-align: left;"><strong>CDN Contenidos</strong></td>
 <td style="text-align: left;">application-service</td>
 <td style="text-align: left;"></td>
 <td style="text-align: left;"></td>
 </tr>
 <tr class="odd">
-<td style="text-align: left;"><strong>Interfaz de datos 2</strong></td>
+<td style="text-align: left;"><strong>Doku (gest. doc.)</strong></td>
 <td style="text-align: left;">application-service</td>
 <td style="text-align: left;"></td>
 <td style="text-align: left;"></td>
 </tr>
 <tr class="even">
+<td style="text-align: left;"><strong>Identidades</strong></td>
+<td style="text-align: left;">application-service</td>
+<td style="text-align: left;"></td>
+<td style="text-align: left;"></td>
+</tr>
+<tr class="odd">
+<td style="text-align: left;"><strong>Interfaz de datos 1</strong></td>
+<td style="text-align: left;">application-service</td>
+<td style="text-align: left;"></td>
+<td style="text-align: left;"></td>
+</tr>
+<tr class="even">
+<td style="text-align: left;"><strong>Interfaz de datos 2</strong></td>
+<td style="text-align: left;">application-service</td>
+<td style="text-align: left;"></td>
+<td style="text-align: left;"></td>
+</tr>
+<tr class="odd">
 <td style="text-align: left;"><strong>Interfaz de datos 3</strong></td>
+<td style="text-align: left;">application-service</td>
+<td style="text-align: left;"></td>
+<td style="text-align: left;"></td>
+</tr>
+<tr class="even">
+<td style="text-align: left;"><strong>Proveedores contenidos</strong></td>
 <td style="text-align: left;">application-service</td>
 <td style="text-align: left;"></td>
 <td style="text-align: left;"></td>
@@ -805,6 +850,70 @@ Arquitecto, Softgic
 </tr>
 </tbody>
 </table>
+<h2 id="riesgos.1">Riesgos.1</h2>
+<p><a href="#riesgos.1"></a>
+<img src="images/Riesgos.1.png" alt="Diagram: Riesgos.1" /></p>
+<h3 id="catálogo-de-elementos-4">Catálogo de Elementos</h3>
+<table>
+<colgroup>
+<col style="width: 25%" />
+<col style="width: 25%" />
+<col style="width: 25%" />
+<col style="width: 25%" />
+</colgroup>
+<thead>
+<tr class="header">
+<th style="text-align: left;">Name</th>
+<th style="text-align: left;">Type</th>
+<th style="text-align: left;">Description</th>
+<th style="text-align: left;">Properties</th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td style="text-align: left;"><strong>Conciliación y Doku</strong></td>
+<td style="text-align: left;">constraint</td>
+<td style="text-align: left;">Definir la ubicación de los componentes misionales de Conciliación Administrativa (SIU). Debe estar fuera de Doku.<br></td>
+<td style="text-align: left;"></td>
+</tr>
+<tr class="even">
+<td style="text-align: left;"><strong>Estatego como BI</strong></td>
+<td style="text-align: left;">constraint</td>
+<td style="text-align: left;">Definir la arquitectura de Estratego migrado: puede ser una solución de BI simple, o puede ser una aplicación web tradicional.<br></td>
+<td style="text-align: left;"></td>
+</tr>
+<tr class="odd">
+<td style="text-align: left;"><strong>Estrategia CMS central</strong></td>
+<td style="text-align: left;">constraint</td>
+<td style="text-align: left;">Establecer desde el principio el gestor de contenidos compartido que los módulos del SUI migrados van a usar.</td>
+<td style="text-align: left;"></td>
+</tr>
+<tr class="even">
+<td style="text-align: left;"><strong>Gestión de sesiones / caducidad</strong></td>
+<td style="text-align: left;">constraint</td>
+<td style="text-align: left;">Establecer desde el principio el motor de búsqueda de conteidos compartido para los módulos del SUI migrados.<br></td>
+<td style="text-align: left;"></td>
+</tr>
+<tr class="odd">
+<td style="text-align: left;"><strong>Gestión de sesiones / caducidad</strong></td>
+<td style="text-align: left;">constraint</td>
+<td style="text-align: left;">Definir la arquitectura de Estratego migrado: puede ser una solución de BI simple, o puede ser una aplicación web tradicional.<br></td>
+<td style="text-align: left;"></td>
+</tr>
+<tr class="even">
+<td style="text-align: left;"><strong>Motor de búsqueda</strong></td>
+<td style="text-align: left;">constraint</td>
+<td style="text-align: left;">Establecer desde el principio el motor de búsqueda de conteidos compartido para los módulos del SUI migrados.<br></td>
+<td style="text-align: left;"></td>
+</tr>
+<tr class="odd">
+<td style="text-align: left;"><strong>RIESG. </strong></td>
+<td style="text-align: left;">constraint</td>
+<td style="text-align: left;">Asuntos de la Migración:<br>* Estrategia CMS central<br>* Motor de búsqueda<br>* Estatego como BI<br>* Conciliación y Doku<br>* Gestión de sesiones / caducidad<br></td>
+<td style="text-align: left;"></td>
+</tr>
+</tbody>
+</table>
 <div style="page-break-before: always;">
 
 </div>
@@ -820,7 +929,7 @@ Arquitecto, Softgic
 1. API Transaccional (Node Js)
 1. API Config (C#)
 1. Persistencia (SQL)</p>
-<h3 id="catálogo-de-elementos-4">Catálogo de Elementos</h3>
+<h3 id="catálogo-de-elementos-5">Catálogo de Elementos</h3>
 <table>
 <colgroup>
 <col style="width: 25%" />
@@ -988,43 +1097,43 @@ Arquitecto, Softgic
 <td style="text-align: left;"></td>
 </tr>
 <tr class="even">
+<td style="text-align: left;"><strong>Doku (gest. doc.)</strong></td>
+<td style="text-align: left;">application-service</td>
+<td style="text-align: left;"></td>
+<td style="text-align: left;"></td>
+</tr>
+<tr class="odd">
 <td style="text-align: left;"><strong>Identidades</strong></td>
 <td style="text-align: left;">application-service</td>
 <td style="text-align: left;"></td>
 <td style="text-align: left;"></td>
 </tr>
-<tr class="odd">
+<tr class="even">
 <td style="text-align: left;"><strong>Interfaz de datos 1</strong></td>
 <td style="text-align: left;">application-service</td>
 <td style="text-align: left;"></td>
 <td style="text-align: left;"></td>
 </tr>
-<tr class="even">
+<tr class="odd">
 <td style="text-align: left;"><strong>Interfaz de datos 2</strong></td>
 <td style="text-align: left;">application-service</td>
 <td style="text-align: left;"></td>
 <td style="text-align: left;"></td>
 </tr>
-<tr class="odd">
+<tr class="even">
 <td style="text-align: left;"><strong>Interfaz de datos 3</strong></td>
 <td style="text-align: left;">application-service</td>
 <td style="text-align: left;"></td>
 <td style="text-align: left;"></td>
 </tr>
-<tr class="even">
+<tr class="odd">
 <td style="text-align: left;"><strong>Office</strong></td>
 <td style="text-align: left;">application-service</td>
 <td style="text-align: left;"></td>
 <td style="text-align: left;"></td>
 </tr>
-<tr class="odd">
-<td style="text-align: left;"><strong>Proveedores contenidos</strong></td>
-<td style="text-align: left;">application-service</td>
-<td style="text-align: left;"></td>
-<td style="text-align: left;"></td>
-</tr>
 <tr class="even">
-<td style="text-align: left;"><strong>SGDEA (Doku)</strong></td>
+<td style="text-align: left;"><strong>Proveedores contenidos</strong></td>
 <td style="text-align: left;">application-service</td>
 <td style="text-align: left;"></td>
 <td style="text-align: left;"></td>
@@ -1103,6 +1212,7 @@ Arquitecto, Softgic
 </tr>
 </tbody>
 </table>
+<p><code>Generated on: Wed Aug 30 2023 16:12:51 GMT-0500 (COT)</code></p>
 <h2 id="requerimientos-de-administración">Requerimientos de Administración</h2>
 <ol type="1">
 <li>Las soluciones deben permitir la administración de los Roles de Usuarios: esta funcionalidad debe permitir configurar los diferentes roles de los usuarios funcionales de los procesos.</li>
