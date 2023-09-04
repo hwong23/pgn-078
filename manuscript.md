@@ -5,7 +5,7 @@ keywords:
 - gobierno
 - PGN
 lang: en-US
-date-meta: '2023-08-31'
+date-meta: '2023-09-04'
 author-meta:
 - Harry Wong, ing.
 header-includes: |
@@ -15,11 +15,11 @@ header-includes: |
   -->
   <meta name="dc.format" content="text/html" />
   <meta property="og:type" content="article" />
-  <meta name="dc.date" content="2023-08-31" />
-  <meta name="citation_publication_date" content="2023-08-31" />
-  <meta property="article:published_time" content="2023-08-31" />
-  <meta name="dc.modified" content="2023-08-31T13:30:40+00:00" />
-  <meta property="article:modified_time" content="2023-08-31T13:30:40+00:00" />
+  <meta name="dc.date" content="2023-09-04" />
+  <meta name="citation_publication_date" content="2023-09-04" />
+  <meta property="article:published_time" content="2023-09-04" />
+  <meta name="dc.modified" content="2023-09-04T01:07:27+00:00" />
+  <meta property="article:modified_time" content="2023-09-04T01:07:27+00:00" />
   <meta name="dc.language" content="en-US" />
   <meta name="citation_language" content="en-US" />
   <meta name="dc.relation.ispartof" content="Manubot" />
@@ -34,9 +34,9 @@ header-includes: |
   <meta name="citation_fulltext_html_url" content="https://hwong23.github.io/pgn-078/" />
   <meta name="citation_pdf_url" content="https://hwong23.github.io/pgn-078/manuscript.pdf" />
   <link rel="alternate" type="application/pdf" href="https://hwong23.github.io/pgn-078/manuscript.pdf" />
-  <link rel="alternate" type="text/html" href="https://hwong23.github.io/pgn-078/v/f6c37804b646420bfd596542dbb352b1de862007/" />
-  <meta name="manubot_html_url_versioned" content="https://hwong23.github.io/pgn-078/v/f6c37804b646420bfd596542dbb352b1de862007/" />
-  <meta name="manubot_pdf_url_versioned" content="https://hwong23.github.io/pgn-078/v/f6c37804b646420bfd596542dbb352b1de862007/manuscript.pdf" />
+  <link rel="alternate" type="text/html" href="https://hwong23.github.io/pgn-078/v/71ec5a30ca454d492223ae439b6c120f14959369/" />
+  <meta name="manubot_html_url_versioned" content="https://hwong23.github.io/pgn-078/v/71ec5a30ca454d492223ae439b6c120f14959369/" />
+  <meta name="manubot_pdf_url_versioned" content="https://hwong23.github.io/pgn-078/v/71ec5a30ca454d492223ae439b6c120f14959369/manuscript.pdf" />
   <meta property="og:type" content="article" />
   <meta property="twitter:card" content="summary_large_image" />
   <link rel="icon" type="image/png" sizes="192x192" href="https://manubot.org/favicon-192x192.png" />
@@ -65,13 +65,13 @@ tablenos-caption-name: Tabla
 
 
 <small><em>Los productos de esta etapa, Migración Funcional SIU, Contrato 078-2023, 
-([Web](https://hwong23.github.io/pgn-078/v/f6c37804b646420bfd596542dbb352b1de862007/))
+([Web](https://hwong23.github.io/pgn-078/v/71ec5a30ca454d492223ae439b6c120f14959369/))
 están basados en el resultado de la Fase 1 del proyecto PGN SIU del 2022,
-[Sharepoint Softgic@f6c3780](http://softgic.sharepoint.com)
-del August 31, 2023.
+[Sharepoint Softgic@71ec5a3](http://softgic.sharepoint.com)
+del September 4, 2023.
 </em></small>
 
-|    **Versión** del producto 1.f6c3780 de 31 Aug 2023
+|    **Versión** del producto 1.71ec5a3 de 04 Sep 2023
 
 
 
@@ -113,7 +113,7 @@ Descripción de los productos del trabajo de arquitectura de la Fase 2, proyecto
 | Palabras clave | SIU, Softgic, PGN, Análisis de brecha, GAP, Comparativa              |
 | Autor          |                            |
 | Fuente         |                            |
-| Versión        | 1.f6c3780 del 31 Aug 2023 |
+| Versión        | 1.71ec5a3 del 04 Sep 2023 |
 | Vínculos       | [N003a Vista Segmento PGN SIU](N03a%a20Vsta%20aSegenta%20SOA%20PGN.md) |
 
 <br>
@@ -456,6 +456,14 @@ Administrar los Usuarios de la Solución: Esta funcionalidad debe permitir confi
 
 <br>
 ˝
+
+* RSG1. Estrategia CMS central
+* RSG2. Motor de búsqueda
+* RSG3. Estatego como BI
+* RSG4. Conciliación y Doku
+* RSG5. Gestión de sesiones / caducidad
+
+
 
 <div style="page-break-before: always;"></div>
 \newpage
