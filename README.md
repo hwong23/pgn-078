@@ -1,7 +1,7 @@
 # Output directory containing the formatted manuscript
 
 The [`gh-pages`](https://github.com/hwong23/pgn-078/tree/gh-pages) branch hosts the contents of this directory at <https://hwong23.github.io/pgn-078/>.
-The permalink for this webpage version is <https://hwong23.github.io/pgn-078/v/f6c37804b646420bfd596542dbb352b1de862007/>.
+The permalink for this webpage version is <https://hwong23.github.io/pgn-078/v/71ec5a30ca454d492223ae439b6c120f14959369/>.
 To redirect to the permalink for the latest manuscript version at anytime, use the link <https://hwong23.github.io/pgn-078/v/freeze/>.
 
 ## Files
@@ -35,4 +35,4 @@ Verifying timestamps with the `ots verify` command requires running a local bitc
 ## Source
 
 The manuscripts in this directory were built from
-[`f6c37804b646420bfd596542dbb352b1de862007`](https://github.com/hwong23/pgn-078/commit/f6c37804b646420bfd596542dbb352b1de862007).
+[`71ec5a30ca454d492223ae439b6c120f14959369`](https://github.com/hwong23/pgn-078/commit/71ec5a30ca454d492223ae439b6c120f14959369).
