@@ -1,12 +1,4 @@
-# git checkout output
-# git pull
+# Actualiza los documentos/imágenes generados por Archi.
 
-cp $1/02n.a1.doc.md content/
-cp $1/*.png content/images/
-
-# f="`ls -t ~/Downloads/tmpr/*.docx | head -1`"
-# basedocxFILE=${f##*/};  
-# open $basedocxFILE
-
-# git checkout main
-
+mv $1/02n.a1.doc.md content/
+mv $1/*.png content/images/
