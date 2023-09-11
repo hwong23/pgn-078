@@ -18,8 +18,8 @@ header-includes: |
   <meta name="dc.date" content="2023-09-11" />
   <meta name="citation_publication_date" content="2023-09-11" />
   <meta property="article:published_time" content="2023-09-11" />
-  <meta name="dc.modified" content="2023-09-11T22:20:04+00:00" />
-  <meta property="article:modified_time" content="2023-09-11T22:20:04+00:00" />
+  <meta name="dc.modified" content="2023-09-11T22:34:39+00:00" />
+  <meta property="article:modified_time" content="2023-09-11T22:34:39+00:00" />
   <meta name="dc.language" content="en-US" />
   <meta name="citation_language" content="en-US" />
   <meta name="dc.relation.ispartof" content="Manubot" />
@@ -34,9 +34,9 @@ header-includes: |
   <meta name="citation_fulltext_html_url" content="https://hwong23.github.io/pgn-078/" />
   <meta name="citation_pdf_url" content="https://hwong23.github.io/pgn-078/manuscript.pdf" />
   <link rel="alternate" type="application/pdf" href="https://hwong23.github.io/pgn-078/manuscript.pdf" />
-  <link rel="alternate" type="text/html" href="https://hwong23.github.io/pgn-078/v/80d8c54507f0557c363d469a1bfa1fc7c6eca7a2/" />
-  <meta name="manubot_html_url_versioned" content="https://hwong23.github.io/pgn-078/v/80d8c54507f0557c363d469a1bfa1fc7c6eca7a2/" />
-  <meta name="manubot_pdf_url_versioned" content="https://hwong23.github.io/pgn-078/v/80d8c54507f0557c363d469a1bfa1fc7c6eca7a2/manuscript.pdf" />
+  <link rel="alternate" type="text/html" href="https://hwong23.github.io/pgn-078/v/be00601694120cdf2e9ee2b378fac8c3bcf9563f/" />
+  <meta name="manubot_html_url_versioned" content="https://hwong23.github.io/pgn-078/v/be00601694120cdf2e9ee2b378fac8c3bcf9563f/" />
+  <meta name="manubot_pdf_url_versioned" content="https://hwong23.github.io/pgn-078/v/be00601694120cdf2e9ee2b378fac8c3bcf9563f/manuscript.pdf" />
   <meta property="og:type" content="article" />
   <meta property="twitter:card" content="summary_large_image" />
   <link rel="icon" type="image/png" sizes="192x192" href="https://manubot.org/favicon-192x192.png" />
@@ -65,13 +65,13 @@ tablenos-caption-name: Tabla
 
 
 <small><em>Los productos de esta etapa, Migración Funcional SIU, Contrato 078-2023, 
-([Web](https://hwong23.github.io/pgn-078/v/80d8c54507f0557c363d469a1bfa1fc7c6eca7a2/))
+([Web](https://hwong23.github.io/pgn-078/v/be00601694120cdf2e9ee2b378fac8c3bcf9563f/))
 están basados en el resultado de la Fase 1 del proyecto PGN SIU del 2022,
-[Sharepoint Softgic@80d8c54](http://softgic.sharepoint.com)
+[Sharepoint Softgic@be00601](http://softgic.sharepoint.com)
 del September 11, 2023.
 </em></small>
 
-|    **Versión** del producto 1.80d8c54 de 11 Sep 2023
+|    **Versión** del producto 1.be00601 de 11 Sep 2023
 
 
 
@@ -114,7 +114,7 @@ Descripción de los productos del trabajo de arquitectura de la Fase 2, proyecto
 | Palabras clave | SIU, Softgic, PGN, Análisis de brecha, GAP, Comparativa              |
 | Autor          |                            |
 | Fuente         |                            |
-| Versión        | 1.80d8c54 del 11 Sep 2023 |
+| Versión        | 1.be00601 del 11 Sep 2023 |
 | Vínculos       | [N003a Vista Segmento PGN SIU](N03a%a20Vsta%20aSegenta%20SOA%20PGN.md) |
 
 <br>
@@ -129,6 +129,11 @@ Descripción de los productos del trabajo de arquitectura de la Fase 2, proyecto
 
 ## Contenidos
 \toc
+
+<br>
+
+<div style="page-break-before: always;"></div>
+\newpage
 
 
 
@@ -150,7 +155,7 @@ Uno de los principales propósitos de este documento es hacer una representació
 
 
 
-# Restricciones
+# Restricciones Principales
 Informamos de las restricciones que hacen parte del proyecto, y por tanto, a considera en el ejercicio de arquitectura del presente proyecto.
 
 Lista de restricciones de la migración SUI, 2023.
@@ -162,6 +167,9 @@ Lista de restricciones de la migración SUI, 2023.
 1. Requerimientos de protocolos o interfaces. Los recursos de red, y protocolos de comunicación o transporte de esta Fase del proyecto a tener en cuenta en los diseños de la solución de esta Fase 2 parten de la base de los considerados en la anterior Fase 1. Otros recursos a considerar son los descritos en el anexo técnico del contrato del proyecto.
 1. Seguridad. Las restricciones de seguridad del proyecto actual a tener en cuenta en los diseños de la solución de esta Fase 2 parten de la base de las de la anterior Fase 1. Esto es, los que están descritos en el anexo técnico del contrato del proyecto.
 
+<br>
+
+## Restricciones Secundarias
 Otras restricciones a detallar.
 
 1. Repositorio de datos.
