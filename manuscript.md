@@ -18,8 +18,8 @@ header-includes: |
   <meta name="dc.date" content="2023-09-11" />
   <meta name="citation_publication_date" content="2023-09-11" />
   <meta property="article:published_time" content="2023-09-11" />
-  <meta name="dc.modified" content="2023-09-11T20:50:43+00:00" />
-  <meta property="article:modified_time" content="2023-09-11T20:50:43+00:00" />
+  <meta name="dc.modified" content="2023-09-11T21:21:39+00:00" />
+  <meta property="article:modified_time" content="2023-09-11T21:21:39+00:00" />
   <meta name="dc.language" content="en-US" />
   <meta name="citation_language" content="en-US" />
   <meta name="dc.relation.ispartof" content="Manubot" />
@@ -34,9 +34,9 @@ header-includes: |
   <meta name="citation_fulltext_html_url" content="https://hwong23.github.io/pgn-078/" />
   <meta name="citation_pdf_url" content="https://hwong23.github.io/pgn-078/manuscript.pdf" />
   <link rel="alternate" type="application/pdf" href="https://hwong23.github.io/pgn-078/manuscript.pdf" />
-  <link rel="alternate" type="text/html" href="https://hwong23.github.io/pgn-078/v/e6a82da92e3775e80fdc6ed23ab3d500a4612802/" />
-  <meta name="manubot_html_url_versioned" content="https://hwong23.github.io/pgn-078/v/e6a82da92e3775e80fdc6ed23ab3d500a4612802/" />
-  <meta name="manubot_pdf_url_versioned" content="https://hwong23.github.io/pgn-078/v/e6a82da92e3775e80fdc6ed23ab3d500a4612802/manuscript.pdf" />
+  <link rel="alternate" type="text/html" href="https://hwong23.github.io/pgn-078/v/b665d74639709b98d017257ce972beed53a666f1/" />
+  <meta name="manubot_html_url_versioned" content="https://hwong23.github.io/pgn-078/v/b665d74639709b98d017257ce972beed53a666f1/" />
+  <meta name="manubot_pdf_url_versioned" content="https://hwong23.github.io/pgn-078/v/b665d74639709b98d017257ce972beed53a666f1/manuscript.pdf" />
   <meta property="og:type" content="article" />
   <meta property="twitter:card" content="summary_large_image" />
   <link rel="icon" type="image/png" sizes="192x192" href="https://manubot.org/favicon-192x192.png" />
@@ -65,13 +65,13 @@ tablenos-caption-name: Tabla
 
 
 <small><em>Los productos de esta etapa, Migración Funcional SIU, Contrato 078-2023, 
-([Web](https://hwong23.github.io/pgn-078/v/e6a82da92e3775e80fdc6ed23ab3d500a4612802/))
+([Web](https://hwong23.github.io/pgn-078/v/b665d74639709b98d017257ce972beed53a666f1/))
 están basados en el resultado de la Fase 1 del proyecto PGN SIU del 2022,
-[Sharepoint Softgic@e6a82da](http://softgic.sharepoint.com)
+[Sharepoint Softgic@b665d74](http://softgic.sharepoint.com)
 del September 11, 2023.
 </em></small>
 
-|    **Versión** del producto 1.e6a82da de 11 Sep 2023
+|    **Versión** del producto 1.b665d74 de 11 Sep 2023
 
 
 
@@ -113,7 +113,7 @@ Descripción de los productos del trabajo de arquitectura de la Fase 2, proyecto
 | Palabras clave | SIU, Softgic, PGN, Análisis de brecha, GAP, Comparativa              |
 | Autor          |                            |
 | Fuente         |                            |
-| Versión        | 1.e6a82da del 11 Sep 2023 |
+| Versión        | 1.b665d74 del 11 Sep 2023 |
 | Vínculos       | [N003a Vista Segmento PGN SIU](N03a%a20Vsta%20aSegenta%20SOA%20PGN.md) |
 
 <br>
@@ -128,6 +128,24 @@ Descripción de los productos del trabajo de arquitectura de la Fase 2, proyecto
 
 ## Contenidos
 \toc
+
+
+
+# Introducción
+
+## Propósito
+Este documento tiene como propósito presentar la arquitectura del aplicativo Sistema Único de Información (SUI) para Procuraduría General de la NAción (PGN). según los requerimientos definidos durante la etapa de preventa y luego detallados en las historias de usuario.
+
+La arquitectura será una guía para que el diseño y la implementación de los componentes que conforman la solución sean cobijados bajo lineamientos y premisas bien definidos, permitiendo a los elementos del sistema interactuar entre sí de forma coherente. La arquitectura será tomada como un diseño estratégico que establece restricciones globales para el diseño, define un marco inicial de trabajo para la implementación de los requerimientos funcionales y no funcionales.
+
+La definición arquitectónica de este proyecto será un proceso evolutivo como tal. Este documento puede ser susceptible a cambios a medida que se vayan agregando nuevas funcionalidades o requisitos al sistema.
+
+Uno de los principales propósitos de este documento es hacer una representación de las decisiones de distribución y dosposición de(los) sistemas; por tanto, es un diseño estratégico, no un diseño detallado. Puntualmente, refleja decisiones sobre la plataforma tecnológica seleccionada, así como consideraciones importantes para el diseño y desarrollo, con procura de garantizar una solución técnicamente viable y óptima para el proyecto.
+
+<br>
+
+<div style="page-break-before: always;"></div>
+\newpage
 
 
 
