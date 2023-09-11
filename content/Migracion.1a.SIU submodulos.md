@@ -36,6 +36,8 @@ La disposición de los módulos y submódulos presentada, denominada SUI Migraci
 |**interfaz**|application-interface|||
 |**interfaz**|application-interface|||
 |**interfaz**|application-interface|||
+|**Cliente PGN**|business-actor|||
+|**Funcionario PGN**|business-actor|||
 |**RQR. Administrativos**|requirement|||
 |**RQR. Funcionales**|requirement|||
 |**RQR. Ingeniería**|requirement|||
