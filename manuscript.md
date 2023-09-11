@@ -18,8 +18,8 @@ header-includes: |
   <meta name="dc.date" content="2023-09-11" />
   <meta name="citation_publication_date" content="2023-09-11" />
   <meta property="article:published_time" content="2023-09-11" />
-  <meta name="dc.modified" content="2023-09-11T21:46:07+00:00" />
-  <meta property="article:modified_time" content="2023-09-11T21:46:07+00:00" />
+  <meta name="dc.modified" content="2023-09-11T21:51:28+00:00" />
+  <meta property="article:modified_time" content="2023-09-11T21:51:28+00:00" />
   <meta name="dc.language" content="en-US" />
   <meta name="citation_language" content="en-US" />
   <meta name="dc.relation.ispartof" content="Manubot" />
@@ -34,9 +34,9 @@ header-includes: |
   <meta name="citation_fulltext_html_url" content="https://hwong23.github.io/pgn-078/" />
   <meta name="citation_pdf_url" content="https://hwong23.github.io/pgn-078/manuscript.pdf" />
   <link rel="alternate" type="application/pdf" href="https://hwong23.github.io/pgn-078/manuscript.pdf" />
-  <link rel="alternate" type="text/html" href="https://hwong23.github.io/pgn-078/v/25c24c2a7b2ab060d2decd17a9b88f5d51e1d106/" />
-  <meta name="manubot_html_url_versioned" content="https://hwong23.github.io/pgn-078/v/25c24c2a7b2ab060d2decd17a9b88f5d51e1d106/" />
-  <meta name="manubot_pdf_url_versioned" content="https://hwong23.github.io/pgn-078/v/25c24c2a7b2ab060d2decd17a9b88f5d51e1d106/manuscript.pdf" />
+  <link rel="alternate" type="text/html" href="https://hwong23.github.io/pgn-078/v/68677182285f6aa3bc018cb4aa089b70e6d21a4e/" />
+  <meta name="manubot_html_url_versioned" content="https://hwong23.github.io/pgn-078/v/68677182285f6aa3bc018cb4aa089b70e6d21a4e/" />
+  <meta name="manubot_pdf_url_versioned" content="https://hwong23.github.io/pgn-078/v/68677182285f6aa3bc018cb4aa089b70e6d21a4e/manuscript.pdf" />
   <meta property="og:type" content="article" />
   <meta property="twitter:card" content="summary_large_image" />
   <link rel="icon" type="image/png" sizes="192x192" href="https://manubot.org/favicon-192x192.png" />
@@ -65,13 +65,13 @@ tablenos-caption-name: Tabla
 
 
 <small><em>Los productos de esta etapa, Migración Funcional SIU, Contrato 078-2023, 
-([Web](https://hwong23.github.io/pgn-078/v/25c24c2a7b2ab060d2decd17a9b88f5d51e1d106/))
+([Web](https://hwong23.github.io/pgn-078/v/68677182285f6aa3bc018cb4aa089b70e6d21a4e/))
 están basados en el resultado de la Fase 1 del proyecto PGN SIU del 2022,
-[Sharepoint Softgic@25c24c2](http://softgic.sharepoint.com)
+[Sharepoint Softgic@6867718](http://softgic.sharepoint.com)
 del September 11, 2023.
 </em></small>
 
-|    **Versión** del producto 1.25c24c2 de 11 Sep 2023
+|    **Versión** del producto 1.6867718 de 11 Sep 2023
 
 
 
@@ -114,7 +114,7 @@ Descripción de los productos del trabajo de arquitectura de la Fase 2, proyecto
 | Palabras clave | SIU, Softgic, PGN, Análisis de brecha, GAP, Comparativa              |
 | Autor          |                            |
 | Fuente         |                            |
-| Versión        | 1.25c24c2 del 11 Sep 2023 |
+| Versión        | 1.6867718 del 11 Sep 2023 |
 | Vínculos       | [N003a Vista Segmento PGN SIU](N03a%a20Vsta%20aSegenta%20SOA%20PGN.md) |
 
 <br>
@@ -202,6 +202,9 @@ Otras restricciones a detallar.
 # Línea Base PGN SIU
 ## Lineabase.0.SIU applicación
 ![Diagram: Lineabase.0.SIU applicación](images/Lineabase.0.SIUapplicación.png){#fig:Lineabase.0.SIUapplicación width=}
+
+Procuraduría General de la Nación, proyecto Migración SIU, 2023, Fase II. Línea base del sistema único de información (SUI en adelante) de la PGN. Presentación de componentes de software  originales implementados en la Fase I del presente proyecto.
+
 
 ## Representación Arquitectónica
 Con una arquitectura orientada a servicios SUI recopila:
@@ -434,6 +437,8 @@ La disposición de los módulos y submódulos presentada, denominada SUI Migraci
 |**interfaz**|application-interface|||
 |**interfaz**|application-interface|||
 |**interfaz**|application-interface|||
+|**Cliente PGN**|business-actor|||
+|**Funcionario PGN**|business-actor|||
 |**RQR. Administrativos**|requirement|||
 |**RQR. Funcionales**|requirement|||
 |**RQR. Ingeniería**|requirement|||
@@ -690,7 +695,7 @@ El portal es el conjunto de los elementos físicos y lógicos necesarios para la
 |**Application Interface**|application-interface|||
 
 
-``Generated on: Mon Sep 11 2023 15:47:30 GMT-0500 (COT)``
+``Generated on: Mon Sep 11 2023 16:48:39 GMT-0500 (COT)``
 
 ## Requerimientos de Administración
 1.	Las soluciones deben permitir la administración de los Roles de Usuarios: esta funcionalidad debe permitir configurar los diferentes roles de los usuarios funcionales de los procesos. 
