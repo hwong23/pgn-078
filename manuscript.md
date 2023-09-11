@@ -18,8 +18,8 @@ header-includes: |
   <meta name="dc.date" content="2023-09-11" />
   <meta name="citation_publication_date" content="2023-09-11" />
   <meta property="article:published_time" content="2023-09-11" />
-  <meta name="dc.modified" content="2023-09-11T01:44:37+00:00" />
-  <meta property="article:modified_time" content="2023-09-11T01:44:37+00:00" />
+  <meta name="dc.modified" content="2023-09-11T02:05:13+00:00" />
+  <meta property="article:modified_time" content="2023-09-11T02:05:13+00:00" />
   <meta name="dc.language" content="en-US" />
   <meta name="citation_language" content="en-US" />
   <meta name="dc.relation.ispartof" content="Manubot" />
@@ -34,9 +34,9 @@ header-includes: |
   <meta name="citation_fulltext_html_url" content="https://hwong23.github.io/pgn-078/" />
   <meta name="citation_pdf_url" content="https://hwong23.github.io/pgn-078/manuscript.pdf" />
   <link rel="alternate" type="application/pdf" href="https://hwong23.github.io/pgn-078/manuscript.pdf" />
-  <link rel="alternate" type="text/html" href="https://hwong23.github.io/pgn-078/v/dd4fded02e9e130bf2c318606933a296c2c5d770/" />
-  <meta name="manubot_html_url_versioned" content="https://hwong23.github.io/pgn-078/v/dd4fded02e9e130bf2c318606933a296c2c5d770/" />
-  <meta name="manubot_pdf_url_versioned" content="https://hwong23.github.io/pgn-078/v/dd4fded02e9e130bf2c318606933a296c2c5d770/manuscript.pdf" />
+  <link rel="alternate" type="text/html" href="https://hwong23.github.io/pgn-078/v/ab91897c0e17bce464ab1f19f5165b64f448d223/" />
+  <meta name="manubot_html_url_versioned" content="https://hwong23.github.io/pgn-078/v/ab91897c0e17bce464ab1f19f5165b64f448d223/" />
+  <meta name="manubot_pdf_url_versioned" content="https://hwong23.github.io/pgn-078/v/ab91897c0e17bce464ab1f19f5165b64f448d223/manuscript.pdf" />
   <meta property="og:type" content="article" />
   <meta property="twitter:card" content="summary_large_image" />
   <link rel="icon" type="image/png" sizes="192x192" href="https://manubot.org/favicon-192x192.png" />
@@ -65,13 +65,13 @@ tablenos-caption-name: Tabla
 
 
 <small><em>Los productos de esta etapa, Migración Funcional SIU, Contrato 078-2023, 
-([Web](https://hwong23.github.io/pgn-078/v/dd4fded02e9e130bf2c318606933a296c2c5d770/))
+([Web](https://hwong23.github.io/pgn-078/v/ab91897c0e17bce464ab1f19f5165b64f448d223/))
 están basados en el resultado de la Fase 1 del proyecto PGN SIU del 2022,
-[Sharepoint Softgic@dd4fded](http://softgic.sharepoint.com)
+[Sharepoint Softgic@ab91897](http://softgic.sharepoint.com)
 del September 11, 2023.
 </em></small>
 
-|    **Versión** del producto 1.dd4fded de 11 Sep 2023
+|    **Versión** del producto 1.ab91897 de 11 Sep 2023
 
 
 
@@ -113,7 +113,7 @@ Descripción de los productos del trabajo de arquitectura de la Fase 2, proyecto
 | Palabras clave | SIU, Softgic, PGN, Análisis de brecha, GAP, Comparativa              |
 | Autor          |                            |
 | Fuente         |                            |
-| Versión        | 1.dd4fded del 11 Sep 2023 |
+| Versión        | 1.ab91897 del 11 Sep 2023 |
 | Vínculos       | [N003a Vista Segmento PGN SIU](N03a%a20Vsta%20aSegenta%20SOA%20PGN.md) |
 
 <br>
@@ -404,7 +404,7 @@ Cuantro paquetes con tecnologías respectivas
 
 # Organización cambios arquitectura
 ## Organización. 1n. Mapa producto
-![Diagram: Organización. 1n. Mapa producto](images/Organización.1n.Mapaproducto.png){#fig:Organización.1n.Mapaproducto width=1.69in}
+![Diagram: Organización. 1n. Mapa producto](images/Organización.1n.Mapaproducto.png){#fig:Organización.1n.Mapaproducto width=1.69}
 
 ### Catálogo de Elementos
 | Name| Type| Description| Properties
@@ -488,7 +488,7 @@ De arriba a abajo:
 |**Iteración 7**|work-package||*modulo:* relatoria<br>|
 
 
-``Generated on: Sun Sep 10 2023 20:32:26 GMT-0500 (COT)``
+``Generated on: Sun Sep 10 2023 21:02:22 GMT-0500 (COT)``
 
 ## Requerimientos de Administración
 1.	Las soluciones deben permitir la administración de los Roles de Usuarios: esta funcionalidad debe permitir configurar los diferentes roles de los usuarios funcionales de los procesos. 
