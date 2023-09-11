@@ -1,6 +1,6 @@
 
 ## Lineabase.1.SIU componente
-![Diagram: Lineabase.1.SIU componente](images/Lineabase.1.SIUcomponente.png){#fig:Lineabase.1.SIUcomponente width=}
+![Diagram: Lineabase.1.SIU componente](images/Lineabase.1.SIUcomponente.png){#fig:Lineabase.1.SIUcomponente width=5.89in}
 
 Distribución de los servicios y paquetes que integran la aplicación de SUI. 
 
