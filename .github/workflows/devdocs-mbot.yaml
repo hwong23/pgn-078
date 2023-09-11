@@ -72,6 +72,9 @@ jobs:
           echo "COMPILATION_DATE=$(date +'%d %b %Y')" >> $GITHUB_ENV
           echo "PROYECTO=078-2023" >> $GITHUB_ENV
           echo "PROY_DESCR=Fase 2, PGN Migración Funcional SIU" >> $GITHUB_ENV
+          echo "APLICATIVO=Sistema Único de Información (SUI)" >> $GITHUB_ENV
+          echo "CLIENTE=Procuraduría General de la NAción (PGN)" >> $GITHUB_ENV
+
       - name: Cache
         uses: actions/cache@v3
         with:
