@@ -44,7 +44,7 @@ Dependencias de infraestructura entre los servicios que integran el modelo de ap
 |**Interfaz de datos 3**|application-service|||
 |**ccccc Proveedores contenidos**|application-service|||
 |**Mensaje: JSON**|data-object|||
-|**Grouping**|grouping|||
+|**Infraestructura SUI**|grouping|Soporte de infraestructura a los componentes del SUI Migración. Servidores y ambientes de cómputo para la ejecución del software base de los componentes misionales del SUI de PGN.<br>||
 |**PGN SIU**|grouping|El objetivo principal de la arquitectura del SUI de la migración es la centralización de los conceptos misionales: concentrar los conceptos misionales en componentes aislados; dejar por fuera de estos componentes misionales todo lo distintos a la misionalidad de la PGN.<br>Los objetivos secundarios de esta arquitectura SUI de la migración son flexibilidad y extensibilidad. Dichos objetivos son independientes. Es decir, estos pueden ser maximizados sin conclifcto entre ellos.<br>||
 |**Servidor BDD App**|node|||
 |**Servidor BDD Config**|node|||
