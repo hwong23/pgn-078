@@ -18,8 +18,8 @@ header-includes: |
   <meta name="dc.date" content="2023-09-11" />
   <meta name="citation_publication_date" content="2023-09-11" />
   <meta property="article:published_time" content="2023-09-11" />
-  <meta name="dc.modified" content="2023-09-11T21:51:28+00:00" />
-  <meta property="article:modified_time" content="2023-09-11T21:51:28+00:00" />
+  <meta name="dc.modified" content="2023-09-11T22:20:04+00:00" />
+  <meta property="article:modified_time" content="2023-09-11T22:20:04+00:00" />
   <meta name="dc.language" content="en-US" />
   <meta name="citation_language" content="en-US" />
   <meta name="dc.relation.ispartof" content="Manubot" />
@@ -34,9 +34,9 @@ header-includes: |
   <meta name="citation_fulltext_html_url" content="https://hwong23.github.io/pgn-078/" />
   <meta name="citation_pdf_url" content="https://hwong23.github.io/pgn-078/manuscript.pdf" />
   <link rel="alternate" type="application/pdf" href="https://hwong23.github.io/pgn-078/manuscript.pdf" />
-  <link rel="alternate" type="text/html" href="https://hwong23.github.io/pgn-078/v/68677182285f6aa3bc018cb4aa089b70e6d21a4e/" />
-  <meta name="manubot_html_url_versioned" content="https://hwong23.github.io/pgn-078/v/68677182285f6aa3bc018cb4aa089b70e6d21a4e/" />
-  <meta name="manubot_pdf_url_versioned" content="https://hwong23.github.io/pgn-078/v/68677182285f6aa3bc018cb4aa089b70e6d21a4e/manuscript.pdf" />
+  <link rel="alternate" type="text/html" href="https://hwong23.github.io/pgn-078/v/80d8c54507f0557c363d469a1bfa1fc7c6eca7a2/" />
+  <meta name="manubot_html_url_versioned" content="https://hwong23.github.io/pgn-078/v/80d8c54507f0557c363d469a1bfa1fc7c6eca7a2/" />
+  <meta name="manubot_pdf_url_versioned" content="https://hwong23.github.io/pgn-078/v/80d8c54507f0557c363d469a1bfa1fc7c6eca7a2/manuscript.pdf" />
   <meta property="og:type" content="article" />
   <meta property="twitter:card" content="summary_large_image" />
   <link rel="icon" type="image/png" sizes="192x192" href="https://manubot.org/favicon-192x192.png" />
@@ -65,13 +65,13 @@ tablenos-caption-name: Tabla
 
 
 <small><em>Los productos de esta etapa, Migración Funcional SIU, Contrato 078-2023, 
-([Web](https://hwong23.github.io/pgn-078/v/68677182285f6aa3bc018cb4aa089b70e6d21a4e/))
+([Web](https://hwong23.github.io/pgn-078/v/80d8c54507f0557c363d469a1bfa1fc7c6eca7a2/))
 están basados en el resultado de la Fase 1 del proyecto PGN SIU del 2022,
-[Sharepoint Softgic@6867718](http://softgic.sharepoint.com)
+[Sharepoint Softgic@80d8c54](http://softgic.sharepoint.com)
 del September 11, 2023.
 </em></small>
 
-|    **Versión** del producto 1.6867718 de 11 Sep 2023
+|    **Versión** del producto 1.80d8c54 de 11 Sep 2023
 
 
 
@@ -114,7 +114,7 @@ Descripción de los productos del trabajo de arquitectura de la Fase 2, proyecto
 | Palabras clave | SIU, Softgic, PGN, Análisis de brecha, GAP, Comparativa              |
 | Autor          |                            |
 | Fuente         |                            |
-| Versión        | 1.6867718 del 11 Sep 2023 |
+| Versión        | 1.80d8c54 del 11 Sep 2023 |
 | Vínculos       | [N003a Vista Segmento PGN SIU](N03a%a20Vsta%20aSegenta%20SOA%20PGN.md) |
 
 <br>
@@ -742,6 +742,159 @@ Administrar los Usuarios de la Solución: Esta funcionalidad debe permitir confi
 
 <br>
 ˝
+
+# Documento de Arquitectura SUI PGN
+
+ ___ 
+* [Descripción de Infraestrctura Migración SUI PGN](#descripción-de-infraestrctura-migración-sui-pgn)
+	* [Lineabase.1a.SIU componentes. infraestrcutura](#lineabase.1a.siu-componentes.-infraestrcutura)
+	* [Lineabase.0.SIU applicación. física](#lineabase.0.siu-applicación.-física)
+	* [Seguridad. Lineabase.0.SIU applicación](#seguridad.-lineabase.0.siu-applicación)
+
+<div style="page-break-before: always;"></div>
+\newpage
+ ___ 
+
+# Descripción de Infraestrctura Migración SUI PGN
+## Lineabase.1a.SIU componentes. infraestrcutura
+![Diagram: Lineabase.1a.SIU componentes. infraestrcutura](images/Lineabase.1a.SIUcomponentes.infraestrcutura.png){#fig:Lineabase.1a.SIUcomponentes.infraestrcutura width=}
+
+Dependencias de infraestructura entre los servicios que integran el modelo de aplicación de SUI, Migración. 
+
+* Servidor de Canales (App PGN web y móvil)
+* Servidor Web App (App SUI)
+* Servidor Lappiz (Config SUI)
+* Servidor BDD App (Transaccional)
+* Servidor BDD Config (Configuración)
+
+
+
+### Catálogo de Elementos
+| Name| Type| Description| Properties
+|:--------|:--------|:--------|:--------|
+|**Persistencia**|application-collaboration|||
+|**App**|application-component||*plataforma:* node Js<br>|
+|**App PGN Móvil**|application-component|||
+|**App PGN Web**|application-component||*plataforma:* angular 11<br>|
+|**Config**|application-component||*plataforma:* cs<br>|
+|**Controlador admin**|application-component||*plataforma:* cs<br>|
+|**Controlador frontal mvl**|application-component||*plataforma:* js<br>|
+|**Controlador frontal web**|application-component||*plataforma:* js<br>|
+|**Controlador funcional**|application-component||*plataforma:* js<br>|
+|**Modelo (neg)**|application-component||*plataforma:* cs<br>|
+|**Puerto datos 1**|application-component||*plataforma:* js<br>|
+|**Puerto datos 2**|application-component||*plataforma:* cs<br>|
+|**Seguridad**|application-component||*plataforma:* sql<br>|
+|**Transacciones**|application-component||*plataforma:* sql<br>|
+|**Utilitario**|application-component||*plataforma:* no-sql<br>|
+|**Vista móvil**|application-component||*plataforma:* js<br>|
+|**Vista web**|application-component||*plataforma:* html<br>|
+|**Interfaz de aplicación (runtime)**|application-interface||*plataforma:* angular 11<br>|
+|**API externas**|application-service|||
+|**Application Service (NLB)**|application-service||*plataforma:* angular 11<br>|
+|**Archivos Compartidos**|application-service|||
+|**CDN Contenidos**|application-service|||
+|**Doku (gest. doc.)**|application-service|||
+|**Identidades**|application-service|||
+|**Interfaz de datos 1**|application-service|||
+|**Interfaz de datos 2**|application-service|||
+|**Interfaz de datos 3**|application-service|||
+|**ccccc Proveedores contenidos**|application-service|||
+|**Mensaje: JSON**|data-object|||
+|**Infraestructura SUI**|grouping|Soporte de infraestructura a los componentes del SUI Migración. Servidores y ambientes de cómputo para la ejecución del software base de los componentes misionales del SUI de PGN.<br>||
+|**PGN SIU**|grouping|El objetivo principal de la arquitectura del SUI de la migración es la centralización de los conceptos misionales: concentrar los conceptos misionales en componentes aislados; dejar por fuera de estos componentes misionales todo lo distintos a la misionalidad de la PGN.<br>Los objetivos secundarios de esta arquitectura SUI de la migración son flexibilidad y extensibilidad. Dichos objetivos son independientes. Es decir, estos pueden ser maximizados sin conclifcto entre ellos.<br>||
+|**Servidor BDD App**|node|||
+|**Servidor BDD Config**|node|||
+|**Servidor Lappiz **|node|||
+|**Servidor Web App**|node|||
+|**Servidor Web Canales**|node|Nombre físico<br>IP LAN<br>IP Pública<br>||
+
+## Lineabase.0.SIU applicación. física
+![Diagram: Lineabase.0.SIU applicación. física](images/Lineabase.0.SIUapplicación.física.png){#fig:Lineabase.0.SIUapplicación.física width=}
+
+## Representación Arquitectónica
+Con una arquitectura orientada a servicios SUI recopila:
+
+1. Runtime: Es el servicio que interactúa con el usuario final (GUI) elaborado en Angular 11
+1. API Tx: Servicio api rest base node encargado de realizar las transacciones básicas CRUD
+1. API Config / Seguridad. Servicio Web API .Net Framework encargado de gestionar características con la autenticación y configuración
+
+
+
+
+### Catálogo de Elementos
+| Name| Type| Description| Properties
+|:--------|:--------|:--------|:--------|
+|**Application Collaboration**|application-collaboration|||
+|**Application Collaboration**|application-collaboration|||
+|**App**|application-component||*plataforma:* node Js<br>|
+|**App PGN Móvil**|application-component|||
+|**App PGN Web**|application-component||*plataforma:* angular 11<br>|
+|**Config**|application-component||*plataforma:* cs<br>|
+|**Punto acceso público**|application-interface|URL tipo C<br>HTTP||
+|**Application Service (NLB)**|application-service||*plataforma:* angular 11<br>|
+|**Interfaz de datos 1**|application-service|||
+|**Interfaz de datos 2**|application-service|||
+|**Communication Network (DMZ)**|communication-network|||
+|**Communication Network (LAN)**|communication-network|||
+|**Communication Network (internet)**|communication-network|||
+|**Balanceador**|node|||
+|**Servidor BDD App**|node|||
+|**Servidor BDD Config**|node|||
+|**Servidor Lappiz **|node|||
+|**Servidor Web App**|node|||
+|**Servidor Web Canales**|node|Nombre físico<br>IP LAN<br>IP Pública<br>||
+|**www pgn com**|technology-interface|||
+
+## Seguridad. Lineabase.0.SIU applicación
+![Diagram: Seguridad. Lineabase.0.SIU applicación](images/Seguridad.Lineabase.0.SIUapplicación.png){#fig:Seguridad.Lineabase.0.SIUapplicación width=}
+
+# Representación Arquitectónica
+Con una arquitectura orientada a servicios SUI recopila:
+
+1. Runtime: Es el servicio que interactúa con el usuario final (GUI) elaborado en Angular 11
+1. API Tx: Servicio api rest base node encargado de realizar las transacciones básicas CRUD
+1. API Config / Seguridad. Servicio Web API .Net Framework encargado de gestionar características con la autenticación y configuración
+
+
+
+
+### Catálogo de Elementos
+| Name| Type| Description| Properties
+|:--------|:--------|:--------|:--------|
+|**Application Collaboration**|application-collaboration|||
+|**Application Collaboration**|application-collaboration|||
+|**App**|application-component||*plataforma:* node Js<br>|
+|**App PGN Móvil**|application-component|||
+|**App PGN Web**|application-component||*plataforma:* angular 11<br>|
+|**Config**|application-component||*plataforma:* cs<br>|
+|**Punto acceso público**|application-interface|URL tipo C<br>HTTP||
+|**Application Service (NLB)**|application-service||*plataforma:* angular 11<br>|
+|**Interfaz de datos 1**|application-service|||
+|**Interfaz de datos 2**|application-service|||
+|**Communication Network (DMZ)**|communication-network|||
+|**Communication Network (LAN)**|communication-network|||
+|**Communication Network (internet)**|communication-network|||
+|**Balanceador**|node|||
+|**FW BD.**|node|||
+|**Network Firewall**|node|||
+|**Servidor BDD App**|node|||
+|**Servidor BDD Config**|node|||
+|**Servidor Lappiz **|node|||
+|**Servidor Web App**|node|||
+|**Servidor Web Canales**|node|Nombre físico<br>IP LAN<br>IP Pública<br>||
+|**Sistema de Seguridad (LDAP) 1**|node|Sistema de Seguridad (LDAP) 1. Control de acceso internet<br>||
+|**Sistema de Seguridad (LDAP) 2**|node|Sistema de Seguridad (LDAP) 2. Control de acceso a datos||
+|**Analizador de acceso a la red. SIEM- EDR**|resource|||
+|**www pgn com**|technology-interface|||
+|**Asignación de Tokens**|value-stream|||
+|**HTTPS, TLS, SSL**|value-stream|||
+|**Requiere 2 MFA**|value-stream|||
+|**Uso de claves criptograficas.**|value-stream|||
+|**Uso de claves criptograficas. (copy)**|value-stream|||
+
+
+``Generated on: Mon Sep 11 2023 17:17:08 GMT-0500 (COT)``
 
 <div style="page-break-before: always;"></div>
 \newpage
