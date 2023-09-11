@@ -18,8 +18,8 @@ header-includes: |
   <meta name="dc.date" content="2023-09-11" />
   <meta name="citation_publication_date" content="2023-09-11" />
   <meta property="article:published_time" content="2023-09-11" />
-  <meta name="dc.modified" content="2023-09-11T01:01:32+00:00" />
-  <meta property="article:modified_time" content="2023-09-11T01:01:32+00:00" />
+  <meta name="dc.modified" content="2023-09-11T01:07:41+00:00" />
+  <meta property="article:modified_time" content="2023-09-11T01:07:41+00:00" />
   <meta name="dc.language" content="en-US" />
   <meta name="citation_language" content="en-US" />
   <meta name="dc.relation.ispartof" content="Manubot" />
@@ -34,9 +34,9 @@ header-includes: |
   <meta name="citation_fulltext_html_url" content="https://hwong23.github.io/pgn-078/" />
   <meta name="citation_pdf_url" content="https://hwong23.github.io/pgn-078/manuscript.pdf" />
   <link rel="alternate" type="application/pdf" href="https://hwong23.github.io/pgn-078/manuscript.pdf" />
-  <link rel="alternate" type="text/html" href="https://hwong23.github.io/pgn-078/v/393881e8131030b82f134f80cf2c9c245661069f/" />
-  <meta name="manubot_html_url_versioned" content="https://hwong23.github.io/pgn-078/v/393881e8131030b82f134f80cf2c9c245661069f/" />
-  <meta name="manubot_pdf_url_versioned" content="https://hwong23.github.io/pgn-078/v/393881e8131030b82f134f80cf2c9c245661069f/manuscript.pdf" />
+  <link rel="alternate" type="text/html" href="https://hwong23.github.io/pgn-078/v/3c592c945cb331867d18ac642a997396561feb48/" />
+  <meta name="manubot_html_url_versioned" content="https://hwong23.github.io/pgn-078/v/3c592c945cb331867d18ac642a997396561feb48/" />
+  <meta name="manubot_pdf_url_versioned" content="https://hwong23.github.io/pgn-078/v/3c592c945cb331867d18ac642a997396561feb48/manuscript.pdf" />
   <meta property="og:type" content="article" />
   <meta property="twitter:card" content="summary_large_image" />
   <link rel="icon" type="image/png" sizes="192x192" href="https://manubot.org/favicon-192x192.png" />
@@ -65,13 +65,13 @@ tablenos-caption-name: Tabla
 
 
 <small><em>Los productos de esta etapa, Migración Funcional SIU, Contrato 078-2023, 
-([Web](https://hwong23.github.io/pgn-078/v/393881e8131030b82f134f80cf2c9c245661069f/))
+([Web](https://hwong23.github.io/pgn-078/v/3c592c945cb331867d18ac642a997396561feb48/))
 están basados en el resultado de la Fase 1 del proyecto PGN SIU del 2022,
-[Sharepoint Softgic@393881e](http://softgic.sharepoint.com)
+[Sharepoint Softgic@3c592c9](http://softgic.sharepoint.com)
 del September 11, 2023.
 </em></small>
 
-|    **Versión** del producto 1.393881e de 11 Sep 2023
+|    **Versión** del producto 1.3c592c9 de 11 Sep 2023
 
 
 
@@ -113,7 +113,7 @@ Descripción de los productos del trabajo de arquitectura de la Fase 2, proyecto
 | Palabras clave | SIU, Softgic, PGN, Análisis de brecha, GAP, Comparativa              |
 | Autor          |                            |
 | Fuente         |                            |
-| Versión        | 1.393881e del 11 Sep 2023 |
+| Versión        | 1.3c592c9 del 11 Sep 2023 |
 | Vínculos       | [N003a Vista Segmento PGN SIU](N03a%a20Vsta%20aSegenta%20SOA%20PGN.md) |
 
 <br>
@@ -190,12 +190,14 @@ Con una arquitectura orientada a servicios SUI recopila:
 Distribución de los servicios y paquetes que integran la aplicación de SUI. 
 
 Cuatro paquetes con tecnologías respectivas
+
 1. Angular 11 (Web)
 1. API Transaccional (Node Js)
 1. API Config (C#)
 1. Persistencia (SQL)
 
 Asuntos de la Migración:
+
 * Estrategia CMS central
 * Motor de búsqueda
 * Estatego como BI
@@ -250,6 +252,7 @@ Asuntos de la Migración:
 Dependencias entre los servicios que integran la aplicación de SUI. 
 
 4 paquetes con tecnologías respectivas Angular 11 (Web), Api Transaccional (Node Js) y Api Config (C#) y el alojamiento de datos.
+
 
 ### Catálogo de Elementos
 | Name| Type| Description| Properties
@@ -356,6 +359,7 @@ Informar a la PGN de las implicaciones junto con alternativas para la implementa
 Distribución de los servicios y paquetes que integran la aplicación de SUI. 
 
 Cuantro paquetes con tecnologías respectivas
+
 1. Angular 11 (Web)
 1. API Transaccional (Node Js)
 1. API Config (C#)
@@ -506,7 +510,7 @@ De arriba a abajo:
 |**Iteración 7**|work-package||*modulo:* relatoria<br>|
 
 
-``Generated on: Sun Sep 10 2023 19:59:12 GMT-0500 (COT)``
+``Generated on: Sun Sep 10 2023 20:05:46 GMT-0500 (COT)``
 
 ## Requerimientos de Administración
 1.	Las soluciones deben permitir la administración de los Roles de Usuarios: esta funcionalidad debe permitir configurar los diferentes roles de los usuarios funcionales de los procesos. 
