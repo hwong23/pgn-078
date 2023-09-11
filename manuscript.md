@@ -18,8 +18,8 @@ header-includes: |
   <meta name="dc.date" content="2023-09-11" />
   <meta name="citation_publication_date" content="2023-09-11" />
   <meta property="article:published_time" content="2023-09-11" />
-  <meta name="dc.modified" content="2023-09-11T22:34:39+00:00" />
-  <meta property="article:modified_time" content="2023-09-11T22:34:39+00:00" />
+  <meta name="dc.modified" content="2023-09-11T23:53:49+00:00" />
+  <meta property="article:modified_time" content="2023-09-11T23:53:49+00:00" />
   <meta name="dc.language" content="en-US" />
   <meta name="citation_language" content="en-US" />
   <meta name="dc.relation.ispartof" content="Manubot" />
@@ -34,9 +34,9 @@ header-includes: |
   <meta name="citation_fulltext_html_url" content="https://hwong23.github.io/pgn-078/" />
   <meta name="citation_pdf_url" content="https://hwong23.github.io/pgn-078/manuscript.pdf" />
   <link rel="alternate" type="application/pdf" href="https://hwong23.github.io/pgn-078/manuscript.pdf" />
-  <link rel="alternate" type="text/html" href="https://hwong23.github.io/pgn-078/v/be00601694120cdf2e9ee2b378fac8c3bcf9563f/" />
-  <meta name="manubot_html_url_versioned" content="https://hwong23.github.io/pgn-078/v/be00601694120cdf2e9ee2b378fac8c3bcf9563f/" />
-  <meta name="manubot_pdf_url_versioned" content="https://hwong23.github.io/pgn-078/v/be00601694120cdf2e9ee2b378fac8c3bcf9563f/manuscript.pdf" />
+  <link rel="alternate" type="text/html" href="https://hwong23.github.io/pgn-078/v/06142f4b3c0cc5274507249e0047ad592b19118c/" />
+  <meta name="manubot_html_url_versioned" content="https://hwong23.github.io/pgn-078/v/06142f4b3c0cc5274507249e0047ad592b19118c/" />
+  <meta name="manubot_pdf_url_versioned" content="https://hwong23.github.io/pgn-078/v/06142f4b3c0cc5274507249e0047ad592b19118c/manuscript.pdf" />
   <meta property="og:type" content="article" />
   <meta property="twitter:card" content="summary_large_image" />
   <link rel="icon" type="image/png" sizes="192x192" href="https://manubot.org/favicon-192x192.png" />
@@ -65,13 +65,13 @@ tablenos-caption-name: Tabla
 
 
 <small><em>Los productos de esta etapa, Migración Funcional SIU, Contrato 078-2023, 
-([Web](https://hwong23.github.io/pgn-078/v/be00601694120cdf2e9ee2b378fac8c3bcf9563f/))
+([Web](https://hwong23.github.io/pgn-078/v/06142f4b3c0cc5274507249e0047ad592b19118c/))
 están basados en el resultado de la Fase 1 del proyecto PGN SIU del 2022,
-[Sharepoint Softgic@be00601](http://softgic.sharepoint.com)
+[Sharepoint Softgic@06142f4](http://softgic.sharepoint.com)
 del September 11, 2023.
 </em></small>
 
-|    **Versión** del producto 1.be00601 de 11 Sep 2023
+|    **Versión** del producto 1.06142f4 de 11 Sep 2023
 
 
 
@@ -114,7 +114,7 @@ Descripción de los productos del trabajo de arquitectura de la Fase 2, proyecto
 | Palabras clave | SIU, Softgic, PGN, Análisis de brecha, GAP, Comparativa              |
 | Autor          |                            |
 | Fuente         |                            |
-| Versión        | 1.be00601 del 11 Sep 2023 |
+| Versión        | 1.06142f4 del 11 Sep 2023 |
 | Vínculos       | [N003a Vista Segmento PGN SIU](N03a%a20Vsta%20aSegenta%20SOA%20PGN.md) |
 
 <br>
@@ -751,11 +751,34 @@ Administrar los Usuarios de la Solución: Esta funcionalidad debe permitir confi
 <br>
 ˝
 
-# Documento de Arquitectura SUI PGN
+# Descripción de Infraestructura Migración SUI PGN
+
+## Objetivo del Documento
+Descripción de los productos del trabajo de infraestructura del proyecto Migración SUI, Fase 2, de la Procuraduría General de la Nación (PGN en adelante), Contrato 078-2023. El principal propósito de este documento es informar de las decisiones sobre la disposición física de las ítems de hardware, redes y cómputo (procesamiento, comunicación y almacenamiento) del sistema SUI Migración. Por tanto, el documento contiene información estratégica para la toma de decisiones de plataforma y servicios de infraestructura, no un diseño detallado. Puntualmente, refleja decisiones sobre la plataforma tecnológica seleccionada, así como consideraciones importantes para el diseño y desarrollo, con procura de garantizar una solución técnicamente viable y óptima para el proyecto.
+
+
+<br>
+
+##  Control de Cambios {.page_break_before}
+| Tema           | 078-2023 Fase 2, PGN Migración Funcional SIU      |
+|----------------|----------------------------|
+| Palabras clave | SIU, Softgic, PGN, Análisis de brecha, GAP, Comparativa              |
+| Autor          |                            |
+| Fuente         |                            |
+| Versión        | 1.06142f4 del 11 Sep 2023 |
+| Vínculos       | [N003a Vista Segmento PGN SIU](N03a%a20Vsta%20aSegenta%20SOA%20PGN.md) |
+
+<br>
+
+<br>
+
+<div style="page-break-before: always;"></div>
+\newpage
+
 
  ___ 
-* [Descripción de Infraestrctura Migración SUI PGN](#descripción-de-infraestrctura-migración-sui-pgn)
-	* [Lineabase.1a.SIU componentes. infraestrcutura](#lineabase.1a.siu-componentes.-infraestrcutura)
+* [Descripción de Infraestructura Migración SUI PGN](#descripci%C3%B3n-de-infraestructura-migraci%C3%B3n-sui-pgn)
+	* [Lineabase.1a.SIU componentes. infraestrcutura](#lineabase1asiu-componentes-infraestructura)
 	* [Lineabase.0.SIU applicación. física](#lineabase.0.siu-applicación.-física)
 	* [Seguridad. Lineabase.0.SIU applicación](#seguridad.-lineabase.0.siu-applicación)
 
@@ -763,9 +786,9 @@ Administrar los Usuarios de la Solución: Esta funcionalidad debe permitir confi
 \newpage
  ___ 
 
-# Descripción de Infraestrctura Migración SUI PGN
-## Lineabase.1a.SIU componentes. infraestrcutura
-![Diagram: Lineabase.1a.SIU componentes. infraestrcutura](images/Lineabase.1a.SIUcomponentes.infraestrcutura.png){#fig:Lineabase.1a.SIUcomponentes.infraestrcutura width=}
+# Descripción de Infraestructura Migración SUI PGN
+## Lineabase.1a.SIU componentes. infraestructura
+![Diagram: Lineabase.1a.SIU componentes. infraestructura](images/Lineabase.1a.SIUcomponentes.infraestrcutura.png){#fig:Lineabase.1a.SIUcomponentes.infraestrcutura width=}
 
 Dependencias de infraestructura entre los servicios que integran el modelo de aplicación de SUI, Migración. 
 
