@@ -18,8 +18,8 @@ header-includes: |
   <meta name="dc.date" content="2023-09-11" />
   <meta name="citation_publication_date" content="2023-09-11" />
   <meta property="article:published_time" content="2023-09-11" />
-  <meta name="dc.modified" content="2023-09-11T00:30:33+00:00" />
-  <meta property="article:modified_time" content="2023-09-11T00:30:33+00:00" />
+  <meta name="dc.modified" content="2023-09-11T00:49:36+00:00" />
+  <meta property="article:modified_time" content="2023-09-11T00:49:36+00:00" />
   <meta name="dc.language" content="en-US" />
   <meta name="citation_language" content="en-US" />
   <meta name="dc.relation.ispartof" content="Manubot" />
@@ -34,9 +34,9 @@ header-includes: |
   <meta name="citation_fulltext_html_url" content="https://hwong23.github.io/pgn-078/" />
   <meta name="citation_pdf_url" content="https://hwong23.github.io/pgn-078/manuscript.pdf" />
   <link rel="alternate" type="application/pdf" href="https://hwong23.github.io/pgn-078/manuscript.pdf" />
-  <link rel="alternate" type="text/html" href="https://hwong23.github.io/pgn-078/v/35c3a13da0365a73acae6119e0e9dda72ff1041c/" />
-  <meta name="manubot_html_url_versioned" content="https://hwong23.github.io/pgn-078/v/35c3a13da0365a73acae6119e0e9dda72ff1041c/" />
-  <meta name="manubot_pdf_url_versioned" content="https://hwong23.github.io/pgn-078/v/35c3a13da0365a73acae6119e0e9dda72ff1041c/manuscript.pdf" />
+  <link rel="alternate" type="text/html" href="https://hwong23.github.io/pgn-078/v/6eed3059c1a097665a84afd7b77888672e4a093b/" />
+  <meta name="manubot_html_url_versioned" content="https://hwong23.github.io/pgn-078/v/6eed3059c1a097665a84afd7b77888672e4a093b/" />
+  <meta name="manubot_pdf_url_versioned" content="https://hwong23.github.io/pgn-078/v/6eed3059c1a097665a84afd7b77888672e4a093b/manuscript.pdf" />
   <meta property="og:type" content="article" />
   <meta property="twitter:card" content="summary_large_image" />
   <link rel="icon" type="image/png" sizes="192x192" href="https://manubot.org/favicon-192x192.png" />
@@ -65,13 +65,13 @@ tablenos-caption-name: Tabla
 
 
 <small><em>Los productos de esta etapa, Migración Funcional SIU, Contrato 078-2023, 
-([Web](https://hwong23.github.io/pgn-078/v/35c3a13da0365a73acae6119e0e9dda72ff1041c/))
+([Web](https://hwong23.github.io/pgn-078/v/6eed3059c1a097665a84afd7b77888672e4a093b/))
 están basados en el resultado de la Fase 1 del proyecto PGN SIU del 2022,
-[Sharepoint Softgic@35c3a13](http://softgic.sharepoint.com)
+[Sharepoint Softgic@6eed305](http://softgic.sharepoint.com)
 del September 11, 2023.
 </em></small>
 
-|    **Versión** del producto 1.35c3a13 de 11 Sep 2023
+|    **Versión** del producto 1.6eed305 de 11 Sep 2023
 
 
 
@@ -113,7 +113,7 @@ Descripción de los productos del trabajo de arquitectura de la Fase 2, proyecto
 | Palabras clave | SIU, Softgic, PGN, Análisis de brecha, GAP, Comparativa              |
 | Autor          |                            |
 | Fuente         |                            |
-| Versión        | 1.35c3a13 del 11 Sep 2023 |
+| Versión        | 1.6eed305 del 11 Sep 2023 |
 | Vínculos       | [N003a Vista Segmento PGN SIU](N03a%a20Vsta%20aSegenta%20SOA%20PGN.md) |
 
 <br>
@@ -152,8 +152,10 @@ Descripción de los productos del trabajo de arquitectura de la Fase 2, proyecto
 
 # Línea Base PGN SIU
 [](#línea-base-pgn-siu)
+
 ## Lineabase.0.SIU applicación
 [](#lineabase.0.siu-applicación)
+
 ![Diagram: Lineabase.0.SIU applicación][Lineabase.0.SIU applicación]
 
 [Lineabase.0.SIU applicación]: images/Lineabase.0.SIUapplicación.png
@@ -184,6 +186,7 @@ Con una arquitectura orientada a servicios SUI recopila:
 
 ## Lineabase.1.SIU componente
 [](#lineabase.1.siu-componente)
+
 ![Diagram: Lineabase.1.SIU componente][Lineabase.1.SIU componente]
 
 [Lineabase.1.SIU componente]: images/Lineabase.1.SIUcomponente.png
@@ -245,6 +248,7 @@ Asuntos de la Migración:
 
 ## Lineabase.1a.SIU componente
 [](#lineabase.1a.siu-componente)
+
 ![Diagram: Lineabase.1a.SIU componente][Lineabase.1a.SIU componente]
 
 [Lineabase.1a.SIU componente]: images/Lineabase.1a.SIUcomponente.png
@@ -295,6 +299,7 @@ Dependencias entre los servicios que integran la aplicación de SUI.
 
 ## Linebase.2.Portal
 [](#linebase.2.portal)
+
 ![Diagram: Linebase.2.Portal][Linebase.2.Portal]
 
 [Linebase.2.Portal]: images/Linebase.2.Portal.png
@@ -317,6 +322,7 @@ El portal es el conjunto de los elementos físicos y lógicos necesarios para la
 
 ## Riesgos.1. Migración funcional
 [](#riesgos.1.-migración-funcional)
+
 ![Diagram: Riesgos.1. Migración funcional][Riesgos.1. Migración funcional]
 
 [Riesgos.1. Migración funcional]: images/Riesgos.1.Migraciónfuncional.png
@@ -351,8 +357,10 @@ Informar a la PGN de las implicaciones junto con alternativas para la implementa
 
 # Arquitectura Migración PGN SIU
 [](#arquitectura-migración-pgn-siu)
+
 ## Migracion.1.SIU modulos
 [](#migracion.1.siu-modulos)
+
 ![Diagram: Migracion.1.SIU modulos][Migracion.1.SIU modulos]
 
 [Migracion.1.SIU modulos]: images/Migracion.1.SIUmodulos.png
@@ -420,8 +428,10 @@ Cuantro paquetes con tecnologías respectivas
 
 # Organización cambios arquitectura
 [](#organización-cambios-arquitectura)
+
 ## Organización. 1n. Mapa producto
 [](#organización.-1n.-mapa-producto)
+
 ![Diagram: Organización. 1n. Mapa producto][Organización. 1n. Mapa producto]
 
 [Organización. 1n. Mapa producto]: images/Organización.1n.Mapaproducto.png
@@ -439,6 +449,7 @@ Cuantro paquetes con tecnologías respectivas
 
 ## Organización. 1n.1. Mapa producto PGN. Relatoría
 [](#organización.-1n.1.-mapa-producto-pgn.-relatoría)
+
 ![Diagram: Organización. 1n.1. Mapa producto PGN. Relatoría][Organización. 1n.1. Mapa producto PGN. Relatoría]
 
 [Organización. 1n.1. Mapa producto PGN. Relatoría]: images/Organización.1n.1.MapaproductoPGN.Relatoría.png
@@ -511,7 +522,7 @@ De arriba a abajo:
 |**Iteración 7**|work-package||*modulo:* relatoria<br>|
 
 
-``Generated on: Sun Sep 10 2023 19:27:16 GMT-0500 (COT)``
+``Generated on: Sun Sep 10 2023 19:47:31 GMT-0500 (COT)``
 
 ## Requerimientos de Administración
 1.	Las soluciones deben permitir la administración de los Roles de Usuarios: esta funcionalidad debe permitir configurar los diferentes roles de los usuarios funcionales de los procesos. 
