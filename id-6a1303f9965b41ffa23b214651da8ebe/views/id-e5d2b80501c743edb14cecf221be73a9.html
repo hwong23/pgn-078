@@ -1,0 +1,278 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN" "http://www.w3.org/TR/html4/loose.dtd">
+<html class="frame" lang="en">
+<head>
+	<meta http-equiv="Content-Type" content="text/html;charset=utf-8">
+	<title>Migracion.1b.SIU submodulos colaboración</title>
+
+	<!-- JQUERY (use 1.x branch to be compatible with IE 6/7/8) -->
+	<script type="text/javascript" src="../../lib/jquery/js/jquery-1.11.2.min.js"></script>
+	<!-- BOOTSTRAP -->
+	<link type="text/css" rel="stylesheet" href="../../lib/bootstrap/css/bootstrap.min.yeti.css">
+	<script type="text/javascript" src="../../lib/bootstrap/js/bootstrap-3.3.2.min.js"></script>
+	<!-- REPORT SPECIFIC -->
+	<link type="text/css" rel="stylesheet" href="../../css/model.css">
+	<link type="text/css" rel="stylesheet" href="../../css/i18n.css">
+	<script type="text/javascript" src="../../js/frame.js"></script>
+	<script type="text/javascript" src="../../js/imageMapResizer.min.js"></script>
+</head>
+
+<body>
+	<div class="panel panel-default root-panel">
+
+		<div class="panel-heading root-panel-heading">
+            <!-- Name -->
+               <b>Migracion.1b.SIU submodulos colaboraci&#243;n</b>
+
+            <!-- If a View with Viewpoint -->
+			   (<span class="i18n-viewpoint-"></span>)
+			   <a class="glyphicon glyphicon-info-sign" id="hint-viewpoint_" target="hint"></a>
+            <!-- Or if a model (i.e has Purpose method) -->
+		</div>
+
+		<div class="panel-body root-panel-body">
+		    <!-- If this is a digram model (has children and no bounds) show the image -->
+			   <img class="diagram" src="../images/id-e5d2b80501c743edb14cecf221be73a9.png" alt="Migracion.1b.SIU submodulos colaboración" usemap="#id-e5d2b80501c743edb14cecf221be73a9map"/>
+			   <map name="id-e5d2b80501c743edb14cecf221be73a9map">
+				          <area shape="rect" coords="68,1220,502,1270" href="../objects/id-528df5ccd71d47209862e6efcd219eff.html" target="element" >
+				          <area shape="rect" coords="20,1220,60,1270" href="../objects/id-e18b23b6fa8e4fb8a1af7a5e32c2455f.html" target="element" >
+				          <area shape="rect" coords="68,1148,502,1198" href="../objects/id-e2a029c2d97d424aa5001bee19f6f0e1.html" target="element" >
+				          <area shape="rect" coords="20,1148,60,1198" href="../objects/id-c0c7021bed0143ed817e5caa267f1212.html" target="element" >
+				  		<area shape="rect" coords="20,878,260,988" href="../elements/id-9c5bfbac3d1c488e99526a82bc226418.html"  target="element">
+				  		<area shape="rect" coords="1364,878,1604,988" href="../elements/id-756a454a4cfc41bd8fe2246808d66caa.html"  target="element">
+				  		<area shape="rect" coords="284,878,478,988" href="../elements/id-878aba926a3843c2a1d7330a5fc35e1f.html"  target="element">
+				  		<area shape="rect" coords="1124,878,1318,988" href="../elements/id-aaa11035d9fe4eb6a18d81e3e56c323a.html"  target="element">
+				  		<area shape="rect" coords="668,840,908,1034" href="../elements/id-c7b52dad823d406fbd54979c21119276.html"  target="element">
+				          <area shape="rect" coords="20,20,454,284" href="../objects/id-aa24574a6a994e6fbbb2bf21d6a82410.html" target="element" >
+				  		<area shape="rect" coords="428,398,622,508" href="../elements/id-878aba926a3843c2a1d7330a5fc35e1f.html"  target="element">
+				  		<area shape="rect" coords="956,398,1150,508" href="../elements/id-aaa11035d9fe4eb6a18d81e3e56c323a.html"  target="element">
+				  		<area shape="rect" coords="1364,398,1604,508" href="../elements/id-756a454a4cfc41bd8fe2246808d66caa.html"  target="element">
+				  		<area shape="rect" coords="20,398,260,508" href="../elements/id-9c5bfbac3d1c488e99526a82bc226418.html"  target="element">
+				  		<area shape="rect" coords="668,356,908,550" href="../elements/id-c7b52dad823d406fbd54979c21119276.html"  target="element">
+
+			   </map>
+
+			<div role="tabpanel">
+				<!-- Nav tabs -->
+				<ul class="nav nav-tabs" role="tablist">
+                    <!-- Purpose / Documentation / Content -->
+					   <li role="presentation" class="active"><a href="#documentation" aria-controls="documentation" role="tab" data-toggle="tab" class="i18n-documentation"></a></li>
+
+                    <!-- Properties -->
+                    <li role="presentation"><a href="#properties" aria-controls="properties" role="tab" data-toggle="tab" class="i18n-properties"></a></li>
+
+						<li role="presentation"><a href="#elements" aria-controls="elements" role="tab" data-toggle="tab" class="i18n-elements"></a></li>
+						<li role="presentation"><a href="#relationships" aria-controls="relationships" role="tab" data-toggle="tab" class="i18n-relationships"></a></li>
+                    <!-- Model, Query Tab -->
+				</ul>
+
+				<!-- Tab panes -->
+				<div class="tab-content">
+					<div role="tabpanel" class="tab-pane active" id="documentation">
+						<div class="convertlinks documentation" style="white-space:pre-wrap">Patr&#243;n de Distribuci&#243;n y Colaboraci&#243;n est&#225;ndar para el SUI.
+
+La colaboraci&#243;n y comunicaci&#243;n de los componentes internos del SUI (grupo PFN SUI, en el diagrama) est&#225; mediada por interfaces. Estas son provistas por el grupo de componentes misionales, PGN SUI, hacia los subm&#243;dulos externos. La intenci&#243;n es mantener reducido y controlado el n&#250;mero de interfaces.
+
+La colaboraci&#243;n entre el SUI Migraci&#243;n con sistemas externos puede darse mediante buses de datos empresarial, sin perjuicio del patr&#243;n de comunicaci&#243;n estadar descrito en el diagrama.
+</div>
+					</div>
+					<div role="tabpanel" class="tab-pane" id="properties">
+						<table class="table table-striped table-hover table-condensed">
+							<thead>
+								<tr>
+									<th class="i18n-key"></th>
+									<th class="i18n-value"></th>
+								</tr>
+							</thead>
+							<tbody>
+								<tr><td>plataforma</td><td class="convertlinks no-margin" style="white-space:pre-wrap">js</td></tr>
+							</tbody>
+						</table>
+					</div>
+						<div role="tabpanel" class="tab-pane" id="elements">
+							<table class="table table-striped table-hover table-condensed">
+								<thead>
+									<tr>
+										<th class="i18n-name"></th>
+										<th class="i18n-type"></th>
+									</tr>
+								</thead>
+								<tbody>
+											<tr>
+											    <td> <a href="../elements/id-c7b52dad823d406fbd54979c21119276.html" target="element"> cc:PGN SUI (misional) </a> </td>
+											    <td> <a href="../elements/id-c7b52dad823d406fbd54979c21119276.html" target="element" class="i18n-elementtype-ApplicationCollaboration">
+											    </a> </td>
+											</tr>
+
+											<tr>
+											    <td> <a href="../elements/id-9c5bfbac3d1c488e99526a82bc226418.html" target="element"> cc:Portales y canales </a> </td>
+											    <td> <a href="../elements/id-9c5bfbac3d1c488e99526a82bc226418.html" target="element" class="i18n-elementtype-ApplicationCollaboration">
+											    </a> </td>
+											</tr>
+
+											<tr>
+											    <td> <a href="../elements/id-756a454a4cfc41bd8fe2246808d66caa.html" target="element"> cc:Almacenamiento </a> </td>
+											    <td> <a href="../elements/id-756a454a4cfc41bd8fe2246808d66caa.html" target="element" class="i18n-elementtype-ApplicationCollaboration">
+											    </a> </td>
+											</tr>
+
+											<tr>
+											    <td> <a href="../elements/id-aaa11035d9fe4eb6a18d81e3e56c323a.html" target="element"> interfaz </a> </td>
+											    <td> <a href="../elements/id-aaa11035d9fe4eb6a18d81e3e56c323a.html" target="element" class="i18n-elementtype-ApplicationInterface">
+											    </a> </td>
+											</tr>
+
+											<tr>
+											    <td> <a href="../elements/id-878aba926a3843c2a1d7330a5fc35e1f.html" target="element"> interfaz </a> </td>
+											    <td> <a href="../elements/id-878aba926a3843c2a1d7330a5fc35e1f.html" target="element" class="i18n-elementtype-ApplicationInterface">
+											    </a> </td>
+											</tr>
+
+									        <tr>
+									           <td> <a href="../objects/id-aa24574a6a994e6fbbb2bf21d6a82410.html" target="element">  </a> </td>
+									           <td> <a href="../objects/id-aa24574a6a994e6fbbb2bf21d6a82410.html" target="element" class="i18n-elementtype-DiagramModelNote"> </a> </td>
+									        </tr>
+
+											<tr>
+											    <td> <a href="../elements/id-c7b52dad823d406fbd54979c21119276.html" target="element"> cc:PGN SUI (misional) </a> </td>
+											    <td> <a href="../elements/id-c7b52dad823d406fbd54979c21119276.html" target="element" class="i18n-elementtype-ApplicationCollaboration">
+											    </a> </td>
+											</tr>
+
+											<tr>
+											    <td> <a href="../elements/id-aaa11035d9fe4eb6a18d81e3e56c323a.html" target="element"> interfaz </a> </td>
+											    <td> <a href="../elements/id-aaa11035d9fe4eb6a18d81e3e56c323a.html" target="element" class="i18n-elementtype-ApplicationInterface">
+											    </a> </td>
+											</tr>
+
+											<tr>
+											    <td> <a href="../elements/id-878aba926a3843c2a1d7330a5fc35e1f.html" target="element"> interfaz </a> </td>
+											    <td> <a href="../elements/id-878aba926a3843c2a1d7330a5fc35e1f.html" target="element" class="i18n-elementtype-ApplicationInterface">
+											    </a> </td>
+											</tr>
+
+											<tr>
+											    <td> <a href="../elements/id-756a454a4cfc41bd8fe2246808d66caa.html" target="element"> cc:Almacenamiento </a> </td>
+											    <td> <a href="../elements/id-756a454a4cfc41bd8fe2246808d66caa.html" target="element" class="i18n-elementtype-ApplicationCollaboration">
+											    </a> </td>
+											</tr>
+
+											<tr>
+											    <td> <a href="../elements/id-9c5bfbac3d1c488e99526a82bc226418.html" target="element"> cc:Portales y canales </a> </td>
+											    <td> <a href="../elements/id-9c5bfbac3d1c488e99526a82bc226418.html" target="element" class="i18n-elementtype-ApplicationCollaboration">
+											    </a> </td>
+											</tr>
+
+									        <tr>
+									           <td> <a href="../objects/id-c0c7021bed0143ed817e5caa267f1212.html" target="element">  </a> </td>
+									           <td> <a href="../objects/id-c0c7021bed0143ed817e5caa267f1212.html" target="element" class="i18n-elementtype-DiagramModelNote"> </a> </td>
+									        </tr>
+
+									        <tr>
+									           <td> <a href="../objects/id-e2a029c2d97d424aa5001bee19f6f0e1.html" target="element">  </a> </td>
+									           <td> <a href="../objects/id-e2a029c2d97d424aa5001bee19f6f0e1.html" target="element" class="i18n-elementtype-DiagramModelNote"> </a> </td>
+									        </tr>
+
+									        <tr>
+									           <td> <a href="../objects/id-e18b23b6fa8e4fb8a1af7a5e32c2455f.html" target="element">  </a> </td>
+									           <td> <a href="../objects/id-e18b23b6fa8e4fb8a1af7a5e32c2455f.html" target="element" class="i18n-elementtype-DiagramModelNote"> </a> </td>
+									        </tr>
+
+									        <tr>
+									           <td> <a href="../objects/id-528df5ccd71d47209862e6efcd219eff.html" target="element">  </a> </td>
+									           <td> <a href="../objects/id-528df5ccd71d47209862e6efcd219eff.html" target="element" class="i18n-elementtype-DiagramModelNote"> </a> </td>
+									        </tr>
+
+
+								</tbody>
+							</table>
+						</div>
+						<div role="tabpanel" class="tab-pane" id="relationships">
+							<table class="table table-striped table-hover table-condensed">
+								<thead>
+									<tr>
+										<th class="i18n-name"></th>
+										<th class="i18n-type"></th>
+										<th class="i18n-source"></th>
+										<th class="i18n-target"></th>
+									</tr>
+								</thead>
+								<tbody>
+																	<tr>
+																		<td> <a href="../elements/id-a3715cc669814521b774f4db7ea6800d.html" target="element"> API </a> </td>
+																		<td> <a href="../elements/id-a3715cc669814521b774f4db7ea6800d.html" target="element" class="i18n-elementtype-FlowRelationship">
+																		</a> </td>
+																		<td> <a href="../elements/id-9c5bfbac3d1c488e99526a82bc226418.html" target="element"> cc:Portales y canales </a> </td>
+																		<td> <a href="../elements/id-878aba926a3843c2a1d7330a5fc35e1f.html" target="element"> interfaz </a> </td>
+																	</tr>
+
+																	<tr>
+																		<td> <a href="../elements/id-9a0c8314258d480d8df0b2439abe6f10.html" target="element"> API </a> </td>
+																		<td> <a href="../elements/id-9a0c8314258d480d8df0b2439abe6f10.html" target="element" class="i18n-elementtype-FlowRelationship">
+																		</a> </td>
+																		<td> <a href="../elements/id-756a454a4cfc41bd8fe2246808d66caa.html" target="element"> cc:Almacenamiento </a> </td>
+																		<td> <a href="../elements/id-aaa11035d9fe4eb6a18d81e3e56c323a.html" target="element"> interfaz </a> </td>
+																	</tr>
+
+																	<tr>
+																		<td> <a href="../elements/id-9f7187ce06f444a78e9b9669bda4c9d6.html" target="element"> puerto </a> </td>
+																		<td> <a href="../elements/id-9f7187ce06f444a78e9b9669bda4c9d6.html" target="element" class="i18n-elementtype-FlowRelationship">
+																		</a> </td>
+																		<td> <a href="../elements/id-aaa11035d9fe4eb6a18d81e3e56c323a.html" target="element"> interfaz </a> </td>
+																		<td> <a href="../elements/id-756a454a4cfc41bd8fe2246808d66caa.html" target="element"> cc:Almacenamiento </a> </td>
+																	</tr>
+
+																	<tr>
+																		<td> <a href="../elements/id-e1925fdc024a44ab89b8aae8d11fe289.html" target="element"> puerto </a> </td>
+																		<td> <a href="../elements/id-e1925fdc024a44ab89b8aae8d11fe289.html" target="element" class="i18n-elementtype-FlowRelationship">
+																		</a> </td>
+																		<td> <a href="../elements/id-878aba926a3843c2a1d7330a5fc35e1f.html" target="element"> interfaz </a> </td>
+																		<td> <a href="../elements/id-9c5bfbac3d1c488e99526a82bc226418.html" target="element"> cc:Portales y canales </a> </td>
+																	</tr>
+
+											<!-- DEBUG: Skipping element from class com.archimatetool.model.impl.DiagramModelNote -->
+																	<tr>
+																		<td> <a href="../elements/id-1df8883ab3f54122bab0de2ba022cbf4.html" target="element"> puerto </a> </td>
+																		<td> <a href="../elements/id-1df8883ab3f54122bab0de2ba022cbf4.html" target="element" class="i18n-elementtype-FlowRelationship">
+																		</a> </td>
+																		<td> <a href="../elements/id-c7b52dad823d406fbd54979c21119276.html" target="element"> cc:PGN SUI (misional) </a> </td>
+																		<td> <a href="../elements/id-aaa11035d9fe4eb6a18d81e3e56c323a.html" target="element"> interfaz </a> </td>
+																	</tr>
+																	<tr>
+																		<td> <a href="../elements/id-03438eee58d24e64a82fd4089cc5e383.html" target="element"> puerto </a> </td>
+																		<td> <a href="../elements/id-03438eee58d24e64a82fd4089cc5e383.html" target="element" class="i18n-elementtype-FlowRelationship">
+																		</a> </td>
+																		<td> <a href="../elements/id-c7b52dad823d406fbd54979c21119276.html" target="element"> cc:PGN SUI (misional) </a> </td>
+																		<td> <a href="../elements/id-878aba926a3843c2a1d7330a5fc35e1f.html" target="element"> interfaz </a> </td>
+																	</tr>
+
+																	<tr>
+																		<td> <a href="../elements/id-e5b4c937b0e340f6b0768045e85ec9f3.html" target="element"> puerto </a> </td>
+																		<td> <a href="../elements/id-e5b4c937b0e340f6b0768045e85ec9f3.html" target="element" class="i18n-elementtype-FlowRelationship">
+																		</a> </td>
+																		<td> <a href="../elements/id-aaa11035d9fe4eb6a18d81e3e56c323a.html" target="element"> interfaz </a> </td>
+																		<td> <a href="../elements/id-c7b52dad823d406fbd54979c21119276.html" target="element"> cc:PGN SUI (misional) </a> </td>
+																	</tr>
+
+																	<tr>
+																		<td> <a href="../elements/id-ae0b097f2d4b4211a2980e3060f495a3.html" target="element"> puerto </a> </td>
+																		<td> <a href="../elements/id-ae0b097f2d4b4211a2980e3060f495a3.html" target="element" class="i18n-elementtype-FlowRelationship">
+																		</a> </td>
+																		<td> <a href="../elements/id-878aba926a3843c2a1d7330a5fc35e1f.html" target="element"> interfaz </a> </td>
+																		<td> <a href="../elements/id-c7b52dad823d406fbd54979c21119276.html" target="element"> cc:PGN SUI (misional) </a> </td>
+																	</tr>
+
+											<!-- DEBUG: Skipping element from class com.archimatetool.model.impl.DiagramModelNote -->
+											<!-- DEBUG: Skipping element from class com.archimatetool.model.impl.DiagramModelNote -->
+											<!-- DEBUG: Skipping element from class com.archimatetool.model.impl.DiagramModelNote -->
+											<!-- DEBUG: Skipping element from class com.archimatetool.model.impl.DiagramModelNote -->
+
+								</tbody>
+							</table>
+						</div>
+			  </div>
+			</div>
+		</div>
+	</div>
+	<script type="text/javascript">imageMapResize();</script>
+</body>
+</html>
