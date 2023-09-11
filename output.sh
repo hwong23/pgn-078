@@ -3,7 +3,9 @@ git pull
 cp PGN*.docx ~/Downloads/tmpr
 
 f="`ls -t ~/Downloads/tmpr/*.docx | head -1`"
-basedocxFILE=${f##*/};  
+basedocxFILE=${f##*/};
+
+sleep 3
 open $basedocxFILE
 
 git checkout main
