@@ -18,8 +18,8 @@ header-includes: |
   <meta name="dc.date" content="2023-09-11" />
   <meta name="citation_publication_date" content="2023-09-11" />
   <meta property="article:published_time" content="2023-09-11" />
-  <meta name="dc.modified" content="2023-09-11T02:05:13+00:00" />
-  <meta property="article:modified_time" content="2023-09-11T02:05:13+00:00" />
+  <meta name="dc.modified" content="2023-09-11T02:14:56+00:00" />
+  <meta property="article:modified_time" content="2023-09-11T02:14:56+00:00" />
   <meta name="dc.language" content="en-US" />
   <meta name="citation_language" content="en-US" />
   <meta name="dc.relation.ispartof" content="Manubot" />
@@ -34,9 +34,9 @@ header-includes: |
   <meta name="citation_fulltext_html_url" content="https://hwong23.github.io/pgn-078/" />
   <meta name="citation_pdf_url" content="https://hwong23.github.io/pgn-078/manuscript.pdf" />
   <link rel="alternate" type="application/pdf" href="https://hwong23.github.io/pgn-078/manuscript.pdf" />
-  <link rel="alternate" type="text/html" href="https://hwong23.github.io/pgn-078/v/ab91897c0e17bce464ab1f19f5165b64f448d223/" />
-  <meta name="manubot_html_url_versioned" content="https://hwong23.github.io/pgn-078/v/ab91897c0e17bce464ab1f19f5165b64f448d223/" />
-  <meta name="manubot_pdf_url_versioned" content="https://hwong23.github.io/pgn-078/v/ab91897c0e17bce464ab1f19f5165b64f448d223/manuscript.pdf" />
+  <link rel="alternate" type="text/html" href="https://hwong23.github.io/pgn-078/v/7cc66aa8389e9001dd709f0f3f7af36b8ace42f9/" />
+  <meta name="manubot_html_url_versioned" content="https://hwong23.github.io/pgn-078/v/7cc66aa8389e9001dd709f0f3f7af36b8ace42f9/" />
+  <meta name="manubot_pdf_url_versioned" content="https://hwong23.github.io/pgn-078/v/7cc66aa8389e9001dd709f0f3f7af36b8ace42f9/manuscript.pdf" />
   <meta property="og:type" content="article" />
   <meta property="twitter:card" content="summary_large_image" />
   <link rel="icon" type="image/png" sizes="192x192" href="https://manubot.org/favicon-192x192.png" />
@@ -65,13 +65,13 @@ tablenos-caption-name: Tabla
 
 
 <small><em>Los productos de esta etapa, Migración Funcional SIU, Contrato 078-2023, 
-([Web](https://hwong23.github.io/pgn-078/v/ab91897c0e17bce464ab1f19f5165b64f448d223/))
+([Web](https://hwong23.github.io/pgn-078/v/7cc66aa8389e9001dd709f0f3f7af36b8ace42f9/))
 están basados en el resultado de la Fase 1 del proyecto PGN SIU del 2022,
-[Sharepoint Softgic@ab91897](http://softgic.sharepoint.com)
+[Sharepoint Softgic@7cc66aa](http://softgic.sharepoint.com)
 del September 11, 2023.
 </em></small>
 
-|    **Versión** del producto 1.ab91897 de 11 Sep 2023
+|    **Versión** del producto 1.7cc66aa de 11 Sep 2023
 
 
 
@@ -113,7 +113,7 @@ Descripción de los productos del trabajo de arquitectura de la Fase 2, proyecto
 | Palabras clave | SIU, Softgic, PGN, Análisis de brecha, GAP, Comparativa              |
 | Autor          |                            |
 | Fuente         |                            |
-| Versión        | 1.ab91897 del 11 Sep 2023 |
+| Versión        | 1.7cc66aa del 11 Sep 2023 |
 | Vínculos       | [N003a Vista Segmento PGN SIU](N03a%a20Vsta%20aSegenta%20SOA%20PGN.md) |
 
 <br>
@@ -316,10 +316,16 @@ Riesgos de la migración funcional:
 * RSG4. Conciliación y Doku
 * RSG5. Gestión de sesiones / caducidad
 
+### Acciones de Mitigación
+
 Informar a la PGN de las implicaciones junto con alternativas para la implementación de la acción de aprovechamiento: diseño del SCM central (sharepoint). La PGN debe decidir si o no a la acción propuesta.
+
 Informar a la PGN de las implicaciones junto con alternativas para la implementación de la acción de aprovechamiento: diseño del motor de búsqueda compartido (sharepoint). La PGN debe decidir si o no a la acción propuesta.
+
 Informar a la PGN de las implicaciones junto con alternativas para la implementación de la acción de manejo del riesgo: diseño de solución de inteligencia de negocio (Power BI). La PGN debe decidir si o no a la acción propuesta.
+
 Informar a la PGN de las implicaciones junto con alternativas para la implementación de la acción de manejo del riesgo: ubicar la lógica, los flujos, y los datos misionales dentro del SIU. La PGN debe decidir si o no a la acción propuesta.
+
 Informar a la PGN de las implicaciones junto con alternativas para la implementación de la acción de manejo del riesgo: facilitar la administración de seguridad en un solo lugar (distinto de localizarla en las aplicaciones web). La PGN debe decidir si o no a la acción propuesta.
 
 
@@ -404,7 +410,7 @@ Cuantro paquetes con tecnologías respectivas
 
 # Organización cambios arquitectura
 ## Organización. 1n. Mapa producto
-![Diagram: Organización. 1n. Mapa producto](images/Organización.1n.Mapaproducto.png){#fig:Organización.1n.Mapaproducto width=1.69}
+![Diagram: Organización. 1n. Mapa producto](images/Organización.1n.Mapaproducto.png){#fig:Organización.1n.Mapaproducto width=1.69in}
 
 ### Catálogo de Elementos
 | Name| Type| Description| Properties
@@ -488,7 +494,7 @@ De arriba a abajo:
 |**Iteración 7**|work-package||*modulo:* relatoria<br>|
 
 
-``Generated on: Sun Sep 10 2023 21:02:22 GMT-0500 (COT)``
+``Generated on: Sun Sep 10 2023 21:12:35 GMT-0500 (COT)``
 
 ## Requerimientos de Administración
 1.	Las soluciones deben permitir la administración de los Roles de Usuarios: esta funcionalidad debe permitir configurar los diferentes roles de los usuarios funcionales de los procesos. 
