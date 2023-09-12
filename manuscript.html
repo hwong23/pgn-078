@@ -49,8 +49,8 @@
   <meta name="dc.date" content="2023-09-12" />
   <meta name="citation_publication_date" content="2023-09-12" />
   <meta property="article:published_time" content="2023-09-12" />
-  <meta name="dc.modified" content="2023-09-12T04:54:58+00:00" />
-  <meta property="article:modified_time" content="2023-09-12T04:54:58+00:00" />
+  <meta name="dc.modified" content="2023-09-12T05:00:19+00:00" />
+  <meta property="article:modified_time" content="2023-09-12T05:00:19+00:00" />
   <meta name="dc.language" content="en-US" />
   <meta name="citation_language" content="en-US" />
   <meta name="dc.relation.ispartof" content="Manubot" />
@@ -65,9 +65,9 @@
   <meta name="citation_fulltext_html_url" content="https://hwong23.github.io/pgn-078/" />
   <meta name="citation_pdf_url" content="https://hwong23.github.io/pgn-078/manuscript.pdf" />
   <link rel="alternate" type="application/pdf" href="https://hwong23.github.io/pgn-078/manuscript.pdf" />
-  <link rel="alternate" type="text/html" href="https://hwong23.github.io/pgn-078/v/f842b4dc21d294b4215784ebabef462ad1229c68/" />
-  <meta name="manubot_html_url_versioned" content="https://hwong23.github.io/pgn-078/v/f842b4dc21d294b4215784ebabef462ad1229c68/" />
-  <meta name="manubot_pdf_url_versioned" content="https://hwong23.github.io/pgn-078/v/f842b4dc21d294b4215784ebabef462ad1229c68/manuscript.pdf" />
+  <link rel="alternate" type="text/html" href="https://hwong23.github.io/pgn-078/v/8b6181c8d7ee183644e077e467b47185013f6937/" />
+  <meta name="manubot_html_url_versioned" content="https://hwong23.github.io/pgn-078/v/8b6181c8d7ee183644e077e467b47185013f6937/" />
+  <meta name="manubot_pdf_url_versioned" content="https://hwong23.github.io/pgn-078/v/8b6181c8d7ee183644e077e467b47185013f6937/manuscript.pdf" />
   <meta property="og:type" content="article" />
   <meta property="twitter:card" content="summary_large_image" />
   <link rel="icon" type="image/png" sizes="192x192" href="https://manubot.org/favicon-192x192.png" />
@@ -89,7 +89,7 @@
 <p><br></p>
 <p><br></p>
 <p><br></p>
-<div class="line-block">   <strong>Versión</strong> del producto 1.f842b4d de 12 Sep 2023</div>
+<div class="line-block">   <strong>Versión</strong> del producto 1.8b6181c de 12 Sep 2023</div>
 <p><strong>Presentado a</strong>
 <br>
 Procuraduría General de la Nación (PGN)</p>
@@ -100,9 +100,9 @@ Procuraduría General de la Nación (PGN)</p>
 
 </div>
 <p><small><em>Los productos de esta etapa, Migración Funcional SIU, Contrato 078-2023,
-(<a href="https://hwong23.github.io/pgn-078/v/f842b4dc21d294b4215784ebabef462ad1229c68/">Web</a>)
+(<a href="https://hwong23.github.io/pgn-078/v/8b6181c8d7ee183644e077e467b47185013f6937/">Web</a>)
 están basados en el resultado de la Fase 1 del proyecto PGN SIU del 2022,
-<a href="http://softgic.sharepoint.com">Sharepoint Softgic@f842b4d</a>
+<a href="http://softgic.sharepoint.com">Sharepoint Softgic@8b6181c</a>
 del September 12, 2023.
 </em></small></p>
 <p><br></p>
@@ -151,7 +151,7 @@ Arquitecto, Softgic
 </tr>
 <tr class="even">
 <td>Versión</td>
-<td>1.f842b4d del 12 Sep 2023</td>
+<td>1.8b6181c del 12 Sep 2023</td>
 </tr>
 <tr class="odd">
 <td>Vínculos</td>
@@ -204,10 +204,10 @@ Arquitecto, Softgic
 </div>
 <h1 id="requisitos-de-arquitectura-no-funcional">Requisitos de Arquitectura (no funcional)</h1>
 <p>Entendemos como requisitos de arquitectura aquellos requerimientos no visibles pero estructurales, medibles, y que impactan al funcionamiento, desarrollo y mantenimiento de la solución.</p>
-<h1 id="documento-de-arquitectura-migración-sui">Documento de Arquitectura Migración SUI</h1>
+<h1 id="documento-de-arquitectura-migración-funcional-sui">Documento de Arquitectura Migración Funcional SUI</h1>
 <hr />
 <ul>
-<li><a href="#línea-base-pgn-siu">Línea Base PGN SIU</a>
+<li><a href="#patrón-de-diseño-línea-base-sui-pgn">Patrón de Diseño Línea Base SUI PGN</a>
 <ul>
 <li><a href="#lineabase.0.siu-applicación">Lineabase.0.SIU applicación</a></li>
 <li><a href="#lineabase.1.siu-componente">Lineabase.1.SIU componente</a></li>
@@ -215,7 +215,7 @@ Arquitecto, Softgic
 <li><a href="#linebase.2.portal">Linebase.2.Portal</a></li>
 <li><a href="#riesgos.1.-migración-funcional">Riesgos.1. Migración funcional</a></li>
 </ul></li>
-<li><a href="#arquitectura-migración-pgn-siu">Arquitectura Migración PGN SIU</a>
+<li><a href="#patrón-de-diseño-migración-sui-pgn">Patrón de Diseño Migración SUI PGN</a>
 <ul>
 <li><a href="#migracion.1a.siu-submodulos">Migracion.1a.SIU submodulos</a></li>
 <li><a href="#migracion.1c.siu-submódulos-componentes">Migracion.1c.SIU submódulos componentes</a></li>
@@ -235,8 +235,7 @@ Arquitecto, Softgic
 <div style="page-break-before: always;">
 
 </div>
-<hr />
-<h1 id="línea-base-pgn-siu">Línea Base PGN SIU</h1>
+<h1 id="patrón-de-diseño-línea-base-sui-pgn">Patrón de Diseño Línea Base SUI PGN</h1>
 <h2 id="lineabase.0.siu-applicación">Lineabase.0.SIU applicación</h2>
 <div id="fig:Lineabase.0.SIUapplicación" class="fignos">
 <figure>
@@ -784,9 +783,9 @@ Arquitecto, Softgic
 <td style="text-align: left;"></td>
 </tr>
 <tr class="even">
-<td style="text-align: left;"><strong>Grouping</strong></td>
+<td style="text-align: left;"><strong>Infraestructura SUI</strong></td>
 <td style="text-align: left;">grouping</td>
-<td style="text-align: left;"></td>
+<td style="text-align: left;">Soporte de infraestructura a los componentes del SUI Migración. Servidores y ambientes de cómputo para la ejecución del software base de los componentes misionales del SUI de PGN.<br></td>
 <td style="text-align: left;"></td>
 </tr>
 <tr class="odd">
@@ -962,8 +961,7 @@ Arquitecto, Softgic
 <div style="page-break-before: always;">
 
 </div>
-<hr />
-<h1 id="arquitectura-migración-pgn-siu">Arquitectura Migración PGN SIU</h1>
+<h1 id="patrón-de-diseño-migración-sui-pgn">Patrón de Diseño Migración SUI PGN</h1>
 <h2 id="migracion.1a.siu-submodulos">Migracion.1a.SIU submodulos</h2>
 <div id="fig:Migracion.1a.SIUsubmodulos" class="fignos">
 <figure>
@@ -1516,7 +1514,6 @@ Arquitecto, Softgic
 <div style="page-break-before: always;">
 
 </div>
-<hr />
 <h1 id="organización-cambios-arquitectura">Organización cambios arquitectura</h1>
 <h2 id="organización.-1n.-mapa-producto">Organización. 1n. Mapa producto</h2>
 <div id="fig:Organización.1n.Mapaproducto" class="fignos">
@@ -1902,7 +1899,6 @@ Arquitecto, Softgic
 <div style="page-break-before: always;">
 
 </div>
-<hr />
 <h1 id="arquitectura-de-seguridad-sui-migración">Arquitectura de Seguridad, SUI Migración</h1>
 <h2 id="seguridad.-1.-requerimientos">Seguridad. 1. Requerimientos</h2>
 <div id="fig:Seguridad.1.Requerimientos" class="fignos">
@@ -2220,7 +2216,7 @@ Arquitecto, Softgic
 </tr>
 </tbody>
 </table>
-<p><code>Generated on: Mon Sep 11 2023 16:48:39 GMT-0500 (COT)</code></p>
+<p><code>Generated on: Mon Sep 11 2023 23:57:01 GMT-0500 (COT)</code></p>
 <h2 id="requerimientos-de-administración">Requerimientos de Administración</h2>
 <ol type="1">
 <li>Las soluciones deben permitir la administración de los Roles de Usuarios: esta funcionalidad debe permitir configurar los diferentes roles de los usuarios funcionales de los procesos.</li>
@@ -2297,7 +2293,7 @@ Administrar los Usuarios de la Solución: Esta funcionalidad debe permitir confi
 </tr>
 <tr class="even">
 <td>Versión</td>
-<td>1.f842b4d del 12 Sep 2023</td>
+<td>1.8b6181c del 12 Sep 2023</td>
 </tr>
 <tr class="odd">
 <td>Vínculos</td>

@@ -18,8 +18,8 @@ header-includes: |
   <meta name="dc.date" content="2023-09-12" />
   <meta name="citation_publication_date" content="2023-09-12" />
   <meta property="article:published_time" content="2023-09-12" />
-  <meta name="dc.modified" content="2023-09-12T04:54:58+00:00" />
-  <meta property="article:modified_time" content="2023-09-12T04:54:58+00:00" />
+  <meta name="dc.modified" content="2023-09-12T05:00:19+00:00" />
+  <meta property="article:modified_time" content="2023-09-12T05:00:19+00:00" />
   <meta name="dc.language" content="en-US" />
   <meta name="citation_language" content="en-US" />
   <meta name="dc.relation.ispartof" content="Manubot" />
@@ -34,9 +34,9 @@ header-includes: |
   <meta name="citation_fulltext_html_url" content="https://hwong23.github.io/pgn-078/" />
   <meta name="citation_pdf_url" content="https://hwong23.github.io/pgn-078/manuscript.pdf" />
   <link rel="alternate" type="application/pdf" href="https://hwong23.github.io/pgn-078/manuscript.pdf" />
-  <link rel="alternate" type="text/html" href="https://hwong23.github.io/pgn-078/v/f842b4dc21d294b4215784ebabef462ad1229c68/" />
-  <meta name="manubot_html_url_versioned" content="https://hwong23.github.io/pgn-078/v/f842b4dc21d294b4215784ebabef462ad1229c68/" />
-  <meta name="manubot_pdf_url_versioned" content="https://hwong23.github.io/pgn-078/v/f842b4dc21d294b4215784ebabef462ad1229c68/manuscript.pdf" />
+  <link rel="alternate" type="text/html" href="https://hwong23.github.io/pgn-078/v/8b6181c8d7ee183644e077e467b47185013f6937/" />
+  <meta name="manubot_html_url_versioned" content="https://hwong23.github.io/pgn-078/v/8b6181c8d7ee183644e077e467b47185013f6937/" />
+  <meta name="manubot_pdf_url_versioned" content="https://hwong23.github.io/pgn-078/v/8b6181c8d7ee183644e077e467b47185013f6937/manuscript.pdf" />
   <meta property="og:type" content="article" />
   <meta property="twitter:card" content="summary_large_image" />
   <link rel="icon" type="image/png" sizes="192x192" href="https://manubot.org/favicon-192x192.png" />
@@ -77,7 +77,7 @@ tablenos-caption-name: Tabla
 
 <br>
 
-|    **Versión** del producto 1.f842b4d de 12 Sep 2023
+|    **Versión** del producto 1.8b6181c de 12 Sep 2023
 
 **Presentado a**
 <br>
@@ -93,9 +93,9 @@ Procuraduría General de la Nación (PGN)
 
 
 <small><em>Los productos de esta etapa, Migración Funcional SIU, Contrato 078-2023, 
-([Web](https://hwong23.github.io/pgn-078/v/f842b4dc21d294b4215784ebabef462ad1229c68/))
+([Web](https://hwong23.github.io/pgn-078/v/8b6181c8d7ee183644e077e467b47185013f6937/))
 están basados en el resultado de la Fase 1 del proyecto PGN SIU del 2022,
-[Sharepoint Softgic@f842b4d](http://softgic.sharepoint.com)
+[Sharepoint Softgic@8b6181c](http://softgic.sharepoint.com)
 del September 12, 2023.
 </em></small>
 
@@ -141,7 +141,7 @@ Descripción de los productos del trabajo de arquitectura de la Fase 2, proyecto
 | Palabras clave | SIU, Softgic, PGN, Análisis de brecha, GAP, Comparativa              |
 | Autor          |                            |
 | Fuente         |                            |
-| Versión        | 1.f842b4d del 12 Sep 2023 |
+| Versión        | 1.8b6181c del 12 Sep 2023 |
 | Vínculos       | [N003a Vista Segmento PGN SIU](N03a%a20Vsta%20aSegenta%20SOA%20PGN.md) |
 
 <br>
@@ -215,16 +215,16 @@ Entendemos como requisitos de arquitectura aquellos requerimientos no visibles p
 
 
 
-# Documento de Arquitectura Migración SUI
+# Documento de Arquitectura Migración Funcional SUI
 
  ___ 
-* [Línea Base PGN SIU](#línea-base-pgn-siu)
+* [Patrón de Diseño Línea Base SUI PGN](#patrón-de-diseño-línea-base-sui-pgn)
 	* [Lineabase.0.SIU applicación](#lineabase.0.siu-applicación)
 	* [Lineabase.1.SIU componente](#lineabase.1.siu-componente)
 	* [Lineabase.1a.SIU componentes. infraestrcutura](#lineabase.1a.siu-componentes.-infraestrcutura)
 	* [Linebase.2.Portal](#linebase.2.portal)
 	* [Riesgos.1. Migración funcional](#riesgos.1.-migración-funcional)
-* [Arquitectura Migración PGN SIU](#arquitectura-migración-pgn-siu)
+* [Patrón de Diseño Migración SUI PGN](#patrón-de-diseño-migración-sui-pgn)
 	* [Migracion.1a.SIU submodulos](#migracion.1a.siu-submodulos)
 	* [Migracion.1c.SIU submódulos componentes](#migracion.1c.siu-submódulos-componentes)
 	* [Migracion.1b.SIU submodulos colaboración](#migracion.1b.siu-submodulos-colaboración)
@@ -237,9 +237,7 @@ Entendemos como requisitos de arquitectura aquellos requerimientos no visibles p
 
 <div style="page-break-before: always;"></div>
 \newpage
- ___ 
-
-# Línea Base PGN SIU
+# Patrón de Diseño Línea Base SUI PGN
 ## Lineabase.0.SIU applicación
 ![Diagram: Lineabase.0.SIU applicación](images/Lineabase.0.SIUapplicación.png){#fig:Lineabase.0.SIUapplicación width=}
 
@@ -375,7 +373,7 @@ Dependencias de infraestructura entre los servicios que integran el modelo de ap
 |**Interfaz de datos 3**|application-service|||
 |**ccccc Proveedores contenidos**|application-service|||
 |**Mensaje: JSON**|data-object|||
-|**Grouping**|grouping|||
+|**Infraestructura SUI**|grouping|Soporte de infraestructura a los componentes del SUI Migración. Servidores y ambientes de cómputo para la ejecución del software base de los componentes misionales del SUI de PGN.<br>||
 |**PGN SIU**|grouping|El objetivo principal de la arquitectura del SUI de la migración es la centralización de los conceptos misionales: concentrar los conceptos misionales en componentes aislados; dejar por fuera de estos componentes misionales todo lo distintos a la misionalidad de la PGN.<br>Los objetivos secundarios de esta arquitectura SUI de la migración son flexibilidad y extensibilidad. Dichos objetivos son independientes. Es decir, estos pueden ser maximizados sin conclifcto entre ellos.<br>||
 |**Servidor BDD App**|node|||
 |**Servidor BDD Config**|node|||
@@ -437,9 +435,7 @@ Informar a la PGN de las implicaciones junto con alternativas para la implementa
 |**Riesgos Migración Funcional SIU**|constraint|||
 <div style="page-break-before: always;"></div>
 \newpage
- ___ 
-
-# Arquitectura Migración PGN SIU
+# Patrón de Diseño Migración SUI PGN
 ## Migracion.1a.SIU submodulos
 ![Diagram: Migracion.1a.SIU submodulos](images/Migracion.1a.SIUsubmodulos.png){#fig:Migracion.1a.SIUsubmodulos width=}
 
@@ -578,8 +574,6 @@ La colaboración entre el SUI Migración con sistemas externos puede darse media
 |**interfaz**|application-interface|||
 <div style="page-break-before: always;"></div>
 \newpage
- ___ 
-
 # Organización cambios arquitectura
 ## Organización. 1n. Mapa producto
 ![Diagram: Organización. 1n. Mapa producto](images/Organización.1n.Mapaproducto.png){#fig:Organización.1n.Mapaproducto width=3.14in}
@@ -666,8 +660,6 @@ De arriba a abajo:
 |**Iteración 7**|work-package||*modulo:* relatoria<br>|
 <div style="page-break-before: always;"></div>
 \newpage
- ___ 
-
 # Arquitectura de Seguridad, SUI Migración
 ## Seguridad. 1. Requerimientos
 ![Diagram: Seguridad. 1. Requerimientos](images/Seguridad.1.Requerimientos.png){#fig:Seguridad.1.Requerimientos width=}
@@ -735,7 +727,7 @@ El portal es el conjunto de los elementos físicos y lógicos necesarios para la
 |**Application Interface**|application-interface|||
 
 
-``Generated on: Mon Sep 11 2023 16:48:39 GMT-0500 (COT)``
+``Generated on: Mon Sep 11 2023 23:57:01 GMT-0500 (COT)``
 
 ## Requerimientos de Administración
 1.	Las soluciones deben permitir la administración de los Roles de Usuarios: esta funcionalidad debe permitir configurar los diferentes roles de los usuarios funcionales de los procesos. 
@@ -797,7 +789,7 @@ Descripción de los productos del trabajo de infraestructura del proyecto Migrac
 | Palabras clave | SIU, Softgic, PGN, Análisis de brecha, GAP, Comparativa              |
 | Autor          |                            |
 | Fuente         |                            |
-| Versión        | 1.f842b4d del 12 Sep 2023 |
+| Versión        | 1.8b6181c del 12 Sep 2023 |
 | Vínculos       | [N003a Vista Segmento PGN SIU](N03a%a20Vsta%20aSegenta%20SOA%20PGN.md) |
 
 <br>
