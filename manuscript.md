@@ -18,8 +18,8 @@ header-includes: |
   <meta name="dc.date" content="2023-09-12" />
   <meta name="citation_publication_date" content="2023-09-12" />
   <meta property="article:published_time" content="2023-09-12" />
-  <meta name="dc.modified" content="2023-09-12T03:57:03+00:00" />
-  <meta property="article:modified_time" content="2023-09-12T03:57:03+00:00" />
+  <meta name="dc.modified" content="2023-09-12T04:09:53+00:00" />
+  <meta property="article:modified_time" content="2023-09-12T04:09:53+00:00" />
   <meta name="dc.language" content="en-US" />
   <meta name="citation_language" content="en-US" />
   <meta name="dc.relation.ispartof" content="Manubot" />
@@ -34,9 +34,9 @@ header-includes: |
   <meta name="citation_fulltext_html_url" content="https://hwong23.github.io/pgn-078/" />
   <meta name="citation_pdf_url" content="https://hwong23.github.io/pgn-078/manuscript.pdf" />
   <link rel="alternate" type="application/pdf" href="https://hwong23.github.io/pgn-078/manuscript.pdf" />
-  <link rel="alternate" type="text/html" href="https://hwong23.github.io/pgn-078/v/ef9cd8f963f499326937682b2c4952c29563c99f/" />
-  <meta name="manubot_html_url_versioned" content="https://hwong23.github.io/pgn-078/v/ef9cd8f963f499326937682b2c4952c29563c99f/" />
-  <meta name="manubot_pdf_url_versioned" content="https://hwong23.github.io/pgn-078/v/ef9cd8f963f499326937682b2c4952c29563c99f/manuscript.pdf" />
+  <link rel="alternate" type="text/html" href="https://hwong23.github.io/pgn-078/v/12f13d9f4550d48841524bfe00d2704e55b76a16/" />
+  <meta name="manubot_html_url_versioned" content="https://hwong23.github.io/pgn-078/v/12f13d9f4550d48841524bfe00d2704e55b76a16/" />
+  <meta name="manubot_pdf_url_versioned" content="https://hwong23.github.io/pgn-078/v/12f13d9f4550d48841524bfe00d2704e55b76a16/manuscript.pdf" />
   <meta property="og:type" content="article" />
   <meta property="twitter:card" content="summary_large_image" />
   <link rel="icon" type="image/png" sizes="192x192" href="https://manubot.org/favicon-192x192.png" />
@@ -54,6 +54,7 @@ manubot-clear-requests-cache: false
 
 ---
 title: Documento de Arquitectura Migración Funcional PGN SIU
+subtitle: Migración Funcional 2023
 geometry:
   - top=1in
   - bottom=1in
@@ -65,13 +66,13 @@ tablenos-caption-name: Tabla
 
 
 <small><em>Los productos de esta etapa, Migración Funcional SIU, Contrato 078-2023, 
-([Web](https://hwong23.github.io/pgn-078/v/ef9cd8f963f499326937682b2c4952c29563c99f/))
+([Web](https://hwong23.github.io/pgn-078/v/12f13d9f4550d48841524bfe00d2704e55b76a16/))
 están basados en el resultado de la Fase 1 del proyecto PGN SIU del 2022,
-[Sharepoint Softgic@ef9cd8f](http://softgic.sharepoint.com)
+[Sharepoint Softgic@12f13d9](http://softgic.sharepoint.com)
 del September 12, 2023.
 </em></small>
 
-|    **Versión** del producto 1.ef9cd8f de 12 Sep 2023
+|    **Versión** del producto 1.12f13d9 de 12 Sep 2023
 
 
 
@@ -114,7 +115,7 @@ Descripción de los productos del trabajo de arquitectura de la Fase 2, proyecto
 | Palabras clave | SIU, Softgic, PGN, Análisis de brecha, GAP, Comparativa              |
 | Autor          |                            |
 | Fuente         |                            |
-| Versión        | 1.ef9cd8f del 12 Sep 2023 |
+| Versión        | 1.12f13d9 del 12 Sep 2023 |
 | Vínculos       | [N003a Vista Segmento PGN SIU](N03a%a20Vsta%20aSegenta%20SOA%20PGN.md) |
 
 <br>
@@ -765,7 +766,7 @@ Descripción de los productos del trabajo de infraestructura del proyecto Migrac
 | Palabras clave | SIU, Softgic, PGN, Análisis de brecha, GAP, Comparativa              |
 | Autor          |                            |
 | Fuente         |                            |
-| Versión        | 1.ef9cd8f del 12 Sep 2023 |
+| Versión        | 1.12f13d9 del 12 Sep 2023 |
 | Vínculos       | [N003a Vista Segmento PGN SIU](N03a%a20Vsta%20aSegenta%20SOA%20PGN.md) |
 
 <br>
