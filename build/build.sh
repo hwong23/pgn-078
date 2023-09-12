@@ -30,19 +30,10 @@ PANDOC_DATA_DIR="${PANDOC_DATA_DIR:-build/pandoc}"
 export FECHA_COMPILACION COMMIT PROYECTO PROY_DESCR
 
 
-# Generate reference information #1
-echo >&2 "Retrieving and processing reference metadata 1"
+# Generate reference information
+echo >&2 "Retrieving and processing reference metadata"
 manubot process \
   --content-directory=content \
-  --output-directory=output \
-  --cache-directory=ci/cache \
-  --skip-citations \
-  --log-level=INFO
-
-# Generate reference information #2
-echo >&2 "Retrieving and processing reference metadata 2"
-manubot process \
-  --content-directory=content2 \
   --output-directory=output \
   --cache-directory=ci/cache \
   --skip-citations \
