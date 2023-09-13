@@ -18,8 +18,8 @@ header-includes: |
   <meta name="dc.date" content="2023-09-13" />
   <meta name="citation_publication_date" content="2023-09-13" />
   <meta property="article:published_time" content="2023-09-13" />
-  <meta name="dc.modified" content="2023-09-13T05:26:06+00:00" />
-  <meta property="article:modified_time" content="2023-09-13T05:26:06+00:00" />
+  <meta name="dc.modified" content="2023-09-13T05:53:18+00:00" />
+  <meta property="article:modified_time" content="2023-09-13T05:53:18+00:00" />
   <meta name="dc.language" content="en-US" />
   <meta name="citation_language" content="en-US" />
   <meta name="dc.relation.ispartof" content="Manubot" />
@@ -34,9 +34,9 @@ header-includes: |
   <meta name="citation_fulltext_html_url" content="https://hwong23.github.io/pgn-078/" />
   <meta name="citation_pdf_url" content="https://hwong23.github.io/pgn-078/manuscript.pdf" />
   <link rel="alternate" type="application/pdf" href="https://hwong23.github.io/pgn-078/manuscript.pdf" />
-  <link rel="alternate" type="text/html" href="https://hwong23.github.io/pgn-078/v/b4964b7e79d1d166e0663146a54c05bcc51bcc96/" />
-  <meta name="manubot_html_url_versioned" content="https://hwong23.github.io/pgn-078/v/b4964b7e79d1d166e0663146a54c05bcc51bcc96/" />
-  <meta name="manubot_pdf_url_versioned" content="https://hwong23.github.io/pgn-078/v/b4964b7e79d1d166e0663146a54c05bcc51bcc96/manuscript.pdf" />
+  <link rel="alternate" type="text/html" href="https://hwong23.github.io/pgn-078/v/4249302bf86a07133c831a1d76b8814e35f80c06/" />
+  <meta name="manubot_html_url_versioned" content="https://hwong23.github.io/pgn-078/v/4249302bf86a07133c831a1d76b8814e35f80c06/" />
+  <meta name="manubot_pdf_url_versioned" content="https://hwong23.github.io/pgn-078/v/4249302bf86a07133c831a1d76b8814e35f80c06/manuscript.pdf" />
   <meta property="og:type" content="article" />
   <meta property="twitter:card" content="summary_large_image" />
   <link rel="icon" type="image/png" sizes="192x192" href="https://manubot.org/favicon-192x192.png" />
@@ -77,7 +77,7 @@ tablenos-caption-name: Tabla
 
 <br>
 
-| **Versión** del producto 1.b4964b7 de 13 Sep 2023
+| **Versión** del producto 1.4249302 de 13 Sep 2023
 
 | **Presentado a**
 
@@ -95,9 +95,9 @@ tablenos-caption-name: Tabla
 
 
 <small><em>Los productos de esta etapa, Migración Funcional SIU, Contrato 078-2023, 
-([Web](https://hwong23.github.io/pgn-078/v/b4964b7e79d1d166e0663146a54c05bcc51bcc96/))
+([Web](https://hwong23.github.io/pgn-078/v/4249302bf86a07133c831a1d76b8814e35f80c06/))
 están basados en el resultado de la Fase 1 del proyecto PGN SIU del 2022,
-[Sharepoint Softgic@b4964b7](http://softgic.sharepoint.com)
+[Sharepoint Softgic@4249302](http://softgic.sharepoint.com)
 del September 13, 2023.
 </em></small>
 
@@ -143,7 +143,7 @@ Descripción de los productos del trabajo de arquitectura de la Fase 2, proyecto
 | Palabras clave | SIU, Softgic, PGN, Análisis de brecha, GAP, Comparativa              |
 | Autor          |                            |
 | Fuente         |                            |
-| Versión        | 1.b4964b7 del 13 Sep 2023 |
+| Versión        | 1.4249302 del 13 Sep 2023 |
 | Vínculos       | [N003a Vista Segmento PGN SIU](N03a%a20Vsta%20aSegenta%20SOA%20PGN.md) |
 
 <br>
@@ -777,6 +777,86 @@ Administrar los Usuarios de la Solución: Esta funcionalidad debe permitir confi
 <br>
 ˝
 
+---
+title: Documento de Arquitectura Migración Funcional PGN SIU
+subtitle: OP 078-2023 - Fase 2, PGN Migración Funcional SIU
+geometry:
+  - top=1in
+  - bottom=1in
+fignos-cleveref: True
+fignos-plus-name: Fig.
+fignos-caption-name: Imagen
+tablenos-caption-name: Tabla
+...
+
+
+<br>
+
+<br>
+
+<br>
+
+<br>
+
+<br>
+
+<br>
+
+| **Versión** del producto 1.4249302 de 13 Sep 2023
+
+| **Presentado a**
+
+| Procuraduría General de la Nación (PGN)
+
+|
+
+| **Fecha**
+
+| 13 Sep 2023
+
+
+<div style="page-break-before: always;"></div>
+\newpage
+
+
+<small><em>Los productos de esta etapa, Migración Funcional SIU, Contrato 078-2023, 
+([Web](https://hwong23.github.io/pgn-078/v/4249302bf86a07133c831a1d76b8814e35f80c06/))
+están basados en el resultado de la Fase 1 del proyecto PGN SIU del 2022,
+[Sharepoint Softgic@4249302](http://softgic.sharepoint.com)
+del September 13, 2023.
+</em></small>
+
+
+
+
+
+<br>
+
+## Autores
+
+
+
++ **Harry Wong, ing.**
+  <br>
+    · ![Usuario](images/github.svg){.inline_icon width=16 height=16}
+    [e_hwong](https://github.com/e_hwong)
+    <br>
+  <small>
+     Arquitecto, Softgic
+  </small>
+
+
+::: {#correspondence}
+✉ — Enviar mensajes a Harry Wong, ing. \<harry.wong@softgic.co\>.
+
+
+:::
+
+<br>
+
+<div style="page-break-before: always;"></div>
+\newpage
+
 # Descripción de Infraestructura Migración SUI PGN
 
 ## Objetivo del Documento
@@ -790,7 +870,7 @@ Descripción de los productos del trabajo de infraestructura del proyecto Migrac
 | Palabras clave | SIU, Softgic, PGN, Análisis de brecha, GAP, Infraestrctura, PasS |
 | Autor          |                            |
 | Fuente         |                            |
-| Versión        | 1.b4964b7 del 13 Sep 2023 |
+| Versión        | 1.4249302 del 13 Sep 2023 |
 | Vínculos       | [N003a Vista Segmento PGN SIU](N03a%a20Vsta%20aSegenta%20SOA%20PGN.md) |
 
 <br>
@@ -802,156 +882,87 @@ Descripción de los productos del trabajo de infraestructura del proyecto Migrac
 
 
 
-# Documento de Arquitectura Infraestructura SUI PGN
 
- ___ 
-* [Descripción de Infraestructura Migración SUI PGN](#descripción-de-infraestructura-migración-sui-pgn)
-	* [Lineabase.1a.SIU componentes. infraestrcutura](#lineabase.1a.siu-componentes.-infraestrcutura)
-	* [Lineabase.0.SIU applicación. física](#lineabase.0.siu-applicación.-física)
-	* [Lineabase.0.SIU applicación.(seguridad)](#lineabase.0.siu-applicación.seguridad)
+
+---
+title: Documento de Arquitectura Migración Funcional PGN SIU
+subtitle: OP 078-2023 - Fase 2, PGN Migración Funcional SIU
+geometry:
+  - top=1in
+  - bottom=1in
+fignos-cleveref: True
+fignos-plus-name: Fig.
+fignos-caption-name: Imagen
+tablenos-caption-name: Tabla
+...
+
+
+<br>
+
+<br>
+
+<br>
+
+<br>
+
+<br>
+
+<br>
+
+| **Versión** del producto 1.4249302 de 13 Sep 2023
+
+| **Presentado a**
+
+| Procuraduría General de la Nación (PGN)
+
+|
+
+| **Fecha**
+
+| 13 Sep 2023
+
 
 <div style="page-break-before: always;"></div>
 \newpage
-# Descripción de Infraestructura Migración SUI PGN
-## Lineabase.1a.SIU componentes. infraestrcutura
-![Diagram: Lineabase.1a.SIU componentes. infraestrcutura](images/Lineabase.1a.SIUcomponentes.infraestrcutura.png){#fig:Lineabase.1a.SIUcomponentes.infraestrcutura width=}
-
-Dependencias de infraestructura entre los servicios que integran el modelo de aplicación de SUI, Migración. 
-
-* Servidor de Canales (App PGN web y móvil)
-* Servidor Web App (App SUI)
-* Servidor Lappiz (Config SUI)
-* Servidor BDD App (Transaccional)
-* Servidor BDD Config (Configuración)
 
 
-
-### Catálogo de Elementos
-| Name| Type| Description| Properties
-|:--------|:--------|:--------|:--------|
-|**Persistencia**|application-collaboration|||
-|**App**|application-component||*plataforma:* node Js<br>|
-|**App PGN Móvil**|application-component|||
-|**App PGN Web**|application-component||*plataforma:* angular 11<br>|
-|**Config**|application-component||*plataforma:* cs<br>|
-|**Controlador admin**|application-component||*plataforma:* cs<br>|
-|**Controlador frontal mvl**|application-component||*plataforma:* js<br>|
-|**Controlador frontal web**|application-component||*plataforma:* js<br>|
-|**Controlador funcional**|application-component||*plataforma:* js<br>|
-|**Modelo (neg)**|application-component||*plataforma:* cs<br>|
-|**Puerto datos 1**|application-component||*plataforma:* js<br>|
-|**Puerto datos 2**|application-component||*plataforma:* cs<br>|
-|**Seguridad**|application-component||*plataforma:* sql<br>|
-|**Transacciones**|application-component||*plataforma:* sql<br>|
-|**Utilitario**|application-component||*plataforma:* no-sql<br>|
-|**Vista móvil**|application-component||*plataforma:* js<br>|
-|**Vista web**|application-component||*plataforma:* html<br>|
-|**Interfaz de aplicación (runtime)**|application-interface||*plataforma:* angular 11<br>|
-|**API externas**|application-service|||
-|**Application Service (NLB)**|application-service||*plataforma:* angular 11<br>|
-|**Archivos Compartidos**|application-service|||
-|**CDN Contenidos**|application-service|||
-|**Doku (gest. doc.)**|application-service|||
-|**Identidades**|application-service|||
-|**Interfaz de datos 1**|application-service|||
-|**Interfaz de datos 2**|application-service|||
-|**Interfaz de datos 3**|application-service|||
-|**ccccc Proveedores contenidos**|application-service|||
-|**Mensaje: JSON**|data-object|||
-|**Infraestructura SUI**|grouping|Soporte de infraestructura a los componentes del SUI Migración. Servidores y ambientes de cómputo para la ejecución del software base de los componentes misionales del SUI de PGN.<br>||
-|**PGN SIU**|grouping|El objetivo principal de la arquitectura del SUI de la migración es la centralización de los conceptos misionales: concentrar los conceptos misionales en componentes aislados; dejar por fuera de estos componentes misionales todo lo distintos a la misionalidad de la PGN.<br>Los objetivos secundarios de esta arquitectura SUI de la migración son flexibilidad y extensibilidad. Dichos objetivos son independientes. Es decir, estos pueden ser maximizados sin conclifcto entre ellos.<br>||
-|**Servidor BDD App**|node|||
-|**Servidor BDD Config**|node|||
-|**Servidor Lappiz **|node|||
-|**Servidor Web App**|node|||
-|**Servidor Web Canales**|node|Nombre físico<br>IP LAN<br>IP Pública<br>||
-
-## Lineabase.0.SIU applicación. física
-![Diagram: Lineabase.0.SIU applicación. física](images/Lineabase.0.SIUapplicación.física.png){#fig:Lineabase.0.SIUapplicación.física width=}
-
-## Representación Arquitectónica
-Con una arquitectura orientada a servicios SUI recopila:
-
-1. Runtime: Es el servicio que interactúa con el usuario final (GUI) elaborado en Angular 11
-1. API Tx: Servicio api rest base node encargado de realizar las transacciones básicas CRUD
-1. API Config / Seguridad. Servicio Web API .Net Framework encargado de gestionar características con la autenticación y configuración
+<small><em>Los productos de esta etapa, Migración Funcional SIU, Contrato 078-2023, 
+([Web](https://hwong23.github.io/pgn-078/v/4249302bf86a07133c831a1d76b8814e35f80c06/))
+están basados en el resultado de la Fase 1 del proyecto PGN SIU del 2022,
+[Sharepoint Softgic@4249302](http://softgic.sharepoint.com)
+del September 13, 2023.
+</em></small>
 
 
 
 
-### Catálogo de Elementos
-| Name| Type| Description| Properties
-|:--------|:--------|:--------|:--------|
-|**Application Collaboration**|application-collaboration|||
-|**Application Collaboration**|application-collaboration|||
-|**App**|application-component||*plataforma:* node Js<br>|
-|**App PGN Móvil**|application-component|||
-|**App PGN Web**|application-component||*plataforma:* angular 11<br>|
-|**Config**|application-component||*plataforma:* cs<br>|
-|**Punto acceso público**|application-interface|URL tipo C<br>HTTP||
-|**Application Service (NLB)**|application-service||*plataforma:* angular 11<br>|
-|**Interfaz de datos 1**|application-service|||
-|**Interfaz de datos 2**|application-service|||
-|**Communication Network (DMZ)**|communication-network|||
-|**Communication Network (LAN)**|communication-network|||
-|**Communication Network (internet)**|communication-network|||
-|**Balanceador**|node|||
-|**Servidor BDD App**|node|||
-|**Servidor BDD Config**|node|||
-|**Servidor Lappiz **|node|||
-|**Servidor Web App**|node|||
-|**Servidor Web Canales**|node|Nombre físico<br>IP LAN<br>IP Pública<br>||
-|**www pgn com**|technology-interface|||
 
-## Lineabase.0.SIU applicación.(seguridad)
-![Diagram: Lineabase.0.SIU applicación.(seguridad)](images/Lineabase.0.SIUapplicación.(seguridad).png){#fig:Lineabase.0.SIUapplicación.(seguridad) width=}
+<br>
 
-# Representación Arquitectónica
-Con una arquitectura orientada a servicios SUI recopila:
-
-1. Runtime: Es el servicio que interactúa con el usuario final (GUI) elaborado en Angular 11
-1. API Tx: Servicio api rest base node encargado de realizar las transacciones básicas CRUD
-1. API Config / Seguridad. Servicio Web API .Net Framework encargado de gestionar características con la autenticación y configuración
+## Autores
 
 
 
-
-### Catálogo de Elementos
-| Name| Type| Description| Properties
-|:--------|:--------|:--------|:--------|
-|**Application Collaboration**|application-collaboration|||
-|**Application Collaboration**|application-collaboration|||
-|**App**|application-component||*plataforma:* node Js<br>|
-|**App PGN Móvil**|application-component|||
-|**App PGN Web**|application-component||*plataforma:* angular 11<br>|
-|**Config**|application-component||*plataforma:* cs<br>|
-|**Punto acceso público**|application-interface|URL tipo C<br>HTTP||
-|**Application Service (NLB)**|application-service||*plataforma:* angular 11<br>|
-|**Interfaz de datos 1**|application-service|||
-|**Interfaz de datos 2**|application-service|||
-|**Communication Network (DMZ)**|communication-network|||
-|**Communication Network (LAN)**|communication-network|||
-|**Communication Network (internet)**|communication-network|||
-|**Balanceador**|node|||
-|**FW BD.**|node|||
-|**Network Firewall/WAF**|node|||
-|**Servidor BDD App**|node|||
-|**Servidor BDD Config**|node|||
-|**Servidor Lappiz **|node|||
-|**Servidor Web App**|node|||
-|**Servidor Web Canales**|node|Nombre físico<br>IP LAN<br>IP Pública<br>||
-|**Sistema de Seguridad (LDAP) 1**|node|Sistema de Seguridad (LDAP) 1. Control de acceso internet<br>||
-|**Sistema de Seguridad (LDAP) 2**|node|Sistema de Seguridad (LDAP) 2. Control de acceso a datos||
-|**Analizador de acceso a la red. SIEM- EDR**|resource|||
-|**www pgn com**|technology-interface|||
-|**Asignación de Tokens**|value-stream|||
-|**HTTPS, TLS, SSL**|value-stream|||
-|**Requiere 2 MFA**|value-stream|||
-|**Uso de claves criptograficas.**|value-stream|||
-|**Uso de claves criptograficas. (copy)**|value-stream|||
++ **Harry Wong, ing.**
+  <br>
+    · ![Usuario](images/github.svg){.inline_icon width=16 height=16}
+    [e_hwong](https://github.com/e_hwong)
+    <br>
+  <small>
+     Arquitecto, Softgic
+  </small>
 
 
-``Generated on: Tue Sep 12 2023 19:01:45 GMT-0500 (COT)``
+::: {#correspondence}
+✉ — Enviar mensajes a Harry Wong, ing. \<harry.wong@softgic.co\>.
+
+
+:::
+
+<br>
+
+<div style="page-break-before: always;"></div>
+\newpage
 
 # Documento de Descripción de Entidades de Datos. Migración SUI PGN
 
@@ -967,7 +978,7 @@ Descripción de los productos de trabajo de la arquitectura de datos del proyect
 | Palabras clave | SIU, Softgic, PGN, Análisis de brecha, GAP, Entidades, Datos  |
 | Autor          |                            |
 | Fuente         |                            |
-| Versión        | 1.b4964b7 del 13 Sep 2023 |
+| Versión        | 1.4249302 del 13 Sep 2023 |
 | Vínculos       | [N003a Vista Segmento PGN SIU](N03a%a20Vsta%20aSegenta%20SOA%20PGN.md) |
 
 <br>
@@ -976,9 +987,6 @@ Descripción de los productos de trabajo de la arquitectura de datos del proyect
 
 <div style="page-break-before: always;"></div>
 \newpage
-
-
-
 
 # Documento de Arquitectura Datos SUI
 
@@ -997,7 +1005,7 @@ Descripción de los productos de trabajo de la arquitectura de datos del proyect
 ## Migracion.2. datos
 ![Diagram: Migracion.2. datos](images/Migracion.2.datos.png){#fig:Migracion.2.datos width=}
 
-Modelo de acceso y procesamiento a datos de negocio del SUI. Presentamos la organización de los ítems de datos de negocio necesarios para que los módulos del SUI puedan recolectar, procesar, integrary almacenarlos de forma organizada y escalable.
+Modelo de acceso y procesamiento a datos de negocio del SUI. Presentamos la organización de los ítems de datos de negocio necesarios para que los módulos del SUI puedan recolectar, procesar, integrar y almacenarlos de forma organizada y escalable.
 
 Mediante esta organización, los datos de negocio son transportados desde sus respectivas fuentes mediante interfaces (por principio de extensión y mantenibilidad). Los datos externos, entendidos como los de otros proveedores, son obtenidos mediante un intermediario: el bus de datos del SUI.
 
@@ -1008,16 +1016,16 @@ Consideramos tres tipos datos: datos transaccionales, históricos y externos, y 
 | Name| Type| Description| Properties
 |:--------|:--------|:--------|:--------|
 |**cc:PGN SUI (misional)**|application-collaboration|||
-|**APP1.Relatoría**|application-component|||
+|**APP1.Relatoría**|application-component|Módulo del SUI. Relatoría pública. Publicación de información de referencia para funcionarios y personas naturales, cientes de la PGN.<br> ||
 |**APP2.SIRI**|application-component|||
 |**APP3.Control interno**|application-component|||
-|**APP4.Hominis**|application-component|||
+|**APP4.Hominis**|application-component|Módulo del SUI. Gestión de capital humano, funcionarios y cargos de representación y libre remoción de la PGN.<br>||
 |**APP5.SIM**|application-component|||
 |**APP6.Estratego**|application-component|||
-|**Interfaz de Acceso Proveedores**|application-interface|||
-|**Interfaz de Almacenaniento**|application-interface|||
-|**Procesamiento batch PGN**|application-process|||
-|**Bus de datos**|application-service|||
+|**Interfaz de Acceso Proveedores**|application-interface|Interfaz de acceso a los tipos de datos externos al SUI.<br>||
+|**Interfaz de Almacenaniento**|application-interface|Interfaz de acceso a los repositorio, base de datos relacionales y no jerárquicas. Tipos de datos transaccionales, internos, del SUI.<br>||
+|**Procesamiento batch PGN**|application-process|Los procesos de lotes, que requieren volumenes de datos altos, deben hacer parte de la arquitectura de datos del SUI.<br>||
+|**Bus de datos**|application-service|El patrón de bus de datos tiene el rol de unir y referir a los datos externos al SUI de tal manera que hace transparente la localización y el formato de este tipo de datos.<br>||
 |**Datos externos**|data-object|||
 |**Datos históricos**|data-object|||
 |**Datos transaccionales**|data-object|||
@@ -1025,10 +1033,15 @@ Consideramos tres tipos datos: datos transaccionales, históricos y externos, y 
 ## Migracion.2a. datos Hominis
 ![Diagram: Migracion.2a. datos Hominis](images/Migracion.2a.datosHominis.png){#fig:Migracion.2a.datosHominis width=}
 
+Identificación de entidades de datos de negocio relacionadas al módulo de gestión de capital del SUI, Hominis.
+
+Estas entidades de datos de negocio son los que llamamos los tipos de datos internos del SUI. 
+
+
 ### Catálogo de Elementos
 | Name| Type| Description| Properties
 |:--------|:--------|:--------|:--------|
-|**APP4.Hominis**|application-component|||
+|**APP4.Hominis**|application-component|Módulo del SUI. Gestión de capital humano, funcionarios y cargos de representación y libre remoción de la PGN.<br>||
 |**DAT.Cargo**|business-object|||
 |**DAT.Código Actuación**|business-object|||
 |**DAT.Código Jurisdicción**|business-object|||
@@ -1052,6 +1065,11 @@ Consideramos tres tipos datos: datos transaccionales, históricos y externos, y 
 ## Migracion.2c. datos Control interno
 ![Diagram: Migracion.2c. datos Control interno](images/Migracion.2c.datosControlinterno.png){#fig:Migracion.2c.datosControlinterno width=}
 
+Identificación de entidades de datos de negocio relacionadas al módulo de seguimiento del desempeño de la PGN del SUI, Control Interno.
+
+Estas entidades de datos de negocio son los que llamamos los tipos de datos internos del SUI. 
+
+
 ### Catálogo de Elementos
 | Name| Type| Description| Properties
 |:--------|:--------|:--------|:--------|
@@ -1064,6 +1082,11 @@ Consideramos tres tipos datos: datos transaccionales, históricos y externos, y 
 ## Migracion.2d. datos SIRI
 ![Diagram: Migracion.2d. datos SIRI](images/Migracion.2d.datosSIRI.png){#fig:Migracion.2d.datosSIRI width=}
 
+Identificación de entidades de datos de negocio relacionadas al módulo del SUI, SIRI.
+
+Estas entidades de datos de negocio son los que llamamos los tipos de datos internos del SUI. 
+
+
 ### Catálogo de Elementos
 | Name| Type| Description| Properties
 |:--------|:--------|:--------|:--------|
@@ -1072,6 +1095,11 @@ Consideramos tres tipos datos: datos transaccionales, históricos y externos, y 
 
 ## Migracion.2b. datos SIM
 ![Diagram: Migracion.2b. datos SIM](images/Migracion.2b.datosSIM.png){#fig:Migracion.2b.datosSIM width=}
+
+Identificación de entidades de datos de negocio relacionadas al módulo de SUI, SIM.
+
+Estas entidades de datos de negocio son los que llamamos los tipos de datos internos del SUI. 
+
 
 ### Catálogo de Elementos
 | Name| Type| Description| Properties
@@ -1083,7 +1111,10 @@ Consideramos tres tipos datos: datos transaccionales, históricos y externos, y 
 |**DAT.País**|business-object|||
 
 
-``Generated on: Wed Sep 13 2023 00:22:52 GMT-0500 (COT)``
+``Generated on: Wed Sep 13 2023 00:43:10 GMT-0500 (COT)``
+
+
+
 
 <div style="page-break-before: always;"></div>
 \newpage
