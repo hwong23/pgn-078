@@ -49,8 +49,8 @@
   <meta name="dc.date" content="2023-09-13" />
   <meta name="citation_publication_date" content="2023-09-13" />
   <meta property="article:published_time" content="2023-09-13" />
-  <meta name="dc.modified" content="2023-09-13T18:07:43+00:00" />
-  <meta property="article:modified_time" content="2023-09-13T18:07:43+00:00" />
+  <meta name="dc.modified" content="2023-09-13T18:33:04+00:00" />
+  <meta property="article:modified_time" content="2023-09-13T18:33:04+00:00" />
   <meta name="dc.language" content="en-US" />
   <meta name="citation_language" content="en-US" />
   <meta name="dc.relation.ispartof" content="Manubot" />
@@ -65,9 +65,9 @@
   <meta name="citation_fulltext_html_url" content="https://hwong23.github.io/pgn-078/" />
   <meta name="citation_pdf_url" content="https://hwong23.github.io/pgn-078/manuscript.pdf" />
   <link rel="alternate" type="application/pdf" href="https://hwong23.github.io/pgn-078/manuscript.pdf" />
-  <link rel="alternate" type="text/html" href="https://hwong23.github.io/pgn-078/v/e3b324e92634fbc6fe5186978c2642b042d48e88/" />
-  <meta name="manubot_html_url_versioned" content="https://hwong23.github.io/pgn-078/v/e3b324e92634fbc6fe5186978c2642b042d48e88/" />
-  <meta name="manubot_pdf_url_versioned" content="https://hwong23.github.io/pgn-078/v/e3b324e92634fbc6fe5186978c2642b042d48e88/manuscript.pdf" />
+  <link rel="alternate" type="text/html" href="https://hwong23.github.io/pgn-078/v/436521e9fea57d0f29803235efb62a266f137c83/" />
+  <meta name="manubot_html_url_versioned" content="https://hwong23.github.io/pgn-078/v/436521e9fea57d0f29803235efb62a266f137c83/" />
+  <meta name="manubot_pdf_url_versioned" content="https://hwong23.github.io/pgn-078/v/436521e9fea57d0f29803235efb62a266f137c83/manuscript.pdf" />
   <meta property="og:type" content="article" />
   <meta property="twitter:card" content="summary_large_image" />
   <link rel="icon" type="image/png" sizes="192x192" href="https://manubot.org/favicon-192x192.png" />
@@ -89,7 +89,7 @@
 <p><br></p>
 <p><br></p>
 <p><br></p>
-<div class="line-block"><strong>Versión</strong> del producto 1.e3b324e de 13 Sep 2023</div>
+<div class="line-block"><strong>Versión</strong> del producto 1.436521e de 13 Sep 2023</div>
 <div class="line-block"><strong>Presentado a</strong></div>
 <div class="line-block">Procuraduría General de la Nación (PGN)</div>
 <div class="line-block"></div>
@@ -99,9 +99,9 @@
 
 </div>
 <p><small><em>Los productos de esta etapa, Migración Funcional SIU, Contrato 078-2023,
-(<a href="https://hwong23.github.io/pgn-078/v/e3b324e92634fbc6fe5186978c2642b042d48e88/">Web</a>)
+(<a href="https://hwong23.github.io/pgn-078/v/436521e9fea57d0f29803235efb62a266f137c83/">Web</a>)
 están basados en el resultado de la Fase 1 del proyecto PGN SIU del 2022,
-<a href="http://softgic.sharepoint.com">Sharepoint Softgic@e3b324e</a>
+<a href="http://softgic.sharepoint.com">Sharepoint Softgic@436521e</a>
 del September 13, 2023.
 </em></small></p>
 <p><br></p>
@@ -150,7 +150,7 @@ Arquitecto, Softgic
 </tr>
 <tr class="even">
 <td>Versión</td>
-<td>1.e3b324e del 13 Sep 2023</td>
+<td>1.436521e del 13 Sep 2023</td>
 </tr>
 <tr class="odd">
 <td>Vínculos</td>
@@ -210,6 +210,59 @@ Arquitecto, Softgic
 <li>Para los casos que aplique, la solución debe contar con una integración con el servicio de correo de la Entidad.</li>
 <li>Todos los desarrollos complementarios serán en su totalidad propiedad de la entidad, para lo cual la entidad podrá modificar y/o actualizar a futuro los procesos modelados, acorde a las necesidades; por tanto, deberán entregarse los derechos intelectuales y patrimoniales como parte de la documentación y el código fuente que corresponda.</li>
 </ol>
+<h2 id="requisitos-de-arquitectura-no-funcional-particulares">Requisitos de Arquitectura (no funcional) Particulares</h2>
+<h3 id="extensibilidad-sui">Extensibilidad SUI</h3>
+<div id="tbl:requisito1-id" class="tablenos">
+<table id="tbl:requisito1-id">
+<caption><span>Tabla 1:</span> Requisito no. 1, Migración SUI, Flexibilidad. </caption>
+<colgroup>
+<col style="width: 44%" />
+<col style="width: 55%" />
+</colgroup>
+<thead>
+<tr class="header">
+<th>Requisito</th>
+<th>Extensibilidad SUI</th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td>Descripción</td>
+<td>Concentración de los componentes de negocio, misionales, del SUI protegidos de cambios provenientes de otros sistemas. Ver Patrón de Diseño Migración SUI, más adelante en el documento.</td>
+</tr>
+<tr class="even">
+<td>Calidad sistémica</td>
+<td>La extensibilidad que optimiza el diseño Migración SUI está dada por el intercambio de submódulos no misionales, como el gestor documental, sin afectación de los componentes misionales que este diseño protege.</td>
+</tr>
+</tbody>
+</table>
+</div>
+<h3 id="mantenibilidad-sui">Mantenibilidad SUI</h3>
+<div id="tbl:requisito2-id" class="tablenos">
+<table id="tbl:requisito2-id">
+<caption><span>Tabla 2:</span> Requisito no. 2. </caption>
+<colgroup>
+<col style="width: 44%" />
+<col style="width: 55%" />
+</colgroup>
+<thead>
+<tr class="header">
+<th>Requisito</th>
+<th>Mantenibilidad SUI</th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td>Descripción</td>
+<td>Evitar las dependencia transitivas de los módulos misionales del SUI a componentes y sistemas de terceros o submódulos no misionales.</td>
+</tr>
+<tr class="even">
+<td>Calidad sistémica</td>
+<td>La mantenibilidad por control de dependencias que optimiza el diseño Migración SUI está dada por el control de cambios no programados sobre los componentes misionales del SUI (corrupción de componentes). Ver Patrón de Diseño Migración SUI, más adelante en el documento.</td>
+</tr>
+</tbody>
+</table>
+</div>
 <h1 id="documento-de-arquitectura-migración-funcional-sui">Documento de Arquitectura Migración Funcional SUI</h1>
 <ul>
 <li><a href="#patrón-de-diseño-línea-base-sui-pgn">Patrón de Diseño Línea Base SUI PGN</a>
@@ -2275,7 +2328,7 @@ Administrar los Usuarios de la Solución: Esta funcionalidad debe permitir confi
 <p><br></p>
 <p><br></p>
 <p><br></p>
-<div class="line-block"><strong>Versión</strong> del producto 1.e3b324e de 13 Sep 2023</div>
+<div class="line-block"><strong>Versión</strong> del producto 1.436521e de 13 Sep 2023</div>
 <div class="line-block"><strong>Presentado a</strong></div>
 <div class="line-block">Procuraduría General de la Nación (PGN)</div>
 <div class="line-block"></div>
@@ -2315,7 +2368,7 @@ Administrar los Usuarios de la Solución: Esta funcionalidad debe permitir confi
 </tr>
 <tr class="even">
 <td>Versión</td>
-<td>1.e3b324e del 13 Sep 2023</td>
+<td>1.436521e del 13 Sep 2023</td>
 </tr>
 <tr class="odd">
 <td>Vínculos</td>
@@ -2967,7 +3020,7 @@ Administrar los Usuarios de la Solución: Esta funcionalidad debe permitir confi
 <p><br></p>
 <p><br></p>
 <p><br></p>
-<div class="line-block"><strong>Versión</strong> del producto 1.e3b324e de 13 Sep 2023</div>
+<div class="line-block"><strong>Versión</strong> del producto 1.436521e de 13 Sep 2023</div>
 <div class="line-block"><strong>Presentado a</strong></div>
 <div class="line-block">Procuraduría General de la Nación (PGN)</div>
 <div class="line-block"></div>
@@ -3007,7 +3060,7 @@ Administrar los Usuarios de la Solución: Esta funcionalidad debe permitir confi
 </tr>
 <tr class="even">
 <td>Versión</td>
-<td>1.e3b324e del 13 Sep 2023</td>
+<td>1.436521e del 13 Sep 2023</td>
 </tr>
 <tr class="odd">
 <td>Vínculos</td>
