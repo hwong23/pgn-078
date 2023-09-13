@@ -18,8 +18,8 @@ header-includes: |
   <meta name="dc.date" content="2023-09-13" />
   <meta name="citation_publication_date" content="2023-09-13" />
   <meta property="article:published_time" content="2023-09-13" />
-  <meta name="dc.modified" content="2023-09-13T18:07:43+00:00" />
-  <meta property="article:modified_time" content="2023-09-13T18:07:43+00:00" />
+  <meta name="dc.modified" content="2023-09-13T18:33:04+00:00" />
+  <meta property="article:modified_time" content="2023-09-13T18:33:04+00:00" />
   <meta name="dc.language" content="en-US" />
   <meta name="citation_language" content="en-US" />
   <meta name="dc.relation.ispartof" content="Manubot" />
@@ -34,9 +34,9 @@ header-includes: |
   <meta name="citation_fulltext_html_url" content="https://hwong23.github.io/pgn-078/" />
   <meta name="citation_pdf_url" content="https://hwong23.github.io/pgn-078/manuscript.pdf" />
   <link rel="alternate" type="application/pdf" href="https://hwong23.github.io/pgn-078/manuscript.pdf" />
-  <link rel="alternate" type="text/html" href="https://hwong23.github.io/pgn-078/v/e3b324e92634fbc6fe5186978c2642b042d48e88/" />
-  <meta name="manubot_html_url_versioned" content="https://hwong23.github.io/pgn-078/v/e3b324e92634fbc6fe5186978c2642b042d48e88/" />
-  <meta name="manubot_pdf_url_versioned" content="https://hwong23.github.io/pgn-078/v/e3b324e92634fbc6fe5186978c2642b042d48e88/manuscript.pdf" />
+  <link rel="alternate" type="text/html" href="https://hwong23.github.io/pgn-078/v/436521e9fea57d0f29803235efb62a266f137c83/" />
+  <meta name="manubot_html_url_versioned" content="https://hwong23.github.io/pgn-078/v/436521e9fea57d0f29803235efb62a266f137c83/" />
+  <meta name="manubot_pdf_url_versioned" content="https://hwong23.github.io/pgn-078/v/436521e9fea57d0f29803235efb62a266f137c83/manuscript.pdf" />
   <meta property="og:type" content="article" />
   <meta property="twitter:card" content="summary_large_image" />
   <link rel="icon" type="image/png" sizes="192x192" href="https://manubot.org/favicon-192x192.png" />
@@ -77,7 +77,7 @@ tablenos-caption-name: Tabla
 
 <br>
 
-| **Versión** del producto 1.e3b324e de 13 Sep 2023
+| **Versión** del producto 1.436521e de 13 Sep 2023
 
 | **Presentado a**
 
@@ -95,9 +95,9 @@ tablenos-caption-name: Tabla
 
 
 <small><em>Los productos de esta etapa, Migración Funcional SIU, Contrato 078-2023, 
-([Web](https://hwong23.github.io/pgn-078/v/e3b324e92634fbc6fe5186978c2642b042d48e88/))
+([Web](https://hwong23.github.io/pgn-078/v/436521e9fea57d0f29803235efb62a266f137c83/))
 están basados en el resultado de la Fase 1 del proyecto PGN SIU del 2022,
-[Sharepoint Softgic@e3b324e](http://softgic.sharepoint.com)
+[Sharepoint Softgic@436521e](http://softgic.sharepoint.com)
 del September 13, 2023.
 </em></small>
 
@@ -143,7 +143,7 @@ Descripción de los productos del trabajo de arquitectura de la Fase 2, proyecto
 | Palabras clave | SIU, Softgic, PGN, Análisis de brecha, GAP, Comparativa              |
 | Autor          |                            |
 | Fuente         |                            |
-| Versión        | 1.e3b324e del 13 Sep 2023 |
+| Versión        | 1.436521e del 13 Sep 2023 |
 | Vínculos       | [N003a Vista Segmento PGN SIU](N03a%a20Vsta%20aSegenta%20SOA%20PGN.md) |
 
 <br>
@@ -220,6 +220,28 @@ Definiremos estos requisitos de la solución a tener en cuenta al momento del de
 1. **Reglas de negocio**. Las soluciones deben disponer de todas las validaciones y controles que garanticen la calidad, seguridad y unicidad de la información.
 1. Para los casos que aplique, la solución debe contar con una integración con el servicio de correo de la Entidad.
 1. Todos los desarrollos complementarios serán en su totalidad propiedad de la entidad, para lo cual la entidad podrá modificar y/o actualizar a futuro los procesos modelados, acorde a las necesidades; por tanto, deberán entregarse los derechos intelectuales y patrimoniales como parte de la documentación y el código fuente que corresponda.
+
+
+
+## Requisitos de Arquitectura (no funcional) Particulares
+
+### Extensibilidad SUI
+| Requisito      | Extensibilidad SUI |
+|----------------|--------------------|
+| Descripción | Concentración de los componentes de negocio, misionales, del SUI protegidos de cambios provenientes de otros sistemas. Ver Patrón de Diseño Migración SUI, más adelante en el documento. |
+| Calidad sistémica | La extensibilidad que optimiza el diseño Migración SUI está dada por el intercambio de submódulos no misionales, como el gestor documental, sin afectación de los componentes misionales que este diseño protege. |
+
+Table: Requisito no. 1, Migración SUI, Flexibilidad. {#tbl:requisito1-id}
+
+### Mantenibilidad SUI
+
+| Requisito      | Mantenibilidad SUI |
+|----------------|--------------------|
+| Descripción | Evitar las dependencia transitivas de los módulos misionales del SUI a componentes y sistemas de terceros o submódulos no misionales.  |
+| Calidad sistémica | La mantenibilidad por control de dependencias que optimiza el diseño Migración SUI está dada por el control de cambios no programados sobre los componentes misionales del SUI (corrupción de componentes). Ver Patrón de Diseño Migración SUI, más adelante en el documento. |
+
+Table: Requisito no. 2. {#tbl:requisito2-id}
+
 
 
 # Documento de Arquitectura Migración Funcional SUI
@@ -811,7 +833,7 @@ tablenos-caption-name: Tabla
 
 <br>
 
-| **Versión** del producto 1.e3b324e de 13 Sep 2023
+| **Versión** del producto 1.436521e de 13 Sep 2023
 
 | **Presentado a**
 
@@ -840,7 +862,7 @@ Descripción de los productos del trabajo de infraestructura del proyecto Migrac
 | Palabras clave | SIU, Softgic, PGN, Análisis de brecha, GAP, Infraestrctura, PasS |
 | Autor          |                            |
 | Fuente         |                            |
-| Versión        | 1.e3b324e del 13 Sep 2023 |
+| Versión        | 1.436521e del 13 Sep 2023 |
 | Vínculos       | [N003a Vista Segmento PGN SIU](N03a%a20Vsta%20aSegenta%20SOA%20PGN.md) |
 
 <br>
@@ -1029,7 +1051,7 @@ tablenos-caption-name: Tabla
 
 <br>
 
-| **Versión** del producto 1.e3b324e de 13 Sep 2023
+| **Versión** del producto 1.436521e de 13 Sep 2023
 
 | **Presentado a**
 
@@ -1059,7 +1081,7 @@ Descripción de los productos de trabajo de la arquitectura de datos del proyect
 | Palabras clave | SIU, Softgic, PGN, Análisis de brecha, GAP, Entidades, Datos  |
 | Autor          |                            |
 | Fuente         |                            |
-| Versión        | 1.e3b324e del 13 Sep 2023 |
+| Versión        | 1.436521e del 13 Sep 2023 |
 | Vínculos       | [N003a Vista Segmento PGN SIU](N03a%a20Vsta%20aSegenta%20SOA%20PGN.md) |
 
 <br>
