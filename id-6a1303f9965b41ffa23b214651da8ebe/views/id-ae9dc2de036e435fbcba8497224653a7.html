@@ -2,13 +2,12 @@
 <html class="frame" lang="en">
 <head>
 	<meta http-equiv="Content-Type" content="text/html;charset=utf-8">
-	<title>Lineabase.1a.SIU componente</title>
+	<title>Lineabase.1a.SIU componentes. infraestrcutura</title>
 
 	<!-- JQUERY (use 1.x branch to be compatible with IE 6/7/8) -->
 	<script type="text/javascript" src="../../lib/jquery/js/jquery-1.11.2.min.js"></script>
 	<!-- BOOTSTRAP -->
-	<link type="text/css" rel="stylesheet" href="../../lib/bootstrap/css/bootstrap-3.3.2.min.css">
-	<link type="text/css" rel="stylesheet" href="../../lib/bootstrap/css/bootstrap-theme-3.3.2.min.css">
+	<link type="text/css" rel="stylesheet" href="../../lib/bootstrap/css/bootstrap.min.yeti.css">
 	<script type="text/javascript" src="../../lib/bootstrap/js/bootstrap-3.3.2.min.js"></script>
 	<!-- REPORT SPECIFIC -->
 	<link type="text/css" rel="stylesheet" href="../../css/model.css">
@@ -22,7 +21,7 @@
 
 		<div class="panel-heading root-panel-heading">
             <!-- Name -->
-               <b>Lineabase.1a.SIU componente</b>
+               <b>Lineabase.1a.SIU componentes. infraestrcutura</b>
 
             <!-- If a View with Viewpoint -->
 			   (<span class="i18n-viewpoint-"></span>)
@@ -32,7 +31,7 @@
 
 		<div class="panel-body root-panel-body">
 		    <!-- If this is a digram model (has children and no bounds) show the image -->
-			   <img class="diagram" src="../images/id-ae9dc2de036e435fbcba8497224653a7.png" alt="Lineabase.1a.SIU componente" usemap="#id-ae9dc2de036e435fbcba8497224653a7map"/>
+			   <img class="diagram" src="../images/id-ae9dc2de036e435fbcba8497224653a7.png" alt="Lineabase.1a.SIU componentes. infraestrcutura" usemap="#id-ae9dc2de036e435fbcba8497224653a7map"/>
 			   <map name="id-ae9dc2de036e435fbcba8497224653a7map">
 				  		<area shape="rect" coords="2372,1508,2708,1618" href="../elements/id-7b5170b02a4b45bda1d0fb537b34aaaf.html"  target="element">
 				  		<area shape="rect" coords="2372,1340,2708,1450" href="../elements/id-aecaee1fdc3c4aaaa5ca5d9f3f826b61.html"  target="element">
@@ -97,9 +96,15 @@
 				<!-- Tab panes -->
 				<div class="tab-content">
 					<div role="tabpanel" class="tab-pane active" id="documentation">
-						<div class="convertlinks documentation" style="white-space:pre-wrap">Dependencias entre los servicios que integran la aplicaci&#243;n de SUI. 
+						<div class="convertlinks documentation" style="white-space:pre-wrap">Dependencias de infraestructura entre los servicios que integran el modelo de aplicaci&#243;n de SUI, Migraci&#243;n. 
 
-4 paquetes con tecnolog&#237;as respectivas Angular 11 (Web), Api Transaccional (Node Js) y Api Config (C#) y el alojamiento de datos.</div>
+* Servidor de Canales (App PGN web y m&#243;vil)
+* Servidor Web App (App SUI)
+* Servidor Lappiz (Config SUI)
+* Servidor BDD App (Transaccional)
+* Servidor BDD Config (Configuraci&#243;n)
+
+</div>
 					</div>
 					<div role="tabpanel" class="tab-pane" id="properties">
 						<table class="table table-striped table-hover table-condensed">
@@ -110,7 +115,7 @@
 								</tr>
 							</thead>
 							<tbody>
-								<tr><td> plataforma </td><td class="convertlinks"> <xmp class="no-margin" style="white-space:pre-wrap">js</xmp> </td></tr>
+								<tr><td>plataforma</td><td class="convertlinks no-margin" style="white-space:pre-wrap">js</td></tr>
 							</tbody>
 						</table>
 					</div>
@@ -125,189 +130,225 @@
 								<tbody>
 											<tr>
 											    <td> <a href="../elements/id-780eb3d87c184ee68828559f1f9c2c34.html" target="element"> PGN SIU </a> </td>
-											    <td> <a href="../elements/id-780eb3d87c184ee68828559f1f9c2c34.html" target="element" class="i18n-elementtype-Grouping"> </a> </td>
+											    <td> <a href="../elements/id-780eb3d87c184ee68828559f1f9c2c34.html" target="element" class="i18n-elementtype-Grouping">
+											    </a> </td>
 											</tr>
 
 													<tr>
 													    <td> <a href="../elements/id-c452a87a2559473ab440d60ea720d6d7.html" target="element"> Persistencia </a> </td>
-													    <td> <a href="../elements/id-c452a87a2559473ab440d60ea720d6d7.html" target="element" class="i18n-elementtype-ApplicationCollaboration"> </a> </td>
+													    <td> <a href="../elements/id-c452a87a2559473ab440d60ea720d6d7.html" target="element" class="i18n-elementtype-ApplicationCollaboration">
+													    </a> </td>
 													</tr>
 
 															<tr>
 															    <td> <a href="../elements/id-68abf55c751f4f7984c9235f0197fe31.html" target="element"> Transacciones </a> </td>
-															    <td> <a href="../elements/id-68abf55c751f4f7984c9235f0197fe31.html" target="element" class="i18n-elementtype-ApplicationComponent"> </a> </td>
+															    <td> <a href="../elements/id-68abf55c751f4f7984c9235f0197fe31.html" target="element" class="i18n-elementtype-ApplicationComponent">
+															    </a> </td>
 															</tr>
 
 															<tr>
 															    <td> <a href="../elements/id-9b05aa538eaa44b88844e9c80a584651.html" target="element"> Seguridad </a> </td>
-															    <td> <a href="../elements/id-9b05aa538eaa44b88844e9c80a584651.html" target="element" class="i18n-elementtype-ApplicationComponent"> </a> </td>
+															    <td> <a href="../elements/id-9b05aa538eaa44b88844e9c80a584651.html" target="element" class="i18n-elementtype-ApplicationComponent">
+															    </a> </td>
 															</tr>
 
 															<tr>
 															    <td> <a href="../elements/id-9d2a47b8b656445b8a95269ec40d4421.html" target="element"> Utilitario </a> </td>
-															    <td> <a href="../elements/id-9d2a47b8b656445b8a95269ec40d4421.html" target="element" class="i18n-elementtype-ApplicationComponent"> </a> </td>
+															    <td> <a href="../elements/id-9d2a47b8b656445b8a95269ec40d4421.html" target="element" class="i18n-elementtype-ApplicationComponent">
+															    </a> </td>
 															</tr>
 
 													
 											
 											<tr>
-											    <td> <a href="../elements/id-6be0cbeb423e4f8da692b73e9a73d867.html" target="element"> Grouping </a> </td>
-											    <td> <a href="../elements/id-6be0cbeb423e4f8da692b73e9a73d867.html" target="element" class="i18n-elementtype-Grouping"> </a> </td>
+											    <td> <a href="../elements/id-6be0cbeb423e4f8da692b73e9a73d867.html" target="element"> Infraestructura SUI </a> </td>
+											    <td> <a href="../elements/id-6be0cbeb423e4f8da692b73e9a73d867.html" target="element" class="i18n-elementtype-Grouping">
+											    </a> </td>
 											</tr>
 
 											<tr>
 											    <td> <a href="../elements/id-bf045c97cf694ad1afcb5837500cb117.html" target="element"> App PGN Web </a> </td>
-											    <td> <a href="../elements/id-bf045c97cf694ad1afcb5837500cb117.html" target="element" class="i18n-elementtype-ApplicationComponent"> </a> </td>
+											    <td> <a href="../elements/id-bf045c97cf694ad1afcb5837500cb117.html" target="element" class="i18n-elementtype-ApplicationComponent">
+											    </a> </td>
 											</tr>
 
 													<tr>
 													    <td> <a href="../elements/id-363d8fbbe87b4eb08ed21c655a229348.html" target="element"> Controlador frontal web </a> </td>
-													    <td> <a href="../elements/id-363d8fbbe87b4eb08ed21c655a229348.html" target="element" class="i18n-elementtype-ApplicationComponent"> </a> </td>
+													    <td> <a href="../elements/id-363d8fbbe87b4eb08ed21c655a229348.html" target="element" class="i18n-elementtype-ApplicationComponent">
+													    </a> </td>
 													</tr>
 
 													<tr>
 													    <td> <a href="../elements/id-e92ace0de0884e32aaffaec71d596909.html" target="element"> Vista web </a> </td>
-													    <td> <a href="../elements/id-e92ace0de0884e32aaffaec71d596909.html" target="element" class="i18n-elementtype-ApplicationComponent"> </a> </td>
+													    <td> <a href="../elements/id-e92ace0de0884e32aaffaec71d596909.html" target="element" class="i18n-elementtype-ApplicationComponent">
+													    </a> </td>
 													</tr>
 
 											
 											<tr>
 											    <td> <a href="../elements/id-d1a165b5ccff4f9fa7b0ea2b2b2bac73.html" target="element"> App PGN M&#243;vil </a> </td>
-											    <td> <a href="../elements/id-d1a165b5ccff4f9fa7b0ea2b2b2bac73.html" target="element" class="i18n-elementtype-ApplicationComponent"> </a> </td>
+											    <td> <a href="../elements/id-d1a165b5ccff4f9fa7b0ea2b2b2bac73.html" target="element" class="i18n-elementtype-ApplicationComponent">
+											    </a> </td>
 											</tr>
 
 													<tr>
 													    <td> <a href="../elements/id-c48df4b64398450fb79de806a3696331.html" target="element"> Controlador frontal mvl </a> </td>
-													    <td> <a href="../elements/id-c48df4b64398450fb79de806a3696331.html" target="element" class="i18n-elementtype-ApplicationComponent"> </a> </td>
+													    <td> <a href="../elements/id-c48df4b64398450fb79de806a3696331.html" target="element" class="i18n-elementtype-ApplicationComponent">
+													    </a> </td>
 													</tr>
 
 													<tr>
 													    <td> <a href="../elements/id-0b4410560810420bad09d6cdc842553f.html" target="element"> Vista m&#243;vil </a> </td>
-													    <td> <a href="../elements/id-0b4410560810420bad09d6cdc842553f.html" target="element" class="i18n-elementtype-ApplicationComponent"> </a> </td>
+													    <td> <a href="../elements/id-0b4410560810420bad09d6cdc842553f.html" target="element" class="i18n-elementtype-ApplicationComponent">
+													    </a> </td>
 													</tr>
 
 											
 											<tr>
 											    <td> <a href="../elements/id-3785708a234346538dbd8ca5d336dcd7.html" target="element"> Interfaz de aplicaci&#243;n (runtime) </a> </td>
-											    <td> <a href="../elements/id-3785708a234346538dbd8ca5d336dcd7.html" target="element" class="i18n-elementtype-ApplicationInterface"> </a> </td>
+											    <td> <a href="../elements/id-3785708a234346538dbd8ca5d336dcd7.html" target="element" class="i18n-elementtype-ApplicationInterface">
+											    </a> </td>
 											</tr>
 
 													<tr>
 													    <td> <a href="../elements/id-b32471efad9c49839350c24b4df09a2c.html" target="element"> Mensaje: JSON </a> </td>
-													    <td> <a href="../elements/id-b32471efad9c49839350c24b4df09a2c.html" target="element" class="i18n-elementtype-DataObject"> </a> </td>
+													    <td> <a href="../elements/id-b32471efad9c49839350c24b4df09a2c.html" target="element" class="i18n-elementtype-DataObject">
+													    </a> </td>
 													</tr>
 
 											
 											<tr>
 											    <td> <a href="../elements/id-7cb37475169d4fe7a11d40fc2eaa23d8.html" target="element"> App </a> </td>
-											    <td> <a href="../elements/id-7cb37475169d4fe7a11d40fc2eaa23d8.html" target="element" class="i18n-elementtype-ApplicationComponent"> </a> </td>
+											    <td> <a href="../elements/id-7cb37475169d4fe7a11d40fc2eaa23d8.html" target="element" class="i18n-elementtype-ApplicationComponent">
+											    </a> </td>
 											</tr>
 
 													<tr>
 													    <td> <a href="../elements/id-515123683f0e4a9da958265d99824cc0.html" target="element"> Puerto datos 1 </a> </td>
-													    <td> <a href="../elements/id-515123683f0e4a9da958265d99824cc0.html" target="element" class="i18n-elementtype-ApplicationComponent"> </a> </td>
+													    <td> <a href="../elements/id-515123683f0e4a9da958265d99824cc0.html" target="element" class="i18n-elementtype-ApplicationComponent">
+													    </a> </td>
 													</tr>
 
 													<tr>
 													    <td> <a href="../elements/id-e7150f379bd34087a7288f9d69bc4581.html" target="element"> Controlador funcional </a> </td>
-													    <td> <a href="../elements/id-e7150f379bd34087a7288f9d69bc4581.html" target="element" class="i18n-elementtype-ApplicationComponent"> </a> </td>
+													    <td> <a href="../elements/id-e7150f379bd34087a7288f9d69bc4581.html" target="element" class="i18n-elementtype-ApplicationComponent">
+													    </a> </td>
 													</tr>
 
 											
 											<tr>
 											    <td> <a href="../elements/id-60a90d494b7f4747a88f33e4e9ebdc97.html" target="element"> Config </a> </td>
-											    <td> <a href="../elements/id-60a90d494b7f4747a88f33e4e9ebdc97.html" target="element" class="i18n-elementtype-ApplicationComponent"> </a> </td>
+											    <td> <a href="../elements/id-60a90d494b7f4747a88f33e4e9ebdc97.html" target="element" class="i18n-elementtype-ApplicationComponent">
+											    </a> </td>
 											</tr>
 
 													<tr>
 													    <td> <a href="../elements/id-346c20198fbb41db868cb5450dab9e3d.html" target="element"> Modelo (neg) </a> </td>
-													    <td> <a href="../elements/id-346c20198fbb41db868cb5450dab9e3d.html" target="element" class="i18n-elementtype-ApplicationComponent"> </a> </td>
+													    <td> <a href="../elements/id-346c20198fbb41db868cb5450dab9e3d.html" target="element" class="i18n-elementtype-ApplicationComponent">
+													    </a> </td>
 													</tr>
 
 													<tr>
 													    <td> <a href="../elements/id-a6b61de137cb4e09b85a23db1e5f3efc.html" target="element"> Controlador admin </a> </td>
-													    <td> <a href="../elements/id-a6b61de137cb4e09b85a23db1e5f3efc.html" target="element" class="i18n-elementtype-ApplicationComponent"> </a> </td>
+													    <td> <a href="../elements/id-a6b61de137cb4e09b85a23db1e5f3efc.html" target="element" class="i18n-elementtype-ApplicationComponent">
+													    </a> </td>
 													</tr>
 
 													<tr>
 													    <td> <a href="../elements/id-f4554ddf4983471ea28295e423d73724.html" target="element"> Puerto datos 2 </a> </td>
-													    <td> <a href="../elements/id-f4554ddf4983471ea28295e423d73724.html" target="element" class="i18n-elementtype-ApplicationComponent"> </a> </td>
+													    <td> <a href="../elements/id-f4554ddf4983471ea28295e423d73724.html" target="element" class="i18n-elementtype-ApplicationComponent">
+													    </a> </td>
 													</tr>
 
 											
 											<tr>
 											    <td> <a href="../elements/id-e759a68c6338464093793b86acdf7668.html" target="element"> Interfaz de datos 1 </a> </td>
-											    <td> <a href="../elements/id-e759a68c6338464093793b86acdf7668.html" target="element" class="i18n-elementtype-ApplicationService"> </a> </td>
+											    <td> <a href="../elements/id-e759a68c6338464093793b86acdf7668.html" target="element" class="i18n-elementtype-ApplicationService">
+											    </a> </td>
 											</tr>
 
 											<tr>
 											    <td> <a href="../elements/id-0981e6c63672412fbe8497b9444798df.html" target="element"> Interfaz de datos 3 </a> </td>
-											    <td> <a href="../elements/id-0981e6c63672412fbe8497b9444798df.html" target="element" class="i18n-elementtype-ApplicationService"> </a> </td>
+											    <td> <a href="../elements/id-0981e6c63672412fbe8497b9444798df.html" target="element" class="i18n-elementtype-ApplicationService">
+											    </a> </td>
 											</tr>
 
 											<tr>
 											    <td> <a href="../elements/id-ac6d42077e3544ae8f7c9d7bd5daf461.html" target="element"> Interfaz de datos 2 </a> </td>
-											    <td> <a href="../elements/id-ac6d42077e3544ae8f7c9d7bd5daf461.html" target="element" class="i18n-elementtype-ApplicationService"> </a> </td>
+											    <td> <a href="../elements/id-ac6d42077e3544ae8f7c9d7bd5daf461.html" target="element" class="i18n-elementtype-ApplicationService">
+											    </a> </td>
 											</tr>
 
 											<tr>
 											    <td> <a href="../elements/id-5ffd2095e7344bb5b9023edd9e3d7aa4.html" target="element"> Application Service (NLB) </a> </td>
-											    <td> <a href="../elements/id-5ffd2095e7344bb5b9023edd9e3d7aa4.html" target="element" class="i18n-elementtype-ApplicationService"> </a> </td>
+											    <td> <a href="../elements/id-5ffd2095e7344bb5b9023edd9e3d7aa4.html" target="element" class="i18n-elementtype-ApplicationService">
+											    </a> </td>
 											</tr>
 
 											<tr>
 											    <td> <a href="../elements/id-5f840ee17e7f4a1cabb234614b062aa7.html" target="element"> Servidor Web Canales </a> </td>
-											    <td> <a href="../elements/id-5f840ee17e7f4a1cabb234614b062aa7.html" target="element" class="i18n-elementtype-Node"> </a> </td>
+											    <td> <a href="../elements/id-5f840ee17e7f4a1cabb234614b062aa7.html" target="element" class="i18n-elementtype-Node">
+											    </a> </td>
 											</tr>
 
 											<tr>
 											    <td> <a href="../elements/id-63f889359eb8483488d2c6232d34f986.html" target="element"> Servidor BDD App </a> </td>
-											    <td> <a href="../elements/id-63f889359eb8483488d2c6232d34f986.html" target="element" class="i18n-elementtype-Node"> </a> </td>
+											    <td> <a href="../elements/id-63f889359eb8483488d2c6232d34f986.html" target="element" class="i18n-elementtype-Node">
+											    </a> </td>
 											</tr>
 
 											<tr>
 											    <td> <a href="../elements/id-be916e95b1d84584be24375c07fe9097.html" target="element"> Servidor BDD Config </a> </td>
-											    <td> <a href="../elements/id-be916e95b1d84584be24375c07fe9097.html" target="element" class="i18n-elementtype-Node"> </a> </td>
+											    <td> <a href="../elements/id-be916e95b1d84584be24375c07fe9097.html" target="element" class="i18n-elementtype-Node">
+											    </a> </td>
 											</tr>
 
 											<tr>
 											    <td> <a href="../elements/id-dcce32de573248c796f88110aeb95afa.html" target="element"> Servidor Web App </a> </td>
-											    <td> <a href="../elements/id-dcce32de573248c796f88110aeb95afa.html" target="element" class="i18n-elementtype-Node"> </a> </td>
+											    <td> <a href="../elements/id-dcce32de573248c796f88110aeb95afa.html" target="element" class="i18n-elementtype-Node">
+											    </a> </td>
 											</tr>
 
 											<tr>
 											    <td> <a href="../elements/id-6db2767b4e464729bb0afe5976523f55.html" target="element"> Servidor Lappiz  </a> </td>
-											    <td> <a href="../elements/id-6db2767b4e464729bb0afe5976523f55.html" target="element" class="i18n-elementtype-Node"> </a> </td>
+											    <td> <a href="../elements/id-6db2767b4e464729bb0afe5976523f55.html" target="element" class="i18n-elementtype-Node">
+											    </a> </td>
 											</tr>
 
 											<tr>
 											    <td> <a href="../elements/id-e866abb22ad044eb8aecd69371276fcb.html" target="element"> Archivos Compartidos </a> </td>
-											    <td> <a href="../elements/id-e866abb22ad044eb8aecd69371276fcb.html" target="element" class="i18n-elementtype-ApplicationService"> </a> </td>
+											    <td> <a href="../elements/id-e866abb22ad044eb8aecd69371276fcb.html" target="element" class="i18n-elementtype-ApplicationService">
+											    </a> </td>
 											</tr>
 
 											<tr>
 											    <td> <a href="../elements/id-5c8ac656bc9e4222a5270956e28f8b08.html" target="element"> CDN Contenidos </a> </td>
-											    <td> <a href="../elements/id-5c8ac656bc9e4222a5270956e28f8b08.html" target="element" class="i18n-elementtype-ApplicationService"> </a> </td>
+											    <td> <a href="../elements/id-5c8ac656bc9e4222a5270956e28f8b08.html" target="element" class="i18n-elementtype-ApplicationService">
+											    </a> </td>
 											</tr>
 
 											<tr>
 											    <td> <a href="../elements/id-27714c258b624924bf6448c0d9ba89e7.html" target="element"> Identidades </a> </td>
-											    <td> <a href="../elements/id-27714c258b624924bf6448c0d9ba89e7.html" target="element" class="i18n-elementtype-ApplicationService"> </a> </td>
+											    <td> <a href="../elements/id-27714c258b624924bf6448c0d9ba89e7.html" target="element" class="i18n-elementtype-ApplicationService">
+											    </a> </td>
 											</tr>
 
 											<tr>
 											    <td> <a href="../elements/id-875702502e054765993ac92b53d6fe23.html" target="element"> Doku (gest. doc.) </a> </td>
-											    <td> <a href="../elements/id-875702502e054765993ac92b53d6fe23.html" target="element" class="i18n-elementtype-ApplicationService"> </a> </td>
+											    <td> <a href="../elements/id-875702502e054765993ac92b53d6fe23.html" target="element" class="i18n-elementtype-ApplicationService">
+											    </a> </td>
 											</tr>
 
 											<tr>
-											    <td> <a href="../elements/id-aecaee1fdc3c4aaaa5ca5d9f3f826b61.html" target="element"> Proveedores contenidos </a> </td>
-											    <td> <a href="../elements/id-aecaee1fdc3c4aaaa5ca5d9f3f826b61.html" target="element" class="i18n-elementtype-ApplicationService"> </a> </td>
+											    <td> <a href="../elements/id-aecaee1fdc3c4aaaa5ca5d9f3f826b61.html" target="element"> ccccc Proveedores contenidos </a> </td>
+											    <td> <a href="../elements/id-aecaee1fdc3c4aaaa5ca5d9f3f826b61.html" target="element" class="i18n-elementtype-ApplicationService">
+											    </a> </td>
 											</tr>
 
 											<tr>
 											    <td> <a href="../elements/id-7b5170b02a4b45bda1d0fb537b34aaaf.html" target="element"> API externas </a> </td>
-											    <td> <a href="../elements/id-7b5170b02a4b45bda1d0fb537b34aaaf.html" target="element" class="i18n-elementtype-ApplicationService"> </a> </td>
+											    <td> <a href="../elements/id-7b5170b02a4b45bda1d0fb537b34aaaf.html" target="element" class="i18n-elementtype-ApplicationService">
+											    </a> </td>
 											</tr>
 
 
@@ -327,26 +368,30 @@
 								<tbody>
 																	<tr>
 																		<td> <a href="../elements/id-aff82c6a5af946e892283203063fcc48.html" target="element">  </a> </td>
-																		<td> <a href="../elements/id-aff82c6a5af946e892283203063fcc48.html" target="element" class="i18n-elementtype-CompositionRelationship"></a> </td>
+																		<td> <a href="../elements/id-aff82c6a5af946e892283203063fcc48.html" target="element" class="i18n-elementtype-CompositionRelationship">
+																		</a> </td>
 																		<td> <a href="../elements/id-780eb3d87c184ee68828559f1f9c2c34.html" target="element"> PGN SIU </a> </td>
 																		<td> <a href="../elements/id-c452a87a2559473ab440d60ea720d6d7.html" target="element"> Persistencia </a> </td>
 																	</tr>
 
 																			<tr>
 																				<td> <a href="../elements/id-46b6acc7f10342cfb50bdf580dfd3060.html" target="element">  </a> </td>
-																				<td> <a href="../elements/id-46b6acc7f10342cfb50bdf580dfd3060.html" target="element" class="i18n-elementtype-AggregationRelationship"></a> </td>
+																				<td> <a href="../elements/id-46b6acc7f10342cfb50bdf580dfd3060.html" target="element" class="i18n-elementtype-AggregationRelationship">
+																				</a> </td>
 																				<td> <a href="../elements/id-c452a87a2559473ab440d60ea720d6d7.html" target="element"> Persistencia </a> </td>
 																				<td> <a href="../elements/id-68abf55c751f4f7984c9235f0197fe31.html" target="element"> Transacciones </a> </td>
 																			</tr>
 																			<tr>
 																				<td> <a href="../elements/id-341991b3f0e942c384522dfa76197940.html" target="element">  </a> </td>
-																				<td> <a href="../elements/id-341991b3f0e942c384522dfa76197940.html" target="element" class="i18n-elementtype-AggregationRelationship"></a> </td>
+																				<td> <a href="../elements/id-341991b3f0e942c384522dfa76197940.html" target="element" class="i18n-elementtype-AggregationRelationship">
+																				</a> </td>
 																				<td> <a href="../elements/id-c452a87a2559473ab440d60ea720d6d7.html" target="element"> Persistencia </a> </td>
 																				<td> <a href="../elements/id-9b05aa538eaa44b88844e9c80a584651.html" target="element"> Seguridad </a> </td>
 																			</tr>
 																			<tr>
 																				<td> <a href="../elements/id-7d26f0d98cba4b18ade87b08c736d66b.html" target="element">  </a> </td>
-																				<td> <a href="../elements/id-7d26f0d98cba4b18ade87b08c736d66b.html" target="element" class="i18n-elementtype-AggregationRelationship"></a> </td>
+																				<td> <a href="../elements/id-7d26f0d98cba4b18ade87b08c736d66b.html" target="element" class="i18n-elementtype-AggregationRelationship">
+																				</a> </td>
 																				<td> <a href="../elements/id-c452a87a2559473ab440d60ea720d6d7.html" target="element"> Persistencia </a> </td>
 																				<td> <a href="../elements/id-9d2a47b8b656445b8a95269ec40d4421.html" target="element"> Utilitario </a> </td>
 																			</tr>
@@ -355,45 +400,45 @@
 											
 																	<tr>
 																		<td> <a href="../elements/id-f68c6926c4d5483b86463076f1d4ee1c.html" target="element">  </a> </td>
-																		<td> <a href="../elements/id-f68c6926c4d5483b86463076f1d4ee1c.html" target="element" class="i18n-elementtype-CompositionRelationship"></a> </td>
+																		<td> <a href="../elements/id-f68c6926c4d5483b86463076f1d4ee1c.html" target="element" class="i18n-elementtype-CompositionRelationship">
+																		</a> </td>
 																		<td> <a href="../elements/id-bf045c97cf694ad1afcb5837500cb117.html" target="element"> App PGN Web </a> </td>
 																		<td> <a href="../elements/id-363d8fbbe87b4eb08ed21c655a229348.html" target="element"> Controlador frontal web </a> </td>
 																	</tr>
 																	<tr>
 																		<td> <a href="../elements/id-fb14c8cabb234401ba1f059ceafc8eab.html" target="element">  </a> </td>
-																		<td> <a href="../elements/id-fb14c8cabb234401ba1f059ceafc8eab.html" target="element" class="i18n-elementtype-CompositionRelationship"></a> </td>
+																		<td> <a href="../elements/id-fb14c8cabb234401ba1f059ceafc8eab.html" target="element" class="i18n-elementtype-CompositionRelationship">
+																		</a> </td>
 																		<td> <a href="../elements/id-bf045c97cf694ad1afcb5837500cb117.html" target="element"> App PGN Web </a> </td>
 																		<td> <a href="../elements/id-e92ace0de0884e32aaffaec71d596909.html" target="element"> Vista web </a> </td>
 																	</tr>
 																	<tr>
 																		<td> <a href="../elements/id-c9e44164b9b04adcaa22fbb6d01c9e14.html" target="element">  </a> </td>
-																		<td> <a href="../elements/id-c9e44164b9b04adcaa22fbb6d01c9e14.html" target="element" class="i18n-elementtype-AssociationRelationship"></a> </td>
+																		<td> <a href="../elements/id-c9e44164b9b04adcaa22fbb6d01c9e14.html" target="element" class="i18n-elementtype-AssociationRelationship">
+																		</a> </td>
 																		<td> <a href="../elements/id-bf045c97cf694ad1afcb5837500cb117.html" target="element"> App PGN Web </a> </td>
 																		<td> <a href="../elements/id-3785708a234346538dbd8ca5d336dcd7.html" target="element"> Interfaz de aplicaci&#243;n (runtime) </a> </td>
-																	</tr>
-																	<tr>
-																		<td> <a href="../elements/id-a5d54d657cfe4e5c98027abce6600b77.html" target="element">  </a> </td>
-																		<td> <a href="../elements/id-a5d54d657cfe4e5c98027abce6600b77.html" target="element" class="i18n-elementtype-AssociationRelationship"></a> </td>
-																		<td> <a href="../elements/id-bf045c97cf694ad1afcb5837500cb117.html" target="element"> App PGN Web </a> </td>
-																		<td> <a href="../elements/id-5f840ee17e7f4a1cabb234614b062aa7.html" target="element"> Servidor Web Canales </a> </td>
 																	</tr>
 
 											
 																	<tr>
 																		<td> <a href="../elements/id-ece4229ff8e0442db4a7e7ff13606d01.html" target="element">  </a> </td>
-																		<td> <a href="../elements/id-ece4229ff8e0442db4a7e7ff13606d01.html" target="element" class="i18n-elementtype-CompositionRelationship"></a> </td>
+																		<td> <a href="../elements/id-ece4229ff8e0442db4a7e7ff13606d01.html" target="element" class="i18n-elementtype-CompositionRelationship">
+																		</a> </td>
 																		<td> <a href="../elements/id-d1a165b5ccff4f9fa7b0ea2b2b2bac73.html" target="element"> App PGN M&#243;vil </a> </td>
 																		<td> <a href="../elements/id-c48df4b64398450fb79de806a3696331.html" target="element"> Controlador frontal mvl </a> </td>
 																	</tr>
 																	<tr>
 																		<td> <a href="../elements/id-b05c014c226d40a381d85223a9a38619.html" target="element">  </a> </td>
-																		<td> <a href="../elements/id-b05c014c226d40a381d85223a9a38619.html" target="element" class="i18n-elementtype-CompositionRelationship"></a> </td>
+																		<td> <a href="../elements/id-b05c014c226d40a381d85223a9a38619.html" target="element" class="i18n-elementtype-CompositionRelationship">
+																		</a> </td>
 																		<td> <a href="../elements/id-d1a165b5ccff4f9fa7b0ea2b2b2bac73.html" target="element"> App PGN M&#243;vil </a> </td>
 																		<td> <a href="../elements/id-0b4410560810420bad09d6cdc842553f.html" target="element"> Vista m&#243;vil </a> </td>
 																	</tr>
 																	<tr>
 																		<td> <a href="../elements/id-0f28c98673b9443bbc20ba2be5a6ea63.html" target="element">  </a> </td>
-																		<td> <a href="../elements/id-0f28c98673b9443bbc20ba2be5a6ea63.html" target="element" class="i18n-elementtype-AssociationRelationship"></a> </td>
+																		<td> <a href="../elements/id-0f28c98673b9443bbc20ba2be5a6ea63.html" target="element" class="i18n-elementtype-AssociationRelationship">
+																		</a> </td>
 																		<td> <a href="../elements/id-d1a165b5ccff4f9fa7b0ea2b2b2bac73.html" target="element"> App PGN M&#243;vil </a> </td>
 																		<td> <a href="../elements/id-3785708a234346538dbd8ca5d336dcd7.html" target="element"> Interfaz de aplicaci&#243;n (runtime) </a> </td>
 																	</tr>
@@ -401,7 +446,8 @@
 											
 																	<tr>
 																		<td> <a href="../elements/id-e6d1389ef6cd450a8e4e64a1d82eaaf6.html" target="element">  </a> </td>
-																		<td> <a href="../elements/id-e6d1389ef6cd450a8e4e64a1d82eaaf6.html" target="element" class="i18n-elementtype-AccessRelationship"></a> </td>
+																		<td> <a href="../elements/id-e6d1389ef6cd450a8e4e64a1d82eaaf6.html" target="element" class="i18n-elementtype-AccessRelationship">
+																		</a> </td>
 																		<td> <a href="../elements/id-3785708a234346538dbd8ca5d336dcd7.html" target="element"> Interfaz de aplicaci&#243;n (runtime) </a> </td>
 																		<td> <a href="../elements/id-b32471efad9c49839350c24b4df09a2c.html" target="element"> Mensaje: JSON </a> </td>
 																	</tr>
@@ -409,31 +455,36 @@
 											
 																	<tr>
 																		<td> <a href="../elements/id-08dad7d3f0f2468885c6fe1570609b2f.html" target="element">  </a> </td>
-																		<td> <a href="../elements/id-08dad7d3f0f2468885c6fe1570609b2f.html" target="element" class="i18n-elementtype-CompositionRelationship"></a> </td>
+																		<td> <a href="../elements/id-08dad7d3f0f2468885c6fe1570609b2f.html" target="element" class="i18n-elementtype-CompositionRelationship">
+																		</a> </td>
 																		<td> <a href="../elements/id-7cb37475169d4fe7a11d40fc2eaa23d8.html" target="element"> App </a> </td>
 																		<td> <a href="../elements/id-515123683f0e4a9da958265d99824cc0.html" target="element"> Puerto datos 1 </a> </td>
 																	</tr>
 																	<tr>
 																		<td> <a href="../elements/id-eae23c7d63a141949fa9a6ae0a439ff9.html" target="element">  </a> </td>
-																		<td> <a href="../elements/id-eae23c7d63a141949fa9a6ae0a439ff9.html" target="element" class="i18n-elementtype-CompositionRelationship"></a> </td>
+																		<td> <a href="../elements/id-eae23c7d63a141949fa9a6ae0a439ff9.html" target="element" class="i18n-elementtype-CompositionRelationship">
+																		</a> </td>
 																		<td> <a href="../elements/id-7cb37475169d4fe7a11d40fc2eaa23d8.html" target="element"> App </a> </td>
 																		<td> <a href="../elements/id-e7150f379bd34087a7288f9d69bc4581.html" target="element"> Controlador funcional </a> </td>
 																	</tr>
 																	<tr>
 																		<td> <a href="../elements/id-82d2eb516f134e3d9c936b2a9acf6578.html" target="element">  </a> </td>
-																		<td> <a href="../elements/id-82d2eb516f134e3d9c936b2a9acf6578.html" target="element" class="i18n-elementtype-AssociationRelationship"></a> </td>
+																		<td> <a href="../elements/id-82d2eb516f134e3d9c936b2a9acf6578.html" target="element" class="i18n-elementtype-AssociationRelationship">
+																		</a> </td>
 																		<td> <a href="../elements/id-7cb37475169d4fe7a11d40fc2eaa23d8.html" target="element"> App </a> </td>
 																		<td> <a href="../elements/id-3785708a234346538dbd8ca5d336dcd7.html" target="element"> Interfaz de aplicaci&#243;n (runtime) </a> </td>
 																	</tr>
 																	<tr>
 																		<td> <a href="../elements/id-15c7a650194e48d694a2158fadfa68be.html" target="element">  </a> </td>
-																		<td> <a href="../elements/id-15c7a650194e48d694a2158fadfa68be.html" target="element" class="i18n-elementtype-AssociationRelationship"></a> </td>
+																		<td> <a href="../elements/id-15c7a650194e48d694a2158fadfa68be.html" target="element" class="i18n-elementtype-AssociationRelationship">
+																		</a> </td>
 																		<td> <a href="../elements/id-7cb37475169d4fe7a11d40fc2eaa23d8.html" target="element"> App </a> </td>
 																		<td> <a href="../elements/id-e759a68c6338464093793b86acdf7668.html" target="element"> Interfaz de datos 1 </a> </td>
 																	</tr>
 																	<tr>
 																		<td> <a href="../elements/id-0090e22e6b1e434c8b8f87b2bde1e837.html" target="element">  </a> </td>
-																		<td> <a href="../elements/id-0090e22e6b1e434c8b8f87b2bde1e837.html" target="element" class="i18n-elementtype-AssociationRelationship"></a> </td>
+																		<td> <a href="../elements/id-0090e22e6b1e434c8b8f87b2bde1e837.html" target="element" class="i18n-elementtype-AssociationRelationship">
+																		</a> </td>
 																		<td> <a href="../elements/id-7cb37475169d4fe7a11d40fc2eaa23d8.html" target="element"> App </a> </td>
 																		<td> <a href="../elements/id-60a90d494b7f4747a88f33e4e9ebdc97.html" target="element"> Config </a> </td>
 																	</tr>
@@ -441,44 +492,51 @@
 											
 																	<tr>
 																		<td> <a href="../elements/id-42b3d8c42fe845b391f331362ddb421f.html" target="element">  </a> </td>
-																		<td> <a href="../elements/id-42b3d8c42fe845b391f331362ddb421f.html" target="element" class="i18n-elementtype-CompositionRelationship"></a> </td>
+																		<td> <a href="../elements/id-42b3d8c42fe845b391f331362ddb421f.html" target="element" class="i18n-elementtype-CompositionRelationship">
+																		</a> </td>
 																		<td> <a href="../elements/id-60a90d494b7f4747a88f33e4e9ebdc97.html" target="element"> Config </a> </td>
 																		<td> <a href="../elements/id-346c20198fbb41db868cb5450dab9e3d.html" target="element"> Modelo (neg) </a> </td>
 																	</tr>
 																	<tr>
 																		<td> <a href="../elements/id-48a1926c6a0042c5b9a34ce6f521585c.html" target="element">  </a> </td>
-																		<td> <a href="../elements/id-48a1926c6a0042c5b9a34ce6f521585c.html" target="element" class="i18n-elementtype-CompositionRelationship"></a> </td>
+																		<td> <a href="../elements/id-48a1926c6a0042c5b9a34ce6f521585c.html" target="element" class="i18n-elementtype-CompositionRelationship">
+																		</a> </td>
 																		<td> <a href="../elements/id-60a90d494b7f4747a88f33e4e9ebdc97.html" target="element"> Config </a> </td>
 																		<td> <a href="../elements/id-a6b61de137cb4e09b85a23db1e5f3efc.html" target="element"> Controlador admin </a> </td>
 																	</tr>
 																	<tr>
 																		<td> <a href="../elements/id-9594668f645047db8a9773ce09cf27ea.html" target="element">  </a> </td>
-																		<td> <a href="../elements/id-9594668f645047db8a9773ce09cf27ea.html" target="element" class="i18n-elementtype-AssociationRelationship"></a> </td>
+																		<td> <a href="../elements/id-9594668f645047db8a9773ce09cf27ea.html" target="element" class="i18n-elementtype-AssociationRelationship">
+																		</a> </td>
 																		<td> <a href="../elements/id-60a90d494b7f4747a88f33e4e9ebdc97.html" target="element"> Config </a> </td>
 																		<td> <a href="../elements/id-3785708a234346538dbd8ca5d336dcd7.html" target="element"> Interfaz de aplicaci&#243;n (runtime) </a> </td>
 																	</tr>
 																	<tr>
 																		<td> <a href="../elements/id-22de72f2d8d540b390373fa2e847ca3e.html" target="element">  </a> </td>
-																		<td> <a href="../elements/id-22de72f2d8d540b390373fa2e847ca3e.html" target="element" class="i18n-elementtype-CompositionRelationship"></a> </td>
+																		<td> <a href="../elements/id-22de72f2d8d540b390373fa2e847ca3e.html" target="element" class="i18n-elementtype-CompositionRelationship">
+																		</a> </td>
 																		<td> <a href="../elements/id-60a90d494b7f4747a88f33e4e9ebdc97.html" target="element"> Config </a> </td>
 																		<td> <a href="../elements/id-f4554ddf4983471ea28295e423d73724.html" target="element"> Puerto datos 2 </a> </td>
 																	</tr>
 																	<tr>
 																		<td> <a href="../elements/id-2ec0d07f017e458ba684a397546c3800.html" target="element">  </a> </td>
-																		<td> <a href="../elements/id-2ec0d07f017e458ba684a397546c3800.html" target="element" class="i18n-elementtype-AssociationRelationship"></a> </td>
+																		<td> <a href="../elements/id-2ec0d07f017e458ba684a397546c3800.html" target="element" class="i18n-elementtype-AssociationRelationship">
+																		</a> </td>
 																		<td> <a href="../elements/id-60a90d494b7f4747a88f33e4e9ebdc97.html" target="element"> Config </a> </td>
 																		<td> <a href="../elements/id-0981e6c63672412fbe8497b9444798df.html" target="element"> Interfaz de datos 3 </a> </td>
 																	</tr>
 																	<tr>
 																		<td> <a href="../elements/id-ed2c7a2bcc68498aa935a86f54642cc1.html" target="element">  </a> </td>
-																		<td> <a href="../elements/id-ed2c7a2bcc68498aa935a86f54642cc1.html" target="element" class="i18n-elementtype-AssociationRelationship"></a> </td>
+																		<td> <a href="../elements/id-ed2c7a2bcc68498aa935a86f54642cc1.html" target="element" class="i18n-elementtype-AssociationRelationship">
+																		</a> </td>
 																		<td> <a href="../elements/id-60a90d494b7f4747a88f33e4e9ebdc97.html" target="element"> Config </a> </td>
 																		<td> <a href="../elements/id-6db2767b4e464729bb0afe5976523f55.html" target="element"> Servidor Lappiz  </a> </td>
 																	</tr>
 
 																			<tr>
 																				<td> <a href="../elements/id-b3d74994794c4ba6a5acc7792b9e85f8.html" target="element">  </a> </td>
-																				<td> <a href="../elements/id-b3d74994794c4ba6a5acc7792b9e85f8.html" target="element" class="i18n-elementtype-AssociationRelationship"></a> </td>
+																				<td> <a href="../elements/id-b3d74994794c4ba6a5acc7792b9e85f8.html" target="element" class="i18n-elementtype-AssociationRelationship">
+																				</a> </td>
 																				<td> <a href="../elements/id-346c20198fbb41db868cb5450dab9e3d.html" target="element"> Modelo (neg) </a> </td>
 																				<td> <a href="../elements/id-ac6d42077e3544ae8f7c9d7bd5daf461.html" target="element"> Interfaz de datos 2 </a> </td>
 																			</tr>
@@ -486,60 +544,62 @@
 											
 																	<tr>
 																		<td> <a href="../elements/id-601841bfa4554165b17c55b66e61a0f9.html" target="element">  </a> </td>
-																		<td> <a href="../elements/id-601841bfa4554165b17c55b66e61a0f9.html" target="element" class="i18n-elementtype-AssociationRelationship"></a> </td>
+																		<td> <a href="../elements/id-601841bfa4554165b17c55b66e61a0f9.html" target="element" class="i18n-elementtype-AssociationRelationship">
+																		</a> </td>
 																		<td> <a href="../elements/id-e759a68c6338464093793b86acdf7668.html" target="element"> Interfaz de datos 1 </a> </td>
 																		<td> <a href="../elements/id-68abf55c751f4f7984c9235f0197fe31.html" target="element"> Transacciones </a> </td>
-																	</tr>
-																	<tr>
-																		<td> <a href="../elements/id-78a7b8bfcb5f43b3944802de821bbcb5.html" target="element">  </a> </td>
-																		<td> <a href="../elements/id-78a7b8bfcb5f43b3944802de821bbcb5.html" target="element" class="i18n-elementtype-AssociationRelationship"></a> </td>
-																		<td> <a href="../elements/id-e759a68c6338464093793b86acdf7668.html" target="element"> Interfaz de datos 1 </a> </td>
-																		<td> <a href="../elements/id-63f889359eb8483488d2c6232d34f986.html" target="element"> Servidor BDD App </a> </td>
 																	</tr>
 
 																	<tr>
 																		<td> <a href="../elements/id-ba1b27736f79474aa7457c4f563c66dd.html" target="element">  </a> </td>
-																		<td> <a href="../elements/id-ba1b27736f79474aa7457c4f563c66dd.html" target="element" class="i18n-elementtype-AssociationRelationship"></a> </td>
+																		<td> <a href="../elements/id-ba1b27736f79474aa7457c4f563c66dd.html" target="element" class="i18n-elementtype-AssociationRelationship">
+																		</a> </td>
 																		<td> <a href="../elements/id-0981e6c63672412fbe8497b9444798df.html" target="element"> Interfaz de datos 3 </a> </td>
 																		<td> <a href="../elements/id-9d2a47b8b656445b8a95269ec40d4421.html" target="element"> Utilitario </a> </td>
 																	</tr>
 
 																	<tr>
 																		<td> <a href="../elements/id-2dcefef93cb74b8095be8689b1faa009.html" target="element">  </a> </td>
-																		<td> <a href="../elements/id-2dcefef93cb74b8095be8689b1faa009.html" target="element" class="i18n-elementtype-AssociationRelationship"></a> </td>
+																		<td> <a href="../elements/id-2dcefef93cb74b8095be8689b1faa009.html" target="element" class="i18n-elementtype-AssociationRelationship">
+																		</a> </td>
 																		<td> <a href="../elements/id-ac6d42077e3544ae8f7c9d7bd5daf461.html" target="element"> Interfaz de datos 2 </a> </td>
 																		<td> <a href="../elements/id-9b05aa538eaa44b88844e9c80a584651.html" target="element"> Seguridad </a> </td>
-																	</tr>
-																	<tr>
-																		<td> <a href="../elements/id-50e881f1343e4153ae38ddc062ddfaac.html" target="element">  </a> </td>
-																		<td> <a href="../elements/id-50e881f1343e4153ae38ddc062ddfaac.html" target="element" class="i18n-elementtype-AssociationRelationship"></a> </td>
-																		<td> <a href="../elements/id-ac6d42077e3544ae8f7c9d7bd5daf461.html" target="element"> Interfaz de datos 2 </a> </td>
-																		<td> <a href="../elements/id-be916e95b1d84584be24375c07fe9097.html" target="element"> Servidor BDD Config </a> </td>
 																	</tr>
 
 																	<tr>
 																		<td> <a href="../elements/id-8d4dcc32e9fc436e8bb00bb257193c74.html" target="element">  </a> </td>
-																		<td> <a href="../elements/id-8d4dcc32e9fc436e8bb00bb257193c74.html" target="element" class="i18n-elementtype-AssociationRelationship"></a> </td>
+																		<td> <a href="../elements/id-8d4dcc32e9fc436e8bb00bb257193c74.html" target="element" class="i18n-elementtype-AssociationRelationship">
+																		</a> </td>
 																		<td> <a href="../elements/id-5ffd2095e7344bb5b9023edd9e3d7aa4.html" target="element"> Application Service (NLB) </a> </td>
 																		<td> <a href="../elements/id-bf045c97cf694ad1afcb5837500cb117.html" target="element"> App PGN Web </a> </td>
 																	</tr>
 																	<tr>
 																		<td> <a href="../elements/id-fb82fc053ace49c9bfee8fe6cf3d531a.html" target="element">  </a> </td>
-																		<td> <a href="../elements/id-fb82fc053ace49c9bfee8fe6cf3d531a.html" target="element" class="i18n-elementtype-AssociationRelationship"></a> </td>
+																		<td> <a href="../elements/id-fb82fc053ace49c9bfee8fe6cf3d531a.html" target="element" class="i18n-elementtype-AssociationRelationship">
+																		</a> </td>
 																		<td> <a href="../elements/id-5ffd2095e7344bb5b9023edd9e3d7aa4.html" target="element"> Application Service (NLB) </a> </td>
 																		<td> <a href="../elements/id-d1a165b5ccff4f9fa7b0ea2b2b2bac73.html" target="element"> App PGN M&#243;vil </a> </td>
 																	</tr>
 
 																	<tr>
-																		<td> <a href="../elements/id-dfe393df4b044d4e8209927f2903fcf3.html" target="element">  </a> </td>
-																		<td> <a href="../elements/id-dfe393df4b044d4e8209927f2903fcf3.html" target="element" class="i18n-elementtype-AssociationRelationship"></a> </td>
+																		<td> <a href="../elements/id-c21d2385fedf4fe086878df870fbf3b4.html" target="element">  </a> </td>
+																		<td> <a href="../elements/id-c21d2385fedf4fe086878df870fbf3b4.html" target="element" class="i18n-elementtype-AssociationRelationship">
+																		</a> </td>
+																		<td> <a href="../elements/id-5f840ee17e7f4a1cabb234614b062aa7.html" target="element"> Servidor Web Canales </a> </td>
+																		<td> <a href="../elements/id-bf045c97cf694ad1afcb5837500cb117.html" target="element"> App PGN Web </a> </td>
+																	</tr>
+																	<tr>
+																		<td> <a href="../elements/id-88d915544e814035bcec2e10e1d7e2fa.html" target="element">  </a> </td>
+																		<td> <a href="../elements/id-88d915544e814035bcec2e10e1d7e2fa.html" target="element" class="i18n-elementtype-AssociationRelationship">
+																		</a> </td>
 																		<td> <a href="../elements/id-5f840ee17e7f4a1cabb234614b062aa7.html" target="element"> Servidor Web Canales </a> </td>
 																		<td> <a href="../elements/id-d1a165b5ccff4f9fa7b0ea2b2b2bac73.html" target="element"> App PGN M&#243;vil </a> </td>
 																	</tr>
 
 																	<tr>
 																		<td> <a href="../elements/id-f00f53ef721f438c9b7bfeaa7b862fc6.html" target="element">  </a> </td>
-																		<td> <a href="../elements/id-f00f53ef721f438c9b7bfeaa7b862fc6.html" target="element" class="i18n-elementtype-AssociationRelationship"></a> </td>
+																		<td> <a href="../elements/id-f00f53ef721f438c9b7bfeaa7b862fc6.html" target="element" class="i18n-elementtype-AssociationRelationship">
+																		</a> </td>
 																		<td> <a href="../elements/id-dcce32de573248c796f88110aeb95afa.html" target="element"> Servidor Web App </a> </td>
 																		<td> <a href="../elements/id-7cb37475169d4fe7a11d40fc2eaa23d8.html" target="element"> App </a> </td>
 																	</tr>
