@@ -18,8 +18,8 @@ header-includes: |
   <meta name="dc.date" content="2023-09-13" />
   <meta name="citation_publication_date" content="2023-09-13" />
   <meta property="article:published_time" content="2023-09-13" />
-  <meta name="dc.modified" content="2023-09-13T17:06:25+00:00" />
-  <meta property="article:modified_time" content="2023-09-13T17:06:25+00:00" />
+  <meta name="dc.modified" content="2023-09-13T17:46:00+00:00" />
+  <meta property="article:modified_time" content="2023-09-13T17:46:00+00:00" />
   <meta name="dc.language" content="en-US" />
   <meta name="citation_language" content="en-US" />
   <meta name="dc.relation.ispartof" content="Manubot" />
@@ -34,9 +34,9 @@ header-includes: |
   <meta name="citation_fulltext_html_url" content="https://hwong23.github.io/pgn-078/" />
   <meta name="citation_pdf_url" content="https://hwong23.github.io/pgn-078/manuscript.pdf" />
   <link rel="alternate" type="application/pdf" href="https://hwong23.github.io/pgn-078/manuscript.pdf" />
-  <link rel="alternate" type="text/html" href="https://hwong23.github.io/pgn-078/v/e8546d230b5444b21fb67a03d9c73d27bc16e910/" />
-  <meta name="manubot_html_url_versioned" content="https://hwong23.github.io/pgn-078/v/e8546d230b5444b21fb67a03d9c73d27bc16e910/" />
-  <meta name="manubot_pdf_url_versioned" content="https://hwong23.github.io/pgn-078/v/e8546d230b5444b21fb67a03d9c73d27bc16e910/manuscript.pdf" />
+  <link rel="alternate" type="text/html" href="https://hwong23.github.io/pgn-078/v/dbef01be19185de2b16c51a8616f58494039f527/" />
+  <meta name="manubot_html_url_versioned" content="https://hwong23.github.io/pgn-078/v/dbef01be19185de2b16c51a8616f58494039f527/" />
+  <meta name="manubot_pdf_url_versioned" content="https://hwong23.github.io/pgn-078/v/dbef01be19185de2b16c51a8616f58494039f527/manuscript.pdf" />
   <meta property="og:type" content="article" />
   <meta property="twitter:card" content="summary_large_image" />
   <link rel="icon" type="image/png" sizes="192x192" href="https://manubot.org/favicon-192x192.png" />
@@ -77,7 +77,7 @@ tablenos-caption-name: Tabla
 
 <br>
 
-| **Versión** del producto 1.e8546d2 de 13 Sep 2023
+| **Versión** del producto 1.dbef01b de 13 Sep 2023
 
 | **Presentado a**
 
@@ -95,9 +95,9 @@ tablenos-caption-name: Tabla
 
 
 <small><em>Los productos de esta etapa, Migración Funcional SIU, Contrato 078-2023, 
-([Web](https://hwong23.github.io/pgn-078/v/e8546d230b5444b21fb67a03d9c73d27bc16e910/))
+([Web](https://hwong23.github.io/pgn-078/v/dbef01be19185de2b16c51a8616f58494039f527/))
 están basados en el resultado de la Fase 1 del proyecto PGN SIU del 2022,
-[Sharepoint Softgic@e8546d2](http://softgic.sharepoint.com)
+[Sharepoint Softgic@dbef01b](http://softgic.sharepoint.com)
 del September 13, 2023.
 </em></small>
 
@@ -143,7 +143,7 @@ Descripción de los productos del trabajo de arquitectura de la Fase 2, proyecto
 | Palabras clave | SIU, Softgic, PGN, Análisis de brecha, GAP, Comparativa              |
 | Autor          |                            |
 | Fuente         |                            |
-| Versión        | 1.e8546d2 del 13 Sep 2023 |
+| Versión        | 1.dbef01b del 13 Sep 2023 |
 | Vínculos       | [N003a Vista Segmento PGN SIU](N03a%a20Vsta%20aSegenta%20SOA%20PGN.md) |
 
 <br>
@@ -773,7 +773,10 @@ Administrar los Usuarios de la Solución: Esta funcionalidad debe permitir confi
 1. Debe cumplir con todos los lineamientos de desarrollo seguro establecidos en The OWASP Foundation recomendados en la “Guía de desarrollo OWASP” y “OWAS Cheat Sheet”. 
 
 <br>
-˝
+
+
+<div style="page-break-before: always;"></div>
+\newpage
 
 ---
 title: Documento de Arquitectura Migración Funcional PGN SIU
@@ -800,7 +803,7 @@ tablenos-caption-name: Tabla
 
 <br>
 
-| **Versión** del producto 1.e8546d2 de 13 Sep 2023
+| **Versión** del producto 1.dbef01b de 13 Sep 2023
 
 | **Presentado a**
 
@@ -829,7 +832,7 @@ Descripción de los productos del trabajo de infraestructura del proyecto Migrac
 | Palabras clave | SIU, Softgic, PGN, Análisis de brecha, GAP, Infraestrctura, PasS |
 | Autor          |                            |
 | Fuente         |                            |
-| Versión        | 1.e8546d2 del 13 Sep 2023 |
+| Versión        | 1.dbef01b del 13 Sep 2023 |
 | Vínculos       | [N003a Vista Segmento PGN SIU](N03a%a20Vsta%20aSegenta%20SOA%20PGN.md) |
 
 <br>
@@ -991,80 +994,76 @@ Con una arquitectura orientada a servicios SUI recopila:
 
 ``Generated on: Wed Sep 13 2023 12:04:04 GMT-0500 (COT)``
 
-# Documento de Arquitectura Datos SUI
+<div style="page-break-before: always;"></div>
+\newpage
 
- ___ 
-* [Descripción de Entidades de Datos Migración SUI PGN](#descripción-de-entidades-de-datos-migración-sui-pgn)
-	* [Migracion.2.SUI módulos. datos Hominis](#migracion.2.sui-módulos.-datos-hominis)
-	* [Migracion.2.SUI módulos. datos Control interno](#migracion.2.sui-módulos.-datos-control-interno)
-	* [Migracion.2.SUI módulos. datos SIRI](#migracion.2.sui-módulos.-datos-siri)
-	* [Migracion.2.SUI módulos. datos SIM](#migracion.2.sui-módulos.-datos-sim)
+---
+title: Documento de Arquitectura Migración Funcional PGN SIU
+subtitle: OP 078-2023 - Fase 2, PGN Migración Funcional SIU
+geometry:
+  - top=1in
+  - bottom=1in
+fignos-cleveref: True
+fignos-plus-name: Fig.
+fignos-caption-name: Imagen
+tablenos-caption-name: Tabla
+...
+
+
+<br>
+
+<br>
+
+<br>
+
+<br>
+
+<br>
+
+<br>
+
+| **Versión** del producto 1.dbef01b de 13 Sep 2023
+
+| **Presentado a**
+
+| Procuraduría General de la Nación (PGN)
+
+|
+
+| **Fecha**
+
+| 13 Sep 2023
+
 
 <div style="page-break-before: always;"></div>
 \newpage
-# Descripción de Entidades de Datos Migración SUI PGN
-## Migracion.2.SUI módulos. datos Hominis
-![Diagram: Migracion.2.SUI módulos. datos Hominis](images/Migracion.2.SUImódulos.datosHominis.png){#fig:Migracion.2.SUImódulos.datosHominis width=}
 
-### Catálogo de Elementos
-| Name| Type| Description| Properties
-|:--------|:--------|:--------|:--------|
-|**APP4.Hominis**|application-component|||
-|**DAT.Cargo**|business-object|||
-|**DAT.Código Actuación**|business-object|||
-|**DAT.Código Jurisdicción**|business-object|||
-|**DAT.Código Regional**|business-object|||
-|**DAT.Código SNIES**|business-object|||
-|**DAT.Código dependencia superior**|business-object|||
-|**DAT.Código regional**|business-object|||
-|**DAT.Decreto de la creación**|business-object|||
-|**DAT.Diciplina Area**|business-object|||
-|**DAT.Encargo del cargo**|business-object|||
-|**DAT.Ley vigente**|business-object|||
-|**DAT.Materia**|business-object|||
-|**DAT.Nivel**|business-object|||
-|**DAT.Nombre Actuación**|business-object|||
-|**DAT.Nombre Jurisdicción**|business-object|||
-|**DAT.Nombre Regional**|business-object|||
-|**DAT.Nombre dependencia superior**|business-object|||
-|**DAT.Tipo de inscripcion**|business-object|||
-|**DAT.Vinculación**|business-object|||
+# Documento de Descripción de Entidades de Datos. Migración SUI PGN
 
-## Migracion.2.SUI módulos. datos Control interno
-![Diagram: Migracion.2.SUI módulos. datos Control interno](images/Migracion.2.SUImódulos.datosControlinterno.png){#fig:Migracion.2.SUImódulos.datosControlinterno width=}
-
-### Catálogo de Elementos
-| Name| Type| Description| Properties
-|:--------|:--------|:--------|:--------|
-|**APP3.Control interno**|application-component|||
-|**DAT.Dependencia**|business-object|||
-|**DAT.Funcionario**|business-object|||
-|**DAT.Proceso**|business-object|||
-|**DAT.Tipo de proceso**|business-object|||
-
-## Migracion.2.SUI módulos. datos SIRI
-![Diagram: Migracion.2.SUI módulos. datos SIRI](images/Migracion.2.SUImódulos.datosSIRI.png){#fig:Migracion.2.SUImódulos.datosSIRI width=}
-
-### Catálogo de Elementos
-| Name| Type| Description| Properties
-|:--------|:--------|:--------|:--------|
-|**APP2.SIRI**|application-component|||
-|**DAT.Entidad**|business-object|||
-
-## Migracion.2.SUI módulos. datos SIM
-![Diagram: Migracion.2.SUI módulos. datos SIM](images/Migracion.2.SUImódulos.datosSIM.png){#fig:Migracion.2.SUImódulos.datosSIM width=}
-
-### Catálogo de Elementos
-| Name| Type| Description| Properties
-|:--------|:--------|:--------|:--------|
-|**APP5.SIM**|application-component|||
-|**DAT.Corregimiento**|business-object|||
-|**DAT.Departamento**|business-object|||
-|**DAT.Municipio**|business-object|||
-|**DAT.País**|business-object|||
+## Objetivo del Documento
+Descripción de los productos de trabajo de la arquitectura de datos del proyecto Migración SUI, Fase 2, de la Procuraduría General de la Nación (PGN en adelante), Contrato 078-2023. El principal propósito de este documento es informar de las decisiones sobre la disposición lógica y física de las componentes de datos relevantes a la arquitectura del sistema SUI Migración. Por tanto, el documento contiene información estratégica para la toma de decisiones en cuanto al transporte, organización y mantenimiento de los entidades de datos de negocio, no un diseño detallado. Puntualmente, refleja decisiones sobre la plataforma tecnológica seleccionada, así como consideraciones importantes para el diseño y desarrollo, con procura de garantizar una solución técnicamente viable y óptima para el proyecto.
 
 
-``Generated on: Tue Sep 12 2023 15:47:12 GMT-0500 (COT)``
+<br>
+
+##  Control de Cambios {.page_break_before}
+| Tema           | OP 078-2023 Fase 2, PGN Migración Funcional SIU      |
+|----------------|----------------------------|
+| Palabras clave | SIU, Softgic, PGN, Análisis de brecha, GAP, Entidades, Datos  |
+| Autor          |                            |
+| Fuente         |                            |
+| Versión        | 1.dbef01b del 13 Sep 2023 |
+| Vínculos       | [N003a Vista Segmento PGN SIU](N03a%a20Vsta%20aSegenta%20SOA%20PGN.md) |
+
+<br>
+
+<br>
+
+<div style="page-break-before: always;"></div>
+\newpage
+
+
+
 
 # Documento de Arquitectura Datos SUI
 * [Descripción de Entidades de Datos Migración SUI PGN](#descripción-de-entidades-de-datos-migración-sui-pgn)
