@@ -30,7 +30,7 @@ Con una arquitectura orientada a servicios SUI recopila:
 |**Communication Network (internet)**|communication-network|||
 |**Balanceador**|node|||
 |**FW BD.**|node|||
-|**Network Firewall**|node|||
+|**Network Firewall/WAF**|node|||
 |**Servidor BDD App**|node|||
 |**Servidor BDD Config**|node|||
 |**Servidor Lappiz **|node|||

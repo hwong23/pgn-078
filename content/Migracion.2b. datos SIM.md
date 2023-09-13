@@ -4,7 +4,7 @@
 
 Identificación de entidades de datos de negocio relacionadas al módulo de SUI, SIM.
 
-Estas entidades de datos de negocio son los que llamamos los tipos de datos internos del SUI. 
+Estas entidades de datos de negocio son los que llamamos los tipos de datos internos del SUI y deben ser consideradas para la creación de las API de manejo del ciclo de vida de los datos de este módulo. 
 
 
 ### Catálogo de Elementos
