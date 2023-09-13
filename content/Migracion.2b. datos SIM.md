@@ -2,6 +2,11 @@
 ## Migracion.2b. datos SIM
 ![Diagram: Migracion.2b. datos SIM](images/Migracion.2b.datosSIM.png){#fig:Migracion.2b.datosSIM width=}
 
+Identificación de entidades de datos de negocio relacionadas al módulo de SUI, SIM.
+
+Estas entidades de datos de negocio son los que llamamos los tipos de datos internos del SUI. 
+
+
 ### Catálogo de Elementos
 | Name| Type| Description| Properties
 |:--------|:--------|:--------|:--------|

@@ -2,10 +2,15 @@
 ## Migracion.2a. datos Hominis
 ![Diagram: Migracion.2a. datos Hominis](images/Migracion.2a.datosHominis.png){#fig:Migracion.2a.datosHominis width=}
 
+Identificación de entidades de datos de negocio relacionadas al módulo de gestión de capital del SUI, Hominis.
+
+Estas entidades de datos de negocio son los que llamamos los tipos de datos internos del SUI. 
+
+
 ### Catálogo de Elementos
 | Name| Type| Description| Properties
 |:--------|:--------|:--------|:--------|
-|**APP4.Hominis**|application-component|||
+|**APP4.Hominis**|application-component|Módulo del SUI. Gestión de capital humano, funcionarios y cargos de representación y libre remoción de la PGN.<br>||
 |**DAT.Cargo**|business-object|||
 |**DAT.Código Actuación**|business-object|||
 |**DAT.Código Jurisdicción**|business-object|||
