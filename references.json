@@ -18,5 +18,45 @@
     "title": "Softgic. Proyecto de mejoramiento SIU de PGN. Fase i",
     "type": "book",
     "note": "Loaded from an external bibliography file by Manubot.\nsource_bibliography: manual-references.bib\nstandard_id: eservices1-22"
+  },
+  {
+    "URL": "https://hwong23.github.io/fna-devdoc-f1/v/6497aef0f15c3591f0728e4c42cb2c26c13b43aa/",
+    "author": [
+      {
+        "literal": "PGN"
+      }
+    ],
+    "id": "hQTPO0iI",
+    "issued": {
+      "date-parts": [
+        [
+          2023,
+          5
+        ]
+      ]
+    },
+    "title": "Procuraduría general de la nación. Anexo - especificaciones técnicas 19-05-2023",
+    "type": "book",
+    "note": "Loaded from an external bibliography file by Manubot.\nsource_bibliography: manual-references.bib\nstandard_id: eservices3-22"
+  },
+  {
+    "URL": "https://hwong23.github.io/fna-devdoc-f1/v/6497aef0f15c3591f0728e4c42cb2c26c13b43aa/",
+    "author": [
+      {
+        "literal": "Softgic, PGN"
+      }
+    ],
+    "id": "l0mriBft",
+    "issued": {
+      "date-parts": [
+        [
+          2022,
+          5
+        ]
+      ]
+    },
+    "title": "PGN manual técnico sharepoint, versión 1",
+    "type": "book",
+    "note": "Loaded from an external bibliography file by Manubot.\nsource_bibliography: manual-references.bib\nstandard_id: eservices4-22"
   }
 ]

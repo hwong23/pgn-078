@@ -18,8 +18,8 @@ header-includes: |
   <meta name="dc.date" content="2023-09-14" />
   <meta name="citation_publication_date" content="2023-09-14" />
   <meta property="article:published_time" content="2023-09-14" />
-  <meta name="dc.modified" content="2023-09-14T03:48:39+00:00" />
-  <meta property="article:modified_time" content="2023-09-14T03:48:39+00:00" />
+  <meta name="dc.modified" content="2023-09-14T04:06:09+00:00" />
+  <meta property="article:modified_time" content="2023-09-14T04:06:09+00:00" />
   <meta name="dc.language" content="en-US" />
   <meta name="citation_language" content="en-US" />
   <meta name="dc.relation.ispartof" content="Manubot" />
@@ -34,9 +34,9 @@ header-includes: |
   <meta name="citation_fulltext_html_url" content="https://hwong23.github.io/pgn-078/" />
   <meta name="citation_pdf_url" content="https://hwong23.github.io/pgn-078/manuscript.pdf" />
   <link rel="alternate" type="application/pdf" href="https://hwong23.github.io/pgn-078/manuscript.pdf" />
-  <link rel="alternate" type="text/html" href="https://hwong23.github.io/pgn-078/v/053dc8fbc9dbe5f7b839fc54e76b26f800e7c057/" />
-  <meta name="manubot_html_url_versioned" content="https://hwong23.github.io/pgn-078/v/053dc8fbc9dbe5f7b839fc54e76b26f800e7c057/" />
-  <meta name="manubot_pdf_url_versioned" content="https://hwong23.github.io/pgn-078/v/053dc8fbc9dbe5f7b839fc54e76b26f800e7c057/manuscript.pdf" />
+  <link rel="alternate" type="text/html" href="https://hwong23.github.io/pgn-078/v/8a938412d14517b4148523c95c0aa496d416dade/" />
+  <meta name="manubot_html_url_versioned" content="https://hwong23.github.io/pgn-078/v/8a938412d14517b4148523c95c0aa496d416dade/" />
+  <meta name="manubot_pdf_url_versioned" content="https://hwong23.github.io/pgn-078/v/8a938412d14517b4148523c95c0aa496d416dade/manuscript.pdf" />
   <meta property="og:type" content="article" />
   <meta property="twitter:card" content="summary_large_image" />
   <link rel="icon" type="image/png" sizes="192x192" href="https://manubot.org/favicon-192x192.png" />
@@ -77,7 +77,7 @@ tablenos-caption-name: Tabla
 
 <br>
 
-| **Versión** del producto 1.053dc8f de 14 Sep 2023
+| **Versión** del producto 1.8a93841 de 14 Sep 2023
 
 | **Presentado a**
 
@@ -95,9 +95,9 @@ tablenos-caption-name: Tabla
 
 
 <small><em>Los productos de esta etapa, Migración Funcional SIU, Contrato 078-2023, 
-([Web](https://hwong23.github.io/pgn-078/v/053dc8fbc9dbe5f7b839fc54e76b26f800e7c057/))
+([Web](https://hwong23.github.io/pgn-078/v/8a938412d14517b4148523c95c0aa496d416dade/))
 están basados en el resultado de la Fase 1 del proyecto PGN SIU del 2022,
-[Sharepoint Softgic@053dc8f](http://softgic.sharepoint.com)
+[Sharepoint Softgic@8a93841](http://softgic.sharepoint.com)
 del September 14, 2023.
 </em></small>
 
@@ -143,7 +143,7 @@ Descripción de los productos del trabajo de arquitectura de la Fase 2, proyecto
 | Palabras clave | SIU, Softgic, PGN, Análisis de brecha, GAP, Comparativa              |
 | Autor          |                            |
 | Fuente         |                            |
-| Versión        | 1.053dc8f del 14 Sep 2023 |
+| Versión        | 1.8a93841 del 14 Sep 2023 |
 | Vínculos       | [N003a Vista Segmento PGN SIU](N03a%a20Vsta%20aSegenta%20SOA%20PGN.md) |
 
 <br>
@@ -405,11 +405,11 @@ Dependencias de infraestructura entre los servicios que integran el modelo de ap
 |**Mensaje: JSON**|data-object|||
 |**Infraestructura SUI**|grouping|Soporte de infraestructura a los componentes del SUI Migración. Servidores y ambientes de cómputo para la ejecución del software base de los componentes misionales del SUI de PGN.<br>||
 |**PGN SIU**|grouping|El objetivo principal de la arquitectura del SUI de la migración es la centralización de los conceptos misionales: concentrar los conceptos misionales en componentes aislados; dejar por fuera de estos componentes misionales todo lo distintos a la misionalidad de la PGN.<br>Los objetivos secundarios de esta arquitectura SUI de la migración son flexibilidad y extensibilidad. Dichos objetivos son independientes. Es decir, estos pueden ser maximizados sin conclifcto entre ellos.<br>||
-|**Servidor BDD App**|node|||
-|**Servidor BDD Config**|node|||
-|**Servidor Lappiz **|node|||
-|**Servidor Web App**|node|||
-|**Servidor Web Canales**|node|Nombre físico<br>IP LAN<br>IP Pública<br>||
+|**Servidor BDD App**|node|Sistema Operativo Windows Server 2019 Standard o Datacenter x64. RAM	8 GB. CPU 64 Bits, 4 Cores > 2 Ghz<br>Discos	SO C: 126 GB, Backup E: 511 GB, SQL Data F: 510 GB, SQL Log   G: 510 GB, TempDB  G: 63.6 GB.<br>||
+|**Servidor BDD Config**|node|Sistema Operativo Windows Server 2019 Standard o Datacenter x64. RAM	8 GB. CPU 64 Bits, 4 Cores > 2 Ghz<br>Discos	SO C: 80 GB, Backup E: 250 GB, SQL Data F: 250 GB, SQL Log G: 250 GB, TempDB  G: 30 GB.<br>||
+|**Servidor Lappiz **|node|Sistema Operativo Windows Server 2019 Standard o Datacenter x64. RAM 8 GB. CPU 64 Bits, 4 Cores > 2 Ghz<br>Discos	SO C: 120 GB,  D: 16 GB.<br>||
+|**Servidor Web App**|node|Nombre físico. IP LAN. IP Pública. Windows Server 2019 Standard or Datacenter x64. RAM	8  GB. CPU	64 Bits. 4 Cores de 2 Ghz. Discos	SO C: 126 GB. SO D: 16 GB.<br>||
+|**Servidor Web Canales**|node|Nombre físico. IP LAN. IP Pública. Windows Server 2019 Standard or Datacenter x64. RAM	8  GB. CPU	64 Bits. 4 Cores de 2 Ghz. Discos	SO C: 126 GB. SO D: 16 GB.<br>||
 
 ## Linebase.2.Portal
 ![Diagram: Linebase.2.Portal](images/Linebase.2.Portal.png){#fig:Linebase.2.Portal width=}
@@ -760,7 +760,7 @@ El portal es el conjunto de los elementos físicos y lógicos necesarios para la
 |**Application Interface**|application-interface|||
 
 
-``Generated on: Wed Sep 13 2023 12:04:18 GMT-0500 (COT)``
+``Generated on: Wed Sep 13 2023 23:03:01 GMT-0500 (COT)``
 
 ## Requerimientos de Administración
 1.	Las soluciones deben permitir la administración de los Roles de Usuarios: esta funcionalidad debe permitir configurar los diferentes roles de los usuarios funcionales de los procesos. 
@@ -835,7 +835,7 @@ tablenos-caption-name: Tabla
 
 <br>
 
-| **Versión** del producto 1.053dc8f de 14 Sep 2023
+| **Versión** del producto 1.8a93841 de 14 Sep 2023
 
 | **Presentado a**
 
@@ -864,7 +864,7 @@ Descripción de los productos del trabajo de infraestructura del proyecto Migrac
 | Palabras clave | SIU, Softgic, PGN, Análisis de brecha, GAP, Infraestrctura, PasS |
 | Autor          |                            |
 | Fuente         |                            |
-| Versión        | 1.053dc8f del 14 Sep 2023 |
+| Versión        | 1.8a93841 del 14 Sep 2023 |
 | Vínculos       | [N003a Vista Segmento PGN SIU](N03a%a20Vsta%20aSegenta%20SOA%20PGN.md) |
 
 <br>
@@ -979,7 +979,7 @@ Con una arquitectura orientada a servicios SUI recopila:
 ## Seguridad. Lineabase.0.SIU applicación
 ![Diagram: Seguridad. Lineabase.0.SIU applicación](images/Seguridad.Lineabase.0.SIUapplicación.png){#fig:Seguridad.Lineabase.0.SIUapplicación width=}
 
-# Representación Arquitectónica
+## Representación Arquitectónica
 Con una arquitectura orientada a servicios SUI recopila:
 
 1. Runtime: Es el servicio que interactúa con el usuario final (GUI) elaborado en Angular 11
@@ -1024,7 +1024,7 @@ Con una arquitectura orientada a servicios SUI recopila:
 |**Uso de claves criptograficas. (copy)**|value-stream|||
 
 
-``Generated on: Wed Sep 13 2023 12:46:59 GMT-0500 (COT)``
+``Generated on: Wed Sep 13 2023 17:07:58 GMT-0500 (COT)``
 
 ---
 title: Documento de Arquitectura Migración Funcional PGN SIU
@@ -1053,7 +1053,7 @@ tablenos-caption-name: Tabla
 
 <br>
 
-| **Versión** del producto 1.053dc8f de 14 Sep 2023
+| **Versión** del producto 1.8a93841 de 14 Sep 2023
 
 | **Presentado a**
 
@@ -1083,7 +1083,7 @@ Descripción de los productos de trabajo de la arquitectura de datos del proyect
 | Palabras clave | SIU, Softgic, PGN, Análisis de brecha, GAP, Entidades, Datos  |
 | Autor          |                            |
 | Fuente         |                            |
-| Versión        | 1.053dc8f del 14 Sep 2023 |
+| Versión        | 1.8a93841 del 14 Sep 2023 |
 | Vínculos       | [N003a Vista Segmento PGN SIU](N03a%a20Vsta%20aSegenta%20SOA%20PGN.md) |
 
 <br>
