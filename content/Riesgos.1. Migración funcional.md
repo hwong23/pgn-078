@@ -9,6 +9,11 @@ Riesgos de la migración funcional:
 * RSG3. Estatego como BI
 * RSG4. Conciliación y Doku
 * RSG5. Gestión de sesiones / caducidad
+* RSG6. Componentes de negocio
+* RSG7. Asignación de roles y permisos de Acceso 
+* RSG8. Intentos de accesos no autorizados
+* RSG9. Alteración de datos negocio
+* RSG10. Validación decisiones de arquitectura
 
 ### Acciones de Mitigación
 

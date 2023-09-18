@@ -7,7 +7,7 @@ Para mitigar el riesgo 10, RSG10. Validación decisiones de arquitectura, que ti
 ### Valoración del Riesgo
 
 | Requisito      | Extensibilidad SUI |
-|:--------|:--------|
+|:-------------|:------------------|
 | Descripción | Concentración de los componentes de negocio, misionales, del SUI protegidos de cambios provenientes de otros sistemas. Ver Patrón de Diseño Migración SUI, más adelante en el documento. |
 | Calidad sistémica | La extensibilidad que optimiza el diseño Migración SUI está dada por el intercambio de submódulos no misionales, como el gestor documental, sin afectación de los componentes misionales que este diseño protege. |
 
@@ -15,7 +15,6 @@ Table: Valoración del riesgo RSG10. Validación decisiones de arquitectura. Mig
 
 
 ### Catálogo de Elementos
-
 | Name| Type| Description| Properties
 |:--------|:--------|:--------|:--------|
 |**Impacto**|assessment|||
