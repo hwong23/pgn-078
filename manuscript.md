@@ -18,8 +18,8 @@ header-includes: |
   <meta name="dc.date" content="2023-09-18" />
   <meta name="citation_publication_date" content="2023-09-18" />
   <meta property="article:published_time" content="2023-09-18" />
-  <meta name="dc.modified" content="2023-09-18T19:06:17+00:00" />
-  <meta property="article:modified_time" content="2023-09-18T19:06:17+00:00" />
+  <meta name="dc.modified" content="2023-09-18T19:13:01+00:00" />
+  <meta property="article:modified_time" content="2023-09-18T19:13:01+00:00" />
   <meta name="dc.language" content="en-US" />
   <meta name="citation_language" content="en-US" />
   <meta name="dc.relation.ispartof" content="Manubot" />
@@ -34,9 +34,9 @@ header-includes: |
   <meta name="citation_fulltext_html_url" content="https://hwong23.github.io/pgn-078/" />
   <meta name="citation_pdf_url" content="https://hwong23.github.io/pgn-078/manuscript.pdf" />
   <link rel="alternate" type="application/pdf" href="https://hwong23.github.io/pgn-078/manuscript.pdf" />
-  <link rel="alternate" type="text/html" href="https://hwong23.github.io/pgn-078/v/e2ed1f72fcad42e5715f96642067aa140c90ef0d/" />
-  <meta name="manubot_html_url_versioned" content="https://hwong23.github.io/pgn-078/v/e2ed1f72fcad42e5715f96642067aa140c90ef0d/" />
-  <meta name="manubot_pdf_url_versioned" content="https://hwong23.github.io/pgn-078/v/e2ed1f72fcad42e5715f96642067aa140c90ef0d/manuscript.pdf" />
+  <link rel="alternate" type="text/html" href="https://hwong23.github.io/pgn-078/v/27de200dfb84fbe4c26b28bedada47765457405c/" />
+  <meta name="manubot_html_url_versioned" content="https://hwong23.github.io/pgn-078/v/27de200dfb84fbe4c26b28bedada47765457405c/" />
+  <meta name="manubot_pdf_url_versioned" content="https://hwong23.github.io/pgn-078/v/27de200dfb84fbe4c26b28bedada47765457405c/manuscript.pdf" />
   <meta property="og:type" content="article" />
   <meta property="twitter:card" content="summary_large_image" />
   <link rel="icon" type="image/png" sizes="192x192" href="https://manubot.org/favicon-192x192.png" />
@@ -77,7 +77,7 @@ tablenos-caption-name: Tabla
 
 <br>
 
-| **Versión** del producto 1.e2ed1f7 de 18 Sep 2023
+| **Versión** del producto 1.27de200 de 18 Sep 2023
 
 | **Presentado a**
 
@@ -95,9 +95,9 @@ tablenos-caption-name: Tabla
 
 
 <small><em>Los productos de esta etapa, Migración Funcional SIU, Contrato 078-2023, 
-([Web](https://hwong23.github.io/pgn-078/v/e2ed1f72fcad42e5715f96642067aa140c90ef0d/))
+([Web](https://hwong23.github.io/pgn-078/v/27de200dfb84fbe4c26b28bedada47765457405c/))
 están basados en el resultado de la Fase 1 del proyecto PGN SIU del 2022,
-[Sharepoint Softgic@e2ed1f7](http://softgic.sharepoint.com)
+[Sharepoint Softgic@27de200](http://softgic.sharepoint.com)
 del September 18, 2023.
 </em></small>
 
@@ -143,7 +143,7 @@ Descripción de los productos del trabajo de arquitectura de la Fase 2, proyecto
 | Palabras clave | SIU, Softgic, PGN, Análisis de brecha, GAP, Comparativa              |
 | Autor          |                            |
 | Fuente         |                            |
-| Versión        | 1.e2ed1f7 del 18 Sep 2023 |
+| Versión        | 1.27de200 del 18 Sep 2023 |
 | Vínculos       | [N003a Vista Segmento PGN SIU](N03a%a20Vsta%20aSegenta%20SOA%20PGN.md) |
 
 <br>
@@ -789,6 +789,11 @@ Riesgos de la migración funcional:
 * RSG3. Estatego como BI
 * RSG4. Conciliación y Doku
 * RSG5. Gestión de sesiones / caducidad
+* RSG6. Componentes de negocio
+* RSG7. Asignación de roles y permisos de Acceso 
+* RSG8. Intentos de accesos no autorizados
+* RSG9. Alteración de datos negocio
+* RSG10. Validación decisiones de arquitectura
 
 ### Acciones de Mitigación
 
@@ -824,7 +829,9 @@ Riesgos de la migración funcional:
 Para mitigar el riesgo 10, RSG10. Validación decisiones de arquitectura, que tiene como agente de riesgo a los arquitectos del contratista, Softgic, y al de la entidad, PGN, es necesario iniciar un proceso de evaluación y aprobación de la arquitectura. La frecuencia de este proceso será eventual, y como mínimo una vez cada dos semanas.
 
 ### Valoración del Riesgo
+
 | Requisito      | Extensibilidad SUI |
+|:-------------|:------------------|
 | Descripción | Concentración de los componentes de negocio, misionales, del SUI protegidos de cambios provenientes de otros sistemas. Ver Patrón de Diseño Migración SUI, más adelante en el documento. |
 | Calidad sistémica | La extensibilidad que optimiza el diseño Migración SUI está dada por el intercambio de submódulos no misionales, como el gestor documental, sin afectación de los componentes misionales que este diseño protege. |
 
@@ -844,7 +851,7 @@ Table: Valoración del riesgo RSG10. Validación decisiones de arquitectura. Mig
 |**Supervisor contrato 078-2023**|stakeholder|||
 
 
-``Generated on: Mon Sep 18 2023 14:04:12 GMT-0500 (COT)``
+``Generated on: Mon Sep 18 2023 14:10:46 GMT-0500 (COT)``
 
 ## Requerimientos de Administración
 1.	Las soluciones deben permitir la administración de los Roles de Usuarios: esta funcionalidad debe permitir configurar los diferentes roles de los usuarios funcionales de los procesos. 
@@ -919,7 +926,7 @@ tablenos-caption-name: Tabla
 
 <br>
 
-| **Versión** del producto 1.e2ed1f7 de 18 Sep 2023
+| **Versión** del producto 1.27de200 de 18 Sep 2023
 
 | **Presentado a**
 
@@ -948,7 +955,7 @@ Descripción de los productos del trabajo de infraestructura del proyecto Migrac
 | Palabras clave | SIU, Softgic, PGN, Análisis de brecha, GAP, Infraestrctura, PasS |
 | Autor          |                            |
 | Fuente         |                            |
-| Versión        | 1.e2ed1f7 del 18 Sep 2023 |
+| Versión        | 1.27de200 del 18 Sep 2023 |
 | Vínculos       | [N003a Vista Segmento PGN SIU](N03a%a20Vsta%20aSegenta%20SOA%20PGN.md) |
 
 <br>
@@ -1137,7 +1144,7 @@ tablenos-caption-name: Tabla
 
 <br>
 
-| **Versión** del producto 1.e2ed1f7 de 18 Sep 2023
+| **Versión** del producto 1.27de200 de 18 Sep 2023
 
 | **Presentado a**
 
@@ -1167,7 +1174,7 @@ Descripción de los productos de trabajo de la arquitectura de datos del proyect
 | Palabras clave | SIU, Softgic, PGN, Análisis de brecha, GAP, Entidades, Datos  |
 | Autor          |                            |
 | Fuente         |                            |
-| Versión        | 1.e2ed1f7 del 18 Sep 2023 |
+| Versión        | 1.27de200 del 18 Sep 2023 |
 | Vínculos       | [N003a Vista Segmento PGN SIU](N03a%a20Vsta%20aSegenta%20SOA%20PGN.md) |
 
 <br>

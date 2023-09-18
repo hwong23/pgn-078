@@ -49,8 +49,8 @@
   <meta name="dc.date" content="2023-09-18" />
   <meta name="citation_publication_date" content="2023-09-18" />
   <meta property="article:published_time" content="2023-09-18" />
-  <meta name="dc.modified" content="2023-09-18T19:06:17+00:00" />
-  <meta property="article:modified_time" content="2023-09-18T19:06:17+00:00" />
+  <meta name="dc.modified" content="2023-09-18T19:13:01+00:00" />
+  <meta property="article:modified_time" content="2023-09-18T19:13:01+00:00" />
   <meta name="dc.language" content="en-US" />
   <meta name="citation_language" content="en-US" />
   <meta name="dc.relation.ispartof" content="Manubot" />
@@ -65,9 +65,9 @@
   <meta name="citation_fulltext_html_url" content="https://hwong23.github.io/pgn-078/" />
   <meta name="citation_pdf_url" content="https://hwong23.github.io/pgn-078/manuscript.pdf" />
   <link rel="alternate" type="application/pdf" href="https://hwong23.github.io/pgn-078/manuscript.pdf" />
-  <link rel="alternate" type="text/html" href="https://hwong23.github.io/pgn-078/v/e2ed1f72fcad42e5715f96642067aa140c90ef0d/" />
-  <meta name="manubot_html_url_versioned" content="https://hwong23.github.io/pgn-078/v/e2ed1f72fcad42e5715f96642067aa140c90ef0d/" />
-  <meta name="manubot_pdf_url_versioned" content="https://hwong23.github.io/pgn-078/v/e2ed1f72fcad42e5715f96642067aa140c90ef0d/manuscript.pdf" />
+  <link rel="alternate" type="text/html" href="https://hwong23.github.io/pgn-078/v/27de200dfb84fbe4c26b28bedada47765457405c/" />
+  <meta name="manubot_html_url_versioned" content="https://hwong23.github.io/pgn-078/v/27de200dfb84fbe4c26b28bedada47765457405c/" />
+  <meta name="manubot_pdf_url_versioned" content="https://hwong23.github.io/pgn-078/v/27de200dfb84fbe4c26b28bedada47765457405c/manuscript.pdf" />
   <meta property="og:type" content="article" />
   <meta property="twitter:card" content="summary_large_image" />
   <link rel="icon" type="image/png" sizes="192x192" href="https://manubot.org/favicon-192x192.png" />
@@ -89,7 +89,7 @@
 <p><br></p>
 <p><br></p>
 <p><br></p>
-<div class="line-block"><strong>Versión</strong> del producto 1.e2ed1f7 de 18 Sep 2023</div>
+<div class="line-block"><strong>Versión</strong> del producto 1.27de200 de 18 Sep 2023</div>
 <div class="line-block"><strong>Presentado a</strong></div>
 <div class="line-block">Procuraduría General de la Nación (PGN)</div>
 <div class="line-block"></div>
@@ -99,9 +99,9 @@
 
 </div>
 <p><small><em>Los productos de esta etapa, Migración Funcional SIU, Contrato 078-2023,
-(<a href="https://hwong23.github.io/pgn-078/v/e2ed1f72fcad42e5715f96642067aa140c90ef0d/">Web</a>)
+(<a href="https://hwong23.github.io/pgn-078/v/27de200dfb84fbe4c26b28bedada47765457405c/">Web</a>)
 están basados en el resultado de la Fase 1 del proyecto PGN SIU del 2022,
-<a href="http://softgic.sharepoint.com">Sharepoint Softgic@e2ed1f7</a>
+<a href="http://softgic.sharepoint.com">Sharepoint Softgic@27de200</a>
 del September 18, 2023.
 </em></small></p>
 <p><br></p>
@@ -150,7 +150,7 @@ Arquitecto, Softgic
 </tr>
 <tr class="even">
 <td>Versión</td>
-<td>1.e2ed1f7 del 18 Sep 2023</td>
+<td>1.27de200 del 18 Sep 2023</td>
 </tr>
 <tr class="odd">
 <td>Vínculos</td>
@@ -2497,6 +2497,11 @@ Arquitecto, Softgic
 <li>RSG3. Estatego como BI</li>
 <li>RSG4. Conciliación y Doku</li>
 <li>RSG5. Gestión de sesiones / caducidad</li>
+<li>RSG6. Componentes de negocio</li>
+<li>RSG7. Asignación de roles y permisos de Acceso</li>
+<li>RSG8. Intentos de accesos no autorizados</li>
+<li>RSG9. Alteración de datos negocio</li>
+<li>RSG10. Validación decisiones de arquitectura</li>
 </ul>
 <h3 id="acciones-de-mitigación">Acciones de Mitigación</h3>
 <ol type="1">
@@ -2600,10 +2605,31 @@ Arquitecto, Softgic
 </div>
 <p>Para mitigar el riesgo 10, RSG10. Validación decisiones de arquitectura, que tiene como agente de riesgo a los arquitectos del contratista, Softgic, y al de la entidad, PGN, es necesario iniciar un proceso de evaluación y aprobación de la arquitectura. La frecuencia de este proceso será eventual, y como mínimo una vez cada dos semanas.</p>
 <h3 id="valoración-del-riesgo">Valoración del Riesgo</h3>
-<div class="line-block">Requisito | Extensibilidad SUI |<br />
-Descripción | Concentración de los componentes de negocio, misionales, del SUI protegidos de cambios provenientes de otros sistemas. Ver Patrón de Diseño Migración SUI, más adelante en el documento. |<br />
-Calidad sistémica | La extensibilidad que optimiza el diseño Migración SUI está dada por el intercambio de submódulos no misionales, como el gestor documental, sin afectación de los componentes misionales que este diseño protege. |</div>
-<p>Table: Valoración del riesgo RSG10. Validación decisiones de arquitectura. Migración SUI. {#tbl:requisito1-id}</p>
+<div id="tbl:requisito1-id" class="tablenos">
+<table id="tbl:requisito1-id">
+<caption><span>Tabla 3:</span> Valoración del riesgo RSG10. Validación decisiones de arquitectura. Migración SUI. </caption>
+<colgroup>
+<col style="width: 42%" />
+<col style="width: 57%" />
+</colgroup>
+<thead>
+<tr class="header">
+<th style="text-align: left;">Requisito</th>
+<th style="text-align: left;">Extensibilidad SUI</th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td style="text-align: left;">Descripción</td>
+<td style="text-align: left;">Concentración de los componentes de negocio, misionales, del SUI protegidos de cambios provenientes de otros sistemas. Ver Patrón de Diseño Migración SUI, más adelante en el documento.</td>
+</tr>
+<tr class="even">
+<td style="text-align: left;">Calidad sistémica</td>
+<td style="text-align: left;">La extensibilidad que optimiza el diseño Migración SUI está dada por el intercambio de submódulos no misionales, como el gestor documental, sin afectación de los componentes misionales que este diseño protege.</td>
+</tr>
+</tbody>
+</table>
+</div>
 <h3 id="catálogo-de-elementos-13">Catálogo de Elementos</h3>
 <table>
 <colgroup>
@@ -2671,7 +2697,7 @@ Calidad sistémica | La extensibilidad que optimiza el diseño Migración SUI es
 </tr>
 </tbody>
 </table>
-<p><code>Generated on: Mon Sep 18 2023 14:04:12 GMT-0500 (COT)</code></p>
+<p><code>Generated on: Mon Sep 18 2023 14:10:46 GMT-0500 (COT)</code></p>
 <h2 id="requerimientos-de-administración">Requerimientos de Administración</h2>
 <ol type="1">
 <li>Las soluciones deben permitir la administración de los Roles de Usuarios: esta funcionalidad debe permitir configurar los diferentes roles de los usuarios funcionales de los procesos.</li>
@@ -2725,7 +2751,7 @@ Administrar los Usuarios de la Solución: Esta funcionalidad debe permitir confi
 <p><br></p>
 <p><br></p>
 <p><br></p>
-<div class="line-block"><strong>Versión</strong> del producto 1.e2ed1f7 de 18 Sep 2023</div>
+<div class="line-block"><strong>Versión</strong> del producto 1.27de200 de 18 Sep 2023</div>
 <div class="line-block"><strong>Presentado a</strong></div>
 <div class="line-block">Procuraduría General de la Nación (PGN)</div>
 <div class="line-block"></div>
@@ -2765,7 +2791,7 @@ Administrar los Usuarios de la Solución: Esta funcionalidad debe permitir confi
 </tr>
 <tr class="even">
 <td>Versión</td>
-<td>1.e2ed1f7 del 18 Sep 2023</td>
+<td>1.27de200 del 18 Sep 2023</td>
 </tr>
 <tr class="odd">
 <td>Vínculos</td>
@@ -3417,7 +3443,7 @@ Administrar los Usuarios de la Solución: Esta funcionalidad debe permitir confi
 <p><br></p>
 <p><br></p>
 <p><br></p>
-<div class="line-block"><strong>Versión</strong> del producto 1.e2ed1f7 de 18 Sep 2023</div>
+<div class="line-block"><strong>Versión</strong> del producto 1.27de200 de 18 Sep 2023</div>
 <div class="line-block"><strong>Presentado a</strong></div>
 <div class="line-block">Procuraduría General de la Nación (PGN)</div>
 <div class="line-block"></div>
@@ -3457,7 +3483,7 @@ Administrar los Usuarios de la Solución: Esta funcionalidad debe permitir confi
 </tr>
 <tr class="even">
 <td>Versión</td>
-<td>1.e2ed1f7 del 18 Sep 2023</td>
+<td>1.27de200 del 18 Sep 2023</td>
 </tr>
 <tr class="odd">
 <td>Vínculos</td>
