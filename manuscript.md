@@ -5,7 +5,7 @@ keywords:
 - gobierno
 - PGN
 lang: en-US
-date-meta: '2023-09-15'
+date-meta: '2023-09-18'
 author-meta:
 - Harry Wong, ing.
 header-includes: |
@@ -15,11 +15,11 @@ header-includes: |
   -->
   <meta name="dc.format" content="text/html" />
   <meta property="og:type" content="article" />
-  <meta name="dc.date" content="2023-09-15" />
-  <meta name="citation_publication_date" content="2023-09-15" />
-  <meta property="article:published_time" content="2023-09-15" />
-  <meta name="dc.modified" content="2023-09-15T04:19:17+00:00" />
-  <meta property="article:modified_time" content="2023-09-15T04:19:17+00:00" />
+  <meta name="dc.date" content="2023-09-18" />
+  <meta name="citation_publication_date" content="2023-09-18" />
+  <meta property="article:published_time" content="2023-09-18" />
+  <meta name="dc.modified" content="2023-09-18T18:59:03+00:00" />
+  <meta property="article:modified_time" content="2023-09-18T18:59:03+00:00" />
   <meta name="dc.language" content="en-US" />
   <meta name="citation_language" content="en-US" />
   <meta name="dc.relation.ispartof" content="Manubot" />
@@ -34,9 +34,9 @@ header-includes: |
   <meta name="citation_fulltext_html_url" content="https://hwong23.github.io/pgn-078/" />
   <meta name="citation_pdf_url" content="https://hwong23.github.io/pgn-078/manuscript.pdf" />
   <link rel="alternate" type="application/pdf" href="https://hwong23.github.io/pgn-078/manuscript.pdf" />
-  <link rel="alternate" type="text/html" href="https://hwong23.github.io/pgn-078/v/1f3e8182f7ed75b7d777e77961c0e42ae2d1c564/" />
-  <meta name="manubot_html_url_versioned" content="https://hwong23.github.io/pgn-078/v/1f3e8182f7ed75b7d777e77961c0e42ae2d1c564/" />
-  <meta name="manubot_pdf_url_versioned" content="https://hwong23.github.io/pgn-078/v/1f3e8182f7ed75b7d777e77961c0e42ae2d1c564/manuscript.pdf" />
+  <link rel="alternate" type="text/html" href="https://hwong23.github.io/pgn-078/v/2aacd1ab034c0febb5aa1a1f3de72ada803140bd/" />
+  <meta name="manubot_html_url_versioned" content="https://hwong23.github.io/pgn-078/v/2aacd1ab034c0febb5aa1a1f3de72ada803140bd/" />
+  <meta name="manubot_pdf_url_versioned" content="https://hwong23.github.io/pgn-078/v/2aacd1ab034c0febb5aa1a1f3de72ada803140bd/manuscript.pdf" />
   <meta property="og:type" content="article" />
   <meta property="twitter:card" content="summary_large_image" />
   <link rel="icon" type="image/png" sizes="192x192" href="https://manubot.org/favicon-192x192.png" />
@@ -77,7 +77,7 @@ tablenos-caption-name: Tabla
 
 <br>
 
-| **Versión** del producto 1.1f3e818 de 15 Sep 2023
+| **Versión** del producto 1.2aacd1a de 18 Sep 2023
 
 | **Presentado a**
 
@@ -87,7 +87,7 @@ tablenos-caption-name: Tabla
 
 | **Fecha**
 
-| 15 Sep 2023
+| 18 Sep 2023
 
 
 <div style="page-break-before: always;"></div>
@@ -95,10 +95,10 @@ tablenos-caption-name: Tabla
 
 
 <small><em>Los productos de esta etapa, Migración Funcional SIU, Contrato 078-2023, 
-([Web](https://hwong23.github.io/pgn-078/v/1f3e8182f7ed75b7d777e77961c0e42ae2d1c564/))
+([Web](https://hwong23.github.io/pgn-078/v/2aacd1ab034c0febb5aa1a1f3de72ada803140bd/))
 están basados en el resultado de la Fase 1 del proyecto PGN SIU del 2022,
-[Sharepoint Softgic@1f3e818](http://softgic.sharepoint.com)
-del September 15, 2023.
+[Sharepoint Softgic@2aacd1a](http://softgic.sharepoint.com)
+del September 18, 2023.
 </em></small>
 
 
@@ -143,7 +143,7 @@ Descripción de los productos del trabajo de arquitectura de la Fase 2, proyecto
 | Palabras clave | SIU, Softgic, PGN, Análisis de brecha, GAP, Comparativa              |
 | Autor          |                            |
 | Fuente         |                            |
-| Versión        | 1.1f3e818 del 15 Sep 2023 |
+| Versión        | 1.2aacd1a del 18 Sep 2023 |
 | Vínculos       | [N003a Vista Segmento PGN SIU](N03a%a20Vsta%20aSegenta%20SOA%20PGN.md) |
 
 <br>
@@ -246,7 +246,7 @@ Table: Requisito no. 2. {#tbl:requisito2-id}
 
 
 
-# Documento de Arquitectura Migración Funcional SUI
+# Doc.3.Migración Funcional SUI
 * [Patrón de Diseño Línea Base SUI PGN](#patrón-de-diseño-línea-base-sui-pgn)
 	* [Lineabase.0.SIU applicación](#lineabase.0.siu-applicación)
 	* [Lineabase.1.SIU componente](#lineabase.1.siu-componente)
@@ -259,7 +259,8 @@ Table: Requisito no. 2. {#tbl:requisito2-id}
 	* [Migracion.1b.SIU submodulos colaboración](#migracion.1b.siu-submodulos-colaboración)
 * [Organización cambios arquitectura](#organización-cambios-arquitectura)
 	* [Organización. 1n. Mapa producto](#organización.-1n.-mapa-producto)
-	* [Organización. 1n.1. Mapa producto PGN. Relatoría](#organización.-1n.1.-mapa-producto-pgn.-relatoría)
+	* [Organización. 1n.1. Mapa producto PGN.1.Relatoría](#organización.-1n.1.-mapa-producto-pgn.1.relatoría)
+	* [Organización. 1n.1a. Mapa producto PGN.2a.Conciliacion](#organización.-1n.1a.-mapa-producto-pgn.2a.conciliacion)
 * [Arquitectura de Seguridad, SUI Migración](#arquitectura-de-seguridad,-sui-migración)
 	* [Seguridad. 1. Requerimientos](#seguridad.-1.-requerimientos)
 	* [Seguridad. Linebase.2.Portal](#seguridad.-linebase.2.portal)
@@ -443,26 +444,31 @@ Riesgos de la migración funcional:
 
 ### Acciones de Mitigación
 
-Informar a la PGN de las implicaciones junto con alternativas para la implementación de la acción de aprovechamiento: diseño del SCM central (sharepoint). La PGN debe decidir si o no a la acción propuesta.
+1. Informar a la PGN de las implicaciones junto con alternativas para la implementación de la acción de aprovechamiento: diseño del SCM central (sharepoint). La PGN debe decidir si o no a la acción propuesta.
 
-Informar a la PGN de las implicaciones junto con alternativas para la implementación de la acción de aprovechamiento: diseño del motor de búsqueda compartido (sharepoint). La PGN debe decidir si o no a la acción propuesta.
+1. Informar a la PGN de las implicaciones junto con alternativas para la implementación de la acción de aprovechamiento: diseño del motor de búsqueda compartido (sharepoint). La PGN debe decidir si o no a la acción propuesta.
 
-Informar a la PGN de las implicaciones junto con alternativas para la implementación de la acción de manejo del riesgo: diseño de solución de inteligencia de negocio (Power BI). La PGN debe decidir si o no a la acción propuesta.
+1. Informar a la PGN de las implicaciones junto con alternativas para la implementación de la acción de manejo del riesgo: diseño de solución de inteligencia de negocio (Power BI). La PGN debe decidir si o no a la acción propuesta.
 
-Informar a la PGN de las implicaciones junto con alternativas para la implementación de la acción de manejo del riesgo: ubicar la lógica, los flujos, y los datos misionales dentro del SIU. La PGN debe decidir si o no a la acción propuesta.
+1. Informar a la PGN de las implicaciones junto con alternativas para la implementación de la acción de manejo del riesgo: ubicar la lógica, los flujos, y los datos misionales dentro del SIU. La PGN debe decidir si o no a la acción propuesta.
 
-Informar a la PGN de las implicaciones junto con alternativas para la implementación de la acción de manejo del riesgo: facilitar la administración de seguridad en un solo lugar (distinto de localizarla en las aplicaciones web). La PGN debe decidir si o no a la acción propuesta.
+1. Informar a la PGN de las implicaciones junto con alternativas para la implementación de la acción de manejo del riesgo: facilitar la administración de seguridad en un solo lugar (distinto de localizarla en las aplicaciones web). La PGN debe decidir si o no a la acción propuesta.
 
 
 ### Catálogo de Elementos
 | Name| Type| Description| Properties
 |:--------|:--------|:--------|:--------|
-|**RSG1. Estrategia CMS central**|constraint|Establecer desde el principio el gestor de contenidos compartido que los módulos del SUI migrados van a usar.||
+|**RSG1. Estrategia CMS central**|constraint|Establecer desde el principio el gestor de contenidos compartido que los módulos del SUI migrados van a usar.<br>||
+|**RSG10. Validación decisiones de arquitectura**|constraint|Discutir la arquitectura de referencia de SUI Migración PGN. La arquitectura de referencia SUI informa de todas las fortalezas y consideraciones estructurales y de sistema, como extensibilidad, rendimiento y seguridad, que regirán a todos los módulos del SUI migrado.<br>||
 |**RSG2. Motor de búsqueda compartido**|constraint|Establecer desde el principio el motor de búsqueda de conteidos compartido para los módulos del SUI migrados.<br>||
 |**RSG3. Estatego como BI**|constraint|Definir la arquitectura de Estratego migrado: puede ser una solución de BI simple, o puede ser una aplicación web tradicional.<br>||
-|**RSG4. Conciliación sin Doku**|constraint|Definir la ubicación de los componentes misionales de Conciliación Administrativa (SIU). Debe estar fuera de Doku.<br>||
+|**RSG4. Conciliación y gestión documental (Doku)**|constraint|Definir la ubicación de los componentes misionales de Conciliación Administrativa (SIU). Debe estar fuera de Doku.<br>||
 |**RSG5. Gestión de sesiones / caducidad**|constraint|Establecer desde el principio el motor de búsqueda de conteidos compartido para los módulos del SUI migrados.<br>||
-|**Riesgos Migración Funcional SIU**|constraint|||
+|**RSG6. Componentes de negocio**|constraint|Incluir el esfuerzo de creación de componentes estrcturales y comunes a los módulos del SUI migrado requeridos por la arquitectura de referencia SUI. <br>Algunos componentes requeridos son:<br>* Administración de autorizaciones (integrado con el directorio PGN)<br>* Motor de flujos de trabajo para diseño y organización del trabajo (Conciliación)<br>* Componente de ruteo de documentos (Relatoría)<br>||
+|**RSG7. Asignación de roles y permisos de Acceso **|constraint|RSG7. Asignación de roles y permisos de Acceso<br>Los riesgos de autenticación como el Single Sign On (SSO), permite que si las credenciales de usuario se ven comprometidas, pueden dar permiso a un atacante acceder a todos o la mayoría de recursos y aplicaciones en la red. <br>Se ha propuesto controlar los accesos a partir de la documentación que identifica la metodología de clasificación y gestión de usuarios roles y procesos de autenticación, a partir del control de acceso basado en roles RBAC (Identidades y autenticación), que permite tener una reacción más oportuna para controlar los accesos a diferentes módulos de los diferentes sistemas de Información.  Los inicios de sesión de los usuarios asociados a cuenta de dominio de Active Directory deben tener en cuenta la asignación de roles de ingreso al servidor o roles de ingreso al motor de bases de datos. Las cuentas de usuario no deben ser creadas de administrador local (administrador), es una puerta de entrada para los ataques de fuerza bruta.<br>||
+|**RSG8. Intentos de accesos no autorizados**|constraint|RSG8. Intentos de accesos no autorizados<br>Los intentos no autorizados son una de las técnicas más comunes utilizadas en la actualidad, los diferentes tipos de amenazas de intrusiones SQL Injections, Denegaciones de Servicios, riesgos de Ransomware, Ingeniería social, malware y otras amenazas, permite que se proponga implementación de soluciones de Seguridad perimetral a partir de la implementación de WAF para controlar las peticiones externas y evaluación de vulnerabilidades y escaneo para conocer puertos abiertos y establecer medidas.<br>||
+|**RSG9. Alteración de datos negocio**|constraint|RSG9. Alteración de datos almacenados en Base de Datos.<br>Se deberán asignar usuarios para la conexión de cada base de datos.<br>Se debe proporcionar seguridad a nivel de filas y columnas (ofuscamiento) para proteger los datos confidenciales en el nivel de columnas y filas RLS ((seguridad de nivel de fila). <br>Algunos de los métodos y características que se deben tener en cuenta a implementar es a partir del Alway encrypted, para cifrar los datos que se encuentran almacenados. <br>||
+|**Riesgos Migración Funcional SIU**|constraint|Conjunto de riesgos técnicos y arquitectura. Proyecto Migración SUI 2023, PGN.<br>||
 <div style="page-break-before: always;"></div>
 \newpage
 
@@ -621,8 +627,8 @@ La colaboración entre el SUI Migración con sistemas externos puede darse media
 |**Hitos mercado**|value||*modulo:* relatoria<br>|
 |**Iteración**|work-package||*modulo:* relatoria<br>|
 
-## Organización. 1n.1. Mapa producto PGN. Relatoría
-![Diagram: Organización. 1n.1. Mapa producto PGN. Relatoría](images/Organización.1n.1.MapaproductoPGN.Relatoría.png){#fig:Organización.1n.1.MapaproductoPGN.Relatoría width=}
+## Organización. 1n.1. Mapa producto PGN.1.Relatoría
+![Diagram: Organización. 1n.1. Mapa producto PGN.1.Relatoría](images/Organización.1n.1.MapaproductoPGN.1.Relatoría.png){#fig:Organización.1n.1.MapaproductoPGN.1.Relatoría width=}
 
 Organización y distribución de las características técnicas y funcionales del módulo de Relatoría. 
 
@@ -676,8 +682,6 @@ De arriba a abajo:
 |**Organización contenidos. Rltría v0.5**|value||*modulo:* relatoria<br>|
 |**Seguridad. Rltría v0.9**|value||*modulo:* relatoria<br>|
 |**Iteración**|work-package||*modulo:* relatoria<br>|
-|**Iteración 1**|work-package||*modulo:* relatoria<br>|
-|**Iteración 1**|work-package||*modulo:* relatoria<br>|
 |**Iteración 2**|work-package||*modulo:* relatoria<br>|
 |**Iteración 2**|work-package||*modulo:* relatoria<br>|
 |**Iteración 3**|work-package||*modulo:* relatoria<br>|
@@ -689,6 +693,56 @@ De arriba a abajo:
 |**Iteración 6**|work-package||*modulo:* relatoria<br>|
 |**Iteración 6**|work-package||*modulo:* relatoria<br>|
 |**Iteración 7**|work-package||*modulo:* relatoria<br>|
+|**Iteración 7**|work-package||*modulo:* relatoria<br>|
+|**rel.Iteración 1**|work-package||*modulo:* relatoria<br>|
+|**rel.Iteración 1**|work-package||*modulo:* relatoria<br>|
+
+## Organización. 1n.1a. Mapa producto PGN.2a.Conciliacion
+![Diagram: Organización. 1n.1a. Mapa producto PGN.2a.Conciliacion](images/Organización.1n.1a.MapaproductoPGN.2a.Conciliacion.png){#fig:Organización.1n.1a.MapaproductoPGN.2a.Conciliacion width=}
+
+### Catálogo de Elementos
+| Name| Type| Description| Properties
+|:--------|:--------|:--------|:--------|
+|**Componente de  comunicación segura SIU**|capability||*modulo:* relatoria<br>|
+|**Componente de autenticación SIU**|capability||*modulo:* relatoria<br>|
+|**Componente de autorización SIU**|capability||*modulo:* relatoria<br>|
+|**Flujo de trabajo  Preventico**|capability||*modulo:* relatoria<br>|
+|**Flujo de trabajo Disciplinar**|capability||*modulo:* relatoria<br>|
+|**Flujo de trabajo Intervención**|capability||*modulo:* relatoria<br>|
+|**Integración API Dokus**|capability||*modulo:* relatoria<br>|
+|**Motor de flujo de trabajo**|capability||*modulo:* relatoria<br>|
+|**Panel de control flujos**|capability||*modulo:* relatoria<br>|
+|**Reporte flujos de trabajo**|capability||*modulo:* relatoria<br>|
+|**Épicas**|capability||*modulo:* relatoria<br>|
+|**Deliverable: (tiempo)**|deliverable||*modulo:* relatoria<br>|
+|**Autenticación**|goal||*modulo:* relatoria<br>*caracteristica:* seguridad<br>|
+|**Autorización**|goal||*modulo:* relatoria<br>*caracteristica:* seguridad<br>|
+|**Características**|goal||*modulo:* relatoria<br>|
+|**Conciliación administrativa**|goal||*modulo:* relatoria<br>*caracteristica:* técnica, integración<br>|
+|**Conciliación civil**|goal||*modulo:* relatoria<br>*caracteristica:* técnica, integración<br>|
+|**Conciliación disciplinar**|goal||*modulo:* relatoria<br>*caracteristica:* técnica, integración<br>|
+|**Conciliación familia**|goal||*modulo:* relatoria<br>*caracteristica:* técnica, integración<br>|
+|**Conciliación preventivo**|goal||*modulo:* relatoria<br>*caracteristica:* técnica, integración<br>|
+|**Diseño de flujos de Conciliación**|goal||*modulo:* relatoria<br>*caracteristica:* técnica, integración<br>|
+|**Gestión de instancias (flujos)**|goal||*modulo:* relatoria<br>*caracteristica:* técnica, integración<br>|
+|**Gestión documental**|goal||*modulo:* relatoria<br>*caracteristica:* seguridad<br>|
+|**Informes de gestión flujos**|goal||*modulo:* relatoria<br>*caracteristica:* técnica, integración<br>|
+|**Integridad**|goal||*modulo:* relatoria<br>*caracteristica:* seguridad<br>|
+|**Hoja ruta del producto**|grouping||*modulo:* relatoria<br>|
+|**Adopción, v1.2**|value||*modulo:* relatoria<br>|
+|**Despliegue Conciliación v1.2**|value||*modulo:* relatoria<br>|
+|**Flujo de trabajo Disciplinario. Conciliación v0.9**|value||*modulo:* relatoria<br>|
+|**Flujo de trabajo Intervención. Conciliación v0.1 (copy)**|value||*modulo:* relatoria<br>|
+|**Flujo de trabajo Preventivo. Conciliación v0.7**|value||*modulo:* relatoria<br>|
+|**Gestión de flujos. Conciliación 1.0**|value||*modulo:* relatoria<br>|
+|**Hitos mercado**|value||*modulo:* relatoria<br>|
+|**Iteración**|work-package||*modulo:* relatoria<br>|
+|**Iteración 1**|work-package||*modulo:* relatoria<br>|
+|**Iteración 2**|work-package||*modulo:* relatoria<br>|
+|**Iteración 3**|work-package||*modulo:* relatoria<br>|
+|**Iteración 4**|work-package||*modulo:* relatoria<br>|
+|**Iteración 5**|work-package||*modulo:* relatoria<br>|
+|**Iteración 6**|work-package||*modulo:* relatoria<br>|
 |**Iteración 7**|work-package||*modulo:* relatoria<br>|
 <div style="page-break-before: always;"></div>
 \newpage
@@ -760,7 +814,7 @@ El portal es el conjunto de los elementos físicos y lógicos necesarios para la
 |**Application Interface**|application-interface|||
 
 
-``Generated on: Wed Sep 13 2023 23:06:23 GMT-0500 (COT)``
+``Generated on: Mon Sep 18 2023 13:52:02 GMT-0500 (COT)``
 
 ## Requerimientos de Administración
 1.	Las soluciones deben permitir la administración de los Roles de Usuarios: esta funcionalidad debe permitir configurar los diferentes roles de los usuarios funcionales de los procesos. 
@@ -835,7 +889,7 @@ tablenos-caption-name: Tabla
 
 <br>
 
-| **Versión** del producto 1.1f3e818 de 15 Sep 2023
+| **Versión** del producto 1.2aacd1a de 18 Sep 2023
 
 | **Presentado a**
 
@@ -845,7 +899,7 @@ tablenos-caption-name: Tabla
 
 | **Fecha**
 
-| 15 Sep 2023
+| 18 Sep 2023
 
 
 <div style="page-break-before: always;"></div>
@@ -864,7 +918,7 @@ Descripción de los productos del trabajo de infraestructura del proyecto Migrac
 | Palabras clave | SIU, Softgic, PGN, Análisis de brecha, GAP, Infraestrctura, PasS |
 | Autor          |                            |
 | Fuente         |                            |
-| Versión        | 1.1f3e818 del 15 Sep 2023 |
+| Versión        | 1.2aacd1a del 18 Sep 2023 |
 | Vínculos       | [N003a Vista Segmento PGN SIU](N03a%a20Vsta%20aSegenta%20SOA%20PGN.md) |
 
 <br>
@@ -1053,7 +1107,7 @@ tablenos-caption-name: Tabla
 
 <br>
 
-| **Versión** del producto 1.1f3e818 de 15 Sep 2023
+| **Versión** del producto 1.2aacd1a de 18 Sep 2023
 
 | **Presentado a**
 
@@ -1063,7 +1117,7 @@ tablenos-caption-name: Tabla
 
 | **Fecha**
 
-| 15 Sep 2023
+| 18 Sep 2023
 
 
 <div style="page-break-before: always;"></div>
@@ -1083,7 +1137,7 @@ Descripción de los productos de trabajo de la arquitectura de datos del proyect
 | Palabras clave | SIU, Softgic, PGN, Análisis de brecha, GAP, Entidades, Datos  |
 | Autor          |                            |
 | Fuente         |                            |
-| Versión        | 1.1f3e818 del 15 Sep 2023 |
+| Versión        | 1.2aacd1a del 18 Sep 2023 |
 | Vínculos       | [N003a Vista Segmento PGN SIU](N03a%a20Vsta%20aSegenta%20SOA%20PGN.md) |
 
 <br>
