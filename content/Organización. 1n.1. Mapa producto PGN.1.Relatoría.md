@@ -22,9 +22,9 @@ De arriba a abajo:
 | Name| Type| Description| Properties
 |:--------|:--------|:--------|:--------|
 |**Administración de contenidos**|capability||*modulo:* relatoria<br>|
-|**Componente de  comunicación segura SIU**|capability||*modulo:* relatoria<br>|
-|**Componente de autenticación SIU**|capability||*modulo:* relatoria<br>|
-|**Componente de autorización SIU**|capability||*modulo:* relatoria<br>|
+|**Componente de  comunicación segura SIU**|capability||*modulo:* conciliacion<br>|
+|**Componente de autenticación SIU**|capability||*modulo:* conciliacion<br>|
+|**Componente de autorización SIU**|capability||*modulo:* conciliacion<br>|
 |**Funcionalidades de búsqueda**|capability||*modulo:* relatoria<br>|
 |**Funcionalidades de descripción de contenidos**|capability||*modulo:* relatoria<br>|
 |**Integración API CMS**|capability||*modulo:* relatoria<br>|
@@ -33,12 +33,12 @@ De arriba a abajo:
 |**Proceso de recolección de contenidos**|capability||*modulo:* relatoria<br>|
 |**Proceso de sincronización automática de contenidos**|capability||*modulo:* relatoria<br>|
 |**Publicar contenidos**|capability||*modulo:* relatoria<br>|
-|**Épicas**|capability||*modulo:* relatoria<br>|
-|**Deliverable: (tiempo)**|deliverable||*modulo:* relatoria<br>|
+|**Épicas**|capability||*modulo:* <br>|
+|**Deliverable: (tiempo)**|deliverable||*modulo:* <br>|
 |**Autenticación**|goal||*modulo:* relatoria<br>*caracteristica:* seguridad<br>|
 |**Autorización**|goal||*modulo:* relatoria<br>*caracteristica:* seguridad<br>|
 |**Búsqueda**|goal||*modulo:* relatoria<br>*caracteristica:* técnica, integración<br>|
-|**Características**|goal||*modulo:* relatoria<br>|
+|**Características**|goal||*modulo:* <br>|
 |**Contenidos**|goal||*modulo:* relatoria<br>*caracteristica:* técnica, integración<br>|
 |**Descripción (metatada)**|goal||*modulo:* relatoria<br>*caracteristica:* técnica, integración<br>|
 |**Indexación**|goal||*modulo:* relatoria<br>*caracteristica:* técnica, integración<br>|
@@ -50,10 +50,10 @@ De arriba a abajo:
 |**Búsqueda de contenidos. Relatoría v0.1**|value||*modulo:* relatoria<br>|
 |**Despliegue Relatoría v1.2**|value||*modulo:* relatoria<br>|
 |**Gestión contenidos. Rltría v1.0**|value||*modulo:* relatoria<br>|
-|**Hitos mercado**|value||*modulo:* relatoria<br>|
+|**Hitos mercado**|value||*modulo:* <br>|
 |**Organización contenidos. Rltría v0.5**|value||*modulo:* relatoria<br>|
 |**Seguridad. Rltría v0.9**|value||*modulo:* relatoria<br>|
-|**Iteración**|work-package||*modulo:* relatoria<br>|
+|**Iteración**|work-package||*modulo:* <br>|
 |**Iteración 2**|work-package||*modulo:* relatoria<br>|
 |**Iteración 2**|work-package||*modulo:* relatoria<br>|
 |**Iteración 3**|work-package||*modulo:* relatoria<br>|

@@ -5,10 +5,10 @@
 ### Catálogo de Elementos
 | Name| Type| Description| Properties
 |:--------|:--------|:--------|:--------|
-|**Épicas**|capability||*modulo:* relatoria<br>|
-|**Deliverable: (tiempo)**|deliverable||*modulo:* relatoria<br>|
+|**Épicas**|capability||*modulo:* <br>|
+|**Deliverable: (tiempo)**|deliverable||*modulo:* <br>|
 |**Tiempo**|gap|||
-|**Características**|goal||*modulo:* relatoria<br>|
+|**Características**|goal||*modulo:* <br>|
 |**Hoja ruta del producto**|grouping||*modulo:* relatoria<br>|
-|**Hitos mercado**|value||*modulo:* relatoria<br>|
-|**Iteración**|work-package||*modulo:* relatoria<br>|
+|**Hitos mercado**|value||*modulo:* <br>|
+|**Iteración**|work-package||*modulo:* <br>|
