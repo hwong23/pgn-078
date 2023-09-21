@@ -5,7 +5,7 @@ keywords:
 - gobierno
 - PGN
 lang: en-US
-date-meta: '2023-09-18'
+date-meta: '2023-09-21'
 author-meta:
 - Harry Wong, ing.
 header-includes: |
@@ -15,11 +15,11 @@ header-includes: |
   -->
   <meta name="dc.format" content="text/html" />
   <meta property="og:type" content="article" />
-  <meta name="dc.date" content="2023-09-18" />
-  <meta name="citation_publication_date" content="2023-09-18" />
-  <meta property="article:published_time" content="2023-09-18" />
-  <meta name="dc.modified" content="2023-09-18T19:13:01+00:00" />
-  <meta property="article:modified_time" content="2023-09-18T19:13:01+00:00" />
+  <meta name="dc.date" content="2023-09-21" />
+  <meta name="citation_publication_date" content="2023-09-21" />
+  <meta property="article:published_time" content="2023-09-21" />
+  <meta name="dc.modified" content="2023-09-21T21:20:38+00:00" />
+  <meta property="article:modified_time" content="2023-09-21T21:20:38+00:00" />
   <meta name="dc.language" content="en-US" />
   <meta name="citation_language" content="en-US" />
   <meta name="dc.relation.ispartof" content="Manubot" />
@@ -34,9 +34,9 @@ header-includes: |
   <meta name="citation_fulltext_html_url" content="https://hwong23.github.io/pgn-078/" />
   <meta name="citation_pdf_url" content="https://hwong23.github.io/pgn-078/manuscript.pdf" />
   <link rel="alternate" type="application/pdf" href="https://hwong23.github.io/pgn-078/manuscript.pdf" />
-  <link rel="alternate" type="text/html" href="https://hwong23.github.io/pgn-078/v/27de200dfb84fbe4c26b28bedada47765457405c/" />
-  <meta name="manubot_html_url_versioned" content="https://hwong23.github.io/pgn-078/v/27de200dfb84fbe4c26b28bedada47765457405c/" />
-  <meta name="manubot_pdf_url_versioned" content="https://hwong23.github.io/pgn-078/v/27de200dfb84fbe4c26b28bedada47765457405c/manuscript.pdf" />
+  <link rel="alternate" type="text/html" href="https://hwong23.github.io/pgn-078/v/c8ec6bb156896ddaad5cfdc346210e42c7684d35/" />
+  <meta name="manubot_html_url_versioned" content="https://hwong23.github.io/pgn-078/v/c8ec6bb156896ddaad5cfdc346210e42c7684d35/" />
+  <meta name="manubot_pdf_url_versioned" content="https://hwong23.github.io/pgn-078/v/c8ec6bb156896ddaad5cfdc346210e42c7684d35/manuscript.pdf" />
   <meta property="og:type" content="article" />
   <meta property="twitter:card" content="summary_large_image" />
   <link rel="icon" type="image/png" sizes="192x192" href="https://manubot.org/favicon-192x192.png" />
@@ -77,7 +77,7 @@ tablenos-caption-name: Tabla
 
 <br>
 
-| **Versión** del producto 1.27de200 de 18 Sep 2023
+| **Versión** del producto 1.c8ec6bb de 21 Sep 2023
 
 | **Presentado a**
 
@@ -87,7 +87,7 @@ tablenos-caption-name: Tabla
 
 | **Fecha**
 
-| 18 Sep 2023
+| 21 Sep 2023
 
 
 <div style="page-break-before: always;"></div>
@@ -95,10 +95,10 @@ tablenos-caption-name: Tabla
 
 
 <small><em>Los productos de esta etapa, Migración Funcional SIU, Contrato 078-2023, 
-([Web](https://hwong23.github.io/pgn-078/v/27de200dfb84fbe4c26b28bedada47765457405c/))
+([Web](https://hwong23.github.io/pgn-078/v/c8ec6bb156896ddaad5cfdc346210e42c7684d35/))
 están basados en el resultado de la Fase 1 del proyecto PGN SIU del 2022,
-[Sharepoint Softgic@27de200](http://softgic.sharepoint.com)
-del September 18, 2023.
+[Sharepoint Softgic@c8ec6bb](http://softgic.sharepoint.com)
+del September 21, 2023.
 </em></small>
 
 
@@ -143,7 +143,7 @@ Descripción de los productos del trabajo de arquitectura de la Fase 2, proyecto
 | Palabras clave | SIU, Softgic, PGN, Análisis de brecha, GAP, Comparativa              |
 | Autor          |                            |
 | Fuente         |                            |
-| Versión        | 1.27de200 del 18 Sep 2023 |
+| Versión        | 1.c8ec6bb del 21 Sep 2023 |
 | Vínculos       | [N003a Vista Segmento PGN SIU](N03a%a20Vsta%20aSegenta%20SOA%20PGN.md) |
 
 <br>
@@ -253,16 +253,18 @@ Table: Requisito no. 2. {#tbl:requisito2-id}
 	* [Lineabase.1a.SIU componentes. infraestrcutura](#lineabase.1a.siu-componentes.-infraestrcutura)
 	* [Linebase.2.Portal](#linebase.2.portal)
 * [Patrón de Diseño Migración SUI PGN](#patrón-de-diseño-migración-sui-pgn)
-	* [Migracion.1a.SIU submódulos](#migracion.1a.siu-submódulos)
-	* [Migracion.1c.SIU submódulos componentes](#migracion.1c.siu-submódulos-componentes)
-	* [Migracion.1b.SIU submodulos colaboración](#migracion.1b.siu-submodulos-colaboración)
+	* [Migracion.1a.SIU módulos](#migracion.1a.siu-módulos)
+	* [Migracion.1b.SIU módulos componentes](#migracion.1b.siu-módulos-componentes)
+	* [Migracion.1c.SIU modulos colaboración](#migracion.1c.siu-modulos-colaboración)
 * [Organización cambios arquitectura](#organización-cambios-arquitectura)
 	* [Organización. 1n. Mapa producto](#organización.-1n.-mapa-producto)
 	* [Organización. 1n.1. Mapa producto PGN.1.Relatoría](#organización.-1n.1.-mapa-producto-pgn.1.relatoría)
-	* [Organización. 1n.1a. Mapa producto PGN.2a.Conciliacion](#organización.-1n.1a.-mapa-producto-pgn.2a.conciliacion)
+	* [Organización. 2n.1a. Mapa producto PGN. Conciliacion](#organización.-2n.1a.-mapa-producto-pgn.-conciliacion)
 * [Arquitectura de Seguridad, SUI Migración](#arquitectura-de-seguridad,-sui-migración)
 	* [Seguridad. 1. Requerimientos](#seguridad.-1.-requerimientos)
 	* [Seguridad. Linebase.2.Portal](#seguridad.-linebase.2.portal)
+* [Análisis de Productos](#análisis-de-productos)
+	* [Organización. 4n.1a. Mapa producto PGN. Comparativa](#organización.-4n.1a.-mapa-producto-pgn.-comparativa)
 * [Riesgos Técnicos](#riesgos-técnicos)
 	* [Riesgos.1. Migración funcional](#riesgos.1.-migración-funcional)
 	* [Riesgos.2. Modelo Riesgo RSG10](#riesgos.2.-modelo-riesgo-rsg10)
@@ -436,14 +438,14 @@ El portal es el conjunto de los elementos físicos y lógicos necesarios para la
 \newpage
 
 # Patrón de Diseño Migración SUI PGN
-## Migracion.1a.SIU submódulos
-![Diagram: Migracion.1a.SIU submódulos](images/Migracion.1a.SIUsubmódulos.png){#fig:Migracion.1a.SIUsubmódulos width=}
+## Migracion.1a.SIU módulos
+![Diagram: Migracion.1a.SIU módulos](images/Migracion.1a.SIUmódulos.png){#fig:Migracion.1a.SIUmódulos width=}
 
 Identificación de submódulos del Sistema Único de Información (SUI) de la PGN. 
 
-Todos los sistemas de información del SUI siguen esta directiva: estarán constituídos por submódulos dispuestos en relación de utilitarios (que sirven) a los componentes misionales del SUI, ubicados en el centro en la diagrama. 
+Todos los sistemas de información del SUI deben seguir la directiva de separar a los compontentes misionales de los utilitarior: el SUI de PGN estará constituídos por submódulos dispuestos en relación de utilitarios (que sirven) a los componentes misionales del SUI, ubicados en el centro en la diagrama.
 
-Los submódulos del SUI, tal como están presentados, reúnen a las partes que tienen el mismo rol en favor de la coherencia. Así mismo, estos pueden ser intercambiados o ampliados sin perjuicio del SUI gracias a las interfaces de unión (en favor de la extensibilidad).
+Los submódulos del SUI, tal como están presentados, reúnen a las partes por el mismo rol en favor de la coherencia. Por ejemplo, los servicios de aplicación, en la imagen, contiene a todos aquellos utilitarios que prestan alguna utilidad momentánea al SUI migrado. Organizados así, estos submódulos utilitarios pueden ser intercambiados o ampliados sin perjuicio de los componentes misionales dell SUI (centro del diagrama) gracias a las _interfaces de unión_ en favor de la extensibilidad.
 
 Las interfaces de unión indicadas arriba obligan a los submódulos a cumplir las exigencias de los componentes misionales del SUI.
 
@@ -456,7 +458,7 @@ Los submódulos identificados tienen los siguientes roles para el SUI migrado:
 1. cc:Almacenamiento
 
 ### Requerimientos Asociados a los Submódulos
-La disposición de los módulos y submódulos presentada, denominada SUI Migración en adelante, facilita la focalización de los requerimientos encontrados en el levantamiento realizado por el actual proyecto. Así, por ejemplo, los requerimientos funcionales se encuentran concentrados en el submódulo de presentación (ver imagen).
+La disposición de los módulos y submódulos presentada, denominada SUI Migración en adelante, facilita la focalización de los requerimientos encontrados en el levantamiento realizado en el actual proyecto. Así, por ejemplo, los requerimientos funcionales se encuentran concentrados en el submódulo de presentación (ver imagen).
 
 
 ### Catálogo de Elementos
@@ -482,8 +484,8 @@ La disposición de los módulos y submódulos presentada, denominada SUI Migraci
 |**RQR. Seguridad**|requirement|Requerimientos de seguridad, SUI, Migración, en aspectos de comunicación, autenticación, autorización y (manejo de) sesiones.<br>||
 |**RQR. Seguridad**|requirement|Requerimientos de seguridad, SUI, Migración, en aspectos de comunicación, autenticación, autorización y (manejo de) sesiones.<br>||
 
-## Migracion.1c.SIU submódulos componentes
-![Diagram: Migracion.1c.SIU submódulos componentes](images/Migracion.1c.SIUsubmóduloscomponentes.png){#fig:Migracion.1c.SIUsubmóduloscomponentes width=}
+## Migracion.1b.SIU módulos componentes
+![Diagram: Migracion.1b.SIU módulos componentes](images/Migracion.1b.SIUmóduloscomponentes.png){#fig:Migracion.1b.SIUmóduloscomponentes width=}
 
 Presentación de los componentes internos de los submódulos del sistema único de información migración PGN. Organización intena de los servicios y paquetes que integran cada submódulo del SUI. Todos los sistemas de información del SUI siguen esta directiva: estarán constituídos por submódulos dispuestos en relación de utilitarios (que sirven) a los componentes misionales del SUI, ubicados en el centro en la diagrama. 
 
@@ -549,8 +551,8 @@ Las interfaces de unión indicadas arriba obligan a los submódulos a cumplir la
 |**RQR. Seguridad**|requirement|Requerimientos de seguridad, SUI, Migración, en aspectos de comunicación, autenticación, autorización y (manejo de) sesiones.<br>||
 |**RQR. Seguridad**|requirement|Requerimientos de seguridad, SUI, Migración, en aspectos de comunicación, autenticación, autorización y (manejo de) sesiones.<br>||
 
-## Migracion.1b.SIU submodulos colaboración
-![Diagram: Migracion.1b.SIU submodulos colaboración](images/Migracion.1b.SIUsubmoduloscolaboración.png){#fig:Migracion.1b.SIUsubmoduloscolaboración width=}
+## Migracion.1c.SIU modulos colaboración
+![Diagram: Migracion.1c.SIU modulos colaboración](images/Migracion.1c.SIUmoduloscolaboración.png){#fig:Migracion.1c.SIUmoduloscolaboración width=}
 
 Patrón de Distribución y Colaboración estándar para el SUI.
 
@@ -582,13 +584,13 @@ La colaboración entre el SUI Migración con sistemas externos puede darse media
 ### Catálogo de Elementos
 | Name| Type| Description| Properties
 |:--------|:--------|:--------|:--------|
-|**Épicas**|capability||*modulo:* relatoria<br>|
-|**Deliverable: (tiempo)**|deliverable||*modulo:* relatoria<br>|
+|**Épicas**|capability||*modulo:* <br>|
+|**Deliverable: (tiempo)**|deliverable||*modulo:* <br>|
 |**Tiempo**|gap|||
-|**Características**|goal||*modulo:* relatoria<br>|
+|**Características**|goal||*modulo:* <br>|
 |**Hoja ruta del producto**|grouping||*modulo:* relatoria<br>|
-|**Hitos mercado**|value||*modulo:* relatoria<br>|
-|**Iteración**|work-package||*modulo:* relatoria<br>|
+|**Hitos mercado**|value||*modulo:* <br>|
+|**Iteración**|work-package||*modulo:* <br>|
 
 ## Organización. 1n.1. Mapa producto PGN.1.Relatoría
 ![Diagram: Organización. 1n.1. Mapa producto PGN.1.Relatoría](images/Organización.1n.1.MapaproductoPGN.1.Relatoría.png){#fig:Organización.1n.1.MapaproductoPGN.1.Relatoría width=}
@@ -613,9 +615,9 @@ De arriba a abajo:
 | Name| Type| Description| Properties
 |:--------|:--------|:--------|:--------|
 |**Administración de contenidos**|capability||*modulo:* relatoria<br>|
-|**Componente de  comunicación segura SIU**|capability||*modulo:* relatoria<br>|
-|**Componente de autenticación SIU**|capability||*modulo:* relatoria<br>|
-|**Componente de autorización SIU**|capability||*modulo:* relatoria<br>|
+|**Componente de  comunicación segura SIU**|capability||*modulo:* conciliacion<br>|
+|**Componente de autenticación SIU**|capability||*modulo:* conciliacion<br>|
+|**Componente de autorización SIU**|capability||*modulo:* conciliacion<br>|
 |**Funcionalidades de búsqueda**|capability||*modulo:* relatoria<br>|
 |**Funcionalidades de descripción de contenidos**|capability||*modulo:* relatoria<br>|
 |**Integración API CMS**|capability||*modulo:* relatoria<br>|
@@ -624,12 +626,12 @@ De arriba a abajo:
 |**Proceso de recolección de contenidos**|capability||*modulo:* relatoria<br>|
 |**Proceso de sincronización automática de contenidos**|capability||*modulo:* relatoria<br>|
 |**Publicar contenidos**|capability||*modulo:* relatoria<br>|
-|**Épicas**|capability||*modulo:* relatoria<br>|
-|**Deliverable: (tiempo)**|deliverable||*modulo:* relatoria<br>|
+|**Épicas**|capability||*modulo:* <br>|
+|**Deliverable: (tiempo)**|deliverable||*modulo:* <br>|
 |**Autenticación**|goal||*modulo:* relatoria<br>*caracteristica:* seguridad<br>|
 |**Autorización**|goal||*modulo:* relatoria<br>*caracteristica:* seguridad<br>|
 |**Búsqueda**|goal||*modulo:* relatoria<br>*caracteristica:* técnica, integración<br>|
-|**Características**|goal||*modulo:* relatoria<br>|
+|**Características**|goal||*modulo:* <br>|
 |**Contenidos**|goal||*modulo:* relatoria<br>*caracteristica:* técnica, integración<br>|
 |**Descripción (metatada)**|goal||*modulo:* relatoria<br>*caracteristica:* técnica, integración<br>|
 |**Indexación**|goal||*modulo:* relatoria<br>*caracteristica:* técnica, integración<br>|
@@ -641,10 +643,10 @@ De arriba a abajo:
 |**Búsqueda de contenidos. Relatoría v0.1**|value||*modulo:* relatoria<br>|
 |**Despliegue Relatoría v1.2**|value||*modulo:* relatoria<br>|
 |**Gestión contenidos. Rltría v1.0**|value||*modulo:* relatoria<br>|
-|**Hitos mercado**|value||*modulo:* relatoria<br>|
+|**Hitos mercado**|value||*modulo:* <br>|
 |**Organización contenidos. Rltría v0.5**|value||*modulo:* relatoria<br>|
 |**Seguridad. Rltría v0.9**|value||*modulo:* relatoria<br>|
-|**Iteración**|work-package||*modulo:* relatoria<br>|
+|**Iteración**|work-package||*modulo:* <br>|
 |**Iteración 2**|work-package||*modulo:* relatoria<br>|
 |**Iteración 2**|work-package||*modulo:* relatoria<br>|
 |**Iteración 3**|work-package||*modulo:* relatoria<br>|
@@ -660,53 +662,79 @@ De arriba a abajo:
 |**rel.Iteración 1**|work-package||*modulo:* relatoria<br>|
 |**rel.Iteración 1**|work-package||*modulo:* relatoria<br>|
 
-## Organización. 1n.1a. Mapa producto PGN.2a.Conciliacion
-![Diagram: Organización. 1n.1a. Mapa producto PGN.2a.Conciliacion](images/Organización.1n.1a.MapaproductoPGN.2a.Conciliacion.png){#fig:Organización.1n.1a.MapaproductoPGN.2a.Conciliacion width=}
+## Organización. 2n.1a. Mapa producto PGN. Conciliacion
+![Diagram: Organización. 2n.1a. Mapa producto PGN. Conciliacion](images/Organización.2n.1a.MapaproductoPGN.Conciliacion.png){#fig:Organización.2n.1a.MapaproductoPGN.Conciliacion width=}
 
 ### Catálogo de Elementos
 | Name| Type| Description| Properties
 |:--------|:--------|:--------|:--------|
-|**Componente de  comunicación segura SIU**|capability||*modulo:* relatoria<br>|
-|**Componente de autenticación SIU**|capability||*modulo:* relatoria<br>|
-|**Componente de autorización SIU**|capability||*modulo:* relatoria<br>|
-|**Flujo de trabajo  Preventico**|capability||*modulo:* relatoria<br>|
-|**Flujo de trabajo Disciplinar**|capability||*modulo:* relatoria<br>|
-|**Flujo de trabajo Intervención**|capability||*modulo:* relatoria<br>|
-|**Integración API Dokus**|capability||*modulo:* relatoria<br>|
-|**Motor de flujo de trabajo**|capability||*modulo:* relatoria<br>|
-|**Panel de control flujos**|capability||*modulo:* relatoria<br>|
-|**Reporte flujos de trabajo**|capability||*modulo:* relatoria<br>|
-|**Épicas**|capability||*modulo:* relatoria<br>|
-|**Deliverable: (tiempo)**|deliverable||*modulo:* relatoria<br>|
-|**Autenticación**|goal||*modulo:* relatoria<br>*caracteristica:* seguridad<br>|
-|**Autorización**|goal||*modulo:* relatoria<br>*caracteristica:* seguridad<br>|
-|**Características**|goal||*modulo:* relatoria<br>|
-|**Conciliación administrativa**|goal||*modulo:* relatoria<br>*caracteristica:* técnica, integración<br>|
-|**Conciliación civil**|goal||*modulo:* relatoria<br>*caracteristica:* técnica, integración<br>|
-|**Conciliación disciplinar**|goal||*modulo:* relatoria<br>*caracteristica:* técnica, integración<br>|
-|**Conciliación familia**|goal||*modulo:* relatoria<br>*caracteristica:* técnica, integración<br>|
-|**Conciliación preventivo**|goal||*modulo:* relatoria<br>*caracteristica:* técnica, integración<br>|
-|**Diseño de flujos de Conciliación**|goal||*modulo:* relatoria<br>*caracteristica:* técnica, integración<br>|
-|**Gestión de instancias (flujos)**|goal||*modulo:* relatoria<br>*caracteristica:* técnica, integración<br>|
-|**Gestión documental**|goal||*modulo:* relatoria<br>*caracteristica:* seguridad<br>|
-|**Informes de gestión flujos**|goal||*modulo:* relatoria<br>*caracteristica:* técnica, integración<br>|
-|**Integridad**|goal||*modulo:* relatoria<br>*caracteristica:* seguridad<br>|
+|**Componente de  comunicación segura SIU**|capability||*modulo:* conciliacion<br>|
+|**Componente de autenticación SIU**|capability||*modulo:* conciliacion<br>|
+|**Componente de autorización SIU**|capability||*modulo:* conciliacion<br>|
+|**Flujo de trabajo  Preventico**|capability||*modulo:* conciliacion<br>|
+|**Flujo de trabajo Disciplinar**|capability||*modulo:* conciliacion<br>|
+|**Flujo de trabajo Intervención**|capability||*modulo:* conciliacion<br>|
+|**Integración API Dokus**|capability||*modulo:* conciliacion<br>|
+|**Motor de flujo de trabajo**|capability||*modulo:* conciliacion<br>|
+|**Panel de control flujos**|capability||*modulo:* conciliacion<br>|
+|**Reporte flujos de trabajo**|capability||*modulo:* conciliacion<br>|
+|**Épicas**|capability||*modulo:* <br>|
+|**Deliverable: (tiempo)**|deliverable||*modulo:* <br>|
+|**Acciones de acuerdo al estado**|goal|Realización de acciones específicas según el estado de los movimientos devolutivos.|*modulo:* siaf<br>|
+|**Almacén**|goal|Administración de almacenes.|*modulo:* siaf<br>|
+|**Asientos**|goal|Registro de asientos.|*modulo:* siaf<br>|
+|**Autenticación**|goal||*modulo:* conciliacion<br>*caracteristica:* seguridad<br>|
+|**Autorización**|goal||*modulo:* conciliacion<br>*caracteristica:* seguridad<br>|
+|**CRUD Campos**|goal|Operaciones CRUD (Crear, Leer, Actualizar, Eliminar) en campos de los asientos.|*modulo:* siaf<br>|
+|**Características**|goal||*modulo:* <br>|
+|**Conciliación administrativa**|goal||*modulo:* conciliacion<br>*caracteristica:* técnica, integración<br>|
+|**Conciliación civil**|goal||*modulo:* conciliacion<br>*caracteristica:* técnica, integración<br>|
+|**Conciliación disciplinar**|goal||*modulo:* conciliacion<br>*caracteristica:* técnica, integración<br>|
+|**Conciliación familia**|goal||*modulo:* conciliacion<br>*caracteristica:* técnica, integración<br>|
+|**Conciliación preventivo**|goal||*modulo:* conciliacion<br>*caracteristica:* técnica, integración<br>|
+|**Creación de movimiento**|goal|Generación de movimientos de acuerdo con los asientos abiertos.|*modulo:* siaf<br>|
+|**Cuenta de funcionario**|goal|Gestión de cuentas de funcionarios.|*modulo:* siaf<br>|
+|**Cuenta en Microsoft (Autenticación)**|goal|Autenticación mediante cuentas de Microsoft.|*modulo:* siaf<br>|
+|**Cálculo de total**|goal|Cálculo automático del total basado en la información de elementos.|*modulo:* siaf<br>|
+|**Código (autoincremental)**|goal|Generación automática de códigos que se reinician cada año.|*modulo:* siaf<br>|
+|**Dependiendo del tipo de movimiento**|goal|Gestión de movimientos según su tipo, incluyendo elementos como conceptos, beneficiarios y funcionarios (maestros).|*modulo:* siaf<br>|
+|**Diseño de flujos de Conciliación**|goal||*modulo:* conciliacion<br>*caracteristica:* técnica, integración<br>|
+|**Elementos**|goal|Registro de elementos relacionados con los movimientos.|*modulo:* siaf<br>|
+|**Estado**|goal|Seguimiento del estado de los asientos.|*modulo:* siaf<br>|
+|**Fecha automática**|goal|Asignación automática de la fecha en los asientos.|*modulo:* siaf<br>|
+|**Filtrar por campos**|goal|Capacidad para filtrar los movimientos devolutivos según campos específicos.|*modulo:* siaf<br>|
+|**Funcionario Posesionado**|goal|Registro de información sobre funcionarios en posesión.|*modulo:* siaf<br>|
+|**Funcionarios (Nómina) vs Funcionarios (Siaf)**|goal|Comparación y actualización de información de funcionarios almacenada en Siaf con la información de nómina.|*modulo:* siaf<br>|
+|**Generar documento**|goal|Creación de documentos relacionados con los movimientos.|*modulo:* siaf<br>|
+|**Generar reportes**|goal|Creación de informes y reportes para proporcionar la información solicitada.|*modulo:* siaf<br>|
+|**Gestión de instancias (flujos)**|goal||*modulo:* conciliacion<br>*caracteristica:* técnica, integración<br>|
+|**Gestión documental**|goal||*modulo:* conciliacion<br>*caracteristica:* seguridad<br>|
+|**Informes de gestión flujos**|goal||*modulo:* conciliacion<br>*caracteristica:* técnica, integración<br>|
+|**Integridad**|goal||*modulo:* conciliacion<br>*caracteristica:* seguridad<br>|
+|**Login (Doble factor)**|goal|Autenticación de usuario mediante doble factor de seguridad|*modulo:* siaf<br>|
+|**Movimiento Consumible**|goal|Registro de movimientos relacionados con elementos consumibles.|*modulo:* siaf<br>|
+|**Movimiento devolutivo**|goal|Registro de movimientos devolutivos.|*modulo:* siaf<br>|
+|**Sincronización con Homminis**|goal|Sincronización de datos con el sistema Homminis.|*modulo:* siaf<br>|
+|**Vista CRUD**|goal|Interfaz para crear, leer, actualizar y eliminar registros en el almacén.|*modulo:* siaf<br>|
+|**Vista formulario personalizada**|goal|Personalización de formularios para la creación de asientos dependiendo del almacén.|*modulo:* siaf<br>|
+|**Vista tipo formulario personalizada**|goal|Personalización de formularios para ingresar datos relacionados con los asientos.|*modulo:* siaf<br>|
+|**Vista tipo lista personalizada**|goal|Visualización personalizada en forma de lista con filtros por campos específicos.|*modulo:* siaf<br>|
 |**Hoja ruta del producto**|grouping||*modulo:* relatoria<br>|
-|**Adopción, v1.2**|value||*modulo:* relatoria<br>|
-|**Despliegue Conciliación v1.2**|value||*modulo:* relatoria<br>|
-|**Flujo de trabajo Disciplinario. Conciliación v0.9**|value||*modulo:* relatoria<br>|
-|**Flujo de trabajo Intervención. Conciliación v0.1 (copy)**|value||*modulo:* relatoria<br>|
-|**Flujo de trabajo Preventivo. Conciliación v0.7**|value||*modulo:* relatoria<br>|
-|**Gestión de flujos. Conciliación 1.0**|value||*modulo:* relatoria<br>|
-|**Hitos mercado**|value||*modulo:* relatoria<br>|
-|**Iteración**|work-package||*modulo:* relatoria<br>|
-|**Iteración 1**|work-package||*modulo:* relatoria<br>|
-|**Iteración 2**|work-package||*modulo:* relatoria<br>|
-|**Iteración 3**|work-package||*modulo:* relatoria<br>|
-|**Iteración 4**|work-package||*modulo:* relatoria<br>|
-|**Iteración 5**|work-package||*modulo:* relatoria<br>|
-|**Iteración 6**|work-package||*modulo:* relatoria<br>|
-|**Iteración 7**|work-package||*modulo:* relatoria<br>|
+|**Adopción, v1.2**|value||*modulo:* conciliacion<br>|
+|**Despliegue Conciliación v1.2**|value||*modulo:* conciliacion<br>|
+|**Flujo de trabajo Disciplinario. Conciliación v0.9**|value||*modulo:* conciliacion<br>|
+|**Flujo de trabajo Intervención. Conciliación v0.1 (copy)**|value||*modulo:* conciliacion<br>|
+|**Flujo de trabajo Preventivo. Conciliación v0.7**|value||*modulo:* conciliacion<br>|
+|**Gestión de flujos. Conciliación 1.0**|value||*modulo:* conciliacion<br>|
+|**Hitos mercado**|value||*modulo:* <br>|
+|**Iteración**|work-package||*modulo:* <br>|
+|**Iteración 1**|work-package||*modulo:* conciliacion<br>|
+|**Iteración 2**|work-package||*modulo:* conciliacion<br>|
+|**Iteración 3**|work-package||*modulo:* conciliacion<br>|
+|**Iteración 4**|work-package||*modulo:* conciliacion<br>|
+|**Iteración 5**|work-package||*modulo:* conciliacion<br>|
+|**Iteración 6**|work-package||*modulo:* conciliacion<br>|
+|**Iteración 7**|work-package||*modulo:* conciliacion<br>|
 <div style="page-break-before: always;"></div>
 \newpage
 
@@ -775,6 +803,109 @@ El portal es el conjunto de los elementos físicos y lógicos necesarios para la
 |**Servidor datos Sharepoint**|application-component|||
 |**Servidor web Sharepoint**|application-component|||
 |**Application Interface**|application-interface|||
+<div style="page-break-before: always;"></div>
+\newpage
+
+# Análisis de Productos
+## Organización. 4n.1a. Mapa producto PGN. Comparativa
+![Diagram: Organización. 4n.1a. Mapa producto PGN. Comparativa](images/Organización.4n.1a.MapaproductoPGN.Comparativa.png){#fig:Organización.4n.1a.MapaproductoPGN.Comparativa width=}
+
+Mapa de productos. Comparativa funcional y técnica de módulos PGN, SIAF (izq.) y Estratego (derecha).
+
+### Volumen Funcional
+El análisis funcional de ambos módulos realizado durante el levantamiento (iteración 0) del presente proyecto arroja que SIAF tiene un 40% más de volumen que Estratego. Esto es, 16 funcionalidades de Estratego, mientras que SIAF suma 26. Ver imagen comparativa.
+
+### Viabilidad de Alcance
+Tomando en cuenta el criterio de calidad de la migración, objeto del presente contrato, 078-2023, de migrar módulos completos dentro de lo posible, y contrastando este criterio con el plazo del proyecto actual, que es de 4 meses, de los cuales ya se han ejecuta aproximadamente el 20% del mismo, es más viable la estrategia de migración de estratego sobre la de SIAF de la PGN por requerir menos iteraciones de desarrollo: seis (6) iteraciones, versus, nueve (9) de SIAF.
+
+### Impacto / Beneficio a PGN
+Los hitos de mercado del presente análisis producto, imagen arriba, dan cuenta  del beneficio e impacto de ambos proyectos de migración. Haciendo la comparación de los hitos de mercado de estos productos resalta que Estratego prima sobre SIAF en tanto que el peso cualitativo de las funciones estratégicas del primero son de mayor relevancia que las funciones operativos de inventario de SIAF. Basado en esto, Estratego reporta mayor beneficio y menos impacto en esfuerzo (por la razón anterior) que SIAF.
+
+
+
+### Catálogo de Elementos
+| Name| Type| Description| Properties
+|:--------|:--------|:--------|:--------|
+|**Épicas**|capability||*modulo:* estratego<br>|
+|**Épicas**|capability||*modulo:* estratego<br>|
+|**Épicas**|capability||*modulo:* estratego<br>|
+|**Épicas**|capability||*modulo:* estratego<br>|
+|**Épicas**|capability||*modulo:* estratego<br>|
+|**Épicas**|capability||*modulo:* estratego<br>|
+|**Épicas (copy)**|capability||*modulo:* siaf<br>|
+|**Épicas (copy)**|capability||*modulo:* siaf<br>|
+|**Épicas (copy)**|capability||*modulo:* siaf<br>|
+|**Épicas (copy)**|capability||*modulo:* siaf<br>|
+|**Épicas (copy)**|capability||*modulo:* siaf<br>|
+|**Épicas (copy)**|capability||*modulo:* siaf<br>|
+|**Épicas (copy)**|capability||*modulo:* siaf<br>|
+|**Épicas (copy)**|capability||*modulo:* siaf<br>|
+|**Épicas (copy) (copy) (copy) (copy) (copy)**|capability||*modulo:* siaf<br>|
+|**Acciones correctivas**|goal|Administrar los riesgos asociados a cada uno de los indicadores o planes.|*modulo:* estratego<br>|
+|**Acciones de acuerdo al estado (copy)**|goal|Realización de acciones específicas según el estado de los movimientos devolutivos.|*modulo:* siaf<br>|
+|**Almacén (copy)**|goal|Administración de almacenes.|*modulo:* siaf<br>|
+|**Asientos (copy)**|goal|Registro de asientos.|*modulo:* siaf<br>|
+|**Auditoria de mediciones**|goal|Gestionar las actividades de los usuarios, como el registro de indicadores, el tipo, etc.|*modulo:* estratego<br>|
+|**Auditorias**|goal|Gestionar el control de logs de las actividades realizadas por el usuario en sesión.|*modulo:* estratego<br>|
+|**CRUD Campos (copy)**|goal|Operaciones CRUD (Crear, Leer, Actualizar, Eliminar) en campos de los asientos.|*modulo:* siaf<br>|
+|**Creación de movimiento (copy)**|goal|Generación de movimientos de acuerdo con los asientos abiertos.|*modulo:* siaf<br>|
+|**Cuenta de funcionario (copy)**|goal|Gestión de cuentas de funcionarios.|*modulo:* siaf<br>|
+|**Cuenta en Microsoft (Autenticación) (copy)**|goal|Autenticación mediante cuentas de Microsoft.|*modulo:* siaf<br>|
+|**Cálculo de total (copy)**|goal|Cálculo automático del total basado en la información de elementos.|*modulo:* siaf<br>|
+|**Código (autoincremental) (copy)**|goal|Generación automática de códigos que se reinician cada año.|*modulo:* siaf<br>|
+|**Dependencias**|goal|Reportar al sistema, actividades, proyectos, indicadores.|*modulo:* estratego<br>|
+|**Dependiendo del tipo de movimiento (copy)**|goal|Gestión de movimientos según su tipo, incluyendo elementos como conceptos, beneficiarios y funcionarios (maestros).|*modulo:* siaf<br>|
+|**Elementos (copy)**|goal|Registro de elementos relacionados con los movimientos.|*modulo:* siaf<br>|
+|**Estado (copy)**|goal|Seguimiento del estado de los asientos.|*modulo:* siaf<br>|
+|**Fecha automática (copy)**|goal|Asignación automática de la fecha en los asientos.|*modulo:* siaf<br>|
+|**Filtrar por campos (copy)**|goal|Capacidad para filtrar los movimientos devolutivos según campos específicos.|*modulo:* siaf<br>|
+|**Funcionario Posesionado (copy)**|goal|Registro de información sobre funcionarios en posesión.|*modulo:* siaf<br>|
+|**Funcionarios (Nómina) vs Funcionarios (Siaf) (copy)**|goal|Comparación y actualización de información de funcionarios almacenada en Siaf con la información de nómina.|*modulo:* siaf<br>|
+|**Generar documento (copy)**|goal|Creación de documentos relacionados con los movimientos.|*modulo:* siaf<br>|
+|**Generar reportes (copy)**|goal|Creación de informes y reportes para proporcionar la información solicitada.|*modulo:* siaf<br>|
+|**Grupos (Roles)**|goal|Administrar los roles y permisos dentro del sistema|*modulo:* estratego<br>|
+|**Gráficos**|goal|Generar y presentar gráficos|*modulo:* estratego<br>|
+|**Históricos**|goal|Almacenar y consultar históricos dentro del sistema|*modulo:* estratego<br>|
+|**Informes**|goal|Generar documentos con los informes correspondientes.|*modulo:* estratego<br>|
+|**Instrumento de cooperación**|goal|Administrar los proyectos de los cooperantes.|*modulo:* estratego<br>|
+|**Login (Doble factor) (copy)**|goal|Autenticación de usuario mediante doble factor de seguridad|*modulo:* siaf<br>|
+|**Movimiento Consumible (copy)**|goal|Registro de movimientos relacionados con elementos consumibles.|*modulo:* siaf<br>|
+|**Movimiento devolutivo (copy)**|goal|Registro de movimientos devolutivos.|*modulo:* siaf<br>|
+|**Organizaciones**|goal|Estructura principal.|*modulo:* estratego<br>|
+|**Planes administrar**|goal|Administrar el plan estratégico institucional.|*modulo:* estratego<br>|
+|**Planes asociar**|goal|Asociar recursos, presupuesto.|*modulo:* estratego<br>|
+|**Planes generar**|goal|Generar planes estratégicos institucionales y asociar los planes de acción preventivos.|*modulo:* estratego<br>|
+|**Portafolio**|goal|Gestionar el portafolio de todos los proyectos de la entidad.|*modulo:* estratego<br>|
+|**Reportes**|goal|Generar reportes y exportarlos en diferentes tipos de archivo.|*modulo:* estratego<br>|
+|**Sincronización con Homminis (copy)**|goal|Sincronización de datos con el sistema Homminis.|*modulo:* siaf<br>|
+|**Usuarios**|goal|Administrar los usuarios del sistema|*modulo:* estratego<br>|
+|**Vista CRUD (copy)**|goal|Interfaz para crear, leer, actualizar y eliminar registros en el almacén.|*modulo:* siaf<br>|
+|**Vista formulario personalizada (copy)**|goal|Personalización de formularios para la creación de asientos dependiendo del almacén.|*modulo:* siaf<br>|
+|**Vista tipo formulario personalizada (copy)**|goal|Personalización de formularios para ingresar datos relacionados con los asientos.|*modulo:* siaf<br>|
+|**Vista tipo lista personalizada (copy)**|goal|Visualización personalizada en forma de lista con filtros por campos específicos.|*modulo:* siaf<br>|
+|**Hitos mercado**|value||*modulo:* estratego<br>|
+|**Hitos mercado**|value||*modulo:* estratego<br>|
+|**Hitos mercado**|value||*modulo:* estratego<br>|
+|**Hitos mercado**|value||*modulo:* estratego<br>|
+|**Hitos mercado (copy)**|value||*modulo:* siaf<br>|
+|**Hitos mercado (copy)**|value||*modulo:* siaf<br>|
+|**Hitos mercado (copy)**|value||*modulo:* siaf<br>|
+|**Hitos mercado (copy)**|value||*modulo:* siaf<br>|
+|**Iteración**|work-package||*modulo:* estratego<br>|
+|**Iteración**|work-package||*modulo:* estratego<br>|
+|**Iteración**|work-package||*modulo:* estratego<br>|
+|**Iteración**|work-package||*modulo:* estratego<br>|
+|**Iteración 1**|work-package||*modulo:* estratego<br>|
+|**Iteración 1 (copy)**|work-package||*modulo:* siaf<br>|
+|**Iteración 1 (copy)**|work-package||*modulo:* siaf<br>|
+|**Iteración 1 (copy)**|work-package||*modulo:* siaf<br>|
+|**Iteración 1 (copy)**|work-package||*modulo:* siaf<br>|
+|**Iteración 1 (copy)**|work-package||*modulo:* siaf<br>|
+|**Iteración 1 (copy)**|work-package||*modulo:* siaf<br>|
+|**Iteración 1 (copy)**|work-package||*modulo:* siaf<br>|
+|**Iteración 1 (copy)**|work-package||*modulo:* siaf<br>|
+|**Iteración 6**|work-package||*modulo:* estratego<br>|
+|**Iteración 9 (copy)**|work-package||*modulo:* siaf<br>|
 <div style="page-break-before: always;"></div>
 \newpage
 
@@ -851,7 +982,7 @@ Table: Valoración del riesgo RSG10. Validación decisiones de arquitectura. Mig
 |**Supervisor contrato 078-2023**|stakeholder|||
 
 
-``Generated on: Mon Sep 18 2023 14:10:46 GMT-0500 (COT)``
+``Generated on: Thu Sep 21 2023 16:16:56 GMT-0500 (COT)``
 
 ## Requerimientos de Administración
 1.	Las soluciones deben permitir la administración de los Roles de Usuarios: esta funcionalidad debe permitir configurar los diferentes roles de los usuarios funcionales de los procesos. 
@@ -926,7 +1057,7 @@ tablenos-caption-name: Tabla
 
 <br>
 
-| **Versión** del producto 1.27de200 de 18 Sep 2023
+| **Versión** del producto 1.c8ec6bb de 21 Sep 2023
 
 | **Presentado a**
 
@@ -936,7 +1067,7 @@ tablenos-caption-name: Tabla
 
 | **Fecha**
 
-| 18 Sep 2023
+| 21 Sep 2023
 
 
 <div style="page-break-before: always;"></div>
@@ -955,7 +1086,7 @@ Descripción de los productos del trabajo de infraestructura del proyecto Migrac
 | Palabras clave | SIU, Softgic, PGN, Análisis de brecha, GAP, Infraestrctura, PasS |
 | Autor          |                            |
 | Fuente         |                            |
-| Versión        | 1.27de200 del 18 Sep 2023 |
+| Versión        | 1.c8ec6bb del 21 Sep 2023 |
 | Vínculos       | [N003a Vista Segmento PGN SIU](N03a%a20Vsta%20aSegenta%20SOA%20PGN.md) |
 
 <br>
@@ -1144,7 +1275,7 @@ tablenos-caption-name: Tabla
 
 <br>
 
-| **Versión** del producto 1.27de200 de 18 Sep 2023
+| **Versión** del producto 1.c8ec6bb de 21 Sep 2023
 
 | **Presentado a**
 
@@ -1154,7 +1285,7 @@ tablenos-caption-name: Tabla
 
 | **Fecha**
 
-| 18 Sep 2023
+| 21 Sep 2023
 
 
 <div style="page-break-before: always;"></div>
@@ -1174,7 +1305,7 @@ Descripción de los productos de trabajo de la arquitectura de datos del proyect
 | Palabras clave | SIU, Softgic, PGN, Análisis de brecha, GAP, Entidades, Datos  |
 | Autor          |                            |
 | Fuente         |                            |
-| Versión        | 1.27de200 del 18 Sep 2023 |
+| Versión        | 1.c8ec6bb del 21 Sep 2023 |
 | Vínculos       | [N003a Vista Segmento PGN SIU](N03a%a20Vsta%20aSegenta%20SOA%20PGN.md) |
 
 <br>

@@ -5,7 +5,7 @@
   <meta name="generator" content="pandoc" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes" />
   <meta name="author" content="Harry Wong, ing." />
-  <meta name="dcterms.date" content="2023-09-18" />
+  <meta name="dcterms.date" content="2023-09-21" />
   <meta name="keywords" content="SOA, madurez, gobierno, PGN" />
   <title>Documento de Arquitectura Migración Funcional PGN SIU</title>
   <style>
@@ -46,11 +46,11 @@
   -->
   <meta name="dc.format" content="text/html" />
   <meta property="og:type" content="article" />
-  <meta name="dc.date" content="2023-09-18" />
-  <meta name="citation_publication_date" content="2023-09-18" />
-  <meta property="article:published_time" content="2023-09-18" />
-  <meta name="dc.modified" content="2023-09-18T19:13:01+00:00" />
-  <meta property="article:modified_time" content="2023-09-18T19:13:01+00:00" />
+  <meta name="dc.date" content="2023-09-21" />
+  <meta name="citation_publication_date" content="2023-09-21" />
+  <meta property="article:published_time" content="2023-09-21" />
+  <meta name="dc.modified" content="2023-09-21T21:20:38+00:00" />
+  <meta property="article:modified_time" content="2023-09-21T21:20:38+00:00" />
   <meta name="dc.language" content="en-US" />
   <meta name="citation_language" content="en-US" />
   <meta name="dc.relation.ispartof" content="Manubot" />
@@ -65,9 +65,9 @@
   <meta name="citation_fulltext_html_url" content="https://hwong23.github.io/pgn-078/" />
   <meta name="citation_pdf_url" content="https://hwong23.github.io/pgn-078/manuscript.pdf" />
   <link rel="alternate" type="application/pdf" href="https://hwong23.github.io/pgn-078/manuscript.pdf" />
-  <link rel="alternate" type="text/html" href="https://hwong23.github.io/pgn-078/v/27de200dfb84fbe4c26b28bedada47765457405c/" />
-  <meta name="manubot_html_url_versioned" content="https://hwong23.github.io/pgn-078/v/27de200dfb84fbe4c26b28bedada47765457405c/" />
-  <meta name="manubot_pdf_url_versioned" content="https://hwong23.github.io/pgn-078/v/27de200dfb84fbe4c26b28bedada47765457405c/manuscript.pdf" />
+  <link rel="alternate" type="text/html" href="https://hwong23.github.io/pgn-078/v/c8ec6bb156896ddaad5cfdc346210e42c7684d35/" />
+  <meta name="manubot_html_url_versioned" content="https://hwong23.github.io/pgn-078/v/c8ec6bb156896ddaad5cfdc346210e42c7684d35/" />
+  <meta name="manubot_pdf_url_versioned" content="https://hwong23.github.io/pgn-078/v/c8ec6bb156896ddaad5cfdc346210e42c7684d35/manuscript.pdf" />
   <meta property="og:type" content="article" />
   <meta property="twitter:card" content="summary_large_image" />
   <link rel="icon" type="image/png" sizes="192x192" href="https://manubot.org/favicon-192x192.png" />
@@ -89,20 +89,20 @@
 <p><br></p>
 <p><br></p>
 <p><br></p>
-<div class="line-block"><strong>Versión</strong> del producto 1.27de200 de 18 Sep 2023</div>
+<div class="line-block"><strong>Versión</strong> del producto 1.c8ec6bb de 21 Sep 2023</div>
 <div class="line-block"><strong>Presentado a</strong></div>
 <div class="line-block">Procuraduría General de la Nación (PGN)</div>
 <div class="line-block"></div>
 <div class="line-block"><strong>Fecha</strong></div>
-<div class="line-block">18 Sep 2023</div>
+<div class="line-block">21 Sep 2023</div>
 <div style="page-break-before: always;">
 
 </div>
 <p><small><em>Los productos de esta etapa, Migración Funcional SIU, Contrato 078-2023,
-(<a href="https://hwong23.github.io/pgn-078/v/27de200dfb84fbe4c26b28bedada47765457405c/">Web</a>)
+(<a href="https://hwong23.github.io/pgn-078/v/c8ec6bb156896ddaad5cfdc346210e42c7684d35/">Web</a>)
 están basados en el resultado de la Fase 1 del proyecto PGN SIU del 2022,
-<a href="http://softgic.sharepoint.com">Sharepoint Softgic@27de200</a>
-del September 18, 2023.
+<a href="http://softgic.sharepoint.com">Sharepoint Softgic@c8ec6bb</a>
+del September 21, 2023.
 </em></small></p>
 <p><br></p>
 <h2 id="autores">Autores</h2>
@@ -150,7 +150,7 @@ Arquitecto, Softgic
 </tr>
 <tr class="even">
 <td>Versión</td>
-<td>1.27de200 del 18 Sep 2023</td>
+<td>1.c8ec6bb del 21 Sep 2023</td>
 </tr>
 <tr class="odd">
 <td>Vínculos</td>
@@ -278,20 +278,24 @@ Arquitecto, Softgic
 </ul></li>
 <li><a href="#patrón-de-diseño-migración-sui-pgn">Patrón de Diseño Migración SUI PGN</a>
 <ul>
-<li><a href="#migracion.1a.siu-submódulos">Migracion.1a.SIU submódulos</a></li>
-<li><a href="#migracion.1c.siu-submódulos-componentes">Migracion.1c.SIU submódulos componentes</a></li>
-<li><a href="#migracion.1b.siu-submodulos-colaboración">Migracion.1b.SIU submodulos colaboración</a></li>
+<li><a href="#migracion.1a.siu-módulos">Migracion.1a.SIU módulos</a></li>
+<li><a href="#migracion.1b.siu-módulos-componentes">Migracion.1b.SIU módulos componentes</a></li>
+<li><a href="#migracion.1c.siu-modulos-colaboración">Migracion.1c.SIU modulos colaboración</a></li>
 </ul></li>
 <li><a href="#organización-cambios-arquitectura">Organización cambios arquitectura</a>
 <ul>
 <li><a href="#organización.-1n.-mapa-producto">Organización. 1n. Mapa producto</a></li>
 <li><a href="#organización.-1n.1.-mapa-producto-pgn.1.relatoría">Organización. 1n.1. Mapa producto PGN.1.Relatoría</a></li>
-<li><a href="#organización.-1n.1a.-mapa-producto-pgn.2a.conciliacion">Organización. 1n.1a. Mapa producto PGN.2a.Conciliacion</a></li>
+<li><a href="#organización.-2n.1a.-mapa-producto-pgn.-conciliacion">Organización. 2n.1a. Mapa producto PGN. Conciliacion</a></li>
 </ul></li>
 <li><a href="#arquitectura-de-seguridad,-sui-migración">Arquitectura de Seguridad, SUI Migración</a>
 <ul>
 <li><a href="#seguridad.-1.-requerimientos">Seguridad. 1. Requerimientos</a></li>
 <li><a href="#seguridad.-linebase.2.portal">Seguridad. Linebase.2.Portal</a></li>
+</ul></li>
+<li><a href="#análisis-de-productos">Análisis de Productos</a>
+<ul>
+<li><a href="#organización.-4n.1a.-mapa-producto-pgn.-comparativa">Organización. 4n.1a. Mapa producto PGN. Comparativa</a></li>
 </ul></li>
 <li><a href="#riesgos-técnicos">Riesgos Técnicos</a>
 <ul>
@@ -953,16 +957,16 @@ Arquitecto, Softgic
 
 </div>
 <h1 id="patrón-de-diseño-migración-sui-pgn">Patrón de Diseño Migración SUI PGN</h1>
-<h2 id="migracion.1a.siu-submódulos">Migracion.1a.SIU submódulos</h2>
-<div id="fig:Migracion.1a.SIUsubmódulos" class="fignos">
+<h2 id="migracion.1a.siu-módulos">Migracion.1a.SIU módulos</h2>
+<div id="fig:Migracion.1a.SIUmódulos" class="fignos">
 <figure>
-<img src="images/Migracion.1a.SIUsubmódulos.png" alt="Imagen 5: Diagram: Migracion.1a.SIU submódulos" />
-<figcaption aria-hidden="true"><span>Imagen 5:</span> Diagram: Migracion.1a.SIU submódulos</figcaption>
+<img src="images/Migracion.1a.SIUmódulos.png" alt="Imagen 5: Diagram: Migracion.1a.SIU módulos" />
+<figcaption aria-hidden="true"><span>Imagen 5:</span> Diagram: Migracion.1a.SIU módulos</figcaption>
 </figure>
 </div>
 <p>Identificación de submódulos del Sistema Único de Información (SUI) de la PGN.</p>
-<p>Todos los sistemas de información del SUI siguen esta directiva: estarán constituídos por submódulos dispuestos en relación de utilitarios (que sirven) a los componentes misionales del SUI, ubicados en el centro en la diagrama.</p>
-<p>Los submódulos del SUI, tal como están presentados, reúnen a las partes que tienen el mismo rol en favor de la coherencia. Así mismo, estos pueden ser intercambiados o ampliados sin perjuicio del SUI gracias a las interfaces de unión (en favor de la extensibilidad).</p>
+<p>Todos los sistemas de información del SUI deben seguir la directiva de separar a los compontentes misionales de los utilitarior: el SUI de PGN estará constituídos por submódulos dispuestos en relación de utilitarios (que sirven) a los componentes misionales del SUI, ubicados en el centro en la diagrama.</p>
+<p>Los submódulos del SUI, tal como están presentados, reúnen a las partes por el mismo rol en favor de la coherencia. Por ejemplo, los servicios de aplicación, en la imagen, contiene a todos aquellos utilitarios que prestan alguna utilidad momentánea al SUI migrado. Organizados así, estos submódulos utilitarios pueden ser intercambiados o ampliados sin perjuicio de los componentes misionales dell SUI (centro del diagrama) gracias a las <em>interfaces de unión</em> en favor de la extensibilidad.</p>
 <p>Las interfaces de unión indicadas arriba obligan a los submódulos a cumplir las exigencias de los componentes misionales del SUI.</p>
 <p>Los submódulos identificados tienen los siguientes roles para el SUI migrado:</p>
 <ol type="1">
@@ -973,7 +977,7 @@ Arquitecto, Softgic
 <li>cc:Almacenamiento</li>
 </ol>
 <h3 id="requerimientos-asociados-a-los-submódulos">Requerimientos Asociados a los Submódulos</h3>
-<p>La disposición de los módulos y submódulos presentada, denominada SUI Migración en adelante, facilita la focalización de los requerimientos encontrados en el levantamiento realizado por el actual proyecto. Así, por ejemplo, los requerimientos funcionales se encuentran concentrados en el submódulo de presentación (ver imagen).</p>
+<p>La disposición de los módulos y submódulos presentada, denominada SUI Migración en adelante, facilita la focalización de los requerimientos encontrados en el levantamiento realizado en el actual proyecto. Así, por ejemplo, los requerimientos funcionales se encuentran concentrados en el submódulo de presentación (ver imagen).</p>
 <h3 id="catálogo-de-elementos-4">Catálogo de Elementos</h3>
 <table>
 <colgroup>
@@ -1107,11 +1111,11 @@ Arquitecto, Softgic
 </tr>
 </tbody>
 </table>
-<h2 id="migracion.1c.siu-submódulos-componentes">Migracion.1c.SIU submódulos componentes</h2>
-<div id="fig:Migracion.1c.SIUsubmóduloscomponentes" class="fignos">
+<h2 id="migracion.1b.siu-módulos-componentes">Migracion.1b.SIU módulos componentes</h2>
+<div id="fig:Migracion.1b.SIUmóduloscomponentes" class="fignos">
 <figure>
-<img src="images/Migracion.1c.SIUsubmóduloscomponentes.png" alt="Imagen 6: Diagram: Migracion.1c.SIU submódulos componentes" />
-<figcaption aria-hidden="true"><span>Imagen 6:</span> Diagram: Migracion.1c.SIU submódulos componentes</figcaption>
+<img src="images/Migracion.1b.SIUmóduloscomponentes.png" alt="Imagen 6: Diagram: Migracion.1b.SIU módulos componentes" />
+<figcaption aria-hidden="true"><span>Imagen 6:</span> Diagram: Migracion.1b.SIU módulos componentes</figcaption>
 </figure>
 </div>
 <p>Presentación de los componentes internos de los submódulos del sistema único de información migración PGN. Organización intena de los servicios y paquetes que integran cada submódulo del SUI. Todos los sistemas de información del SUI siguen esta directiva: estarán constituídos por submódulos dispuestos en relación de utilitarios (que sirven) a los componentes misionales del SUI, ubicados en el centro en la diagrama.</p>
@@ -1413,11 +1417,11 @@ Arquitecto, Softgic
 </tr>
 </tbody>
 </table>
-<h2 id="migracion.1b.siu-submodulos-colaboración">Migracion.1b.SIU submodulos colaboración</h2>
-<div id="fig:Migracion.1b.SIUsubmoduloscolaboración" class="fignos">
+<h2 id="migracion.1c.siu-modulos-colaboración">Migracion.1c.SIU modulos colaboración</h2>
+<div id="fig:Migracion.1c.SIUmoduloscolaboración" class="fignos">
 <figure>
-<img src="images/Migracion.1b.SIUsubmoduloscolaboración.png" alt="Imagen 7: Diagram: Migracion.1b.SIU submodulos colaboración" />
-<figcaption aria-hidden="true"><span>Imagen 7:</span> Diagram: Migracion.1b.SIU submodulos colaboración</figcaption>
+<img src="images/Migracion.1c.SIUmoduloscolaboración.png" alt="Imagen 7: Diagram: Migracion.1c.SIU modulos colaboración" />
+<figcaption aria-hidden="true"><span>Imagen 7:</span> Diagram: Migracion.1c.SIU modulos colaboración</figcaption>
 </figure>
 </div>
 <p>Patrón de Distribución y Colaboración estándar para el SUI.</p>
@@ -1528,13 +1532,13 @@ Arquitecto, Softgic
 <td style="text-align: left;"><strong>Épicas</strong></td>
 <td style="text-align: left;">capability</td>
 <td style="text-align: left;"></td>
-<td style="text-align: left;"><em>modulo:</em> relatoria<br></td>
+<td style="text-align: left;"><em>modulo:</em> <br></td>
 </tr>
 <tr class="even">
 <td style="text-align: left;"><strong>Deliverable: (tiempo)</strong></td>
 <td style="text-align: left;">deliverable</td>
 <td style="text-align: left;"></td>
-<td style="text-align: left;"><em>modulo:</em> relatoria<br></td>
+<td style="text-align: left;"><em>modulo:</em> <br></td>
 </tr>
 <tr class="odd">
 <td style="text-align: left;"><strong>Tiempo</strong></td>
@@ -1546,7 +1550,7 @@ Arquitecto, Softgic
 <td style="text-align: left;"><strong>Características</strong></td>
 <td style="text-align: left;">goal</td>
 <td style="text-align: left;"></td>
-<td style="text-align: left;"><em>modulo:</em> relatoria<br></td>
+<td style="text-align: left;"><em>modulo:</em> <br></td>
 </tr>
 <tr class="odd">
 <td style="text-align: left;"><strong>Hoja ruta del producto</strong></td>
@@ -1558,13 +1562,13 @@ Arquitecto, Softgic
 <td style="text-align: left;"><strong>Hitos mercado</strong></td>
 <td style="text-align: left;">value</td>
 <td style="text-align: left;"></td>
-<td style="text-align: left;"><em>modulo:</em> relatoria<br></td>
+<td style="text-align: left;"><em>modulo:</em> <br></td>
 </tr>
 <tr class="odd">
 <td style="text-align: left;"><strong>Iteración</strong></td>
 <td style="text-align: left;">work-package</td>
 <td style="text-align: left;"></td>
-<td style="text-align: left;"><em>modulo:</em> relatoria<br></td>
+<td style="text-align: left;"><em>modulo:</em> <br></td>
 </tr>
 </tbody>
 </table>
@@ -1613,19 +1617,19 @@ Arquitecto, Softgic
 <td style="text-align: left;"><strong>Componente de comunicación segura SIU</strong></td>
 <td style="text-align: left;">capability</td>
 <td style="text-align: left;"></td>
-<td style="text-align: left;"><em>modulo:</em> relatoria<br></td>
+<td style="text-align: left;"><em>modulo:</em> conciliacion<br></td>
 </tr>
 <tr class="odd">
 <td style="text-align: left;"><strong>Componente de autenticación SIU</strong></td>
 <td style="text-align: left;">capability</td>
 <td style="text-align: left;"></td>
-<td style="text-align: left;"><em>modulo:</em> relatoria<br></td>
+<td style="text-align: left;"><em>modulo:</em> conciliacion<br></td>
 </tr>
 <tr class="even">
 <td style="text-align: left;"><strong>Componente de autorización SIU</strong></td>
 <td style="text-align: left;">capability</td>
 <td style="text-align: left;"></td>
-<td style="text-align: left;"><em>modulo:</em> relatoria<br></td>
+<td style="text-align: left;"><em>modulo:</em> conciliacion<br></td>
 </tr>
 <tr class="odd">
 <td style="text-align: left;"><strong>Funcionalidades de búsqueda</strong></td>
@@ -1679,13 +1683,13 @@ Arquitecto, Softgic
 <td style="text-align: left;"><strong>Épicas</strong></td>
 <td style="text-align: left;">capability</td>
 <td style="text-align: left;"></td>
-<td style="text-align: left;"><em>modulo:</em> relatoria<br></td>
+<td style="text-align: left;"><em>modulo:</em> <br></td>
 </tr>
 <tr class="even">
 <td style="text-align: left;"><strong>Deliverable: (tiempo)</strong></td>
 <td style="text-align: left;">deliverable</td>
 <td style="text-align: left;"></td>
-<td style="text-align: left;"><em>modulo:</em> relatoria<br></td>
+<td style="text-align: left;"><em>modulo:</em> <br></td>
 </tr>
 <tr class="odd">
 <td style="text-align: left;"><strong>Autenticación</strong></td>
@@ -1709,7 +1713,7 @@ Arquitecto, Softgic
 <td style="text-align: left;"><strong>Características</strong></td>
 <td style="text-align: left;">goal</td>
 <td style="text-align: left;"></td>
-<td style="text-align: left;"><em>modulo:</em> relatoria<br></td>
+<td style="text-align: left;"><em>modulo:</em> <br></td>
 </tr>
 <tr class="odd">
 <td style="text-align: left;"><strong>Contenidos</strong></td>
@@ -1781,7 +1785,7 @@ Arquitecto, Softgic
 <td style="text-align: left;"><strong>Hitos mercado</strong></td>
 <td style="text-align: left;">value</td>
 <td style="text-align: left;"></td>
-<td style="text-align: left;"><em>modulo:</em> relatoria<br></td>
+<td style="text-align: left;"><em>modulo:</em> <br></td>
 </tr>
 <tr class="odd">
 <td style="text-align: left;"><strong>Organización contenidos. Rltría v0.5</strong></td>
@@ -1799,7 +1803,7 @@ Arquitecto, Softgic
 <td style="text-align: left;"><strong>Iteración</strong></td>
 <td style="text-align: left;">work-package</td>
 <td style="text-align: left;"></td>
-<td style="text-align: left;"><em>modulo:</em> relatoria<br></td>
+<td style="text-align: left;"><em>modulo:</em> <br></td>
 </tr>
 <tr class="even">
 <td style="text-align: left;"><strong>Iteración 2</strong></td>
@@ -1887,11 +1891,11 @@ Arquitecto, Softgic
 </tr>
 </tbody>
 </table>
-<h2 id="organización.-1n.1a.-mapa-producto-pgn.2a.conciliacion">Organización. 1n.1a. Mapa producto PGN.2a.Conciliacion</h2>
-<div id="fig:Organización.1n.1a.MapaproductoPGN.2a.Conciliacion" class="fignos">
+<h2 id="organización.-2n.1a.-mapa-producto-pgn.-conciliacion">Organización. 2n.1a. Mapa producto PGN. Conciliacion</h2>
+<div id="fig:Organización.2n.1a.MapaproductoPGN.Conciliacion" class="fignos">
 <figure>
-<img src="images/Organización.1n.1a.MapaproductoPGN.2a.Conciliacion.png" alt="Imagen 10: Diagram: Organización. 1n.1a. Mapa producto PGN.2a.Conciliacion" />
-<figcaption aria-hidden="true"><span>Imagen 10:</span> Diagram: Organización. 1n.1a. Mapa producto PGN.2a.Conciliacion</figcaption>
+<img src="images/Organización.2n.1a.MapaproductoPGN.Conciliacion.png" alt="Imagen 10: Diagram: Organización. 2n.1a. Mapa producto PGN. Conciliacion" />
+<figcaption aria-hidden="true"><span>Imagen 10:</span> Diagram: Organización. 2n.1a. Mapa producto PGN. Conciliacion</figcaption>
 </figure>
 </div>
 <h3 id="catálogo-de-elementos-9">Catálogo de Elementos</h3>
@@ -1915,151 +1919,307 @@ Arquitecto, Softgic
 <td style="text-align: left;"><strong>Componente de comunicación segura SIU</strong></td>
 <td style="text-align: left;">capability</td>
 <td style="text-align: left;"></td>
-<td style="text-align: left;"><em>modulo:</em> relatoria<br></td>
+<td style="text-align: left;"><em>modulo:</em> conciliacion<br></td>
 </tr>
 <tr class="even">
 <td style="text-align: left;"><strong>Componente de autenticación SIU</strong></td>
 <td style="text-align: left;">capability</td>
 <td style="text-align: left;"></td>
-<td style="text-align: left;"><em>modulo:</em> relatoria<br></td>
+<td style="text-align: left;"><em>modulo:</em> conciliacion<br></td>
 </tr>
 <tr class="odd">
 <td style="text-align: left;"><strong>Componente de autorización SIU</strong></td>
 <td style="text-align: left;">capability</td>
 <td style="text-align: left;"></td>
-<td style="text-align: left;"><em>modulo:</em> relatoria<br></td>
+<td style="text-align: left;"><em>modulo:</em> conciliacion<br></td>
 </tr>
 <tr class="even">
 <td style="text-align: left;"><strong>Flujo de trabajo Preventico</strong></td>
 <td style="text-align: left;">capability</td>
 <td style="text-align: left;"></td>
-<td style="text-align: left;"><em>modulo:</em> relatoria<br></td>
+<td style="text-align: left;"><em>modulo:</em> conciliacion<br></td>
 </tr>
 <tr class="odd">
 <td style="text-align: left;"><strong>Flujo de trabajo Disciplinar</strong></td>
 <td style="text-align: left;">capability</td>
 <td style="text-align: left;"></td>
-<td style="text-align: left;"><em>modulo:</em> relatoria<br></td>
+<td style="text-align: left;"><em>modulo:</em> conciliacion<br></td>
 </tr>
 <tr class="even">
 <td style="text-align: left;"><strong>Flujo de trabajo Intervención</strong></td>
 <td style="text-align: left;">capability</td>
 <td style="text-align: left;"></td>
-<td style="text-align: left;"><em>modulo:</em> relatoria<br></td>
+<td style="text-align: left;"><em>modulo:</em> conciliacion<br></td>
 </tr>
 <tr class="odd">
 <td style="text-align: left;"><strong>Integración API Dokus</strong></td>
 <td style="text-align: left;">capability</td>
 <td style="text-align: left;"></td>
-<td style="text-align: left;"><em>modulo:</em> relatoria<br></td>
+<td style="text-align: left;"><em>modulo:</em> conciliacion<br></td>
 </tr>
 <tr class="even">
 <td style="text-align: left;"><strong>Motor de flujo de trabajo</strong></td>
 <td style="text-align: left;">capability</td>
 <td style="text-align: left;"></td>
-<td style="text-align: left;"><em>modulo:</em> relatoria<br></td>
+<td style="text-align: left;"><em>modulo:</em> conciliacion<br></td>
 </tr>
 <tr class="odd">
 <td style="text-align: left;"><strong>Panel de control flujos</strong></td>
 <td style="text-align: left;">capability</td>
 <td style="text-align: left;"></td>
-<td style="text-align: left;"><em>modulo:</em> relatoria<br></td>
+<td style="text-align: left;"><em>modulo:</em> conciliacion<br></td>
 </tr>
 <tr class="even">
 <td style="text-align: left;"><strong>Reporte flujos de trabajo</strong></td>
 <td style="text-align: left;">capability</td>
 <td style="text-align: left;"></td>
-<td style="text-align: left;"><em>modulo:</em> relatoria<br></td>
+<td style="text-align: left;"><em>modulo:</em> conciliacion<br></td>
 </tr>
 <tr class="odd">
 <td style="text-align: left;"><strong>Épicas</strong></td>
 <td style="text-align: left;">capability</td>
 <td style="text-align: left;"></td>
-<td style="text-align: left;"><em>modulo:</em> relatoria<br></td>
+<td style="text-align: left;"><em>modulo:</em> <br></td>
 </tr>
 <tr class="even">
 <td style="text-align: left;"><strong>Deliverable: (tiempo)</strong></td>
 <td style="text-align: left;">deliverable</td>
 <td style="text-align: left;"></td>
-<td style="text-align: left;"><em>modulo:</em> relatoria<br></td>
+<td style="text-align: left;"><em>modulo:</em> <br></td>
 </tr>
 <tr class="odd">
+<td style="text-align: left;"><strong>Acciones de acuerdo al estado</strong></td>
+<td style="text-align: left;">goal</td>
+<td style="text-align: left;">Realización de acciones específicas según el estado de los movimientos devolutivos.</td>
+<td style="text-align: left;"><em>modulo:</em> siaf<br></td>
+</tr>
+<tr class="even">
+<td style="text-align: left;"><strong>Almacén</strong></td>
+<td style="text-align: left;">goal</td>
+<td style="text-align: left;">Administración de almacenes.</td>
+<td style="text-align: left;"><em>modulo:</em> siaf<br></td>
+</tr>
+<tr class="odd">
+<td style="text-align: left;"><strong>Asientos</strong></td>
+<td style="text-align: left;">goal</td>
+<td style="text-align: left;">Registro de asientos.</td>
+<td style="text-align: left;"><em>modulo:</em> siaf<br></td>
+</tr>
+<tr class="even">
 <td style="text-align: left;"><strong>Autenticación</strong></td>
 <td style="text-align: left;">goal</td>
 <td style="text-align: left;"></td>
-<td style="text-align: left;"><em>modulo:</em> relatoria<br><em>caracteristica:</em> seguridad<br></td>
+<td style="text-align: left;"><em>modulo:</em> conciliacion<br><em>caracteristica:</em> seguridad<br></td>
 </tr>
-<tr class="even">
+<tr class="odd">
 <td style="text-align: left;"><strong>Autorización</strong></td>
 <td style="text-align: left;">goal</td>
 <td style="text-align: left;"></td>
-<td style="text-align: left;"><em>modulo:</em> relatoria<br><em>caracteristica:</em> seguridad<br></td>
+<td style="text-align: left;"><em>modulo:</em> conciliacion<br><em>caracteristica:</em> seguridad<br></td>
+</tr>
+<tr class="even">
+<td style="text-align: left;"><strong>CRUD Campos</strong></td>
+<td style="text-align: left;">goal</td>
+<td style="text-align: left;">Operaciones CRUD (Crear, Leer, Actualizar, Eliminar) en campos de los asientos.</td>
+<td style="text-align: left;"><em>modulo:</em> siaf<br></td>
 </tr>
 <tr class="odd">
 <td style="text-align: left;"><strong>Características</strong></td>
 <td style="text-align: left;">goal</td>
 <td style="text-align: left;"></td>
-<td style="text-align: left;"><em>modulo:</em> relatoria<br></td>
+<td style="text-align: left;"><em>modulo:</em> <br></td>
 </tr>
 <tr class="even">
 <td style="text-align: left;"><strong>Conciliación administrativa</strong></td>
 <td style="text-align: left;">goal</td>
 <td style="text-align: left;"></td>
-<td style="text-align: left;"><em>modulo:</em> relatoria<br><em>caracteristica:</em> técnica, integración<br></td>
+<td style="text-align: left;"><em>modulo:</em> conciliacion<br><em>caracteristica:</em> técnica, integración<br></td>
 </tr>
 <tr class="odd">
 <td style="text-align: left;"><strong>Conciliación civil</strong></td>
 <td style="text-align: left;">goal</td>
 <td style="text-align: left;"></td>
-<td style="text-align: left;"><em>modulo:</em> relatoria<br><em>caracteristica:</em> técnica, integración<br></td>
+<td style="text-align: left;"><em>modulo:</em> conciliacion<br><em>caracteristica:</em> técnica, integración<br></td>
 </tr>
 <tr class="even">
 <td style="text-align: left;"><strong>Conciliación disciplinar</strong></td>
 <td style="text-align: left;">goal</td>
 <td style="text-align: left;"></td>
-<td style="text-align: left;"><em>modulo:</em> relatoria<br><em>caracteristica:</em> técnica, integración<br></td>
+<td style="text-align: left;"><em>modulo:</em> conciliacion<br><em>caracteristica:</em> técnica, integración<br></td>
 </tr>
 <tr class="odd">
 <td style="text-align: left;"><strong>Conciliación familia</strong></td>
 <td style="text-align: left;">goal</td>
 <td style="text-align: left;"></td>
-<td style="text-align: left;"><em>modulo:</em> relatoria<br><em>caracteristica:</em> técnica, integración<br></td>
+<td style="text-align: left;"><em>modulo:</em> conciliacion<br><em>caracteristica:</em> técnica, integración<br></td>
 </tr>
 <tr class="even">
 <td style="text-align: left;"><strong>Conciliación preventivo</strong></td>
 <td style="text-align: left;">goal</td>
 <td style="text-align: left;"></td>
-<td style="text-align: left;"><em>modulo:</em> relatoria<br><em>caracteristica:</em> técnica, integración<br></td>
+<td style="text-align: left;"><em>modulo:</em> conciliacion<br><em>caracteristica:</em> técnica, integración<br></td>
+</tr>
+<tr class="odd">
+<td style="text-align: left;"><strong>Creación de movimiento</strong></td>
+<td style="text-align: left;">goal</td>
+<td style="text-align: left;">Generación de movimientos de acuerdo con los asientos abiertos.</td>
+<td style="text-align: left;"><em>modulo:</em> siaf<br></td>
+</tr>
+<tr class="even">
+<td style="text-align: left;"><strong>Cuenta de funcionario</strong></td>
+<td style="text-align: left;">goal</td>
+<td style="text-align: left;">Gestión de cuentas de funcionarios.</td>
+<td style="text-align: left;"><em>modulo:</em> siaf<br></td>
+</tr>
+<tr class="odd">
+<td style="text-align: left;"><strong>Cuenta en Microsoft (Autenticación)</strong></td>
+<td style="text-align: left;">goal</td>
+<td style="text-align: left;">Autenticación mediante cuentas de Microsoft.</td>
+<td style="text-align: left;"><em>modulo:</em> siaf<br></td>
+</tr>
+<tr class="even">
+<td style="text-align: left;"><strong>Cálculo de total</strong></td>
+<td style="text-align: left;">goal</td>
+<td style="text-align: left;">Cálculo automático del total basado en la información de elementos.</td>
+<td style="text-align: left;"><em>modulo:</em> siaf<br></td>
+</tr>
+<tr class="odd">
+<td style="text-align: left;"><strong>Código (autoincremental)</strong></td>
+<td style="text-align: left;">goal</td>
+<td style="text-align: left;">Generación automática de códigos que se reinician cada año.</td>
+<td style="text-align: left;"><em>modulo:</em> siaf<br></td>
+</tr>
+<tr class="even">
+<td style="text-align: left;"><strong>Dependiendo del tipo de movimiento</strong></td>
+<td style="text-align: left;">goal</td>
+<td style="text-align: left;">Gestión de movimientos según su tipo, incluyendo elementos como conceptos, beneficiarios y funcionarios (maestros).</td>
+<td style="text-align: left;"><em>modulo:</em> siaf<br></td>
 </tr>
 <tr class="odd">
 <td style="text-align: left;"><strong>Diseño de flujos de Conciliación</strong></td>
 <td style="text-align: left;">goal</td>
 <td style="text-align: left;"></td>
-<td style="text-align: left;"><em>modulo:</em> relatoria<br><em>caracteristica:</em> técnica, integración<br></td>
+<td style="text-align: left;"><em>modulo:</em> conciliacion<br><em>caracteristica:</em> técnica, integración<br></td>
+</tr>
+<tr class="even">
+<td style="text-align: left;"><strong>Elementos</strong></td>
+<td style="text-align: left;">goal</td>
+<td style="text-align: left;">Registro de elementos relacionados con los movimientos.</td>
+<td style="text-align: left;"><em>modulo:</em> siaf<br></td>
+</tr>
+<tr class="odd">
+<td style="text-align: left;"><strong>Estado</strong></td>
+<td style="text-align: left;">goal</td>
+<td style="text-align: left;">Seguimiento del estado de los asientos.</td>
+<td style="text-align: left;"><em>modulo:</em> siaf<br></td>
+</tr>
+<tr class="even">
+<td style="text-align: left;"><strong>Fecha automática</strong></td>
+<td style="text-align: left;">goal</td>
+<td style="text-align: left;">Asignación automática de la fecha en los asientos.</td>
+<td style="text-align: left;"><em>modulo:</em> siaf<br></td>
+</tr>
+<tr class="odd">
+<td style="text-align: left;"><strong>Filtrar por campos</strong></td>
+<td style="text-align: left;">goal</td>
+<td style="text-align: left;">Capacidad para filtrar los movimientos devolutivos según campos específicos.</td>
+<td style="text-align: left;"><em>modulo:</em> siaf<br></td>
+</tr>
+<tr class="even">
+<td style="text-align: left;"><strong>Funcionario Posesionado</strong></td>
+<td style="text-align: left;">goal</td>
+<td style="text-align: left;">Registro de información sobre funcionarios en posesión.</td>
+<td style="text-align: left;"><em>modulo:</em> siaf<br></td>
+</tr>
+<tr class="odd">
+<td style="text-align: left;"><strong>Funcionarios (Nómina) vs Funcionarios (Siaf)</strong></td>
+<td style="text-align: left;">goal</td>
+<td style="text-align: left;">Comparación y actualización de información de funcionarios almacenada en Siaf con la información de nómina.</td>
+<td style="text-align: left;"><em>modulo:</em> siaf<br></td>
+</tr>
+<tr class="even">
+<td style="text-align: left;"><strong>Generar documento</strong></td>
+<td style="text-align: left;">goal</td>
+<td style="text-align: left;">Creación de documentos relacionados con los movimientos.</td>
+<td style="text-align: left;"><em>modulo:</em> siaf<br></td>
+</tr>
+<tr class="odd">
+<td style="text-align: left;"><strong>Generar reportes</strong></td>
+<td style="text-align: left;">goal</td>
+<td style="text-align: left;">Creación de informes y reportes para proporcionar la información solicitada.</td>
+<td style="text-align: left;"><em>modulo:</em> siaf<br></td>
 </tr>
 <tr class="even">
 <td style="text-align: left;"><strong>Gestión de instancias (flujos)</strong></td>
 <td style="text-align: left;">goal</td>
 <td style="text-align: left;"></td>
-<td style="text-align: left;"><em>modulo:</em> relatoria<br><em>caracteristica:</em> técnica, integración<br></td>
+<td style="text-align: left;"><em>modulo:</em> conciliacion<br><em>caracteristica:</em> técnica, integración<br></td>
 </tr>
 <tr class="odd">
 <td style="text-align: left;"><strong>Gestión documental</strong></td>
 <td style="text-align: left;">goal</td>
 <td style="text-align: left;"></td>
-<td style="text-align: left;"><em>modulo:</em> relatoria<br><em>caracteristica:</em> seguridad<br></td>
+<td style="text-align: left;"><em>modulo:</em> conciliacion<br><em>caracteristica:</em> seguridad<br></td>
 </tr>
 <tr class="even">
 <td style="text-align: left;"><strong>Informes de gestión flujos</strong></td>
 <td style="text-align: left;">goal</td>
 <td style="text-align: left;"></td>
-<td style="text-align: left;"><em>modulo:</em> relatoria<br><em>caracteristica:</em> técnica, integración<br></td>
+<td style="text-align: left;"><em>modulo:</em> conciliacion<br><em>caracteristica:</em> técnica, integración<br></td>
 </tr>
 <tr class="odd">
 <td style="text-align: left;"><strong>Integridad</strong></td>
 <td style="text-align: left;">goal</td>
 <td style="text-align: left;"></td>
-<td style="text-align: left;"><em>modulo:</em> relatoria<br><em>caracteristica:</em> seguridad<br></td>
+<td style="text-align: left;"><em>modulo:</em> conciliacion<br><em>caracteristica:</em> seguridad<br></td>
+</tr>
+<tr class="even">
+<td style="text-align: left;"><strong>Login (Doble factor)</strong></td>
+<td style="text-align: left;">goal</td>
+<td style="text-align: left;">Autenticación de usuario mediante doble factor de seguridad</td>
+<td style="text-align: left;"><em>modulo:</em> siaf<br></td>
+</tr>
+<tr class="odd">
+<td style="text-align: left;"><strong>Movimiento Consumible</strong></td>
+<td style="text-align: left;">goal</td>
+<td style="text-align: left;">Registro de movimientos relacionados con elementos consumibles.</td>
+<td style="text-align: left;"><em>modulo:</em> siaf<br></td>
+</tr>
+<tr class="even">
+<td style="text-align: left;"><strong>Movimiento devolutivo</strong></td>
+<td style="text-align: left;">goal</td>
+<td style="text-align: left;">Registro de movimientos devolutivos.</td>
+<td style="text-align: left;"><em>modulo:</em> siaf<br></td>
+</tr>
+<tr class="odd">
+<td style="text-align: left;"><strong>Sincronización con Homminis</strong></td>
+<td style="text-align: left;">goal</td>
+<td style="text-align: left;">Sincronización de datos con el sistema Homminis.</td>
+<td style="text-align: left;"><em>modulo:</em> siaf<br></td>
+</tr>
+<tr class="even">
+<td style="text-align: left;"><strong>Vista CRUD</strong></td>
+<td style="text-align: left;">goal</td>
+<td style="text-align: left;">Interfaz para crear, leer, actualizar y eliminar registros en el almacén.</td>
+<td style="text-align: left;"><em>modulo:</em> siaf<br></td>
+</tr>
+<tr class="odd">
+<td style="text-align: left;"><strong>Vista formulario personalizada</strong></td>
+<td style="text-align: left;">goal</td>
+<td style="text-align: left;">Personalización de formularios para la creación de asientos dependiendo del almacén.</td>
+<td style="text-align: left;"><em>modulo:</em> siaf<br></td>
+</tr>
+<tr class="even">
+<td style="text-align: left;"><strong>Vista tipo formulario personalizada</strong></td>
+<td style="text-align: left;">goal</td>
+<td style="text-align: left;">Personalización de formularios para ingresar datos relacionados con los asientos.</td>
+<td style="text-align: left;"><em>modulo:</em> siaf<br></td>
+</tr>
+<tr class="odd">
+<td style="text-align: left;"><strong>Vista tipo lista personalizada</strong></td>
+<td style="text-align: left;">goal</td>
+<td style="text-align: left;">Visualización personalizada en forma de lista con filtros por campos específicos.</td>
+<td style="text-align: left;"><em>modulo:</em> siaf<br></td>
 </tr>
 <tr class="even">
 <td style="text-align: left;"><strong>Hoja ruta del producto</strong></td>
@@ -2071,91 +2231,91 @@ Arquitecto, Softgic
 <td style="text-align: left;"><strong>Adopción, v1.2</strong></td>
 <td style="text-align: left;">value</td>
 <td style="text-align: left;"></td>
-<td style="text-align: left;"><em>modulo:</em> relatoria<br></td>
+<td style="text-align: left;"><em>modulo:</em> conciliacion<br></td>
 </tr>
 <tr class="even">
 <td style="text-align: left;"><strong>Despliegue Conciliación v1.2</strong></td>
 <td style="text-align: left;">value</td>
 <td style="text-align: left;"></td>
-<td style="text-align: left;"><em>modulo:</em> relatoria<br></td>
+<td style="text-align: left;"><em>modulo:</em> conciliacion<br></td>
 </tr>
 <tr class="odd">
 <td style="text-align: left;"><strong>Flujo de trabajo Disciplinario. Conciliación v0.9</strong></td>
 <td style="text-align: left;">value</td>
 <td style="text-align: left;"></td>
-<td style="text-align: left;"><em>modulo:</em> relatoria<br></td>
+<td style="text-align: left;"><em>modulo:</em> conciliacion<br></td>
 </tr>
 <tr class="even">
 <td style="text-align: left;"><strong>Flujo de trabajo Intervención. Conciliación v0.1 (copy)</strong></td>
 <td style="text-align: left;">value</td>
 <td style="text-align: left;"></td>
-<td style="text-align: left;"><em>modulo:</em> relatoria<br></td>
+<td style="text-align: left;"><em>modulo:</em> conciliacion<br></td>
 </tr>
 <tr class="odd">
 <td style="text-align: left;"><strong>Flujo de trabajo Preventivo. Conciliación v0.7</strong></td>
 <td style="text-align: left;">value</td>
 <td style="text-align: left;"></td>
-<td style="text-align: left;"><em>modulo:</em> relatoria<br></td>
+<td style="text-align: left;"><em>modulo:</em> conciliacion<br></td>
 </tr>
 <tr class="even">
 <td style="text-align: left;"><strong>Gestión de flujos. Conciliación 1.0</strong></td>
 <td style="text-align: left;">value</td>
 <td style="text-align: left;"></td>
-<td style="text-align: left;"><em>modulo:</em> relatoria<br></td>
+<td style="text-align: left;"><em>modulo:</em> conciliacion<br></td>
 </tr>
 <tr class="odd">
 <td style="text-align: left;"><strong>Hitos mercado</strong></td>
 <td style="text-align: left;">value</td>
 <td style="text-align: left;"></td>
-<td style="text-align: left;"><em>modulo:</em> relatoria<br></td>
+<td style="text-align: left;"><em>modulo:</em> <br></td>
 </tr>
 <tr class="even">
 <td style="text-align: left;"><strong>Iteración</strong></td>
 <td style="text-align: left;">work-package</td>
 <td style="text-align: left;"></td>
-<td style="text-align: left;"><em>modulo:</em> relatoria<br></td>
+<td style="text-align: left;"><em>modulo:</em> <br></td>
 </tr>
 <tr class="odd">
 <td style="text-align: left;"><strong>Iteración 1</strong></td>
 <td style="text-align: left;">work-package</td>
 <td style="text-align: left;"></td>
-<td style="text-align: left;"><em>modulo:</em> relatoria<br></td>
+<td style="text-align: left;"><em>modulo:</em> conciliacion<br></td>
 </tr>
 <tr class="even">
 <td style="text-align: left;"><strong>Iteración 2</strong></td>
 <td style="text-align: left;">work-package</td>
 <td style="text-align: left;"></td>
-<td style="text-align: left;"><em>modulo:</em> relatoria<br></td>
+<td style="text-align: left;"><em>modulo:</em> conciliacion<br></td>
 </tr>
 <tr class="odd">
 <td style="text-align: left;"><strong>Iteración 3</strong></td>
 <td style="text-align: left;">work-package</td>
 <td style="text-align: left;"></td>
-<td style="text-align: left;"><em>modulo:</em> relatoria<br></td>
+<td style="text-align: left;"><em>modulo:</em> conciliacion<br></td>
 </tr>
 <tr class="even">
 <td style="text-align: left;"><strong>Iteración 4</strong></td>
 <td style="text-align: left;">work-package</td>
 <td style="text-align: left;"></td>
-<td style="text-align: left;"><em>modulo:</em> relatoria<br></td>
+<td style="text-align: left;"><em>modulo:</em> conciliacion<br></td>
 </tr>
 <tr class="odd">
 <td style="text-align: left;"><strong>Iteración 5</strong></td>
 <td style="text-align: left;">work-package</td>
 <td style="text-align: left;"></td>
-<td style="text-align: left;"><em>modulo:</em> relatoria<br></td>
+<td style="text-align: left;"><em>modulo:</em> conciliacion<br></td>
 </tr>
 <tr class="even">
 <td style="text-align: left;"><strong>Iteración 6</strong></td>
 <td style="text-align: left;">work-package</td>
 <td style="text-align: left;"></td>
-<td style="text-align: left;"><em>modulo:</em> relatoria<br></td>
+<td style="text-align: left;"><em>modulo:</em> conciliacion<br></td>
 </tr>
 <tr class="odd">
 <td style="text-align: left;"><strong>Iteración 7</strong></td>
 <td style="text-align: left;">work-package</td>
 <td style="text-align: left;"></td>
-<td style="text-align: left;"><em>modulo:</em> relatoria<br></td>
+<td style="text-align: left;"><em>modulo:</em> conciliacion<br></td>
 </tr>
 </tbody>
 </table>
@@ -2482,12 +2642,529 @@ Arquitecto, Softgic
 <div style="page-break-before: always;">
 
 </div>
+<h1 id="análisis-de-productos">Análisis de Productos</h1>
+<h2 id="organización.-4n.1a.-mapa-producto-pgn.-comparativa">Organización. 4n.1a. Mapa producto PGN. Comparativa</h2>
+<div id="fig:Organización.4n.1a.MapaproductoPGN.Comparativa" class="fignos">
+<figure>
+<img src="images/Organización.4n.1a.MapaproductoPGN.Comparativa.png" alt="Imagen 13: Diagram: Organización. 4n.1a. Mapa producto PGN. Comparativa" />
+<figcaption aria-hidden="true"><span>Imagen 13:</span> Diagram: Organización. 4n.1a. Mapa producto PGN. Comparativa</figcaption>
+</figure>
+</div>
+<p>Mapa de productos. Comparativa funcional y técnica de módulos PGN, SIAF (izq.) y Estratego (derecha).</p>
+<h3 id="volumen-funcional">Volumen Funcional</h3>
+<p>El análisis funcional de ambos módulos realizado durante el levantamiento (iteración 0) del presente proyecto arroja que SIAF tiene un 40% más de volumen que Estratego. Esto es, 16 funcionalidades de Estratego, mientras que SIAF suma 26. Ver imagen comparativa.</p>
+<h3 id="viabilidad-de-alcance">Viabilidad de Alcance</h3>
+<p>Tomando en cuenta el criterio de calidad de la migración, objeto del presente contrato, 078-2023, de migrar módulos completos dentro de lo posible, y contrastando este criterio con el plazo del proyecto actual, que es de 4 meses, de los cuales ya se han ejecuta aproximadamente el 20% del mismo, es más viable la estrategia de migración de estratego sobre la de SIAF de la PGN por requerir menos iteraciones de desarrollo: seis (6) iteraciones, versus, nueve (9) de SIAF.</p>
+<h3 id="impacto-beneficio-a-pgn">Impacto / Beneficio a PGN</h3>
+<p>Los hitos de mercado del presente análisis producto, imagen arriba, dan cuenta del beneficio e impacto de ambos proyectos de migración. Haciendo la comparación de los hitos de mercado de estos productos resalta que Estratego prima sobre SIAF en tanto que el peso cualitativo de las funciones estratégicas del primero son de mayor relevancia que las funciones operativos de inventario de SIAF. Basado en esto, Estratego reporta mayor beneficio y menos impacto en esfuerzo (por la razón anterior) que SIAF.</p>
+<h3 id="catálogo-de-elementos-12">Catálogo de Elementos</h3>
+<table>
+<colgroup>
+<col style="width: 25%" />
+<col style="width: 25%" />
+<col style="width: 25%" />
+<col style="width: 25%" />
+</colgroup>
+<thead>
+<tr class="header">
+<th style="text-align: left;">Name</th>
+<th style="text-align: left;">Type</th>
+<th style="text-align: left;">Description</th>
+<th style="text-align: left;">Properties</th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td style="text-align: left;"><strong>Épicas</strong></td>
+<td style="text-align: left;">capability</td>
+<td style="text-align: left;"></td>
+<td style="text-align: left;"><em>modulo:</em> estratego<br></td>
+</tr>
+<tr class="even">
+<td style="text-align: left;"><strong>Épicas</strong></td>
+<td style="text-align: left;">capability</td>
+<td style="text-align: left;"></td>
+<td style="text-align: left;"><em>modulo:</em> estratego<br></td>
+</tr>
+<tr class="odd">
+<td style="text-align: left;"><strong>Épicas</strong></td>
+<td style="text-align: left;">capability</td>
+<td style="text-align: left;"></td>
+<td style="text-align: left;"><em>modulo:</em> estratego<br></td>
+</tr>
+<tr class="even">
+<td style="text-align: left;"><strong>Épicas</strong></td>
+<td style="text-align: left;">capability</td>
+<td style="text-align: left;"></td>
+<td style="text-align: left;"><em>modulo:</em> estratego<br></td>
+</tr>
+<tr class="odd">
+<td style="text-align: left;"><strong>Épicas</strong></td>
+<td style="text-align: left;">capability</td>
+<td style="text-align: left;"></td>
+<td style="text-align: left;"><em>modulo:</em> estratego<br></td>
+</tr>
+<tr class="even">
+<td style="text-align: left;"><strong>Épicas</strong></td>
+<td style="text-align: left;">capability</td>
+<td style="text-align: left;"></td>
+<td style="text-align: left;"><em>modulo:</em> estratego<br></td>
+</tr>
+<tr class="odd">
+<td style="text-align: left;"><strong>Épicas (copy)</strong></td>
+<td style="text-align: left;">capability</td>
+<td style="text-align: left;"></td>
+<td style="text-align: left;"><em>modulo:</em> siaf<br></td>
+</tr>
+<tr class="even">
+<td style="text-align: left;"><strong>Épicas (copy)</strong></td>
+<td style="text-align: left;">capability</td>
+<td style="text-align: left;"></td>
+<td style="text-align: left;"><em>modulo:</em> siaf<br></td>
+</tr>
+<tr class="odd">
+<td style="text-align: left;"><strong>Épicas (copy)</strong></td>
+<td style="text-align: left;">capability</td>
+<td style="text-align: left;"></td>
+<td style="text-align: left;"><em>modulo:</em> siaf<br></td>
+</tr>
+<tr class="even">
+<td style="text-align: left;"><strong>Épicas (copy)</strong></td>
+<td style="text-align: left;">capability</td>
+<td style="text-align: left;"></td>
+<td style="text-align: left;"><em>modulo:</em> siaf<br></td>
+</tr>
+<tr class="odd">
+<td style="text-align: left;"><strong>Épicas (copy)</strong></td>
+<td style="text-align: left;">capability</td>
+<td style="text-align: left;"></td>
+<td style="text-align: left;"><em>modulo:</em> siaf<br></td>
+</tr>
+<tr class="even">
+<td style="text-align: left;"><strong>Épicas (copy)</strong></td>
+<td style="text-align: left;">capability</td>
+<td style="text-align: left;"></td>
+<td style="text-align: left;"><em>modulo:</em> siaf<br></td>
+</tr>
+<tr class="odd">
+<td style="text-align: left;"><strong>Épicas (copy)</strong></td>
+<td style="text-align: left;">capability</td>
+<td style="text-align: left;"></td>
+<td style="text-align: left;"><em>modulo:</em> siaf<br></td>
+</tr>
+<tr class="even">
+<td style="text-align: left;"><strong>Épicas (copy)</strong></td>
+<td style="text-align: left;">capability</td>
+<td style="text-align: left;"></td>
+<td style="text-align: left;"><em>modulo:</em> siaf<br></td>
+</tr>
+<tr class="odd">
+<td style="text-align: left;"><strong>Épicas (copy) (copy) (copy) (copy) (copy)</strong></td>
+<td style="text-align: left;">capability</td>
+<td style="text-align: left;"></td>
+<td style="text-align: left;"><em>modulo:</em> siaf<br></td>
+</tr>
+<tr class="even">
+<td style="text-align: left;"><strong>Acciones correctivas</strong></td>
+<td style="text-align: left;">goal</td>
+<td style="text-align: left;">Administrar los riesgos asociados a cada uno de los indicadores o planes.</td>
+<td style="text-align: left;"><em>modulo:</em> estratego<br></td>
+</tr>
+<tr class="odd">
+<td style="text-align: left;"><strong>Acciones de acuerdo al estado (copy)</strong></td>
+<td style="text-align: left;">goal</td>
+<td style="text-align: left;">Realización de acciones específicas según el estado de los movimientos devolutivos.</td>
+<td style="text-align: left;"><em>modulo:</em> siaf<br></td>
+</tr>
+<tr class="even">
+<td style="text-align: left;"><strong>Almacén (copy)</strong></td>
+<td style="text-align: left;">goal</td>
+<td style="text-align: left;">Administración de almacenes.</td>
+<td style="text-align: left;"><em>modulo:</em> siaf<br></td>
+</tr>
+<tr class="odd">
+<td style="text-align: left;"><strong>Asientos (copy)</strong></td>
+<td style="text-align: left;">goal</td>
+<td style="text-align: left;">Registro de asientos.</td>
+<td style="text-align: left;"><em>modulo:</em> siaf<br></td>
+</tr>
+<tr class="even">
+<td style="text-align: left;"><strong>Auditoria de mediciones</strong></td>
+<td style="text-align: left;">goal</td>
+<td style="text-align: left;">Gestionar las actividades de los usuarios, como el registro de indicadores, el tipo, etc.</td>
+<td style="text-align: left;"><em>modulo:</em> estratego<br></td>
+</tr>
+<tr class="odd">
+<td style="text-align: left;"><strong>Auditorias</strong></td>
+<td style="text-align: left;">goal</td>
+<td style="text-align: left;">Gestionar el control de logs de las actividades realizadas por el usuario en sesión.</td>
+<td style="text-align: left;"><em>modulo:</em> estratego<br></td>
+</tr>
+<tr class="even">
+<td style="text-align: left;"><strong>CRUD Campos (copy)</strong></td>
+<td style="text-align: left;">goal</td>
+<td style="text-align: left;">Operaciones CRUD (Crear, Leer, Actualizar, Eliminar) en campos de los asientos.</td>
+<td style="text-align: left;"><em>modulo:</em> siaf<br></td>
+</tr>
+<tr class="odd">
+<td style="text-align: left;"><strong>Creación de movimiento (copy)</strong></td>
+<td style="text-align: left;">goal</td>
+<td style="text-align: left;">Generación de movimientos de acuerdo con los asientos abiertos.</td>
+<td style="text-align: left;"><em>modulo:</em> siaf<br></td>
+</tr>
+<tr class="even">
+<td style="text-align: left;"><strong>Cuenta de funcionario (copy)</strong></td>
+<td style="text-align: left;">goal</td>
+<td style="text-align: left;">Gestión de cuentas de funcionarios.</td>
+<td style="text-align: left;"><em>modulo:</em> siaf<br></td>
+</tr>
+<tr class="odd">
+<td style="text-align: left;"><strong>Cuenta en Microsoft (Autenticación) (copy)</strong></td>
+<td style="text-align: left;">goal</td>
+<td style="text-align: left;">Autenticación mediante cuentas de Microsoft.</td>
+<td style="text-align: left;"><em>modulo:</em> siaf<br></td>
+</tr>
+<tr class="even">
+<td style="text-align: left;"><strong>Cálculo de total (copy)</strong></td>
+<td style="text-align: left;">goal</td>
+<td style="text-align: left;">Cálculo automático del total basado en la información de elementos.</td>
+<td style="text-align: left;"><em>modulo:</em> siaf<br></td>
+</tr>
+<tr class="odd">
+<td style="text-align: left;"><strong>Código (autoincremental) (copy)</strong></td>
+<td style="text-align: left;">goal</td>
+<td style="text-align: left;">Generación automática de códigos que se reinician cada año.</td>
+<td style="text-align: left;"><em>modulo:</em> siaf<br></td>
+</tr>
+<tr class="even">
+<td style="text-align: left;"><strong>Dependencias</strong></td>
+<td style="text-align: left;">goal</td>
+<td style="text-align: left;">Reportar al sistema, actividades, proyectos, indicadores.</td>
+<td style="text-align: left;"><em>modulo:</em> estratego<br></td>
+</tr>
+<tr class="odd">
+<td style="text-align: left;"><strong>Dependiendo del tipo de movimiento (copy)</strong></td>
+<td style="text-align: left;">goal</td>
+<td style="text-align: left;">Gestión de movimientos según su tipo, incluyendo elementos como conceptos, beneficiarios y funcionarios (maestros).</td>
+<td style="text-align: left;"><em>modulo:</em> siaf<br></td>
+</tr>
+<tr class="even">
+<td style="text-align: left;"><strong>Elementos (copy)</strong></td>
+<td style="text-align: left;">goal</td>
+<td style="text-align: left;">Registro de elementos relacionados con los movimientos.</td>
+<td style="text-align: left;"><em>modulo:</em> siaf<br></td>
+</tr>
+<tr class="odd">
+<td style="text-align: left;"><strong>Estado (copy)</strong></td>
+<td style="text-align: left;">goal</td>
+<td style="text-align: left;">Seguimiento del estado de los asientos.</td>
+<td style="text-align: left;"><em>modulo:</em> siaf<br></td>
+</tr>
+<tr class="even">
+<td style="text-align: left;"><strong>Fecha automática (copy)</strong></td>
+<td style="text-align: left;">goal</td>
+<td style="text-align: left;">Asignación automática de la fecha en los asientos.</td>
+<td style="text-align: left;"><em>modulo:</em> siaf<br></td>
+</tr>
+<tr class="odd">
+<td style="text-align: left;"><strong>Filtrar por campos (copy)</strong></td>
+<td style="text-align: left;">goal</td>
+<td style="text-align: left;">Capacidad para filtrar los movimientos devolutivos según campos específicos.</td>
+<td style="text-align: left;"><em>modulo:</em> siaf<br></td>
+</tr>
+<tr class="even">
+<td style="text-align: left;"><strong>Funcionario Posesionado (copy)</strong></td>
+<td style="text-align: left;">goal</td>
+<td style="text-align: left;">Registro de información sobre funcionarios en posesión.</td>
+<td style="text-align: left;"><em>modulo:</em> siaf<br></td>
+</tr>
+<tr class="odd">
+<td style="text-align: left;"><strong>Funcionarios (Nómina) vs Funcionarios (Siaf) (copy)</strong></td>
+<td style="text-align: left;">goal</td>
+<td style="text-align: left;">Comparación y actualización de información de funcionarios almacenada en Siaf con la información de nómina.</td>
+<td style="text-align: left;"><em>modulo:</em> siaf<br></td>
+</tr>
+<tr class="even">
+<td style="text-align: left;"><strong>Generar documento (copy)</strong></td>
+<td style="text-align: left;">goal</td>
+<td style="text-align: left;">Creación de documentos relacionados con los movimientos.</td>
+<td style="text-align: left;"><em>modulo:</em> siaf<br></td>
+</tr>
+<tr class="odd">
+<td style="text-align: left;"><strong>Generar reportes (copy)</strong></td>
+<td style="text-align: left;">goal</td>
+<td style="text-align: left;">Creación de informes y reportes para proporcionar la información solicitada.</td>
+<td style="text-align: left;"><em>modulo:</em> siaf<br></td>
+</tr>
+<tr class="even">
+<td style="text-align: left;"><strong>Grupos (Roles)</strong></td>
+<td style="text-align: left;">goal</td>
+<td style="text-align: left;">Administrar los roles y permisos dentro del sistema</td>
+<td style="text-align: left;"><em>modulo:</em> estratego<br></td>
+</tr>
+<tr class="odd">
+<td style="text-align: left;"><strong>Gráficos</strong></td>
+<td style="text-align: left;">goal</td>
+<td style="text-align: left;">Generar y presentar gráficos</td>
+<td style="text-align: left;"><em>modulo:</em> estratego<br></td>
+</tr>
+<tr class="even">
+<td style="text-align: left;"><strong>Históricos</strong></td>
+<td style="text-align: left;">goal</td>
+<td style="text-align: left;">Almacenar y consultar históricos dentro del sistema</td>
+<td style="text-align: left;"><em>modulo:</em> estratego<br></td>
+</tr>
+<tr class="odd">
+<td style="text-align: left;"><strong>Informes</strong></td>
+<td style="text-align: left;">goal</td>
+<td style="text-align: left;">Generar documentos con los informes correspondientes.</td>
+<td style="text-align: left;"><em>modulo:</em> estratego<br></td>
+</tr>
+<tr class="even">
+<td style="text-align: left;"><strong>Instrumento de cooperación</strong></td>
+<td style="text-align: left;">goal</td>
+<td style="text-align: left;">Administrar los proyectos de los cooperantes.</td>
+<td style="text-align: left;"><em>modulo:</em> estratego<br></td>
+</tr>
+<tr class="odd">
+<td style="text-align: left;"><strong>Login (Doble factor) (copy)</strong></td>
+<td style="text-align: left;">goal</td>
+<td style="text-align: left;">Autenticación de usuario mediante doble factor de seguridad</td>
+<td style="text-align: left;"><em>modulo:</em> siaf<br></td>
+</tr>
+<tr class="even">
+<td style="text-align: left;"><strong>Movimiento Consumible (copy)</strong></td>
+<td style="text-align: left;">goal</td>
+<td style="text-align: left;">Registro de movimientos relacionados con elementos consumibles.</td>
+<td style="text-align: left;"><em>modulo:</em> siaf<br></td>
+</tr>
+<tr class="odd">
+<td style="text-align: left;"><strong>Movimiento devolutivo (copy)</strong></td>
+<td style="text-align: left;">goal</td>
+<td style="text-align: left;">Registro de movimientos devolutivos.</td>
+<td style="text-align: left;"><em>modulo:</em> siaf<br></td>
+</tr>
+<tr class="even">
+<td style="text-align: left;"><strong>Organizaciones</strong></td>
+<td style="text-align: left;">goal</td>
+<td style="text-align: left;">Estructura principal.</td>
+<td style="text-align: left;"><em>modulo:</em> estratego<br></td>
+</tr>
+<tr class="odd">
+<td style="text-align: left;"><strong>Planes administrar</strong></td>
+<td style="text-align: left;">goal</td>
+<td style="text-align: left;">Administrar el plan estratégico institucional.</td>
+<td style="text-align: left;"><em>modulo:</em> estratego<br></td>
+</tr>
+<tr class="even">
+<td style="text-align: left;"><strong>Planes asociar</strong></td>
+<td style="text-align: left;">goal</td>
+<td style="text-align: left;">Asociar recursos, presupuesto.</td>
+<td style="text-align: left;"><em>modulo:</em> estratego<br></td>
+</tr>
+<tr class="odd">
+<td style="text-align: left;"><strong>Planes generar</strong></td>
+<td style="text-align: left;">goal</td>
+<td style="text-align: left;">Generar planes estratégicos institucionales y asociar los planes de acción preventivos.</td>
+<td style="text-align: left;"><em>modulo:</em> estratego<br></td>
+</tr>
+<tr class="even">
+<td style="text-align: left;"><strong>Portafolio</strong></td>
+<td style="text-align: left;">goal</td>
+<td style="text-align: left;">Gestionar el portafolio de todos los proyectos de la entidad.</td>
+<td style="text-align: left;"><em>modulo:</em> estratego<br></td>
+</tr>
+<tr class="odd">
+<td style="text-align: left;"><strong>Reportes</strong></td>
+<td style="text-align: left;">goal</td>
+<td style="text-align: left;">Generar reportes y exportarlos en diferentes tipos de archivo.</td>
+<td style="text-align: left;"><em>modulo:</em> estratego<br></td>
+</tr>
+<tr class="even">
+<td style="text-align: left;"><strong>Sincronización con Homminis (copy)</strong></td>
+<td style="text-align: left;">goal</td>
+<td style="text-align: left;">Sincronización de datos con el sistema Homminis.</td>
+<td style="text-align: left;"><em>modulo:</em> siaf<br></td>
+</tr>
+<tr class="odd">
+<td style="text-align: left;"><strong>Usuarios</strong></td>
+<td style="text-align: left;">goal</td>
+<td style="text-align: left;">Administrar los usuarios del sistema</td>
+<td style="text-align: left;"><em>modulo:</em> estratego<br></td>
+</tr>
+<tr class="even">
+<td style="text-align: left;"><strong>Vista CRUD (copy)</strong></td>
+<td style="text-align: left;">goal</td>
+<td style="text-align: left;">Interfaz para crear, leer, actualizar y eliminar registros en el almacén.</td>
+<td style="text-align: left;"><em>modulo:</em> siaf<br></td>
+</tr>
+<tr class="odd">
+<td style="text-align: left;"><strong>Vista formulario personalizada (copy)</strong></td>
+<td style="text-align: left;">goal</td>
+<td style="text-align: left;">Personalización de formularios para la creación de asientos dependiendo del almacén.</td>
+<td style="text-align: left;"><em>modulo:</em> siaf<br></td>
+</tr>
+<tr class="even">
+<td style="text-align: left;"><strong>Vista tipo formulario personalizada (copy)</strong></td>
+<td style="text-align: left;">goal</td>
+<td style="text-align: left;">Personalización de formularios para ingresar datos relacionados con los asientos.</td>
+<td style="text-align: left;"><em>modulo:</em> siaf<br></td>
+</tr>
+<tr class="odd">
+<td style="text-align: left;"><strong>Vista tipo lista personalizada (copy)</strong></td>
+<td style="text-align: left;">goal</td>
+<td style="text-align: left;">Visualización personalizada en forma de lista con filtros por campos específicos.</td>
+<td style="text-align: left;"><em>modulo:</em> siaf<br></td>
+</tr>
+<tr class="even">
+<td style="text-align: left;"><strong>Hitos mercado</strong></td>
+<td style="text-align: left;">value</td>
+<td style="text-align: left;"></td>
+<td style="text-align: left;"><em>modulo:</em> estratego<br></td>
+</tr>
+<tr class="odd">
+<td style="text-align: left;"><strong>Hitos mercado</strong></td>
+<td style="text-align: left;">value</td>
+<td style="text-align: left;"></td>
+<td style="text-align: left;"><em>modulo:</em> estratego<br></td>
+</tr>
+<tr class="even">
+<td style="text-align: left;"><strong>Hitos mercado</strong></td>
+<td style="text-align: left;">value</td>
+<td style="text-align: left;"></td>
+<td style="text-align: left;"><em>modulo:</em> estratego<br></td>
+</tr>
+<tr class="odd">
+<td style="text-align: left;"><strong>Hitos mercado</strong></td>
+<td style="text-align: left;">value</td>
+<td style="text-align: left;"></td>
+<td style="text-align: left;"><em>modulo:</em> estratego<br></td>
+</tr>
+<tr class="even">
+<td style="text-align: left;"><strong>Hitos mercado (copy)</strong></td>
+<td style="text-align: left;">value</td>
+<td style="text-align: left;"></td>
+<td style="text-align: left;"><em>modulo:</em> siaf<br></td>
+</tr>
+<tr class="odd">
+<td style="text-align: left;"><strong>Hitos mercado (copy)</strong></td>
+<td style="text-align: left;">value</td>
+<td style="text-align: left;"></td>
+<td style="text-align: left;"><em>modulo:</em> siaf<br></td>
+</tr>
+<tr class="even">
+<td style="text-align: left;"><strong>Hitos mercado (copy)</strong></td>
+<td style="text-align: left;">value</td>
+<td style="text-align: left;"></td>
+<td style="text-align: left;"><em>modulo:</em> siaf<br></td>
+</tr>
+<tr class="odd">
+<td style="text-align: left;"><strong>Hitos mercado (copy)</strong></td>
+<td style="text-align: left;">value</td>
+<td style="text-align: left;"></td>
+<td style="text-align: left;"><em>modulo:</em> siaf<br></td>
+</tr>
+<tr class="even">
+<td style="text-align: left;"><strong>Iteración</strong></td>
+<td style="text-align: left;">work-package</td>
+<td style="text-align: left;"></td>
+<td style="text-align: left;"><em>modulo:</em> estratego<br></td>
+</tr>
+<tr class="odd">
+<td style="text-align: left;"><strong>Iteración</strong></td>
+<td style="text-align: left;">work-package</td>
+<td style="text-align: left;"></td>
+<td style="text-align: left;"><em>modulo:</em> estratego<br></td>
+</tr>
+<tr class="even">
+<td style="text-align: left;"><strong>Iteración</strong></td>
+<td style="text-align: left;">work-package</td>
+<td style="text-align: left;"></td>
+<td style="text-align: left;"><em>modulo:</em> estratego<br></td>
+</tr>
+<tr class="odd">
+<td style="text-align: left;"><strong>Iteración</strong></td>
+<td style="text-align: left;">work-package</td>
+<td style="text-align: left;"></td>
+<td style="text-align: left;"><em>modulo:</em> estratego<br></td>
+</tr>
+<tr class="even">
+<td style="text-align: left;"><strong>Iteración 1</strong></td>
+<td style="text-align: left;">work-package</td>
+<td style="text-align: left;"></td>
+<td style="text-align: left;"><em>modulo:</em> estratego<br></td>
+</tr>
+<tr class="odd">
+<td style="text-align: left;"><strong>Iteración 1 (copy)</strong></td>
+<td style="text-align: left;">work-package</td>
+<td style="text-align: left;"></td>
+<td style="text-align: left;"><em>modulo:</em> siaf<br></td>
+</tr>
+<tr class="even">
+<td style="text-align: left;"><strong>Iteración 1 (copy)</strong></td>
+<td style="text-align: left;">work-package</td>
+<td style="text-align: left;"></td>
+<td style="text-align: left;"><em>modulo:</em> siaf<br></td>
+</tr>
+<tr class="odd">
+<td style="text-align: left;"><strong>Iteración 1 (copy)</strong></td>
+<td style="text-align: left;">work-package</td>
+<td style="text-align: left;"></td>
+<td style="text-align: left;"><em>modulo:</em> siaf<br></td>
+</tr>
+<tr class="even">
+<td style="text-align: left;"><strong>Iteración 1 (copy)</strong></td>
+<td style="text-align: left;">work-package</td>
+<td style="text-align: left;"></td>
+<td style="text-align: left;"><em>modulo:</em> siaf<br></td>
+</tr>
+<tr class="odd">
+<td style="text-align: left;"><strong>Iteración 1 (copy)</strong></td>
+<td style="text-align: left;">work-package</td>
+<td style="text-align: left;"></td>
+<td style="text-align: left;"><em>modulo:</em> siaf<br></td>
+</tr>
+<tr class="even">
+<td style="text-align: left;"><strong>Iteración 1 (copy)</strong></td>
+<td style="text-align: left;">work-package</td>
+<td style="text-align: left;"></td>
+<td style="text-align: left;"><em>modulo:</em> siaf<br></td>
+</tr>
+<tr class="odd">
+<td style="text-align: left;"><strong>Iteración 1 (copy)</strong></td>
+<td style="text-align: left;">work-package</td>
+<td style="text-align: left;"></td>
+<td style="text-align: left;"><em>modulo:</em> siaf<br></td>
+</tr>
+<tr class="even">
+<td style="text-align: left;"><strong>Iteración 1 (copy)</strong></td>
+<td style="text-align: left;">work-package</td>
+<td style="text-align: left;"></td>
+<td style="text-align: left;"><em>modulo:</em> siaf<br></td>
+</tr>
+<tr class="odd">
+<td style="text-align: left;"><strong>Iteración 6</strong></td>
+<td style="text-align: left;">work-package</td>
+<td style="text-align: left;"></td>
+<td style="text-align: left;"><em>modulo:</em> estratego<br></td>
+</tr>
+<tr class="even">
+<td style="text-align: left;"><strong>Iteración 9 (copy)</strong></td>
+<td style="text-align: left;">work-package</td>
+<td style="text-align: left;"></td>
+<td style="text-align: left;"><em>modulo:</em> siaf<br></td>
+</tr>
+</tbody>
+</table>
+<div style="page-break-before: always;">
+
+</div>
 <h1 id="riesgos-técnicos">Riesgos Técnicos</h1>
 <h2 id="riesgos.1.-migración-funcional">Riesgos.1. Migración funcional</h2>
 <div id="fig:Riesgos.1.Migraciónfuncional" class="fignos">
 <figure>
-<img src="images/Riesgos.1.Migraciónfuncional.png" alt="Imagen 13: Diagram: Riesgos.1. Migración funcional" />
-<figcaption aria-hidden="true"><span>Imagen 13:</span> Diagram: Riesgos.1. Migración funcional</figcaption>
+<img src="images/Riesgos.1.Migraciónfuncional.png" alt="Imagen 14: Diagram: Riesgos.1. Migración funcional" />
+<figcaption aria-hidden="true"><span>Imagen 14:</span> Diagram: Riesgos.1. Migración funcional</figcaption>
 </figure>
 </div>
 <p>Riesgos de la migración funcional:</p>
@@ -2511,7 +3188,7 @@ Arquitecto, Softgic
 <li><p>Informar a la PGN de las implicaciones junto con alternativas para la implementación de la acción de manejo del riesgo: ubicar la lógica, los flujos, y los datos misionales dentro del SIU. La PGN debe decidir si o no a la acción propuesta.</p></li>
 <li><p>Informar a la PGN de las implicaciones junto con alternativas para la implementación de la acción de manejo del riesgo: facilitar la administración de seguridad en un solo lugar (distinto de localizarla en las aplicaciones web). La PGN debe decidir si o no a la acción propuesta.</p></li>
 </ol>
-<h3 id="catálogo-de-elementos-12">Catálogo de Elementos</h3>
+<h3 id="catálogo-de-elementos-13">Catálogo de Elementos</h3>
 <table>
 <colgroup>
 <col style="width: 25%" />
@@ -2599,8 +3276,8 @@ Arquitecto, Softgic
 <h2 id="riesgos.2.-modelo-riesgo-rsg10">Riesgos.2. Modelo Riesgo RSG10</h2>
 <div id="fig:Riesgos.2.ModeloRiesgoRSG10" class="fignos">
 <figure>
-<img src="images/Riesgos.2.ModeloRiesgoRSG10.png" alt="Imagen 14: Diagram: Riesgos.2. Modelo Riesgo RSG10" />
-<figcaption aria-hidden="true"><span>Imagen 14:</span> Diagram: Riesgos.2. Modelo Riesgo RSG10</figcaption>
+<img src="images/Riesgos.2.ModeloRiesgoRSG10.png" alt="Imagen 15: Diagram: Riesgos.2. Modelo Riesgo RSG10" />
+<figcaption aria-hidden="true"><span>Imagen 15:</span> Diagram: Riesgos.2. Modelo Riesgo RSG10</figcaption>
 </figure>
 </div>
 <p>Para mitigar el riesgo 10, RSG10. Validación decisiones de arquitectura, que tiene como agente de riesgo a los arquitectos del contratista, Softgic, y al de la entidad, PGN, es necesario iniciar un proceso de evaluación y aprobación de la arquitectura. La frecuencia de este proceso será eventual, y como mínimo una vez cada dos semanas.</p>
@@ -2630,7 +3307,7 @@ Arquitecto, Softgic
 </tbody>
 </table>
 </div>
-<h3 id="catálogo-de-elementos-13">Catálogo de Elementos</h3>
+<h3 id="catálogo-de-elementos-14">Catálogo de Elementos</h3>
 <table>
 <colgroup>
 <col style="width: 25%" />
@@ -2697,7 +3374,7 @@ Arquitecto, Softgic
 </tr>
 </tbody>
 </table>
-<p><code>Generated on: Mon Sep 18 2023 14:10:46 GMT-0500 (COT)</code></p>
+<p><code>Generated on: Thu Sep 21 2023 16:16:56 GMT-0500 (COT)</code></p>
 <h2 id="requerimientos-de-administración">Requerimientos de Administración</h2>
 <ol type="1">
 <li>Las soluciones deben permitir la administración de los Roles de Usuarios: esta funcionalidad debe permitir configurar los diferentes roles de los usuarios funcionales de los procesos.</li>
@@ -2751,12 +3428,12 @@ Administrar los Usuarios de la Solución: Esta funcionalidad debe permitir confi
 <p><br></p>
 <p><br></p>
 <p><br></p>
-<div class="line-block"><strong>Versión</strong> del producto 1.27de200 de 18 Sep 2023</div>
+<div class="line-block"><strong>Versión</strong> del producto 1.c8ec6bb de 21 Sep 2023</div>
 <div class="line-block"><strong>Presentado a</strong></div>
 <div class="line-block">Procuraduría General de la Nación (PGN)</div>
 <div class="line-block"></div>
 <div class="line-block"><strong>Fecha</strong></div>
-<div class="line-block">18 Sep 2023</div>
+<div class="line-block">21 Sep 2023</div>
 <div style="page-break-before: always;">
 
 </div>
@@ -2791,7 +3468,7 @@ Administrar los Usuarios de la Solución: Esta funcionalidad debe permitir confi
 </tr>
 <tr class="even">
 <td>Versión</td>
-<td>1.27de200 del 18 Sep 2023</td>
+<td>1.c8ec6bb del 21 Sep 2023</td>
 </tr>
 <tr class="odd">
 <td>Vínculos</td>
@@ -2820,8 +3497,8 @@ Administrar los Usuarios de la Solución: Esta funcionalidad debe permitir confi
 <h2 id="lineabase.1a.siu-componentes.-infraestrcutura-1">Lineabase.1a.SIU componentes. infraestrcutura</h2>
 <div id="fig:Lineabase.1a.SIUcomponentes.infraestrcutura" class="fignos">
 <figure>
-<img src="images/Lineabase.1a.SIUcomponentes.infraestrcutura.png" alt="Imagen 15: Diagram: Lineabase.1a.SIU componentes. infraestrcutura" />
-<figcaption aria-hidden="true"><span>Imagen 15:</span> Diagram: Lineabase.1a.SIU componentes. infraestrcutura</figcaption>
+<img src="images/Lineabase.1a.SIUcomponentes.infraestrcutura.png" alt="Imagen 16: Diagram: Lineabase.1a.SIU componentes. infraestrcutura" />
+<figcaption aria-hidden="true"><span>Imagen 16:</span> Diagram: Lineabase.1a.SIU componentes. infraestrcutura</figcaption>
 </figure>
 </div>
 <p>Dependencias de infraestructura entre los servicios que integran el modelo de aplicación de SUI, Migración.</p>
@@ -2832,7 +3509,7 @@ Administrar los Usuarios de la Solución: Esta funcionalidad debe permitir confi
 <li>Servidor BDD App (Transaccional)</li>
 <li>Servidor BDD Config (Configuración)</li>
 </ul>
-<h3 id="catálogo-de-elementos-14">Catálogo de Elementos</h3>
+<h3 id="catálogo-de-elementos-15">Catálogo de Elementos</h3>
 <table>
 <colgroup>
 <col style="width: 25%" />
@@ -3070,8 +3747,8 @@ Administrar los Usuarios de la Solución: Esta funcionalidad debe permitir confi
 <h2 id="lineabase.0.siu-applicación.-física">Lineabase.0.SIU applicación. física</h2>
 <div id="fig:Lineabase.0.SIUapplicación.física" class="fignos">
 <figure>
-<img src="images/Lineabase.0.SIUapplicación.física.png" alt="Imagen 16: Diagram: Lineabase.0.SIU applicación. física" />
-<figcaption aria-hidden="true"><span>Imagen 16:</span> Diagram: Lineabase.0.SIU applicación. física</figcaption>
+<img src="images/Lineabase.0.SIUapplicación.física.png" alt="Imagen 17: Diagram: Lineabase.0.SIU applicación. física" />
+<figcaption aria-hidden="true"><span>Imagen 17:</span> Diagram: Lineabase.0.SIU applicación. física</figcaption>
 </figure>
 </div>
 <h2 id="representación-arquitectónica-1">Representación Arquitectónica</h2>
@@ -3081,7 +3758,7 @@ Administrar los Usuarios de la Solución: Esta funcionalidad debe permitir confi
 <li>API Tx: Servicio api rest base node encargado de realizar las transacciones básicas CRUD</li>
 <li>API Config / Seguridad. Servicio Web API .Net Framework encargado de gestionar características con la autenticación y configuración</li>
 </ol>
-<h3 id="catálogo-de-elementos-15">Catálogo de Elementos</h3>
+<h3 id="catálogo-de-elementos-16">Catálogo de Elementos</h3>
 <table>
 <colgroup>
 <col style="width: 25%" />
@@ -3223,8 +3900,8 @@ Administrar los Usuarios de la Solución: Esta funcionalidad debe permitir confi
 <h2 id="seguridad.-lineabase.0.siu-applicación">Seguridad. Lineabase.0.SIU applicación</h2>
 <div id="fig:Seguridad.Lineabase.0.SIUapplicación" class="fignos">
 <figure>
-<img src="images/Seguridad.Lineabase.0.SIUapplicación.png" alt="Imagen 17: Diagram: Seguridad. Lineabase.0.SIU applicación" />
-<figcaption aria-hidden="true"><span>Imagen 17:</span> Diagram: Seguridad. Lineabase.0.SIU applicación</figcaption>
+<img src="images/Seguridad.Lineabase.0.SIUapplicación.png" alt="Imagen 18: Diagram: Seguridad. Lineabase.0.SIU applicación" />
+<figcaption aria-hidden="true"><span>Imagen 18:</span> Diagram: Seguridad. Lineabase.0.SIU applicación</figcaption>
 </figure>
 </div>
 <h2 id="representación-arquitectónica-2">Representación Arquitectónica</h2>
@@ -3234,7 +3911,7 @@ Administrar los Usuarios de la Solución: Esta funcionalidad debe permitir confi
 <li>API Tx: Servicio api rest base node encargado de realizar las transacciones básicas CRUD</li>
 <li>API Config / Seguridad. Servicio Web API .Net Framework encargado de gestionar características con la autenticación y configuración</li>
 </ol>
-<h3 id="catálogo-de-elementos-16">Catálogo de Elementos</h3>
+<h3 id="catálogo-de-elementos-17">Catálogo de Elementos</h3>
 <table>
 <colgroup>
 <col style="width: 25%" />
@@ -3443,12 +4120,12 @@ Administrar los Usuarios de la Solución: Esta funcionalidad debe permitir confi
 <p><br></p>
 <p><br></p>
 <p><br></p>
-<div class="line-block"><strong>Versión</strong> del producto 1.27de200 de 18 Sep 2023</div>
+<div class="line-block"><strong>Versión</strong> del producto 1.c8ec6bb de 21 Sep 2023</div>
 <div class="line-block"><strong>Presentado a</strong></div>
 <div class="line-block">Procuraduría General de la Nación (PGN)</div>
 <div class="line-block"></div>
 <div class="line-block"><strong>Fecha</strong></div>
-<div class="line-block">18 Sep 2023</div>
+<div class="line-block">21 Sep 2023</div>
 <div style="page-break-before: always;">
 
 </div>
@@ -3483,7 +4160,7 @@ Administrar los Usuarios de la Solución: Esta funcionalidad debe permitir confi
 </tr>
 <tr class="even">
 <td>Versión</td>
-<td>1.27de200 del 18 Sep 2023</td>
+<td>1.c8ec6bb del 21 Sep 2023</td>
 </tr>
 <tr class="odd">
 <td>Vínculos</td>
@@ -3514,14 +4191,14 @@ Administrar los Usuarios de la Solución: Esta funcionalidad debe permitir confi
 <h2 id="migracion.2.-datos">Migracion.2. datos</h2>
 <div id="fig:Migracion.2.datos" class="fignos">
 <figure>
-<img src="images/Migracion.2.datos.png" style="width:5.32in" alt="Imagen 18: Diagram: Migracion.2. datos" />
-<figcaption aria-hidden="true"><span>Imagen 18:</span> Diagram: Migracion.2. datos</figcaption>
+<img src="images/Migracion.2.datos.png" style="width:5.32in" alt="Imagen 19: Diagram: Migracion.2. datos" />
+<figcaption aria-hidden="true"><span>Imagen 19:</span> Diagram: Migracion.2. datos</figcaption>
 </figure>
 </div>
 <p>Modelo de acceso y procesamiento a datos de negocio del SUI. Presentamos la organización de los ítems de datos de negocio necesarios para que los módulos del SUI puedan recolectar, procesar, integrar y almacenarlos de forma organizada y escalable.</p>
 <p>Mediante esta organización, los datos de negocio son transportados desde sus respectivas fuentes mediante interfaces (por principio de extensión y mantenibilidad). Los datos externos, entendidos como los de otros proveedores, son obtenidos mediante un intermediario: el bus de datos del SUI.</p>
 <p>Consideramos tres tipos datos: datos transaccionales, históricos y externos, y presentamos una manera distinta de tratarlos y transportarlos.</p>
-<h3 id="catálogo-de-elementos-17">Catálogo de Elementos</h3>
+<h3 id="catálogo-de-elementos-18">Catálogo de Elementos</h3>
 <table>
 <colgroup>
 <col style="width: 25%" />
@@ -3627,13 +4304,13 @@ Administrar los Usuarios de la Solución: Esta funcionalidad debe permitir confi
 <h2 id="migracion.2a.-datos-hominis">Migracion.2a. datos Hominis</h2>
 <div id="fig:Migracion.2a.datosHominis" class="fignos">
 <figure>
-<img src="images/Migracion.2a.datosHominis.png" style="width:5.32in" alt="Imagen 19: Diagram: Migracion.2a. datos Hominis" />
-<figcaption aria-hidden="true"><span>Imagen 19:</span> Diagram: Migracion.2a. datos Hominis</figcaption>
+<img src="images/Migracion.2a.datosHominis.png" style="width:5.32in" alt="Imagen 20: Diagram: Migracion.2a. datos Hominis" />
+<figcaption aria-hidden="true"><span>Imagen 20:</span> Diagram: Migracion.2a. datos Hominis</figcaption>
 </figure>
 </div>
 <p>Identificación de entidades de datos de negocio relacionadas al módulo de gestión de capital del SUI, Hominis.</p>
 <p>Estas entidades de datos de negocio son los que llamamos los tipos de datos internos del SUI y deben ser consideradas para la creación de las API de manejo del ciclo de vida de los datos de este módulo.</p>
-<h3 id="catálogo-de-elementos-18">Catálogo de Elementos</h3>
+<h3 id="catálogo-de-elementos-19">Catálogo de Elementos</h3>
 <table>
 <colgroup>
 <col style="width: 25%" />
@@ -3775,13 +4452,13 @@ Administrar los Usuarios de la Solución: Esta funcionalidad debe permitir confi
 <h2 id="migracion.2c.-datos-control-interno">Migracion.2c. datos Control interno</h2>
 <div id="fig:Migracion.2c.datosControlinterno" class="fignos">
 <figure>
-<img src="images/Migracion.2c.datosControlinterno.png" alt="Imagen 20: Diagram: Migracion.2c. datos Control interno" />
-<figcaption aria-hidden="true"><span>Imagen 20:</span> Diagram: Migracion.2c. datos Control interno</figcaption>
+<img src="images/Migracion.2c.datosControlinterno.png" alt="Imagen 21: Diagram: Migracion.2c. datos Control interno" />
+<figcaption aria-hidden="true"><span>Imagen 21:</span> Diagram: Migracion.2c. datos Control interno</figcaption>
 </figure>
 </div>
 <p>Identificación de entidades de datos de negocio relacionadas al módulo de seguimiento del desempeño de la PGN del SUI, Control Interno.</p>
 <p>Estas entidades de datos de negocio son los que llamamos los tipos de datos internos del SUI y deben ser consideradas para la creación de las API de manejo del ciclo de vida de los datos de este módulo.</p>
-<h3 id="catálogo-de-elementos-19">Catálogo de Elementos</h3>
+<h3 id="catálogo-de-elementos-20">Catálogo de Elementos</h3>
 <table>
 <thead>
 <tr class="header">
@@ -3827,13 +4504,13 @@ Administrar los Usuarios de la Solución: Esta funcionalidad debe permitir confi
 <h2 id="migracion.2d.-datos-siri">Migracion.2d. datos SIRI</h2>
 <div id="fig:Migracion.2d.datosSIRI" class="fignos">
 <figure>
-<img src="images/Migracion.2d.datosSIRI.png" alt="Imagen 21: Diagram: Migracion.2d. datos SIRI" />
-<figcaption aria-hidden="true"><span>Imagen 21:</span> Diagram: Migracion.2d. datos SIRI</figcaption>
+<img src="images/Migracion.2d.datosSIRI.png" alt="Imagen 22: Diagram: Migracion.2d. datos SIRI" />
+<figcaption aria-hidden="true"><span>Imagen 22:</span> Diagram: Migracion.2d. datos SIRI</figcaption>
 </figure>
 </div>
 <p>Identificación de entidades de datos de negocio relacionadas al módulo del SUI, SIRI.</p>
 <p>Estas entidades de datos de negocio son los que llamamos los tipos de datos internos del SUI y deben ser consideradas para la creación de las API de manejo del ciclo de vida de los datos de este módulo.</p>
-<h3 id="catálogo-de-elementos-20">Catálogo de Elementos</h3>
+<h3 id="catálogo-de-elementos-21">Catálogo de Elementos</h3>
 <table>
 <thead>
 <tr class="header">
@@ -3861,13 +4538,13 @@ Administrar los Usuarios de la Solución: Esta funcionalidad debe permitir confi
 <h2 id="migracion.2b.-datos-sim">Migracion.2b. datos SIM</h2>
 <div id="fig:Migracion.2b.datosSIM" class="fignos">
 <figure>
-<img src="images/Migracion.2b.datosSIM.png" alt="Imagen 22: Diagram: Migracion.2b. datos SIM" />
-<figcaption aria-hidden="true"><span>Imagen 22:</span> Diagram: Migracion.2b. datos SIM</figcaption>
+<img src="images/Migracion.2b.datosSIM.png" alt="Imagen 23: Diagram: Migracion.2b. datos SIM" />
+<figcaption aria-hidden="true"><span>Imagen 23:</span> Diagram: Migracion.2b. datos SIM</figcaption>
 </figure>
 </div>
 <p>Identificación de entidades de datos de negocio relacionadas al módulo de SUI, SIM.</p>
 <p>Estas entidades de datos de negocio son los que llamamos los tipos de datos internos del SUI y deben ser consideradas para la creación de las API de manejo del ciclo de vida de los datos de este módulo.</p>
-<h3 id="catálogo-de-elementos-21">Catálogo de Elementos</h3>
+<h3 id="catálogo-de-elementos-22">Catálogo de Elementos</h3>
 <table>
 <thead>
 <tr class="header">
