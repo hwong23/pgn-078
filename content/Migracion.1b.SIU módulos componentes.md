@@ -21,7 +21,7 @@ Las interfaces de unión indicadas arriba obligan a los submódulos a cumplir la
 | Name| Type| Description| Properties
 |:--------|:--------|:--------|:--------|
 |**App**|application-component||*plataforma:* node Js<br>|
-|**App PGN Móvil**|application-component|||
+|**App PGN Móvil**|application-component||*plantilla:* element-md-new<br>|
 |**App PGN Web**|application-component||*plataforma:* angular 11<br>|
 |**Config**|application-component||*plataforma:* cs<br>|
 |**Controlador admin**|application-component||*plataforma:* cs<br>|

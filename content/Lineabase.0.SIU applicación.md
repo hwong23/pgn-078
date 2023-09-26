@@ -12,6 +12,7 @@ Con una arquitectura orientada a servicios SUI recopila:
 1. API Tx: Servicio api rest base node encargado de realizar las transacciones básicas CRUD
 1. API Config / Seguridad. Servicio Web API .Net Framework encargado de gestionar características con la autenticación y configuración
 
+<br>
 
 
 
@@ -21,7 +22,7 @@ Con una arquitectura orientada a servicios SUI recopila:
 |**Application Collaboration**|application-collaboration|||
 |**Application Collaboration**|application-collaboration|||
 |**App**|application-component||*plataforma:* node Js<br>|
-|**App PGN Móvil**|application-component|||
+|**App PGN Móvil**|application-component||*plantilla:* element-md-new<br>|
 |**App PGN Web**|application-component||*plataforma:* angular 11<br>|
 |**Config**|application-component||*plataforma:* cs<br>|
 |**Punto acceso público**|application-interface|URL tipo C<br>HTTP||

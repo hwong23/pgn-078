@@ -13,6 +13,7 @@ Tomando en cuenta el criterio de calidad de la migración, objeto del presente c
 ### Impacto / Beneficio a PGN
 Los hitos de mercado del presente análisis producto, imagen arriba, dan cuenta  del beneficio e impacto de ambos proyectos de migración. Haciendo la comparación de los hitos de mercado de estos productos resalta que Estratego prima sobre SIAF en tanto que el peso cualitativo de las funciones estratégicas del primero son de mayor relevancia que las funciones operativos de inventario de SIAF. Basado en esto, Estratego reporta mayor beneficio y menos impacto en esfuerzo (por la razón anterior) que SIAF.
 
+En conclusion, por los criterios de viabilidad y tamaño funcional y por el impacto estratégico, Estratego resulta en la migración a seleccionar sobre la del modulo SIAF. Esta estrategia satisface además la restricción de migrar moóulos completos sobre migración parcial.
 
 
 ### Catálogo de Elementos
@@ -79,10 +80,10 @@ Los hitos de mercado del presente análisis producto, imagen arriba, dan cuenta 
 |**Hitos mercado**|value||*modulo:* estratego<br>|
 |**Hitos mercado**|value||*modulo:* estratego<br>|
 |**Hitos mercado**|value||*modulo:* estratego<br>|
-|**Hitos mercado (copy)**|value||*modulo:* siaf<br>|
-|**Hitos mercado (copy)**|value||*modulo:* siaf<br>|
-|**Hitos mercado (copy)**|value||*modulo:* siaf<br>|
-|**Hitos mercado (copy)**|value||*modulo:* siaf<br>|
+|**Hitos mercado**|value||*modulo:* siaf<br>|
+|**Hitos mercado**|value||*modulo:* siaf<br>|
+|**Hitos mercado**|value||*modulo:* siaf<br>|
+|**Hitos mercado**|value||*modulo:* siaf<br>|
 |**Iteración**|work-package||*modulo:* estratego<br>|
 |**Iteración**|work-package||*modulo:* estratego<br>|
 |**Iteración**|work-package||*modulo:* estratego<br>|
