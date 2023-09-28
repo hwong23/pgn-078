@@ -18,8 +18,8 @@ header-includes: |
   <meta name="dc.date" content="2023-09-28" />
   <meta name="citation_publication_date" content="2023-09-28" />
   <meta property="article:published_time" content="2023-09-28" />
-  <meta name="dc.modified" content="2023-09-28T17:19:30+00:00" />
-  <meta property="article:modified_time" content="2023-09-28T17:19:30+00:00" />
+  <meta name="dc.modified" content="2023-09-28T17:53:41+00:00" />
+  <meta property="article:modified_time" content="2023-09-28T17:53:41+00:00" />
   <meta name="dc.language" content="en-US" />
   <meta name="citation_language" content="en-US" />
   <meta name="dc.relation.ispartof" content="Manubot" />
@@ -34,9 +34,9 @@ header-includes: |
   <meta name="citation_fulltext_html_url" content="https://hwong23.github.io/pgn-078/" />
   <meta name="citation_pdf_url" content="https://hwong23.github.io/pgn-078/manuscript.pdf" />
   <link rel="alternate" type="application/pdf" href="https://hwong23.github.io/pgn-078/manuscript.pdf" />
-  <link rel="alternate" type="text/html" href="https://hwong23.github.io/pgn-078/v/3da91d300c2bc2c35928185ea96042048e45814b/" />
-  <meta name="manubot_html_url_versioned" content="https://hwong23.github.io/pgn-078/v/3da91d300c2bc2c35928185ea96042048e45814b/" />
-  <meta name="manubot_pdf_url_versioned" content="https://hwong23.github.io/pgn-078/v/3da91d300c2bc2c35928185ea96042048e45814b/manuscript.pdf" />
+  <link rel="alternate" type="text/html" href="https://hwong23.github.io/pgn-078/v/adf8e8b0f76d33f3ff184ad5d4005685d326d402/" />
+  <meta name="manubot_html_url_versioned" content="https://hwong23.github.io/pgn-078/v/adf8e8b0f76d33f3ff184ad5d4005685d326d402/" />
+  <meta name="manubot_pdf_url_versioned" content="https://hwong23.github.io/pgn-078/v/adf8e8b0f76d33f3ff184ad5d4005685d326d402/manuscript.pdf" />
   <meta property="og:type" content="article" />
   <meta property="twitter:card" content="summary_large_image" />
   <link rel="icon" type="image/png" sizes="192x192" href="https://manubot.org/favicon-192x192.png" />
@@ -77,7 +77,7 @@ tablenos-caption-name: Tabla
 
 <br>
 
-| **Versión** del producto 1.3da91d3 de 28 Sep 2023
+| **Versión** del producto 1.adf8e8b de 28 Sep 2023
 
 | **Presentado a**
 
@@ -95,9 +95,9 @@ tablenos-caption-name: Tabla
 
 
 <small><em>Los productos de esta etapa, Migración Funcional SIU, Contrato 078-2023, 
-([Web](https://hwong23.github.io/pgn-078/v/3da91d300c2bc2c35928185ea96042048e45814b/))
+([Web](https://hwong23.github.io/pgn-078/v/adf8e8b0f76d33f3ff184ad5d4005685d326d402/))
 están basados en el resultado de la Fase 1 del proyecto PGN SIU del 2022,
-[Sharepoint Softgic@3da91d3](http://softgic.sharepoint.com)
+[Sharepoint Softgic@adf8e8b](http://softgic.sharepoint.com)
 del September 28, 2023.
 </em></small>
 
@@ -143,7 +143,7 @@ Descripción de los productos del trabajo de arquitectura de la Fase 2, proyecto
 | Palabras clave | SIU, Softgic, PGN, Análisis de brecha, GAP, Comparativa              |
 | Autor          |                            |
 | Fuente         |                            |
-| Versión        | 1.3da91d3 del 28 Sep 2023 |
+| Versión        | 1.adf8e8b del 28 Sep 2023 |
 | Vínculos       | [N003a Vista Segmento PGN SIU](N03a%a20Vsta%20aSegenta%20SOA%20PGN.md) |
 
 <br>
@@ -454,7 +454,7 @@ El portal es el conjunto de los elementos físicos y lógicos necesarios para la
 
 Identificación de submódulos del Sistema Único de Información (SUI) de la PGN. 
 
-Todos los sistemas de información del SUI deben seguir la directiva de separar a los compontentes misionales de los utilitarior: el SUI de PGN estará constituídos por submódulos dispuestos en relación de utilitarios (que sirven) a los componentes misionales del SUI, ubicados en el centro en la diagrama.
+Todos los sistemas de información del SUI deben seguir la directiva de separar a los componentes misionales de los utilitarios: el SUI de PGN estará constituidos por submódulos dispuestos en relación de utilitarios (que sirven) a los componentes misionales del SUI, ubicados en el centro en la diagrama.
 
 Los submódulos del SUI, tal como están presentados, reúnen a las partes por el mismo rol en favor de la coherencia. Por ejemplo, los servicios de aplicación, en la imagen, contiene a todos aquellos utilitarios que prestan alguna utilidad momentánea al SUI migrado. Organizados así, estos submódulos utilitarios pueden ser intercambiados o ampliados sin perjuicio de los componentes misionales dell SUI (centro del diagrama) gracias a las _interfaces de unión_ en favor de la extensibilidad.
 
@@ -488,6 +488,9 @@ La disposición de los módulos y submódulos presentada, denominada SUI Migraci
 |**interfaz**|application-interface|||
 |**Cliente PGN**|business-actor|||
 |**Funcionario PGN**|business-actor|||
+|**ARQ01. Consistencia SUI**|constraint|Unifica las entidades de negocio PGN, entre las que se incluyen a conciliaciones, publicaciones de relatoría, resoluciones, en artefactos reutilizables. Distinto de que estas entidades (y su lógica de negocio) estén dispersos entre los sistemas del SUI, estarán concentradas en un único artefacto correspondiente. Calidad sistémica: la consistencia persigue que el resultado de la lógica de negocio sea la misma entre los módulos del SUI migrado. Esto redunda a mantenibilidad y gestión: tiende a tener un solo punto de cambio y dificulta la transferencia de dependencias implícitas a otros procesos.||
+|**ARQ02. Mantenibilidad SUI**|constraint|Evitar las dependencia transitivas de los módulos misionales del SUI a componentes y sistemas de terceros o submódulos no misionales.  Calidad sistémica: la mantenibilidad por control de dependencias que optimiza el diseño Migración SUI está dada por el control de cambios no programados sobre los componentes misionales del SUI (corrupción de componentes). Ver Patrón de Diseño Migración SUI, más adelante en el documento.||
+|**ARQ03. Extensibilidad SUI**|constraint|Concentración de los componentes de negocio, misionales, del SUI protegidos de cambios provenientes de otros sistemas. Ver Patrón de Diseño Migración SUI, más adelante en el documento. Calidad sistémica: la extensibilidad que optimiza el diseño Migración SUI está dada por el intercambio de submódulos no misionales, como el gestor documental, sin afectación de los componentes misionales que este diseño protege.||
 |**RQR. Administrativos**|requirement|||
 |**RQR. Funcionales**|requirement|||
 |**RQR. Ingeniería**|requirement|||
@@ -1053,7 +1056,7 @@ Table: Valoración del riesgo RSG10. Validación decisiones de arquitectura. Mig
 |**Supervisor contrato 078-2023**|stakeholder|||
 
 
-``Generated on: Wed Sep 27 2023 15:06:55 GMT-0500 (COT)``
+``Generated on: Thu Sep 28 2023 12:49:24 GMT-0500 (COT)``
 
 ## Requerimientos de Administración
 1.	Las soluciones deben permitir la administración de los Roles de Usuarios: esta funcionalidad debe permitir configurar los diferentes roles de los usuarios funcionales de los procesos. 
@@ -1128,7 +1131,7 @@ tablenos-caption-name: Tabla
 
 <br>
 
-| **Versión** del producto 1.3da91d3 de 28 Sep 2023
+| **Versión** del producto 1.adf8e8b de 28 Sep 2023
 
 | **Presentado a**
 
@@ -1157,7 +1160,7 @@ Descripción de los productos del trabajo de infraestructura del proyecto Migrac
 | Palabras clave | SIU, Softgic, PGN, Análisis de brecha, GAP, Infraestrctura, PasS |
 | Autor          |                            |
 | Fuente         |                            |
-| Versión        | 1.3da91d3 del 28 Sep 2023 |
+| Versión        | 1.adf8e8b del 28 Sep 2023 |
 | Vínculos       | [N003a Vista Segmento PGN SIU](N03a%a20Vsta%20aSegenta%20SOA%20PGN.md) |
 
 <br>
@@ -1346,7 +1349,7 @@ tablenos-caption-name: Tabla
 
 <br>
 
-| **Versión** del producto 1.3da91d3 de 28 Sep 2023
+| **Versión** del producto 1.adf8e8b de 28 Sep 2023
 
 | **Presentado a**
 
@@ -1376,7 +1379,7 @@ Descripción de los productos de trabajo de la arquitectura de datos del proyect
 | Palabras clave | SIU, Softgic, PGN, Análisis de brecha, GAP, Entidades, Datos  |
 | Autor          |                            |
 | Fuente         |                            |
-| Versión        | 1.3da91d3 del 28 Sep 2023 |
+| Versión        | 1.adf8e8b del 28 Sep 2023 |
 | Vínculos       | [N003a Vista Segmento PGN SIU](N03a%a20Vsta%20aSegenta%20SOA%20PGN.md) |
 
 <br>

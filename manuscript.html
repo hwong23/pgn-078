@@ -49,8 +49,8 @@
   <meta name="dc.date" content="2023-09-28" />
   <meta name="citation_publication_date" content="2023-09-28" />
   <meta property="article:published_time" content="2023-09-28" />
-  <meta name="dc.modified" content="2023-09-28T17:19:30+00:00" />
-  <meta property="article:modified_time" content="2023-09-28T17:19:30+00:00" />
+  <meta name="dc.modified" content="2023-09-28T17:53:41+00:00" />
+  <meta property="article:modified_time" content="2023-09-28T17:53:41+00:00" />
   <meta name="dc.language" content="en-US" />
   <meta name="citation_language" content="en-US" />
   <meta name="dc.relation.ispartof" content="Manubot" />
@@ -65,9 +65,9 @@
   <meta name="citation_fulltext_html_url" content="https://hwong23.github.io/pgn-078/" />
   <meta name="citation_pdf_url" content="https://hwong23.github.io/pgn-078/manuscript.pdf" />
   <link rel="alternate" type="application/pdf" href="https://hwong23.github.io/pgn-078/manuscript.pdf" />
-  <link rel="alternate" type="text/html" href="https://hwong23.github.io/pgn-078/v/3da91d300c2bc2c35928185ea96042048e45814b/" />
-  <meta name="manubot_html_url_versioned" content="https://hwong23.github.io/pgn-078/v/3da91d300c2bc2c35928185ea96042048e45814b/" />
-  <meta name="manubot_pdf_url_versioned" content="https://hwong23.github.io/pgn-078/v/3da91d300c2bc2c35928185ea96042048e45814b/manuscript.pdf" />
+  <link rel="alternate" type="text/html" href="https://hwong23.github.io/pgn-078/v/adf8e8b0f76d33f3ff184ad5d4005685d326d402/" />
+  <meta name="manubot_html_url_versioned" content="https://hwong23.github.io/pgn-078/v/adf8e8b0f76d33f3ff184ad5d4005685d326d402/" />
+  <meta name="manubot_pdf_url_versioned" content="https://hwong23.github.io/pgn-078/v/adf8e8b0f76d33f3ff184ad5d4005685d326d402/manuscript.pdf" />
   <meta property="og:type" content="article" />
   <meta property="twitter:card" content="summary_large_image" />
   <link rel="icon" type="image/png" sizes="192x192" href="https://manubot.org/favicon-192x192.png" />
@@ -89,7 +89,7 @@
 <p><br></p>
 <p><br></p>
 <p><br></p>
-<div class="line-block"><strong>Versión</strong> del producto 1.3da91d3 de 28 Sep 2023</div>
+<div class="line-block"><strong>Versión</strong> del producto 1.adf8e8b de 28 Sep 2023</div>
 <div class="line-block"><strong>Presentado a</strong></div>
 <div class="line-block">Procuraduría General de la Nación (PGN)</div>
 <div class="line-block"></div>
@@ -99,9 +99,9 @@
 
 </div>
 <p><small><em>Los productos de esta etapa, Migración Funcional SIU, Contrato 078-2023,
-(<a href="https://hwong23.github.io/pgn-078/v/3da91d300c2bc2c35928185ea96042048e45814b/">Web</a>)
+(<a href="https://hwong23.github.io/pgn-078/v/adf8e8b0f76d33f3ff184ad5d4005685d326d402/">Web</a>)
 están basados en el resultado de la Fase 1 del proyecto PGN SIU del 2022,
-<a href="http://softgic.sharepoint.com">Sharepoint Softgic@3da91d3</a>
+<a href="http://softgic.sharepoint.com">Sharepoint Softgic@adf8e8b</a>
 del September 28, 2023.
 </em></small></p>
 <p><br></p>
@@ -150,7 +150,7 @@ Arquitecto, Softgic
 </tr>
 <tr class="even">
 <td>Versión</td>
-<td>1.3da91d3 del 28 Sep 2023</td>
+<td>1.adf8e8b del 28 Sep 2023</td>
 </tr>
 <tr class="odd">
 <td>Vínculos</td>
@@ -988,7 +988,7 @@ Arquitecto, Softgic
 </figure>
 </div>
 <p>Identificación de submódulos del Sistema Único de Información (SUI) de la PGN.</p>
-<p>Todos los sistemas de información del SUI deben seguir la directiva de separar a los compontentes misionales de los utilitarior: el SUI de PGN estará constituídos por submódulos dispuestos en relación de utilitarios (que sirven) a los componentes misionales del SUI, ubicados en el centro en la diagrama.</p>
+<p>Todos los sistemas de información del SUI deben seguir la directiva de separar a los componentes misionales de los utilitarios: el SUI de PGN estará constituidos por submódulos dispuestos en relación de utilitarios (que sirven) a los componentes misionales del SUI, ubicados en el centro en la diagrama.</p>
 <p>Los submódulos del SUI, tal como están presentados, reúnen a las partes por el mismo rol en favor de la coherencia. Por ejemplo, los servicios de aplicación, en la imagen, contiene a todos aquellos utilitarios que prestan alguna utilidad momentánea al SUI migrado. Organizados así, estos submódulos utilitarios pueden ser intercambiados o ampliados sin perjuicio de los componentes misionales dell SUI (centro del diagrama) gracias a las <em>interfaces de unión</em> en favor de la extensibilidad.</p>
 <p>Las interfaces de unión indicadas arriba obligan a los submódulos a cumplir las exigencias de los componentes misionales del SUI.</p>
 <p>Los submódulos identificados tienen los siguientes roles para el SUI migrado:</p>
@@ -1097,36 +1097,54 @@ Arquitecto, Softgic
 <td style="text-align: left;"></td>
 </tr>
 <tr class="even">
+<td style="text-align: left;"><strong>ARQ01. Consistencia SUI</strong></td>
+<td style="text-align: left;">constraint</td>
+<td style="text-align: left;">Unifica las entidades de negocio PGN, entre las que se incluyen a conciliaciones, publicaciones de relatoría, resoluciones, en artefactos reutilizables. Distinto de que estas entidades (y su lógica de negocio) estén dispersos entre los sistemas del SUI, estarán concentradas en un único artefacto correspondiente. Calidad sistémica: la consistencia persigue que el resultado de la lógica de negocio sea la misma entre los módulos del SUI migrado. Esto redunda a mantenibilidad y gestión: tiende a tener un solo punto de cambio y dificulta la transferencia de dependencias implícitas a otros procesos.</td>
+<td style="text-align: left;"></td>
+</tr>
+<tr class="odd">
+<td style="text-align: left;"><strong>ARQ02. Mantenibilidad SUI</strong></td>
+<td style="text-align: left;">constraint</td>
+<td style="text-align: left;">Evitar las dependencia transitivas de los módulos misionales del SUI a componentes y sistemas de terceros o submódulos no misionales. Calidad sistémica: la mantenibilidad por control de dependencias que optimiza el diseño Migración SUI está dada por el control de cambios no programados sobre los componentes misionales del SUI (corrupción de componentes). Ver Patrón de Diseño Migración SUI, más adelante en el documento.</td>
+<td style="text-align: left;"></td>
+</tr>
+<tr class="even">
+<td style="text-align: left;"><strong>ARQ03. Extensibilidad SUI</strong></td>
+<td style="text-align: left;">constraint</td>
+<td style="text-align: left;">Concentración de los componentes de negocio, misionales, del SUI protegidos de cambios provenientes de otros sistemas. Ver Patrón de Diseño Migración SUI, más adelante en el documento. Calidad sistémica: la extensibilidad que optimiza el diseño Migración SUI está dada por el intercambio de submódulos no misionales, como el gestor documental, sin afectación de los componentes misionales que este diseño protege.</td>
+<td style="text-align: left;"></td>
+</tr>
+<tr class="odd">
 <td style="text-align: left;"><strong>RQR. Administrativos</strong></td>
 <td style="text-align: left;">requirement</td>
 <td style="text-align: left;"></td>
 <td style="text-align: left;"></td>
 </tr>
-<tr class="odd">
+<tr class="even">
 <td style="text-align: left;"><strong>RQR. Funcionales</strong></td>
 <td style="text-align: left;">requirement</td>
 <td style="text-align: left;"></td>
 <td style="text-align: left;"></td>
 </tr>
-<tr class="even">
+<tr class="odd">
 <td style="text-align: left;"><strong>RQR. Ingeniería</strong></td>
 <td style="text-align: left;">requirement</td>
 <td style="text-align: left;"></td>
 <td style="text-align: left;"></td>
 </tr>
-<tr class="odd">
+<tr class="even">
 <td style="text-align: left;"><strong>RQR. Misionales</strong></td>
 <td style="text-align: left;">requirement</td>
 <td style="text-align: left;"></td>
 <td style="text-align: left;"></td>
 </tr>
-<tr class="even">
+<tr class="odd">
 <td style="text-align: left;"><strong>RQR. Seguridad</strong></td>
 <td style="text-align: left;">requirement</td>
 <td style="text-align: left;">Requerimientos de seguridad, SUI, Migración, en aspectos de comunicación, autenticación, autorización y (manejo de) sesiones.<br></td>
 <td style="text-align: left;"></td>
 </tr>
-<tr class="odd">
+<tr class="even">
 <td style="text-align: left;"><strong>RQR. Seguridad</strong></td>
 <td style="text-align: left;">requirement</td>
 <td style="text-align: left;">Requerimientos de seguridad, SUI, Migración, en aspectos de comunicación, autenticación, autorización y (manejo de) sesiones.<br></td>
@@ -3805,7 +3823,7 @@ Arquitecto, Softgic
 </tr>
 </tbody>
 </table>
-<p><code>Generated on: Wed Sep 27 2023 15:06:55 GMT-0500 (COT)</code></p>
+<p><code>Generated on: Thu Sep 28 2023 12:49:24 GMT-0500 (COT)</code></p>
 <h2 id="requerimientos-de-administración">Requerimientos de Administración</h2>
 <ol type="1">
 <li>Las soluciones deben permitir la administración de los Roles de Usuarios: esta funcionalidad debe permitir configurar los diferentes roles de los usuarios funcionales de los procesos.</li>
@@ -3859,7 +3877,7 @@ Administrar los Usuarios de la Solución: Esta funcionalidad debe permitir confi
 <p><br></p>
 <p><br></p>
 <p><br></p>
-<div class="line-block"><strong>Versión</strong> del producto 1.3da91d3 de 28 Sep 2023</div>
+<div class="line-block"><strong>Versión</strong> del producto 1.adf8e8b de 28 Sep 2023</div>
 <div class="line-block"><strong>Presentado a</strong></div>
 <div class="line-block">Procuraduría General de la Nación (PGN)</div>
 <div class="line-block"></div>
@@ -3899,7 +3917,7 @@ Administrar los Usuarios de la Solución: Esta funcionalidad debe permitir confi
 </tr>
 <tr class="even">
 <td>Versión</td>
-<td>1.3da91d3 del 28 Sep 2023</td>
+<td>1.adf8e8b del 28 Sep 2023</td>
 </tr>
 <tr class="odd">
 <td>Vínculos</td>
@@ -4551,7 +4569,7 @@ Administrar los Usuarios de la Solución: Esta funcionalidad debe permitir confi
 <p><br></p>
 <p><br></p>
 <p><br></p>
-<div class="line-block"><strong>Versión</strong> del producto 1.3da91d3 de 28 Sep 2023</div>
+<div class="line-block"><strong>Versión</strong> del producto 1.adf8e8b de 28 Sep 2023</div>
 <div class="line-block"><strong>Presentado a</strong></div>
 <div class="line-block">Procuraduría General de la Nación (PGN)</div>
 <div class="line-block"></div>
@@ -4591,7 +4609,7 @@ Administrar los Usuarios de la Solución: Esta funcionalidad debe permitir confi
 </tr>
 <tr class="even">
 <td>Versión</td>
-<td>1.3da91d3 del 28 Sep 2023</td>
+<td>1.adf8e8b del 28 Sep 2023</td>
 </tr>
 <tr class="odd">
 <td>Vínculos</td>
