@@ -1,4 +1,8 @@
 # Actualiza documentos MD generados por Archi
 
-mv $1/*.md content/
-mv $1/images/*.png content/images/
+# MD
+mv $1/*.md $2/content/
+mv $1/images/*.png $2/content/images/
+
+# HTML
+mv $3/*.html $2/content/webpages
