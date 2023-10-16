@@ -1,3 +1,9 @@
-#/Applications/Archi.app/Contents/MacOS/Archi -application com.archimatetool.commandline.app -consoleLog -nosplash --modelrepository.loadModel $1/$2/pgn-078-arq $1/jarchi-hwo/hwo/$3 -vistaDocumental $4
+# $1: ruta usuario
+# $2: ruta y modelo arq
+# $3: ruta programas ajs
 
-/Applications/Archi.app/Contents/MacOS/Archi -application com.archimatetool.commandline.app -consoleLog -nosplash --modelrepository.loadModel $1/$2/pgn-078-arq --script.runScript $1/jarchi-hwo/hwo/$3 -vistaDocumental $4
+# markdownDrivingViews-devdocsCLI
+/Applications/Archi.app/Contents/MacOS/Archi -application com.archimatetool.commandline.app -consoleLog -nosplash --modelrepository.loadModel $1/$2 --script.runScript $1/jarchi-hwo/hwo/markdownDrivingViews-devdocsCLI.ajs -vistaDocumental $3
+
+# exportSingle-htmlCLI
+/Applications/Archi.app/Contents/MacOS/Archi -application com.archimatetool.commandline.app -consoleLog -nosplash --modelrepository.loadModel $1/$2 --script.runScript $1/jarchi-hwo/hwo/exportSingle-htmlCLI.ajs -vistaDocumental $3

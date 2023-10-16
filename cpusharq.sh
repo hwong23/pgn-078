@@ -10,4 +10,3 @@ git commit -a -m "$2"
 git push
 
 git checkout main
-
