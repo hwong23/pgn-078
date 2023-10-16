@@ -18,8 +18,8 @@ header-includes: |
   <meta name="dc.date" content="2023-10-16" />
   <meta name="citation_publication_date" content="2023-10-16" />
   <meta property="article:published_time" content="2023-10-16" />
-  <meta name="dc.modified" content="2023-10-16T03:16:54+00:00" />
-  <meta property="article:modified_time" content="2023-10-16T03:16:54+00:00" />
+  <meta name="dc.modified" content="2023-10-16T03:54:44+00:00" />
+  <meta property="article:modified_time" content="2023-10-16T03:54:44+00:00" />
   <meta name="dc.language" content="en-US" />
   <meta name="citation_language" content="en-US" />
   <meta name="dc.relation.ispartof" content="Manubot" />
@@ -34,9 +34,9 @@ header-includes: |
   <meta name="citation_fulltext_html_url" content="https://hwong23.github.io/pgn-078/" />
   <meta name="citation_pdf_url" content="https://hwong23.github.io/pgn-078/manuscript.pdf" />
   <link rel="alternate" type="application/pdf" href="https://hwong23.github.io/pgn-078/manuscript.pdf" />
-  <link rel="alternate" type="text/html" href="https://hwong23.github.io/pgn-078/v/f523c6fa3680f9911cf77b063b0145d15eb88d7e/" />
-  <meta name="manubot_html_url_versioned" content="https://hwong23.github.io/pgn-078/v/f523c6fa3680f9911cf77b063b0145d15eb88d7e/" />
-  <meta name="manubot_pdf_url_versioned" content="https://hwong23.github.io/pgn-078/v/f523c6fa3680f9911cf77b063b0145d15eb88d7e/manuscript.pdf" />
+  <link rel="alternate" type="text/html" href="https://hwong23.github.io/pgn-078/v/c2280dcd9f706ce25eebbb1417ffb4f6b53d6264/" />
+  <meta name="manubot_html_url_versioned" content="https://hwong23.github.io/pgn-078/v/c2280dcd9f706ce25eebbb1417ffb4f6b53d6264/" />
+  <meta name="manubot_pdf_url_versioned" content="https://hwong23.github.io/pgn-078/v/c2280dcd9f706ce25eebbb1417ffb4f6b53d6264/manuscript.pdf" />
   <meta property="og:type" content="article" />
   <meta property="twitter:card" content="summary_large_image" />
   <link rel="icon" type="image/png" sizes="192x192" href="https://manubot.org/favicon-192x192.png" />
@@ -77,7 +77,7 @@ tablenos-caption-name: Tabla
 
 <br>
 
-| **Versión** del producto 1.f523c6f de 16 Oct 2023
+| **Versión** del producto 1.c2280dc de 16 Oct 2023
 
 | **Presentado a**
 
@@ -95,9 +95,9 @@ tablenos-caption-name: Tabla
 
 
 <small><em>Los productos de esta etapa, Migración Funcional SIU, Contrato 078-2023, 
-([Web](https://hwong23.github.io/pgn-078/v/f523c6fa3680f9911cf77b063b0145d15eb88d7e/))
+([Web](https://hwong23.github.io/pgn-078/v/c2280dcd9f706ce25eebbb1417ffb4f6b53d6264/))
 están basados en el resultado de la Fase 1 del proyecto PGN SIU del 2022,
-[Sharepoint Softgic@f523c6f](http://softgic.sharepoint.com)
+[Sharepoint Softgic@c2280dc](http://softgic.sharepoint.com)
 del October 16, 2023.
 </em></small>
 
@@ -143,7 +143,7 @@ Descripción de los productos del trabajo de arquitectura de la Fase 2, proyecto
 | Palabras clave | SIU, Softgic, PGN, Análisis de brecha, GAP, Comparativa              |
 | Autor          |                            |
 | Fuente         |                            |
-| Versión        | 1.f523c6f del 16 Oct 2023 |
+| Versión        | 1.c2280dc del 16 Oct 2023 |
 | Vínculos       | [N003a Vista Segmento PGN SIU](N03a%a20Vsta%20aSegenta%20SOA%20PGN.md) |
 
 <br>
@@ -1058,6 +1058,164 @@ Table: Valoración del riesgo RSG10. Validación decisiones de arquitectura. Mig
 
 ``Generated on: Thu Sep 28 2023 12:49:24 GMT-0500 (COT)``
 
+# 1n.Doc.4.
+* [Doc Arquitectura de Software](#doc-arquitectura-de-software)
+	* [arq.1.vista integracion](#arq.1.vista-integracion)
+	* [arq.2.vista física](#arq.2.vista-física)
+	* [arq.3.vista motivadores](#arq.3.vista-motivadores)
+	* [arq.4.vista interoperabilidad](#arq.4.vista-interoperabilidad)
+	* [arq.5.vista seguridad](#arq.5.vista-seguridad)
+	* [arq.6.vista clases y compn](#arq.6.vista-clases-y-compn)
+	* [arq.7.vista ci](#arq.7.vista-ci)
+	* [arq.8.vista tecnología](#arq.8.vista-tecnología)
+* [Grouping](#grouping)
+	* [dat.1.](#dat.1.)
+	* [dat.2.](#dat.2.)
+	* [dat.3.](#dat.3.)
+	* [dat.4.](#dat.4.)
+	* [dat.5.](#dat.5.)
+* [Grouping (copy)](#grouping-copy)
+	* [tec.1.](#tec.1.)
+	* [tec.2.](#tec.2.)
+* [Grouping (copy) (copy)](#grouping-copy-copy)
+	* [seg.1.](#seg.1.)
+	* [seg.2.](#seg.2.)
+
+<div style="page-break-before: always;"></div>
+\newpage
+
+# Doc Arquitectura de Software
+## arq.1.vista integracion
+![Diagram: arq.1.vista integracion](images/arq.1.vistaintegracion.png){#fig:arq.1.vistaintegracion width=}
+
+### Catálogo de Elementos
+| Name| Type| Description| Properties
+|:--------|:--------|:--------|:--------|
+
+## arq.2.vista física
+![Diagram: arq.2.vista física](images/arq.2.vistafísica.png){#fig:arq.2.vistafísica width=}
+
+### Catálogo de Elementos
+| Name| Type| Description| Properties
+|:--------|:--------|:--------|:--------|
+
+## arq.3.vista motivadores
+![Diagram: arq.3.vista motivadores](images/arq.3.vistamotivadores.png){#fig:arq.3.vistamotivadores width=}
+
+### Catálogo de Elementos
+| Name| Type| Description| Properties
+|:--------|:--------|:--------|:--------|
+
+## arq.4.vista interoperabilidad
+![Diagram: arq.4.vista interoperabilidad](images/arq.4.vistainteroperabilidad.png){#fig:arq.4.vistainteroperabilidad width=}
+
+### Catálogo de Elementos
+| Name| Type| Description| Properties
+|:--------|:--------|:--------|:--------|
+
+## arq.5.vista seguridad
+![Diagram: arq.5.vista seguridad](images/arq.5.vistaseguridad.png){#fig:arq.5.vistaseguridad width=}
+
+### Catálogo de Elementos
+| Name| Type| Description| Properties
+|:--------|:--------|:--------|:--------|
+
+## arq.6.vista clases y compn
+![Diagram: arq.6.vista clases y compn](images/arq.6.vistaclasesycompn.png){#fig:arq.6.vistaclasesycompn width=}
+
+### Catálogo de Elementos
+| Name| Type| Description| Properties
+|:--------|:--------|:--------|:--------|
+
+## arq.7.vista ci
+![Diagram: arq.7.vista ci](images/arq.7.vistaci.png){#fig:arq.7.vistaci width=}
+
+### Catálogo de Elementos
+| Name| Type| Description| Properties
+|:--------|:--------|:--------|:--------|
+
+## arq.8.vista tecnología
+![Diagram: arq.8.vista tecnología](images/arq.8.vistatecnología.png){#fig:arq.8.vistatecnología width=}
+
+### Catálogo de Elementos
+| Name| Type| Description| Properties
+|:--------|:--------|:--------|:--------|
+<div style="page-break-before: always;"></div>
+\newpage
+
+# Grouping
+## dat.1.
+![Diagram: dat.1.](images/dat.1..png){#fig:dat.1. width=}
+
+### Catálogo de Elementos
+| Name| Type| Description| Properties
+|:--------|:--------|:--------|:--------|
+
+## dat.2.
+![Diagram: dat.2.](images/dat.2..png){#fig:dat.2. width=}
+
+### Catálogo de Elementos
+| Name| Type| Description| Properties
+|:--------|:--------|:--------|:--------|
+
+## dat.3.
+![Diagram: dat.3.](images/dat.3..png){#fig:dat.3. width=}
+
+### Catálogo de Elementos
+| Name| Type| Description| Properties
+|:--------|:--------|:--------|:--------|
+
+## dat.4.
+![Diagram: dat.4.](images/dat.4..png){#fig:dat.4. width=}
+
+### Catálogo de Elementos
+| Name| Type| Description| Properties
+|:--------|:--------|:--------|:--------|
+
+## dat.5.
+![Diagram: dat.5.](images/dat.5..png){#fig:dat.5. width=}
+
+### Catálogo de Elementos
+| Name| Type| Description| Properties
+|:--------|:--------|:--------|:--------|
+<div style="page-break-before: always;"></div>
+\newpage
+
+# Grouping (copy)
+## tec.1.
+![Diagram: tec.1.](images/tec.1..png){#fig:tec.1. width=}
+
+### Catálogo de Elementos
+| Name| Type| Description| Properties
+|:--------|:--------|:--------|:--------|
+
+## tec.2.
+![Diagram: tec.2.](images/tec.2..png){#fig:tec.2. width=}
+
+### Catálogo de Elementos
+| Name| Type| Description| Properties
+|:--------|:--------|:--------|:--------|
+<div style="page-break-before: always;"></div>
+\newpage
+
+# Grouping (copy) (copy)
+## seg.1.
+![Diagram: seg.1.](images/seg.1..png){#fig:seg.1. width=}
+
+### Catálogo de Elementos
+| Name| Type| Description| Properties
+|:--------|:--------|:--------|:--------|
+
+## seg.2.
+![Diagram: seg.2.](images/seg.2..png){#fig:seg.2. width=}
+
+### Catálogo de Elementos
+| Name| Type| Description| Properties
+|:--------|:--------|:--------|:--------|
+
+
+``Generated on: Sun Oct 15 2023 22:51:57 GMT-0500 (COT)``
+
 ## Requerimientos de Administración
 1.	Las soluciones deben permitir la administración de los Roles de Usuarios: esta funcionalidad debe permitir configurar los diferentes roles de los usuarios funcionales de los procesos. 
 2.	Administrar los Perfiles de acceso por rol: Esta funcionalidad permitirá configurar a que funcionalidades u opciones de la solución puede entrar un usuario con un rol específico. 
@@ -1131,7 +1289,7 @@ tablenos-caption-name: Tabla
 
 <br>
 
-| **Versión** del producto 1.f523c6f de 16 Oct 2023
+| **Versión** del producto 1.c2280dc de 16 Oct 2023
 
 | **Presentado a**
 
@@ -1160,7 +1318,7 @@ Descripción de los productos del trabajo de infraestructura del proyecto Migrac
 | Palabras clave | SIU, Softgic, PGN, Análisis de brecha, GAP, Infraestrctura, PasS |
 | Autor          |                            |
 | Fuente         |                            |
-| Versión        | 1.f523c6f del 16 Oct 2023 |
+| Versión        | 1.c2280dc del 16 Oct 2023 |
 | Vínculos       | [N003a Vista Segmento PGN SIU](N03a%a20Vsta%20aSegenta%20SOA%20PGN.md) |
 
 <br>
@@ -1349,7 +1507,7 @@ tablenos-caption-name: Tabla
 
 <br>
 
-| **Versión** del producto 1.f523c6f de 16 Oct 2023
+| **Versión** del producto 1.c2280dc de 16 Oct 2023
 
 | **Presentado a**
 
@@ -1379,7 +1537,7 @@ Descripción de los productos de trabajo de la arquitectura de datos del proyect
 | Palabras clave | SIU, Softgic, PGN, Análisis de brecha, GAP, Entidades, Datos  |
 | Autor          |                            |
 | Fuente         |                            |
-| Versión        | 1.f523c6f del 16 Oct 2023 |
+| Versión        | 1.c2280dc del 16 Oct 2023 |
 | Vínculos       | [N003a Vista Segmento PGN SIU](N03a%a20Vsta%20aSegenta%20SOA%20PGN.md) |
 
 <br>
