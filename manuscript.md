@@ -18,8 +18,8 @@ header-includes: |
   <meta name="dc.date" content="2023-10-16" />
   <meta name="citation_publication_date" content="2023-10-16" />
   <meta property="article:published_time" content="2023-10-16" />
-  <meta name="dc.modified" content="2023-10-16T03:54:44+00:00" />
-  <meta property="article:modified_time" content="2023-10-16T03:54:44+00:00" />
+  <meta name="dc.modified" content="2023-10-16T04:03:24+00:00" />
+  <meta property="article:modified_time" content="2023-10-16T04:03:24+00:00" />
   <meta name="dc.language" content="en-US" />
   <meta name="citation_language" content="en-US" />
   <meta name="dc.relation.ispartof" content="Manubot" />
@@ -34,9 +34,9 @@ header-includes: |
   <meta name="citation_fulltext_html_url" content="https://hwong23.github.io/pgn-078/" />
   <meta name="citation_pdf_url" content="https://hwong23.github.io/pgn-078/manuscript.pdf" />
   <link rel="alternate" type="application/pdf" href="https://hwong23.github.io/pgn-078/manuscript.pdf" />
-  <link rel="alternate" type="text/html" href="https://hwong23.github.io/pgn-078/v/c2280dcd9f706ce25eebbb1417ffb4f6b53d6264/" />
-  <meta name="manubot_html_url_versioned" content="https://hwong23.github.io/pgn-078/v/c2280dcd9f706ce25eebbb1417ffb4f6b53d6264/" />
-  <meta name="manubot_pdf_url_versioned" content="https://hwong23.github.io/pgn-078/v/c2280dcd9f706ce25eebbb1417ffb4f6b53d6264/manuscript.pdf" />
+  <link rel="alternate" type="text/html" href="https://hwong23.github.io/pgn-078/v/11425fcb3910777c396f3c1a6d5179ff9771d1ec/" />
+  <meta name="manubot_html_url_versioned" content="https://hwong23.github.io/pgn-078/v/11425fcb3910777c396f3c1a6d5179ff9771d1ec/" />
+  <meta name="manubot_pdf_url_versioned" content="https://hwong23.github.io/pgn-078/v/11425fcb3910777c396f3c1a6d5179ff9771d1ec/manuscript.pdf" />
   <meta property="og:type" content="article" />
   <meta property="twitter:card" content="summary_large_image" />
   <link rel="icon" type="image/png" sizes="192x192" href="https://manubot.org/favicon-192x192.png" />
@@ -77,7 +77,7 @@ tablenos-caption-name: Tabla
 
 <br>
 
-| **Versión** del producto 1.c2280dc de 16 Oct 2023
+| **Versión** del producto 1.11425fc de 16 Oct 2023
 
 | **Presentado a**
 
@@ -95,9 +95,9 @@ tablenos-caption-name: Tabla
 
 
 <small><em>Los productos de esta etapa, Migración Funcional SIU, Contrato 078-2023, 
-([Web](https://hwong23.github.io/pgn-078/v/c2280dcd9f706ce25eebbb1417ffb4f6b53d6264/))
+([Web](https://hwong23.github.io/pgn-078/v/11425fcb3910777c396f3c1a6d5179ff9771d1ec/))
 están basados en el resultado de la Fase 1 del proyecto PGN SIU del 2022,
-[Sharepoint Softgic@c2280dc](http://softgic.sharepoint.com)
+[Sharepoint Softgic@11425fc](http://softgic.sharepoint.com)
 del October 16, 2023.
 </em></small>
 
@@ -143,7 +143,7 @@ Descripción de los productos del trabajo de arquitectura de la Fase 2, proyecto
 | Palabras clave | SIU, Softgic, PGN, Análisis de brecha, GAP, Comparativa              |
 | Autor          |                            |
 | Fuente         |                            |
-| Versión        | 1.c2280dc del 16 Oct 2023 |
+| Versión        | 1.11425fc del 16 Oct 2023 |
 | Vínculos       | [N003a Vista Segmento PGN SIU](N03a%a20Vsta%20aSegenta%20SOA%20PGN.md) |
 
 <br>
@@ -1214,7 +1214,7 @@ Table: Valoración del riesgo RSG10. Validación decisiones de arquitectura. Mig
 |:--------|:--------|:--------|:--------|
 
 
-``Generated on: Sun Oct 15 2023 22:51:57 GMT-0500 (COT)``
+``Generated on: Sun Oct 15 2023 23:01:06 GMT-0500 (COT)``
 
 ## Requerimientos de Administración
 1.	Las soluciones deben permitir la administración de los Roles de Usuarios: esta funcionalidad debe permitir configurar los diferentes roles de los usuarios funcionales de los procesos. 
@@ -1289,7 +1289,7 @@ tablenos-caption-name: Tabla
 
 <br>
 
-| **Versión** del producto 1.c2280dc de 16 Oct 2023
+| **Versión** del producto 1.11425fc de 16 Oct 2023
 
 | **Presentado a**
 
@@ -1318,7 +1318,7 @@ Descripción de los productos del trabajo de infraestructura del proyecto Migrac
 | Palabras clave | SIU, Softgic, PGN, Análisis de brecha, GAP, Infraestrctura, PasS |
 | Autor          |                            |
 | Fuente         |                            |
-| Versión        | 1.c2280dc del 16 Oct 2023 |
+| Versión        | 1.11425fc del 16 Oct 2023 |
 | Vínculos       | [N003a Vista Segmento PGN SIU](N03a%a20Vsta%20aSegenta%20SOA%20PGN.md) |
 
 <br>
@@ -1507,7 +1507,7 @@ tablenos-caption-name: Tabla
 
 <br>
 
-| **Versión** del producto 1.c2280dc de 16 Oct 2023
+| **Versión** del producto 1.11425fc de 16 Oct 2023
 
 | **Presentado a**
 
@@ -1537,7 +1537,7 @@ Descripción de los productos de trabajo de la arquitectura de datos del proyect
 | Palabras clave | SIU, Softgic, PGN, Análisis de brecha, GAP, Entidades, Datos  |
 | Autor          |                            |
 | Fuente         |                            |
-| Versión        | 1.c2280dc del 16 Oct 2023 |
+| Versión        | 1.11425fc del 16 Oct 2023 |
 | Vínculos       | [N003a Vista Segmento PGN SIU](N03a%a20Vsta%20aSegenta%20SOA%20PGN.md) |
 
 <br>
