@@ -49,8 +49,8 @@
   <meta name="dc.date" content="2023-10-16" />
   <meta name="citation_publication_date" content="2023-10-16" />
   <meta property="article:published_time" content="2023-10-16" />
-  <meta name="dc.modified" content="2023-10-16T03:16:54+00:00" />
-  <meta property="article:modified_time" content="2023-10-16T03:16:54+00:00" />
+  <meta name="dc.modified" content="2023-10-16T03:54:44+00:00" />
+  <meta property="article:modified_time" content="2023-10-16T03:54:44+00:00" />
   <meta name="dc.language" content="en-US" />
   <meta name="citation_language" content="en-US" />
   <meta name="dc.relation.ispartof" content="Manubot" />
@@ -65,9 +65,9 @@
   <meta name="citation_fulltext_html_url" content="https://hwong23.github.io/pgn-078/" />
   <meta name="citation_pdf_url" content="https://hwong23.github.io/pgn-078/manuscript.pdf" />
   <link rel="alternate" type="application/pdf" href="https://hwong23.github.io/pgn-078/manuscript.pdf" />
-  <link rel="alternate" type="text/html" href="https://hwong23.github.io/pgn-078/v/f523c6fa3680f9911cf77b063b0145d15eb88d7e/" />
-  <meta name="manubot_html_url_versioned" content="https://hwong23.github.io/pgn-078/v/f523c6fa3680f9911cf77b063b0145d15eb88d7e/" />
-  <meta name="manubot_pdf_url_versioned" content="https://hwong23.github.io/pgn-078/v/f523c6fa3680f9911cf77b063b0145d15eb88d7e/manuscript.pdf" />
+  <link rel="alternate" type="text/html" href="https://hwong23.github.io/pgn-078/v/c2280dcd9f706ce25eebbb1417ffb4f6b53d6264/" />
+  <meta name="manubot_html_url_versioned" content="https://hwong23.github.io/pgn-078/v/c2280dcd9f706ce25eebbb1417ffb4f6b53d6264/" />
+  <meta name="manubot_pdf_url_versioned" content="https://hwong23.github.io/pgn-078/v/c2280dcd9f706ce25eebbb1417ffb4f6b53d6264/manuscript.pdf" />
   <meta property="og:type" content="article" />
   <meta property="twitter:card" content="summary_large_image" />
   <link rel="icon" type="image/png" sizes="192x192" href="https://manubot.org/favicon-192x192.png" />
@@ -89,7 +89,7 @@
 <p><br></p>
 <p><br></p>
 <p><br></p>
-<div class="line-block"><strong>Versión</strong> del producto 1.f523c6f de 16 Oct 2023</div>
+<div class="line-block"><strong>Versión</strong> del producto 1.c2280dc de 16 Oct 2023</div>
 <div class="line-block"><strong>Presentado a</strong></div>
 <div class="line-block">Procuraduría General de la Nación (PGN)</div>
 <div class="line-block"></div>
@@ -99,9 +99,9 @@
 
 </div>
 <p><small><em>Los productos de esta etapa, Migración Funcional SIU, Contrato 078-2023,
-(<a href="https://hwong23.github.io/pgn-078/v/f523c6fa3680f9911cf77b063b0145d15eb88d7e/">Web</a>)
+(<a href="https://hwong23.github.io/pgn-078/v/c2280dcd9f706ce25eebbb1417ffb4f6b53d6264/">Web</a>)
 están basados en el resultado de la Fase 1 del proyecto PGN SIU del 2022,
-<a href="http://softgic.sharepoint.com">Sharepoint Softgic@f523c6f</a>
+<a href="http://softgic.sharepoint.com">Sharepoint Softgic@c2280dc</a>
 del October 16, 2023.
 </em></small></p>
 <p><br></p>
@@ -150,7 +150,7 @@ Arquitecto, Softgic
 </tr>
 <tr class="even">
 <td>Versión</td>
-<td>1.f523c6f del 16 Oct 2023</td>
+<td>1.c2280dc del 16 Oct 2023</td>
 </tr>
 <tr class="odd">
 <td>Vínculos</td>
@@ -3824,6 +3824,395 @@ Arquitecto, Softgic
 </tbody>
 </table>
 <p><code>Generated on: Thu Sep 28 2023 12:49:24 GMT-0500 (COT)</code></p>
+<h1 id="n.doc.4.">1n.Doc.4.</h1>
+<ul>
+<li><a href="#doc-arquitectura-de-software">Doc Arquitectura de Software</a>
+<ul>
+<li><a href="#arq.1.vista-integracion">arq.1.vista integracion</a></li>
+<li><a href="#arq.2.vista-física">arq.2.vista física</a></li>
+<li><a href="#arq.3.vista-motivadores">arq.3.vista motivadores</a></li>
+<li><a href="#arq.4.vista-interoperabilidad">arq.4.vista interoperabilidad</a></li>
+<li><a href="#arq.5.vista-seguridad">arq.5.vista seguridad</a></li>
+<li><a href="#arq.6.vista-clases-y-compn">arq.6.vista clases y compn</a></li>
+<li><a href="#arq.7.vista-ci">arq.7.vista ci</a></li>
+<li><a href="#arq.8.vista-tecnología">arq.8.vista tecnología</a></li>
+</ul></li>
+<li><a href="#grouping">Grouping</a>
+<ul>
+<li><a href="#dat.1.">dat.1.</a></li>
+<li><a href="#dat.2.">dat.2.</a></li>
+<li><a href="#dat.3.">dat.3.</a></li>
+<li><a href="#dat.4.">dat.4.</a></li>
+<li><a href="#dat.5.">dat.5.</a></li>
+</ul></li>
+<li><a href="#grouping-copy">Grouping (copy)</a>
+<ul>
+<li><a href="#tec.1.">tec.1.</a></li>
+<li><a href="#tec.2.">tec.2.</a></li>
+</ul></li>
+<li><a href="#grouping-copy-copy">Grouping (copy) (copy)</a>
+<ul>
+<li><a href="#seg.1.">seg.1.</a></li>
+<li><a href="#seg.2.">seg.2.</a></li>
+</ul></li>
+</ul>
+<div style="page-break-before: always;">
+
+</div>
+<h1 id="doc-arquitectura-de-software">Doc Arquitectura de Software</h1>
+<h2 id="arq.1.vista-integracion">arq.1.vista integracion</h2>
+<div id="fig:arq.1.vistaintegracion" class="fignos">
+<figure>
+<img src="images/arq.1.vistaintegracion.png" alt="Imagen 18: Diagram: arq.1.vista integracion" />
+<figcaption aria-hidden="true"><span>Imagen 18:</span> Diagram: arq.1.vista integracion</figcaption>
+</figure>
+</div>
+<h3 id="catálogo-de-elementos-17">Catálogo de Elementos</h3>
+<table>
+<thead>
+<tr class="header">
+<th style="text-align: left;">Name</th>
+<th style="text-align: left;">Type</th>
+<th style="text-align: left;">Description</th>
+<th style="text-align: left;">Properties</th>
+</tr>
+</thead>
+<tbody>
+</tbody>
+</table>
+<h2 id="arq.2.vista-física">arq.2.vista física</h2>
+<div id="fig:arq.2.vistafísica" class="fignos">
+<figure>
+<img src="images/arq.2.vistafísica.png" alt="Imagen 19: Diagram: arq.2.vista física" />
+<figcaption aria-hidden="true"><span>Imagen 19:</span> Diagram: arq.2.vista física</figcaption>
+</figure>
+</div>
+<h3 id="catálogo-de-elementos-18">Catálogo de Elementos</h3>
+<table>
+<thead>
+<tr class="header">
+<th style="text-align: left;">Name</th>
+<th style="text-align: left;">Type</th>
+<th style="text-align: left;">Description</th>
+<th style="text-align: left;">Properties</th>
+</tr>
+</thead>
+<tbody>
+</tbody>
+</table>
+<h2 id="arq.3.vista-motivadores">arq.3.vista motivadores</h2>
+<div id="fig:arq.3.vistamotivadores" class="fignos">
+<figure>
+<img src="images/arq.3.vistamotivadores.png" alt="Imagen 20: Diagram: arq.3.vista motivadores" />
+<figcaption aria-hidden="true"><span>Imagen 20:</span> Diagram: arq.3.vista motivadores</figcaption>
+</figure>
+</div>
+<h3 id="catálogo-de-elementos-19">Catálogo de Elementos</h3>
+<table>
+<thead>
+<tr class="header">
+<th style="text-align: left;">Name</th>
+<th style="text-align: left;">Type</th>
+<th style="text-align: left;">Description</th>
+<th style="text-align: left;">Properties</th>
+</tr>
+</thead>
+<tbody>
+</tbody>
+</table>
+<h2 id="arq.4.vista-interoperabilidad">arq.4.vista interoperabilidad</h2>
+<div id="fig:arq.4.vistainteroperabilidad" class="fignos">
+<figure>
+<img src="images/arq.4.vistainteroperabilidad.png" alt="Imagen 21: Diagram: arq.4.vista interoperabilidad" />
+<figcaption aria-hidden="true"><span>Imagen 21:</span> Diagram: arq.4.vista interoperabilidad</figcaption>
+</figure>
+</div>
+<h3 id="catálogo-de-elementos-20">Catálogo de Elementos</h3>
+<table>
+<thead>
+<tr class="header">
+<th style="text-align: left;">Name</th>
+<th style="text-align: left;">Type</th>
+<th style="text-align: left;">Description</th>
+<th style="text-align: left;">Properties</th>
+</tr>
+</thead>
+<tbody>
+</tbody>
+</table>
+<h2 id="arq.5.vista-seguridad">arq.5.vista seguridad</h2>
+<div id="fig:arq.5.vistaseguridad" class="fignos">
+<figure>
+<img src="images/arq.5.vistaseguridad.png" alt="Imagen 22: Diagram: arq.5.vista seguridad" />
+<figcaption aria-hidden="true"><span>Imagen 22:</span> Diagram: arq.5.vista seguridad</figcaption>
+</figure>
+</div>
+<h3 id="catálogo-de-elementos-21">Catálogo de Elementos</h3>
+<table>
+<thead>
+<tr class="header">
+<th style="text-align: left;">Name</th>
+<th style="text-align: left;">Type</th>
+<th style="text-align: left;">Description</th>
+<th style="text-align: left;">Properties</th>
+</tr>
+</thead>
+<tbody>
+</tbody>
+</table>
+<h2 id="arq.6.vista-clases-y-compn">arq.6.vista clases y compn</h2>
+<div id="fig:arq.6.vistaclasesycompn" class="fignos">
+<figure>
+<img src="images/arq.6.vistaclasesycompn.png" alt="Imagen 23: Diagram: arq.6.vista clases y compn" />
+<figcaption aria-hidden="true"><span>Imagen 23:</span> Diagram: arq.6.vista clases y compn</figcaption>
+</figure>
+</div>
+<h3 id="catálogo-de-elementos-22">Catálogo de Elementos</h3>
+<table>
+<thead>
+<tr class="header">
+<th style="text-align: left;">Name</th>
+<th style="text-align: left;">Type</th>
+<th style="text-align: left;">Description</th>
+<th style="text-align: left;">Properties</th>
+</tr>
+</thead>
+<tbody>
+</tbody>
+</table>
+<h2 id="arq.7.vista-ci">arq.7.vista ci</h2>
+<div id="fig:arq.7.vistaci" class="fignos">
+<figure>
+<img src="images/arq.7.vistaci.png" alt="Imagen 24: Diagram: arq.7.vista ci" />
+<figcaption aria-hidden="true"><span>Imagen 24:</span> Diagram: arq.7.vista ci</figcaption>
+</figure>
+</div>
+<h3 id="catálogo-de-elementos-23">Catálogo de Elementos</h3>
+<table>
+<thead>
+<tr class="header">
+<th style="text-align: left;">Name</th>
+<th style="text-align: left;">Type</th>
+<th style="text-align: left;">Description</th>
+<th style="text-align: left;">Properties</th>
+</tr>
+</thead>
+<tbody>
+</tbody>
+</table>
+<h2 id="arq.8.vista-tecnología">arq.8.vista tecnología</h2>
+<div id="fig:arq.8.vistatecnología" class="fignos">
+<figure>
+<img src="images/arq.8.vistatecnología.png" alt="Imagen 25: Diagram: arq.8.vista tecnología" />
+<figcaption aria-hidden="true"><span>Imagen 25:</span> Diagram: arq.8.vista tecnología</figcaption>
+</figure>
+</div>
+<h3 id="catálogo-de-elementos-24">Catálogo de Elementos</h3>
+<table>
+<thead>
+<tr class="header">
+<th style="text-align: left;">Name</th>
+<th style="text-align: left;">Type</th>
+<th style="text-align: left;">Description</th>
+<th style="text-align: left;">Properties</th>
+</tr>
+</thead>
+<tbody>
+</tbody>
+</table>
+<div style="page-break-before: always;">
+
+</div>
+<h1 id="grouping">Grouping</h1>
+<h2 id="dat.1.">dat.1.</h2>
+<div id="fig:dat.1." class="fignos">
+<figure>
+<img src="images/dat.1..png" alt="Imagen 26: Diagram: dat.1." />
+<figcaption aria-hidden="true"><span>Imagen 26:</span> Diagram: dat.1.</figcaption>
+</figure>
+</div>
+<h3 id="catálogo-de-elementos-25">Catálogo de Elementos</h3>
+<table>
+<thead>
+<tr class="header">
+<th style="text-align: left;">Name</th>
+<th style="text-align: left;">Type</th>
+<th style="text-align: left;">Description</th>
+<th style="text-align: left;">Properties</th>
+</tr>
+</thead>
+<tbody>
+</tbody>
+</table>
+<h2 id="dat.2.">dat.2.</h2>
+<div id="fig:dat.2." class="fignos">
+<figure>
+<img src="images/dat.2..png" alt="Imagen 27: Diagram: dat.2." />
+<figcaption aria-hidden="true"><span>Imagen 27:</span> Diagram: dat.2.</figcaption>
+</figure>
+</div>
+<h3 id="catálogo-de-elementos-26">Catálogo de Elementos</h3>
+<table>
+<thead>
+<tr class="header">
+<th style="text-align: left;">Name</th>
+<th style="text-align: left;">Type</th>
+<th style="text-align: left;">Description</th>
+<th style="text-align: left;">Properties</th>
+</tr>
+</thead>
+<tbody>
+</tbody>
+</table>
+<h2 id="dat.3.">dat.3.</h2>
+<div id="fig:dat.3." class="fignos">
+<figure>
+<img src="images/dat.3..png" alt="Imagen 28: Diagram: dat.3." />
+<figcaption aria-hidden="true"><span>Imagen 28:</span> Diagram: dat.3.</figcaption>
+</figure>
+</div>
+<h3 id="catálogo-de-elementos-27">Catálogo de Elementos</h3>
+<table>
+<thead>
+<tr class="header">
+<th style="text-align: left;">Name</th>
+<th style="text-align: left;">Type</th>
+<th style="text-align: left;">Description</th>
+<th style="text-align: left;">Properties</th>
+</tr>
+</thead>
+<tbody>
+</tbody>
+</table>
+<h2 id="dat.4.">dat.4.</h2>
+<div id="fig:dat.4." class="fignos">
+<figure>
+<img src="images/dat.4..png" alt="Imagen 29: Diagram: dat.4." />
+<figcaption aria-hidden="true"><span>Imagen 29:</span> Diagram: dat.4.</figcaption>
+</figure>
+</div>
+<h3 id="catálogo-de-elementos-28">Catálogo de Elementos</h3>
+<table>
+<thead>
+<tr class="header">
+<th style="text-align: left;">Name</th>
+<th style="text-align: left;">Type</th>
+<th style="text-align: left;">Description</th>
+<th style="text-align: left;">Properties</th>
+</tr>
+</thead>
+<tbody>
+</tbody>
+</table>
+<h2 id="dat.5.">dat.5.</h2>
+<div id="fig:dat.5." class="fignos">
+<figure>
+<img src="images/dat.5..png" alt="Imagen 30: Diagram: dat.5." />
+<figcaption aria-hidden="true"><span>Imagen 30:</span> Diagram: dat.5.</figcaption>
+</figure>
+</div>
+<h3 id="catálogo-de-elementos-29">Catálogo de Elementos</h3>
+<table>
+<thead>
+<tr class="header">
+<th style="text-align: left;">Name</th>
+<th style="text-align: left;">Type</th>
+<th style="text-align: left;">Description</th>
+<th style="text-align: left;">Properties</th>
+</tr>
+</thead>
+<tbody>
+</tbody>
+</table>
+<div style="page-break-before: always;">
+
+</div>
+<h1 id="grouping-copy">Grouping (copy)</h1>
+<h2 id="tec.1.">tec.1.</h2>
+<div id="fig:tec.1." class="fignos">
+<figure>
+<img src="images/tec.1..png" alt="Imagen 31: Diagram: tec.1." />
+<figcaption aria-hidden="true"><span>Imagen 31:</span> Diagram: tec.1.</figcaption>
+</figure>
+</div>
+<h3 id="catálogo-de-elementos-30">Catálogo de Elementos</h3>
+<table>
+<thead>
+<tr class="header">
+<th style="text-align: left;">Name</th>
+<th style="text-align: left;">Type</th>
+<th style="text-align: left;">Description</th>
+<th style="text-align: left;">Properties</th>
+</tr>
+</thead>
+<tbody>
+</tbody>
+</table>
+<h2 id="tec.2.">tec.2.</h2>
+<div id="fig:tec.2." class="fignos">
+<figure>
+<img src="images/tec.2..png" alt="Imagen 32: Diagram: tec.2." />
+<figcaption aria-hidden="true"><span>Imagen 32:</span> Diagram: tec.2.</figcaption>
+</figure>
+</div>
+<h3 id="catálogo-de-elementos-31">Catálogo de Elementos</h3>
+<table>
+<thead>
+<tr class="header">
+<th style="text-align: left;">Name</th>
+<th style="text-align: left;">Type</th>
+<th style="text-align: left;">Description</th>
+<th style="text-align: left;">Properties</th>
+</tr>
+</thead>
+<tbody>
+</tbody>
+</table>
+<div style="page-break-before: always;">
+
+</div>
+<h1 id="grouping-copy-copy">Grouping (copy) (copy)</h1>
+<h2 id="seg.1.">seg.1.</h2>
+<div id="fig:seg.1." class="fignos">
+<figure>
+<img src="images/seg.1..png" alt="Imagen 33: Diagram: seg.1." />
+<figcaption aria-hidden="true"><span>Imagen 33:</span> Diagram: seg.1.</figcaption>
+</figure>
+</div>
+<h3 id="catálogo-de-elementos-32">Catálogo de Elementos</h3>
+<table>
+<thead>
+<tr class="header">
+<th style="text-align: left;">Name</th>
+<th style="text-align: left;">Type</th>
+<th style="text-align: left;">Description</th>
+<th style="text-align: left;">Properties</th>
+</tr>
+</thead>
+<tbody>
+</tbody>
+</table>
+<h2 id="seg.2.">seg.2.</h2>
+<div id="fig:seg.2." class="fignos">
+<figure>
+<img src="images/seg.2..png" alt="Imagen 34: Diagram: seg.2." />
+<figcaption aria-hidden="true"><span>Imagen 34:</span> Diagram: seg.2.</figcaption>
+</figure>
+</div>
+<h3 id="catálogo-de-elementos-33">Catálogo de Elementos</h3>
+<table>
+<thead>
+<tr class="header">
+<th style="text-align: left;">Name</th>
+<th style="text-align: left;">Type</th>
+<th style="text-align: left;">Description</th>
+<th style="text-align: left;">Properties</th>
+</tr>
+</thead>
+<tbody>
+</tbody>
+</table>
+<p><code>Generated on: Sun Oct 15 2023 22:51:57 GMT-0500 (COT)</code></p>
 <h2 id="requerimientos-de-administración">Requerimientos de Administración</h2>
 <ol type="1">
 <li>Las soluciones deben permitir la administración de los Roles de Usuarios: esta funcionalidad debe permitir configurar los diferentes roles de los usuarios funcionales de los procesos.</li>
@@ -3877,7 +4266,7 @@ Administrar los Usuarios de la Solución: Esta funcionalidad debe permitir confi
 <p><br></p>
 <p><br></p>
 <p><br></p>
-<div class="line-block"><strong>Versión</strong> del producto 1.f523c6f de 16 Oct 2023</div>
+<div class="line-block"><strong>Versión</strong> del producto 1.c2280dc de 16 Oct 2023</div>
 <div class="line-block"><strong>Presentado a</strong></div>
 <div class="line-block">Procuraduría General de la Nación (PGN)</div>
 <div class="line-block"></div>
@@ -3917,7 +4306,7 @@ Administrar los Usuarios de la Solución: Esta funcionalidad debe permitir confi
 </tr>
 <tr class="even">
 <td>Versión</td>
-<td>1.f523c6f del 16 Oct 2023</td>
+<td>1.c2280dc del 16 Oct 2023</td>
 </tr>
 <tr class="odd">
 <td>Vínculos</td>
@@ -3946,8 +4335,8 @@ Administrar los Usuarios de la Solución: Esta funcionalidad debe permitir confi
 <h2 id="lineabase.1a.siu-componentes.-infraestrcutura-1">Lineabase.1a.SIU componentes. infraestrcutura</h2>
 <div id="fig:Lineabase.1a.SIUcomponentes.infraestrcutura" class="fignos">
 <figure>
-<img src="images/Lineabase.1a.SIUcomponentes.infraestrcutura.png" alt="Imagen 18: Diagram: Lineabase.1a.SIU componentes. infraestrcutura" />
-<figcaption aria-hidden="true"><span>Imagen 18:</span> Diagram: Lineabase.1a.SIU componentes. infraestrcutura</figcaption>
+<img src="images/Lineabase.1a.SIUcomponentes.infraestrcutura.png" alt="Imagen 35: Diagram: Lineabase.1a.SIU componentes. infraestrcutura" />
+<figcaption aria-hidden="true"><span>Imagen 35:</span> Diagram: Lineabase.1a.SIU componentes. infraestrcutura</figcaption>
 </figure>
 </div>
 <p>Dependencias de infraestructura entre los servicios que integran el modelo de aplicación de SUI, Migración.</p>
@@ -3958,7 +4347,7 @@ Administrar los Usuarios de la Solución: Esta funcionalidad debe permitir confi
 <li>Servidor BDD App (Transaccional)</li>
 <li>Servidor BDD Config (Configuración)</li>
 </ul>
-<h3 id="catálogo-de-elementos-17">Catálogo de Elementos</h3>
+<h3 id="catálogo-de-elementos-34">Catálogo de Elementos</h3>
 <table>
 <colgroup>
 <col style="width: 25%" />
@@ -4196,8 +4585,8 @@ Administrar los Usuarios de la Solución: Esta funcionalidad debe permitir confi
 <h2 id="lineabase.0.siu-applicación.-física">Lineabase.0.SIU applicación. física</h2>
 <div id="fig:Lineabase.0.SIUapplicación.física" class="fignos">
 <figure>
-<img src="images/Lineabase.0.SIUapplicación.física.png" alt="Imagen 19: Diagram: Lineabase.0.SIU applicación. física" />
-<figcaption aria-hidden="true"><span>Imagen 19:</span> Diagram: Lineabase.0.SIU applicación. física</figcaption>
+<img src="images/Lineabase.0.SIUapplicación.física.png" alt="Imagen 36: Diagram: Lineabase.0.SIU applicación. física" />
+<figcaption aria-hidden="true"><span>Imagen 36:</span> Diagram: Lineabase.0.SIU applicación. física</figcaption>
 </figure>
 </div>
 <h2 id="representación-arquitectónica-1">Representación Arquitectónica</h2>
@@ -4207,7 +4596,7 @@ Administrar los Usuarios de la Solución: Esta funcionalidad debe permitir confi
 <li>API Tx: Servicio api rest base node encargado de realizar las transacciones básicas CRUD</li>
 <li>API Config / Seguridad. Servicio Web API .Net Framework encargado de gestionar características con la autenticación y configuración</li>
 </ol>
-<h3 id="catálogo-de-elementos-18">Catálogo de Elementos</h3>
+<h3 id="catálogo-de-elementos-35">Catálogo de Elementos</h3>
 <table>
 <colgroup>
 <col style="width: 25%" />
@@ -4349,8 +4738,8 @@ Administrar los Usuarios de la Solución: Esta funcionalidad debe permitir confi
 <h2 id="seguridad.-lineabase.0.siu-applicación">Seguridad. Lineabase.0.SIU applicación</h2>
 <div id="fig:Seguridad.Lineabase.0.SIUapplicación" class="fignos">
 <figure>
-<img src="images/Seguridad.Lineabase.0.SIUapplicación.png" alt="Imagen 20: Diagram: Seguridad. Lineabase.0.SIU applicación" />
-<figcaption aria-hidden="true"><span>Imagen 20:</span> Diagram: Seguridad. Lineabase.0.SIU applicación</figcaption>
+<img src="images/Seguridad.Lineabase.0.SIUapplicación.png" alt="Imagen 37: Diagram: Seguridad. Lineabase.0.SIU applicación" />
+<figcaption aria-hidden="true"><span>Imagen 37:</span> Diagram: Seguridad. Lineabase.0.SIU applicación</figcaption>
 </figure>
 </div>
 <h2 id="representación-arquitectónica-2">Representación Arquitectónica</h2>
@@ -4360,7 +4749,7 @@ Administrar los Usuarios de la Solución: Esta funcionalidad debe permitir confi
 <li>API Tx: Servicio api rest base node encargado de realizar las transacciones básicas CRUD</li>
 <li>API Config / Seguridad. Servicio Web API .Net Framework encargado de gestionar características con la autenticación y configuración</li>
 </ol>
-<h3 id="catálogo-de-elementos-19">Catálogo de Elementos</h3>
+<h3 id="catálogo-de-elementos-36">Catálogo de Elementos</h3>
 <table>
 <colgroup>
 <col style="width: 25%" />
@@ -4569,7 +4958,7 @@ Administrar los Usuarios de la Solución: Esta funcionalidad debe permitir confi
 <p><br></p>
 <p><br></p>
 <p><br></p>
-<div class="line-block"><strong>Versión</strong> del producto 1.f523c6f de 16 Oct 2023</div>
+<div class="line-block"><strong>Versión</strong> del producto 1.c2280dc de 16 Oct 2023</div>
 <div class="line-block"><strong>Presentado a</strong></div>
 <div class="line-block">Procuraduría General de la Nación (PGN)</div>
 <div class="line-block"></div>
@@ -4609,7 +4998,7 @@ Administrar los Usuarios de la Solución: Esta funcionalidad debe permitir confi
 </tr>
 <tr class="even">
 <td>Versión</td>
-<td>1.f523c6f del 16 Oct 2023</td>
+<td>1.c2280dc del 16 Oct 2023</td>
 </tr>
 <tr class="odd">
 <td>Vínculos</td>
@@ -4640,14 +5029,14 @@ Administrar los Usuarios de la Solución: Esta funcionalidad debe permitir confi
 <h2 id="migracion.2.-datos">Migracion.2. datos</h2>
 <div id="fig:Migracion.2.datos" class="fignos">
 <figure>
-<img src="images/Migracion.2.datos.png" style="width:5.32in" alt="Imagen 21: Diagram: Migracion.2. datos" />
-<figcaption aria-hidden="true"><span>Imagen 21:</span> Diagram: Migracion.2. datos</figcaption>
+<img src="images/Migracion.2.datos.png" style="width:5.32in" alt="Imagen 38: Diagram: Migracion.2. datos" />
+<figcaption aria-hidden="true"><span>Imagen 38:</span> Diagram: Migracion.2. datos</figcaption>
 </figure>
 </div>
 <p>Modelo de acceso y procesamiento a datos de negocio del SUI. Presentamos la organización de los ítems de datos de negocio necesarios para que los módulos del SUI puedan recolectar, procesar, integrar y almacenarlos de forma organizada y escalable.</p>
 <p>Mediante esta organización, los datos de negocio son transportados desde sus respectivas fuentes mediante interfaces (por principio de extensión y mantenibilidad). Los datos externos, entendidos como los de otros proveedores, son obtenidos mediante un intermediario: el bus de datos del SUI.</p>
 <p>Consideramos tres tipos datos: datos transaccionales, históricos y externos, y presentamos una manera distinta de tratarlos y transportarlos.</p>
-<h3 id="catálogo-de-elementos-20">Catálogo de Elementos</h3>
+<h3 id="catálogo-de-elementos-37">Catálogo de Elementos</h3>
 <table>
 <colgroup>
 <col style="width: 25%" />
@@ -4753,13 +5142,13 @@ Administrar los Usuarios de la Solución: Esta funcionalidad debe permitir confi
 <h2 id="migracion.2a.-datos-hominis">Migracion.2a. datos Hominis</h2>
 <div id="fig:Migracion.2a.datosHominis" class="fignos">
 <figure>
-<img src="images/Migracion.2a.datosHominis.png" style="width:5.32in" alt="Imagen 22: Diagram: Migracion.2a. datos Hominis" />
-<figcaption aria-hidden="true"><span>Imagen 22:</span> Diagram: Migracion.2a. datos Hominis</figcaption>
+<img src="images/Migracion.2a.datosHominis.png" style="width:5.32in" alt="Imagen 39: Diagram: Migracion.2a. datos Hominis" />
+<figcaption aria-hidden="true"><span>Imagen 39:</span> Diagram: Migracion.2a. datos Hominis</figcaption>
 </figure>
 </div>
 <p>Identificación de entidades de datos de negocio relacionadas al módulo de gestión de capital del SUI, Hominis.</p>
 <p>Estas entidades de datos de negocio son los que llamamos los tipos de datos internos del SUI y deben ser consideradas para la creación de las API de manejo del ciclo de vida de los datos de este módulo.</p>
-<h3 id="catálogo-de-elementos-21">Catálogo de Elementos</h3>
+<h3 id="catálogo-de-elementos-38">Catálogo de Elementos</h3>
 <table>
 <colgroup>
 <col style="width: 25%" />
@@ -4901,13 +5290,13 @@ Administrar los Usuarios de la Solución: Esta funcionalidad debe permitir confi
 <h2 id="migracion.2c.-datos-control-interno">Migracion.2c. datos Control interno</h2>
 <div id="fig:Migracion.2c.datosControlinterno" class="fignos">
 <figure>
-<img src="images/Migracion.2c.datosControlinterno.png" alt="Imagen 23: Diagram: Migracion.2c. datos Control interno" />
-<figcaption aria-hidden="true"><span>Imagen 23:</span> Diagram: Migracion.2c. datos Control interno</figcaption>
+<img src="images/Migracion.2c.datosControlinterno.png" alt="Imagen 40: Diagram: Migracion.2c. datos Control interno" />
+<figcaption aria-hidden="true"><span>Imagen 40:</span> Diagram: Migracion.2c. datos Control interno</figcaption>
 </figure>
 </div>
 <p>Identificación de entidades de datos de negocio relacionadas al módulo de seguimiento del desempeño de la PGN del SUI, Control Interno.</p>
 <p>Estas entidades de datos de negocio son los que llamamos los tipos de datos internos del SUI y deben ser consideradas para la creación de las API de manejo del ciclo de vida de los datos de este módulo.</p>
-<h3 id="catálogo-de-elementos-22">Catálogo de Elementos</h3>
+<h3 id="catálogo-de-elementos-39">Catálogo de Elementos</h3>
 <table>
 <thead>
 <tr class="header">
@@ -4953,13 +5342,13 @@ Administrar los Usuarios de la Solución: Esta funcionalidad debe permitir confi
 <h2 id="migracion.2d.-datos-siri">Migracion.2d. datos SIRI</h2>
 <div id="fig:Migracion.2d.datosSIRI" class="fignos">
 <figure>
-<img src="images/Migracion.2d.datosSIRI.png" alt="Imagen 24: Diagram: Migracion.2d. datos SIRI" />
-<figcaption aria-hidden="true"><span>Imagen 24:</span> Diagram: Migracion.2d. datos SIRI</figcaption>
+<img src="images/Migracion.2d.datosSIRI.png" alt="Imagen 41: Diagram: Migracion.2d. datos SIRI" />
+<figcaption aria-hidden="true"><span>Imagen 41:</span> Diagram: Migracion.2d. datos SIRI</figcaption>
 </figure>
 </div>
 <p>Identificación de entidades de datos de negocio relacionadas al módulo del SUI, SIRI.</p>
 <p>Estas entidades de datos de negocio son los que llamamos los tipos de datos internos del SUI y deben ser consideradas para la creación de las API de manejo del ciclo de vida de los datos de este módulo.</p>
-<h3 id="catálogo-de-elementos-23">Catálogo de Elementos</h3>
+<h3 id="catálogo-de-elementos-40">Catálogo de Elementos</h3>
 <table>
 <thead>
 <tr class="header">
@@ -4987,13 +5376,13 @@ Administrar los Usuarios de la Solución: Esta funcionalidad debe permitir confi
 <h2 id="migracion.2b.-datos-sim">Migracion.2b. datos SIM</h2>
 <div id="fig:Migracion.2b.datosSIM" class="fignos">
 <figure>
-<img src="images/Migracion.2b.datosSIM.png" alt="Imagen 25: Diagram: Migracion.2b. datos SIM" />
-<figcaption aria-hidden="true"><span>Imagen 25:</span> Diagram: Migracion.2b. datos SIM</figcaption>
+<img src="images/Migracion.2b.datosSIM.png" alt="Imagen 42: Diagram: Migracion.2b. datos SIM" />
+<figcaption aria-hidden="true"><span>Imagen 42:</span> Diagram: Migracion.2b. datos SIM</figcaption>
 </figure>
 </div>
 <p>Identificación de entidades de datos de negocio relacionadas al módulo de SUI, SIM.</p>
 <p>Estas entidades de datos de negocio son los que llamamos los tipos de datos internos del SUI y deben ser consideradas para la creación de las API de manejo del ciclo de vida de los datos de este módulo.</p>
-<h3 id="catálogo-de-elementos-24">Catálogo de Elementos</h3>
+<h3 id="catálogo-de-elementos-41">Catálogo de Elementos</h3>
 <table>
 <thead>
 <tr class="header">
