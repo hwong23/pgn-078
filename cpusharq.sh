@@ -3,10 +3,10 @@
 git checkout arq
 git pull
 
-cp -R ~/Downloads/tmpr/pgnarchidoc/* .
+cp -R $1/* .
 
 git add .
-git commit -a -m "$1"
+git commit -a -m "$2"
 git push
 
 git checkout main
