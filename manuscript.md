@@ -5,7 +5,7 @@ keywords:
 - gobierno
 - PGN
 lang: en-US
-date-meta: '2023-10-16'
+date-meta: '2023-10-17'
 author-meta:
 - Harry Wong, ing.
 header-includes: |
@@ -15,11 +15,11 @@ header-includes: |
   -->
   <meta name="dc.format" content="text/html" />
   <meta property="og:type" content="article" />
-  <meta name="dc.date" content="2023-10-16" />
-  <meta name="citation_publication_date" content="2023-10-16" />
-  <meta property="article:published_time" content="2023-10-16" />
-  <meta name="dc.modified" content="2023-10-16T04:03:24+00:00" />
-  <meta property="article:modified_time" content="2023-10-16T04:03:24+00:00" />
+  <meta name="dc.date" content="2023-10-17" />
+  <meta name="citation_publication_date" content="2023-10-17" />
+  <meta property="article:published_time" content="2023-10-17" />
+  <meta name="dc.modified" content="2023-10-17T01:58:57+00:00" />
+  <meta property="article:modified_time" content="2023-10-17T01:58:57+00:00" />
   <meta name="dc.language" content="en-US" />
   <meta name="citation_language" content="en-US" />
   <meta name="dc.relation.ispartof" content="Manubot" />
@@ -34,9 +34,9 @@ header-includes: |
   <meta name="citation_fulltext_html_url" content="https://hwong23.github.io/pgn-078/" />
   <meta name="citation_pdf_url" content="https://hwong23.github.io/pgn-078/manuscript.pdf" />
   <link rel="alternate" type="application/pdf" href="https://hwong23.github.io/pgn-078/manuscript.pdf" />
-  <link rel="alternate" type="text/html" href="https://hwong23.github.io/pgn-078/v/11425fcb3910777c396f3c1a6d5179ff9771d1ec/" />
-  <meta name="manubot_html_url_versioned" content="https://hwong23.github.io/pgn-078/v/11425fcb3910777c396f3c1a6d5179ff9771d1ec/" />
-  <meta name="manubot_pdf_url_versioned" content="https://hwong23.github.io/pgn-078/v/11425fcb3910777c396f3c1a6d5179ff9771d1ec/manuscript.pdf" />
+  <link rel="alternate" type="text/html" href="https://hwong23.github.io/pgn-078/v/9784cbf10310583ce2e5d05884c684c6a61fd025/" />
+  <meta name="manubot_html_url_versioned" content="https://hwong23.github.io/pgn-078/v/9784cbf10310583ce2e5d05884c684c6a61fd025/" />
+  <meta name="manubot_pdf_url_versioned" content="https://hwong23.github.io/pgn-078/v/9784cbf10310583ce2e5d05884c684c6a61fd025/manuscript.pdf" />
   <meta property="og:type" content="article" />
   <meta property="twitter:card" content="summary_large_image" />
   <link rel="icon" type="image/png" sizes="192x192" href="https://manubot.org/favicon-192x192.png" />
@@ -77,7 +77,7 @@ tablenos-caption-name: Tabla
 
 <br>
 
-| **Versión** del producto 1.11425fc de 16 Oct 2023
+| **Versión** del producto 1.9784cbf de 17 Oct 2023
 
 | **Presentado a**
 
@@ -87,7 +87,7 @@ tablenos-caption-name: Tabla
 
 | **Fecha**
 
-| 16 Oct 2023
+| 17 Oct 2023
 
 
 <div style="page-break-before: always;"></div>
@@ -95,10 +95,10 @@ tablenos-caption-name: Tabla
 
 
 <small><em>Los productos de esta etapa, Migración Funcional SIU, Contrato 078-2023, 
-([Web](https://hwong23.github.io/pgn-078/v/11425fcb3910777c396f3c1a6d5179ff9771d1ec/))
+([Web](https://hwong23.github.io/pgn-078/v/9784cbf10310583ce2e5d05884c684c6a61fd025/))
 están basados en el resultado de la Fase 1 del proyecto PGN SIU del 2022,
-[Sharepoint Softgic@11425fc](http://softgic.sharepoint.com)
-del October 16, 2023.
+[Sharepoint Softgic@9784cbf](http://softgic.sharepoint.com)
+del October 17, 2023.
 </em></small>
 
 
@@ -143,7 +143,7 @@ Descripción de los productos del trabajo de arquitectura de la Fase 2, proyecto
 | Palabras clave | SIU, Softgic, PGN, Análisis de brecha, GAP, Comparativa              |
 | Autor          |                            |
 | Fuente         |                            |
-| Versión        | 1.11425fc del 16 Oct 2023 |
+| Versión        | 1.9784cbf del 17 Oct 2023 |
 | Vínculos       | [N003a Vista Segmento PGN SIU](N03a%a20Vsta%20aSegenta%20SOA%20PGN.md) |
 
 <br>
@@ -1058,163 +1058,189 @@ Table: Valoración del riesgo RSG10. Validación decisiones de arquitectura. Mig
 
 ``Generated on: Thu Sep 28 2023 12:49:24 GMT-0500 (COT)``
 
-# 1n.Doc.4.
-* [Doc Arquitectura de Software](#doc-arquitectura-de-software)
-	* [arq.1.vista integracion](#arq.1.vista-integracion)
-	* [arq.2.vista física](#arq.2.vista-física)
-	* [arq.3.vista motivadores](#arq.3.vista-motivadores)
-	* [arq.4.vista interoperabilidad](#arq.4.vista-interoperabilidad)
-	* [arq.5.vista seguridad](#arq.5.vista-seguridad)
-	* [arq.6.vista clases y compn](#arq.6.vista-clases-y-compn)
-	* [arq.7.vista ci](#arq.7.vista-ci)
-	* [arq.8.vista tecnología](#arq.8.vista-tecnología)
-* [Grouping](#grouping)
-	* [dat.1.](#dat.1.)
-	* [dat.2.](#dat.2.)
-	* [dat.3.](#dat.3.)
-	* [dat.4.](#dat.4.)
-	* [dat.5.](#dat.5.)
-* [Grouping (copy)](#grouping-copy)
-	* [tec.1.](#tec.1.)
-	* [tec.2.](#tec.2.)
-* [Grouping (copy) (copy)](#grouping-copy-copy)
-	* [seg.1.](#seg.1.)
-	* [seg.2.](#seg.2.)
+# Doc.4.PGN Contractual
+* [Contexto](#contexto)
+* [Física](#física)
+* [Motivadores](#motivadores)
+* [Interoperabilidad](#interoperabilidad)
+* [Seguridad](#seguridad)
+* [Componentes](#componentes)
+	* [Migracion.1b.1. SIU módulos componentes](#migracion.1b.1.-siu-módulos-componentes)
+	* [Migracion.1b.2. SIU módulos componentes. Brecha](#migracion.1b.2.-siu-módulos-componentes.-brecha)
+* [CI](#ci)
+* [Tecnología](#tecnología)
 
 <div style="page-break-before: always;"></div>
 \newpage
 
-# Doc Arquitectura de Software
-## arq.1.vista integracion
-![Diagram: arq.1.vista integracion](images/arq.1.vistaintegracion.png){#fig:arq.1.vistaintegracion width=}
+# Contexto<div style="page-break-before: always;"></div>
+\newpage
+
+# Física<div style="page-break-before: always;"></div>
+\newpage
+
+# Motivadores<div style="page-break-before: always;"></div>
+\newpage
+
+# Interoperabilidad<div style="page-break-before: always;"></div>
+\newpage
+
+# Seguridad<div style="page-break-before: always;"></div>
+\newpage
+
+# Componentes
+## Migracion.1b.1. SIU módulos componentes
+![Diagram: Migracion.1b.1. SIU módulos componentes](images/Migracion.1b.1.SIUmóduloscomponentes.png){#fig:Migracion.1b.1.SIUmóduloscomponentes width=}
+
+Presentación de los componentes internos de los submódulos del sistema único de información migrado, SUI de PGN. Organización intena de los servicios y paquetes que integran cada submódulo del SUI. Todos los sistemas de información del SUI siguen esta directiva: estarán constituídos por submódulos dispuestos en relación de utilitarios (que sirven) a los componentes misionales del SUI, ubicados en el centro en la diagrama. 
+
+La organización de componentes de migración SUI facilita focalizar la selección de tecnologeias. Los componentes internos y tecnologías elegidas son las siguientes
+
+1. Presentación: Angular 11 (Web)
+1. PGN SUI: API Transaccional (Node Js)
+1. Administración: API Config (C#)
+1. Persistencia: (SQL)
+
+Los submódulos del SUI, tal como están presentados, reúnen a las partes que tienen el mismo rol en favor de la coherencia. Así mismo, estos pueden ser intercambiados o ampliados sin perjuicio del SUI gracias a las interfaces de unión (en favor de la extensibilidad).
+
+Las interfaces de unión indicadas arriba obligan a los submódulos a cumplir las exigencias de los componentes misionales del SUI.
+
+
 
 ### Catálogo de Elementos
 | Name| Type| Description| Properties
 |:--------|:--------|:--------|:--------|
+|**App**|application-component||*plataforma:* node Js<br>|
+|**App PGN Móvil**|application-component|A partir de los lineamientos de desarrollo seguro establecidos en The OWASP Foundation recomendados en la “Guía de desarrollo OWASP” y “OWAS Cheat Sheet, se realizaran pruebas de seguridad a partir del analisis de vulnerabilidades, y pruebas de Ethikal Hacking. <br>Protección de datos personales, <br>Los sistemas de información que recogen, procesan y almacenan información de los derechos de las personas se deben almacenar de forma adecuada, la información que pueda ser vulnerada puede generar obliaciones legales y éticas con respecto a la perdida de informacion confidencial por parte de ciudadanos del pais. <br>La informacion contenida en las bases de datos debe tener los mecanismos de cifrado que en otros apartados se han mencionado. <br>La legislación que hay que tener como referencia, ley 1581 de 2012. Decreto 1377 de 2013<br>La metodologia empleada tendrá las siguientes fases: <br>•	FASE DE RECONOCIMIENTO: <br>Se recolectará toda la información posible, usando diferentes técnicas como:<br>o	Recopilación de dominios/IPs/puertos/servicios<br>o	Recopilación de metadatos<br>o	Uso de Google Dorks.<br>•	ANÁLSIS DE VULNERABILIDADES: <br>Se analizará la información recopilada en la fase anterior y se realizará el descubrimiento de las vulnerabilidades. <br>•	EXPLOTACIÓN: <br>•	Se realizarán todas aquellas acciones que puedan comprometer al sistema auditado, las pruebas a implementar pueden ser de ataques tipo: <br>o	Inyección de código<br>o	Inclusión de ficheros locales o remotos<br>o	Evasión de autenticación<br>o	Carencia de controles de autorización<br>o	Ejecución de comandos en el lado del servidor<br>o	Ataques tipo Cross Site Request Forgery<br>o	Control de errores<br>o	Gestión de sesiones<br>o	Fugas de información<br>o	Secuestros de sesión<br>o	Comprobación de las condiciones para realizar una denegación de servicio.<br>	<br>•	POST EXPLOTACIÓN:<br>En caso de encontrarse una vulnerabilidad que permita realizar otras acciones en el sistema auditado o en su entorno, se realizarán controles adiciones con el objetivo de comprobar la criticidad de esta.<br>No	URL	IP<br>1.	https://runtimetest.lappiz.io/#/auth/login/PGN_Lappiz<br>135.181.185.207<br>|*plantilla:* element-md-new<br>|
+|**App PGN Web**|application-component|A partir de los lineamientos de desarrollo seguro establecidos en The OWASP Foundation recomendados en la “Guía de desarrollo OWASP” y “OWAS Cheat Sheet, se realizaran pruebas de seguridad a partir del analisis de vulnerabilidades, y pruebas de Ethical Hacking. <br>Los resultados permitirán identificar los requisitos de seguridad que los sistemas de informacion o servicios web deberán cumplir.<br>La metodologia empleada tendrá las siguientes fases: <br>•	FASE DE RECONOCIMIENTO: <br>Se recolectará toda la información posible, usando diferentes técnicas como:<br>o	Recopilación de dominios/IPs/puertos/servicios<br>o	Recopilación de metadatos<br>o	Uso de Google Dorks.<br>•	ANÁLSIS DE VULNERABILIDADES: <br>Se analizará la información recopilada en la fase anterior y se realizará el descubrimiento de las vulnerabilidades. <br>•	EXPLOTACIÓN: <br>•	Se realizarán todas aquellas acciones que puedan comprometer al sistema auditado, las pruebas a implementar pueden ser de ataques tipo: <br>o	Inyección de código<br>o	Inclusión de ficheros locales o remotos<br>o	Evasión de autenticación<br>o	Carencia de controles de autorización<br>o	Ejecución de comandos en el lado del servidor<br>o	Ataques tipo Cross Site Request Forgery<br>o	Control de errores<br>o	Gestión de sesiones<br>o	Fugas de información<br>o	Secuestros de sesión<br>o	Comprobación de las condiciones para realizar una denegación de servicio.<br>	<br>•	POST EXPLOTACIÓN:<br>En caso de encontrarse una vulnerabilidad que permita realizar otras acciones en el sistema auditado o en su entorno, se realizarán controles adiciones con el objetivo de comprobar la criticidad de esta.<br>No	URL	IP<br>1.	https://runtimetest.lappiz.io/#/auth/login/PGN_Lappiz<br>135.181.185.207<br>El Login deberá evidenciar el control de errores, al momento de realizar la validación deberá mensaje de error para el caso que se autentique con credenciales erradas. |*plataforma:* angular 11<br>|
+|**CU ejecutable**|application-component||*plataforma:* js<br>|
+|**CU ejecutable (n)**|application-component||*plataforma:* js<br>|
+|**Config**|application-component||*plataforma:* cs<br>|
+|**Controlador admin**|application-component||*plataforma:* cs<br>|
+|**Controlador frontal mvl**|application-component||*plataforma:* js<br>|
+|**Controlador frontal web**|application-component|-	Verificados los SSL, se recomienda adquirir SSL seguros, con entidades certificadoras. <br>Si se desea continuar con SSL de Let's Encrypt, se recomienda automatizar el proceso de actualización dado que al dejar estos en modo actualización manual es probable el olvido de esta actualización (Estos certificados se deben actualizar trimestralmente y no cuentan con las características de seguridad necesarias. <br>|*plataforma:* js<br>|
+|**Controlador funcional**|application-component||*plataforma:* js<br>|
+|**Función PGN**|application-component|La unidad de cómputo que resulta en la aplicación de una regla de negocio.<br>|*plataforma:* js<br>|
+|**Modelo (neg)**|application-component||*plataforma:* cs<br>|
+|**Puerto datos 1**|application-component||*plataforma:* js<br>|
+|**Puerto datos 2**|application-component||*plataforma:* cs<br>|
+|**Seguridad**|application-component||*plataforma:* sql<br>|
+|**Servidor aplicaciones Sharepoint**|application-component|||
+|**Servidor datos Sharepoint**|application-component|||
+|**Servidor web Sharepoint**|application-component|||
+|**Transacciones**|application-component||*plataforma:* sql<br>|
+|**Utilitario**|application-component||*plataforma:* no-sql<br>|
+|**Vista móvil**|application-component||*plataforma:* js<br>|
+|**Vista web**|application-component|-	Verificados los SSL, se recomienda adquirir SSL seguros, con entidades certificadoras. <br>Si se desea continuar con SSL de Let's Encrypt, se recomienda automatizar el proceso de actualización dado que al dejar estos en modo actualización manual es probable el olvido de esta actualización (Estos certificados se deben actualizar trimestralmente y no cuentan con las características de seguridad necesarias. <br>4.	SERVICIOS IDENTIFICADOS:<br>Servidor web:  Microsoft-IIS/10.0 <br>Marco de Programación: ASP.NET<br>Huellas digitales identificadas:  <br>Huella digital SHA-256 “FC:79:06:7E:F5:24:20:50:F1:C0:74:F7:85:56:B9:05:B7:33:A3:2D:44:A0:48”<br>Huella digital SHA1 “8C:48:BD:E2:F5:18:18:C3:85:96:68:44:2E:28:A0:68:08:2F:0A:BE”<br>|*plataforma:* html<br>|
+|**Application Interface**|application-interface|||
+|**Interfaz de aplicación (runtime)**|application-interface|Servidor web:  Microsoft-IIS/10.0 <br>Marco de Programación: ASP.NET<br>Huellas digitales identificadas:  <br>Huella digital SHA-256 “FC:79:06:7E:F5:24:20:50:F1:C0:74:F7:85:56:B9:05:B7:33:A3:2D:44:A0:48”<br>Huella digital SHA1 “8C:48:BD:E2:F5:18:18:C3:85:96:68:44:2E:28:A0:68:08:2F:0A:BE”<br>|*plataforma:* angular 11<br>|
+|**API externas**|application-service|||
+|**Application Service (NLB)**|application-service||*plataforma:* angular 11<br>|
+|**Application Service (n)**|application-service|Implementación de un caso de uso de negocio, independiente y demostrable. Contiene a la unidad ejecutable del CU y a la entidad ||
+|**Application Service 1**|application-service|Implementación de un caso de uso de negocio, independiente y demostrable. Contiene a la unidad ejecutable del CU y reutiliza (accede a) una entidad de negocio, que puede ser también una función PGN.<br>||
+|**Archivos Compartidos**|application-service|||
+|**CDN Contenidos**|application-service|||
+|**Doku (gest. doc.)**|application-service|||
+|**Identidades**|application-service|||
+|**Interfaz de datos 1**|application-service|||
+|**Interfaz de datos 2**|application-service|||
+|**Interfaz de datos 3**|application-service|||
+|**Office**|application-service|||
+|**ccccc Proveedores contenidos**|application-service|||
+|**Entidad negocio PGN**|business-object|Repreesnta un objeto de negocio del contexto de la entidad PGN,, por ejemplo: un decreto, una intervención, una conciliación.<br>||
+|**ARQ01. Consistencia SUI**|constraint|Unifica las entidades de negocio PGN, entre las que se incluyen a conciliaciones, publicaciones de relatoría, resoluciones, en artefactos reutilizables. Distinto de que estas entidades (y su lógica de negocio) estén dispersos entre los sistemas del SUI, estarán concentradas en un único artefacto correspondiente. Calidad sistémica: la consistencia persigue que el resultado de la lógica de negocio sea la misma entre los módulos del SUI migrado. Esto redunda a mantenibilidad y gestión: tiende a tener un solo punto de cambio y dificulta la transferencia de dependencias implícitas a otros procesos.||
+|**ARQ02. Mantenibilidad SUI**|constraint|Evitar las dependencia transitivas de los módulos misionales del SUI a componentes y sistemas de terceros o submódulos no misionales.  Calidad sistémica: la mantenibilidad por control de dependencias que optimiza el diseño Migración SUI está dada por el control de cambios no programados sobre los componentes misionales del SUI (corrupción de componentes). Ver Patrón de Diseño Migración SUI, más adelante en el documento.||
+|**ARQ03. Extensibilidad SUI**|constraint|Concentración de los componentes de negocio, misionales, del SUI protegidos de cambios provenientes de otros sistemas. Ver Patrón de Diseño Migración SUI, más adelante en el documento. Calidad sistémica: la extensibilidad que optimiza el diseño Migración SUI está dada por el intercambio de submódulos no misionales, como el gestor documental, sin afectación de los componentes misionales que este diseño protege.||
+|**Mensaje: JSON**|data-object|||
+|**Administración**|grouping|||
+|**Almacenamiento**|grouping|||
+|**PGN SIU**|grouping|El objetivo principal de la arquitectura del SUI de la migración es la centralización de los conceptos misionales: concentrar los conceptos misionales en componentes aislados; dejar por fuera de estos componentes misionales todo lo distintos a la misionalidad de la PGN.<br>Los objetivos secundarios de esta arquitectura SUI de la migración son flexibilidad y extensibilidad. Dichos objetivos son independientes. Es decir, estos pueden ser maximizados sin conclifcto entre ellos.<br>||
+|**Portales**|grouping|Submódulo de portales internos de la PGN a donde llega el SUI. Interfaz web que usa al SUI para llegar a direcciones y subdirecciones de la PGN. La plataforma principal de portales en este contexto es Sharepoint de Microsoft.<br>||
+|**Presentación**|grouping|Submódulo de presentación del SUI. interfaz gráfica, interfaz web visible a los usuarios clientes y funcionarios de la PGN. ||
+|**Servicios de aplicación**|grouping|Submódulo de servicios utilitarios que sirven al SUI. Servicios variados que cumplen roles facilitadores de las actividades misionales del SUI. Ejemplos de estos servicios son los de gestión documental, implementado por Doku en el contexto de PGN.<br>||
+|**RQR. Administrativos**|requirement|||
+|**RQR. Funcionales**|requirement|||
+|**RQR. Ingeniería**|requirement|||
+|**RQR. Negocio**|requirement|||
+|**RQR. Seguridad**|requirement|Requerimientos de seguridad, SUI, Migración, en aspectos de comunicación, autenticación, autorización y (manejo de) sesiones.<br>||
+|**RQR. Seguridad**|requirement|Requerimientos de seguridad, SUI, Migración, en aspectos de comunicación, autenticación, autorización y (manejo de) sesiones.<br>||
 
-## arq.2.vista física
-![Diagram: arq.2.vista física](images/arq.2.vistafísica.png){#fig:arq.2.vistafísica width=}
+## Migracion.1b.2. SIU módulos componentes. Brecha
+![Diagram: Migracion.1b.2. SIU módulos componentes. Brecha](images/Migracion.1b.2.SIUmóduloscomponentes.Brecha.png){#fig:Migracion.1b.2.SIUmóduloscomponentes.Brecha width=}
+
+Los elementos resaltados indican las extensiones a la arqutecutra por concepto de Fase II del proyecto de migración SUI. 
+
+Los componentes internos incorporados en la arquitectura tienen el propósito de implementar los casos de uso (CU) de cada módulo construído con esta organización (vista anterior). En la imagen los CU son expuestos por los servicios de aplicación, y estos a su vez, usan funciones de negocio (impulsadas por la plataforma de Lappiz). 
+
+Todos los sistemas de información del SUI siguen esta directiva: estarán constituídos por submódulos dispuestos en relación de utilitarios (que sirven) a los componentes misionales del SUI, ubicados en el centro en la diagrama. 
+
 
 ### Catálogo de Elementos
 | Name| Type| Description| Properties
 |:--------|:--------|:--------|:--------|
-
-## arq.3.vista motivadores
-![Diagram: arq.3.vista motivadores](images/arq.3.vistamotivadores.png){#fig:arq.3.vistamotivadores width=}
-
-### Catálogo de Elementos
-| Name| Type| Description| Properties
-|:--------|:--------|:--------|:--------|
-
-## arq.4.vista interoperabilidad
-![Diagram: arq.4.vista interoperabilidad](images/arq.4.vistainteroperabilidad.png){#fig:arq.4.vistainteroperabilidad width=}
-
-### Catálogo de Elementos
-| Name| Type| Description| Properties
-|:--------|:--------|:--------|:--------|
-
-## arq.5.vista seguridad
-![Diagram: arq.5.vista seguridad](images/arq.5.vistaseguridad.png){#fig:arq.5.vistaseguridad width=}
-
-### Catálogo de Elementos
-| Name| Type| Description| Properties
-|:--------|:--------|:--------|:--------|
-
-## arq.6.vista clases y compn
-![Diagram: arq.6.vista clases y compn](images/arq.6.vistaclasesycompn.png){#fig:arq.6.vistaclasesycompn width=}
-
-### Catálogo de Elementos
-| Name| Type| Description| Properties
-|:--------|:--------|:--------|:--------|
-
-## arq.7.vista ci
-![Diagram: arq.7.vista ci](images/arq.7.vistaci.png){#fig:arq.7.vistaci width=}
-
-### Catálogo de Elementos
-| Name| Type| Description| Properties
-|:--------|:--------|:--------|:--------|
-
-## arq.8.vista tecnología
-![Diagram: arq.8.vista tecnología](images/arq.8.vistatecnología.png){#fig:arq.8.vistatecnología width=}
-
-### Catálogo de Elementos
-| Name| Type| Description| Properties
-|:--------|:--------|:--------|:--------|
+|**App**|application-component||*plataforma:* node Js<br>|
+|**App PGN Móvil**|application-component|A partir de los lineamientos de desarrollo seguro establecidos en The OWASP Foundation recomendados en la “Guía de desarrollo OWASP” y “OWAS Cheat Sheet, se realizaran pruebas de seguridad a partir del analisis de vulnerabilidades, y pruebas de Ethikal Hacking. <br>Protección de datos personales, <br>Los sistemas de información que recogen, procesan y almacenan información de los derechos de las personas se deben almacenar de forma adecuada, la información que pueda ser vulnerada puede generar obliaciones legales y éticas con respecto a la perdida de informacion confidencial por parte de ciudadanos del pais. <br>La informacion contenida en las bases de datos debe tener los mecanismos de cifrado que en otros apartados se han mencionado. <br>La legislación que hay que tener como referencia, ley 1581 de 2012. Decreto 1377 de 2013<br>La metodologia empleada tendrá las siguientes fases: <br>•	FASE DE RECONOCIMIENTO: <br>Se recolectará toda la información posible, usando diferentes técnicas como:<br>o	Recopilación de dominios/IPs/puertos/servicios<br>o	Recopilación de metadatos<br>o	Uso de Google Dorks.<br>•	ANÁLSIS DE VULNERABILIDADES: <br>Se analizará la información recopilada en la fase anterior y se realizará el descubrimiento de las vulnerabilidades. <br>•	EXPLOTACIÓN: <br>•	Se realizarán todas aquellas acciones que puedan comprometer al sistema auditado, las pruebas a implementar pueden ser de ataques tipo: <br>o	Inyección de código<br>o	Inclusión de ficheros locales o remotos<br>o	Evasión de autenticación<br>o	Carencia de controles de autorización<br>o	Ejecución de comandos en el lado del servidor<br>o	Ataques tipo Cross Site Request Forgery<br>o	Control de errores<br>o	Gestión de sesiones<br>o	Fugas de información<br>o	Secuestros de sesión<br>o	Comprobación de las condiciones para realizar una denegación de servicio.<br>	<br>•	POST EXPLOTACIÓN:<br>En caso de encontrarse una vulnerabilidad que permita realizar otras acciones en el sistema auditado o en su entorno, se realizarán controles adiciones con el objetivo de comprobar la criticidad de esta.<br>No	URL	IP<br>1.	https://runtimetest.lappiz.io/#/auth/login/PGN_Lappiz<br>135.181.185.207<br>|*plantilla:* element-md-new<br>|
+|**App PGN Web**|application-component|A partir de los lineamientos de desarrollo seguro establecidos en The OWASP Foundation recomendados en la “Guía de desarrollo OWASP” y “OWAS Cheat Sheet, se realizaran pruebas de seguridad a partir del analisis de vulnerabilidades, y pruebas de Ethical Hacking. <br>Los resultados permitirán identificar los requisitos de seguridad que los sistemas de informacion o servicios web deberán cumplir.<br>La metodologia empleada tendrá las siguientes fases: <br>•	FASE DE RECONOCIMIENTO: <br>Se recolectará toda la información posible, usando diferentes técnicas como:<br>o	Recopilación de dominios/IPs/puertos/servicios<br>o	Recopilación de metadatos<br>o	Uso de Google Dorks.<br>•	ANÁLSIS DE VULNERABILIDADES: <br>Se analizará la información recopilada en la fase anterior y se realizará el descubrimiento de las vulnerabilidades. <br>•	EXPLOTACIÓN: <br>•	Se realizarán todas aquellas acciones que puedan comprometer al sistema auditado, las pruebas a implementar pueden ser de ataques tipo: <br>o	Inyección de código<br>o	Inclusión de ficheros locales o remotos<br>o	Evasión de autenticación<br>o	Carencia de controles de autorización<br>o	Ejecución de comandos en el lado del servidor<br>o	Ataques tipo Cross Site Request Forgery<br>o	Control de errores<br>o	Gestión de sesiones<br>o	Fugas de información<br>o	Secuestros de sesión<br>o	Comprobación de las condiciones para realizar una denegación de servicio.<br>	<br>•	POST EXPLOTACIÓN:<br>En caso de encontrarse una vulnerabilidad que permita realizar otras acciones en el sistema auditado o en su entorno, se realizarán controles adiciones con el objetivo de comprobar la criticidad de esta.<br>No	URL	IP<br>1.	https://runtimetest.lappiz.io/#/auth/login/PGN_Lappiz<br>135.181.185.207<br>El Login deberá evidenciar el control de errores, al momento de realizar la validación deberá mensaje de error para el caso que se autentique con credenciales erradas. |*plataforma:* angular 11<br>|
+|**CU ejecutable**|application-component||*plataforma:* js<br>|
+|**CU ejecutable (n)**|application-component||*plataforma:* js<br>|
+|**Config**|application-component||*plataforma:* cs<br>|
+|**Controlador admin**|application-component||*plataforma:* cs<br>|
+|**Controlador frontal mvl**|application-component||*plataforma:* js<br>|
+|**Controlador frontal web**|application-component|-	Verificados los SSL, se recomienda adquirir SSL seguros, con entidades certificadoras. <br>Si se desea continuar con SSL de Let's Encrypt, se recomienda automatizar el proceso de actualización dado que al dejar estos en modo actualización manual es probable el olvido de esta actualización (Estos certificados se deben actualizar trimestralmente y no cuentan con las características de seguridad necesarias. <br>|*plataforma:* js<br>|
+|**Controlador funcional**|application-component||*plataforma:* js<br>|
+|**Función PGN**|application-component|La unidad de cómputo que resulta en la aplicación de una regla de negocio.<br>|*plataforma:* js<br>|
+|**Modelo (neg)**|application-component||*plataforma:* cs<br>|
+|**Puerto datos 1**|application-component||*plataforma:* js<br>|
+|**Puerto datos 2**|application-component||*plataforma:* cs<br>|
+|**Seguridad**|application-component||*plataforma:* sql<br>|
+|**Servidor aplicaciones Sharepoint**|application-component|||
+|**Servidor datos Sharepoint**|application-component|||
+|**Servidor web Sharepoint**|application-component|||
+|**Transacciones**|application-component||*plataforma:* sql<br>|
+|**Utilitario**|application-component||*plataforma:* no-sql<br>|
+|**Vista móvil**|application-component||*plataforma:* js<br>|
+|**Vista web**|application-component|-	Verificados los SSL, se recomienda adquirir SSL seguros, con entidades certificadoras. <br>Si se desea continuar con SSL de Let's Encrypt, se recomienda automatizar el proceso de actualización dado que al dejar estos en modo actualización manual es probable el olvido de esta actualización (Estos certificados se deben actualizar trimestralmente y no cuentan con las características de seguridad necesarias. <br>4.	SERVICIOS IDENTIFICADOS:<br>Servidor web:  Microsoft-IIS/10.0 <br>Marco de Programación: ASP.NET<br>Huellas digitales identificadas:  <br>Huella digital SHA-256 “FC:79:06:7E:F5:24:20:50:F1:C0:74:F7:85:56:B9:05:B7:33:A3:2D:44:A0:48”<br>Huella digital SHA1 “8C:48:BD:E2:F5:18:18:C3:85:96:68:44:2E:28:A0:68:08:2F:0A:BE”<br>|*plataforma:* html<br>|
+|**Application Interface**|application-interface|||
+|**Interfaz de aplicación (runtime)**|application-interface|Servidor web:  Microsoft-IIS/10.0 <br>Marco de Programación: ASP.NET<br>Huellas digitales identificadas:  <br>Huella digital SHA-256 “FC:79:06:7E:F5:24:20:50:F1:C0:74:F7:85:56:B9:05:B7:33:A3:2D:44:A0:48”<br>Huella digital SHA1 “8C:48:BD:E2:F5:18:18:C3:85:96:68:44:2E:28:A0:68:08:2F:0A:BE”<br>|*plataforma:* angular 11<br>|
+|**API externas**|application-service|||
+|**Application Service (NLB)**|application-service||*plataforma:* angular 11<br>|
+|**Application Service (n)**|application-service|Implementación de un caso de uso de negocio, independiente y demostrable. Contiene a la unidad ejecutable del CU y a la entidad ||
+|**Application Service 1**|application-service|Implementación de un caso de uso de negocio, independiente y demostrable. Contiene a la unidad ejecutable del CU y reutiliza (accede a) una entidad de negocio, que puede ser también una función PGN.<br>||
+|**Archivos Compartidos**|application-service|||
+|**CDN Contenidos**|application-service|||
+|**Doku (gest. doc.)**|application-service|||
+|**Identidades**|application-service|||
+|**Interfaz de datos 1**|application-service|||
+|**Interfaz de datos 2**|application-service|||
+|**Interfaz de datos 3**|application-service|||
+|**Office**|application-service|||
+|**ccccc Proveedores contenidos**|application-service|||
+|**Entidad negocio PGN**|business-object|Repreesnta un objeto de negocio del contexto de la entidad PGN,, por ejemplo: un decreto, una intervención, una conciliación.<br>||
+|**ARQ01. Consistencia SUI**|constraint|Unifica las entidades de negocio PGN, entre las que se incluyen a conciliaciones, publicaciones de relatoría, resoluciones, en artefactos reutilizables. Distinto de que estas entidades (y su lógica de negocio) estén dispersos entre los sistemas del SUI, estarán concentradas en un único artefacto correspondiente. Calidad sistémica: la consistencia persigue que el resultado de la lógica de negocio sea la misma entre los módulos del SUI migrado. Esto redunda a mantenibilidad y gestión: tiende a tener un solo punto de cambio y dificulta la transferencia de dependencias implícitas a otros procesos.||
+|**ARQ02. Mantenibilidad SUI**|constraint|Evitar las dependencia transitivas de los módulos misionales del SUI a componentes y sistemas de terceros o submódulos no misionales.  Calidad sistémica: la mantenibilidad por control de dependencias que optimiza el diseño Migración SUI está dada por el control de cambios no programados sobre los componentes misionales del SUI (corrupción de componentes). Ver Patrón de Diseño Migración SUI, más adelante en el documento.||
+|**ARQ03. Extensibilidad SUI**|constraint|Concentración de los componentes de negocio, misionales, del SUI protegidos de cambios provenientes de otros sistemas. Ver Patrón de Diseño Migración SUI, más adelante en el documento. Calidad sistémica: la extensibilidad que optimiza el diseño Migración SUI está dada por el intercambio de submódulos no misionales, como el gestor documental, sin afectación de los componentes misionales que este diseño protege.||
+|**Mensaje: JSON**|data-object|||
+|**Administración**|grouping|||
+|**Almacenamiento**|grouping|||
+|**PGN SIU**|grouping|El objetivo principal de la arquitectura del SUI de la migración es la centralización de los conceptos misionales: concentrar los conceptos misionales en componentes aislados; dejar por fuera de estos componentes misionales todo lo distintos a la misionalidad de la PGN.<br>Los objetivos secundarios de esta arquitectura SUI de la migración son flexibilidad y extensibilidad. Dichos objetivos son independientes. Es decir, estos pueden ser maximizados sin conclifcto entre ellos.<br>||
+|**Portales**|grouping|Submódulo de portales internos de la PGN a donde llega el SUI. Interfaz web que usa al SUI para llegar a direcciones y subdirecciones de la PGN. La plataforma principal de portales en este contexto es Sharepoint de Microsoft.<br>||
+|**Presentación**|grouping|Submódulo de presentación del SUI. interfaz gráfica, interfaz web visible a los usuarios clientes y funcionarios de la PGN. ||
+|**Servicios de aplicación**|grouping|Submódulo de servicios utilitarios que sirven al SUI. Servicios variados que cumplen roles facilitadores de las actividades misionales del SUI. Ejemplos de estos servicios son los de gestión documental, implementado por Doku en el contexto de PGN.<br>||
+|**RQR. Administrativos**|requirement|||
+|**RQR. Funcionales**|requirement|||
+|**RQR. Ingeniería**|requirement|||
+|**RQR. Negocio**|requirement|||
+|**RQR. Seguridad**|requirement|Requerimientos de seguridad, SUI, Migración, en aspectos de comunicación, autenticación, autorización y (manejo de) sesiones.<br>||
+|**RQR. Seguridad**|requirement|Requerimientos de seguridad, SUI, Migración, en aspectos de comunicación, autenticación, autorización y (manejo de) sesiones.<br>||
 <div style="page-break-before: always;"></div>
 \newpage
 
-# Grouping
-## dat.1.
-![Diagram: dat.1.](images/dat.1..png){#fig:dat.1. width=}
-
-### Catálogo de Elementos
-| Name| Type| Description| Properties
-|:--------|:--------|:--------|:--------|
-
-## dat.2.
-![Diagram: dat.2.](images/dat.2..png){#fig:dat.2. width=}
-
-### Catálogo de Elementos
-| Name| Type| Description| Properties
-|:--------|:--------|:--------|:--------|
-
-## dat.3.
-![Diagram: dat.3.](images/dat.3..png){#fig:dat.3. width=}
-
-### Catálogo de Elementos
-| Name| Type| Description| Properties
-|:--------|:--------|:--------|:--------|
-
-## dat.4.
-![Diagram: dat.4.](images/dat.4..png){#fig:dat.4. width=}
-
-### Catálogo de Elementos
-| Name| Type| Description| Properties
-|:--------|:--------|:--------|:--------|
-
-## dat.5.
-![Diagram: dat.5.](images/dat.5..png){#fig:dat.5. width=}
-
-### Catálogo de Elementos
-| Name| Type| Description| Properties
-|:--------|:--------|:--------|:--------|
-<div style="page-break-before: always;"></div>
+# CI<div style="page-break-before: always;"></div>
 \newpage
 
-# Grouping (copy)
-## tec.1.
-![Diagram: tec.1.](images/tec.1..png){#fig:tec.1. width=}
+# Tecnología
 
-### Catálogo de Elementos
-| Name| Type| Description| Properties
-|:--------|:--------|:--------|:--------|
-
-## tec.2.
-![Diagram: tec.2.](images/tec.2..png){#fig:tec.2. width=}
-
-### Catálogo de Elementos
-| Name| Type| Description| Properties
-|:--------|:--------|:--------|:--------|
-<div style="page-break-before: always;"></div>
-\newpage
-
-# Grouping (copy) (copy)
-## seg.1.
-![Diagram: seg.1.](images/seg.1..png){#fig:seg.1. width=}
-
-### Catálogo de Elementos
-| Name| Type| Description| Properties
-|:--------|:--------|:--------|:--------|
-
-## seg.2.
-![Diagram: seg.2.](images/seg.2..png){#fig:seg.2. width=}
-
-### Catálogo de Elementos
-| Name| Type| Description| Properties
-|:--------|:--------|:--------|:--------|
-
-
-``Generated on: Sun Oct 15 2023 23:01:06 GMT-0500 (COT)``
+``Generated on: Mon Oct 16 2023 20:52:32 GMT-0500 (COT)``
 
 ## Requerimientos de Administración
 1.	Las soluciones deben permitir la administración de los Roles de Usuarios: esta funcionalidad debe permitir configurar los diferentes roles de los usuarios funcionales de los procesos. 
@@ -1289,7 +1315,7 @@ tablenos-caption-name: Tabla
 
 <br>
 
-| **Versión** del producto 1.11425fc de 16 Oct 2023
+| **Versión** del producto 1.9784cbf de 17 Oct 2023
 
 | **Presentado a**
 
@@ -1299,7 +1325,7 @@ tablenos-caption-name: Tabla
 
 | **Fecha**
 
-| 16 Oct 2023
+| 17 Oct 2023
 
 
 <div style="page-break-before: always;"></div>
@@ -1318,7 +1344,7 @@ Descripción de los productos del trabajo de infraestructura del proyecto Migrac
 | Palabras clave | SIU, Softgic, PGN, Análisis de brecha, GAP, Infraestrctura, PasS |
 | Autor          |                            |
 | Fuente         |                            |
-| Versión        | 1.11425fc del 16 Oct 2023 |
+| Versión        | 1.9784cbf del 17 Oct 2023 |
 | Vínculos       | [N003a Vista Segmento PGN SIU](N03a%a20Vsta%20aSegenta%20SOA%20PGN.md) |
 
 <br>
@@ -1507,7 +1533,7 @@ tablenos-caption-name: Tabla
 
 <br>
 
-| **Versión** del producto 1.11425fc de 16 Oct 2023
+| **Versión** del producto 1.9784cbf de 17 Oct 2023
 
 | **Presentado a**
 
@@ -1517,7 +1543,7 @@ tablenos-caption-name: Tabla
 
 | **Fecha**
 
-| 16 Oct 2023
+| 17 Oct 2023
 
 
 <div style="page-break-before: always;"></div>
@@ -1537,7 +1563,7 @@ Descripción de los productos de trabajo de la arquitectura de datos del proyect
 | Palabras clave | SIU, Softgic, PGN, Análisis de brecha, GAP, Entidades, Datos  |
 | Autor          |                            |
 | Fuente         |                            |
-| Versión        | 1.11425fc del 16 Oct 2023 |
+| Versión        | 1.9784cbf del 17 Oct 2023 |
 | Vínculos       | [N003a Vista Segmento PGN SIU](N03a%a20Vsta%20aSegenta%20SOA%20PGN.md) |
 
 <br>
