@@ -18,8 +18,8 @@ header-includes: |
   <meta name="dc.date" content="2023-10-17" />
   <meta name="citation_publication_date" content="2023-10-17" />
   <meta property="article:published_time" content="2023-10-17" />
-  <meta name="dc.modified" content="2023-10-17T17:29:40+00:00" />
-  <meta property="article:modified_time" content="2023-10-17T17:29:40+00:00" />
+  <meta name="dc.modified" content="2023-10-17T17:43:44+00:00" />
+  <meta property="article:modified_time" content="2023-10-17T17:43:44+00:00" />
   <meta name="dc.language" content="en-US" />
   <meta name="citation_language" content="en-US" />
   <meta name="dc.relation.ispartof" content="Manubot" />
@@ -34,9 +34,9 @@ header-includes: |
   <meta name="citation_fulltext_html_url" content="https://hwong23.github.io/pgn-078/" />
   <meta name="citation_pdf_url" content="https://hwong23.github.io/pgn-078/manuscript.pdf" />
   <link rel="alternate" type="application/pdf" href="https://hwong23.github.io/pgn-078/manuscript.pdf" />
-  <link rel="alternate" type="text/html" href="https://hwong23.github.io/pgn-078/v/cae0903a4b278f05a55c732f36e4e2ac13cab563/" />
-  <meta name="manubot_html_url_versioned" content="https://hwong23.github.io/pgn-078/v/cae0903a4b278f05a55c732f36e4e2ac13cab563/" />
-  <meta name="manubot_pdf_url_versioned" content="https://hwong23.github.io/pgn-078/v/cae0903a4b278f05a55c732f36e4e2ac13cab563/manuscript.pdf" />
+  <link rel="alternate" type="text/html" href="https://hwong23.github.io/pgn-078/v/029d7e5ce33725a3de51b08ef042497d664262da/" />
+  <meta name="manubot_html_url_versioned" content="https://hwong23.github.io/pgn-078/v/029d7e5ce33725a3de51b08ef042497d664262da/" />
+  <meta name="manubot_pdf_url_versioned" content="https://hwong23.github.io/pgn-078/v/029d7e5ce33725a3de51b08ef042497d664262da/manuscript.pdf" />
   <meta property="og:type" content="article" />
   <meta property="twitter:card" content="summary_large_image" />
   <link rel="icon" type="image/png" sizes="192x192" href="https://manubot.org/favicon-192x192.png" />
@@ -77,7 +77,7 @@ tablenos-caption-name: Tabla
 
 <br>
 
-| **Versión** del producto 1.cae0903 de 17 Oct 2023
+| **Versión** del producto 1.029d7e5 de 17 Oct 2023
 
 | **Presentado a**
 
@@ -95,9 +95,9 @@ tablenos-caption-name: Tabla
 
 
 <small><em>Los productos de esta etapa, Migración Funcional SIU, Contrato 078-2023, 
-([Web](https://hwong23.github.io/pgn-078/v/cae0903a4b278f05a55c732f36e4e2ac13cab563/))
+([Web](https://hwong23.github.io/pgn-078/v/029d7e5ce33725a3de51b08ef042497d664262da/))
 están basados en el resultado de la Fase 1 del proyecto PGN SIU del 2022,
-[Sharepoint Softgic@cae0903](http://softgic.sharepoint.com)
+[Sharepoint Softgic@029d7e5](http://softgic.sharepoint.com)
 del October 17, 2023.
 </em></small>
 
@@ -143,7 +143,7 @@ Descripción de los productos del trabajo de arquitectura de la Fase 2, proyecto
 | Palabras clave | SIU, Softgic, PGN, Análisis de brecha, GAP, Comparativa              |
 | Autor          |                            |
 | Fuente         |                            |
-| Versión        | 1.cae0903 del 17 Oct 2023 |
+| Versión        | 1.029d7e5 del 17 Oct 2023 |
 | Vínculos       | [N003a Vista Segmento PGN SIU](N03a%a20Vsta%20aSegenta%20SOA%20PGN.md) |
 
 <br>
@@ -274,6 +274,7 @@ Table: Requisito no. 3, Migración SUI, Flexibilidad. {#tbl:requisito3-id}
 	* [Migracion.1b.1. SIU Módulos Componentes](#migracion.1b.1.-siu-módulos-componentes)
 	* [Migracion.1b.2. SIU Módulos Componentes. Brecha](#migracion.1b.2.-siu-módulos-componentes.-brecha)
 * [CI](#ci)
+	* [Migracion.4. CI](#migracion.4.-ci)
 * [Tecnología](#tecnología)
 
 
@@ -569,7 +570,6 @@ Table: Valoración del riesgo RSG10. Validación decisiones de arquitectura. Mig
 
 # Interoperabilidad
 ## Migracion.1c.SIU Modulos Colaboración
-
 ![Diagram: Migracion.1c.SIU Modulos Colaboración](images/Migracion.1c.SIUModulosColaboración.png){#fig:Migracion.1c.SIUModulosColaboración width=}
 
 Patrón de Distribución y Colaboración estándar para el SUI.
@@ -795,12 +795,43 @@ Todos los sistemas de información del SUI siguen esta directiva: estarán const
 \newpage
 
 # CI
+## Migracion.4. CI
+![Diagram: Migracion.4. CI](images/Migracion.4.CI.png){#fig:Migracion.4.CI width=}
+
+Descripción de las cadenas de integración y despliegue continuo de a) submódulos (aplicaciones web, por ejemplo) del SIU Migrado, 2023; e integración y despliegue continuo de los meodulos central del SIU Migrado, 2023.
+
+Las cadenas están separadas por tecnologeias y plataformas distintas; son independientes y no presentan interbloqueos en cuanto a su ejecución. Pero, requieren administración integral.
+
+Los trabajo de despligue requieren las configuraciones de las cadenas y tareas de conexión tanto a los ambientes productivos y desarrollo.
+ 
+
+### Catálogo de Elementos
+| Name| Type| Description| Properties
+|:--------|:--------|:--------|:--------|
+|**cc:PGN SUI (módulo central)**|application-collaboration|Módulo central SUI migrado. Módulo independiente y asignado a un dominio partigular de la PGN.<br>||
+|**cc:Presentación**|application-collaboration|Submódulo de presentación del SUI. interfaz gráfica, interfaz web visible a los usuarios clientes y funcionarios de la PGN. ||
+|**Evento de cambio**|application-event|||
+|**Evento de cambio**|application-event|||
+|**Azure CSM: git**|application-service|||
+|**Lappiz CSM: bin**|application-service|||
+|**Communication Network (LAN)**|communication-network|||
+|**Communication Network (internet)**|communication-network|||
+|**Balanceador**|node|||
+|**Servidor BDD App**|node|Sistema Operativo Windows Server 2019 Standard o Datacenter x64. RAM	8 GB. CPU 64 Bits, 4 Cores > 2 Ghz<br>Discos	SO C: 126 GB, Backup E: 511 GB, SQL Data F: 510 GB, SQL Log   G: 510 GB, TempDB  G: 63.6 GB.<br>||
+|**Servidor BDD Config**|node|Sistema Operativo Windows Server 2019 Standard o Datacenter x64. RAM	8 GB. CPU 64 Bits, 4 Cores > 2 Ghz<br>Discos	SO C: 80 GB, Backup E: 250 GB, SQL Data F: 250 GB, SQL Log G: 250 GB, TempDB  G: 30 GB.<br>||
+|**Servidor Web App**|node|Windows Server 2019 Standard o Datacenter x64. Nombre físico. IP LAN. IP Pública. Windows Server 2019 Standard or Datacenter x64. RAM	8  GB. CPU	64 Bits. 4 Cores de 2 Ghz. Discos	SO C: 126 GB. SO D: 16 GB.<br>||
+|**Servidor Web Canales**|node|Windows Server 2019 Standard o Datacenter x64. Nombre físico. IP LAN. IP Pública. Windows Server 2019 Standard or Datacenter x64. RAM	8  GB. CPU	64 Bits. 4 Cores de 2 Ghz. Discos	SO C: 126 GB. SO D: 16 GB.<br>||
+|**Trabajo de despliegue lappiz.com**|technology-process|||
+|**Trabajo de despliegue: yaml**|technology-process|||
+|**Trabajo de integración lappiz.com**|technology-process|||
+|**Trabajo de integración: yaml**|technology-process|||
+
 <div style="page-break-before: always;"></div>
 \newpage
 
 # Tecnología
 
-``Generated on: Tue Oct 17 2023 11:54:21 GMT-0500 (COT)``
+``Generated on: Tue Oct 17 2023 12:37:42 GMT-0500 (COT)``
 
 ## Requerimientos de Administración
 1.	Las soluciones deben permitir la administración de los Roles de Usuarios: esta funcionalidad debe permitir configurar los diferentes roles de los usuarios funcionales de los procesos. 
@@ -875,7 +906,7 @@ tablenos-caption-name: Tabla
 
 <br>
 
-| **Versión** del producto 1.cae0903 de 17 Oct 2023
+| **Versión** del producto 1.029d7e5 de 17 Oct 2023
 
 | **Presentado a**
 
@@ -904,7 +935,7 @@ Descripción de los productos del trabajo de infraestructura del proyecto Migrac
 | Palabras clave | SIU, Softgic, PGN, Análisis de brecha, GAP, Infraestrctura, PasS |
 | Autor          |                            |
 | Fuente         |                            |
-| Versión        | 1.cae0903 del 17 Oct 2023 |
+| Versión        | 1.029d7e5 del 17 Oct 2023 |
 | Vínculos       | [N003a Vista Segmento PGN SIU](N03a%a20Vsta%20aSegenta%20SOA%20PGN.md) |
 
 <br>
@@ -1093,7 +1124,7 @@ tablenos-caption-name: Tabla
 
 <br>
 
-| **Versión** del producto 1.cae0903 de 17 Oct 2023
+| **Versión** del producto 1.029d7e5 de 17 Oct 2023
 
 | **Presentado a**
 
@@ -1123,7 +1154,7 @@ Descripción de los productos de trabajo de la arquitectura de datos del proyect
 | Palabras clave | SIU, Softgic, PGN, Análisis de brecha, GAP, Entidades, Datos  |
 | Autor          |                            |
 | Fuente         |                            |
-| Versión        | 1.cae0903 del 17 Oct 2023 |
+| Versión        | 1.029d7e5 del 17 Oct 2023 |
 | Vínculos       | [N003a Vista Segmento PGN SIU](N03a%a20Vsta%20aSegenta%20SOA%20PGN.md) |
 
 <br>
