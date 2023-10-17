@@ -1,5 +1,4 @@
 # Actualiza reporte HMTL generado por Archi.
-
 git checkout arq
 git pull
 
