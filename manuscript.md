@@ -18,8 +18,8 @@ header-includes: |
   <meta name="dc.date" content="2023-10-18" />
   <meta name="citation_publication_date" content="2023-10-18" />
   <meta property="article:published_time" content="2023-10-18" />
-  <meta name="dc.modified" content="2023-10-18T19:01:37+00:00" />
-  <meta property="article:modified_time" content="2023-10-18T19:01:37+00:00" />
+  <meta name="dc.modified" content="2023-10-18T20:15:36+00:00" />
+  <meta property="article:modified_time" content="2023-10-18T20:15:36+00:00" />
   <meta name="dc.language" content="en-US" />
   <meta name="citation_language" content="en-US" />
   <meta name="dc.relation.ispartof" content="Manubot" />
@@ -34,9 +34,9 @@ header-includes: |
   <meta name="citation_fulltext_html_url" content="https://hwong23.github.io/pgn-078/" />
   <meta name="citation_pdf_url" content="https://hwong23.github.io/pgn-078/manuscript.pdf" />
   <link rel="alternate" type="application/pdf" href="https://hwong23.github.io/pgn-078/manuscript.pdf" />
-  <link rel="alternate" type="text/html" href="https://hwong23.github.io/pgn-078/v/9be45f1ec1a6c19e63e1d25adfc4f77d49a9b068/" />
-  <meta name="manubot_html_url_versioned" content="https://hwong23.github.io/pgn-078/v/9be45f1ec1a6c19e63e1d25adfc4f77d49a9b068/" />
-  <meta name="manubot_pdf_url_versioned" content="https://hwong23.github.io/pgn-078/v/9be45f1ec1a6c19e63e1d25adfc4f77d49a9b068/manuscript.pdf" />
+  <link rel="alternate" type="text/html" href="https://hwong23.github.io/pgn-078/v/897b9bcd4b39091148716cf18f7919b908733f49/" />
+  <meta name="manubot_html_url_versioned" content="https://hwong23.github.io/pgn-078/v/897b9bcd4b39091148716cf18f7919b908733f49/" />
+  <meta name="manubot_pdf_url_versioned" content="https://hwong23.github.io/pgn-078/v/897b9bcd4b39091148716cf18f7919b908733f49/manuscript.pdf" />
   <meta property="og:type" content="article" />
   <meta property="twitter:card" content="summary_large_image" />
   <link rel="icon" type="image/png" sizes="192x192" href="https://manubot.org/favicon-192x192.png" />
@@ -77,7 +77,7 @@ tablenos-caption-name: Tabla
 
 <br>
 
-| **Versión** del producto 1.9be45f1 de 18 Oct 2023
+| **Versión** del producto 1.897b9bc de 18 Oct 2023
 
 | **Presentado a**
 
@@ -95,9 +95,9 @@ tablenos-caption-name: Tabla
 
 
 <small><em>Los productos de esta etapa, Migración Funcional SIU, Contrato 078-2023, 
-([Web](https://hwong23.github.io/pgn-078/v/9be45f1ec1a6c19e63e1d25adfc4f77d49a9b068/))
+([Web](https://hwong23.github.io/pgn-078/v/897b9bcd4b39091148716cf18f7919b908733f49/))
 están basados en el resultado de la Fase 1 del proyecto PGN SIU del 2022,
-[Sharepoint Softgic@9be45f1](http://softgic.sharepoint.com)
+[Sharepoint Softgic@897b9bc](http://softgic.sharepoint.com)
 del October 18, 2023.
 </em></small>
 
@@ -143,7 +143,7 @@ Descripción de los productos del trabajo de arquitectura de la Fase 2, proyecto
 | Palabras clave | SIU, Softgic, PGN, Análisis de brecha, GAP, Comparativa              |
 | Autor          |                            |
 | Fuente         |                            |
-| Versión        | 1.9be45f1 del 18 Oct 2023 |
+| Versión        | 1.897b9bc del 18 Oct 2023 |
 | Vínculos       | [N003a Vista Segmento PGN SIU](N03a%a20Vsta%20aSegenta%20SOA%20PGN.md) |
 
 <br>
@@ -255,35 +255,35 @@ Table: Requisito no. 2, Mantenibilidad SUI. {#tbl:requisito2-id}
 Table: Requisito no. 3, Migración SUI, Flexibilidad. {#tbl:requisito3-id}
 
 
-# Doc.4.PGN Contractual
-* [Diagrama de Arquitectura de la solución propuesta: vista de integración.](#diagrama-de-arquitectura-de-la-solución-propuesta:-vista-de-integración.)
+# Arquitectura de Software
+* [Diagrama de Arquitectura de la Solución Propuesta: vista de integración](#diagrama-de-arquitectura-de-la-solución-propuesta:-vista-de-integración)
 	* [Migracion.1a.a.SIU Contexto](#migracion.1a.a.siu-contexto)
 	* [Migracion.1a.b.SIU Módulos](#migracion.1a.b.siu-módulos)
 * [Diagrama de Arquitectura de la solución propuesta: vista física](#diagrama-de-arquitectura-de-la-solución-propuesta:-vista-física)
 	* [Lineabase.0.SIU applicación. física](#lineabase.0.siu-applicación.-física)
-* [Diagrama de Arquitectura de la solución propuesta: Motivadores del negocio.](#diagrama-de-arquitectura-de-la-solución-propuesta:-motivadores-del-negocio.)
+* [Diagrama de Arquitectura de la Solución Propuesta: motivadores del negocio](#diagrama-de-arquitectura-de-la-solución-propuesta:-motivadores-del-negocio)
 	* [Migracion.1a.b.SIU Módulos](#migracion.1a.b.siu-módulos)
 	* [Riesgos.1. Migración funcional](#riesgos.1.-migración-funcional)
 	* [Riesgos.2. Modelo Riesgo RSG10](#riesgos.2.-modelo-riesgo-rsg10)
 	* [Riesgos.3. Modelo Riesgo RSG11](#riesgos.3.-modelo-riesgo-rsg11)
-* [Diagrama de Arquitectura de la solución propuesta: Interoperabilidad](#diagrama-de-arquitectura-de-la-solución-propuesta:-interoperabilidad)
+* [Diagrama de Arquitectura de la Solución Propuesta: interoperabilidad](#diagrama-de-arquitectura-de-la-solución-propuesta:-interoperabilidad)
 	* [Migracion.1c.SIU Modulos Colaboración](#migracion.1c.siu-modulos-colaboración)
-* [Diagrama de Arquitectura de la solución propuesta: gestión de autenticación,
+* [Diagrama de Arquitectura de la Solución Propuesta: gestión de autenticación,
 usuarios y roles](#diagrama-de-arquitectura-de-la-solución-propuesta:-gestión-de-autenticación,
 usuarios-y-roles)
 	* [Seguridad.2. Lineabase.0.SIU Applicación](#seguridad.2.-lineabase.0.siu-applicación)
 * [Diagrama de Clases y Componentes de solución](#diagrama-de-clases-y-componentes-de-solución)
 	* [Migracion.1b.1. SIU Módulos Componentes](#migracion.1b.1.-siu-módulos-componentes)
 	* [Migracion.1b.2. SIU Módulos Componentes. Brecha](#migracion.1b.2.-siu-módulos-componentes.-brecha)
-* [CI](#ci)
+* [Diagrama de Arquitectura de Integración Continua, Devops y Despliegues de Capas](#diagrama-de-arquitectura-de-integración-continua,-devops-y-despliegues-de-capas)
 	* [Migracion.4. CI](#migracion.4.-ci)
-* [Tecnología](#tecnología)
+* [Documento de Relación de Tecnologías y Licenciamiento](#documento-de-relación-de-tecnologías-y-licenciamiento)
 
 
 <div style="page-break-before: always;"></div>
 \newpage
 
-# Diagrama de Arquitectura de la solución propuesta: vista de integración.
+# Diagrama de Arquitectura de la Solución Propuesta: vista de integración
 ## Migracion.1a.a.SIU Contexto
 ![Diagram: Migracion.1a.a.SIU Contexto](images/Migracion.1a.a.SIUContexto.png){#fig:Migracion.1a.a.SIUContexto width=}
 
@@ -416,7 +416,7 @@ Con una arquitectura orientada a servicios SUI recopila:
 <div style="page-break-before: always;"></div>
 \newpage
 
-# Diagrama de Arquitectura de la solución propuesta: Motivadores del negocio.
+# Diagrama de Arquitectura de la Solución Propuesta: motivadores del negocio
 ## Migracion.1a.b.SIU Módulos
 ![Diagram: Migracion.1a.b.SIU Módulos](images/Migracion.1a.b.SIUMódulos.png){#fig:Migracion.1a.b.SIUMódulos width=}
 
@@ -570,7 +570,7 @@ Table: Valoración del riesgo RSG10. Validación decisiones de arquitectura. Mig
 <div style="page-break-before: always;"></div>
 \newpage
 
-# Diagrama de Arquitectura de la solución propuesta: Interoperabilidad
+# Diagrama de Arquitectura de la Solución Propuesta: interoperabilidad
 ## Migracion.1c.SIU Modulos Colaboración
 ![Diagram: Migracion.1c.SIU Modulos Colaboración](images/Migracion.1c.SIUModulosColaboración.png){#fig:Migracion.1c.SIUModulosColaboración width=}
 
@@ -598,7 +598,7 @@ Los únicos elementos para la comunicación (e integración) son los indicados e
 <div style="page-break-before: always;"></div>
 \newpage
 
-# Diagrama de Arquitectura de la solución propuesta: gestión de autenticación,
+# Diagrama de Arquitectura de la Solución Propuesta: gestión de autenticación,
 usuarios y roles
 ## Seguridad.2. Lineabase.0.SIU Applicación
 ![Diagram: Seguridad.2. Lineabase.0.SIU Applicación](images/Seguridad.2.Lineabase.0.SIUApplicación.png){#fig:Seguridad.2.Lineabase.0.SIUApplicación width=}
@@ -622,7 +622,6 @@ Con una arquitectura orientada a servicios SUI recopila:
 |**App PGN Móvil**|application-component|A partir de los lineamientos de desarrollo seguro establecidos en The OWASP Foundation recomendados en la “Guía de desarrollo OWASP” y “OWAS Cheat Sheet, se realizaran pruebas de seguridad a partir del analisis de vulnerabilidades, y pruebas de Ethikal Hacking. <br>Protección de datos personales, <br>Los sistemas de información que recogen, procesan y almacenan información de los derechos de las personas se deben almacenar de forma adecuada, la información que pueda ser vulnerada puede generar obliaciones legales y éticas con respecto a la perdida de informacion confidencial por parte de ciudadanos del pais. <br>La informacion contenida en las bases de datos debe tener los mecanismos de cifrado que en otros apartados se han mencionado. <br>La legislación que hay que tener como referencia, ley 1581 de 2012. Decreto 1377 de 2013<br>La metodologia empleada tendrá las siguientes fases: <br>•	FASE DE RECONOCIMIENTO: <br>Se recolectará toda la información posible, usando diferentes técnicas como:<br>o	Recopilación de dominios/IPs/puertos/servicios<br>o	Recopilación de metadatos<br>o	Uso de Google Dorks.<br>•	ANÁLSIS DE VULNERABILIDADES: <br>Se analizará la información recopilada en la fase anterior y se realizará el descubrimiento de las vulnerabilidades. <br>•	EXPLOTACIÓN: <br>•	Se realizarán todas aquellas acciones que puedan comprometer al sistema auditado, las pruebas a implementar pueden ser de ataques tipo: <br>o	Inyección de código<br>o	Inclusión de ficheros locales o remotos<br>o	Evasión de autenticación<br>o	Carencia de controles de autorización<br>o	Ejecución de comandos en el lado del servidor<br>o	Ataques tipo Cross Site Request Forgery<br>o	Control de errores<br>o	Gestión de sesiones<br>o	Fugas de información<br>o	Secuestros de sesión<br>o	Comprobación de las condiciones para realizar una denegación de servicio.<br>	<br>•	POST EXPLOTACIÓN:<br>En caso de encontrarse una vulnerabilidad que permita realizar otras acciones en el sistema auditado o en su entorno, se realizarán controles adiciones con el objetivo de comprobar la criticidad de esta.<br>No	URL	IP<br>1.	https://runtimetest.lappiz.io/#/auth/login/PGN_Lappiz<br>135.181.185.207<br>|*plantilla:* element-md-bold<br>|
 |**App PGN Web**|application-component|A partir de los lineamientos de desarrollo seguro establecidos en The OWASP Foundation recomendados en la “Guía de desarrollo OWASP” y “OWAS Cheat Sheet, se realizaran pruebas de seguridad a partir del analisis de vulnerabilidades, y pruebas de Ethical Hacking. <br>Los resultados permitirán identificar los requisitos de seguridad que los sistemas de informacion o servicios web deberán cumplir.<br>La metodologia empleada tendrá las siguientes fases: <br>•	FASE DE RECONOCIMIENTO: <br>Se recolectará toda la información posible, usando diferentes técnicas como:<br>o	Recopilación de dominios/IPs/puertos/servicios<br>o	Recopilación de metadatos<br>o	Uso de Google Dorks.<br>•	ANÁLSIS DE VULNERABILIDADES: <br>Se analizará la información recopilada en la fase anterior y se realizará el descubrimiento de las vulnerabilidades. <br>•	EXPLOTACIÓN: <br>•	Se realizarán todas aquellas acciones que puedan comprometer al sistema auditado, las pruebas a implementar pueden ser de ataques tipo: <br>o	Inyección de código<br>o	Inclusión de ficheros locales o remotos<br>o	Evasión de autenticación<br>o	Carencia de controles de autorización<br>o	Ejecución de comandos en el lado del servidor<br>o	Ataques tipo Cross Site Request Forgery<br>o	Control de errores<br>o	Gestión de sesiones<br>o	Fugas de información<br>o	Secuestros de sesión<br>o	Comprobación de las condiciones para realizar una denegación de servicio.<br>	<br>•	POST EXPLOTACIÓN:<br>En caso de encontrarse una vulnerabilidad que permita realizar otras acciones en el sistema auditado o en su entorno, se realizarán controles adiciones con el objetivo de comprobar la criticidad de esta.<br>No	URL	IP<br>1.	https://runtimetest.lappiz.io/#/auth/login/PGN_Lappiz<br>135.181.185.207<br>El Login deberá evidenciar el control de errores, al momento de realizar la validación deberá mensaje de error para el caso que se autentique con credenciales erradas. |*plataforma:* angular 11<br>|
 |**Config**|application-component||*plataforma:* cs<br>|
-|**Pruebas**|application-component|FASE DE RECONOCIMIENTO:  <br>Se recolectará toda la información posible, usando diferentes técnicas como: <br>Recopilación de dominios/IPs/puertos/servicios <br>Recopilación de metadatos <br>Uso de Google Dorks. <br>ANÁLSIS DE VULNERABILIDADES:  <br>Se analizará la información recopilada en la fase anterior y se realizará el descubrimiento de las vulnerabilidades.  <br>EXPLOTACIÓN:  <br>Se realizarán todas aquellas acciones que puedan comprometer al sistema auditado, las pruebas a implementar pueden ser de ataques tipo:  <br>Inyección de código <br>Inclusión de ficheros locales o remotos <br>Evasión de autenticación <br>Carencia de controles de autorización <br>Ejecución de comandos en el lado del servidor <br>Ataques tipo Cross Site Request Forgery <br>Control de errores <br>Gestión de sesiones <br>Fugas de información <br>Secuestros de sesión <br>Comprobación de las condiciones para realizar una denegación de servicio. <br>POST EXPLOTACIÓN: <br>En caso de encontrarse una vulnerabilidad que permita realizar otras acciones en el sistema auditado o en su entorno, se realizarán controles adiciones con el objetivo de comprobar la criticidad de esta. ||
 |**Punto acceso público**|application-interface|URL tipo C<br>HTTP||
 |**Application Service (NLB)**|application-service||*plataforma:* angular 11<br>|
 |**Interfaz de datos 1**|application-service|||
@@ -797,7 +796,7 @@ Todos los sistemas de información del SUI siguen esta directiva: estarán const
 <div style="page-break-before: always;"></div>
 \newpage
 
-# CI
+# Diagrama de Arquitectura de Integración Continua, Devops y Despliegues de Capas
 ## Migracion.4. CI
 ![Diagram: Migracion.4. CI](images/Migracion.4.CI.png){#fig:Migracion.4.CI width=}
 
@@ -832,9 +831,9 @@ Los trabajo de despligue requieren las configuraciones de las cadenas y tareas d
 <div style="page-break-before: always;"></div>
 \newpage
 
-# Tecnología
+# Documento de Relación de Tecnologías y Licenciamiento
 
-``Generated on: Wed Oct 18 2023 13:55:58 GMT-0500 (COT)``
+``Generated on: Wed Oct 18 2023 15:11:58 GMT-0500 (COT)``
 
 ## Requerimientos de Administración
 1.	Las soluciones deben permitir la administración de los Roles de Usuarios: esta funcionalidad debe permitir configurar los diferentes roles de los usuarios funcionales de los procesos. 
@@ -909,7 +908,7 @@ tablenos-caption-name: Tabla
 
 <br>
 
-| **Versión** del producto 1.9be45f1 de 18 Oct 2023
+| **Versión** del producto 1.897b9bc de 18 Oct 2023
 
 | **Presentado a**
 
@@ -938,7 +937,7 @@ Descripción de los productos del trabajo de infraestructura del proyecto Migrac
 | Palabras clave | SIU, Softgic, PGN, Análisis de brecha, GAP, Infraestrctura, PasS |
 | Autor          |                            |
 | Fuente         |                            |
-| Versión        | 1.9be45f1 del 18 Oct 2023 |
+| Versión        | 1.897b9bc del 18 Oct 2023 |
 | Vínculos       | [N003a Vista Segmento PGN SIU](N03a%a20Vsta%20aSegenta%20SOA%20PGN.md) |
 
 <br>
@@ -1127,7 +1126,7 @@ tablenos-caption-name: Tabla
 
 <br>
 
-| **Versión** del producto 1.9be45f1 de 18 Oct 2023
+| **Versión** del producto 1.897b9bc de 18 Oct 2023
 
 | **Presentado a**
 
@@ -1157,7 +1156,7 @@ Descripción de los productos de trabajo de la arquitectura de datos del proyect
 | Palabras clave | SIU, Softgic, PGN, Análisis de brecha, GAP, Entidades, Datos  |
 | Autor          |                            |
 | Fuente         |                            |
-| Versión        | 1.9be45f1 del 18 Oct 2023 |
+| Versión        | 1.897b9bc del 18 Oct 2023 |
 | Vínculos       | [N003a Vista Segmento PGN SIU](N03a%a20Vsta%20aSegenta%20SOA%20PGN.md) |
 
 <br>
