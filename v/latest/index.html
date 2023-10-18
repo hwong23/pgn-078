@@ -5,7 +5,7 @@
   <meta name="generator" content="pandoc" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes" />
   <meta name="author" content="Harry Wong, ing." />
-  <meta name="dcterms.date" content="2023-10-17" />
+  <meta name="dcterms.date" content="2023-10-18" />
   <meta name="keywords" content="SOA, madurez, gobierno, PGN" />
   <title>Documento de Arquitectura Migración Funcional PGN SIU</title>
   <style>
@@ -46,11 +46,11 @@
   -->
   <meta name="dc.format" content="text/html" />
   <meta property="og:type" content="article" />
-  <meta name="dc.date" content="2023-10-17" />
-  <meta name="citation_publication_date" content="2023-10-17" />
-  <meta property="article:published_time" content="2023-10-17" />
-  <meta name="dc.modified" content="2023-10-17T18:23:00+00:00" />
-  <meta property="article:modified_time" content="2023-10-17T18:23:00+00:00" />
+  <meta name="dc.date" content="2023-10-18" />
+  <meta name="citation_publication_date" content="2023-10-18" />
+  <meta property="article:published_time" content="2023-10-18" />
+  <meta name="dc.modified" content="2023-10-18T19:01:37+00:00" />
+  <meta property="article:modified_time" content="2023-10-18T19:01:37+00:00" />
   <meta name="dc.language" content="en-US" />
   <meta name="citation_language" content="en-US" />
   <meta name="dc.relation.ispartof" content="Manubot" />
@@ -65,9 +65,9 @@
   <meta name="citation_fulltext_html_url" content="https://hwong23.github.io/pgn-078/" />
   <meta name="citation_pdf_url" content="https://hwong23.github.io/pgn-078/manuscript.pdf" />
   <link rel="alternate" type="application/pdf" href="https://hwong23.github.io/pgn-078/manuscript.pdf" />
-  <link rel="alternate" type="text/html" href="https://hwong23.github.io/pgn-078/v/8e44d9ce6e5d98e3bd1d13044411d7c2836c3163/" />
-  <meta name="manubot_html_url_versioned" content="https://hwong23.github.io/pgn-078/v/8e44d9ce6e5d98e3bd1d13044411d7c2836c3163/" />
-  <meta name="manubot_pdf_url_versioned" content="https://hwong23.github.io/pgn-078/v/8e44d9ce6e5d98e3bd1d13044411d7c2836c3163/manuscript.pdf" />
+  <link rel="alternate" type="text/html" href="https://hwong23.github.io/pgn-078/v/9be45f1ec1a6c19e63e1d25adfc4f77d49a9b068/" />
+  <meta name="manubot_html_url_versioned" content="https://hwong23.github.io/pgn-078/v/9be45f1ec1a6c19e63e1d25adfc4f77d49a9b068/" />
+  <meta name="manubot_pdf_url_versioned" content="https://hwong23.github.io/pgn-078/v/9be45f1ec1a6c19e63e1d25adfc4f77d49a9b068/manuscript.pdf" />
   <meta property="og:type" content="article" />
   <meta property="twitter:card" content="summary_large_image" />
   <link rel="icon" type="image/png" sizes="192x192" href="https://manubot.org/favicon-192x192.png" />
@@ -89,20 +89,20 @@
 <p><br></p>
 <p><br></p>
 <p><br></p>
-<div class="line-block"><strong>Versión</strong> del producto 1.8e44d9c de 17 Oct 2023</div>
+<div class="line-block"><strong>Versión</strong> del producto 1.9be45f1 de 18 Oct 2023</div>
 <div class="line-block"><strong>Presentado a</strong></div>
 <div class="line-block">Procuraduría General de la Nación (PGN)</div>
 <div class="line-block"></div>
 <div class="line-block"><strong>Fecha</strong></div>
-<div class="line-block">17 Oct 2023</div>
+<div class="line-block">18 Oct 2023</div>
 <div style="page-break-before: always;">
 
 </div>
 <p><small><em>Los productos de esta etapa, Migración Funcional SIU, Contrato 078-2023,
-(<a href="https://hwong23.github.io/pgn-078/v/8e44d9ce6e5d98e3bd1d13044411d7c2836c3163/">Web</a>)
+(<a href="https://hwong23.github.io/pgn-078/v/9be45f1ec1a6c19e63e1d25adfc4f77d49a9b068/">Web</a>)
 están basados en el resultado de la Fase 1 del proyecto PGN SIU del 2022,
-<a href="http://softgic.sharepoint.com">Sharepoint Softgic@8e44d9c</a>
-del October 17, 2023.
+<a href="http://softgic.sharepoint.com">Sharepoint Softgic@9be45f1</a>
+del October 18, 2023.
 </em></small></p>
 <p><br></p>
 <h2 id="autores">Autores</h2>
@@ -150,7 +150,7 @@ Arquitecto, Softgic
 </tr>
 <tr class="even">
 <td>Versión</td>
-<td>1.8e44d9c del 17 Oct 2023</td>
+<td>1.9be45f1 del 18 Oct 2023</td>
 </tr>
 <tr class="odd">
 <td>Vínculos</td>
@@ -295,31 +295,32 @@ Arquitecto, Softgic
 </div>
 <h1 id="doc.4.pgn-contractual">Doc.4.PGN Contractual</h1>
 <ul>
-<li><a href="#contexto">Contexto</a>
+<li><a href="#diagrama-de-arquitectura-de-la-solución-propuesta:-vista-de-integración.">Diagrama de Arquitectura de la solución propuesta: vista de integración.</a>
 <ul>
 <li><a href="#migracion.1a.a.siu-contexto">Migracion.1a.a.SIU Contexto</a></li>
 <li><a href="#migracion.1a.b.siu-módulos">Migracion.1a.b.SIU Módulos</a></li>
 </ul></li>
-<li><a href="#física">Física</a>
+<li><a href="#diagrama-de-arquitectura-de-la-solución-propuesta:-vista-física">Diagrama de Arquitectura de la solución propuesta: vista física</a>
 <ul>
 <li><a href="#lineabase.0.siu-applicación.-física">Lineabase.0.SIU applicación. física</a></li>
 </ul></li>
-<li><a href="#motivadores">Motivadores</a>
+<li><a href="#diagrama-de-arquitectura-de-la-solución-propuesta:-motivadores-del-negocio.">Diagrama de Arquitectura de la solución propuesta: Motivadores del negocio.</a>
 <ul>
 <li><a href="#migracion.1a.b.siu-módulos">Migracion.1a.b.SIU Módulos</a></li>
 <li><a href="#riesgos.1.-migración-funcional">Riesgos.1. Migración funcional</a></li>
 <li><a href="#riesgos.2.-modelo-riesgo-rsg10">Riesgos.2. Modelo Riesgo RSG10</a></li>
 <li><a href="#riesgos.3.-modelo-riesgo-rsg11">Riesgos.3. Modelo Riesgo RSG11</a></li>
 </ul></li>
-<li><a href="#interoperabilidad">Interoperabilidad</a>
+<li><a href="#diagrama-de-arquitectura-de-la-solución-propuesta:-interoperabilidad">Diagrama de Arquitectura de la solución propuesta: Interoperabilidad</a>
 <ul>
 <li><a href="#migracion.1c.siu-modulos-colaboración">Migracion.1c.SIU Modulos Colaboración</a></li>
 </ul></li>
-<li><a href="#seguridad">Seguridad</a>
+<li><a href="#diagrama-de-arquitectura-de-la-solución-propuesta:-gestión-de-autenticación,%20usuarios-y-roles">Diagrama de Arquitectura de la solución propuesta: gestión de autenticación,
+usuarios y roles</a>
 <ul>
 <li><a href="#seguridad.2.-lineabase.0.siu-applicación">Seguridad.2. Lineabase.0.SIU Applicación</a></li>
 </ul></li>
-<li><a href="#componentes">Componentes</a>
+<li><a href="#diagrama-de-clases-y-componentes-de-solución">Diagrama de Clases y Componentes de solución</a>
 <ul>
 <li><a href="#migracion.1b.1.-siu-módulos-componentes">Migracion.1b.1. SIU Módulos Componentes</a></li>
 <li><a href="#migracion.1b.2.-siu-módulos-componentes.-brecha">Migracion.1b.2. SIU Módulos Componentes. Brecha</a></li>
@@ -333,7 +334,7 @@ Arquitecto, Softgic
 <div style="page-break-before: always;">
 
 </div>
-<h1 id="contexto">Contexto</h1>
+<h1 id="diagrama-de-arquitectura-de-la-solución-propuesta-vista-de-integración.">Diagrama de Arquitectura de la solución propuesta: vista de integración.</h1>
 <h2 id="migracion.1a.a.siu-contexto">Migracion.1a.a.SIU Contexto</h2>
 <div id="fig:Migracion.1a.a.SIUContexto" class="fignos">
 <figure>
@@ -682,7 +683,7 @@ Arquitecto, Softgic
 <div style="page-break-before: always;">
 
 </div>
-<h1 id="física">Física</h1>
+<h1 id="diagrama-de-arquitectura-de-la-solución-propuesta-vista-física">Diagrama de Arquitectura de la solución propuesta: vista física</h1>
 <h2 id="lineabase.0.siu-applicación.-física">Lineabase.0.SIU applicación. física</h2>
 <div id="fig:Lineabase.0.SIUapplicación.física" class="fignos">
 <figure>
@@ -738,7 +739,7 @@ Arquitecto, Softgic
 <td style="text-align: left;"><strong>App PGN Móvil</strong></td>
 <td style="text-align: left;">application-component</td>
 <td style="text-align: left;">A partir de los lineamientos de desarrollo seguro establecidos en The OWASP Foundation recomendados en la “Guía de desarrollo OWASP” y “OWAS Cheat Sheet, se realizaran pruebas de seguridad a partir del analisis de vulnerabilidades, y pruebas de Ethikal Hacking. <br>Protección de datos personales, <br>Los sistemas de información que recogen, procesan y almacenan información de los derechos de las personas se deben almacenar de forma adecuada, la información que pueda ser vulnerada puede generar obliaciones legales y éticas con respecto a la perdida de informacion confidencial por parte de ciudadanos del pais. <br>La informacion contenida en las bases de datos debe tener los mecanismos de cifrado que en otros apartados se han mencionado. <br>La legislación que hay que tener como referencia, ley 1581 de 2012. Decreto 1377 de 2013<br>La metodologia empleada tendrá las siguientes fases: <br>• FASE DE RECONOCIMIENTO: <br>Se recolectará toda la información posible, usando diferentes técnicas como:<br>o Recopilación de dominios/IPs/puertos/servicios<br>o Recopilación de metadatos<br>o Uso de Google Dorks.<br>• ANÁLSIS DE VULNERABILIDADES: <br>Se analizará la información recopilada en la fase anterior y se realizará el descubrimiento de las vulnerabilidades. <br>• EXPLOTACIÓN: <br>• Se realizarán todas aquellas acciones que puedan comprometer al sistema auditado, las pruebas a implementar pueden ser de ataques tipo: <br>o Inyección de código<br>o Inclusión de ficheros locales o remotos<br>o Evasión de autenticación<br>o Carencia de controles de autorización<br>o Ejecución de comandos en el lado del servidor<br>o Ataques tipo Cross Site Request Forgery<br>o Control de errores<br>o Gestión de sesiones<br>o Fugas de información<br>o Secuestros de sesión<br>o Comprobación de las condiciones para realizar una denegación de servicio.<br> <br>• POST EXPLOTACIÓN:<br>En caso de encontrarse una vulnerabilidad que permita realizar otras acciones en el sistema auditado o en su entorno, se realizarán controles adiciones con el objetivo de comprobar la criticidad de esta.<br>No URL IP<br>1. https://runtimetest.lappiz.io/#/auth/login/PGN_Lappiz<br>135.181.185.207<br></td>
-<td style="text-align: left;"><em>plantilla:</em> element-md-new<br></td>
+<td style="text-align: left;"><em>plantilla:</em> element-md-bold<br></td>
 </tr>
 <tr class="odd">
 <td style="text-align: left;"><strong>App PGN Web</strong></td>
@@ -835,7 +836,7 @@ Arquitecto, Softgic
 <div style="page-break-before: always;">
 
 </div>
-<h1 id="motivadores">Motivadores</h1>
+<h1 id="diagrama-de-arquitectura-de-la-solución-propuesta-motivadores-del-negocio.">Diagrama de Arquitectura de la solución propuesta: Motivadores del negocio.</h1>
 <h2 id="migracion.1a.b.siu-módulos-1">Migracion.1a.b.SIU Módulos</h2>
 <div id="fig:Migracion.1a.b.SIUMódulos" class="fignos">
 <figure>
@@ -1344,7 +1345,7 @@ Arquitecto, Softgic
 <div style="page-break-before: always;">
 
 </div>
-<h1 id="interoperabilidad">Interoperabilidad</h1>
+<h1 id="diagrama-de-arquitectura-de-la-solución-propuesta-interoperabilidad">Diagrama de Arquitectura de la solución propuesta: Interoperabilidad</h1>
 <h2 id="migracion.1c.siu-modulos-colaboración">Migracion.1c.SIU Modulos Colaboración</h2>
 <div id="fig:Migracion.1c.SIUModulosColaboración" class="fignos">
 <figure>
@@ -1432,14 +1433,10 @@ Arquitecto, Softgic
 <div style="page-break-before: always;">
 
 </div>
-<h1 id="seguridad">Seguridad</h1>
-<h2 id="seguridad.2.-lineabase.0.siu-applicación">Seguridad.2. Lineabase.0.SIU Applicación</h2>
-<div id="fig:Seguridad.2.Lineabase.0.SIUApplicación" class="fignos">
-<figure>
-<img src="images/Seguridad.2.Lineabase.0.SIUApplicación.png" alt="Imagen 9: Diagram: Seguridad.2. Lineabase.0.SIU Applicación" />
-<figcaption aria-hidden="true"><span>Imagen 9:</span> Diagram: Seguridad.2. Lineabase.0.SIU Applicación</figcaption>
-</figure>
-</div>
+<h1 id="diagrama-de-arquitectura-de-la-solución-propuesta-gestión-de-autenticación">Diagrama de Arquitectura de la solución propuesta: gestión de autenticación,</h1>
+<p>usuarios y roles
+## Seguridad.2. Lineabase.0.SIU Applicación
+<img src="images/Seguridad.2.Lineabase.0.SIUApplicación.png" id="fig:Seguridad.2.Lineabase.0.SIUApplicación" alt="Diagram: Seguridad.2. Lineabase.0.SIU Applicación" /></p>
 <h2 id="representación-arquitectónica-1">Representación Arquitectónica</h2>
 <p>Con una arquitectura orientada a servicios SUI recopila:</p>
 <ol type="1">
@@ -1486,7 +1483,7 @@ Arquitecto, Softgic
 <td style="text-align: left;"><strong>App PGN Móvil</strong></td>
 <td style="text-align: left;">application-component</td>
 <td style="text-align: left;">A partir de los lineamientos de desarrollo seguro establecidos en The OWASP Foundation recomendados en la “Guía de desarrollo OWASP” y “OWAS Cheat Sheet, se realizaran pruebas de seguridad a partir del analisis de vulnerabilidades, y pruebas de Ethikal Hacking. <br>Protección de datos personales, <br>Los sistemas de información que recogen, procesan y almacenan información de los derechos de las personas se deben almacenar de forma adecuada, la información que pueda ser vulnerada puede generar obliaciones legales y éticas con respecto a la perdida de informacion confidencial por parte de ciudadanos del pais. <br>La informacion contenida en las bases de datos debe tener los mecanismos de cifrado que en otros apartados se han mencionado. <br>La legislación que hay que tener como referencia, ley 1581 de 2012. Decreto 1377 de 2013<br>La metodologia empleada tendrá las siguientes fases: <br>• FASE DE RECONOCIMIENTO: <br>Se recolectará toda la información posible, usando diferentes técnicas como:<br>o Recopilación de dominios/IPs/puertos/servicios<br>o Recopilación de metadatos<br>o Uso de Google Dorks.<br>• ANÁLSIS DE VULNERABILIDADES: <br>Se analizará la información recopilada en la fase anterior y se realizará el descubrimiento de las vulnerabilidades. <br>• EXPLOTACIÓN: <br>• Se realizarán todas aquellas acciones que puedan comprometer al sistema auditado, las pruebas a implementar pueden ser de ataques tipo: <br>o Inyección de código<br>o Inclusión de ficheros locales o remotos<br>o Evasión de autenticación<br>o Carencia de controles de autorización<br>o Ejecución de comandos en el lado del servidor<br>o Ataques tipo Cross Site Request Forgery<br>o Control de errores<br>o Gestión de sesiones<br>o Fugas de información<br>o Secuestros de sesión<br>o Comprobación de las condiciones para realizar una denegación de servicio.<br> <br>• POST EXPLOTACIÓN:<br>En caso de encontrarse una vulnerabilidad que permita realizar otras acciones en el sistema auditado o en su entorno, se realizarán controles adiciones con el objetivo de comprobar la criticidad de esta.<br>No URL IP<br>1. https://runtimetest.lappiz.io/#/auth/login/PGN_Lappiz<br>135.181.185.207<br></td>
-<td style="text-align: left;"><em>plantilla:</em> element-md-new<br></td>
+<td style="text-align: left;"><em>plantilla:</em> element-md-bold<br></td>
 </tr>
 <tr class="odd">
 <td style="text-align: left;"><strong>App PGN Web</strong></td>
@@ -1637,12 +1634,12 @@ Arquitecto, Softgic
 <div style="page-break-before: always;">
 
 </div>
-<h1 id="componentes">Componentes</h1>
+<h1 id="diagrama-de-clases-y-componentes-de-solución">Diagrama de Clases y Componentes de solución</h1>
 <h2 id="migracion.1b.1.-siu-módulos-componentes">Migracion.1b.1. SIU Módulos Componentes</h2>
 <div id="fig:Migracion.1b.1.SIUMódulosComponentes" class="fignos">
 <figure>
-<img src="images/Migracion.1b.1.SIUMódulosComponentes.png" alt="Imagen 10: Diagram: Migracion.1b.1. SIU Módulos Componentes" />
-<figcaption aria-hidden="true"><span>Imagen 10:</span> Diagram: Migracion.1b.1. SIU Módulos Componentes</figcaption>
+<img src="images/Migracion.1b.1.SIUMódulosComponentes.png" alt="Imagen 9: Diagram: Migracion.1b.1. SIU Módulos Componentes" />
+<figcaption aria-hidden="true"><span>Imagen 9:</span> Diagram: Migracion.1b.1. SIU Módulos Componentes</figcaption>
 </figure>
 </div>
 <p>Presentación de los componentes internos de los submódulos del sistema único de información migrado, SUI de PGN. Organización intena de los servicios y paquetes que integran cada submódulo del SUI. Todos los sistemas de información del SUI siguen esta directiva: estarán constituídos por submódulos dispuestos en relación de utilitarios (que sirven) a los componentes misionales del SUI, ubicados en el centro en la diagrama.</p>
@@ -1694,7 +1691,7 @@ Arquitecto, Softgic
 <td style="text-align: left;"><strong>App PGN Móvil</strong></td>
 <td style="text-align: left;">application-component</td>
 <td style="text-align: left;">A partir de los lineamientos de desarrollo seguro establecidos en The OWASP Foundation recomendados en la “Guía de desarrollo OWASP” y “OWAS Cheat Sheet, se realizaran pruebas de seguridad a partir del analisis de vulnerabilidades, y pruebas de Ethikal Hacking. <br>Protección de datos personales, <br>Los sistemas de información que recogen, procesan y almacenan información de los derechos de las personas se deben almacenar de forma adecuada, la información que pueda ser vulnerada puede generar obliaciones legales y éticas con respecto a la perdida de informacion confidencial por parte de ciudadanos del pais. <br>La informacion contenida en las bases de datos debe tener los mecanismos de cifrado que en otros apartados se han mencionado. <br>La legislación que hay que tener como referencia, ley 1581 de 2012. Decreto 1377 de 2013<br>La metodologia empleada tendrá las siguientes fases: <br>• FASE DE RECONOCIMIENTO: <br>Se recolectará toda la información posible, usando diferentes técnicas como:<br>o Recopilación de dominios/IPs/puertos/servicios<br>o Recopilación de metadatos<br>o Uso de Google Dorks.<br>• ANÁLSIS DE VULNERABILIDADES: <br>Se analizará la información recopilada en la fase anterior y se realizará el descubrimiento de las vulnerabilidades. <br>• EXPLOTACIÓN: <br>• Se realizarán todas aquellas acciones que puedan comprometer al sistema auditado, las pruebas a implementar pueden ser de ataques tipo: <br>o Inyección de código<br>o Inclusión de ficheros locales o remotos<br>o Evasión de autenticación<br>o Carencia de controles de autorización<br>o Ejecución de comandos en el lado del servidor<br>o Ataques tipo Cross Site Request Forgery<br>o Control de errores<br>o Gestión de sesiones<br>o Fugas de información<br>o Secuestros de sesión<br>o Comprobación de las condiciones para realizar una denegación de servicio.<br> <br>• POST EXPLOTACIÓN:<br>En caso de encontrarse una vulnerabilidad que permita realizar otras acciones en el sistema auditado o en su entorno, se realizarán controles adiciones con el objetivo de comprobar la criticidad de esta.<br>No URL IP<br>1. https://runtimetest.lappiz.io/#/auth/login/PGN_Lappiz<br>135.181.185.207<br></td>
-<td style="text-align: left;"><em>plantilla:</em> element-md-new<br></td>
+<td style="text-align: left;"><em>plantilla:</em> element-md-bold<br></td>
 </tr>
 <tr class="odd">
 <td style="text-align: left;"><strong>App PGN Web</strong></td>
@@ -2007,8 +2004,8 @@ Arquitecto, Softgic
 <h2 id="migracion.1b.2.-siu-módulos-componentes.-brecha">Migracion.1b.2. SIU Módulos Componentes. Brecha</h2>
 <div id="fig:Migracion.1b.2.SIUMódulosComponentes.Brecha" class="fignos">
 <figure>
-<img src="images/Migracion.1b.2.SIUMódulosComponentes.Brecha.png" alt="Imagen 11: Diagram: Migracion.1b.2. SIU Módulos Componentes. Brecha" />
-<figcaption aria-hidden="true"><span>Imagen 11:</span> Diagram: Migracion.1b.2. SIU Módulos Componentes. Brecha</figcaption>
+<img src="images/Migracion.1b.2.SIUMódulosComponentes.Brecha.png" alt="Imagen 10: Diagram: Migracion.1b.2. SIU Módulos Componentes. Brecha" />
+<figcaption aria-hidden="true"><span>Imagen 10:</span> Diagram: Migracion.1b.2. SIU Módulos Componentes. Brecha</figcaption>
 </figure>
 </div>
 <p>Los elementos resaltados indican las extensiones a la arqutecutra por concepto de Fase II del proyecto de migración SUI.</p>
@@ -2041,7 +2038,7 @@ Arquitecto, Softgic
 <td style="text-align: left;"><strong>App PGN Móvil</strong></td>
 <td style="text-align: left;">application-component</td>
 <td style="text-align: left;">A partir de los lineamientos de desarrollo seguro establecidos en The OWASP Foundation recomendados en la “Guía de desarrollo OWASP” y “OWAS Cheat Sheet, se realizaran pruebas de seguridad a partir del analisis de vulnerabilidades, y pruebas de Ethikal Hacking. <br>Protección de datos personales, <br>Los sistemas de información que recogen, procesan y almacenan información de los derechos de las personas se deben almacenar de forma adecuada, la información que pueda ser vulnerada puede generar obliaciones legales y éticas con respecto a la perdida de informacion confidencial por parte de ciudadanos del pais. <br>La informacion contenida en las bases de datos debe tener los mecanismos de cifrado que en otros apartados se han mencionado. <br>La legislación que hay que tener como referencia, ley 1581 de 2012. Decreto 1377 de 2013<br>La metodologia empleada tendrá las siguientes fases: <br>• FASE DE RECONOCIMIENTO: <br>Se recolectará toda la información posible, usando diferentes técnicas como:<br>o Recopilación de dominios/IPs/puertos/servicios<br>o Recopilación de metadatos<br>o Uso de Google Dorks.<br>• ANÁLSIS DE VULNERABILIDADES: <br>Se analizará la información recopilada en la fase anterior y se realizará el descubrimiento de las vulnerabilidades. <br>• EXPLOTACIÓN: <br>• Se realizarán todas aquellas acciones que puedan comprometer al sistema auditado, las pruebas a implementar pueden ser de ataques tipo: <br>o Inyección de código<br>o Inclusión de ficheros locales o remotos<br>o Evasión de autenticación<br>o Carencia de controles de autorización<br>o Ejecución de comandos en el lado del servidor<br>o Ataques tipo Cross Site Request Forgery<br>o Control de errores<br>o Gestión de sesiones<br>o Fugas de información<br>o Secuestros de sesión<br>o Comprobación de las condiciones para realizar una denegación de servicio.<br> <br>• POST EXPLOTACIÓN:<br>En caso de encontrarse una vulnerabilidad que permita realizar otras acciones en el sistema auditado o en su entorno, se realizarán controles adiciones con el objetivo de comprobar la criticidad de esta.<br>No URL IP<br>1. https://runtimetest.lappiz.io/#/auth/login/PGN_Lappiz<br>135.181.185.207<br></td>
-<td style="text-align: left;"><em>plantilla:</em> element-md-new<br></td>
+<td style="text-align: left;"><em>plantilla:</em> element-md-bold<br></td>
 </tr>
 <tr class="odd">
 <td style="text-align: left;"><strong>App PGN Web</strong></td>
@@ -2364,8 +2361,8 @@ Arquitecto, Softgic
 <h2 id="migracion.4.-ci">Migracion.4. CI</h2>
 <div id="fig:Migracion.4.CI" class="fignos">
 <figure>
-<img src="images/Migracion.4.CI.png" alt="Imagen 12: Diagram: Migracion.4. CI" />
-<figcaption aria-hidden="true"><span>Imagen 12:</span> Diagram: Migracion.4. CI</figcaption>
+<img src="images/Migracion.4.CI.png" alt="Imagen 11: Diagram: Migracion.4. CI" />
+<figcaption aria-hidden="true"><span>Imagen 11:</span> Diagram: Migracion.4. CI</figcaption>
 </figure>
 </div>
 <p>Descripción de las cadenas de integración y despliegue continuo de a) submódulos (aplicaciones web, por ejemplo) del SIU Migrado, 2023; e integración y despliegue continuo de los meodulos central del SIU Migrado, 2023.</p>
@@ -2496,7 +2493,7 @@ Arquitecto, Softgic
 
 </div>
 <h1 id="tecnología">Tecnología</h1>
-<p><code>Generated on: Tue Oct 17 2023 13:18:28 GMT-0500 (COT)</code></p>
+<p><code>Generated on: Wed Oct 18 2023 13:55:58 GMT-0500 (COT)</code></p>
 <h2 id="requerimientos-de-administración">Requerimientos de Administración</h2>
 <ol type="1">
 <li>Las soluciones deben permitir la administración de los Roles de Usuarios: esta funcionalidad debe permitir configurar los diferentes roles de los usuarios funcionales de los procesos.</li>
@@ -2550,12 +2547,12 @@ Administrar los Usuarios de la Solución: Esta funcionalidad debe permitir confi
 <p><br></p>
 <p><br></p>
 <p><br></p>
-<div class="line-block"><strong>Versión</strong> del producto 1.8e44d9c de 17 Oct 2023</div>
+<div class="line-block"><strong>Versión</strong> del producto 1.9be45f1 de 18 Oct 2023</div>
 <div class="line-block"><strong>Presentado a</strong></div>
 <div class="line-block">Procuraduría General de la Nación (PGN)</div>
 <div class="line-block"></div>
 <div class="line-block"><strong>Fecha</strong></div>
-<div class="line-block">17 Oct 2023</div>
+<div class="line-block">18 Oct 2023</div>
 <div style="page-break-before: always;">
 
 </div>
@@ -2590,7 +2587,7 @@ Administrar los Usuarios de la Solución: Esta funcionalidad debe permitir confi
 </tr>
 <tr class="even">
 <td>Versión</td>
-<td>1.8e44d9c del 17 Oct 2023</td>
+<td>1.9be45f1 del 18 Oct 2023</td>
 </tr>
 <tr class="odd">
 <td>Vínculos</td>
@@ -2619,8 +2616,8 @@ Administrar los Usuarios de la Solución: Esta funcionalidad debe permitir confi
 <h2 id="lineabase.1a.siu-componentes.-infraestrcutura">Lineabase.1a.SIU componentes. infraestrcutura</h2>
 <div id="fig:Lineabase.1a.SIUcomponentes.infraestrcutura" class="fignos">
 <figure>
-<img src="images/Lineabase.1a.SIUcomponentes.infraestrcutura.png" alt="Imagen 13: Diagram: Lineabase.1a.SIU componentes. infraestrcutura" />
-<figcaption aria-hidden="true"><span>Imagen 13:</span> Diagram: Lineabase.1a.SIU componentes. infraestrcutura</figcaption>
+<img src="images/Lineabase.1a.SIUcomponentes.infraestrcutura.png" alt="Imagen 12: Diagram: Lineabase.1a.SIU componentes. infraestrcutura" />
+<figcaption aria-hidden="true"><span>Imagen 12:</span> Diagram: Lineabase.1a.SIU componentes. infraestrcutura</figcaption>
 </figure>
 </div>
 <p>Dependencias de infraestructura entre los servicios que integran el modelo de aplicación de SUI, Migración.</p>
@@ -2869,8 +2866,8 @@ Administrar los Usuarios de la Solución: Esta funcionalidad debe permitir confi
 <h2 id="lineabase.0.siu-applicación.-física-1">Lineabase.0.SIU applicación. física</h2>
 <div id="fig:Lineabase.0.SIUapplicación.física" class="fignos">
 <figure>
-<img src="images/Lineabase.0.SIUapplicación.física.png" alt="Imagen 14: Diagram: Lineabase.0.SIU applicación. física" />
-<figcaption aria-hidden="true"><span>Imagen 14:</span> Diagram: Lineabase.0.SIU applicación. física</figcaption>
+<img src="images/Lineabase.0.SIUapplicación.física.png" alt="Imagen 13: Diagram: Lineabase.0.SIU applicación. física" />
+<figcaption aria-hidden="true"><span>Imagen 13:</span> Diagram: Lineabase.0.SIU applicación. física</figcaption>
 </figure>
 </div>
 <h2 id="representación-arquitectónica-2">Representación Arquitectónica</h2>
@@ -3022,8 +3019,8 @@ Administrar los Usuarios de la Solución: Esta funcionalidad debe permitir confi
 <h2 id="seguridad.-lineabase.0.siu-applicación">Seguridad. Lineabase.0.SIU applicación</h2>
 <div id="fig:Seguridad.Lineabase.0.SIUapplicación" class="fignos">
 <figure>
-<img src="images/Seguridad.Lineabase.0.SIUapplicación.png" alt="Imagen 15: Diagram: Seguridad. Lineabase.0.SIU applicación" />
-<figcaption aria-hidden="true"><span>Imagen 15:</span> Diagram: Seguridad. Lineabase.0.SIU applicación</figcaption>
+<img src="images/Seguridad.Lineabase.0.SIUapplicación.png" alt="Imagen 14: Diagram: Seguridad. Lineabase.0.SIU applicación" />
+<figcaption aria-hidden="true"><span>Imagen 14:</span> Diagram: Seguridad. Lineabase.0.SIU applicación</figcaption>
 </figure>
 </div>
 <h2 id="representación-arquitectónica-3">Representación Arquitectónica</h2>
@@ -3242,12 +3239,12 @@ Administrar los Usuarios de la Solución: Esta funcionalidad debe permitir confi
 <p><br></p>
 <p><br></p>
 <p><br></p>
-<div class="line-block"><strong>Versión</strong> del producto 1.8e44d9c de 17 Oct 2023</div>
+<div class="line-block"><strong>Versión</strong> del producto 1.9be45f1 de 18 Oct 2023</div>
 <div class="line-block"><strong>Presentado a</strong></div>
 <div class="line-block">Procuraduría General de la Nación (PGN)</div>
 <div class="line-block"></div>
 <div class="line-block"><strong>Fecha</strong></div>
-<div class="line-block">17 Oct 2023</div>
+<div class="line-block">18 Oct 2023</div>
 <div style="page-break-before: always;">
 
 </div>
@@ -3282,7 +3279,7 @@ Administrar los Usuarios de la Solución: Esta funcionalidad debe permitir confi
 </tr>
 <tr class="even">
 <td>Versión</td>
-<td>1.8e44d9c del 17 Oct 2023</td>
+<td>1.9be45f1 del 18 Oct 2023</td>
 </tr>
 <tr class="odd">
 <td>Vínculos</td>
@@ -3313,8 +3310,8 @@ Administrar los Usuarios de la Solución: Esta funcionalidad debe permitir confi
 <h2 id="migracion.2.-datos">Migracion.2. datos</h2>
 <div id="fig:Migracion.2.datos" class="fignos">
 <figure>
-<img src="images/Migracion.2.datos.png" style="width:5.32in" alt="Imagen 16: Diagram: Migracion.2. datos" />
-<figcaption aria-hidden="true"><span>Imagen 16:</span> Diagram: Migracion.2. datos</figcaption>
+<img src="images/Migracion.2.datos.png" style="width:5.32in" alt="Imagen 15: Diagram: Migracion.2. datos" />
+<figcaption aria-hidden="true"><span>Imagen 15:</span> Diagram: Migracion.2. datos</figcaption>
 </figure>
 </div>
 <p>Modelo de acceso y procesamiento a datos de negocio del SUI. Presentamos la organización de los ítems de datos de negocio necesarios para que los módulos del SUI puedan recolectar, procesar, integrar y almacenarlos de forma organizada y escalable.</p>
@@ -3426,8 +3423,8 @@ Administrar los Usuarios de la Solución: Esta funcionalidad debe permitir confi
 <h2 id="migracion.2a.-datos-hominis">Migracion.2a. datos Hominis</h2>
 <div id="fig:Migracion.2a.datosHominis" class="fignos">
 <figure>
-<img src="images/Migracion.2a.datosHominis.png" style="width:5.32in" alt="Imagen 17: Diagram: Migracion.2a. datos Hominis" />
-<figcaption aria-hidden="true"><span>Imagen 17:</span> Diagram: Migracion.2a. datos Hominis</figcaption>
+<img src="images/Migracion.2a.datosHominis.png" style="width:5.32in" alt="Imagen 16: Diagram: Migracion.2a. datos Hominis" />
+<figcaption aria-hidden="true"><span>Imagen 16:</span> Diagram: Migracion.2a. datos Hominis</figcaption>
 </figure>
 </div>
 <p>Identificación de entidades de datos de negocio relacionadas al módulo de gestión de capital del SUI, Hominis.</p>
@@ -3574,8 +3571,8 @@ Administrar los Usuarios de la Solución: Esta funcionalidad debe permitir confi
 <h2 id="migracion.2c.-datos-control-interno">Migracion.2c. datos Control interno</h2>
 <div id="fig:Migracion.2c.datosControlinterno" class="fignos">
 <figure>
-<img src="images/Migracion.2c.datosControlinterno.png" alt="Imagen 18: Diagram: Migracion.2c. datos Control interno" />
-<figcaption aria-hidden="true"><span>Imagen 18:</span> Diagram: Migracion.2c. datos Control interno</figcaption>
+<img src="images/Migracion.2c.datosControlinterno.png" alt="Imagen 17: Diagram: Migracion.2c. datos Control interno" />
+<figcaption aria-hidden="true"><span>Imagen 17:</span> Diagram: Migracion.2c. datos Control interno</figcaption>
 </figure>
 </div>
 <p>Identificación de entidades de datos de negocio relacionadas al módulo de seguimiento del desempeño de la PGN del SUI, Control Interno.</p>
@@ -3626,8 +3623,8 @@ Administrar los Usuarios de la Solución: Esta funcionalidad debe permitir confi
 <h2 id="migracion.2d.-datos-siri">Migracion.2d. datos SIRI</h2>
 <div id="fig:Migracion.2d.datosSIRI" class="fignos">
 <figure>
-<img src="images/Migracion.2d.datosSIRI.png" alt="Imagen 19: Diagram: Migracion.2d. datos SIRI" />
-<figcaption aria-hidden="true"><span>Imagen 19:</span> Diagram: Migracion.2d. datos SIRI</figcaption>
+<img src="images/Migracion.2d.datosSIRI.png" alt="Imagen 18: Diagram: Migracion.2d. datos SIRI" />
+<figcaption aria-hidden="true"><span>Imagen 18:</span> Diagram: Migracion.2d. datos SIRI</figcaption>
 </figure>
 </div>
 <p>Identificación de entidades de datos de negocio relacionadas al módulo del SUI, SIRI.</p>
@@ -3660,8 +3657,8 @@ Administrar los Usuarios de la Solución: Esta funcionalidad debe permitir confi
 <h2 id="migracion.2b.-datos-sim">Migracion.2b. datos SIM</h2>
 <div id="fig:Migracion.2b.datosSIM" class="fignos">
 <figure>
-<img src="images/Migracion.2b.datosSIM.png" alt="Imagen 20: Diagram: Migracion.2b. datos SIM" />
-<figcaption aria-hidden="true"><span>Imagen 20:</span> Diagram: Migracion.2b. datos SIM</figcaption>
+<img src="images/Migracion.2b.datosSIM.png" alt="Imagen 19: Diagram: Migracion.2b. datos SIM" />
+<figcaption aria-hidden="true"><span>Imagen 19:</span> Diagram: Migracion.2b. datos SIM</figcaption>
 </figure>
 </div>
 <p>Identificación de entidades de datos de negocio relacionadas al módulo de SUI, SIM.</p>
