@@ -5,7 +5,7 @@ keywords:
 - gobierno
 - PGN
 lang: en-US
-date-meta: '2023-10-18'
+date-meta: '2023-10-19'
 author-meta:
 - Harry Wong, ing.
 header-includes: |
@@ -15,11 +15,11 @@ header-includes: |
   -->
   <meta name="dc.format" content="text/html" />
   <meta property="og:type" content="article" />
-  <meta name="dc.date" content="2023-10-18" />
-  <meta name="citation_publication_date" content="2023-10-18" />
-  <meta property="article:published_time" content="2023-10-18" />
-  <meta name="dc.modified" content="2023-10-18T21:51:36+00:00" />
-  <meta property="article:modified_time" content="2023-10-18T21:51:36+00:00" />
+  <meta name="dc.date" content="2023-10-19" />
+  <meta name="citation_publication_date" content="2023-10-19" />
+  <meta property="article:published_time" content="2023-10-19" />
+  <meta name="dc.modified" content="2023-10-19T14:22:14+00:00" />
+  <meta property="article:modified_time" content="2023-10-19T14:22:14+00:00" />
   <meta name="dc.language" content="en-US" />
   <meta name="citation_language" content="en-US" />
   <meta name="dc.relation.ispartof" content="Manubot" />
@@ -34,9 +34,9 @@ header-includes: |
   <meta name="citation_fulltext_html_url" content="https://hwong23.github.io/pgn-078/" />
   <meta name="citation_pdf_url" content="https://hwong23.github.io/pgn-078/manuscript.pdf" />
   <link rel="alternate" type="application/pdf" href="https://hwong23.github.io/pgn-078/manuscript.pdf" />
-  <link rel="alternate" type="text/html" href="https://hwong23.github.io/pgn-078/v/32b9599a917d804507e40f87ba05889d87b84d8e/" />
-  <meta name="manubot_html_url_versioned" content="https://hwong23.github.io/pgn-078/v/32b9599a917d804507e40f87ba05889d87b84d8e/" />
-  <meta name="manubot_pdf_url_versioned" content="https://hwong23.github.io/pgn-078/v/32b9599a917d804507e40f87ba05889d87b84d8e/manuscript.pdf" />
+  <link rel="alternate" type="text/html" href="https://hwong23.github.io/pgn-078/v/7357cb262774e2d536cb25f99ea4dcf1700f49c5/" />
+  <meta name="manubot_html_url_versioned" content="https://hwong23.github.io/pgn-078/v/7357cb262774e2d536cb25f99ea4dcf1700f49c5/" />
+  <meta name="manubot_pdf_url_versioned" content="https://hwong23.github.io/pgn-078/v/7357cb262774e2d536cb25f99ea4dcf1700f49c5/manuscript.pdf" />
   <meta property="og:type" content="article" />
   <meta property="twitter:card" content="summary_large_image" />
   <link rel="icon" type="image/png" sizes="192x192" href="https://manubot.org/favicon-192x192.png" />
@@ -77,7 +77,7 @@ tablenos-caption-name: Tabla
 
 <br>
 
-| **Versión** del producto 1.32b9599 de 18 Oct 2023
+| **Versión** del producto 1.7357cb2 de 19 Oct 2023
 
 | **Presentado a**
 
@@ -87,7 +87,7 @@ tablenos-caption-name: Tabla
 
 | **Fecha**
 
-| 18 Oct 2023
+| 19 Oct 2023
 
 
 <div style="page-break-before: always;"></div>
@@ -95,10 +95,10 @@ tablenos-caption-name: Tabla
 
 
 <small><em>Los productos de esta etapa, Migración Funcional SIU, Contrato 078-2023, 
-([Web](https://hwong23.github.io/pgn-078/v/32b9599a917d804507e40f87ba05889d87b84d8e/))
+([Web](https://hwong23.github.io/pgn-078/v/7357cb262774e2d536cb25f99ea4dcf1700f49c5/))
 están basados en el resultado de la Fase 1 del proyecto PGN SIU del 2022,
-[Sharepoint Softgic@32b9599](http://softgic.sharepoint.com)
-del October 18, 2023.
+[Sharepoint Softgic@7357cb2](http://softgic.sharepoint.com)
+del October 19, 2023.
 </em></small>
 
 
@@ -143,7 +143,7 @@ Descripción de los productos del trabajo de arquitectura de la Fase 2, proyecto
 | Palabras clave | SIU, Softgic, PGN, Análisis de brecha, GAP, Comparativa              |
 | Autor          |                            |
 | Fuente         |                            |
-| Versión        | 1.32b9599 del 18 Oct 2023 |
+| Versión        | 1.7357cb2 del 19 Oct 2023 |
 | Vínculos       | [N003a Vista Segmento PGN SIU](N03a%a20Vsta%20aSegenta%20SOA%20PGN.md) |
 
 <br>
@@ -880,21 +880,150 @@ Los elementos resaltados de la vista actual rquieren modelos de  licenciamiento 
 |**RQR. Seguridad**|requirement|Requerimientos de seguridad, SUI, Migración, en aspectos de comunicación, autenticación, autorización y (manejo de) sesiones.<br>||
 
 
-``Generated on: Wed Oct 18 2023 15:26:03 GMT-0500 (COT)``
+``Generated on: Thu Oct 19 2023 09:19:30 GMT-0500 (COT)``
 
 # Arquitectura de Información (Datos)
-* [Descripción de Entidades de Datos Migración SUI PGN](#descripción-de-entidades-de-datos-migración-sui-pgn)
+* [Diagrama Modelo de Datos Conceptual](#diagrama-modelo-de-datos-conceptual)
+	* [Migracion.2a.a1.Datos Lógico](#migracion.2a.a1.datos-lógico)
+* [Diagrama Modelo de Datos Físico (diagramas entidad-relación)](#diagrama-modelo-de-datos-físico-diagramas-entidad-relación)
+	* [Migracion.2a.a3. Datos Modelo Físico ](#migracion.2a.a3.-datos-modelo-físico-)
+* [Diagrama Modelo de Datos Lógico](#diagrama-modelo-de-datos-lógico)
+	* [Migracion.2c. Datos Hominis](#migracion.2c.-datos-hominis)
+	* [Migracion.2c3. Datos Control Interno](#migracion.2c3.-datos-control-interno)
+	* [Migracion.2c2. Datos SIRI](#migracion.2c2.-datos-siri)
+	* [Migracion.2c1. Datos SIM](#migracion.2c1.-datos-sim)
+* [Documento Diccionarios de Datos](#documento-diccionarios-de-datos)
+* [Mapa de Información (flujos de información)](#mapa-de-información-flujos-de-información)
 	* [Migracion.2. datos](#migracion.2.-datos)
-	* [Migracion.2a. datos Hominis](#migracion.2a.-datos-hominis)
-	* [Migracion.2d. datos Control Interno](#migracion.2d.-datos-control-interno)
-	* [Migracion.2d. datos SIRI](#migracion.2d.-datos-siri)
-	* [Migracion.2d. datos SIM](#migracion.2d.-datos-sim)
+* [Modelo Ontológico](#modelo-ontológico)
 
 
 <div style="page-break-before: always;"></div>
 \newpage
 
-# Descripción de Entidades de Datos Migración SUI PGN
+# Diagrama Modelo de Datos Conceptual
+## Migracion.2a.a1.Datos Lógico
+![Diagram: Migracion.2a.a1.Datos Lógico](images/Migracion.2a.a1.DatosLógico.png){#fig:Migracion.2a.a1.DatosLógico width=5.32in}
+
+Organización de los grupos de datos (dominios) del SUI Migrado, 2023.
+
+
+### Catálogo de Elementos
+| Name| Type| Description| Properties
+|:--------|:--------|:--------|:--------|
+|**DAT. Control Interno**|business-object|||
+|**DAT. Estratego**|business-object|Entidades de datos de negocio de capital humano de la PGN. Sistema de información Homini.<br>||
+|**DAT. Hominis**|business-object|Entidades de datos de negocio de capital humano de la PGN. Sistema de información Homini.<br>||
+|**DAT. SIAF**|business-object|Entidades de datos de negocio de capital humano de la PGN. Sistema de información Homini.<br>||
+|**DAT. SIM**|business-object|||
+|**DAT. SIRI**|business-object|||
+
+<div style="page-break-before: always;"></div>
+\newpage
+
+# Diagrama Modelo de Datos Físico (diagramas entidad-relación)
+## Migracion.2a.a3. Datos Modelo Físico 
+![Diagram: Migracion.2a.a3. Datos Modelo Físico ](images/Migracion.2a.a3.DatosModeloFísico.png){#fig:Migracion.2a.a3.DatosModeloFísico width=}
+
+En contrucción.
+
+### Catálogo de Elementos
+| Name| Type| Description| Properties
+|:--------|:--------|:--------|:--------|
+
+<div style="page-break-before: always;"></div>
+\newpage
+
+# Diagrama Modelo de Datos Lógico
+## Migracion.2c. Datos Hominis
+![Diagram: Migracion.2c. Datos Hominis](images/Migracion.2c.DatosHominis.png){#fig:Migracion.2c.DatosHominis width=5.32in}
+
+Identificación de entidades de datos de negocio relacionadas al módulo de gestión de capital del SUI, Hominis.
+
+Estas entidades de datos de negocio son los que llamamos los tipos de datos internos del SUI y deben ser consideradas para la creación de las API de manejo del ciclo de vida de los datos de este módulo.
+
+
+### Catálogo de Elementos
+| Name| Type| Description| Properties
+|:--------|:--------|:--------|:--------|
+|**APP4.Hominis**|application-component|Módulo del SUI. Gestión de capital humano, funcionarios y cargos de representación y libre remoción de la PGN.<br>||
+|**DAT. Hominis**|business-object|Entidades de datos de negocio de capital humano de la PGN. Sistema de información Homini.<br>||
+|**DAT.Cargo**|business-object|||
+|**DAT.Código Actuación**|business-object|||
+|**DAT.Código Jurisdicción**|business-object|||
+|**DAT.Código Regional**|business-object|||
+|**DAT.Código SNIES**|business-object|||
+|**DAT.Código dependencia superior**|business-object|||
+|**DAT.Código regional**|business-object|||
+|**DAT.Decreto de la creación**|business-object|||
+|**DAT.Diciplina Area**|business-object|||
+|**DAT.Encargo del cargo**|business-object|||
+|**DAT.Ley vigente**|business-object|||
+|**DAT.Materia**|business-object|||
+|**DAT.Nivel**|business-object|||
+|**DAT.Nombre Actuación**|business-object|||
+|**DAT.Nombre Jurisdicción**|business-object|||
+|**DAT.Nombre Regional**|business-object|||
+|**DAT.Nombre dependencia superior**|business-object|||
+|**DAT.Tipo de inscripcion**|business-object|||
+|**DAT.Vinculación**|business-object|||
+
+## Migracion.2c3. Datos Control Interno
+![Diagram: Migracion.2c3. Datos Control Interno](images/Migracion.2c3.DatosControlInterno.png){#fig:Migracion.2c3.DatosControlInterno width=}
+
+Identificación de entidades de datos de negocio relacionadas al módulo de seguimiento del desempeño de la PGN del SUI, Control Interno.
+
+Estas entidades de datos de negocio son los que llamamos los tipos de datos internos del SUI y deben ser consideradas para la creación de las API de manejo del ciclo de vida de los datos de este módulo. 
+
+
+### Catálogo de Elementos
+| Name| Type| Description| Properties
+|:--------|:--------|:--------|:--------|
+|**APP3.Control interno**|application-component|||
+|**DAT.Dependencia**|business-object|||
+|**DAT.Funcionario**|business-object|||
+|**DAT.Proceso**|business-object|||
+|**DAT.Tipo de proceso**|business-object|||
+
+## Migracion.2c2. Datos SIRI
+![Diagram: Migracion.2c2. Datos SIRI](images/Migracion.2c2.DatosSIRI.png){#fig:Migracion.2c2.DatosSIRI width=}
+
+Identificación de entidades de datos de negocio relacionadas al módulo del SUI, SIRI.
+
+Estas entidades de datos de negocio son los que llamamos los tipos de datos internos del SUI y deben ser consideradas para la creación de las API de manejo del ciclo de vida de los datos de este módulo. 
+
+
+### Catálogo de Elementos
+| Name| Type| Description| Properties
+|:--------|:--------|:--------|:--------|
+|**APP2.SIRI**|application-component|||
+|**DAT.Entidad**|business-object|||
+
+## Migracion.2c1. Datos SIM
+![Diagram: Migracion.2c1. Datos SIM](images/Migracion.2c1.DatosSIM.png){#fig:Migracion.2c1.DatosSIM width=}
+
+Identificación de entidades de datos de negocio relacionadas al módulo de SUI, SIM.
+
+Estas entidades de datos de negocio son los que llamamos los tipos de datos internos del SUI y deben ser consideradas para la creación de las API de manejo del ciclo de vida de los datos de este módulo. 
+
+
+### Catálogo de Elementos
+| Name| Type| Description| Properties
+|:--------|:--------|:--------|:--------|
+|**APP5.SIM**|application-component|||
+|**DAT.Corregimiento**|business-object|||
+|**DAT.Departamento**|business-object|||
+|**DAT.Municipio**|business-object|||
+|**DAT.País**|business-object|||
+
+<div style="page-break-before: always;"></div>
+\newpage
+
+# Documento Diccionarios de Datos
+<div style="page-break-before: always;"></div>
+\newpage
+
+# Mapa de Información (flujos de información)
 ## Migracion.2. datos
 ![Diagram: Migracion.2. datos](images/Migracion.2.datos.png){#fig:Migracion.2.datos width=5.32in}
 
@@ -923,89 +1052,12 @@ Consideramos tres tipos datos: datos transaccionales, históricos y externos, y 
 |**Datos históricos**|data-object|||
 |**Datos transaccionales**|data-object|||
 
-## Migracion.2a. datos Hominis
-![Diagram: Migracion.2a. datos Hominis](images/Migracion.2a.datosHominis.png){#fig:Migracion.2a.datosHominis width=5.32in}
+<div style="page-break-before: always;"></div>
+\newpage
 
-Identificación de entidades de datos de negocio relacionadas al módulo de gestión de capital del SUI, Hominis.
+# Modelo Ontológico
 
-Estas entidades de datos de negocio son los que llamamos los tipos de datos internos del SUI y deben ser consideradas para la creación de las API de manejo del ciclo de vida de los datos de este módulo.
-
-
-### Catálogo de Elementos
-| Name| Type| Description| Properties
-|:--------|:--------|:--------|:--------|
-|**APP4.Hominis**|application-component|Módulo del SUI. Gestión de capital humano, funcionarios y cargos de representación y libre remoción de la PGN.<br>||
-|**DAT.Cargo**|business-object|||
-|**DAT.Código Actuación**|business-object|||
-|**DAT.Código Jurisdicción**|business-object|||
-|**DAT.Código Regional**|business-object|||
-|**DAT.Código SNIES**|business-object|||
-|**DAT.Código dependencia superior**|business-object|||
-|**DAT.Código regional**|business-object|||
-|**DAT.Decreto de la creación**|business-object|||
-|**DAT.Diciplina Area**|business-object|||
-|**DAT.Encargo del cargo**|business-object|||
-|**DAT.Ley vigente**|business-object|||
-|**DAT.Materia**|business-object|||
-|**DAT.Nivel**|business-object|||
-|**DAT.Nombre Actuación**|business-object|||
-|**DAT.Nombre Jurisdicción**|business-object|||
-|**DAT.Nombre Regional**|business-object|||
-|**DAT.Nombre dependencia superior**|business-object|||
-|**DAT.Tipo de inscripcion**|business-object|||
-|**DAT.Vinculación**|business-object|||
-|**Hominis**|business-object|Entidades de datos de negocio de capital humano de la PGN. Sistema de información Homini.<br>||
-
-## Migracion.2d. datos Control Interno
-![Diagram: Migracion.2d. datos Control Interno](images/Migracion.2d.datosControlInterno.png){#fig:Migracion.2d.datosControlInterno width=}
-
-Identificación de entidades de datos de negocio relacionadas al módulo de seguimiento del desempeño de la PGN del SUI, Control Interno.
-
-Estas entidades de datos de negocio son los que llamamos los tipos de datos internos del SUI y deben ser consideradas para la creación de las API de manejo del ciclo de vida de los datos de este módulo. 
-
-
-### Catálogo de Elementos
-| Name| Type| Description| Properties
-|:--------|:--------|:--------|:--------|
-|**APP3.Control interno**|application-component|||
-|**DAT.Dependencia**|business-object|||
-|**DAT.Funcionario**|business-object|||
-|**DAT.Proceso**|business-object|||
-|**DAT.Tipo de proceso**|business-object|||
-
-## Migracion.2d. datos SIRI
-![Diagram: Migracion.2d. datos SIRI](images/Migracion.2d.datosSIRI.png){#fig:Migracion.2d.datosSIRI width=}
-
-Identificación de entidades de datos de negocio relacionadas al módulo del SUI, SIRI.
-
-Estas entidades de datos de negocio son los que llamamos los tipos de datos internos del SUI y deben ser consideradas para la creación de las API de manejo del ciclo de vida de los datos de este módulo. 
-
-
-### Catálogo de Elementos
-| Name| Type| Description| Properties
-|:--------|:--------|:--------|:--------|
-|**APP2.SIRI**|application-component|||
-|**DAT.Entidad**|business-object|||
-
-## Migracion.2d. datos SIM
-![Diagram: Migracion.2d. datos SIM](images/Migracion.2d.datosSIM.png){#fig:Migracion.2d.datosSIM width=}
-
-Identificación de entidades de datos de negocio relacionadas al módulo de SUI, SIM.
-
-Estas entidades de datos de negocio son los que llamamos los tipos de datos internos del SUI y deben ser consideradas para la creación de las API de manejo del ciclo de vida de los datos de este módulo. 
-
-
-### Catálogo de Elementos
-| Name| Type| Description| Properties
-|:--------|:--------|:--------|:--------|
-|**APP5.SIM**|application-component|||
-|**DAT.Corregimiento**|business-object|||
-|**DAT.Departamento**|business-object|||
-|**DAT.Municipio**|business-object|||
-|**DAT.País**|business-object|||
-
-
-``Generated on: Wed Oct 18 2023 15:33:56 GMT-0500 (COT)``
+``Generated on: Thu Oct 19 2023 09:19:10 GMT-0500 (COT)``
 
 # Arquitectura de Software: Infraestructura
 * [Descripción de Infraestructura Migración SUI PGN](#descripción-de-infraestructura-migración-sui-pgn)
@@ -1153,7 +1205,7 @@ Con una arquitectura orientada a servicios SUI recopila:
 |**www pgn com**|technology-interface|||
 
 
-``Generated on: Wed Oct 18 2023 15:34:26 GMT-0500 (COT)``
+``Generated on: Thu Oct 19 2023 09:18:43 GMT-0500 (COT)``
 
 ## Requerimientos de Administración
 1.	Las soluciones deben permitir la administración de los Roles de Usuarios: esta funcionalidad debe permitir configurar los diferentes roles de los usuarios funcionales de los procesos. 
