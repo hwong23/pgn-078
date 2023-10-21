@@ -75,7 +75,7 @@ jobs:
           echo "APLICATIVO=Sistema Único de Información (SUI)" >> $GITHUB_ENV
           echo "CLIENTE=Procuraduría General de la Nación (PGN)" >> $GITHUB_ENV
           echo "HISTORIAMD=$(echo git show -s -n 4 --format='| 1.%h | %s |' --abbrev-commit HEAD)" >> $GITHUB_ENV
-          echo $HISTORIAMD
+          echo "HV " $HISTORIAMD
       - name: Cache
         uses: actions/cache@v3
         with:
