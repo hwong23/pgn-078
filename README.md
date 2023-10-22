@@ -1,10 +1,10 @@
-# Output directory containing the formatted manuscript
+# Directorio de salida de documentación técnica
 
 The [`gh-pages`](https://github.com/hwong23/pgn-078/tree/gh-pages) branch hosts the contents of this directory at <https://hwong23.github.io/pgn-078/>.
-The permalink for this webpage version is <https://hwong23.github.io/pgn-078/v/15ac385ee9271f1d650873d8864fe50f1a2a0523/>.
+The permalink for this webpage version is <https://hwong23.github.io/pgn-078/v/3a675651c0b6b0d79b2d1cff097eb8ff3f1e9a9e/>.
 To redirect to the permalink for the latest manuscript version at anytime, use the link <https://hwong23.github.io/pgn-078/v/freeze/>.
 
-## Files
+## Listado
 
 This directory contains the following files, which are mostly ignored on the `main` branch:
 
@@ -14,25 +14,29 @@ This directory contains the following files, which are mostly ignored on the `ma
 The `v` directory contains directories for each manuscript version.
 In general, a version is identified by the commit hash of the source content that created it.
 
-### Timestamps
 
-The `*.ots` files in version directories are OpenTimestamps which can be used to verify manuscript existence at or before a given time.
-[OpenTimestamps](https://opentimestamps.org/) uses the Bitcoin blockchain to attest to file hash existence.
-The `deploy.sh` script run during continuous deployment creates the `.ots` files through its `manubot webpage` call.
-There is a delay before timestamps get confirmed by a Bitcoin block.
-Therefore, `.ots` files are initially incomplete and should be upgraded at a later time, so that they no longer rely on the availability of a calendar server to verify.
-The `manubot webpage` call during continuous deployment identifies files matched by `webpage/v/**/*.ots` and attempts to upgrade them.
-You can also manually upgrade timestamps, by running the following in the `gh-pages` branch:
+### Versiones
 
-```shell
-ots upgrade v/*/*.ots
-rm v/*/*.ots.bak
-git add v/*/*.ots
-```
+| Tema           | OP 078-2023 Fase 2, PGN Migración Funcional SIU      |
+|----------------|----------------------------|
+| Palabras clave | SIU, Softgic, PGN, Análisis de brecha, GAP, Comparativa |
+| **Versión**    |                            |
+| 1.3a67565 | 2023-10-22. output readme--version |
+| 1.15ac385 | 2023-10-22. histr27 |
+| 1.a97248b | 2023-10-22. histr26 |
+| 1.ef11c3e | 2023-10-22. histr25 |
+| 1.8d76f0f | 2023-10-22. histr24 |
+| 1.083b287 | 2023-10-22. histr23 |
+| 1.5b1e7ff | 2023-10-22. export |
+| 1.2d2de3e | 2023-10-21. histr22 |
+| 1.0902742 | 2023-10-21. histr21 |
+| 1.944743c | 2023-10-21. histr20 |
+
+
 
 Verifying timestamps with the `ots verify` command requires running a local bitcoin node with JSON-RPC configured, at this time.
 
 ## Source
 
 The manuscripts in this directory were built from
-[`15ac385ee9271f1d650873d8864fe50f1a2a0523`](https://github.com/hwong23/pgn-078/commit/15ac385ee9271f1d650873d8864fe50f1a2a0523).
+[`3a675651c0b6b0d79b2d1cff097eb8ff3f1e9a9e`](https://github.com/hwong23/pgn-078/commit/3a675651c0b6b0d79b2d1cff097eb8ff3f1e9a9e).
