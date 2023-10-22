@@ -12,11 +12,12 @@ REPO_SLUG=${GITHUB_REPOSITORY}
 COMMIT=${GITHUB_SHA}
 BRANCH=${DEFAULT_BRANCH:-main}
 FECHA_COMPILACION=${COMPILATION_DATE}
+HISTORIAMD=$(git show -s -n 10 --format='| 1.%h | %ad. %s |' --date=short HEAD)
 
 # Add commit hash to the README
 OWNER_NAME="$(dirname "$REPO_SLUG")"
 REPO_NAME="$(basename "$REPO_SLUG")"
-export REPO_SLUG COMMIT OWNER_NAME REPO_NAME FECHA_COMPILACION
+export REPO_SLUG COMMIT OWNER_NAME REPO_NAME FECHA_COMPILACION HISTORIAMD
 envsubst < webpage/README.md > webpage/README-complete.md
 mv webpage/README-complete.md webpage/README.md
 
