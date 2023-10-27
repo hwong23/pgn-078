@@ -14,6 +14,9 @@ Riesgos de la migración funcional:
 * RSG8. Intentos de accesos no autorizados
 * RSG9. Alteración de datos negocio
 * RSG10. Validación decisiones de arquitectura
+* RSG11. Estrategias de Migración de datos
+* RSG12. Arquitectura de almancenamiento y distribución de datos SIU
+* RSG13. Sistema de autenticación híbrido
 
 ### Acciones de Mitigación
 
