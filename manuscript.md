@@ -18,8 +18,8 @@ header-includes: |
   <meta name="dc.date" content="2023-10-27" />
   <meta name="citation_publication_date" content="2023-10-27" />
   <meta property="article:published_time" content="2023-10-27" />
-  <meta name="dc.modified" content="2023-10-27T14:23:33+00:00" />
-  <meta property="article:modified_time" content="2023-10-27T14:23:33+00:00" />
+  <meta name="dc.modified" content="2023-10-27T15:10:52+00:00" />
+  <meta property="article:modified_time" content="2023-10-27T15:10:52+00:00" />
   <meta name="dc.language" content="en-US" />
   <meta name="citation_language" content="en-US" />
   <meta name="dc.relation.ispartof" content="Manubot" />
@@ -34,9 +34,9 @@ header-includes: |
   <meta name="citation_fulltext_html_url" content="https://hwong23.github.io/pgn-078/" />
   <meta name="citation_pdf_url" content="https://hwong23.github.io/pgn-078/manuscript.pdf" />
   <link rel="alternate" type="application/pdf" href="https://hwong23.github.io/pgn-078/manuscript.pdf" />
-  <link rel="alternate" type="text/html" href="https://hwong23.github.io/pgn-078/v/bd8334301f46dbbc69f32e417593b1a796bb304e/" />
-  <meta name="manubot_html_url_versioned" content="https://hwong23.github.io/pgn-078/v/bd8334301f46dbbc69f32e417593b1a796bb304e/" />
-  <meta name="manubot_pdf_url_versioned" content="https://hwong23.github.io/pgn-078/v/bd8334301f46dbbc69f32e417593b1a796bb304e/manuscript.pdf" />
+  <link rel="alternate" type="text/html" href="https://hwong23.github.io/pgn-078/v/c61d86d62cfb90bd4fec311663ef260c2f526f06/" />
+  <meta name="manubot_html_url_versioned" content="https://hwong23.github.io/pgn-078/v/c61d86d62cfb90bd4fec311663ef260c2f526f06/" />
+  <meta name="manubot_pdf_url_versioned" content="https://hwong23.github.io/pgn-078/v/c61d86d62cfb90bd4fec311663ef260c2f526f06/manuscript.pdf" />
   <meta property="og:type" content="article" />
   <meta property="twitter:card" content="summary_large_image" />
   <link rel="icon" type="image/png" sizes="192x192" href="https://manubot.org/favicon-192x192.png" />
@@ -77,7 +77,7 @@ tablenos-caption-name: Tabla
 
 <br>
 
-| **Versión** del producto 1.bd83343 de 27 Oct 2023
+| **Versión** del producto 1.c61d86d de 27 Oct 2023
 
 | **Presentado a**
 
@@ -95,9 +95,9 @@ tablenos-caption-name: Tabla
 
 
 <small><em>Los productos de esta etapa, Migración Funcional SIU, Contrato 078-2023, 
-([Web](https://hwong23.github.io/pgn-078/v/bd8334301f46dbbc69f32e417593b1a796bb304e/))
+([Web](https://hwong23.github.io/pgn-078/v/c61d86d62cfb90bd4fec311663ef260c2f526f06/))
 están basados en el resultado de la Fase 1 del proyecto PGN SIU del 2022,
-[Sharepoint Softgic@bd83343](http://softgic.sharepoint.com)
+[Sharepoint Softgic@c61d86d](http://softgic.sharepoint.com)
 del October 27, 2023.
 </em></small>
 
@@ -144,6 +144,7 @@ Descripción de los productos del trabajo de arquitectura de la Fase 2, proyecto
 | Autor          |                            |
 | Fuente         |                            |
 | **Versión**    |                            |
+| 1.c61d86d | 2023-10-27. riesgos2 |
 | 1.bd83343 | 2023-10-27. riesgos |
 | 1.3a67565 | 2023-10-22. output readme--version |
 | 1.15ac385 | 2023-10-22. histr27 |
@@ -153,7 +154,6 @@ Descripción de los productos del trabajo de arquitectura de la Fase 2, proyecto
 | 1.083b287 | 2023-10-22. histr23 |
 | 1.5b1e7ff | 2023-10-22. export |
 | 1.2d2de3e | 2023-10-21. histr22 |
-| 1.0902742 | 2023-10-21. histr21 |
 | Vínculos       | [N003a Vista Segmento PGN SIU](N03a%a20Vsta%20aSegenta%20SOA%20PGN.md) |
 
 <br>
@@ -1019,6 +1019,9 @@ Riesgos de la migración funcional:
 * RSG8. Intentos de accesos no autorizados
 * RSG9. Alteración de datos negocio
 * RSG10. Validación decisiones de arquitectura
+* RSG11. Estrategias de Migración de datos
+* RSG12. Arquitectura de almancenamiento y distribución de datos SIU
+* RSG13. Sistema de autenticación híbrido
 
 ### Acciones de Mitigación
 
@@ -1079,7 +1082,7 @@ Table: Valoración del riesgo RSG10. Validación decisiones de arquitectura. Mig
 |**Supervisor contrato 078-2023**|stakeholder|||
 
 
-``Generated on: Fri Oct 27 2023 09:18:54 GMT-0500 (COT)``
+``Generated on: Fri Oct 27 2023 10:07:56 GMT-0500 (COT)``
 
 # Arquitectura de Software
 * [Diagrama de Arquitectura de la Solución Propuesta: vista de integración](#diagrama-de-arquitectura-de-la-solución-propuesta:-vista-de-integración)
