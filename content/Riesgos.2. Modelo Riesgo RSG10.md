@@ -23,5 +23,5 @@ Table: Valoración del riesgo RSG10. Validación decisiones de arquitectura. Mig
 |**Desconocimiento arq. de referencia SUI**|business-event|||
 |**RSG10. Validación decisiones de arquitectura**|constraint|Discutir la arquitectura de referencia de SUI Migración PGN. La arquitectura de referencia SUI informa de todas las fortalezas y consideraciones estructurales y de sistema, como extensibilidad, rendimiento y seguridad, que regirán a todos los módulos del SUI migrado.<br>||
 |**Evaluación  arquitectura de referencia SUI**|course-of-action|La frecuencia del proceso de evaluación de la arquitectura es eventual, mínimo una vez cada dos semanas.<br>||
-|**Sesión semanal validación arquitectura**|requirement|||
+|**Definición tipos de datos módulos SUI**|requirement|||
 |**Supervisor contrato 078-2023**|stakeholder|||

@@ -48,7 +48,7 @@ En conclusion, por los criterios de viabilidad y tamaño funcional y por el impa
 |**Código (autoincremental) (copy)**|goal|Generación automática de códigos que se reinician cada año.|*modulo:* siaf<br>|
 |**Dependencias**|goal|Reportar al sistema, actividades, proyectos, indicadores.|*modulo:* estratego<br>|
 |**Dependiendo del tipo de movimiento (copy)**|goal|Gestión de movimientos según su tipo, incluyendo elementos como conceptos, beneficiarios y funcionarios (maestros).|*modulo:* siaf<br>|
-|**Elementos (copy)**|goal|Registro de elementos relacionados con los movimientos.|*modulo:* siaf<br>|
+|**Elementos**|goal|Registro de elementos relacionados con los movimientos.|*modulo:* siaf<br>|
 |**Estado (copy)**|goal|Seguimiento del estado de los asientos.|*modulo:* siaf<br>|
 |**Fecha automática (copy)**|goal|Asignación automática de la fecha en los asientos.|*modulo:* siaf<br>|
 |**Filtrar por campos (copy)**|goal|Capacidad para filtrar los movimientos devolutivos según campos específicos.|*modulo:* siaf<br>|
