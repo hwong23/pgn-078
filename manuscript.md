@@ -18,8 +18,8 @@ header-includes: |
   <meta name="dc.date" content="2023-11-08" />
   <meta name="citation_publication_date" content="2023-11-08" />
   <meta property="article:published_time" content="2023-11-08" />
-  <meta name="dc.modified" content="2023-11-08T18:44:45+00:00" />
-  <meta property="article:modified_time" content="2023-11-08T18:44:45+00:00" />
+  <meta name="dc.modified" content="2023-11-08T18:50:32+00:00" />
+  <meta property="article:modified_time" content="2023-11-08T18:50:32+00:00" />
   <meta name="dc.language" content="en-US" />
   <meta name="citation_language" content="en-US" />
   <meta name="dc.relation.ispartof" content="Manubot" />
@@ -34,9 +34,9 @@ header-includes: |
   <meta name="citation_fulltext_html_url" content="https://hwong23.github.io/pgn-078/" />
   <meta name="citation_pdf_url" content="https://hwong23.github.io/pgn-078/manuscript.pdf" />
   <link rel="alternate" type="application/pdf" href="https://hwong23.github.io/pgn-078/manuscript.pdf" />
-  <link rel="alternate" type="text/html" href="https://hwong23.github.io/pgn-078/v/00eb497a156e6e1f391a9436114c78e80914cad0/" />
-  <meta name="manubot_html_url_versioned" content="https://hwong23.github.io/pgn-078/v/00eb497a156e6e1f391a9436114c78e80914cad0/" />
-  <meta name="manubot_pdf_url_versioned" content="https://hwong23.github.io/pgn-078/v/00eb497a156e6e1f391a9436114c78e80914cad0/manuscript.pdf" />
+  <link rel="alternate" type="text/html" href="https://hwong23.github.io/pgn-078/v/8e9dee02a48a434ac62e017bd8d7e2572a0b32c5/" />
+  <meta name="manubot_html_url_versioned" content="https://hwong23.github.io/pgn-078/v/8e9dee02a48a434ac62e017bd8d7e2572a0b32c5/" />
+  <meta name="manubot_pdf_url_versioned" content="https://hwong23.github.io/pgn-078/v/8e9dee02a48a434ac62e017bd8d7e2572a0b32c5/manuscript.pdf" />
   <meta property="og:type" content="article" />
   <meta property="twitter:card" content="summary_large_image" />
   <link rel="icon" type="image/png" sizes="192x192" href="https://manubot.org/favicon-192x192.png" />
@@ -77,7 +77,7 @@ tablenos-caption-name: Tabla
 
 <br>
 
-| **Versión** del producto 1.00eb497 de 08 Nov 2023
+| **Versión** del producto 1.8e9dee0 de 08 Nov 2023
 
 | **Presentado a**
 
@@ -95,9 +95,9 @@ tablenos-caption-name: Tabla
 
 
 <small><em>Los productos de esta etapa, Migración Funcional SIU, Contrato 078-2023, 
-([Web](https://hwong23.github.io/pgn-078/v/00eb497a156e6e1f391a9436114c78e80914cad0/))
+([Web](https://hwong23.github.io/pgn-078/v/8e9dee02a48a434ac62e017bd8d7e2572a0b32c5/))
 están basados en el resultado de la Fase 1 del proyecto PGN SIU del 2022,
-[Sharepoint Softgic@00eb497](http://softgic.sharepoint.com)
+[Sharepoint Softgic@8e9dee0](http://softgic.sharepoint.com)
 del November 8, 2023.
 </em></small>
 
@@ -144,6 +144,7 @@ Descripción de los productos del trabajo de arquitectura de la Fase 2, proyecto
 | Autor          |                            |
 | Fuente         |                            |
 | **Versión**    |                            |
+| 1.8e9dee0 | 2023-11-08. corrcn--sgrdd3 |
 | 1.00eb497 | 2023-11-08. corrcn--sgrdd |
 | 1.2c588a4 | 2023-11-08. cnsdrcns--sgrdd |
 | 1.c717651 | 2023-11-08. pgndoc--crrcntxt |
@@ -153,7 +154,6 @@ Descripción de los productos del trabajo de arquitectura de la Fase 2, proyecto
 | 1.57a9a5e | 2023-11-07. arqdoc |
 | 1.bc63c34 | 2023-10-27. ing--indcdr |
 | 1.c61d86d | 2023-10-27. riesgos2 |
-| 1.bd83343 | 2023-10-27. riesgos |
 | Vínculos       | [N003a Vista Segmento PGN SIU](N03a%a20Vsta%20aSegenta%20SOA%20PGN.md) |
 
 <br>
@@ -289,6 +289,12 @@ usuarios-y-roles)
 	* [Migracion.4. CI](#migracion.4.-ci)
 * [Documento de Relación de Tecnologías y Licenciamiento](#documento-de-relación-de-tecnologías-y-licenciamiento)
 	* [Migracion.5. Licenciamiento](#migracion.5.-licenciamiento)
+* [Módulos Requerimientos de Seguridad](#módulos-requerimientos-de-seguridad)
+	* [Seguridad.Autenticación](#seguridad.autenticación)
+	* [Seguridad.Autorización](#seguridad.autorización)
+	* [Seguridad.DesarrolloSeguro.](#seguridad.desarrolloseguro.)
+	* [Seguridad.LogsAuditoría.](#seguridad.logsauditoría.)
+	* [Seguridad.Owasp](#seguridad.owasp)
 
 
 <div style="page-break-before: always;"></div>
@@ -417,7 +423,7 @@ Con una arquitectura orientada a servicios SUI recopila:
 |**Application Collaboration**|application-collaboration|||
 |**Application Collaboration**|application-collaboration|||
 |**App**|application-component||*plataforma:* node Js<br>*brecha:* 100<br>|
-|**App PGN Móvil**|application-component|A partir de los lineamientos de desarrollo seguro establecidos en The OWASP Foundation recomendados en la “Guía de desarrollo OWASP” y “OWAS Cheat Sheet, se realizaran pruebas de seguridad a partir del analisis de vulnerabilidades, y pruebas de Ethikal Hacking. <br>Protección de datos personales, <br>Los sistemas de información que recogen, procesan y almacenan información de los derechos de las personas se deben almacenar de forma adecuada, la información que pueda ser vulnerada puede generar obliaciones legales y éticas con respecto a la perdida de informacion confidencial por parte de ciudadanos del pais. <br>La informacion contenida en las bases de datos debe tener los mecanismos de cifrado que en otros apartados se han mencionado. <br>La legislación que hay que tener como referencia, ley 1581 de 2012. Decreto 1377 de 2013<br>La metodologia empleada tendrá las siguientes fases: <br>•	FASE DE RECONOCIMIENTO: <br>Se recolectará toda la información posible, usando diferentes técnicas como:<br>o	Recopilación de dominios/IPs/puertos/servicios<br>o	Recopilación de metadatos<br>o	Uso de Google Dorks.<br>•	ANÁLSIS DE VULNERABILIDADES: <br>Se analizará la información recopilada en la fase anterior y se realizará el descubrimiento de las vulnerabilidades. <br>•	EXPLOTACIÓN: <br>•	Se realizarán todas aquellas acciones que puedan comprometer al sistema auditado, las pruebas a implementar pueden ser de ataques tipo: <br>o	Inyección de código<br>o	Inclusión de ficheros locales o remotos<br>o	Evasión de autenticación<br>o	Carencia de controles de autorización<br>o	Ejecución de comandos en el lado del servidor<br>o	Ataques tipo Cross Site Request Forgery<br>o	Control de errores<br>o	Gestión de sesiones<br>o	Fugas de información<br>o	Secuestros de sesión<br>o	Comprobación de las condiciones para realizar una denegación de servicio.<br>	<br>•	POST EXPLOTACIÓN:<br>En caso de encontrarse una vulnerabilidad que permita realizar otras acciones en el sistema auditado o en su entorno, se realizarán controles adiciones con el objetivo de comprobar la criticidad de esta.<br>No	URL	IP<br>1.	https://runtimetest.lappiz.io/#/auth/login/PGN_Lappiz<br>135.181.185.207<br>|*plantilla:* element-md-bold<br>*brecha:* 100<br>|
+|**App PGN Móvil**|application-component|<br>|*plantilla:* element-md-bold<br>*brecha:* 100<br>|
 |**App PGN Web**|application-component||*plataforma:* angular 11<br>*brecha:* 100<br>|
 |**Config**|application-component||*plataforma:* cs<br>|
 |**Punto acceso público**|application-interface|URL tipo C<br>HTTP||
@@ -736,7 +742,7 @@ La ultima versión del TLS es la 1.3
 |**Application Collaboration**|application-collaboration|||
 |**Application Collaboration**|application-collaboration|||
 |**App**|application-component||*plataforma:* node Js<br>*brecha:* 100<br>|
-|**App PGN Móvil**|application-component|A partir de los lineamientos de desarrollo seguro establecidos en The OWASP Foundation recomendados en la “Guía de desarrollo OWASP” y “OWAS Cheat Sheet, se realizaran pruebas de seguridad a partir del analisis de vulnerabilidades, y pruebas de Ethikal Hacking. <br>Protección de datos personales, <br>Los sistemas de información que recogen, procesan y almacenan información de los derechos de las personas se deben almacenar de forma adecuada, la información que pueda ser vulnerada puede generar obliaciones legales y éticas con respecto a la perdida de informacion confidencial por parte de ciudadanos del pais. <br>La informacion contenida en las bases de datos debe tener los mecanismos de cifrado que en otros apartados se han mencionado. <br>La legislación que hay que tener como referencia, ley 1581 de 2012. Decreto 1377 de 2013<br>La metodologia empleada tendrá las siguientes fases: <br>•	FASE DE RECONOCIMIENTO: <br>Se recolectará toda la información posible, usando diferentes técnicas como:<br>o	Recopilación de dominios/IPs/puertos/servicios<br>o	Recopilación de metadatos<br>o	Uso de Google Dorks.<br>•	ANÁLSIS DE VULNERABILIDADES: <br>Se analizará la información recopilada en la fase anterior y se realizará el descubrimiento de las vulnerabilidades. <br>•	EXPLOTACIÓN: <br>•	Se realizarán todas aquellas acciones que puedan comprometer al sistema auditado, las pruebas a implementar pueden ser de ataques tipo: <br>o	Inyección de código<br>o	Inclusión de ficheros locales o remotos<br>o	Evasión de autenticación<br>o	Carencia de controles de autorización<br>o	Ejecución de comandos en el lado del servidor<br>o	Ataques tipo Cross Site Request Forgery<br>o	Control de errores<br>o	Gestión de sesiones<br>o	Fugas de información<br>o	Secuestros de sesión<br>o	Comprobación de las condiciones para realizar una denegación de servicio.<br>	<br>•	POST EXPLOTACIÓN:<br>En caso de encontrarse una vulnerabilidad que permita realizar otras acciones en el sistema auditado o en su entorno, se realizarán controles adiciones con el objetivo de comprobar la criticidad de esta.<br>No	URL	IP<br>1.	https://runtimetest.lappiz.io/#/auth/login/PGN_Lappiz<br>135.181.185.207<br>|*plantilla:* element-md-bold<br>*brecha:* 100<br>|
+|**App PGN Móvil**|application-component|<br>|*plantilla:* element-md-bold<br>*brecha:* 100<br>|
 |**App PGN Web**|application-component||*plataforma:* angular 11<br>*brecha:* 100<br>|
 |**Config**|application-component||*plataforma:* cs<br>|
 |**Punto acceso público**|application-interface|URL tipo C<br>HTTP||
@@ -791,7 +797,7 @@ Las interfaces de unión indicadas arriba obligan a los submódulos a cumplir la
 |**cc:PGN SUI (módulo central)**|application-collaboration|Módulo central SUI migrado. Módulo independiente y asignado a un dominio partigular de la PGN.<br>||
 |**cc:Presentación**|application-collaboration|Submódulo de presentación del SUI. interfaz gráfica, interfaz web visible a los usuarios clientes y funcionarios de la PGN. ||
 |**App**|application-component||*plataforma:* node Js<br>*brecha:* 100<br>|
-|**App PGN Móvil**|application-component|A partir de los lineamientos de desarrollo seguro establecidos en The OWASP Foundation recomendados en la “Guía de desarrollo OWASP” y “OWAS Cheat Sheet, se realizaran pruebas de seguridad a partir del analisis de vulnerabilidades, y pruebas de Ethikal Hacking. <br>Protección de datos personales, <br>Los sistemas de información que recogen, procesan y almacenan información de los derechos de las personas se deben almacenar de forma adecuada, la información que pueda ser vulnerada puede generar obliaciones legales y éticas con respecto a la perdida de informacion confidencial por parte de ciudadanos del pais. <br>La informacion contenida en las bases de datos debe tener los mecanismos de cifrado que en otros apartados se han mencionado. <br>La legislación que hay que tener como referencia, ley 1581 de 2012. Decreto 1377 de 2013<br>La metodologia empleada tendrá las siguientes fases: <br>•	FASE DE RECONOCIMIENTO: <br>Se recolectará toda la información posible, usando diferentes técnicas como:<br>o	Recopilación de dominios/IPs/puertos/servicios<br>o	Recopilación de metadatos<br>o	Uso de Google Dorks.<br>•	ANÁLSIS DE VULNERABILIDADES: <br>Se analizará la información recopilada en la fase anterior y se realizará el descubrimiento de las vulnerabilidades. <br>•	EXPLOTACIÓN: <br>•	Se realizarán todas aquellas acciones que puedan comprometer al sistema auditado, las pruebas a implementar pueden ser de ataques tipo: <br>o	Inyección de código<br>o	Inclusión de ficheros locales o remotos<br>o	Evasión de autenticación<br>o	Carencia de controles de autorización<br>o	Ejecución de comandos en el lado del servidor<br>o	Ataques tipo Cross Site Request Forgery<br>o	Control de errores<br>o	Gestión de sesiones<br>o	Fugas de información<br>o	Secuestros de sesión<br>o	Comprobación de las condiciones para realizar una denegación de servicio.<br>	<br>•	POST EXPLOTACIÓN:<br>En caso de encontrarse una vulnerabilidad que permita realizar otras acciones en el sistema auditado o en su entorno, se realizarán controles adiciones con el objetivo de comprobar la criticidad de esta.<br>No	URL	IP<br>1.	https://runtimetest.lappiz.io/#/auth/login/PGN_Lappiz<br>135.181.185.207<br>|*plantilla:* element-md-bold<br>*brecha:* 100<br>|
+|**App PGN Móvil**|application-component|<br>|*plantilla:* element-md-bold<br>*brecha:* 100<br>|
 |**App PGN Web**|application-component||*plataforma:* angular 11<br>*brecha:* 100<br>|
 |**CU ejecutable**|application-component||*plataforma:* js<br>|
 |**CU ejecutable (n)**|application-component||*plataforma:* js<br>|
@@ -860,7 +866,7 @@ Todos los sistemas de información del SUI siguen esta directiva: estarán const
 | Nombre| Tipo| Descripción| Prop.
 |:--------|:--------|:--------|:--------|
 |**App**|application-component||*plataforma:* node Js<br>*brecha:* 100<br>|
-|**App PGN Móvil**|application-component|A partir de los lineamientos de desarrollo seguro establecidos en The OWASP Foundation recomendados en la “Guía de desarrollo OWASP” y “OWAS Cheat Sheet, se realizaran pruebas de seguridad a partir del analisis de vulnerabilidades, y pruebas de Ethikal Hacking. <br>Protección de datos personales, <br>Los sistemas de información que recogen, procesan y almacenan información de los derechos de las personas se deben almacenar de forma adecuada, la información que pueda ser vulnerada puede generar obliaciones legales y éticas con respecto a la perdida de informacion confidencial por parte de ciudadanos del pais. <br>La informacion contenida en las bases de datos debe tener los mecanismos de cifrado que en otros apartados se han mencionado. <br>La legislación que hay que tener como referencia, ley 1581 de 2012. Decreto 1377 de 2013<br>La metodologia empleada tendrá las siguientes fases: <br>•	FASE DE RECONOCIMIENTO: <br>Se recolectará toda la información posible, usando diferentes técnicas como:<br>o	Recopilación de dominios/IPs/puertos/servicios<br>o	Recopilación de metadatos<br>o	Uso de Google Dorks.<br>•	ANÁLSIS DE VULNERABILIDADES: <br>Se analizará la información recopilada en la fase anterior y se realizará el descubrimiento de las vulnerabilidades. <br>•	EXPLOTACIÓN: <br>•	Se realizarán todas aquellas acciones que puedan comprometer al sistema auditado, las pruebas a implementar pueden ser de ataques tipo: <br>o	Inyección de código<br>o	Inclusión de ficheros locales o remotos<br>o	Evasión de autenticación<br>o	Carencia de controles de autorización<br>o	Ejecución de comandos en el lado del servidor<br>o	Ataques tipo Cross Site Request Forgery<br>o	Control de errores<br>o	Gestión de sesiones<br>o	Fugas de información<br>o	Secuestros de sesión<br>o	Comprobación de las condiciones para realizar una denegación de servicio.<br>	<br>•	POST EXPLOTACIÓN:<br>En caso de encontrarse una vulnerabilidad que permita realizar otras acciones en el sistema auditado o en su entorno, se realizarán controles adiciones con el objetivo de comprobar la criticidad de esta.<br>No	URL	IP<br>1.	https://runtimetest.lappiz.io/#/auth/login/PGN_Lappiz<br>135.181.185.207<br>|*plantilla:* element-md-bold<br>*brecha:* 100<br>|
+|**App PGN Móvil**|application-component|<br>|*plantilla:* element-md-bold<br>*brecha:* 100<br>|
 |**App PGN Web**|application-component||*plataforma:* angular 11<br>*brecha:* 100<br>|
 |**CU ejecutable**|application-component||*plataforma:* js<br>|
 |**CU ejecutable (n)**|application-component||*plataforma:* js<br>|
@@ -970,7 +976,7 @@ Los elementos resaltados de la vista actual rquieren modelos de  licenciamiento 
 |:--------|:--------|:--------|:--------|
 |**Persistencia**|application-collaboration|||
 |**App**|application-component||*plataforma:* node Js<br>*brecha:* 100<br>|
-|**App PGN Móvil**|application-component|A partir de los lineamientos de desarrollo seguro establecidos en The OWASP Foundation recomendados en la “Guía de desarrollo OWASP” y “OWAS Cheat Sheet, se realizaran pruebas de seguridad a partir del analisis de vulnerabilidades, y pruebas de Ethikal Hacking. <br>Protección de datos personales, <br>Los sistemas de información que recogen, procesan y almacenan información de los derechos de las personas se deben almacenar de forma adecuada, la información que pueda ser vulnerada puede generar obliaciones legales y éticas con respecto a la perdida de informacion confidencial por parte de ciudadanos del pais. <br>La informacion contenida en las bases de datos debe tener los mecanismos de cifrado que en otros apartados se han mencionado. <br>La legislación que hay que tener como referencia, ley 1581 de 2012. Decreto 1377 de 2013<br>La metodologia empleada tendrá las siguientes fases: <br>•	FASE DE RECONOCIMIENTO: <br>Se recolectará toda la información posible, usando diferentes técnicas como:<br>o	Recopilación de dominios/IPs/puertos/servicios<br>o	Recopilación de metadatos<br>o	Uso de Google Dorks.<br>•	ANÁLSIS DE VULNERABILIDADES: <br>Se analizará la información recopilada en la fase anterior y se realizará el descubrimiento de las vulnerabilidades. <br>•	EXPLOTACIÓN: <br>•	Se realizarán todas aquellas acciones que puedan comprometer al sistema auditado, las pruebas a implementar pueden ser de ataques tipo: <br>o	Inyección de código<br>o	Inclusión de ficheros locales o remotos<br>o	Evasión de autenticación<br>o	Carencia de controles de autorización<br>o	Ejecución de comandos en el lado del servidor<br>o	Ataques tipo Cross Site Request Forgery<br>o	Control de errores<br>o	Gestión de sesiones<br>o	Fugas de información<br>o	Secuestros de sesión<br>o	Comprobación de las condiciones para realizar una denegación de servicio.<br>	<br>•	POST EXPLOTACIÓN:<br>En caso de encontrarse una vulnerabilidad que permita realizar otras acciones en el sistema auditado o en su entorno, se realizarán controles adiciones con el objetivo de comprobar la criticidad de esta.<br>No	URL	IP<br>1.	https://runtimetest.lappiz.io/#/auth/login/PGN_Lappiz<br>135.181.185.207<br>|*plantilla:* element-md-bold<br>*brecha:* 100<br>|
+|**App PGN Móvil**|application-component|<br>|*plantilla:* element-md-bold<br>*brecha:* 100<br>|
 |**App PGN Web**|application-component||*plataforma:* angular 11<br>*brecha:* 100<br>|
 |**Config**|application-component||*plataforma:* cs<br>|
 |**Controlador admin**|application-component||*plataforma:* cs<br>|
@@ -1005,8 +1011,311 @@ Los elementos resaltados de la vista actual rquieren modelos de  licenciamiento 
 
 <br>
 
+<div style="page-break-before: always;"></div>
+\newpage
 
-``Generated on: Wed Nov 08 2023 13:42:15 GMT-0500 (COT)``
+# Módulos Requerimientos de Seguridad
+## Seguridad.Autenticación
+![Vista. Seguridad.Autenticación](images/Seguridad.Autenticación.png){#fig:Seguridad.Autenticación width=}
+
+Autenticación: 
+Con el objetivo de incrementar el nivel de seguridad, para el proceso de autenticación se tendrán en cuenta las siguientes consideraciones: 
+
+Validación del proceso de gestión de usuarios: La fortaleza de la autenticación dependerá del proceso de gestión de usuarios implementado por parte de la entidad. Se debe tener en cuenta los lineamientos definidos en la política Específica de Control de Acceso. 
+
+
+Autenticación con integración de Windows: La autenticación permitirá que los usuarios asignados al dominio, una vez que se ingresen las credenciales, y realizada la validación, se autorizará el acceso a los servicios y/o soluciones a partir de la integración del directorio activo con la integración del LDAP – (Lightweight Directory Access Protocol). 
+
+Los tipos de autenticación realizadas a partir de las identidades administradas de los recursos de Azure, entidades de Servicio y Certificados, podrán ser integrado con los dominios del directorio activo (DA) local. Por lo que respecta a la autenticación, será generado con la asignación de usuarios y credenciales definidas alineadas con la política Específica de Control de Acceso., a partir de la integración será validado el ingreso a las diferentes soluciones y/o sistemas de información de la PGN. 
+
+Manejo y uso de contraseñas: Los servidores públicos deberán tener en cuenta los lineamientos definidos para la creación y gestión de contraseñas del Sistema de Gestión de Seguridad de la Información SGSI de la Procuraduría General de la Nación.
+
+Utilización de canales cifrados: El proceso de autenticación tendrá mecanismos de transmisión seguro. El uso del TLS (Transport Layer Security), será necesario para el acceso a la página de autenticación que ayude a garantizar la autenticidad de la aplicación a los funcionarios, como en la transmisión de las credenciales. 
+
+Bloqueo de cuentas: Aquellas cuentas sobre las que se han realizados múltiples intentos de conexiones fallidas, cinco (5) intentos erróneos, se tendrá implementado un bloqueo temporal o permanente como mecanismo de seguridad para evitar amenazas de ataques. 
+
+
+La autenticación en el sistema de información comprende un Login de acceso contra Api config (Api Rest .Net Framework) y Active Directory. La misma api de configuración reconoce si el usuario es interno o externo (Es decir desde los usuarios el sistema conoce si debe hacer autenticación por directorio activo o en su defecto oAuth)
+
+
+
+
+
+
+### Catálogo de Elementos
+| Nombre| Tipo| Descripción| Prop.
+|:--------|:--------|:--------|:--------|
+|**Active directory Server**|application-component|Los tipos de autenticación realizadas a partir de las identidades administradas de los recursos de Azure, entidades de Servicio y Certificados, podrán ser integrado con los dominios del directorio activo (DA) local. Por lo que respecta a la autenticación, será generado con la asignación de usuarios y credenciales definidas alineadas con la política Específica de Control de Acceso., a partir de la integración será validado el ingreso a las diferentes soluciones y/o sistemas de información de la PGN.  <br>||
+|**BD SQL Server**|application-component|Los datos estarán procesados y almacenados en las bases de datos, el cual tendra implementados mecanismos de seguridad para el cifrado de los datos. ||
+|**LDAP**|application-component|Autenticación con integración de Windows: La autenticación permitirá que los usuarios asignados al dominio, una vez que se ingresen las credenciales, y realizada la validación, se autorizará el acceso a los servicios y/o soluciones a partir de la integración del directorio activo con la integración del LDAP – (Lightweight Directory Access Protocol).  ||
+|**Logs**|application-component|Registro de actividades que permitirá mantener trazabilidad a partir de los registros de auditoría que contenga información de fecha y hora, identificación del registro, tabla afectada, descripción del evento, tipo de evento, usuario que realiza la acción, identificación de sesión y dirección IP del usuario que efectuó la transacción. ||
+|**Validación de autenticación**|application-component|Autenticación: <br>Con el objetivo de incrementar el nivel de seguridad, para el proceso de autenticación se tendrán que realizar las diferentes validaciones para el accesos a las soluciones desarrolladas. <br>Caracteristicas de contraseñas: <br>Las contraseñas deberán exigir caracteristicas especiales como mínimo ocho (8) caraceteres, numeros, simbolos, letras mayusculas y minusculas. La aplicación al estar integrada con el directorio activo deberá validar las caracteristicas requeridas, estará en la capacidad de aceptar o rechazar la contraseña. <br>Bloqueo de contraseña: <br>El sistema incluirá controles de bloqueo de cuenta después de un maximo de cinco (5) intentos errados, con el fin de evitar ataques por fuerza bruta. Como la aplicación estará integrada con el directorio activo, este será encargado de definir los números de intentos permitidos antes de bloquear la contraseña de los usuarios.<br>Cierre de Sesión <br>Después de diez (10) minutos de inactividad el sistema deberá cerrar la sesión de trabajo.<br> ||
+|**Funcionarios Autenticación**|business-actor|Verificación que se realiza con la identidad del Servidor público, Contratista, Aprendiz y/o practicante de la entidad, proceso que se lleva a cabo cuando se ingresa al sistema, a la red o a cualquier base de datos.<br>Los servidores públicos deberán tener en cuenta los lineamientos definidos para la creación y gestión de contraseñas del Sistema de Gestión de Seguridad de la Información SGSI de la Procuraduría General de la Nación, que definirá la complejidad para la administración de contraseñas (Conjunto de caracteres variado con minúsculas, mayúsculas y números, entre otros). <br>Se deberá permitir para la gestion de usuarios, acciones como (creación, suministros de accesos, asignación de privilegios, revocatoria de accesos, etc), roles y perfiles, grupos de usuarios, asociacion de acciones para cada rol, y la administración exclusiva de los administradores del sistema de Información. ||
+|**Servidor público, Contratistas, Practicantes y/o aprendices.**|business-actor|Persona natural que hacee parte la Procuraduría General de la Nación. ||
+|**Consultar**|business-interaction|Permitirá identificar  los Servidores públicos, Contratistas, Practicantes y/o aprendices que podran Consultar informacion sobre las diferentes soluciones. ||
+|**Modificar**|business-interaction|Permitirá identificar  los Servidores públicos, Contratistas, Practicantes y/o aprendices que tendrán acceso a modificar/ Actualizar informacion sobre las diferentes soluciones. ||
+|**Procesar**|business-interaction|Permitirá identificar  los Servidores públicos, Contratistas, Practicantes y/o aprendices que podran inactivar información sobre los diferentes sistemas de información. ||
+|**Registrar**|business-interaction|Permitirá definir los Servidores públicos, Contratistas, Practicantes y/o aprendices que podran registrar informacion sobre las diferentes soluciones. ||
+|**Roles**|business-role|Se definirán los roles y perfiles para acceder a los diferentes módulos de las soluciones desarrolladas. ||
+
+<br>
+
+## Seguridad.Autorización
+![Vista. Seguridad.Autorización](images/Seguridad.Autorización.png){#fig:Seguridad.Autorización width=}
+
+Los mecanismos de autorización para el acceso a los sistemas de información de la procuraduría general de la nación describen la forma de cómo se restringe el acceso a los diferentes módulos (Misionales (SIM), Registros de Inhabilidades (SIRI), Nómina, Control Interno y relatoría, entre otros.), y que se considera un mecanismo de protección, que ayuda a reaccionar ante cualquier operación no autorizada. 
+El control de acceso basado en roles (RBAC), enfoca la idea de que a los funcionarios se les otorgue los permisos de acceso a los recursos, basados en los roles y/o perfiles que este posee. Este control posee dos características fundamentales: i) los accesos son controlados por medio de los roles y/o perfiles asignados, quiere decir, a los servidores públicos, contratistas, terceros y otros colaboradores autorizados para interactuar con los sistemas de información se le asignan los roles y el encargado/responsable definirá los permisos, que a su vez están relacionados con los roles, ii) Los roles pueden ser definidos a nivel jerárquico, es decir que un rol podrá ser miembro de otro rol.  
+
+Un proceso de autorización basado en roles, identifica tres factores importantes, i) Todos los servidores públicos, contratistas, terceros y otros 
+Colaboradores, deben tener un rol asignado, si no es asignado no podrá realizar ninguna acción relacionada con el acceso, ii) un usuario podrá hacer uso de los permisos asociados a los roles asignados, el cual deberá realizar el inicio de sesión el usuario asignado del Directorio activo (DA), iii) los servidores públicos, contratistas, terceros y otros, solo podrán realizar acciones para las cuales han sido autorizados por medio de la activación de sus roles y/o perfiles.  
+EL control definido para los accesos basados en roles RBAC, permitirá que solo las personas autorizadas de la PGN podrán acceder a ciertos recursos (programas, equipos, aplicaciones, bases de datos, etc.) definido por sus funciones laborales, lo que permitirá controlar los accesos desde diferentes escenarios: Sistemas de información, redes y aplicaciones. 
+
+Para consumo de Api Tx (Api rest node js) se cuenta con peticiones por métodos POST, PATCH, PUT, DELETE, esta no admite transacciones GET y siempre es requerido un bearer token y un sequelize model para garantizar transacciones exitosas.
+
+Gestión de identidades y Control de acceso:  
+Gestor de identidades: En esta gestión se planifica el ciclo de vida de las identidades de usuario y se realizan los procesos de sincronización, de acuerdo a los suministros de accesos establecidos por la entidad, los cuales son integrados con el servidor que gestiona la identidad y control de acceso.  
+
+Gestor de roles: La asignación de roles es sincronizada con la identidad de usuario en el servidor de dominio. Para esta gestión se crean las reglas y condiciones que determinan si un usuario puede o no pertenecer a un rol definido por la entidad. 
+Para el gobierno y gestión de identidades y de acceso, se identificó como primera medida la implementación de la siguiente metodología.
+
+
+2.3.3.	Identificación de Mecanismos:
+
+En este ítem se deben identificar las herramientas con las que cuenta la    entidad, las cuales deberán ser registradas en el documento denominado: “Clasificación y gestión de usuarios, roles y perfiles.xlsx / Hoja_1 (Mecanismos)”.
+2.3.4.	Identificación de Roles y Privilegios
+Este ítem proporciona al sistema la definición de las políticas organizacionales en cuanto a la definición de los privilegios y roles de los diferentes actores en cada uno de los aplicativos con los que estos interactúan dentro de sus funciones, registradas en el documento denominado: “Clasificación y gestión de usuarios, roles y perfiles.xlsx / Hoja_2 (Roles)”.
+
+
+2.3.5.	Aprovisionamiento de cuentas
+
+Este ítem establece el proceso adecuado para el aprovisionamiento y des aprovisionamiento de cuentas de usuarios en las diferentes aplicaciones, permitiendo toda la gestión de ellas por medio de un sistema de directorio único y centralizado, Este aprovisionamiento se encuentra registrado en el documento denominado: “Clasificación y gestión de usuarios, roles y perfiles.xlsx / Hoja_4 y Hoja_5 (Permisos)”.
+2.3.6.	Establecimiento de mecanismos de control de acceso: 
+Este ítem controla que usuarios tienen permitido el acceso a los diferentes aplicativos o herramientas dentro de la organización permitiendo segregar las funciones dependiendo del rol del usuario en cada sistema, Este establecimiento se encuentra registrado en el documento denominado: “Clasificación y gestión de usuarios, roles y perfiles.xlsx / Hoja_3 (Acceso)”.
+1.4.6.	Definición de Privilegios y accesos. 
+Los accesos y privilegios serán identificados en la matriz, encargado identificar cada uno de los roles y perfiles que se tendrá cada usuario hacia los sistemas de información cumpliendo con el principio del menor privilegio, teniendo en cuenta que los usuarios deberán tener exclusivamente los permisos y privilegios que necesita para el desarrollo de sus actividades. La matriz identificará i) los roles que se deben crear para cada sistema de información, ii) los privilegios que requiere cada rol del sistema y iii) los niveles de accesos requeridos, (Consultar, Modificar, Eliminar) (CRUD) y iv) Tipos de usuarios, roles que pueden ser asignados al perfil, entre otros. 
+1.4.7.	Configuración de permisos
+La configuración con de los perfiles con sus accesos y privilegios en los sistemas de información se debe realizar empleando las herramientas propias de la procuraduría general de la nacional PGN, y serán asignados los permisos según la matriz de roles y permisos. 
+
+
+
+
+
+
+
+### Catálogo de Elementos
+| Nombre| Tipo| Descripción| Prop.
+|:--------|:--------|:--------|:--------|
+|**Active Directory Server**|application-component|Los tipos de autenticación realizadas a partir de las identidades administradas de los recursos de Azure, entidades de Servicio y Certificados, podrán ser integrado con los dominios del directorio activo (DA) local. Por lo que respecta a la autenticación, será generado con la asignación de usuarios y credenciales definidas alineadas con la política Específica de Control de Acceso., a partir de la integración será validado el ingreso a las diferentes soluciones y/o sistemas de información de la PGN.  <br>||
+|**App PGN Web**|application-component||*plataforma:* angular 11<br>*brecha:* 100<br>|
+|**Funcionarios  Autorización**|business-actor|Verificación que se realiza con la identidad del Servidor público, Contratista, Aprendiz y/o practicante de la entidad, proceso que se lleva a cabo cuando se ingresa al sistema, a la red o a cualquier base de datos.<br>Los servidores públicos deberán tener en cuenta los lineamientos definidos para la creación y gestión de contraseñas del Sistema de Gestión de Seguridad de la Información SGSI de la Procuraduría General de la Nación, que definirá la complejidad para la administración de contraseñas (Conjunto de caracteres variado con minúsculas, mayúsculas y números, entre otros). ||
+
+<br>
+
+## Seguridad.DesarrolloSeguro.
+![Vista. Seguridad.DesarrolloSeguro.](images/Seguridad.DesarrolloSeguro..png){#fig:Seguridad.DesarrolloSeguro. width=}
+
+METODOLOGÍA DE DESARROLLO.
+
+La metodología de desarrollo seguro implementa las formas del desarrollo en cada una de las fases que se han requerido para los desarrollos de módulos misionales (SIM), Registro de Inhabilidades (SIRI), módulos de control interno, relatoría, entre otros, definido a partir de la metodología S-SDLC (Secure Software Development Life Cycle), que define los requisitos de seguridad a lo largo de las distintas fases de construcción del software: análisis de requerimientos, diseño y arquitectura del sistema, desarrollo del Sistema, Fase de pruebas y despliegue en productivo.
+
+
+Migración de datos: Se presentarán los mecanismos adecuados para realizar la migración de la información que se encuentran en los sistemas de información desarrollados.
+Principios de seguridad. 
+El siguiente contenido relaciona los lineamientos de seguridad definidos en The Owasp Foundation (Open Web Application Security Project) que deberían cumplirse para el desarrollo de las diferentes soluciones de software. 
+
+Principio de menor privilegio: La asignación de los permisos estará validados de tal forma que los Servidores Públicos, Contratistas, Practicantes y/o aprendices que interactúen con las diferentes soluciones dispongan mínimos privilegios necesarios para efectuar las actividades. 
+
+Defensa en profundidad: Es importante identificar diferentes factores de riesgos que permita encontrar fallas en las soluciones, Este análisis podrá ser obtenido como resultado de las pruebas de seguridad, y como resultado las remediaciones que se deben implementar para ejecutar los planes de acción y lograr reducir las vulnerabilidades.
+Segregación de permisos: Tener en cuenta que los permisos de acceso solo deben estar asignado a los responsables de los desarrollos con acceso con acceso a los diferentes ambientes. 
+Seguridad en la ofuscación de datos.  Como se ha venido planteando, los mecanismos para el ofuscamiento de los datos, a partir de los diferentes mecanismos de cifrados, como el TLS, SSL y HTTPS. 
+Solucionar de manera correcta los problemas de seguridad: La identificación de un problema de seguridad, y la solución deberá plantearse a partir de pruebas que permitan verificar que la falla de seguridad ha sido solucionada. Estos resultados serán dados con los reportes de las prueba realizadas sobre las soluciones a través de la metodología del OWASP (Open Web Application Security Project). 
+Codificación: 
+Se mencionan los principales controles que se deben tener en cuenta para la realización de la codificación del software: 
+•	Capa de datos. 
+•	Gestión de Logs. 
+•	Controles de acceso. 
+•	Codificación de caracteres. 
+
+LINEAMIENTOS.
+
+Tipo de sistema: 
+
+Los sistemas de información debe ser aplicaciones web, compatible con los navegadores que encabecen el mercado, actualmente: Chrome, Internet Explorer, Mozilla Firefox, o cualquier otro navegador. Deberá ser compatible con dispositivos móviles, por lo que el diseño deberá ser responsive
+Accesibilidad
+
+Los sistemas web desarrollados deberán dar cumplimiento a los estándares de accesibilidad y usabilidad definidos por el Ministerio de las tecnologías de la Información y las comunicaciones MINTIC.
+
+REPOSITORIO
+El repositorio del código fuente se encuentra en Azure DevOps, y para ser accedido deberá ser con la cuenta de correo corporativo. 
+
+
+
+### Catálogo de Elementos
+| Nombre| Tipo| Descripción| Prop.
+|:--------|:--------|:--------|:--------|
+|**Análisis de requerimientos.**|application-component|Se identifican los requerimientos funcionales y no funcionales que sirven como instrumento para el desarrollo de las soluciones. <br>La etapa de análisis terminará con el entendimiento de los requerimientos y la priorización de estos.  <br>La identificación de los nuevos requerimientos que surjan por parte del cliente, serán revisado y validados para su posterior aprobación.  ||
+|**Desarrollo del Sistema.**|application-component|La presente fase del ciclo de vida, se da a partir de la construcción, adaptación e integración de la solución. El equipo de desarrollo implementará la solución, incorporando metodología ágil, con la planeación, ejecución de Sprint, con retroalimentación y retrospectivas cíclicas o iterativas hasta que finalice el desarrollo de la solución, se tendrá en cuenta el desarrollo de los códigos fuentes documentados y probados, bases de datos de las soluciones y la documentación técnica.||
+|**Despliegue en productivo.**|application-component|Se despliega en producción para iniciar el consumo por parte de los servidores públicos, contratistas, aprendices y/o practicantes de la Procuraduría General de la Nación. <br>Se realizará el acompañamiento para el despliegue para garantizar el correcto funcionamiento de las soluciones desarrolladas, y las actividades de conocimientos con sus manuales establecidos.||
+|**Diseño y arquitectura del Sistema.**|application-component|El detalle de los componentes se generará a partir de la definición de la arquitectura de software que definirá los patrones y lineamientos para la construcción de las soluciones, que estarán definidos en el documento de arquitectura de Software y planteará la arquitectura de i) Software, ii) datos, iii) infraestructura y iv) modelo de Seguridad. ||
+|**Fase de Pruebas.**|application-component|El desarrollo de la presente fase permitirá crear el ambiente adecuado para la ejecución de las pruebas, que permitirá registrar los resultados de las pruebas realizadas.  <br>Se realizan pruebas integrales y/o funcionales con el fin de determinar la correcta operación de las soluciones o si es necesario efectuar cambios sobre alguna inconsistencia presentada por algún error o problemas de ejecución en el sistema desarrollado.  <br>Pruebas de Sistemas: Se tendrán en cuenta la realización de pruebas que permitan validar el correcto funcionamiento de cada módulo de las soluciones, con el fin de verificar que cada módulo funciones de forma correcta. (rendimiento, concurrencia, Pruebas de carga y estrés). <br>Pruebas de funcionalidad: Se realizarán las pruebas de herramientas para garantizar que las soluciones cumplen con los objetivos definidos y especificados, teniendo en consideración los diferentes escenarios de integración con otros aplicativos propios de la procuraduría general de la Nación.  <br>Pruebas de vulnerabilidad: Se realizarán las pruebas de seguridad y generación de informe que permitirá identificar las posibles vulnerabilidades del desarrollo de las soluciones propuestas.  ||
+|**Levantamiento y analisis de requerimientos**|application-component|||
+|**Pruebas de seguridad (Open Web Application Securityu Project)**|business-process|||
+|**Metodología de desarrollo Seguro.**|grouping|||
+
+<br>
+
+## Seguridad.LogsAuditoría.
+![Vista. Seguridad.LogsAuditoría.](images/Seguridad.LogsAuditoría..png){#fig:Seguridad.LogsAuditoría. width=}
+
+### Catálogo de Elementos
+| Nombre| Tipo| Descripción| Prop.
+|:--------|:--------|:--------|:--------|
+|**BD SQL Server**|application-component|Los datos estarán procesados y almacenados en las bases de datos, el cual tendra implementados mecanismos de seguridad para el cifrado de los datos. <br>Para el respaldo de las bases de datos en los ecosistemas de Dev, Test, Prod se cuenta con las siguientes políticas de retención de copias de seguridad y frecuencia de copias de seguridad definidas en el gestor de bases de datos. <br>Para la base de datos de seguridad y configuración de la aplicación se tiene un plan de copia completo cada 12 horas (PITR) en una franja de tiempo de 35 días. Adicionalmente cuenta con un LTR de conservación de 12 semanas <br>para las copias de seguridad semanales, 12 semanas de conservación para la primera copia de seguridad de cada mes, y una conservación de 12 semanas de una copia de seguridad anual.<br>Para la base de datos de datos y trazabilidad de transacciones de la aplicación se tiene un plan de copia completo cada 12 horas (PITR) en una franja de tiempo de 35 días. Adicionalmente cuenta con un LTR de conservación de <br>52 semanas para copias de seguridad semanales, 52 semanas de conservación para la primera copia de seguridad de cada mes, y una conservación de 52 semanas de una copia de seguridad anual. Esto con la finalidad de que al <br>ser una base de datos transaccional precisa de una conservación completa de los años transaccionales. <br>||
+|**Logs de Auditoría.**|application-component|El histórico de transacciones queda registrado en cada tabla donde se guarda la información y una especial llamada HistoryLogs para el tema de auditoría. En los documentos definidos del proyecto se observa la estructura que presenta el log dando cumplimiento al requerimiento de seguridad frente al registro de eventos. <br>Esto permite tener registro de la tabla afectada, los datos afectados, el registro afectado, el tipo de evento asociado a la transacción, la fecha de la transacción, la dirección IP del origen y el usuario quién realizó la misma.<br>Del mismo modo, cada entidad dentro del sistema cuenta con los atributos relacionados en el json como complemente a la trazabilidad de la información.<br>Se tendrán registros de los ingresos al sistema la aplicación y las actividades realizados por los usuarios.<br>||
+|**Servidores Públicos, Contratistas, Practucantes, y/o Aprendices.**|business-actor|||
+|**Consultar**|business-interaction|Permitirá identificar  los Servidores públicos, Contratistas, Practicantes y/o aprendices que podran Consultar informacion sobre las diferentes soluciones. ||
+|**Modificar**|business-interaction|Permitirá identificar  los Servidores públicos, Contratistas, Practicantes y/o aprendices que tendrán acceso a modificar/ Actualizar informacion sobre las diferentes soluciones. ||
+|**Procesar**|business-interaction|Permitirá identificar  los Servidores públicos, Contratistas, Practicantes y/o aprendices que podran inactivar información sobre los diferentes sistemas de información. ||
+|**Registrar**|business-interaction|Permitirá definir los Servidores públicos, Contratistas, Practicantes y/o aprendices que podran registrar informacion sobre las diferentes soluciones. ||
+|**Roles**|business-role|||
+
+<br>
+
+## Seguridad.Owasp
+![Vista. Seguridad.Owasp](images/Seguridad.Owasp.png){#fig:Seguridad.Owasp width=}
+
+Durante todo el proceso se realizarán pruebas de ánalisis de vulnerabilidades que pueda tener el sistema. Se establecerán puntos donde el software esté preparado para dicho análisis. En conjunto con el lider de Seguridad, se analizarán las posibles vulnerabilidades y se revisarán cuales pueden ser mitigadas y cuales pueden ser omitidas. 
+Para el paso a producción, se realizará un ultimo análisis de vulerabilidades y se tendrá en cuenta la revisión de las acciones de mitigación, con el fin que se hayan resuelto. 
+
+La empresa establecerá buenas prácticas para el desarrollo seguro de software, a partir de la implementación del estandar internacional OWASP (Open Web Application Security Project). El proposito principal será garantizar la seguridad de las soluciones de la Procuraduría General de la Nación PGN.  Se tiene en cuenta lineamientos técnicos de acuerdo con las normas establecidas en top ten (10) del OWASP: 
+
+Código de Injección SQL:
+Vulnerabilidad que se puede presentar por intermedio de peticiones o consultas a las bases de datos, y las entradas de la aplicación no son controladas debidamente. 
+
+Controles: 
+- Descarte de caracteres especiales, espacios que innecesarios del lado del cliente y/o servidor. 
+- Verificación de caracteres incluidos en consultas SQL o LDAP, para el  lado cliente como servidor. 
+- Limitación  cantidad de caracteres del campo creado. 
+- Verificación del resultado de consulta, que genere resultado de consulta o ningun resultado ( Si es mostrado mas de un resultado, deberá ser considerado error). 
+- Numero de intentos fallidos por ingreso de contraseñas. 
+
+Falla en las autenticación y Administración de Sesión: 
+Presentada debido a las fallas en la administración de las funciones de autenticación o sesión. (Como exposición de usuarios, contraseñas e identificador unico).
+
+Controles:
+- Descarte por caracteres especiales. espaciones que innecesario como para el lado del servidor y cliente.
+- Verificacion de meta caracteres SQL o LDAP, para el lado del servidor y cliente.
+- Validar el uso del método POST, si se envían datos de servidores publicos y/o contratistas.
+- No permitir el almacenamiento de datos de los funcionarios en las cookies. 
+- Limitación de los tiempos en las sesiones. 
+
+Técnicas de Cross Site Scripting XSS:
+Vulnebilidad presentada cuando los datos de entrada son utilizados para desarrollar el contenido del sistema de información, sin validar la informción que se envía ppor la URL.
+
+Controles: 
+- Revisar la incorporación de caracteres especiales, espacios que no sean necesarios dentro del campo de texto, asi como para el lado del cliente y el servidor. 
+
+Referencias directas a objetos de forma insegura:
+Presentada cuando se referencia a un objeto interno, tal como directorio, archivo, algun registro de la base de datos BD en la URL, y no establecen los respectivos controles para el acceso a los recursos. 
+
+Controles:
+- Evitar el uso de campo de referencia, podrá ser modificado con facilidad. 
+- Verificación de objeto válido en el envío de datos. 
+- Identificar los tipos de datos y objetos a enviar y los métodos de uso para cada uno de estos. 
+
+Cross site Request Forgery (CSFR):
+Presentado en aplicaciones donde las peticiones son faciles de predecir a partir del uso de comandos que son transmitidos por un usuario desconocido. 
+
+Controles: 
+- Evitar variables en las URL, si es posible utilizarlas, se deberá comprobar la información que contiene. 
+- Tener en cuenta el envio de información que se envía por las URL. 
+- Tener en cuenta el uso de token como herramienta de validación. 
+- Validacion de sesiones. 
+
+Pobre Mala Configuración de Seguridad:
+Puedo presentarse cuando se dejan las cuentas de accesos por defecto, archivos y directorios si establecer controles de seguridad, generando puertas traseras que pueden ser aprovechadas por los ciberdelincuentes para vulnerar el sistema de información. 
+Controles:
+- Asignar nuevas configuraciones a las definidas de fabrica. 
+- El personal de infraestrutura debera tener en cuenta los requerimientos de la aplicacion para establecer las configuraciones adecuadas. 
+- Se debe tener en cuenta la habilitación de los servicios estrictamente necesarios. 
+
+Almacenamiento inseguro de Criptografía:
+Se presenta por debilidades en el proceso de implementación de controles criptograficos, algoritmos de cifrado y almacenamiento inseguro de llaves. 
+
+Controles: 
+- Algoritmos de cifrado (AES, SHA-256). 
+- Para el uso de controles asimetricos, tener en cuenta la custodia de las llaves privadas. 
+- Seguridad en la capa de transporte TLS y certificados SSL. 
+- Cifrado de datos sensibles. 
+
+Falla al restringir acceso por URL: 
+Se presenta cuando se generan solicitudes a las paginas y no se encuentran protegidas adecuadamennte. Son modificadas las URL para obtener el acceso con privilegios. 
+
+Controles: 
+- La cuenta de algun servidor público con menor privilegio de acceso a la solución, modificar la URL para verificar el acceso, si es aceptado el acceso, se identifica que el sistema de información es vulnerable. 
+
+Redirrecionamiento y reenvíos sin validación: 
+Con frecuencia las aplicaciones envian hacia otras páginas cuando se ejecutan parametros que no son validados, el atacante puede definir el sitio al que se quiere redireccionar. 
+
+Controles: 
+- Validación del campo de referencia, analizador de registros web, para proteger de ataques XSS y otros tipos de ataques. 
+- Verificación de privilegios. 
+
+Insuficiente protección de la capa de transporte: 
+Se presenta si la informacion que viaja por internet no se encuentra debidamente protegida. Un usuario externo que monitoree la red, podrá obtener información (Usuarios, Contraseñas e Identificación). 
+Controles: 
+- Vulnerabilidad enfocada a nivel de infraestructura. Podrá ser utilizado un Snnifer para el monitoreo de la red. 
+
+Los lineamientos de desarrollo seguro establecidos en The OWASP Foundation recomendados en la “Guía de desarrollo OWASP” y “OWAS Cheat Sheet, permitirá realizar pruebas de seguridad integrando el analisis de vulnerabilidades, y pruebas de Ethical Hacking. 
+Los resultados permitirán identificar los requisitos de seguridad que los sistemas de informacion o servicios web deberán cumplir.
+La metodologia empleada tendrá las siguientes fases: 
+
+•	FASE DE RECONOCIMIENTO: 
+Se recolectará toda la información posible, usando diferentes técnicas como:
+o	Recopilación de dominios/IPs/puertos/servicios
+o	Recopilación de metadatos
+o	Uso de Google Dorks.
+
+•	ANÁLSIS DE VULNERABILIDADES: 
+Se analizará la información recopilada en la fase anterior y se realizará el descubrimiento de las vulnerabilidades. 
+
+•	EXPLOTACIÓN: 
+•	Se realizarán todas aquellas acciones que puedan comprometer al sistema auditado, las pruebas a implementar pueden ser de ataques tipo: 
+o	Inyección de código
+o	Inclusión de ficheros locales o remotos
+o	Evasión de autenticación
+o	Carencia de controles de autorización
+o	Ejecución de comandos en el lado del servidor
+o	Ataques tipo Cross Site Request Forgery
+o	Control de errores
+o	Gestión de sesiones
+o	Fugas de información
+o	Secuestros de sesión
+o	Comprobación de las condiciones para realizar una denegación de servicio.
+	
+•	POST EXPLOTACIÓN:
+En caso de encontrarse una vulnerabilidad que permita realizar otras acciones en el sistema auditado o en su entorno, se realizarán controles adiciones con el objetivo de comprobar la criticidad de esta.
+
+No	URL	IP
+1.	https://runtimetest.lappiz.io/#/auth/login/PGN_Lappiz
+135.181.185.207
+
+
+El Login deberá evidenciar el control de errores, al momento de realizar la validación deberá mensaje de error para el caso que se autentique con credenciales erradas. 
+
+
+### Catálogo de Elementos
+| Nombre| Tipo| Descripción| Prop.
+|:--------|:--------|:--------|:--------|
+|**App PGN Móvil**|application-component|||
+|**App PGN Web**|application-component|||
+|**Cliente**|business-actor|||
+|**Servidor web Aplicaciones**|node|||
+
+<br>
+
+
+``Generated on: Wed Nov 08 2023 13:46:57 GMT-0500 (COT)``
 
 # Arquitectura de Software
 * [Diagrama de Arquitectura de la Solución Propuesta: vista de integración](#diagrama-de-arquitectura-de-la-solución-propuesta:-vista-de-integración)
