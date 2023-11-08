@@ -18,8 +18,8 @@ header-includes: |
   <meta name="dc.date" content="2023-11-08" />
   <meta name="citation_publication_date" content="2023-11-08" />
   <meta property="article:published_time" content="2023-11-08" />
-  <meta name="dc.modified" content="2023-11-08T18:50:32+00:00" />
-  <meta property="article:modified_time" content="2023-11-08T18:50:32+00:00" />
+  <meta name="dc.modified" content="2023-11-08T19:54:23+00:00" />
+  <meta property="article:modified_time" content="2023-11-08T19:54:23+00:00" />
   <meta name="dc.language" content="en-US" />
   <meta name="citation_language" content="en-US" />
   <meta name="dc.relation.ispartof" content="Manubot" />
@@ -34,9 +34,9 @@ header-includes: |
   <meta name="citation_fulltext_html_url" content="https://hwong23.github.io/pgn-078/" />
   <meta name="citation_pdf_url" content="https://hwong23.github.io/pgn-078/manuscript.pdf" />
   <link rel="alternate" type="application/pdf" href="https://hwong23.github.io/pgn-078/manuscript.pdf" />
-  <link rel="alternate" type="text/html" href="https://hwong23.github.io/pgn-078/v/8e9dee02a48a434ac62e017bd8d7e2572a0b32c5/" />
-  <meta name="manubot_html_url_versioned" content="https://hwong23.github.io/pgn-078/v/8e9dee02a48a434ac62e017bd8d7e2572a0b32c5/" />
-  <meta name="manubot_pdf_url_versioned" content="https://hwong23.github.io/pgn-078/v/8e9dee02a48a434ac62e017bd8d7e2572a0b32c5/manuscript.pdf" />
+  <link rel="alternate" type="text/html" href="https://hwong23.github.io/pgn-078/v/1bbb460e7869b6a5440f9409ae472cd94d4c47dc/" />
+  <meta name="manubot_html_url_versioned" content="https://hwong23.github.io/pgn-078/v/1bbb460e7869b6a5440f9409ae472cd94d4c47dc/" />
+  <meta name="manubot_pdf_url_versioned" content="https://hwong23.github.io/pgn-078/v/1bbb460e7869b6a5440f9409ae472cd94d4c47dc/manuscript.pdf" />
   <meta property="og:type" content="article" />
   <meta property="twitter:card" content="summary_large_image" />
   <link rel="icon" type="image/png" sizes="192x192" href="https://manubot.org/favicon-192x192.png" />
@@ -77,7 +77,7 @@ tablenos-caption-name: Tabla
 
 <br>
 
-| **Versión** del producto 1.8e9dee0 de 08 Nov 2023
+| **Versión** del producto 1.1bbb460 de 08 Nov 2023
 
 | **Presentado a**
 
@@ -95,9 +95,9 @@ tablenos-caption-name: Tabla
 
 
 <small><em>Los productos de esta etapa, Migración Funcional SIU, Contrato 078-2023, 
-([Web](https://hwong23.github.io/pgn-078/v/8e9dee02a48a434ac62e017bd8d7e2572a0b32c5/))
+([Web](https://hwong23.github.io/pgn-078/v/1bbb460e7869b6a5440f9409ae472cd94d4c47dc/))
 están basados en el resultado de la Fase 1 del proyecto PGN SIU del 2022,
-[Sharepoint Softgic@8e9dee0](http://softgic.sharepoint.com)
+[Sharepoint Softgic@1bbb460](http://softgic.sharepoint.com)
 del November 8, 2023.
 </em></small>
 
@@ -144,6 +144,7 @@ Descripción de los productos del trabajo de arquitectura de la Fase 2, proyecto
 | Autor          |                            |
 | Fuente         |                            |
 | **Versión**    |                            |
+| 1.1bbb460 | 2023-11-08. corrcn--sgrdd4 |
 | 1.8e9dee0 | 2023-11-08. corrcn--sgrdd3 |
 | 1.00eb497 | 2023-11-08. corrcn--sgrdd |
 | 1.2c588a4 | 2023-11-08. cnsdrcns--sgrdd |
@@ -153,7 +154,6 @@ Descripción de los productos del trabajo de arquitectura de la Fase 2, proyecto
 | 1.c296a03 | 2023-11-07. Merge branch 'main' of https://github.com/hwong23/pgn-078 |
 | 1.57a9a5e | 2023-11-07. arqdoc |
 | 1.bc63c34 | 2023-10-27. ing--indcdr |
-| 1.c61d86d | 2023-10-27. riesgos2 |
 | Vínculos       | [N003a Vista Segmento PGN SIU](N03a%a20Vsta%20aSegenta%20SOA%20PGN.md) |
 
 <br>
@@ -1315,7 +1315,7 @@ El Login deberá evidenciar el control de errores, al momento de realizar la val
 <br>
 
 
-``Generated on: Wed Nov 08 2023 13:46:57 GMT-0500 (COT)``
+``Generated on: Wed Nov 08 2023 14:51:01 GMT-0500 (COT)``
 
 # Arquitectura de Software
 * [Diagrama de Arquitectura de la Solución Propuesta: vista de integración](#diagrama-de-arquitectura-de-la-solución-propuesta:-vista-de-integración)
