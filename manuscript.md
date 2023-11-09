@@ -18,8 +18,8 @@ header-includes: |
   <meta name="dc.date" content="2023-11-09" />
   <meta name="citation_publication_date" content="2023-11-09" />
   <meta property="article:published_time" content="2023-11-09" />
-  <meta name="dc.modified" content="2023-11-09T14:40:51+00:00" />
-  <meta property="article:modified_time" content="2023-11-09T14:40:51+00:00" />
+  <meta name="dc.modified" content="2023-11-09T14:51:49+00:00" />
+  <meta property="article:modified_time" content="2023-11-09T14:51:49+00:00" />
   <meta name="dc.language" content="en-US" />
   <meta name="citation_language" content="en-US" />
   <meta name="dc.relation.ispartof" content="Manubot" />
@@ -34,9 +34,9 @@ header-includes: |
   <meta name="citation_fulltext_html_url" content="https://hwong23.github.io/pgn-078/" />
   <meta name="citation_pdf_url" content="https://hwong23.github.io/pgn-078/manuscript.pdf" />
   <link rel="alternate" type="application/pdf" href="https://hwong23.github.io/pgn-078/manuscript.pdf" />
-  <link rel="alternate" type="text/html" href="https://hwong23.github.io/pgn-078/v/8a9af1a67ec52bcf1d1a70deac8de7ede9471138/" />
-  <meta name="manubot_html_url_versioned" content="https://hwong23.github.io/pgn-078/v/8a9af1a67ec52bcf1d1a70deac8de7ede9471138/" />
-  <meta name="manubot_pdf_url_versioned" content="https://hwong23.github.io/pgn-078/v/8a9af1a67ec52bcf1d1a70deac8de7ede9471138/manuscript.pdf" />
+  <link rel="alternate" type="text/html" href="https://hwong23.github.io/pgn-078/v/f0b33faca8d83c8079080dd322b59e9d50349526/" />
+  <meta name="manubot_html_url_versioned" content="https://hwong23.github.io/pgn-078/v/f0b33faca8d83c8079080dd322b59e9d50349526/" />
+  <meta name="manubot_pdf_url_versioned" content="https://hwong23.github.io/pgn-078/v/f0b33faca8d83c8079080dd322b59e9d50349526/manuscript.pdf" />
   <meta property="og:type" content="article" />
   <meta property="twitter:card" content="summary_large_image" />
   <link rel="icon" type="image/png" sizes="192x192" href="https://manubot.org/favicon-192x192.png" />
@@ -77,7 +77,7 @@ tablenos-caption-name: Tabla
 
 <br>
 
-| **Versión** del producto 1.8a9af1a de 09 Nov 2023
+| **Versión** del producto 1.f0b33fa de 09 Nov 2023
 
 | **Presentado a**
 
@@ -95,9 +95,9 @@ tablenos-caption-name: Tabla
 
 
 <small><em>Los productos de esta etapa, Migración Funcional SIU, Contrato 078-2023, 
-([Web](https://hwong23.github.io/pgn-078/v/8a9af1a67ec52bcf1d1a70deac8de7ede9471138/))
+([Web](https://hwong23.github.io/pgn-078/v/f0b33faca8d83c8079080dd322b59e9d50349526/))
 están basados en el resultado de la Fase 1 del proyecto PGN SIU del 2022,
-[SharePoint Softgic@8a9af1a](http://softgic.sharepoint.com)
+[SharePoint Softgic@f0b33fa](http://softgic.sharepoint.com)
 del November 9, 2023.
 </em></small>
 
@@ -144,6 +144,7 @@ Descripción de los productos del trabajo de arquitectura de la Fase 2, proyecto
 | Autor          |                            |
 | Fuente         |                            |
 | **Versión**    |                            |
+| 1.f0b33fa | 2023-11-09. crrcn--txt-20 |
 | 1.8a9af1a | 2023-11-09. crrcn--txt-16 |
 | 1.d98c640 | 2023-11-09. tema--tablas |
 | 1.aecc652 | 2023-11-09. crrcn--txt-10 |
@@ -153,7 +154,6 @@ Descripción de los productos del trabajo de arquitectura de la Fase 2, proyecto
 | 1.00eb497 | 2023-11-08. corrcn--sgrdd |
 | 1.2c588a4 | 2023-11-08. cnsdrcns--sgrdd |
 | 1.c717651 | 2023-11-08. pgndoc--crrcntxt |
-| 1.6e4e675 | 2023-11-08. pgndoc |
 | Vínculos       | [N003a Vista Segmento PGN SIU](N03a%a20Vsta%20aSegenta%20SOA%20PGN.md) |
 
 <br>
@@ -596,7 +596,7 @@ Table: Valoración del riesgo RSG10. Validación decisiones de arquitectura. Mig
 ### Catálogo de Elementos
 | Nombre| Tipo| Descripción| Prop.
 |:--------|:--------|:--------|:--------|
-|**Impacto**|assessment|Sobretrabajo del proyecto 078, esfuerzo y presupuesto.||
+|**Impacto**|assessment|Excedente de trabajo en del proyecto 078, esfuerzo y presupuesto.||
 |**Agente de riesgo PGN**|business-actor|Arquitecto PGN||
 |**Agente de riesgo Softgic**|business-actor|Arquitecto Softgic||
 |**Gestión alcance tipos de datos y criterios aceptación migración datos**|business-event|||
@@ -622,7 +622,7 @@ La colaboración y comunicación de los componentes internos del SUI (grupo PFN 
 
 La colaboración entre el SUI Migración con sistemas externos puede darse mediante API de comunicación (o buses de datos empresarial que ya disponga la PGN), sin perjuicio del patrón de comunicación estándar descrito en el diagrama.
 
-Los únicos elementos para la comunicación (e integración) son los indicados en la vista actual. En este diseño no considera tipos de comunicación mediante  mesajeria, datos, u otros no mencionados en la vista.
+Los únicos elementos para la comunicación (e integración) son los indicados en la vista actual. En este diseño no considera tipos de comunicación mediante  mensajeria, datos, u otros no mencionados en la vista.
 
 ### Catálogo de Elementos
 | Nombre| Tipo| Descripción| Prop.
@@ -752,7 +752,7 @@ La ultima versión del TLS es la 1.3
 |**Autenticación**|business-object|||
 |**Autorización**|business-object|||
 |**Cifrado de Datos en tránsito**|business-object|||
-|**Cifrado de datos en tránsito**|business-object|Proteger la información propia de la PGN utilizando mecanismos de cifrado que permita garantizar los pilares de Segurida de la Información Confidencialidad e integridad, asimismo reducir los riesgos de la información mediante la ayuda de Técnicas Criptograficas. Como mecanismos se propone implementar estos  mecanismos de cifrado, como el protocolo TLS ( Transport Layer Security) que permite a dos partes identificarse y autenticarse entre sí y comunicarse con confidencialidad e integridad de datos a partir de la conexión del usuario y un servidor WEB.<br>Se propone integrar certificados SSL, que permite cifrar la información confidencial a fin de que solo los autorizados puedan tener acceso a ella, y asi evitar manipulacion de información confidencial. La Seguridad  que brinda SSL, da garantía para acceder a los aplicativos de PNG. <br>Como implementar certificados SSL?<br>Podran ser adquiridos a través del proveedor de dominios.<br>TLS el protocolo que surge para reforzar la seguridad de los certificados SSL, que funciona como mecanismo de encriptación para que sea realmente transparente el envio de la información, proporcionando una autenticación solida, restringiendo la manipulación, interceptación y alteración de mensajes.<br>La ultima versión del TLS es la 1.3||
+|**Cifrado de datos en tránsito**|business-object|Proteger la información propia de la PGN utilizando mecanismos de cifrado que permita garantizar los pilares de Segurida de la Información Confidencialidad e integridad, asimismo reducir los riesgos de la información mediante la ayuda de Técnicas Criptograficas. Como mecanismos se propone implementar estos  mecanismos de cifrado, como el protocolo TLS ( Transport Layer Security) que permite a dos partes identificarse y autenticarse entre sí y comunicarse con confidencialidad e integridad de datos a partir de la conexión del usuario y un servidor WEB. Se propone integrar certificados SSL, que permite cifrar la información confidencial a fin de que solo los autorizados puedan tener acceso a ella, y asi evitar manipulacion de información confidencial. La Seguridad  que brinda SSL, da garantía para acceder a los aplicativos de PNG. <br>Como implementar certificados SSL? Podran ser adquiridos a través del proveedor de dominios. TLS el protocolo que surge para reforzar la seguridad de los certificados SSL, que funciona como mecanismo de encriptación para que sea realmente transparente el envio de la información, proporcionando una autenticación solida, restringiendo la manipulación, interceptación y alteración de mensajes. La ultima versión del TLS es la 1.3||
 |**Communication Network (DMZ)**|communication-network|||
 |**Communication Network (LAN)**|communication-network|||
 |**Communication Network (internet)**|communication-network|||
@@ -844,7 +844,7 @@ Huella digital SHA1 “8C:48:BD:E2:F5:18:18:C3:85:96:68:44:2E:28:A0:68:08:2F:0A:
 |**Interfaz de datos 3**|application-service|||
 |**Office**|application-service|||
 |**Proveedores contenidos**|application-service||*brecha:* 100<br>|
-|**Entidad negocio PGN 1**|business-object|Repreesnta un objeto de negocio del contexto de la entidad PGN,, por ejemplo: un decreto, una intervención, una conciliación.<br>||
+|**Entidad negocio PGN 1**|business-object|Representa un objeto de negocio del contexto de la entidad PGN,, por ejemplo: un decreto, una intervención, una conciliación.<br>||
 |**ARQ01. Consistencia SUI**|constraint|Unifica las entidades de negocio PGN, entre las que se incluyen a conciliaciones, publicaciones de relatoría, resoluciones, en artefactos reutilizables. Distinto de que estas entidades (y su lógica de negocio) estén dispersos entre los sistemas del SUI, estarán concentradas en un único artefacto correspondiente. Calidad sistémica: la consistencia persigue que el resultado de la lógica de negocio sea la misma entre los módulos del SUI migrado. Esto redunda a mantenibilidad y gestión: tiende a tener un solo punto de cambio y dificulta la transferencia de dependencias implícitas a otros procesos.||
 |**ARQ02. Mantenibilidad SUI**|constraint|Evitar las dependencias transitivas de los módulos misionales del SUI a componentes y sistemas de terceros o submódulos no misionales.  Calidad sistémica: la mantenibilidad por control de dependencias que optimiza el diseño Migración SUI está dada por el control de cambios no programados sobre los componentes misionales del SUI (corrupción de componentes). Ver Patrón de Diseño Migración SUI, más adelante en el documento.||
 |**ARQ03. Extensibilidad SUI**|constraint|Concentración de los componentes de negocio, misionales, del SUI protegidos de cambios provenientes de otros sistemas. Ver Patrón de Diseño Migración SUI, más adelante en el documento. Calidad sistémica: la extensibilidad que optimiza el diseño Migración SUI está dada por el intercambio de submódulos no misionales, como el gestor documental, sin afectación de los componentes misionales que este diseño protege.||
@@ -913,7 +913,7 @@ Todos los sistemas de información del SUI siguen esta directiva: estarán const
 |**Interfaz de datos 3**|application-service|||
 |**Office**|application-service|||
 |**Proveedores contenidos**|application-service||*brecha:* 100<br>|
-|**Entidad negocio PGN 1**|business-object|Repreesnta un objeto de negocio del contexto de la entidad PGN,, por ejemplo: un decreto, una intervención, una conciliación.<br>||
+|**Entidad negocio PGN 1**|business-object|Representa un objeto de negocio del contexto de la entidad PGN,, por ejemplo: un decreto, una intervención, una conciliación.<br>||
 |**ARQ01. Consistencia SUI**|constraint|Unifica las entidades de negocio PGN, entre las que se incluyen a conciliaciones, publicaciones de relatoría, resoluciones, en artefactos reutilizables. Distinto de que estas entidades (y su lógica de negocio) estén dispersos entre los sistemas del SUI, estarán concentradas en un único artefacto correspondiente. Calidad sistémica: la consistencia persigue que el resultado de la lógica de negocio sea la misma entre los módulos del SUI migrado. Esto redunda a mantenibilidad y gestión: tiende a tener un solo punto de cambio y dificulta la transferencia de dependencias implícitas a otros procesos.||
 |**ARQ02. Mantenibilidad SUI**|constraint|Evitar las dependencias transitivas de los módulos misionales del SUI a componentes y sistemas de terceros o submódulos no misionales.  Calidad sistémica: la mantenibilidad por control de dependencias que optimiza el diseño Migración SUI está dada por el control de cambios no programados sobre los componentes misionales del SUI (corrupción de componentes). Ver Patrón de Diseño Migración SUI, más adelante en el documento.||
 |**ARQ03. Extensibilidad SUI**|constraint|Concentración de los componentes de negocio, misionales, del SUI protegidos de cambios provenientes de otros sistemas. Ver Patrón de Diseño Migración SUI, más adelante en el documento. Calidad sistémica: la extensibilidad que optimiza el diseño Migración SUI está dada por el intercambio de submódulos no misionales, como el gestor documental, sin afectación de los componentes misionales que este diseño protege.||
@@ -1030,10 +1030,14 @@ Los elementos resaltados de la vista actual requieren modelos de  licenciamiento
 ![Vista. Seguridad.Autenticación](images/Seguridad.Autenticación.png){#fig:Seguridad.Autenticación width=}
 
 Autenticación: 
+La autenticacion de usuarios estará enmarcada en en tres factores de autenticación:
+control de acceso basado en roles (RBAC), mecanismo de control de acceso que define los roles y los privilegios para determinar si a un usuario se le debe dar acceso a un recurso.
+Conexión de accecso por DA de Azure: Servicio de administración de acceso e identidades basado en la nube.
+Red Privada Virtual de Azure:  bloque de compilación fundamental para las redes privadas en Azure
+
 Con el objetivo de incrementar el nivel de seguridad, para el proceso de autenticación se tendrán en cuenta las siguientes consideraciones: 
 
 Validación del proceso de gestión de usuarios: La fortaleza de la autenticación dependerá del proceso de gestión de usuarios implementado por parte de la entidad. Se debe tener en cuenta los lineamientos definidos en la política Específica de Control de Acceso. 
-
 
 Autenticación con integración de Windows: La autenticación permitirá que los usuarios asignados al dominio, una vez que se ingresen las credenciales, y realizada la validación, se autorizará el acceso a los servicios y/o soluciones a partir de la integración del directorio activo con la integración del LDAP – (Lightweight Directory Access Protocol). 
 
@@ -1045,9 +1049,10 @@ Utilización de canales cifrados: El proceso de autenticación tendrá mecanismo
 
 Bloqueo de cuentas: Aquellas cuentas sobre las que se han realizados múltiples intentos de conexiones fallidas, cinco (5) intentos erróneos, se tendrá implementado un bloqueo temporal o permanente como mecanismo de seguridad para evitar amenazas de ataques. 
 
-
 La autenticación en el sistema de información comprende un Login de acceso contra Api config (Api Rest .Net Framework) y Active Directory. La misma API de configuración reconoce si el usuario es interno o externo (Es decir desde los usuarios el sistema conoce si debe hacer autenticación por directorio activo o en su defecto oAuth)
 
+Administración de claves. 
+Las contraseñas deberán cumplir con los requisitos de complejidad y completitud, teniendo en cuenta la longitud, caracteres numéricos, alfabéticos y especiales y que puedan ser cambiadas en un periodo de tiempo establecido, de acuerdo con los parámetros definidos en las políticas de acceso.   
 
 
 
@@ -1117,7 +1122,13 @@ Configuración de permisos:
 La configuración con de los perfiles con sus accesos y privilegios en los sistemas de información se debe realizar empleando las herramientas propias de la procuraduría general de la nacional PGN, y serán asignados los permisos según la matriz de roles y permisos. 
 
 
+Control de acceso que define los roles y los privilegios para determinar si a un usuario se le debe dar acceso a un recurso. 
+La información que sea considerada como Información publica reservada de acuerdo con los criterios definidos en la ley 1712 de 2014 “Por medio del cual se crea la ley de transparencia y del derecho de acceso a la información pública nacional.”,, podrá ser consultada solo por el personal autorizado definido de acuerdo con el control de acceso basado en roles.  Los perfiles o roles definiran el acceso a la información. 
 
+Para los documentos restringidos  que requieran firma por parte del lider del proceso o propietario, se propone revisar la implementacion de un dispositivo criptográfico con uso de (CERTIFICADOS y FIRMA DIGITAL) con token integrado que podra ser conectado en el puerto USB de la maquina del usuario.
+La aprobacion de los documentos por intermedio de esta firma permitirá la aprobación, integridad de los documentos , seguridad y validez juridica. Se propone la gestión con un  proveedor de certificado del ambito nacional.
+
+EL control definido para los accesos basados en roles RBAC, permitirá que solo las personas autorizadas de la PGN podrán acceder a ciertos recursos (programas, equipos, aplicaciones, bases de datos, etc) definido por sus funciones laborales, lo que permitirá controlar los accesos desde diferentes escenarios: Sistemas de información, redes y aplicaciones. 
 
 ### Catálogo de Elementos
 | Nombre| Tipo| Descripción| Prop.
@@ -1145,16 +1156,15 @@ Principio de menor privilegio: La asignación de los permisos estará validados 
 Defensa en profundidad: Es importante identificar diferentes factores de riesgos que permita encontrar fallas en las soluciones, Este análisis podrá ser obtenido como resultado de las pruebas de seguridad, y como resultado las remediaciones que se deben implementar para ejecutar los planes de acción y lograr reducir las vulnerabilidades.
 Segregación de permisos: Tener en cuenta que los permisos de acceso solo deben estar asignado a los responsables de los desarrollos con acceso con acceso a los diferentes ambientes. 
 Seguridad en la ofuscación de datos.  Como se ha venido planteando, los mecanismos para el ofuscamiento de los datos, a partir de los diferentes mecanismos de cifrados, como el TLS, SSL y HTTPS. 
-Solucionar de manera correcta los problemas de seguridad: La identificación de un problema de seguridad, y la solución deberá plantearse a partir de pruebas que permitan verificar que la falla de seguridad ha sido solucionada. Estos resultados serán dados con los reportes de las prueba realizadas sobre las soluciones a través de la metodología del OWASP (Open Web Application Security Project). 
+Solucionar de manera correcta los problemas de seguridad: La identificación de un problema de seguridad, y la solución deberá plantearse a partir de pruebas que permitan verificar que la falla de seguridad ha sido solucionada. Estos resultados serán dados con los reportes de la prueba realizadas sobre las soluciones a través de la metodología del OWASP (Open Web Application Security Project). 
 Codificación: 
 Se mencionan los principales controles que se deben tener en cuenta para la realización de la codificación del software: 
-•	Capa de datos. 
-•	Gestión de Logs. 
-•	Controles de acceso. 
-•	Codificación de caracteres. 
+* Capa de datos. 
+* Gestión de Logs. 
+* Controles de acceso. 
+* Codificación de caracteres. 
 
 LINEAMIENTOS.
-
 Tipo de sistema: 
 
 Los sistemas de información debe ser aplicaciones web, compatible con los navegadores que encabecen el mercado, actualmente: Chrome, Internet Explorer, Mozilla Firefox, o cualquier otro navegador. Deberá ser compatible con dispositivos móviles, por lo que el diseño deberá ser responsive
@@ -1163,7 +1173,8 @@ Accesibilidad
 Los sistemas web desarrollados deberán dar cumplimiento a los estándares de accesibilidad y usabilidad definidos por el Ministerio de las tecnologías de la Información y las comunicaciones MINTIC.
 
 REPOSITORIO
-El repositorio del código fuente se encuentra en Azure DevOps, y para ser accedido deberá ser con la cuenta de correo corporativo. 
+El repositorio del código fuente se encuentra en Azure DevOps, y para ser accedido deberá ser con la cuenta de correo corporativo.
+
 
 
 
@@ -1332,7 +1343,7 @@ El Login deberá evidenciar el control de errores, al momento de realizar la val
 <br>
 
 
-``Generated on: Thu Nov 09 2023 09:37:47 GMT-0500 (COT)``
+``Generated on: Thu Nov 09 2023 09:44:49 GMT-0500 (COT)``
 
 ## Requerimientos de Administración
 1.	Las soluciones deben permitir la administración de los Roles de Usuarios: esta funcionalidad debe permitir configurar los diferentes roles de los usuarios funcionales de los procesos. 
