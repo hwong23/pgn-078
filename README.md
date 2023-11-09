@@ -1,7 +1,7 @@
 # Directorio de salida de documentación técnica
 
 The [`gh-pages`](https://github.com/hwong23/pgn-078/tree/gh-pages) branch hosts the contents of this directory at <https://hwong23.github.io/pgn-078/>.
-The permalink for this webpage version is <https://hwong23.github.io/pgn-078/v/8a9af1a67ec52bcf1d1a70deac8de7ede9471138/>.
+The permalink for this webpage version is <https://hwong23.github.io/pgn-078/v/f0b33faca8d83c8079080dd322b59e9d50349526/>.
 To redirect to the permalink for the latest manuscript version at anytime, use the link <https://hwong23.github.io/pgn-078/v/freeze/>.
 
 ## Listado
@@ -21,6 +21,7 @@ In general, a version is identified by the commit hash of the source content tha
 |----------------|----------------------------|
 | Palabras clave | SIU, Softgic, PGN, Análisis de brecha, GAP, Comparativa |
 | **Versión**    |                            |
+| 1.f0b33fa | 2023-11-09. crrcn--txt-20 |
 | 1.8a9af1a | 2023-11-09. crrcn--txt-16 |
 | 1.d98c640 | 2023-11-09. tema--tablas |
 | 1.aecc652 | 2023-11-09. crrcn--txt-10 |
@@ -30,7 +31,6 @@ In general, a version is identified by the commit hash of the source content tha
 | 1.00eb497 | 2023-11-08. corrcn--sgrdd |
 | 1.2c588a4 | 2023-11-08. cnsdrcns--sgrdd |
 | 1.c717651 | 2023-11-08. pgndoc--crrcntxt |
-| 1.6e4e675 | 2023-11-08. pgndoc |
 
 
 
@@ -39,4 +39,4 @@ Verifying timestamps with the `ots verify` command requires running a local bitc
 ## Source
 
 The manuscripts in this directory were built from
-[`8a9af1a67ec52bcf1d1a70deac8de7ede9471138`](https://github.com/hwong23/pgn-078/commit/8a9af1a67ec52bcf1d1a70deac8de7ede9471138).
+[`f0b33faca8d83c8079080dd322b59e9d50349526`](https://github.com/hwong23/pgn-078/commit/f0b33faca8d83c8079080dd322b59e9d50349526).
