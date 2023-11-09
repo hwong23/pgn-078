@@ -1,7 +1,7 @@
 # Directorio de salida de documentación técnica
 
 The [`gh-pages`](https://github.com/hwong23/pgn-078/tree/gh-pages) branch hosts the contents of this directory at <https://hwong23.github.io/pgn-078/>.
-The permalink for this webpage version is <https://hwong23.github.io/pgn-078/v/1bbd2b1b8cb90901726889c8c86e4050d1d4c104/>.
+The permalink for this webpage version is <https://hwong23.github.io/pgn-078/v/aecc652977c842bdd4d21b709ac36dccf0b5a78f/>.
 To redirect to the permalink for the latest manuscript version at anytime, use the link <https://hwong23.github.io/pgn-078/v/freeze/>.
 
 ## Listado
@@ -21,6 +21,7 @@ In general, a version is identified by the commit hash of the source content tha
 |----------------|----------------------------|
 | Palabras clave | SIU, Softgic, PGN, Análisis de brecha, GAP, Comparativa |
 | **Versión**    |                            |
+| 1.aecc652 | 2023-11-09. crrcn--txt-10 |
 | 1.1bbd2b1 | 2023-11-08. corrcn--sgrdd5 |
 | 1.1bbb460 | 2023-11-08. corrcn--sgrdd4 |
 | 1.8e9dee0 | 2023-11-08. corrcn--sgrdd3 |
@@ -30,7 +31,6 @@ In general, a version is identified by the commit hash of the source content tha
 | 1.6e4e675 | 2023-11-08. pgndoc |
 | 1.fa97e14 | 2023-11-08. arqdoc2 |
 | 1.c296a03 | 2023-11-07. Merge branch 'main' of https://github.com/hwong23/pgn-078 |
-| 1.57a9a5e | 2023-11-07. arqdoc |
 
 
 
@@ -39,4 +39,4 @@ Verifying timestamps with the `ots verify` command requires running a local bitc
 ## Source
 
 The manuscripts in this directory were built from
-[`1bbd2b1b8cb90901726889c8c86e4050d1d4c104`](https://github.com/hwong23/pgn-078/commit/1bbd2b1b8cb90901726889c8c86e4050d1d4c104).
+[`aecc652977c842bdd4d21b709ac36dccf0b5a78f`](https://github.com/hwong23/pgn-078/commit/aecc652977c842bdd4d21b709ac36dccf0b5a78f).
