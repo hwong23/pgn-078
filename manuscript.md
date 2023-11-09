@@ -18,8 +18,8 @@ header-includes: |
   <meta name="dc.date" content="2023-11-09" />
   <meta name="citation_publication_date" content="2023-11-09" />
   <meta property="article:published_time" content="2023-11-09" />
-  <meta name="dc.modified" content="2023-11-09T14:53:42+00:00" />
-  <meta property="article:modified_time" content="2023-11-09T14:53:42+00:00" />
+  <meta name="dc.modified" content="2023-11-09T15:03:23+00:00" />
+  <meta property="article:modified_time" content="2023-11-09T15:03:23+00:00" />
   <meta name="dc.language" content="en-US" />
   <meta name="citation_language" content="en-US" />
   <meta name="dc.relation.ispartof" content="Manubot" />
@@ -34,9 +34,9 @@ header-includes: |
   <meta name="citation_fulltext_html_url" content="https://hwong23.github.io/pgn-078/" />
   <meta name="citation_pdf_url" content="https://hwong23.github.io/pgn-078/manuscript.pdf" />
   <link rel="alternate" type="application/pdf" href="https://hwong23.github.io/pgn-078/manuscript.pdf" />
-  <link rel="alternate" type="text/html" href="https://hwong23.github.io/pgn-078/v/07a3be2538f1a488e06cbe8de4a66fc4efe260d6/" />
-  <meta name="manubot_html_url_versioned" content="https://hwong23.github.io/pgn-078/v/07a3be2538f1a488e06cbe8de4a66fc4efe260d6/" />
-  <meta name="manubot_pdf_url_versioned" content="https://hwong23.github.io/pgn-078/v/07a3be2538f1a488e06cbe8de4a66fc4efe260d6/manuscript.pdf" />
+  <link rel="alternate" type="text/html" href="https://hwong23.github.io/pgn-078/v/1805fc626b5ae53d9fb185ae469e48d195e65d3b/" />
+  <meta name="manubot_html_url_versioned" content="https://hwong23.github.io/pgn-078/v/1805fc626b5ae53d9fb185ae469e48d195e65d3b/" />
+  <meta name="manubot_pdf_url_versioned" content="https://hwong23.github.io/pgn-078/v/1805fc626b5ae53d9fb185ae469e48d195e65d3b/manuscript.pdf" />
   <meta property="og:type" content="article" />
   <meta property="twitter:card" content="summary_large_image" />
   <link rel="icon" type="image/png" sizes="192x192" href="https://manubot.org/favicon-192x192.png" />
@@ -77,7 +77,7 @@ tablenos-caption-name: Tabla
 
 <br>
 
-| **Versión** del producto 1.07a3be2 de 09 Nov 2023
+| **Versión** del producto 1.1805fc6 de 09 Nov 2023
 
 | **Presentado a**
 
@@ -95,9 +95,9 @@ tablenos-caption-name: Tabla
 
 
 <small><em>Los productos de esta etapa, Migración Funcional SIU, Contrato 078-2023, 
-([Web](https://hwong23.github.io/pgn-078/v/07a3be2538f1a488e06cbe8de4a66fc4efe260d6/))
+([Web](https://hwong23.github.io/pgn-078/v/1805fc626b5ae53d9fb185ae469e48d195e65d3b/))
 están basados en el resultado de la Fase 1 del proyecto PGN SIU del 2022,
-[SharePoint Softgic@07a3be2](http://softgic.sharepoint.com)
+[SharePoint Softgic@1805fc6](http://softgic.sharepoint.com)
 del November 9, 2023.
 </em></small>
 
@@ -144,6 +144,7 @@ Descripción de los productos del trabajo de arquitectura de la Fase 2, proyecto
 | Autor          |                            |
 | Fuente         |                            |
 | **Versión**    |                            |
+| 1.1805fc6 | 2023-11-09. crrcn--txt-23 |
 | 1.07a3be2 | 2023-11-09. build |
 | 1.f0b33fa | 2023-11-09. crrcn--txt-20 |
 | 1.8a9af1a | 2023-11-09. crrcn--txt-16 |
@@ -153,7 +154,6 @@ Descripción de los productos del trabajo de arquitectura de la Fase 2, proyecto
 | 1.1bbb460 | 2023-11-08. corrcn--sgrdd4 |
 | 1.8e9dee0 | 2023-11-08. corrcn--sgrdd3 |
 | 1.00eb497 | 2023-11-08. corrcn--sgrdd |
-| 1.2c588a4 | 2023-11-08. cnsdrcns--sgrdd |
 | Vínculos       | [N003a Vista Segmento PGN SIU](N03a%a20Vsta%20aSegenta%20SOA%20PGN.md) |
 
 <br>
@@ -513,7 +513,7 @@ Riesgos de la migración funcional:
 * RSG9. Alteración de datos negocio
 * RSG10. Validación decisiones de arquitectura
 * RSG11. Estrategias de Migración de datos
-* RSG12. Arquitectura de almancenamiento y distribución de datos SIU
+* RSG12. Arquitectura de almacenamiento y distribución de datos SIU
 * RSG13. Sistema de autenticación híbrido
 
 ### Acciones de Mitigación
@@ -538,9 +538,9 @@ Riesgos de la migración funcional:
 |**RSG12. Arquitectura de almacenamiento y distribución de datos SIU**|constraint|Definir la opción de organización y distribución de los almacenes de datos del SIU. <br>opc1. Dispositivo físico/virtual (nodo, servidor, y esquema de base de datos) único, central, a todos los módulos del SIU.<br>opc2. Dispositivos virtuales autónomos por dominio de negocio: relatoría, inventario, información estratégica, intercomunicados.<br>||
 |**RSG13. Sistema de autenticación híbrido**|constraint|Definir la estrategia de autenticación del SIU migrado (aplicable a todos los módulos del SIU migrado).<br>opc1. Híbrida: integrado, directorio empresarial (LDAP), y servicios de autenticación de confianza: Office 365 de PGN.<br>opc2. Servicio de autenticación de confianza: Office 365 de PGN.<br>||
 |**RSG2. Motor de búsqueda compartido**|constraint|Establecer desde el principio el motor de búsqueda de contenidos compartido para los módulos del SUI migrados.<br>||
-|**RSG3. Estatego como BI**|constraint|Definir la arquitectura de Estratego migrado: puede ser una solución de BI simple, o puede ser una aplicación web tradicional.<br>||
+|**RSG3. Estratego como BI**|constraint|Definir la arquitectura de Estratego migrado: puede ser una solución de BI simple, o puede ser una aplicación web tradicional.<br>||
 |**RSG4. Conciliación y gestión documental (Doku)**|constraint|Definir la ubicación de los componentes misionales de Conciliación Administrativa (SIU). Debe estar fuera de Doku.<br>||
-|**RSG5. Gestión de sesiones / caducidad**|constraint|Establecer desde el principio el motor de búsqueda de conteidos compartido para los módulos del SUI migrados.<br>||
+|**RSG5. Gestión de sesiones / caducidad**|constraint|Establecer desde el principio el motor de búsqueda de contenidos compartido para los módulos del SUI migrados.<br>||
 |**RSG6. Componentes de negocio**|constraint|Incluir el esfuerzo de creación de componentes estructurales y comunes a los módulos del SUI migrado requeridos por la arquitectura de referencia SUI. <br>Algunos componentes requeridos son:<br>* Administración de autorizaciones (integrado con el directorio PGN)<br>* Motor de flujos de trabajo para diseño y organización del trabajo (Conciliación)<br>* Componente de ruteo de documentos (Relatoría)<br>||
 |**RSG7. Asignación de roles y permisos de Acceso **|constraint|RSG7. Asignación de roles y permisos de Acceso. Los riesgos de autenticación como el Single Sign On (SSO), permite que si las credenciales de usuario se ven comprometidas, pueden dar permiso a un atacante acceder a todos o la mayoría de recursos y aplicaciones en la red. Se ha propuesto controlar los accesos a partir de la documentación que identifica la metodología de clasificación y gestión de usuarios roles y procesos de autenticación, a partir del control de acceso basado en roles RBAC (Identidades y autenticación), que permite tener una reacción más oportuna para controlar los accesos a diferentes módulos de los diferentes sistemas de Información.  Los inicios de sesión de los usuarios asociados a cuenta de dominio de Active Directory deben tener en cuenta la asignación de roles de ingreso al servidor o roles de ingreso al motor de bases de datos. Las cuentas de usuario no deben ser creadas de administrador local (administrador), es una puerta de entrada para los ataques de fuerza bruta.<br>||
 |**RSG8. Intentos de accesos no autorizados**|constraint|RSG8. Intentos de accesos no autorizados. Los intentos no autorizados son una de las técnicas más comunes utilizadas en la actualidad, los diferentes tipos de amenazas de intrusiones SQL Injections, Denegaciones de Servicios, riesgos de Ransomware, Ingeniería social, malware y otras amenazas, permite que se proponga implementación de soluciones de Seguridad perimetral a partir de la implementación de WAF para controlar las peticiones externas y evaluación de vulnerabilidades y escaneo para conocer puertos abiertos y establecer medidas.<br>||
@@ -1032,8 +1032,7 @@ Los elementos resaltados de la vista actual requieren modelos de  licenciamiento
 Autenticación: 
 La autenticacion de usuarios estará enmarcada en en tres factores de autenticación:
 control de acceso basado en roles (RBAC), mecanismo de control de acceso que define los roles y los privilegios para determinar si a un usuario se le debe dar acceso a un recurso.
-Conexión de accecso por DA de Azure: Servicio de administración de acceso e identidades basado en la nube.
-Red Privada Virtual de Azure:  bloque de compilación fundamental para las redes privadas en Azure
+Conexión de accecso por DA de Azure: Servicio de administración de acceso e identidades basado en la nube. Red Privada Virtual de Azure:  bloque de compilación fundamental para las redes privadas en Azure
 
 Con el objetivo de incrementar el nivel de seguridad, para el proceso de autenticación se tendrán en cuenta las siguientes consideraciones: 
 
@@ -1054,7 +1053,7 @@ La autenticación en el sistema de información comprende un Login de acceso con
 Administración de claves. 
 Las contraseñas deberán cumplir con los requisitos de complejidad y completitud, teniendo en cuenta la longitud, caracteres numéricos, alfabéticos y especiales y que puedan ser cambiadas en un periodo de tiempo establecido, de acuerdo con los parámetros definidos en las políticas de acceso.   
 
-
+La autenticacion de usuarios estará enmarcada en en tres factores de autenticación a partir del controlador de Dominio, y el acceso por VPN.
 
 
 ### Catálogo de Elementos
@@ -1123,12 +1122,13 @@ La configuración con de los perfiles con sus accesos y privilegios en los siste
 
 
 Control de acceso que define los roles y los privilegios para determinar si a un usuario se le debe dar acceso a un recurso. 
-La información que sea considerada como Información publica reservada de acuerdo con los criterios definidos en la ley 1712 de 2014 “Por medio del cual se crea la ley de transparencia y del derecho de acceso a la información pública nacional.”,, podrá ser consultada solo por el personal autorizado definido de acuerdo con el control de acceso basado en roles.  Los perfiles o roles definiran el acceso a la información. 
+La información que sea considerada como Información pública reservada de acuerdo con los criterios definidos en la ley 1712 de 2014 “Por medio del cual se crea la ley de transparencia y del derecho de acceso a la información pública nacional.” podrá ser consultada solo por el personal autorizado definido de acuerdo con el control de acceso basado en roles.  Los perfiles o roles definirán el acceso a la información. 
 
-Para los documentos restringidos  que requieran firma por parte del lider del proceso o propietario, se propone revisar la implementacion de un dispositivo criptográfico con uso de (CERTIFICADOS y FIRMA DIGITAL) con token integrado que podra ser conectado en el puerto USB de la maquina del usuario.
-La aprobacion de los documentos por intermedio de esta firma permitirá la aprobación, integridad de los documentos , seguridad y validez juridica. Se propone la gestión con un  proveedor de certificado del ambito nacional.
+Para los documentos restringidos que requieran firma por parte del líder del proceso o propietario, se propone revisar la implementación de un dispositivo criptográfico con uso de (CERTIFICADOS y FIRMA DIGITAL) con token integrado que podrá ser conectado en el puerto USB de la máquina del usuario.
+La aprobación de los documentos por intermedio de esta firma permitirá la aprobación, integridad de los documentos, seguridad y validez jurídica. Se propone la gestión con un proveedor de certificado del ámbito nacional.
 
-EL control definido para los accesos basados en roles RBAC, permitirá que solo las personas autorizadas de la PGN podrán acceder a ciertos recursos (programas, equipos, aplicaciones, bases de datos, etc) definido por sus funciones laborales, lo que permitirá controlar los accesos desde diferentes escenarios: Sistemas de información, redes y aplicaciones. 
+El control definido para los accesos basados en roles RBAC, permitirá que solo las personas autorizadas de la PGN podrán acceder a ciertos recursos (programas, equipos, aplicaciones, bases de datos, etc.) definido por sus funciones laborales, lo que permitirá controlar los accesos desde diferentes escenarios: Sistemas de información, redes y aplicaciones.
+
 
 ### Catálogo de Elementos
 | Nombre| Tipo| Descripción| Prop.
@@ -1195,6 +1195,17 @@ El repositorio del código fuente se encuentra en Azure DevOps, y para ser acced
 ## Seguridad.LogsAuditoría.
 ![Vista. Seguridad.LogsAuditoría.](images/Seguridad.LogsAuditoría..png){#fig:Seguridad.LogsAuditoría. width=}
 
+Los datos estarán procesados y almacenados en las bases de datos, el cual tendra implementados mecanismos de seguridad para el cifrado de los datos. 
+Para el respaldo de las bases de datos en los ecosistemas de Dev, Test, Prod se cuenta con las siguientes políticas de retención de copias de seguridad y frecuencia de copias de seguridad definidas en el gestor de bases de datos. 
+Para la base de datos de seguridad y configuración de la aplicación se tiene un plan de copia completo cada 12 horas (PITR) en una franja de tiempo de 35 días. Adicionalmente cuenta con un LTR de conservación de 12 semanas 
+para las copias de seguridad semanales, 12 semanas de conservación para la primera copia de seguridad de cada mes, y una conservación de 12 semanas de una copia de seguridad anual.
+
+Para la base de datos de datos y trazabilidad de transacciones de la aplicación se tiene un plan de copia completo cada 12 horas (PITR) en una franja de tiempo de 35 días. Adicionalmente cuenta con un LTR de conservación de 
+52 semanas para copias de seguridad semanales, 52 semanas de conservación para la primera copia de seguridad de cada mes, y una conservación de 52 semanas de una copia de seguridad anual. Esto con la finalidad de que al 
+ser una base de datos transaccional precisa de una conservación completa de los años transaccionales. 
+
+
+
 ### Catálogo de Elementos
 | Nombre| Tipo| Descripción| Prop.
 |:--------|:--------|:--------|:--------|
@@ -1212,39 +1223,39 @@ El repositorio del código fuente se encuentra en Azure DevOps, y para ser acced
 ## Seguridad.Owasp
 ![Vista. Seguridad.Owasp](images/Seguridad.Owasp.png){#fig:Seguridad.Owasp width=}
 
-Durante todo el proceso se realizarán pruebas de ánalisis de vulnerabilidades que pueda tener el sistema. Se establecerán puntos donde el software esté preparado para dicho análisis. En conjunto con el lider de Seguridad, se analizarán las posibles vulnerabilidades y se revisarán cuales pueden ser mitigadas y cuales pueden ser omitidas. 
-Para el paso a producción, se realizará un ultimo análisis de vulerabilidades y se tendrá en cuenta la revisión de las acciones de mitigación, con el fin que se hayan resuelto. 
+Durante todo el proceso se realizarán pruebas de análisis de vulnerabilidades que pueda tener el sistema. Se establecerán puntos donde el software esté preparado para dicho análisis. En conjunto con el líder de Seguridad, se analizarán las posibles vulnerabilidades y se revisarán cuáles pueden ser mitigadas y cuáles pueden ser omitidas. 
+Para el paso a producción, se realizará un último análisis de vulnerabilidades y se tendrá en cuenta la revisión de las acciones de mitigación, con el fin que se hayan resuelto. 
 
-La empresa establecerá buenas prácticas para el desarrollo seguro de software, a partir de la implementación del estandar internacional OWASP (Open Web Application Security Project). El proposito principal será garantizar la seguridad de las soluciones de la Procuraduría General de la Nación PGN.  Se tiene en cuenta lineamientos técnicos de acuerdo con las normas establecidas en top ten (10) del OWASP: 
+La empresa establecerá buenas prácticas para el desarrollo seguro de software, a partir de la implementación del estándar internacional OWASP (Open Web Application Security Project). El propósito principal será garantizar la seguridad de las soluciones de la Procuraduría General de la Nación PGN.  Se tiene en cuenta lineamientos técnicos de acuerdo con las normas establecidas en top ten (10) del OWASP: 
 
-Código de Injección SQL:
+Código de Inyección SQL:
 Vulnerabilidad que se puede presentar por intermedio de peticiones o consultas a las bases de datos, y las entradas de la aplicación no son controladas debidamente. 
 
 Controles: 
 - Descarte de caracteres especiales, espacios que innecesarios del lado del cliente y/o servidor. 
-- Verificación de caracteres incluidos en consultas SQL o LDAP, para el  lado cliente como servidor. 
-- Limitación  cantidad de caracteres del campo creado. 
-- Verificación del resultado de consulta, que genere resultado de consulta o ningun resultado ( Si es mostrado mas de un resultado, deberá ser considerado error). 
+- Verificación de caracteres incluidos en consultas SQL o LDAP, para el lado cliente como servidor. 
+- Limitación cantidad de caracteres del campo creado. 
+- Verificación del resultado de consulta, que genere resultado de consulta o ningún resultado (Si es mostrado más de un resultado, deberá ser considerado error). 
 - Numero de intentos fallidos por ingreso de contraseñas. 
 
 Falla en las autenticación y Administración de Sesión: 
-Presentada debido a las fallas en la administración de las funciones de autenticación o sesión. (Como exposición de usuarios, contraseñas e identificador unico).
+Presentada debido a las fallas en la administración de las funciones de autenticación o sesión. (Como exposición de usuarios, contraseñas e identificador único).
 
 Controles:
-- Descarte por caracteres especiales. espaciones que innecesario como para el lado del servidor y cliente.
-- Verificacion de meta caracteres SQL o LDAP, para el lado del servidor y cliente.
-- Validar el uso del método POST, si se envían datos de servidores publicos y/o contratistas.
+- Descarte por caracteres especiales. Espacios innecesarios como para el lado del servidor y cliente.
+- Verificación de meta caracteres SQL o LDAP, para el lado del servidor y cliente.
+- Validar el uso del método POST, si se envían datos de servidores públicos y/o contratistas.
 - No permitir el almacenamiento de datos de los funcionarios en las cookies. 
 - Limitación de los tiempos en las sesiones. 
 
 Técnicas de Cross Site Scripting XSS:
-Vulnebilidad presentada cuando los datos de entrada son utilizados para desarrollar el contenido del sistema de información, sin validar la informción que se envía ppor la URL.
+Vulnebilidad presentada cuando los datos de entrada son utilizados para desarrollar el contenido del sistema de información, sin validar la información que se envía por la URL.
 
 Controles: 
-- Revisar la incorporación de caracteres especiales, espacios que no sean necesarios dentro del campo de texto, asi como para el lado del cliente y el servidor. 
+- Revisar la incorporación de caracteres especiales, espacios que no sean necesarios dentro del campo de texto, así como para el lado del cliente y el servidor. 
 
 Referencias directas a objetos de forma insegura:
-Presentada cuando se referencia a un objeto interno, tal como directorio, archivo, algun registro de la base de datos BD en la URL, y no establecen los respectivos controles para el acceso a los recursos. 
+Presentada cuando se referencia a un objeto interno, tal como directorio, archivo, algún registro de la base de datos BD en la URL, y no establecen los respectivos controles para el acceso a los recursos. 
 
 Controles:
 - Evitar el uso de campo de referencia, podrá ser modificado con facilidad. 
@@ -1252,84 +1263,85 @@ Controles:
 - Identificar los tipos de datos y objetos a enviar y los métodos de uso para cada uno de estos. 
 
 Cross site Request Forgery (CSFR):
-Presentado en aplicaciones donde las peticiones son faciles de predecir a partir del uso de comandos que son transmitidos por un usuario desconocido. 
+Presentado en aplicaciones donde las peticiones son fáciles de predecir a partir del uso de comandos que son transmitidos por un usuario desconocido. 
 
 Controles: 
 - Evitar variables en las URL, si es posible utilizarlas, se deberá comprobar la información que contiene. 
-- Tener en cuenta el envio de información que se envía por las URL. 
+- Tener en cuenta el envío de información que se envía por las URL. 
 - Tener en cuenta el uso de token como herramienta de validación. 
-- Validacion de sesiones. 
+- Validación de sesiones. 
 
 Pobre Mala Configuración de Seguridad:
 Puedo presentarse cuando se dejan las cuentas de accesos por defecto, archivos y directorios si establecer controles de seguridad, generando puertas traseras que pueden ser aprovechadas por los ciberdelincuentes para vulnerar el sistema de información. 
 Controles:
-- Asignar nuevas configuraciones a las definidas de fabrica. 
-- El personal de infraestrutura debera tener en cuenta los requerimientos de la aplicacion para establecer las configuraciones adecuadas. 
+- Asignar nuevas configuraciones a las definidas de fábrica. 
+- El personal de infraestructura deberá tener en cuenta los requerimientos de la aplicación para establecer las configuraciones adecuadas. 
 - Se debe tener en cuenta la habilitación de los servicios estrictamente necesarios. 
 
 Almacenamiento inseguro de Criptografía:
-Se presenta por debilidades en el proceso de implementación de controles criptograficos, algoritmos de cifrado y almacenamiento inseguro de llaves. 
+Se presenta por debilidades en el proceso de implementación de controles criptográficos, algoritmos de cifrado y almacenamiento inseguro de llaves. 
 
 Controles: 
 - Algoritmos de cifrado (AES, SHA-256). 
-- Para el uso de controles asimetricos, tener en cuenta la custodia de las llaves privadas. 
+- Para el uso de controles asimétricos, tener en cuenta la custodia de las llaves privadas. 
 - Seguridad en la capa de transporte TLS y certificados SSL. 
 - Cifrado de datos sensibles. 
 
 Falla al restringir acceso por URL: 
-Se presenta cuando se generan solicitudes a las paginas y no se encuentran protegidas adecuadamennte. Son modificadas las URL para obtener el acceso con privilegios. 
+Se presenta cuando se generan solicitudes a las páginas y no se encuentran protegidas adecuadamente. Son modificadas las URL para obtener el acceso con privilegios. 
 
 Controles: 
-- La cuenta de algun servidor público con menor privilegio de acceso a la solución, modificar la URL para verificar el acceso, si es aceptado el acceso, se identifica que el sistema de información es vulnerable. 
+- La cuenta de algún servidor público con menor privilegio de acceso a la solución, modificar la URL para verificar el acceso, si es aceptado el acceso, se identifica que el sistema de información es vulnerable. 
 
 Redirrecionamiento y reenvíos sin validación: 
-Con frecuencia las aplicaciones envian hacia otras páginas cuando se ejecutan parametros que no son validados, el atacante puede definir el sitio al que se quiere redireccionar. 
+Con frecuencia las aplicaciones envían hacia otras páginas cuando se ejecutan parámetros que no son validados, el atacante puede definir el sitio al que se quiere re direccionar. 
 
 Controles: 
 - Validación del campo de referencia, analizador de registros web, para proteger de ataques XSS y otros tipos de ataques. 
 - Verificación de privilegios. 
 
 Insuficiente protección de la capa de transporte: 
-Se presenta si la informacion que viaja por internet no se encuentra debidamente protegida. Un usuario externo que monitoree la red, podrá obtener información (Usuarios, Contraseñas e Identificación). 
+Se presenta si la información que viaja por internet no se encuentra debidamente protegida. Un usuario externo que monitoree la red, podrá obtener información (Usuarios, Contraseñas e Identificación). 
 Controles: 
 - Vulnerabilidad enfocada a nivel de infraestructura. Podrá ser utilizado un Snnifer para el monitoreo de la red. 
 
-Los lineamientos de desarrollo seguro establecidos en The OWASP Foundation recomendados en la “Guía de desarrollo OWASP” y “OWAS Cheat Sheet, permitirá realizar pruebas de seguridad integrando el analisis de vulnerabilidades, y pruebas de Ethical Hacking. 
-Los resultados permitirán identificar los requisitos de seguridad que los sistemas de informacion o servicios web deberán cumplir.
-La metodologia empleada tendrá las siguientes fases: 
+Los lineamientos de desarrollo seguro establecidos en The OWASP Foundation recomendados en la “Guía de desarrollo OWASP” y “OWASP Cheat Sheet, permitirá realizar pruebas de seguridad integrando el analisis de vulnerabilidades, y pruebas de Ethical Hacking. 
+Los resultados permitirán identificar los requisitos de seguridad que los sistemas de información o servicios web deberán cumplir.
+La metodología empleada tendrá las siguientes fases: 
 
-•	FASE DE RECONOCIMIENTO: 
+* FASE DE RECONOCIMIENTO: 
 Se recolectará toda la información posible, usando diferentes técnicas como:
-o	Recopilación de dominios/IPs/puertos/servicios
-o	Recopilación de metadatos
-o	Uso de Google Dorks.
+* Recopilación de dominios/IPs/puertos/servicios
+* Recopilación de metadatos
+* Uso de Google Dorks.
 
-•	ANÁLSIS DE VULNERABILIDADES: 
+* ANÁLSIS DE VULNERABILIDADES: 
 Se analizará la información recopilada en la fase anterior y se realizará el descubrimiento de las vulnerabilidades. 
 
-•	EXPLOTACIÓN: 
-•	Se realizarán todas aquellas acciones que puedan comprometer al sistema auditado, las pruebas a implementar pueden ser de ataques tipo: 
-o	Inyección de código
-o	Inclusión de ficheros locales o remotos
-o	Evasión de autenticación
-o	Carencia de controles de autorización
-o	Ejecución de comandos en el lado del servidor
-o	Ataques tipo Cross Site Request Forgery
-o	Control de errores
-o	Gestión de sesiones
-o	Fugas de información
-o	Secuestros de sesión
-o	Comprobación de las condiciones para realizar una denegación de servicio.
+* EXPLOTACIÓN: 
+* Se realizarán todas aquellas acciones que puedan comprometer al sistema auditado, las pruebas a implementar pueden ser de ataques tipo: 
+* Inyección de código
+* Inclusión de ficheros locales o remotos
+* Evasión de autenticación
+* Carencia de controles de autorización
+* Ejecución de comandos en el lado del servidor
+* Ataques tipo Cross Site Request Forgery
+* Control de errores
+* Gestión de sesiones
+* Fugas de información
+* Secuestros de sesión
+* Comprobación de las condiciones para realizar una denegación de servicio.
 	
-•	POST EXPLOTACIÓN:
+* POST EXPLOTACIÓN:
 En caso de encontrarse una vulnerabilidad que permita realizar otras acciones en el sistema auditado o en su entorno, se realizarán controles adiciones con el objetivo de comprobar la criticidad de esta.
 
-No	URL	IP
-1.	https://runtimetest.lappiz.io/#/auth/login/PGN_Lappiz
+URL
+https://runtimetest.lappiz.io/#/auth/login/PGN_Lappiz
+IP
 135.181.185.207
 
+El Login deberá evidenciar el control de errores, al momento de realizar la validación deberá mensaje de error para el caso que se autentique con credenciales erradas.
 
-El Login deberá evidenciar el control de errores, al momento de realizar la validación deberá mensaje de error para el caso que se autentique con credenciales erradas. 
 
 
 ### Catálogo de Elementos
@@ -1343,7 +1355,7 @@ El Login deberá evidenciar el control de errores, al momento de realizar la val
 <br>
 
 
-``Generated on: Thu Nov 09 2023 09:44:49 GMT-0500 (COT)``
+``Generated on: Thu Nov 09 2023 10:00:25 GMT-0500 (COT)``
 
 ## Requerimientos de Administración
 1.	Las soluciones deben permitir la administración de los Roles de Usuarios: esta funcionalidad debe permitir configurar los diferentes roles de los usuarios funcionales de los procesos. 
