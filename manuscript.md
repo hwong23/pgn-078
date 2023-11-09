@@ -18,8 +18,8 @@ header-includes: |
   <meta name="dc.date" content="2023-11-09" />
   <meta name="citation_publication_date" content="2023-11-09" />
   <meta property="article:published_time" content="2023-11-09" />
-  <meta name="dc.modified" content="2023-11-09T16:26:17+00:00" />
-  <meta property="article:modified_time" content="2023-11-09T16:26:17+00:00" />
+  <meta name="dc.modified" content="2023-11-09T18:28:54+00:00" />
+  <meta property="article:modified_time" content="2023-11-09T18:28:54+00:00" />
   <meta name="dc.language" content="en-US" />
   <meta name="citation_language" content="en-US" />
   <meta name="dc.relation.ispartof" content="Manubot" />
@@ -34,9 +34,9 @@ header-includes: |
   <meta name="citation_fulltext_html_url" content="https://hwong23.github.io/pgn-078/" />
   <meta name="citation_pdf_url" content="https://hwong23.github.io/pgn-078/manuscript.pdf" />
   <link rel="alternate" type="application/pdf" href="https://hwong23.github.io/pgn-078/manuscript.pdf" />
-  <link rel="alternate" type="text/html" href="https://hwong23.github.io/pgn-078/v/1c4a4b6c62d09ea1b0eb8763c8e9882441eeae45/" />
-  <meta name="manubot_html_url_versioned" content="https://hwong23.github.io/pgn-078/v/1c4a4b6c62d09ea1b0eb8763c8e9882441eeae45/" />
-  <meta name="manubot_pdf_url_versioned" content="https://hwong23.github.io/pgn-078/v/1c4a4b6c62d09ea1b0eb8763c8e9882441eeae45/manuscript.pdf" />
+  <link rel="alternate" type="text/html" href="https://hwong23.github.io/pgn-078/v/0691c3ff4a81d39eb7e0f7cdeba4e1b58ab801ba/" />
+  <meta name="manubot_html_url_versioned" content="https://hwong23.github.io/pgn-078/v/0691c3ff4a81d39eb7e0f7cdeba4e1b58ab801ba/" />
+  <meta name="manubot_pdf_url_versioned" content="https://hwong23.github.io/pgn-078/v/0691c3ff4a81d39eb7e0f7cdeba4e1b58ab801ba/manuscript.pdf" />
   <meta property="og:type" content="article" />
   <meta property="twitter:card" content="summary_large_image" />
   <link rel="icon" type="image/png" sizes="192x192" href="https://manubot.org/favicon-192x192.png" />
@@ -77,7 +77,7 @@ tablenos-caption-name: Tabla
 
 <br>
 
-| **Versión** del producto 1.1c4a4b6 de 09 Nov 2023
+| **Versión** del producto 1.0691c3f de 09 Nov 2023
 
 | **Presentado a**
 
@@ -95,9 +95,9 @@ tablenos-caption-name: Tabla
 
 
 <small><em>Los productos de esta etapa, Migración Funcional SIU, Contrato 078-2023, 
-([Web](https://hwong23.github.io/pgn-078/v/1c4a4b6c62d09ea1b0eb8763c8e9882441eeae45/))
+([Web](https://hwong23.github.io/pgn-078/v/0691c3ff4a81d39eb7e0f7cdeba4e1b58ab801ba/))
 están basados en el resultado de la Fase 1 del proyecto PGN SIU del 2022,
-[SharePoint Softgic@1c4a4b6](http://softgic.sharepoint.com)
+[SharePoint Softgic@0691c3f](http://softgic.sharepoint.com)
 del November 9, 2023.
 </em></small>
 
@@ -144,6 +144,7 @@ Descripción de los productos del trabajo de arquitectura de la Fase 2, proyecto
 | Autor          |                            |
 | Fuente         |                            |
 | **Versión**    |                            |
+| 1.0691c3f | 2023-11-09. emision |
 | 1.1c4a4b6 | 2023-11-09. 7f2b4bd-corrcn-txt-segrdd |
 | 1.80b31c7 | 2023-11-09. pgnarq |
 | 1.28a454c | 2023-11-09. 2ae330a |
@@ -153,7 +154,6 @@ Descripción de los productos del trabajo de arquitectura de la Fase 2, proyecto
 | 1.8a9af1a | 2023-11-09. crrcn--txt-16 |
 | 1.d98c640 | 2023-11-09. tema--tablas |
 | 1.aecc652 | 2023-11-09. crrcn--txt-10 |
-| 1.1bbd2b1 | 2023-11-08. corrcn--sgrdd5 |
 | Vínculos       | [N003a Vista Segmento PGN SIU](N03a%a20Vsta%20aSegenta%20SOA%20PGN.md) |
 
 <br>
@@ -674,7 +674,8 @@ En este ítem se deben identificar las herramientas con las que cuenta la    ent
 Identificación de Roles y Privilegios 
 Este ítem proporciona al sistema la definición de las políticas organizacionales en cuanto a la definición de los privilegios y roles de los diferentes actores en cada uno de los aplicativos con los que estos interactúan dentro de sus funciones, registradas en el documento denominado: “Clasificación y gestión de usuarios, roles y perfiles.xlsx / Hoja_2 (Roles)”. 
 Aprovisionamiento de cuentas 
-Este ítem establece el proceso adecuado para el aprovisionamiento y des aprovisionamiento de cuentas de usuarios en las diferentes aplicaciones, permitiendo toda la gestión de ellas por medio de un sistema de directorio único y centralizado, Este aprovisionamiento se encuentra registrado en el documento denominado: “Clasificación y gestión de usuarios, roles y perfiles.xlsx / Hoja_4 y Hoja_5 (Permisos)”. 
+Este ítem establece el proceso adecuado para el aprovisionamiento y des aprovisionamiento de cuentas de usuarios en las diferentes aplicaciones, permitiendo toda la gestión de ellas por medio de un sistema de directorio único y centralizado, Este aprovisionamiento se encuentra registrado en el documento denominado: “Clasificación y gestión de usuarios, roles y perfiles.xlsx / Hoja_4 y Hoja_5 (Permisos)”.
+
 Establecimiento de mecanismos de control de acceso:  
 Este ítem controla que usuarios tienen permitido el acceso a los diferentes aplicativos o herramientas dentro de la organización permitiendo segregar las funciones dependiendo del rol del usuario en cada sistema, Este establecimiento se encuentra registrado en el documento denominado: “Clasificación y gestión de usuarios, roles y perfiles.xlsx / Hoja_3 (Acceso)”. 
 
@@ -691,7 +692,6 @@ Identificación de Roles y Privilegios
 Este ítem proporciona al sistema la definición de las políticas organizacionales en cuanto a la definición de los privilegios y roles de los diferentes actores en cada uno de los aplicativos con los que estos interactúan dentro de sus funciones, registradas en el documento denominado: “Clasificación y gestión de usuarios, roles y perfiles.xlsx / Hoja_2 (Roles)”. 
 
 Aprovisionamiento de cuentas 
-
 Este ítem establece el proceso adecuado para el aprovisionamiento y des aprovisionamiento de cuentas de usuarios en las diferentes aplicaciones, permitiendo toda la gestión de ellas por medio de un sistema de directorio único y centralizado, Este aprovisionamiento se encuentra registrado en el documento denominado: “Clasificación y gestión de usuarios, roles y perfiles.xlsx / Hoja_4 y Hoja_5 (Permisos)”. 
 
 Establecimiento de mecanismos de control de acceso:  
@@ -702,7 +702,6 @@ Los accesos y privilegios serán identificados en la matriz, encargado identific
 
 Configuración de permisos 
 La configuración con de los perfiles con sus accesos y privilegios en los sistemas de información se debe realizar empleando las herramientas propias de la procuraduría general de la nacional PGN, y serán asignados los permisos según la matriz de roles y permisos.  
-
 
 Con el objetivo de incrementar el nivel de seguridad, para el proceso de autenticación se tendrán en cuenta las siguientes consideraciones:  
 
@@ -1351,7 +1350,7 @@ El Login deberá evidenciar el control de errores, al momento de realizar la val
 <br>
 
 
-``Generated on: Thu Nov 09 2023 11:21:10 GMT-0500 (COT)``
+``Generated on: Thu Nov 09 2023 13:26:05 GMT-0500 (COT)``
 
 ## Requerimientos de Administración
 1.	Las soluciones deben permitir la administración de los Roles de Usuarios: esta funcionalidad debe permitir configurar los diferentes roles de los usuarios funcionales de los procesos. 
