@@ -160,22 +160,16 @@
 PGN, 2023</h1>
   <footer>
     <span class="author">Softgic -
-PGN</span> · <span class="date">Noviembre, 2022</span>
+PGN</span> · <span class="date">Noviembre, 2023</span>
   </footer>
 </section>
 <section
 id="diagrama-de-arquitectura-de-la-solución-propuesta-vista-de-integración"
-class="slide level1">
-<h1>Diagrama de Arquitectura de la Solución Propuesta: vista de
-integración</h1>
+class="slide level2">
+<h2>Diagrama de Arquitectura de la Solución Propuesta: vista de
+integración</h2>
 <div class="columns">
 <div class="column" style="flex:30%;">
-<p>La vista presenta en contexto a los módulos SUI migrados y el estilo
-de comunicación vía API sincrónica/asincrónica (en verde en la
-imagen).</p>
-</div><div class="column" style="flex:70%;">
-<h2 id="migracion.1a.b.siu-contexto-módulos">Migracion.1a.b.SIU Contexto
-Módulos</h2>
 <figure>
 <img src="images/Migracion.1a.b.SIUContextoMódulos.png"
 id="fig:Migracion.1a.b.SIUContextoMódulos"
@@ -183,6 +177,114 @@ alt="Vista. Migracion.1a.b.SIU Contexto Módulos" />
 <figcaption aria-hidden="true">Vista. Migracion.1a.b.SIU Contexto
 Módulos</figcaption>
 </figure>
+</div><div class="column" style="flex:70%;">
+<h3 id="migracion.1a.b.siu-contexto-módulos">Migracion.1a.b.SIU Contexto
+Módulos</h3>
+<p>La vista presenta en contexto a los módulos SUI migrados e indica los
+modos de comunicación, sincrónica/asincrónica, que utilizan.</p>
+</div>
+</div>
+</section>
+<section
+id="diagrama-de-arquitectura-de-la-solución-propuesta-vista-física"
+class="slide level2">
+<h2>Diagrama de Arquitectura de la solución propuesta: vista física</h2>
+<div class="columns">
+<div class="column" style="flex:30%;">
+<figure>
+<img src="images/Lineabase.0.SIUAplicación.Física.png"
+id="fig:Lineabase.0.SIUAplicación.Física"
+alt="Vista. Lineabase.0.SIU Aplicación. Física" />
+<figcaption aria-hidden="true">Vista. Lineabase.0.SIU Aplicación.
+Física</figcaption>
+</figure>
+</div><div class="column" style="flex:70%;">
+<h3 id="lineabase.0.siu-aplicación.-física">Lineabase.0.SIU Aplicación.
+Física</h3>
+<p>Elementos de infraestructura física que soportan a la aplicación
+Sistema de Información Único, SIU de la PGN. Presentación de componentes
+de software y hardware requeridos por la implementación de Fase II
+(presente proyecto).</p>
+</div>
+</div>
+</section>
+<section
+id="diagrama-de-arquitectura-de-la-solución-propuesta-motivadores-del-negocio"
+class="slide level2">
+<h2>Diagrama de Arquitectura de la Solución Propuesta: motivadores del
+negocio</h2>
+<div class="columns">
+<div class="column" style="flex:30%;">
+<figure>
+<img src="images/Migracion.1a.a.SIUContextoMódulo.png"
+id="fig:Migracion.1a.a.SIUContextoMódulo"
+alt="Vista. Migracion.1a.a.SIU Contexto Módulo" />
+<figcaption aria-hidden="true">Vista. Migracion.1a.a.SIU Contexto
+Módulo</figcaption>
+</figure>
+</div><div class="column" style="flex:70%;">
+<h3 id="migracion.1a.a.siu-contexto-módulo">Migracion.1a.a.SIU Contexto
+Módulo</h3>
+<p>Módulos y submódulos del Sistema Único de Información (SUI) de la
+PGN. Todos los sistemas de información del SUI siguen la directiva de
+separar a los componentes misionales de los utilitarios.</p>
+</div>
+</div>
+</section>
+<section
+id="diagrama-de-arquitectura-de-la-solución-propuesta-interoperabilidad"
+class="slide level2">
+<h2>Diagrama de Arquitectura de la Solución Propuesta:
+interoperabilidad</h2>
+<div class="columns">
+<div class="column" style="flex:30%;">
+<figure>
+<img src="images/Migracion.1c.SIUMódulosColaboración.png"
+id="fig:Migracion.1c.SIUMódulosColaboración"
+alt="Vista. Migracion.1c.SIU Módulos Colaboración" />
+<figcaption aria-hidden="true">Vista. Migracion.1c.SIU Módulos
+Colaboración</figcaption>
+</figure>
+</div><div class="column" style="flex:70%;">
+<h3 id="migracion.1c.siu-módulos-colaboración">Migracion.1c.SIU Módulos
+Colaboración</h3>
+<p>Patrón de Distribución y Colaboración estándar para el SUI.</p>
+<p>La colaboración y comunicación de los componentes internos del SUI
+(grupo PFN SUI, en el diagrama) está mediada por interfaces. Estas son
+provistas por el grupo de componentes misionales, PGN SUI, hacia los
+submódulos externos. La intención es mantener reducido y controlado el
+número de interfaces.</p>
+</div>
+</div>
+</section>
+<section
+id="diagrama-de-arquitectura-de-la-solución-propuesta-gestión-de-autenticación-usuarios-y-roles"
+class="slide level2">
+<h2>Diagrama de Arquitectura de la Solución Propuesta: gestión de
+autenticación, usuarios y roles</h2>
+<div class="columns">
+<div class="column" style="flex:30%;">
+<figure>
+<img src="images/Seguridad.2.Lineabase.0.SIUAplicación.png"
+id="fig:Seguridad.2.Lineabase.0.SIUAplicación"
+alt="Vista. Seguridad.2. Lineabase.0.SIU Aplicación" />
+<figcaption aria-hidden="true">Vista. Seguridad.2. Lineabase.0.SIU
+Aplicación</figcaption>
+</figure>
+</div><div class="column" style="flex:70%;">
+<section id="seguridad.2.-lineabase.0.siu-aplicación"
+class="slide level2">
+<h2>Seguridad.2. Lineabase.0.SIU Aplicación</h2>
+<p>Con una arquitectura orientada a servicios SUI recopila:</p>
+<ol type="1">
+<li>Runtime: Es el servicio que interactúa con el usuario final (GUI)
+elaborado en Angular 11</li>
+<li>API Tx: Servicio API REST Base Node encargado de realizar las
+transacciones básicas CRUD</li>
+<li>API Config / Seguridad. Servicio Web API .Net Framework encargado de
+gestionar características con la autenticación y configuración</li>
+</ol>
+</section>
 </div>
 </div>
 </section>
