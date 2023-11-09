@@ -6,7 +6,7 @@ f="`ls -t ~/Downloads/tmpr/*.docx | head -1`"
 basedocxFILE=${f##*/};
 
 # sleep 3
-open $basedocxFILE
+# open $basedocxFILE
 
 git checkout main
 
