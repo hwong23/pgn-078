@@ -18,8 +18,8 @@ header-includes: |
   <meta name="dc.date" content="2023-11-15" />
   <meta name="citation_publication_date" content="2023-11-15" />
   <meta property="article:published_time" content="2023-11-15" />
-  <meta name="dc.modified" content="2023-11-15T15:26:46+00:00" />
-  <meta property="article:modified_time" content="2023-11-15T15:26:46+00:00" />
+  <meta name="dc.modified" content="2023-11-15T18:51:45+00:00" />
+  <meta property="article:modified_time" content="2023-11-15T18:51:45+00:00" />
   <meta name="dc.language" content="en-US" />
   <meta name="citation_language" content="en-US" />
   <meta name="dc.relation.ispartof" content="Manubot" />
@@ -34,9 +34,9 @@ header-includes: |
   <meta name="citation_fulltext_html_url" content="https://hwong23.github.io/pgn-078/" />
   <meta name="citation_pdf_url" content="https://hwong23.github.io/pgn-078/manuscript.pdf" />
   <link rel="alternate" type="application/pdf" href="https://hwong23.github.io/pgn-078/manuscript.pdf" />
-  <link rel="alternate" type="text/html" href="https://hwong23.github.io/pgn-078/v/ede615017cc10813ceaa4a4c5f799e0ead7b5244/" />
-  <meta name="manubot_html_url_versioned" content="https://hwong23.github.io/pgn-078/v/ede615017cc10813ceaa4a4c5f799e0ead7b5244/" />
-  <meta name="manubot_pdf_url_versioned" content="https://hwong23.github.io/pgn-078/v/ede615017cc10813ceaa4a4c5f799e0ead7b5244/manuscript.pdf" />
+  <link rel="alternate" type="text/html" href="https://hwong23.github.io/pgn-078/v/6c67afd45aae021b370f70db3ba9be95cad33905/" />
+  <meta name="manubot_html_url_versioned" content="https://hwong23.github.io/pgn-078/v/6c67afd45aae021b370f70db3ba9be95cad33905/" />
+  <meta name="manubot_pdf_url_versioned" content="https://hwong23.github.io/pgn-078/v/6c67afd45aae021b370f70db3ba9be95cad33905/manuscript.pdf" />
   <meta property="og:type" content="article" />
   <meta property="twitter:card" content="summary_large_image" />
   <link rel="icon" type="image/png" sizes="192x192" href="https://manubot.org/favicon-192x192.png" />
@@ -77,7 +77,7 @@ tablenos-caption-name: Tabla
 
 <br>
 
-| **Versión** del producto 1.ede6150 de 15 Nov 2023
+| **Versión** del producto 1.6c67afd de 15 Nov 2023
 
 | **Presentado a**
 
@@ -95,9 +95,9 @@ tablenos-caption-name: Tabla
 
 
 <small><em>Los productos de esta etapa, Migración Funcional SIU, Contrato 078-2023, 
-([Web](https://hwong23.github.io/pgn-078/v/ede615017cc10813ceaa4a4c5f799e0ead7b5244/))
+([Web](https://hwong23.github.io/pgn-078/v/6c67afd45aae021b370f70db3ba9be95cad33905/))
 están basados en el resultado de la Fase 1 del proyecto PGN SIU del 2022,
-[SharePoint Softgic@ede6150](http://softgic.sharepoint.com)
+[SharePoint Softgic@6c67afd](http://softgic.sharepoint.com)
 del November 15, 2023.
 </em></small>
 
@@ -144,6 +144,7 @@ Descripción de los productos del trabajo de arquitectura de la Fase 2, proyecto
 | Autor          |                            |
 | Fuente         |                            |
 | **Versión**    |                            |
+| 1.6c67afd | 2023-11-15. aceptacion |
 | 1.ede6150 | 2023-11-15. templ |
 | 1.9f2d11e | 2023-11-15. upd |
 | 1.9aaf21e | 2023-11-12. Update README.md |
@@ -153,7 +154,6 @@ Descripción de los productos del trabajo de arquitectura de la Fase 2, proyecto
 | 1.13df533 | 2023-11-09. upd2 |
 | 1.9d6d386 | 2023-11-09. upd |
 | 1.0691c3f | 2023-11-09. emision |
-| 1.1c4a4b6 | 2023-11-09. 7f2b4bd-corrcn-txt-segrdd |
 | Vínculos       | [N003a Vista Segmento PGN SIU](N03a%a20Vsta%20aSegenta%20SOA%20PGN.md) |
 
 <br>
@@ -282,17 +282,18 @@ Table: Requisito no. 3, Migración SUI, Flexibilidad. {#tbl:requisito3-id}
 	* [Seguridad.2. Lineabase.0.SIU Aplicación](#seguridad.2.-lineabase.0.siu-aplicación)
 * [Diagrama de Clases y Componentes de solución](#diagrama-de-clases-y-componentes-de-solución)
 	* [Migracion.1b.1. SIU Módulos Componentes](#migracion.1b.1.-siu-módulos-componentes)
+	* [Migracion.1b.3. SIU Módulos Clases](#migracion.1b.3.-siu-módulos-clases)
 	* [Migracion.1b.2. SIU Módulos Componentes. Brecha](#migracion.1b.2.-siu-módulos-componentes.-brecha)
 * [Diagrama de Arquitectura de Integración Continua, DevOps y Despliegues de Capas](#diagrama-de-arquitectura-de-integración-continua,-devops-y-despliegues-de-capas)
 	* [Migracion.4. CI](#migracion.4.-ci)
 * [Documento de Relación de Tecnologías y Licenciamiento](#documento-de-relación-de-tecnologías-y-licenciamiento)
 	* [Migracion.5. Licenciamiento](#migracion.5.-licenciamiento)
 * [Módulos Requerimientos de Seguridad](#módulos-requerimientos-de-seguridad)
-	* [Seguridad.Autenticación](#seguridad.autenticación)
-	* [Seguridad.Autorización](#seguridad.autorización)
-	* [Seguridad.DesarrolloSeguro.](#seguridad.desarrolloseguro.)
-	* [Seguridad.LogsAuditoría.](#seguridad.logsauditoría.)
-	* [Seguridad.Owasp](#seguridad.owasp)
+	* [Seguridad.3. Autenticación](#seguridad.3.-autenticación)
+	* [Seguridad.4. Autorización](#seguridad.4.-autorización)
+	* [Seguridad.5.DesarrolloSeguro](#seguridad.5.desarrolloseguro)
+	* [Seguridad. 6. Auditoría](#seguridad.-6.-auditoría)
+	* [Seguridad. 7. Owasp](#seguridad.-7.-owasp)
 
 
 <div style="page-break-before: always;"></div>
@@ -644,63 +645,55 @@ Los únicos elementos para la comunicación (e integración) son los indicados e
 ## Seguridad.2. Lineabase.0.SIU Aplicación
 ![Vista. Seguridad.2. Lineabase.0.SIU Aplicación](images/Seguridad.2.Lineabase.0.SIUAplicación.png){#fig:Seguridad.2.Lineabase.0.SIUAplicación width=}
 
-## Representación Arquitectónica
-Con una arquitectura orientada a servicios SUI recopila:
+## Metodología Seguridad SIU Migrado
+Los mecanismos de autorización para el acceso a los sistemas de información de la Procuraduría General de la Nación describen la forma de cómo se restringe el acceso a los diferentes módulos Misionales (SIM), Registros de Inhabilidades (SIRI), Nómina, Control Interno y relatoría, entre otros, y que se considera un mecanismo de protección que ayuda a reaccionar ante cualquier operación no autorizada. 
 
-1. Runtime: Es el servicio que interactúa con el usuario final (GUI) elaborado en Angular 11
-1. API Tx: Servicio API REST Base Node encargado de realizar las transacciones básicas CRUD
-1. API Config / Seguridad. Servicio Web API .Net Framework encargado de gestionar características con la autenticación y configuración
+El control de acceso basado en roles (RBAC), enfoca la idea de que a los funcionarios se les otorgue los permisos de acceso a los recursos, basados en los roles y/o perfiles que este posee. Este control posee dos características fundamentales: i) los accesos son controlados por medio de los roles y/o perfiles asignados, quiere decir, a los servidores públicos, contratistas, terceros y otros colaboradores autorizados para interactuar con los sistemas de información se le asignan los roles y el encargado/responsable definirá los permisos, que a su vez están relacionados con los roles, ii) Los roles pueden ser definidos a nivel jerárquico, es decir que un rol podrá ser miembro de otro rol.  
 
-## Metodología 
-
-Los mecanismos de autorización para el acceso a los sistemas de información de la procuraduría general de la nación describen la forma de cómo se restringe el acceso a los diferentes módulos (Misionales (SIM), Registros de Inhabilidades (SIRI), Nómina, Control Interno y relatoría, entre otros.), y que se considera un mecanismo de protección, que ayuda a reaccionar ante cualquier operación no autorizada. El control de acceso basado en roles (RBAC), enfoca la idea de que a los funcionarios se les otorgue los permisos de acceso a los recursos, basados en los roles y/o perfiles que este posee. Este control posee dos características fundamentales: i) los accesos son controlados por medio de los roles y/o perfiles asignados, quiere decir, a los servidores públicos, contratistas, terceros y otros colaboradores autorizados para interactuar con los sistemas de información se le asignan los roles y el encargado/responsable definirá los permisos, que a su vez están relacionados con los roles, ii) Los roles pueden ser definidos a nivel jerárquico, es decir que un rol podrá ser miembro de otro rol.  
-Un proceso de autorización basado en roles, identifica tres factores importantes, i) Todos los servidores públicos, contratistas, terceros y otros 
-Colaboradores, deben tener un rol asignado, si no es asignado no podrá realizar ninguna acción relacionada con el acceso, ii) un usuario podrá hacer uso de los permisos asociados a los roles asignados, el cual deberá realizar el inicio de sesión el usuario asignado del Directorio activo (DA), iii) los servidores públicos, contratistas, terceros y otros, solo podrán realizar acciones para las cuales han sido autorizados por medio de la activación de sus roles y/o perfiles.  
+Un proceso de autorización basado en roles, identifica tres factores importantes, i) Todos los servidores públicos, contratistas, terceros y otros Colaboradores, deben tener un rol asignado, si no es asignado no podrá realizar ninguna acción relacionada con el acceso, ii) un usuario podrá hacer uso de los permisos asociados a los roles asignados, el cual deberá realizar el inicio de sesión el usuario asignado del Directorio activo (DA), iii) los servidores públicos, contratistas, terceros y otros, solo podrán realizar acciones para las cuales han sido autorizados por medio de la activación de sus roles y/o perfiles.  
 
 EL control definido para los accesos basados en roles RBAC, permitirá que solo las personas autorizadas de la PGN podrán acceder a ciertos recursos (programas, equipos, aplicaciones, bases de datos, etc.) definido por sus funciones laborales, lo que permitirá controlar los accesos desde diferentes escenarios: Sistemas de información, redes y aplicaciones. 
 
-Gestión de identidades y Control de acceso:  
-
+### Gestión de identidades y Control de acceso
 Gestor de identidades: En esta gestión se planifica el ciclo de vida de las identidades de usuario y se realizan los procesos de sincronización, de acuerdo a los suministros de accesos establecidos por la entidad, los cuales son integrados con el servidor que gestiona la identidad y control de acceso.  
 
 Gestor de roles: La asignación de roles es sincronizada con la identidad de usuario en el servidor de dominio. Para esta gestión se crean las reglas y condiciones que determinan si un usuario puede o no pertenecer a un rol definido por la entidad. 
 
 Para el gobierno y gestión de identidades y de acceso, se identificó como primera medida la implementación de la siguiente metodología. 
 
-REGLAS PARA LA CREACIÓN DE USUARIOS. 
-Identificación de Mecanismos: 
-
+### Reglas de Creación de Usuarios e Identifiación de Privilegios
 En este ítem se deben identificar las herramientas con las que cuenta la    entidad, las cuales deberán ser registradas en el documento denominado: “Clasificación y gestión de usuarios, roles y perfiles.xlsx / Hoja_1 (Mecanismos)”. 
-Identificación de Roles y Privilegios 
+Identificación de Roles y Privilegios. 
+
 Este ítem proporciona al sistema la definición de las políticas organizacionales en cuanto a la definición de los privilegios y roles de los diferentes actores en cada uno de los aplicativos con los que estos interactúan dentro de sus funciones, registradas en el documento denominado: “Clasificación y gestión de usuarios, roles y perfiles.xlsx / Hoja_2 (Roles)”. 
-Aprovisionamiento de cuentas 
+
+### Aprovisionamiento de Cuentas
 Este ítem establece el proceso adecuado para el aprovisionamiento y des aprovisionamiento de cuentas de usuarios en las diferentes aplicaciones, permitiendo toda la gestión de ellas por medio de un sistema de directorio único y centralizado, Este aprovisionamiento se encuentra registrado en el documento denominado: “Clasificación y gestión de usuarios, roles y perfiles.xlsx / Hoja_4 y Hoja_5 (Permisos)”.
 
-Establecimiento de mecanismos de control de acceso:  
+### Mecanismos de Control de Acceso
 Este ítem controla que usuarios tienen permitido el acceso a los diferentes aplicativos o herramientas dentro de la organización permitiendo segregar las funciones dependiendo del rol del usuario en cada sistema, Este establecimiento se encuentra registrado en el documento denominado: “Clasificación y gestión de usuarios, roles y perfiles.xlsx / Hoja_3 (Acceso)”. 
 
-Definición de Privilegios y accesos.  
+### Definición de Privilegios y Accesos
 Los accesos y privilegios serán identificados en la matriz, encargado identificar cada uno de los roles y perfiles que se tendrá cada usuario hacia los sistemas de información cumpliendo con el principio del menor privilegio, teniendo en cuenta que los usuarios deberán tener exclusivamente los permisos y privilegios que necesita para el desarrollo de sus actividades. La matriz identificará i) los roles que se deben crear para cada sistema de información, ii) los privilegios que requiere cada rol del sistema y iii) los niveles de accesos requeridos, (Consultar, Modificar, Eliminar) (CRUD) y iv) Tipos de usuarios, roles que pueden ser asignados al perfil, entre otros.  
 
-Configuración de permisos 
+### Configuración de Permisos 
 La configuración con de los perfiles con sus accesos y privilegios en los sistemas de información se debe realizar empleando las herramientas propias de la procuraduría general de la nacional PGN, y serán asignados los permisos según la matriz de roles y permisos.  
 
-Identificación de Mecanismos: 
-En este ítem se deben identificar las herramientas con las que cuenta la    entidad, las cuales deberán ser registradas en el documento denominado: “Clasificación y gestión de usuarios, roles y perfiles.xlsx / Hoja_1 (Mecanismos)”. 
+En este ítem se deben identificar las herramientas con las que cuenta la entidad, las cuales deberán ser registradas en el documento denominado: “Clasificación y gestión de usuarios, roles y perfiles.xlsx / Hoja_1 (Mecanismos)”. 
 
-Identificación de Roles y Privilegios 
+### Identificación de Roles y Privilegios 
 Este ítem proporciona al sistema la definición de las políticas organizacionales en cuanto a la definición de los privilegios y roles de los diferentes actores en cada uno de los aplicativos con los que estos interactúan dentro de sus funciones, registradas en el documento denominado: “Clasificación y gestión de usuarios, roles y perfiles.xlsx / Hoja_2 (Roles)”. 
 
-Aprovisionamiento de cuentas 
+### Aprovisionamiento de Cuentas 
 Este ítem establece el proceso adecuado para el aprovisionamiento y des aprovisionamiento de cuentas de usuarios en las diferentes aplicaciones, permitiendo toda la gestión de ellas por medio de un sistema de directorio único y centralizado, Este aprovisionamiento se encuentra registrado en el documento denominado: “Clasificación y gestión de usuarios, roles y perfiles.xlsx / Hoja_4 y Hoja_5 (Permisos)”. 
 
-Establecimiento de mecanismos de control de acceso:  
+### Establecimiento de mecanismos de control de acceso 
 Este ítem controla que usuarios tienen permitido el acceso a los diferentes aplicativos o herramientas dentro de la organización permitiendo segregar las funciones dependiendo del rol del usuario en cada sistema, Este establecimiento se encuentra registrado en el documento denominado: “Clasificación y gestión de usuarios, roles y perfiles.xlsx / Hoja_3 (Acceso)”. 
 
-Definición de Privilegios y accesos.  
+### Definición de Privilegios y Accesos
 Los accesos y privilegios serán identificados en la matriz, encargado identificar cada uno de los roles y perfiles que se tendrá cada usuario hacia los sistemas de información cumpliendo con el principio del menor privilegio, teniendo en cuenta que los usuarios deberán tener exclusivamente los permisos y privilegios que necesita para el desarrollo de sus actividades. La matriz identificará i) los roles que se deben crear para cada sistema de información, ii) los privilegios que requiere cada rol del sistema y iii) los niveles de accesos requeridos, (Consultar, Modificar, Eliminar) (CRUD) y iv) Tipos de usuarios, roles que pueden ser asignados al perfil, entre otros.  
 
-Configuración de permisos 
+### Configuración de Permisos
 La configuración con de los perfiles con sus accesos y privilegios en los sistemas de información se debe realizar empleando las herramientas propias de la procuraduría general de la nacional PGN, y serán asignados los permisos según la matriz de roles y permisos.  
 
 Con el objetivo de incrementar el nivel de seguridad, para el proceso de autenticación se tendrán en cuenta las siguientes consideraciones:  
@@ -723,12 +716,22 @@ Como mecanismos se propone implementar estos mecanismos de cifrado, como el prot
 
 Se propone integrar certificados SSL, que permite cifrar la información confidencial a fin de que solo los autorizados puedan tener acceso a ella, y así evitar manipulación de información confidencial. La Seguridad que brinda SSL, da garantía para acceder a los aplicativos de PNG. 
 
-¿Cómo implementar certificados SSL?
+### Cómo implementar certificados SSL
 Podrán ser adquiridos a través del proveedor de dominios.
 
 TLS el protocolo que surge para reforzar la seguridad de los certificados SSL, que funciona como mecanismo de encriptación para que sea realmente transparente el envío de la información, proporcionando una autenticación sólida, restringiendo la manipulación, interceptación y alteración de mensajes.
+
 La última versión del TLS es la 1.3
 
+
+### Representación Arquitectónica
+Con una arquitectura orientada a servicios SUI recopila:
+
+1. Runtime: Es el servicio que interactúa con el usuario final (GUI) elaborado en Angular 11
+1. API Tx: Servicio API REST Base Node encargado de realizar las transacciones básicas CRUD
+1. API Config / Seguridad. Servicio Web API .Net Framework encargado de gestionar características con la autenticación y configuración
+
+<br>
 
 
 ### Catálogo de Elementos
@@ -808,10 +811,12 @@ Huella digital SHA1 “8C:48:BD:E2:F5:18:18:C3:85:96:68:44:2E:28:A0:68:08:2F:0A:
 |**CU ejecutable**|application-component||*plataforma:* js<br>|
 |**CU ejecutable (n)**|application-component||*plataforma:* js<br>|
 |**Config**|application-component||*plataforma:* cs<br>|
+|**Configuración reportes**|application-component|Base de datos del servior de reportes del SIU Migrado provisto por plataforma Microsoft SQL Server.<br>||
 |**Controlador admin**|application-component||*plataforma:* cs<br>|
 |**Controlador frontal mvl**|application-component||*plataforma:* js<br>|
 |**Controlador frontal web**|application-component|-	Verificados los SSL, se recomienda adquirir SSL seguros, con entidades certificadoras. <br>Si se desea continuar con SSL de Let's Encrypt, se recomienda automatizar el proceso de actualización dado que al dejar estos en modo actualización manual es probable el olvido de esta actualización (Estos certificados se deben actualizar trimestralmente y no cuentan con las características de seguridad necesarias. <br>|*plataforma:* js<br>|
 |**Controlador funcional**|application-component||*plataforma:* js<br>|
+|**Diseñador reportes**|application-component|Apliación de escritorio / web para el diseño, creación y desarrollo de los reportes del SIU Migrado. Provisto por plataforma Microsoft Power Bi.||
 |**Función PGN 1**|application-component|La unidad de cómputo que resulta en la aplicación de una regla de negocio.<br>|*plataforma:* js<br>|
 |**Modelo (neg)**|application-component||*plataforma:* cs<br>|
 |**Puerto datos 1**|application-component||*plataforma:* js<br>|
@@ -819,6 +824,7 @@ Huella digital SHA1 “8C:48:BD:E2:F5:18:18:C3:85:96:68:44:2E:28:A0:68:08:2F:0A:
 |**Seguridad**|application-component||*plataforma:* sql<br>*brecha:* 100<br>|
 |**Servidor aplicaciones Sharepoint**|application-component|||
 |**Servidor datos Sharepoint**|application-component|||
+|**Servidor de Reportes**|application-component|Componente SIU de publicación y distribución de reportes diseñados provisto por plataforma Microsoft SQL Server.||
 |**Servidor web Sharepoint**|application-component|||
 |**Transacciones**|application-component||*plataforma:* sql<br>*brecha:* 100<br>|
 |**Utilitario**|application-component||*plataforma:* no-sql<br>|
@@ -839,6 +845,7 @@ Huella digital SHA1 “8C:48:BD:E2:F5:18:18:C3:85:96:68:44:2E:28:A0:68:08:2F:0A:
 |**Interfaz de datos 3**|application-service|||
 |**Office**|application-service|||
 |**Proveedores contenidos**|application-service||*brecha:* 100<br>|
+|**Reportería**|application-service|Servicio de diseño, publicación y distribución de reportes del SIU Migrado.<br>|*brecha:* 100<br>|
 |**Entidad negocio PGN 1**|business-object|Representa un objeto de negocio del contexto de la entidad PGN,, por ejemplo: un decreto, una intervención, una conciliación.<br>||
 |**ARQ01. Consistencia SUI**|constraint|Unifica las entidades de negocio PGN, entre las que se incluyen a conciliaciones, publicaciones de relatoría, resoluciones, en artefactos reutilizables. Distinto de que estas entidades (y su lógica de negocio) estén dispersos entre los sistemas del SUI, estarán concentradas en un único artefacto correspondiente. Calidad sistémica: la consistencia persigue que el resultado de la lógica de negocio sea la misma entre los módulos del SUI migrado. Esto redunda a mantenibilidad y gestión: tiende a tener un solo punto de cambio y dificulta la transferencia de dependencias implícitas a otros procesos.||
 |**ARQ02. Mantenibilidad SUI**|constraint|Evitar las dependencias transitivas de los módulos misionales del SUI a componentes y sistemas de terceros o submódulos no misionales.  Calidad sistémica: la mantenibilidad por control de dependencias que optimiza el diseño Migración SUI está dada por el control de cambios no programados sobre los componentes misionales del SUI (corrupción de componentes). Ver Patrón de Diseño Migración SUI, más adelante en el documento.||
@@ -848,6 +855,7 @@ Huella digital SHA1 “8C:48:BD:E2:F5:18:18:C3:85:96:68:44:2E:28:A0:68:08:2F:0A:
 |**Almacenamiento**|grouping|||
 |**Portales**|grouping|Submódulo de portales internos de la PGN a donde llega el SUI. Interfaz web que usa al SUI para llegar a direcciones y subdirecciones de la PGN. La plataforma principal de portales en este contexto es Sharepoint de Microsoft.<br>||
 |**Presentación**|grouping|Submódulo de presentación del SUI. interfaz gráfica, interfaz web visible a los usuarios clientes y funcionarios de la PGN. ||
+|**Reportería**|grouping|||
 |**Servicios de aplicación**|grouping|Submódulo de servicios utilitarios que sirven al SUI. Servicios variados que cumplen roles facilitadores de las actividades misionales del SUI. Ejemplos de estos servicios son los de gestión documental, implementado por Doku en el contexto de PGN.<br>||
 |**RQR. Administrativos**|requirement|||
 |**RQR. Funcionales**|requirement|||
@@ -855,6 +863,43 @@ Huella digital SHA1 “8C:48:BD:E2:F5:18:18:C3:85:96:68:44:2E:28:A0:68:08:2F:0A:
 |**RQR. Negocio**|requirement|||
 |**RQR. Seguridad**|requirement|Requerimientos de seguridad, SUI, Migración, en aspectos de comunicación, autenticación, autorización y (manejo de) sesiones.<br>||
 |**RQR. Seguridad**|requirement|Requerimientos de seguridad, SUI, Migración, en aspectos de comunicación, autenticación, autorización y (manejo de) sesiones.<br>||
+
+<br>
+
+## Migracion.1b.3. SIU Módulos Clases
+![Vista. Migracion.1b.3. SIU Módulos Clases](images/Migracion.1b.3.SIUMódulosClases.png){#fig:Migracion.1b.3.SIUMódulosClases width=}
+
+El modelo de negocio del SIU Migrado sigue el patrón de diseño descrito en esta vista.
+
+El diseño actual antepone un servicio como punto de entrada a un caso de uso, de tal forma que este se encarga únicamente (por resposabilidad) de coordinar las entradas y las salidas del caso de uso.
+
+El modelo propicia la separación de la lógica de aplicación y la lógica de negocio. En este diseño, la primera está encapsulada en el Caso de Uso ejecutable (en el diagrama), mientras que la lógica de negocio lo está en una función de negocio.
+
+Los conceptos de negocio están representados por funciones PGN (en el diagrama). Ejemplo: en el dominio de una conciliación, Función PGN 1 puede representar una nueva radicación en cumplimiento de las reglas de ese dominio. Esta función de negocio es completamente independiente del modelo de datos subyacente. Nótese que las entidades de datos de negocio no son accesibles desde la función de negocio.
+
+
+### Catálogo de Elementos
+| Nombre| Tipo| Descripción| Prop.
+|:--------|:--------|:--------|:--------|
+|**cc:PGN SUI (módulo central)**|application-collaboration|Módulo central SUI migrado. Módulo independiente y asignado a un dominio particular de la PGN.<br>||
+|**CU ejecutable**|application-component||*plataforma:* js<br>|
+|**Función PGN 1**|application-component|La unidad de cómputo que resulta en la aplicación de una regla de negocio.<br>|*plataforma:* js<br>|
+|**Función PGN 2**|application-component|La unidad de cómputo que resulta en la aplicación de una regla de negocio.<br>|*plataforma:* js<br>|
+|**Modelo entrada**|application-component|||
+|**Modelo salida**|application-component|||
+|**Entrada**|application-function|||
+|**Estado **|application-function|||
+|**Función negocio**|application-function|||
+|**Reglas negocio**|application-function|||
+|**Resultado**|application-function|||
+|**Retorno**|application-function|||
+|**Validación  entrada**|application-function|||
+|**Validación negocio**|application-function|||
+|**Verificación / consistencia**|application-function|||
+|**CU <<i>>**|application-interface|||
+|**Persistencia <<i>>**|application-interface|||
+|**Application Service 1**|application-service|Implementación de un caso de uso de negocio, independiente y demostrable. Contiene a la unidad ejecutable del CU y reutiliza (accede a) una entidad de negocio, que puede ser también una función PGN.<br>||
+|**Entidad negocio PGN 1**|business-object|Representa un objeto de negocio del contexto de la entidad PGN,, por ejemplo: un decreto, una intervención, una conciliación.<br>||
 
 <br>
 
@@ -915,7 +960,7 @@ Todos los sistemas de información del SUI siguen esta directiva: estarán const
 |**Mensaje: JSON**|data-object|||
 |**Administración**|grouping|||
 |**Almacenamiento**|grouping|||
-|**PGN SIU**|grouping|El objetivo principal de la arquitectura del SUI de la migración es la centralización de los conceptos misionales: concentrar los conceptos misionales en componentes aislados; dejar por fuera de estos componentes misionales todo lo distintos a la misionalidad de la PGN. Los objetivos secundarios de esta arquitectura SUI de la migración son flexibilidad y extensibilidad. Dichos objetivos son independientes. Es decir, estos pueden ser maximizados sin conflicto entre ellos. El API transaccional construida en Node js con ORM Sequelize cuenta con obligatoriedad de token tipo bearer generado desde Api config (Api security token generado con autenticación de directorio activo o login de usuario externo) cuenta con un modelo de capas donde primero se encuentra un DTO consistente en estructura de datos y métodos de “check permissions” (un endpoint del api de seguridad para validar privilegios sobre las acciones de la petición en ingreso) luego dependiendo del tipo de transacción se tiene una capa para Lappiz functions, Lappiz Jobs (Tareas programables) y Lappiz model (Generado con base ORM sequelize). Todas las transacciones una vez son validadas en token y permisos, pasan a un tenedor de conexión para modificar las cadenas de conexión en marcha y saber que usuario de bd va a efectuar la operación y con qué privilegios. Todas las peticiones entran en <br>un modelo natural de node js compuesto por un Event queue y un evento Loop; estas peticiones se procesan en la base de datos y todas las excepciones controladas se registran en un log de errores en formato txt con las especificaciones y devolviendo errores controlados con protocolos HTTPs al Runtime (front de SUI).||
+|**PGN SIU**|grouping|Esta vista presenta y describe los ítems de arquitectura del SUI Migrado que requieren licenciamiento para operar y cumplir con el objetivo principal de la migración que es la centralización de los conceptos misionales: concentrar los conceptos misionales en componentes aislados.<br>Los elementos realtados en verde en el diagrama incurren en una renta, bien sea, o por consumo de cómputo en la nube de Microsoft, o por el costo de una licencia de uso. Por ejemplo, en el caso del servidor de reporte del SUI Migrado, es requerida una licencia de uso Power BI Pro, de pago mensual.<br>||
 |**Portales**|grouping|Submódulo de portales internos de la PGN a donde llega el SUI. Interfaz web que usa al SUI para llegar a direcciones y subdirecciones de la PGN. La plataforma principal de portales en este contexto es Sharepoint de Microsoft.<br>||
 |**Presentación**|grouping|Submódulo de presentación del SUI. interfaz gráfica, interfaz web visible a los usuarios clientes y funcionarios de la PGN. ||
 |**Servicios de aplicación**|grouping|Submódulo de servicios utilitarios que sirven al SUI. Servicios variados que cumplen roles facilitadores de las actividades misionales del SUI. Ejemplos de estos servicios son los de gestión documental, implementado por Doku en el contexto de PGN.<br>||
@@ -1008,8 +1053,9 @@ Los elementos resaltados de la vista actual requieren modelos de  licenciamiento
 |**Interfaz de datos 2**|application-service|||
 |**Interfaz de datos 3**|application-service|||
 |**Proveedores contenidos**|application-service||*brecha:* 100<br>|
+|**Reportería**|application-service|Servicio de diseño, publicación y distribución de reportes del SIU Migrado.<br>|*brecha:* 100<br>|
 |**Mensaje: JSON**|data-object|||
-|**PGN SIU**|grouping|El objetivo principal de la arquitectura del SUI de la migración es la centralización de los conceptos misionales: concentrar los conceptos misionales en componentes aislados; dejar por fuera de estos componentes misionales todo lo distintos a la misionalidad de la PGN. Los objetivos secundarios de esta arquitectura SUI de la migración son flexibilidad y extensibilidad. Dichos objetivos son independientes. Es decir, estos pueden ser maximizados sin conflicto entre ellos. El API transaccional construida en Node js con ORM Sequelize cuenta con obligatoriedad de token tipo bearer generado desde Api config (Api security token generado con autenticación de directorio activo o login de usuario externo) cuenta con un modelo de capas donde primero se encuentra un DTO consistente en estructura de datos y métodos de “check permissions” (un endpoint del api de seguridad para validar privilegios sobre las acciones de la petición en ingreso) luego dependiendo del tipo de transacción se tiene una capa para Lappiz functions, Lappiz Jobs (Tareas programables) y Lappiz model (Generado con base ORM sequelize). Todas las transacciones una vez son validadas en token y permisos, pasan a un tenedor de conexión para modificar las cadenas de conexión en marcha y saber que usuario de bd va a efectuar la operación y con qué privilegios. Todas las peticiones entran en <br>un modelo natural de node js compuesto por un Event queue y un evento Loop; estas peticiones se procesan en la base de datos y todas las excepciones controladas se registran en un log de errores en formato txt con las especificaciones y devolviendo errores controlados con protocolos HTTPs al Runtime (front de SUI).||
+|**PGN SIU**|grouping|Esta vista presenta y describe los ítems de arquitectura del SUI Migrado que requieren licenciamiento para operar y cumplir con el objetivo principal de la migración que es la centralización de los conceptos misionales: concentrar los conceptos misionales en componentes aislados.<br>Los elementos realtados en verde en el diagrama incurren en una renta, bien sea, o por consumo de cómputo en la nube de Microsoft, o por el costo de una licencia de uso. Por ejemplo, en el caso del servidor de reporte del SUI Migrado, es requerida una licencia de uso Power BI Pro, de pago mensual.<br>||
 |**RQR. Administrativos**|requirement|||
 |**RQR. Funcionales**|requirement|||
 |**RQR. Ingeniería**|requirement|||
@@ -1021,17 +1067,19 @@ Los elementos resaltados de la vista actual requieren modelos de  licenciamiento
 \newpage
 
 # Módulos Requerimientos de Seguridad
-## Seguridad.Autenticación
-![Vista. Seguridad.Autenticación](images/Seguridad.Autenticación.png){#fig:Seguridad.Autenticación width=}
+## Seguridad.3. Autenticación
+![Vista. Seguridad.3. Autenticación](images/Seguridad.3.Autenticación.png){#fig:Seguridad.3.Autenticación width=}
 
 Autenticación: 
 La autenticacion de usuarios estará enmarcada en en tres factores de autenticación:
 control de acceso basado en roles (RBAC), mecanismo de control de acceso que define los roles y los privilegios para determinar si a un usuario se le debe dar acceso a un recurso.
-Conexión de accecso por DA de Azure: Servicio de administración de acceso e identidades basado en la nube. Red Privada Virtual de Azure:  bloque de compilación fundamental para las redes privadas en Azure
+Conexión de accecso por DA de Azure: Servicio de administración de acceso e identidades basado en la nube. 
+Red Privada Virtual de Azure:  bloque de compilación fundamental para las redes privadas en Azure
 
 Con el objetivo de incrementar el nivel de seguridad, para el proceso de autenticación se tendrán en cuenta las siguientes consideraciones: 
 
-Validación del proceso de gestión de usuarios: La fortaleza de la autenticación dependerá del proceso de gestión de usuarios implementado por parte de la entidad. Se debe tener en cuenta los lineamientos definidos en la política Específica de Control de Acceso. 
+Validación del proceso de gestión de usuarios: La fortaleza de la autenticación dependerá del proceso de gestión de usuarios implementado por parte de la entidad. 
+Se debe tener en cuenta los lineamientos definidos en la política Específica de Control de Acceso. 
 
 Autenticación con integración de Windows: La autenticación permitirá que los usuarios asignados al dominio, una vez que se ingresen las credenciales, y realizada la validación, se autorizará el acceso a los servicios y/o soluciones a partir de la integración del directorio activo con la integración del LDAP – (Lightweight Directory Access Protocol). 
 
@@ -1069,8 +1117,8 @@ La autenticacion de usuarios estará enmarcada en en tres factores de autenticac
 
 <br>
 
-## Seguridad.Autorización
-![Vista. Seguridad.Autorización](images/Seguridad.Autorización.png){#fig:Seguridad.Autorización width=}
+## Seguridad.4. Autorización
+![Vista. Seguridad.4. Autorización](images/Seguridad.4.Autorización.png){#fig:Seguridad.4.Autorización width=}
 
 Los mecanismos de autorización para el acceso a los sistemas de información de la procuraduría general de la nación describen la forma de cómo se restringe el acceso a los diferentes módulos (Misionales (SIM), Registros de Inhabilidades (SIRI), Nómina, Control Interno y relatoría, entre otros.), y que se considera un mecanismo de protección, que ayuda a reaccionar ante cualquier operación no autorizada. 
 
@@ -1098,7 +1146,6 @@ En este ítem se deben identificar las herramientas con las que cuenta la    ent
 
 Identificación de Roles y Privilegios:
 Este ítem proporciona al sistema la definición de las políticas organizacionales en cuanto a la definición de los privilegios y roles de los diferentes actores en cada uno de los aplicativos con los que estos interactúan dentro de sus funciones, registradas en el documento denominado: “Clasificación y gestión de usuarios, roles y perfiles.xlsx / Hoja_2 (Roles)”.
-
 
 Aprovisionamiento de cuentas:
 
@@ -1128,19 +1175,22 @@ El control definido para los accesos basados en roles RBAC, permitirá que solo 
 ### Catálogo de Elementos
 | Nombre| Tipo| Descripción| Prop.
 |:--------|:--------|:--------|:--------|
+|**cc:PGN SUI (módulo central)**|application-collaboration|Módulo central SUI migrado. Módulo independiente y asignado a un dominio particular de la PGN.<br>||
 |**Active Directory Server**|application-component|Los tipos de autenticación realizadas a partir de las identidades administradas de los recursos de Azure, entidades de Servicio y Certificados, podrán ser integrado con los dominios del directorio activo (DA) local. Por lo que respecta a la autenticación, será generado con la asignación de usuarios y credenciales definidas alineadas con la política Específica de Control de Acceso., a partir de la integración será validado el ingreso a las diferentes soluciones y/o sistemas de información de la PGN.  <br>||
-|**App PGN Web**|application-component||*plataforma:* angular 11<br>*brecha:* 100<br>|
-|**Funcionarios  Autorización**|business-actor|Verificación que se realiza con la identidad del Servidor público, Contratista, Aprendiz y/o practicante de la entidad, proceso que se lleva a cabo cuando se ingresa al sistema, a la red o a cualquier base de datos.<br>Los servidores públicos deberán tener en cuenta los lineamientos definidos para la creación y gestión de contraseñas del Sistema de Gestión de Seguridad de la Información SGSI de la Procuraduría General de la Nación, que definirá la complejidad para la administración de contraseñas (Conjunto de caracteres variado con minúsculas, mayúsculas y números, entre otros). ||
+|**IGA (Gobernanza y administración de identidades)**|application-component|||
+|**Gestión de funcionarios PGN**|business-actor|||
+|**Oficial de Seguridad**|business-actor|||
+|**Security Administrator**|business-actor|La autenticacion de usuarios estará enmarcada en en tres factores de autenticación:<br>control de acceso basado en roles (RBAC), mecanismo de control de acceso que define los roles y los privilegios para determinar si a un usuario se le debe dar acceso a un recurso.<br>Conexión de accecso por DA de Azure: Servicio de administración de acceso e identidades basado en la nube.<br>Red Privada Virtual de Azure:  bloque de compilación fundamental para las redes privadas en Azure||
+|**Servidor público, Contratistas, Practicantes y/o aprendices.**|business-actor|Persona natural que hacee parte la Procuraduría General de la Nación. ||
 
 <br>
 
-## Seguridad.DesarrolloSeguro.
-![Vista. Seguridad.DesarrolloSeguro.](images/Seguridad.DesarrolloSeguro..png){#fig:Seguridad.DesarrolloSeguro. width=}
+## Seguridad.5.DesarrolloSeguro
+![Vista. Seguridad.5.DesarrolloSeguro](images/Seguridad.5.DesarrolloSeguro.png){#fig:Seguridad.5.DesarrolloSeguro width=}
 
 METODOLOGÍA DE DESARROLLO.
 
 La metodología de desarrollo seguro implementa las formas del desarrollo en cada una de las fases que se han requerido para los desarrollos de módulos misionales (SIM), Registro de Inhabilidades (SIRI), módulos de control interno, relatoría, entre otros, definido a partir de la metodología S-SDLC (Secure Software Development Life Cycle), que define los requisitos de seguridad a lo largo de las distintas fases de construcción del software: análisis de requerimientos, diseño y arquitectura del sistema, desarrollo del Sistema, Fase de pruebas y despliegue en productivo.
-
 
 Migración de datos: Se presentarán los mecanismos adecuados para realizar la migración de la información que se encuentran en los sistemas de información desarrollados.
 Principios de seguridad. 
@@ -1149,9 +1199,13 @@ El siguiente contenido relaciona los lineamientos de seguridad definidos en The 
 Principio de menor privilegio: La asignación de los permisos estará validados de tal forma que los Servidores Públicos, Contratistas, Practicantes y/o aprendices que interactúen con las diferentes soluciones dispongan mínimos privilegios necesarios para efectuar las actividades. 
 
 Defensa en profundidad: Es importante identificar diferentes factores de riesgos que permita encontrar fallas en las soluciones, Este análisis podrá ser obtenido como resultado de las pruebas de seguridad, y como resultado las remediaciones que se deben implementar para ejecutar los planes de acción y lograr reducir las vulnerabilidades.
+
 Segregación de permisos: Tener en cuenta que los permisos de acceso solo deben estar asignado a los responsables de los desarrollos con acceso con acceso a los diferentes ambientes. 
+
 Seguridad en la ofuscación de datos.  Como se ha venido planteando, los mecanismos para el ofuscamiento de los datos, a partir de los diferentes mecanismos de cifrados, como el TLS, SSL y HTTPS. 
+
 Solucionar de manera correcta los problemas de seguridad: La identificación de un problema de seguridad, y la solución deberá plantearse a partir de pruebas que permitan verificar que la falla de seguridad ha sido solucionada. Estos resultados serán dados con los reportes de la prueba realizadas sobre las soluciones a través de la metodología del OWASP (Open Web Application Security Project). 
+
 Codificación: 
 Se mencionan los principales controles que se deben tener en cuenta para la realización de la codificación del software: 
 * Capa de datos. 
@@ -1171,12 +1225,10 @@ REPOSITORIO
 El repositorio del código fuente se encuentra en Azure DevOps, y para ser accedido deberá ser con la cuenta de correo corporativo.
 
 
-
-
 ### Catálogo de Elementos
 | Nombre| Tipo| Descripción| Prop.
 |:--------|:--------|:--------|:--------|
-|**Análisis de requerimientos.**|application-component|Se identifican los requerimientos funcionales y no funcionales que sirven como instrumento para el desarrollo de las soluciones. <br>La etapa de análisis terminará con el entendimiento de los requerimientos y la priorización de estos.  <br>La identificación de los nuevos requerimientos que surjan por parte del cliente, serán revisado y validados para su posterior aprobación.  ||
+|**Análisis de requerimientos**|application-component|Se identifican los requerimientos funcionales y no funcionales que sirven como instrumento para el desarrollo de las soluciones. <br>La etapa de análisis terminará con el entendimiento de los requerimientos y la priorización de estos.  <br>La identificación de los nuevos requerimientos que surjan por parte del cliente, serán revisado y validados para su posterior aprobación.  ||
 |**Desarrollo del Sistema.**|application-component|La presente fase del ciclo de vida, se da a partir de la construcción, adaptación e integración de la solución. El equipo de desarrollo implementará la solución, incorporando metodología ágil, con la planeación, ejecución de Sprint, con retroalimentación y retrospectivas cíclicas o iterativas hasta que finalice el desarrollo de la solución, se tendrá en cuenta el desarrollo de los códigos fuentes documentados y probados, bases de datos de las soluciones y la documentación técnica.||
 |**Despliegue en productivo.**|application-component|Se despliega en producción para iniciar el consumo por parte de los servidores públicos, contratistas, aprendices y/o practicantes de la Procuraduría General de la Nación. <br>Se realizará el acompañamiento para el despliegue para garantizar el correcto funcionamiento de las soluciones desarrolladas, y las actividades de conocimientos con sus manuales establecidos.||
 |**Diseño y arquitectura del Sistema.**|application-component|El detalle de los componentes se generará a partir de la definición de la arquitectura de software que definirá los patrones y lineamientos para la construcción de las soluciones, que estarán definidos en el documento de arquitectura de Software y planteará la arquitectura de i) Software, ii) datos, iii) infraestructura y iv) modelo de Seguridad. ||
@@ -1187,19 +1239,15 @@ El repositorio del código fuente se encuentra en Azure DevOps, y para ser acced
 
 <br>
 
-## Seguridad.LogsAuditoría.
-![Vista. Seguridad.LogsAuditoría.](images/Seguridad.LogsAuditoría..png){#fig:Seguridad.LogsAuditoría. width=}
+## Seguridad. 6. Auditoría
+![Vista. Seguridad. 6. Auditoría](images/Seguridad.6.Auditoría.png){#fig:Seguridad.6.Auditoría width=}
 
-Los datos estarán procesados y almacenados en las bases de datos, el cual tendra implementados mecanismos de seguridad para el cifrado de los datos. 
-Para el respaldo de las bases de datos en los ecosistemas de Dev, Test, Prod se cuenta con las siguientes políticas de retención de copias de seguridad y frecuencia de copias de seguridad definidas en el gestor de bases de datos. 
-Para la base de datos de seguridad y configuración de la aplicación se tiene un plan de copia completo cada 12 horas (PITR) en una franja de tiempo de 35 días. Adicionalmente cuenta con un LTR de conservación de 12 semanas 
-para las copias de seguridad semanales, 12 semanas de conservación para la primera copia de seguridad de cada mes, y una conservación de 12 semanas de una copia de seguridad anual.
-
-Para la base de datos de datos y trazabilidad de transacciones de la aplicación se tiene un plan de copia completo cada 12 horas (PITR) en una franja de tiempo de 35 días. Adicionalmente cuenta con un LTR de conservación de 
-52 semanas para copias de seguridad semanales, 52 semanas de conservación para la primera copia de seguridad de cada mes, y una conservación de 52 semanas de una copia de seguridad anual. Esto con la finalidad de que al 
-ser una base de datos transaccional precisa de una conservación completa de los años transaccionales. 
+El histórico de transacciones queda registrado en cada tabla donde se guarda la información y una especial llamada HistoryLogs para el tema de auditoría. Ver la siguiente estructura que presenta el log dando cumplimiento al requerimiento de seguridad frente al registro de eventos:
 
 
+
+Esto permite tener registro de la tabla afectada, los datos afectados, el registro afectado, el tipo de evento asociado a la transacción, la fecha de la transacción, la dirección IP del origen y el usuario quién realizó la misma.
+Del mismo modo, cada entidad dentro del sistema cuenta con los atributos relacionados en el json como complemente a la trazabilidad de la información
 
 ### Catálogo de Elementos
 | Nombre| Tipo| Descripción| Prop.
@@ -1215,8 +1263,8 @@ ser una base de datos transaccional precisa de una conservación completa de los
 
 <br>
 
-## Seguridad.Owasp
-![Vista. Seguridad.Owasp](images/Seguridad.Owasp.png){#fig:Seguridad.Owasp width=}
+## Seguridad. 7. Owasp
+![Vista. Seguridad. 7. Owasp](images/Seguridad.7.Owasp.png){#fig:Seguridad.7.Owasp width=}
 
 Durante todo el proceso se realizarán pruebas de análisis de vulnerabilidades que pueda tener el sistema. Se establecerán puntos donde el software esté preparado para dicho análisis. En conjunto con el líder de Seguridad, se analizarán las posibles vulnerabilidades y se revisarán cuáles pueden ser mitigadas y cuáles pueden ser omitidas. 
 Para el paso a producción, se realizará un último análisis de vulnerabilidades y se tendrá en cuenta la revisión de las acciones de mitigación, con el fin que se hayan resuelto. 
@@ -1350,7 +1398,7 @@ El Login deberá evidenciar el control de errores, al momento de realizar la val
 <br>
 
 
-``Generated on: Thu Nov 09 2023 13:26:05 GMT-0500 (COT)``
+``Generated on: Wed Nov 15 2023 13:47:43 GMT-0500 (COT)``
 
 ## Requerimientos de Administración
 1.	Las soluciones deben permitir la administración de los Roles de Usuarios: esta funcionalidad debe permitir configurar los diferentes roles de los usuarios funcionales de los procesos. 
