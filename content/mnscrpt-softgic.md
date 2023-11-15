@@ -78,13 +78,39 @@ Métodos de Seguridad del SIU Migrado
 ::::::::::::::
 
 
-## Diagrama de Clases y Componentes de solución
+## Diagrama de Clases y Componentes de Solución (a)
 :::::::::::::: {.columns}
 ::: {.column width="30%"}
-## Migracion.1b.1. SIU Módulos Componentes
 ![Vista. Migracion.1b.1. SIU Módulos Componentes](images/Migracion.1b.1.SIUMódulosComponentes.png){#fig:Migracion.1b.1.SIUMódulosComponentes width=}
 :::
 ::: {.column width="70%"}
+### Migracion.1b.1. SIU Módulos Componentes
 Componentes internos de los submódulos del sistema único de información migrado, SUI de PGN. Organización interna de los servicios y paquetes que integran cada submódulo del SUI. Todos los sistemas de información del SUI siguen esta directiva: estarán constituidos por submódulos dispuestos en relación de utilitarios (que sirven) a los componentes misionales del SUI, ubicados en el centro en el diagrama.
 :::
 ::::::::::::::
+
+
+## Diagrama de Clases y Componentes de Solución (b)
+:::::::::::::: {.columns}
+::: {.column width="30%"}
+![Vista. Migracion.1b.1. SIU Módulos Componentes](images/Migracion.1b.1.SIUMódulosComponentes.png){#fig:Migracion.1b.1.SIUMódulosComponentes width=}
+:::
+::: {.column width="70%"}
+### Migracion.1b.1. SIU Módulos Componentes
+Componentes internos de los submódulos del sistema único de información migrado, SUI de PGN. Organización interna de los servicios y paquetes que integran cada submódulo del SUI. Todos los sistemas de información del SUI siguen esta directiva: estarán constituidos por submódulos dispuestos en relación de utilitarios (que sirven) a los componentes misionales del SUI, ubicados en el centro en el diagrama.
+:::
+::::::::::::::
+
+
+## Diagrama de Arquitectura de Integración Continua, DevOps y Despliegues de Capas
+:::::::::::::: {.columns}
+::: {.column width="30%"}
+![Vista. Migracion.4. CI](images/Migracion.4.CI.png){#fig:Migracion.4.CI width=}
+:::
+::: {.column width="70%"}
+### Migracion.4. CI
+Las cadenas están separadas por tecnologías y plataformas distintas; son independientes y no presentan interbloqueos en cuanto a su ejecución. Pero, requieren administración integral.
+:::
+::::::::::::::
+
+
