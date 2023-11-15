@@ -61,7 +61,7 @@ La colaboración y comunicación de los componentes internos del SUI (grupo PFN 
 ![Vista. Seguridad.2. Lineabase.0.SIU Aplicación](images/Seguridad.2.Lineabase.0.SIUAplicación.png){#fig:Seguridad.2.Lineabase.0.SIUAplicación width=}
 :::
 ::: {.column width="70%"}
-## Seguridad.2. Lineabase.0.SIU Aplicación
+### Lineabase.0.SIU Aplicación
 Con una arquitectura orientada a servicios SUI recopila:
 
 1. Runtime: Es el servicio que interactúa con el usuario final (GUI) elaborado en Angular 11
