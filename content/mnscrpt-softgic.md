@@ -114,3 +114,14 @@ Las cadenas están separadas por tecnologías y plataformas distintas; son indep
 ::::::::::::::
 
 
+## Documento de Relación de Tecnologías y Licenciamiento
+:::::::::::::: {.columns}
+::: {.column width="30%"}
+![Vista. Migracion.5. Licenciamiento](images/Migracion.5.Licenciamiento.png){#fig:Migracion.5.Licenciamiento width=}
+:::
+::: {.column width="70%"}
+### Migracion.5. Licenciamiento
+Los elementos resaltados de la vista actual requieren modelos de  licenciamiento variado, bien sea por usuario, núcleo, despliegue (instalación), o renta por consumo.
+:::
+::::::::::::::
+
