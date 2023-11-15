@@ -5,6 +5,15 @@ subtitle:
 date: Noviembre, 2023
 ---
 
+## Tabla de Contenido
+* Diagrama de Arquitectura de la Solución Propuesta: vista de integración
+* Diagrama de Arquitectura de la solución propuesta: vista física
+* Diagrama de Arquitectura de la Solución Propuesta: motivadores del negocio
+* Diagrama de Arquitectura de la Solución Propuesta: interoperabilidad
+* Diagrama de Arquitectura de la Solución Propuesta: gestión de autenticación, usuarios y roles
+
+------
+
 ## Diagrama de Arquitectura de la Solución Propuesta: vista de integración
 :::::::::::::: {.columns}
 ::: {.column width="30%"}
@@ -48,9 +57,7 @@ Módulos y submódulos del Sistema Único de Información (SUI) de la PGN. Todos
 :::
 ::: {.column width="70%"}
 ### Migracion.1c.SIU Módulos Colaboración
-Patrón de Distribución y Colaboración estándar para el SUI.
-
-La colaboración y comunicación de los componentes internos del SUI (grupo PFN SUI, en el diagrama) está mediada por interfaces. Estas son provistas por el grupo de componentes misionales, PGN SUI, hacia los submódulos externos. La intención es mantener reducido y controlado el número de interfaces.
+Colaboración y comunicación de los componentes internos del SUI mediada por interfaces provistas por el grupo de componentes misionales, PGN SUI: mantener reducido y controlado el número de interfaces.
 :::
 ::::::::::::::
 
@@ -62,12 +69,22 @@ La colaboración y comunicación de los componentes internos del SUI (grupo PFN 
 :::
 ::: {.column width="70%"}
 ### Lineabase.0.SIU Aplicación
-Con una arquitectura orientada a servicios SUI recopila:
+Métodos de Seguridad del SIU Migrado
 
-1. Runtime: Es el servicio que interactúa con el usuario final (GUI) elaborado en Angular 11
-1. API Tx: Servicio API REST Base Node encargado de realizar las transacciones básicas CRUD
-1. API Config / Seguridad. Servicio Web API .Net Framework encargado de gestionar características con la autenticación y configuración
+* Control de acceso y autorización basado en roles (RBAC)
+* Gestión de identidades
+* Aprovisionamiento de Cuentas
 :::
 ::::::::::::::
 
 
+## Diagrama de Clases y Componentes de solución
+:::::::::::::: {.columns}
+::: {.column width="30%"}
+## Migracion.1b.1. SIU Módulos Componentes
+![Vista. Migracion.1b.1. SIU Módulos Componentes](images/Migracion.1b.1.SIUMódulosComponentes.png){#fig:Migracion.1b.1.SIUMódulosComponentes width=}
+:::
+::: {.column width="70%"}
+Componentes internos de los submódulos del sistema único de información migrado, SUI de PGN. Organización interna de los servicios y paquetes que integran cada submódulo del SUI. Todos los sistemas de información del SUI siguen esta directiva: estarán constituidos por submódulos dispuestos en relación de utilitarios (que sirven) a los componentes misionales del SUI, ubicados en el centro en el diagrama.
+:::
+::::::::::::::
