@@ -4,7 +4,7 @@
 [![GitHub Actions Status](https://github.com/hwong23/fna-dd-f2-pry1/workflows/Manubot/badge.svg)](https://github.com/hwong23/fna-dd-f2-pry1/actions)
 
 ## Descripción del proyecto
-Objetivo.- Migrtación Funcional Sistema Único de Información (SUI), PGN, 2023.
+Objetivo.- Migrtación Funcional Sistema Único de Información (SUI), PGN, 2023. Softgic. 
 
 ### Formatos Generados
 + **HTML manuscript** at https://hwong23.github.io/pgn-078/
