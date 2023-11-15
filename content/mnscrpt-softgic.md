@@ -90,16 +90,18 @@ Componentes internos de los submódulos del sistema único de información migra
 ::::::::::::::
 
 
-## Diagrama de Clases y Componentes de Solución (b)
+## Diagrama de Clases y Componentes de Solución
 :::::::::::::: {.columns}
 ::: {.column width="30%"}
-![Vista. Migracion.1b.1. SIU Módulos Componentes](images/Migracion.1b.1.SIUMódulosComponentes.png){#fig:Migracion.1b.1.SIUMódulosComponentes width=}
+![Vista. Migracion.1b.3. SIU Módulos Clases](images/Migracion.1b.3.SIUMódulosClases.png){#fig:Migracion.1b.3.SIUMódulosClases width=}
 :::
 ::: {.column width="70%"}
-### Migracion.1b.1. SIU Módulos Componentes
-Componentes internos de los submódulos del sistema único de información migrado, SUI de PGN. Organización interna de los servicios y paquetes que integran cada submódulo del SUI. Todos los sistemas de información del SUI siguen esta directiva: estarán constituidos por submódulos dispuestos en relación de utilitarios (que sirven) a los componentes misionales del SUI, ubicados en el centro en el diagrama.
+## Migracion.1b.3. SIU Módulos Clases
+* El diseño actual antepone un servicio como punto de acceso a un caso de uso, de tal forma que este se encarga únicamente (por responsabilidad) de coordinar las entradas y las salidas del caso de uso
+* El modelo propicia la separación de la lógica de aplicación y la lógica de negocio. En este diseño, la primera está encapsulada en el Caso de Uso ejecutable (en el diagrama), mientras que la lógica de negocio lo está en una función de negocio.
 :::
 ::::::::::::::
+
 
 
 ## Diagrama de Arquitectura de Integración Continua, DevOps y Despliegues de Capas
