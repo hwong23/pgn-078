@@ -202,9 +202,9 @@ Aplicación</figcaption>
 </div>
 </div>
 </section>
-<section id="diagrama-de-clases-y-componentes-de-solución"
+<section id="diagrama-de-clases-y-componentes-de-solución-a"
 class="slide level2">
-<h2>Diagrama de Clases y Componentes de Solución</h2>
+<h2>Diagrama de Clases y Componentes de Solución (a)</h2>
 <div class="columns">
 <div class="column" style="flex:30%;">
 <figure>
@@ -227,28 +227,71 @@ diagrama.</p>
 </div>
 </div>
 </section>
-<section id="diagrama-de-clases-y-componentes-de-solución-1"
+<section id="diagrama-de-clases-y-componentes-de-solución"
 class="slide level2">
 <h2>Diagrama de Clases y Componentes de Solución</h2>
 <div class="columns">
 <div class="column" style="flex:30%;">
 <figure>
-<img data-src="images/Migracion.1b.1.SIUMódulosComponentes.png"
-id="fig:Migracion.1b.1.SIUMódulosComponentes"
-alt="Vista. Migracion.1b.1. SIU Módulos Componentes" />
-<figcaption aria-hidden="true">Vista. Migracion.1b.1. SIU Módulos
-Componentes</figcaption>
+<img data-src="images/Migracion.1b.3.SIUMódulosClases.png"
+id="fig:Migracion.1b.3.SIUMódulosClases"
+alt="Vista. Migracion.1b.3. SIU Módulos Clases" />
+<figcaption aria-hidden="true">Vista. Migracion.1b.3. SIU Módulos
+Clases</figcaption>
 </figure>
 </div><div class="column" style="flex:70%;">
-<h3 id="migracion.1b.1.-siu-módulos-componentes-1">Migracion.1b.1. SIU
-Módulos Componentes</h3>
-<p>Componentes internos de los submódulos del sistema único de
-información migrado, SUI de PGN. Organización interna de los servicios y
-paquetes que integran cada submódulo del SUI. Todos los sistemas de
-información del SUI siguen esta directiva: estarán constituidos por
-submódulos dispuestos en relación de utilitarios (que sirven) a los
-componentes misionales del SUI, ubicados en el centro en el
-diagrama.</p>
+<h3 id="migracion.1b.3.-siu-módulos-clases">Migracion.1b.3. SIU Módulos
+Clases</h3>
+<ul>
+<li>El diseño actual antepone un servicio como punto de acceso a un caso
+de uso, de tal forma que este se encarga únicamente (por
+responsabilidad) de coordinar las entradas y las salidas del caso de
+uso</li>
+<li>El modelo propicia la separación de la lógica de aplicación y la
+lógica de negocio. En este diseño, la primera está encapsulada en el
+Caso de Uso ejecutable (en el diagrama), mientras que la lógica de
+negocio lo está en una función de negocio.</li>
+</ul>
+</div>
+</div>
+</section>
+<section
+id="diagrama-de-arquitectura-de-integración-continua-devops-y-despliegues-de-capas"
+class="slide level2">
+<h2>Diagrama de Arquitectura de Integración Continua, DevOps y
+Despliegues de Capas</h2>
+<div class="columns">
+<div class="column" style="flex:30%;">
+<figure>
+<img data-src="images/Migracion.4.CI.png" id="fig:Migracion.4.CI"
+alt="Vista. Migracion.4. CI" />
+<figcaption aria-hidden="true">Vista. Migracion.4. CI</figcaption>
+</figure>
+</div><div class="column" style="flex:70%;">
+<h3 id="migracion.4.-ci">Migracion.4. CI</h3>
+<p>Las cadenas están separadas por tecnologías y plataformas distintas;
+son independientes y no presentan interbloqueos en cuanto a su
+ejecución. Pero, requieren administración integral.</p>
+</div>
+</div>
+</section>
+<section id="documento-de-relación-de-tecnologías-y-licenciamiento"
+class="slide level2">
+<h2>Documento de Relación de Tecnologías y Licenciamiento</h2>
+<div class="columns">
+<div class="column" style="flex:30%;">
+<figure>
+<img data-src="images/Migracion.5.Licenciamiento.png"
+id="fig:Migracion.5.Licenciamiento"
+alt="Vista. Migracion.5. Licenciamiento" />
+<figcaption aria-hidden="true">Vista. Migracion.5.
+Licenciamiento</figcaption>
+</figure>
+</div><div class="column" style="flex:70%;">
+<h3 id="migracion.5.-licenciamiento">Migracion.5. Licenciamiento</h3>
+<p>Los elementos resaltados de la vista actual requieren modelos de
+licenciamiento variado, bien sea por usuario, núcleo, despliegue
+(instalación), o renta por consumo.</p>
 </div>
 </div>
 </section>

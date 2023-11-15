@@ -96,7 +96,7 @@ Componentes internos de los submódulos del sistema único de información migra
 ![Vista. Migracion.1b.3. SIU Módulos Clases](images/Migracion.1b.3.SIUMódulosClases.png){#fig:Migracion.1b.3.SIUMódulosClases width=}
 :::
 ::: {.column width="70%"}
-## Migracion.1b.3. SIU Módulos Clases
+### Migracion.1b.3. SIU Módulos Clases
 * El diseño actual antepone un servicio como punto de acceso a un caso de uso, de tal forma que este se encarga únicamente (por responsabilidad) de coordinar las entradas y las salidas del caso de uso
 * El modelo propicia la separación de la lógica de aplicación y la lógica de negocio. En este diseño, la primera está encapsulada en el Caso de Uso ejecutable (en el diagrama), mientras que la lógica de negocio lo está en una función de negocio.
 :::
