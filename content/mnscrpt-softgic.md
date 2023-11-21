@@ -5,12 +5,15 @@ subtitle:
 date: Noviembre, 2023
 ---
 
-## Tabla de Contenido
+## Entregables de Arquitectura de Software
 * Diagrama de Arquitectura de la Solución Propuesta: vista de integración
 * Diagrama de Arquitectura de la solución propuesta: vista física
 * Diagrama de Arquitectura de la Solución Propuesta: motivadores del negocio
 * Diagrama de Arquitectura de la Solución Propuesta: interoperabilidad
 * Diagrama de Arquitectura de la Solución Propuesta: gestión de autenticación, usuarios y roles
+* Diagrama de Clases y Componentes de Solución
+* Diagrama de Arquitectura de Integración Continua, DevOps y Despliegues de Capas
+* Documento de Relación de Tecnologías y Licenciamiento
 
 ------
 
@@ -85,7 +88,7 @@ Componentes internos de los submódulos del sistema único de información migra
 ::::::::::::::
 
 
-## Diagrama de Clases y Componentes de Solución
+## Diagrama de Clases y Componentes de Solución (b)
 :::::::::::::: {.columns}
 ::: {.column width="30%"}
 ![Vista. Migracion.1b.3. SIU Módulos Clases](images/Migracion.1b.3.SIUMódulosClases.png){#fig:Migracion.1b.3.SIUMódulosClases width=}
@@ -121,4 +124,16 @@ Las cadenas están separadas por tecnologías y plataformas distintas; son indep
 Los elementos resaltados de la vista actual requieren modelos de  licenciamiento variado, bien sea por usuario, núcleo, despliegue (instalación), o renta por consumo.
 :::
 ::::::::::::::
+
+
+## Entregables de # Arquitectura de Información (Datos)
+* Arquitectura de Información (Datos)
+* Diagrama Modelo de Datos Conceptual
+* Diagrama Modelo de Datos Físico (diagramas entidad-relación)
+* Diagrama Modelo de Datos Lógico
+* Documento Diccionarios de Datos
+* Mapa de Información (flujos de información)
+* Modelo Ontológico
+
+------
 
