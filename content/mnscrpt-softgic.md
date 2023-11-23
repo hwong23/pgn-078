@@ -5,6 +5,7 @@ subtitle:
 date: Noviembre, 2023
 ---
 
+
 ## Entregables de Arquitectura de Software
 * Diagrama de Arquitectura de la Solución Propuesta: vista de integración
 * Diagrama de Arquitectura de la solución propuesta: vista física
