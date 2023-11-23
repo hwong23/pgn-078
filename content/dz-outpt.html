@@ -8,7 +8,7 @@
     code{white-space: pre-wrap;}
     span.smallcaps{font-variant: small-caps;}
     div.columns{display: flex; gap: min(4vw, 1.5em);}
-    div.column{flex: 1;}
+    div.column{flex: auto; overflow-x: auto;}
     div.hanging-indent{margin-left: 1.5em; text-indent: -1.5em;}
     ul.task-list{list-style: none;}
     ul.task-list li input[type="checkbox"] {
@@ -169,7 +169,7 @@ class="slide level2">
 <h2>Diagrama de Arquitectura de la Solución Propuesta: vista de
 integración</h2>
 <div class="columns">
-<div class="column" style="flex:30%;">
+<div class="column" style="width:70%;">
 <figure>
 <img src="images/Migracion.1a.b.SIUContextoMódulos.png"
 id="fig:Migracion.1a.b.SIUContextoMódulos"
@@ -177,9 +177,7 @@ alt="Vista. Migracion.1a.b.SIU Contexto Módulos" />
 <figcaption aria-hidden="true">Vista. Migracion.1a.b.SIU Contexto
 Módulos</figcaption>
 </figure>
-</div><div class="column" style="flex:70%;">
-<h3 id="migracion.1a.b.siu-contexto-módulos">Migracion.1a.b.SIU Contexto
-Módulos</h3>
+</div><div class="column" style="width:30%;">
 <p>La vista presenta en contexto a los módulos SUI migrados e indica los
 modos de comunicación, sincrónica/asincrónica, que utilizan.</p>
 </div>
@@ -190,7 +188,7 @@ id="diagrama-de-arquitectura-de-la-solución-propuesta-vista-física"
 class="slide level2">
 <h2>Diagrama de Arquitectura de la solución propuesta: vista física</h2>
 <div class="columns">
-<div class="column" style="flex:30%;">
+<div class="column" style="width:70%;">
 <figure>
 <img src="images/Lineabase.0.SIUAplicación.Física.png"
 id="fig:Lineabase.0.SIUAplicación.Física"
@@ -198,13 +196,10 @@ alt="Vista. Lineabase.0.SIU Aplicación. Física" />
 <figcaption aria-hidden="true">Vista. Lineabase.0.SIU Aplicación.
 Física</figcaption>
 </figure>
-</div><div class="column" style="flex:70%;">
-<h3 id="lineabase.0.siu-aplicación.-física">Lineabase.0.SIU Aplicación.
-Física</h3>
-<p>Elementos de infraestructura física que soportan a la aplicación
-Sistema de Información Único, SIU de la PGN. Presentación de componentes
-de software y hardware requeridos por la implementación de Fase II
-(presente proyecto).</p>
+</div><div class="column" style="width:30%;">
+<p>Elementos de infraestructura física (hardware) para la implementación
+Fase II (presente proyecto) del Sistema de Información Único, SIU de la
+PGN</p>
 </div>
 </div>
 </section>
@@ -214,7 +209,7 @@ class="slide level2">
 <h2>Diagrama de Arquitectura de la Solución Propuesta: motivadores del
 negocio</h2>
 <div class="columns">
-<div class="column" style="flex:30%;">
+<div class="column" style="width:70%;">
 <figure>
 <img src="images/Migracion.1a.a.SIUContextoMódulo.png"
 id="fig:Migracion.1a.a.SIUContextoMódulo"
@@ -222,12 +217,10 @@ alt="Vista. Migracion.1a.a.SIU Contexto Módulo" />
 <figcaption aria-hidden="true">Vista. Migracion.1a.a.SIU Contexto
 Módulo</figcaption>
 </figure>
-</div><div class="column" style="flex:70%;">
-<h3 id="migracion.1a.a.siu-contexto-módulo">Migracion.1a.a.SIU Contexto
-Módulo</h3>
+</div><div class="column" style="width:30%;">
 <p>Módulos y submódulos del Sistema Único de Información (SUI) de la
-PGN. Todos los sistemas de información del SUI siguen la directiva de
-separar a los componentes misionales de los utilitarios.</p>
+PGN. Todos los sistemas de información del SUI separan a los componentes
+misionales de los utilitarios.</p>
 </div>
 </div>
 </section>
@@ -237,7 +230,7 @@ class="slide level2">
 <h2>Diagrama de Arquitectura de la Solución Propuesta:
 interoperabilidad</h2>
 <div class="columns">
-<div class="column" style="flex:30%;">
+<div class="column" style="width:70%;">
 <figure>
 <img src="images/Migracion.1c.SIUMódulosColaboración.png"
 id="fig:Migracion.1c.SIUMódulosColaboración"
@@ -245,15 +238,10 @@ alt="Vista. Migracion.1c.SIU Módulos Colaboración" />
 <figcaption aria-hidden="true">Vista. Migracion.1c.SIU Módulos
 Colaboración</figcaption>
 </figure>
-</div><div class="column" style="flex:70%;">
-<h3 id="migracion.1c.siu-módulos-colaboración">Migracion.1c.SIU Módulos
-Colaboración</h3>
-<p>Patrón de Distribución y Colaboración estándar para el SUI.</p>
+</div><div class="column" style="width:30%;">
 <p>La colaboración y comunicación de los componentes internos del SUI
-(grupo PFN SUI, en el diagrama) está mediada por interfaces. Estas son
-provistas por el grupo de componentes misionales, PGN SUI, hacia los
-submódulos externos. La intención es mantener reducido y controlado el
-número de interfaces.</p>
+está mediada por interfaces contenidas dentro de los componentes
+misionales del SUI de PGN.</p>
 </div>
 </div>
 </section>
@@ -263,7 +251,7 @@ class="slide level2">
 <h2>Diagrama de Arquitectura de la Solución Propuesta: gestión de
 autenticación, usuarios y roles</h2>
 <div class="columns">
-<div class="column" style="flex:30%;">
+<div class="column" style="width:70%;">
 <figure>
 <img src="images/Seguridad.2.Lineabase.0.SIUAplicación.png"
 id="fig:Seguridad.2.Lineabase.0.SIUAplicación"
@@ -271,20 +259,29 @@ alt="Vista. Seguridad.2. Lineabase.0.SIU Aplicación" />
 <figcaption aria-hidden="true">Vista. Seguridad.2. Lineabase.0.SIU
 Aplicación</figcaption>
 </figure>
-</div><div class="column" style="flex:70%;">
-<section id="seguridad.2.-lineabase.0.siu-aplicación"
-class="slide level2">
-<h2>Seguridad.2. Lineabase.0.SIU Aplicación</h2>
-<p>Con una arquitectura orientada a servicios SUI recopila:</p>
-<ol type="1">
-<li>Runtime: Es el servicio que interactúa con el usuario final (GUI)
-elaborado en Angular 11</li>
-<li>API Tx: Servicio API REST Base Node encargado de realizar las
-transacciones básicas CRUD</li>
-<li>API Config / Seguridad. Servicio Web API .Net Framework encargado de
-gestionar características con la autenticación y configuración</li>
-</ol>
+</div><div class="column" style="width:30%;">
+<p>El proceso de autorización a los módulos del SUI de la PGN describe
+la forma cómo se restringe el acceso como mecanismo de protección que
+ayuda a reaccionar ante cualquier operación no autorizada</p>
+</div>
+</div>
 </section>
+<section id="clases-y-componentes-de-solución" class="slide level2">
+<h2>Clases y Componentes de Solución</h2>
+<div class="columns">
+<div class="column" style="width:70%;">
+<figure>
+<img src="images/Migracion.1b.1.SIUMódulosComponentes.png"
+id="fig:Migracion.1b.1.SIUMódulosComponentes"
+alt="Vista. Migracion.1b.1. SIU Módulos Componentes" />
+<figcaption aria-hidden="true">Vista. Migracion.1b.1. SIU Módulos
+Componentes</figcaption>
+</figure>
+</div><div class="column" style="width:30%;">
+<p>Organización interna de los servicios y paquetes que integran cada
+submódulo del SUI Migrado de PGN. Todos los sistemas de información del
+SUI siguen esta misma estructura constituida por submódulos utilitarios
+(que sirven) a los componentes misionales del SUI.</p>
 </div>
 </div>
 </section>
