@@ -1,7 +1,7 @@
 # Directorio de salida de documentación técnica
 
 The [`gh-pages`](https://github.com/hwong23/pgn-078/tree/gh-pages) branch hosts the contents of this directory at <https://hwong23.github.io/pgn-078/>.
-The permalink for this webpage version is <https://hwong23.github.io/pgn-078/v/5216398a2cf3a40e8b71f59fcb60fc96f4a47e1c/>.
+The permalink for this webpage version is <https://hwong23.github.io/pgn-078/v/31a7e7a3926354e110b95fa44ee24066adc12146/>.
 To redirect to the permalink for the latest manuscript version at anytime, use the link <https://hwong23.github.io/pgn-078/v/freeze/>.
 
 ## Listado
@@ -21,6 +21,8 @@ In general, a version is identified by the commit hash of the source content tha
 |----------------|----------------------------|
 | Palabras clave | SIU, Softgic, PGN, Análisis de brecha, GAP, Comparativa |
 | **Versión**    |                            |
+| 1.31a7e7a | 2023-11-28. doc--nov |
+| 1.21c6da3 | 2023-11-28. doc--nov |
 | 1.5216398 | 2023-11-23. corrcn |
 | 1.07b942f | 2023-11-23. arqdoc1 |
 | 1.cc89d40 | 2023-11-23. upd--pptx |
@@ -29,8 +31,6 @@ In general, a version is identified by the commit hash of the source content tha
 | 1.0ca59db | 2023-11-21. upd |
 | 1.126957b | 2023-11-23. Merge branch 'main' of https://github.com/hwong23/pgn-078 |
 | 1.84fd704 | 2023-11-23. upd |
-| 1.6750ea3 | 2023-11-15. pptx3 |
-| 1.783f3fb | 2023-11-15. pptx2 |
 
 
 
@@ -39,4 +39,4 @@ Verifying timestamps with the `ots verify` command requires running a local bitc
 ## Source
 
 The manuscripts in this directory were built from
-[`5216398a2cf3a40e8b71f59fcb60fc96f4a47e1c`](https://github.com/hwong23/pgn-078/commit/5216398a2cf3a40e8b71f59fcb60fc96f4a47e1c).
+[`31a7e7a3926354e110b95fa44ee24066adc12146`](https://github.com/hwong23/pgn-078/commit/31a7e7a3926354e110b95fa44ee24066adc12146).
