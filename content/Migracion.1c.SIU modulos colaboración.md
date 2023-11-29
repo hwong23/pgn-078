@@ -1,6 +1,6 @@
 
-## Migracion.1c.SIU Modulos Colaboración
-![Diagram: Migracion.1c.SIU Modulos Colaboración](images/Migracion.1c.SIUModulosColaboración.png){#fig:Migracion.1c.SIUModulosColaboración width=}
+## Migracion.1c.SUI Modulos Colaboración
+![Diagram: Migracion.1c.SUI Modulos Colaboración](images/Migracion.1c.SIUModulosColaboración.png){#fig:Migracion.1c.SIUModulosColaboración width=}
 
 Patrón de Distribución y Colaboración estándar para el SUI.
 

@@ -5,9 +5,9 @@
 ### Catálogo de Elementos
 | Name| Type| Description| Properties
 |:--------|:--------|:--------|:--------|
-|**Componente de  comunicación segura SIU**|capability||*modulo:* conciliacion<br>|
-|**Componente de autenticación SIU**|capability||*modulo:* conciliacion<br>|
-|**Componente de autorización SIU**|capability||*modulo:* conciliacion<br>|
+|**Componente de  comunicación segura SUI**|capability||*modulo:* conciliacion<br>|
+|**Componente de autenticación SUI**|capability||*modulo:* conciliacion<br>|
+|**Componente de autorización SUI**|capability||*modulo:* conciliacion<br>|
 |**Flujo de trabajo  Preventico**|capability||*modulo:* conciliacion<br>|
 |**Flujo de trabajo Disciplinar**|capability||*modulo:* conciliacion<br>|
 |**Flujo de trabajo Intervención**|capability||*modulo:* conciliacion<br>|

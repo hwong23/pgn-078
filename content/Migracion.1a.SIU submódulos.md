@@ -1,6 +1,6 @@
 
-## Migracion.1a.SIU submódulos
-![Diagram: Migracion.1a.SIU submódulos](images/Migracion.1a.SIUsubmódulos.png){#fig:Migracion.1a.SIUsubmódulos width=}
+## Migracion.1a.SUI submódulos
+![Diagram: Migracion.1a.SUI submódulos](images/Migracion.1a.SIUsubmódulos.png){#fig:Migracion.1a.SIUsubmódulos width=}
 
 Identificación de submódulos del Sistema Único de Información (SUI) de la PGN. 
 

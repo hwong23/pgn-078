@@ -22,9 +22,9 @@ De arriba a abajo:
 | Name| Type| Description| Properties
 |:--------|:--------|:--------|:--------|
 |**Administración de contenidos**|capability||*modulo:* relatoria<br>|
-|**Componente de  comunicación segura SIU**|capability||*modulo:* conciliacion<br>|
-|**Componente de autenticación SIU**|capability||*modulo:* conciliacion<br>|
-|**Componente de autorización SIU**|capability||*modulo:* conciliacion<br>|
+|**Componente de  comunicación segura SUI**|capability||*modulo:* conciliacion<br>|
+|**Componente de autenticación SUI**|capability||*modulo:* conciliacion<br>|
+|**Componente de autorización SUI**|capability||*modulo:* conciliacion<br>|
 |**Funcionalidades de búsqueda**|capability||*modulo:* relatoria<br>|
 |**Funcionalidades de descripción de contenidos**|capability||*modulo:* relatoria<br>|
 |**Integración API CMS**|capability||*modulo:* relatoria<br>|

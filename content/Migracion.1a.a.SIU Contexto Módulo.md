@@ -1,6 +1,6 @@
 
-## Migracion.1a.a.SIU Contexto Módulo
-![Diagram: Migracion.1a.a.SIU Contexto Módulo](images/Migracion.1a.a.SIUContextoMódulo.png){#fig:Migracion.1a.a.SIUContextoMódulo width=}
+## Migracion.1a.a.SUI Contexto Módulo
+![Diagram: Migracion.1a.a.SUI Contexto Módulo](images/Migracion.1a.a.SIUContextoMódulo.png){#fig:Migracion.1a.a.SIUContextoMódulo width=}
 
 Identificación de submódulos del Sistema Único de Información (SUI) de la PGN. 
 

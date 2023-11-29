@@ -1,8 +1,8 @@
 
-## Lineabase.0.SIU applicación
-![Diagram: Lineabase.0.SIU applicación](images/Lineabase.0.SIUapplicación.png){#fig:Lineabase.0.SIUapplicación width=}
+## Lineabase.0.SUI applicación
+![Diagram: Lineabase.0.SUI applicación](images/Lineabase.0.SIUapplicación.png){#fig:Lineabase.0.SIUapplicación width=}
 
-Procuraduría General de la Nación, proyecto Migración SIU, 2023, Fase II. Línea base del sistema único de información (SUI en adelante) de la PGN. Presentación de componentes de software  originales implementados en la Fase I del presente proyecto.
+Procuraduría General de la Nación, proyecto Migración SUI, 2023, Fase II. Línea base del sistema único de información (SUI en adelante) de la PGN. Presentación de componentes de software  originales implementados en la Fase I del presente proyecto.
 
 
 ## Representación Arquitectónica

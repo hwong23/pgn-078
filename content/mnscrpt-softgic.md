@@ -21,7 +21,7 @@ date: Noviembre, 2023
 ## Diagrama de Arquitectura de la Solución Propuesta: vista de integración
 :::::::::::::: {.columns}
 ::: {.column width="70%"}
-![Vista. Migracion.1a.b.SIU Contexto Módulos](images/Migracion.1a.b.SIUContextoMódulos.png){#fig:Migracion.1a.b.SIUContextoMódulos width=}
+![Vista. Migracion.1a.b.SUI Contexto Módulos](images/Migracion.1a.b.SIUContextoMódulos.png){#fig:Migracion.1a.b.SIUContextoMódulos width=}
 :::
 ::: {.column width="30%"}
 La vista presenta en contexto a los módulos SUI migrados e indica los modos de comunicación, sincrónica/asincrónica, que utilizan.
@@ -31,17 +31,17 @@ La vista presenta en contexto a los módulos SUI migrados e indica los modos de 
 ## Diagrama de Arquitectura de la solución propuesta: vista física
 :::::::::::::: {.columns}
 ::: {.column width="70%"}
-![Vista. Lineabase.0.SIU Aplicación. Física](images/Lineabase.0.SIUAplicación.Física.png){#fig:Lineabase.0.SIUAplicación.Física width=}
+![Vista. Lineabase.0.SUI Aplicación. Física](images/Lineabase.0.SIUAplicación.Física.png){#fig:Lineabase.0.SIUAplicación.Física width=}
 :::
 ::: {.column width="30%"}
-Elementos de infraestructura física (hardware) para la implementación Fase II (presente proyecto) del  Sistema de Información Único, SIU de la PGN
+Elementos de infraestructura física (hardware) para la implementación Fase II (presente proyecto) del  Sistema de Información Único, SUI de la PGN
 :::
 ::::::::::::::
 
 ## Diagrama de Arquitectura de la Solución Propuesta: motivadores del negocio
 :::::::::::::: {.columns}
 ::: {.column width="70%"}
-![Vista. Migracion.1a.a.SIU Contexto Módulo](images/Migracion.1a.a.SIUContextoMódulo.png){#fig:Migracion.1a.a.SIUContextoMódulo width=}
+![Vista. Migracion.1a.a.SUI Contexto Módulo](images/Migracion.1a.a.SIUContextoMódulo.png){#fig:Migracion.1a.a.SIUContextoMódulo width=}
 :::
 ::: {.column width="30%"}
 Módulos y submódulos del Sistema Único de Información (SUI) de la PGN. Todos los sistemas de información del SUI separan a los componentes misionales de los utilitarios.
@@ -52,10 +52,10 @@ Módulos y submódulos del Sistema Único de Información (SUI) de la PGN. Todos
 ## Diagrama de Arquitectura de la Solución Propuesta: interoperabilidad
 :::::::::::::: {.columns}
 ::: {.column width="70%"}
-![Vista. Migracion.1c.SIU Módulos Colaboración](images/Migracion.1c.SIUMódulosColaboración.png){#fig:Migracion.1c.SIUMódulosColaboración width=}
+![Vista. Migracion.1c.SUI Módulos Colaboración](images/Migracion.1c.SIUMódulosColaboración.png){#fig:Migracion.1c.SIUMódulosColaboración width=}
 :::
 ::: {.column width="70%"}
-### Migracion.1c.SIU Módulos Colaboración
+### Migracion.1c.SUI Módulos Colaboración
 Colaboración y comunicación de los componentes internos del SUI mediada por interfaces provistas por el grupo de componentes misionales, PGN SUI: mantener reducido y controlado el número de interfaces.
 :::
 ::::::::::::::
@@ -64,11 +64,11 @@ Colaboración y comunicación de los componentes internos del SUI mediada por in
 ## Diagrama de Arquitectura de la Solución Propuesta: gestión de autenticación, usuarios y roles
 :::::::::::::: {.columns}
 ::: {.column width="70%"}
-![Vista. Seguridad.2. Lineabase.0.SIU Aplicación](images/Seguridad.2.Lineabase.0.SIUAplicación.png){#fig:Seguridad.2.Lineabase.0.SIUAplicación width=}
+![Vista. Seguridad.2. Lineabase.0.SUI Aplicación](images/Seguridad.2.Lineabase.0.SIUAplicación.png){#fig:Seguridad.2.Lineabase.0.SIUAplicación width=}
 :::
 ::: {.column width="70%"}
-### Lineabase.0.SIU Aplicación
-Métodos de Seguridad del SIU Migrado
+### Lineabase.0.SUI Aplicación
+Métodos de Seguridad del SUI Migrado
 
 * Control de acceso y autorización basado en roles (RBAC)
 * Gestión de identidades
@@ -80,10 +80,10 @@ Métodos de Seguridad del SIU Migrado
 ## Diagrama de Clases y Componentes de Solución (a)
 :::::::::::::: {.columns}
 ::: {.column width="30%"}
-![Vista. Migracion.1b.1. SIU Módulos Componentes](images/Migracion.1b.1.SIUMódulosComponentes.png){#fig:Migracion.1b.1.SIUMódulosComponentes width=}
+![Vista. Migracion.1b.1. SUI Módulos Componentes](images/Migracion.1b.1.SIUMódulosComponentes.png){#fig:Migracion.1b.1.SIUMódulosComponentes width=}
 :::
 ::: {.column width="70%"}
-### Migracion.1b.1. SIU Módulos Componentes
+### Migracion.1b.1. SUI Módulos Componentes
 Componentes internos de los submódulos del sistema único de información migrado, SUI de PGN. Organización interna de los servicios y paquetes que integran cada submódulo del SUI. Todos los sistemas de información del SUI siguen esta directiva: estarán constituidos por submódulos dispuestos en relación de utilitarios (que sirven) a los componentes misionales del SUI, ubicados en el centro en el diagrama.
 :::
 ::::::::::::::
@@ -92,10 +92,10 @@ Componentes internos de los submódulos del sistema único de información migra
 ## Diagrama de Clases y Componentes de Solución (b)
 :::::::::::::: {.columns}
 ::: {.column width="30%"}
-![Vista. Migracion.1b.3. SIU Módulos Clases](images/Migracion.1b.3.SIUMódulosClases.png){#fig:Migracion.1b.3.SIUMódulosClases width=}
+![Vista. Migracion.1b.3. SUI Módulos Clases](images/Migracion.1b.3.SIUMódulosClases.png){#fig:Migracion.1b.3.SIUMódulosClases width=}
 :::
 ::: {.column width="70%"}
-### Migracion.1b.3. SIU Módulos Clases
+### Migracion.1b.3. SUI Módulos Clases
 * El diseño actual antepone un servicio como punto de acceso a un caso de uso, de tal forma que este se encarga únicamente (por responsabilidad) de coordinar las entradas y las salidas del caso de uso
 * El modelo propicia la separación de la lógica de aplicación y la lógica de negocio. En este diseño, la primera está encapsulada en el Caso de Uso ejecutable (en el diagrama), mientras que la lógica de negocio lo está en una función de negocio.
 :::
@@ -162,7 +162,7 @@ Dominios Principales de Información SUI Migrado
 ## Diagrama Modelo de Datos Físico (diagramas entidad-relación)
 :::::::::::::: {.columns}
 ::: {.column width="30%"}
-![Vista. Migracion.2a.a3. Datos Modelo Físico ](images/ER-SIU.png){#fig:Migracion.2a.a3.DatosModeloFísico width=}
+![Vista. Migracion.2a.a3. Datos Modelo Físico ](images/ER-SUI.png){#fig:Migracion.2a.a3.DatosModeloFísico width=}
 :::
 ::: {.column width="70%"}
 ### Migracion.2a.a3. Datos Modelo Físico 

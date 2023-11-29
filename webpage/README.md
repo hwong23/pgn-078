@@ -19,7 +19,7 @@ In general, a version is identified by the commit hash of the source content tha
 
 | Tema           | $PROYECTO $PROY_DESCR      |
 |----------------|----------------------------|
-| Palabras clave | SIU, Softgic, PGN, Análisis de brecha, GAP, Comparativa |
+| Palabras clave | SUI, Softgic, PGN, Análisis de brecha, GAP, Comparativa |
 | **Versión**    |                            |
 $HISTORIAMD
 

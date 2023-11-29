@@ -5,9 +5,9 @@
 ### Catálogo de Elementos
 | Name| Type| Description| Properties
 |:--------|:--------|:--------|:--------|
-|**Componente de  comunicación segura SIU**|capability||*modulo:* relatoria<br>|
-|**Componente de autenticación SIU**|capability||*modulo:* relatoria<br>|
-|**Componente de autorización SIU**|capability||*modulo:* relatoria<br>|
+|**Componente de  comunicación segura SUI**|capability||*modulo:* relatoria<br>|
+|**Componente de autenticación SUI**|capability||*modulo:* relatoria<br>|
+|**Componente de autorización SUI**|capability||*modulo:* relatoria<br>|
 |**Flujo de trabajo  Preventico**|capability||*modulo:* relatoria<br>|
 |**Flujo de trabajo Disciplinar**|capability||*modulo:* relatoria<br>|
 |**Flujo de trabajo Intervención**|capability||*modulo:* relatoria<br>|

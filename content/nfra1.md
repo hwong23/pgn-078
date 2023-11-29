@@ -1,5 +1,5 @@
 ---
-title: Documento de Arquitectura Migración Funcional PGN SIU
+title: Documento de Arquitectura Migración Funcional PGN SUI
 subtitle: $PROYECTO - $PROY_DESCR
 geometry:
   - top=1in
@@ -51,11 +51,11 @@ Descripción de los productos del trabajo de infraestructura del proyecto Migrac
 ##  Control de Cambios {.page_break_before}
 | Tema           | $PROYECTO $PROY_DESCR      |
 |----------------|----------------------------|
-| Palabras clave | SIU, Softgic, PGN, Análisis de brecha, GAP, Infraestrctura, PasS |
+| Palabras clave | SUI, Softgic, PGN, Análisis de brecha, GAP, Infraestrctura, PasS |
 | Autor          |                            |
 | Fuente         |                            |
 | Versión        | 1.$COMMIT del $FECHA_COMPILACION |
-| Vínculos       | [N003a Vista Segmento PGN SIU](N03a%a20Vsta%20aSegenta%20SOA%20PGN.md) |
+| Vínculos       | [N003a Vista Segmento PGN SUI](N03a%a20Vsta%20aSegenta%20SOA%20PGN.md) |
 
 <br>
 

@@ -1,15 +1,15 @@
 # Documento de Arquitectura Infraestructura SUI PGN
 * [Descripción de Infraestructura Migración SUI PGN](#descripción-de-infraestructura-migración-sui-pgn)
-	* [Lineabase.1a.SIU componentes. infraestrcutura](#lineabase.1a.siu-componentes.-infraestrcutura)
-	* [Lineabase.0.SIU applicación. física](#lineabase.0.siu-applicación.-física)
-	* [Seguridad. Lineabase.0.SIU applicación](#seguridad.-lineabase.0.siu-applicación)
+	* [Lineabase.1a.SUI componentes. infraestrcutura](#lineabase.1a.SUI-componentes.-infraestrcutura)
+	* [Lineabase.0.SUI applicación. física](#lineabase.0.SUI-applicación.-física)
+	* [Seguridad. Lineabase.0.SUI applicación](#seguridad.-lineabase.0.SUI-applicación)
 
 <div style="page-break-before: always;"></div>
 \newpage
 
 # Descripción de Infraestructura Migración SUI PGN
-## Lineabase.1a.SIU componentes. infraestrcutura
-![Diagram: Lineabase.1a.SIU componentes. infraestrcutura](images/Lineabase.1a.SIUcomponentes.infraestrcutura.png){#fig:Lineabase.1a.SIUcomponentes.infraestrcutura width=}
+## Lineabase.1a.SUI componentes. infraestrcutura
+![Diagram: Lineabase.1a.SUI componentes. infraestrcutura](images/Lineabase.1a.SIUcomponentes.infraestrcutura.png){#fig:Lineabase.1a.SIUcomponentes.infraestrcutura width=}
 
 Dependencias de infraestructura entre los servicios que integran el modelo de aplicación de SUI, Migración. 
 
@@ -54,15 +54,15 @@ Dependencias de infraestructura entre los servicios que integran el modelo de ap
 |**ccccc Proveedores contenidos**|application-service|||
 |**Mensaje: JSON**|data-object|||
 |**Infraestructura SUI**|grouping|Soporte de infraestructura a los componentes del SUI Migración. Servidores y ambientes de cómputo para la ejecución del software base de los componentes misionales del SUI de PGN.<br>||
-|**PGN SIU**|grouping|El objetivo principal de la arquitectura del SUI de la migración es la centralización de los conceptos misionales: concentrar los conceptos misionales en componentes aislados; dejar por fuera de estos componentes misionales todo lo distintos a la misionalidad de la PGN.<br>Los objetivos secundarios de esta arquitectura SUI de la migración son flexibilidad y extensibilidad. Dichos objetivos son independientes. Es decir, estos pueden ser maximizados sin conclifcto entre ellos.<br>||
+|**PGN SUI**|grouping|El objetivo principal de la arquitectura del SUI de la migración es la centralización de los conceptos misionales: concentrar los conceptos misionales en componentes aislados; dejar por fuera de estos componentes misionales todo lo distintos a la misionalidad de la PGN.<br>Los objetivos secundarios de esta arquitectura SUI de la migración son flexibilidad y extensibilidad. Dichos objetivos son independientes. Es decir, estos pueden ser maximizados sin conclifcto entre ellos.<br>||
 |**Servidor BDD App**|node|||
 |**Servidor BDD Config**|node|||
 |**Servidor Lappiz **|node|||
 |**Servidor Web App**|node|||
 |**Servidor Web Canales**|node|Nombre físico<br>IP LAN<br>IP Pública<br>||
 
-## Lineabase.0.SIU applicación. física
-![Diagram: Lineabase.0.SIU applicación. física](images/Lineabase.0.SIUapplicación.física.png){#fig:Lineabase.0.SIUapplicación.física width=}
+## Lineabase.0.SUI applicación. física
+![Diagram: Lineabase.0.SUI applicación. física](images/Lineabase.0.SIUapplicación.física.png){#fig:Lineabase.0.SIUapplicación.física width=}
 
 ## Representación Arquitectónica
 Con una arquitectura orientada a servicios SUI recopila:
@@ -98,8 +98,8 @@ Con una arquitectura orientada a servicios SUI recopila:
 |**Servidor Web Canales**|node|Nombre físico<br>IP LAN<br>IP Pública<br>||
 |**www pgn com**|technology-interface|||
 
-## Seguridad. Lineabase.0.SIU applicación
-![Diagram: Seguridad. Lineabase.0.SIU applicación](images/Seguridad.Lineabase.0.SIUapplicación.png){#fig:Seguridad.Lineabase.0.SIUapplicación width=}
+## Seguridad. Lineabase.0.SUI applicación
+![Diagram: Seguridad. Lineabase.0.SUI applicación](images/Seguridad.Lineabase.0.SIUapplicación.png){#fig:Seguridad.Lineabase.0.SIUapplicación width=}
 
 ## Representación Arquitectónica
 Con una arquitectura orientada a servicios SUI recopila:
