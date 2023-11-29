@@ -18,56 +18,78 @@ date: Noviembre, 2023
 
 ------
 
-## Diagrama de Arquitectura de la Solución Propuesta: vista de integración
+
+
+## Línea Base SUI PGN
+:::::::::::::: {.columns}
+::: {.column width="70%"}
+![Vista. Lineabase.0.SUI Aplicación](images/Lineabase.0.SUIAplicación.png){#fig:Lineabase.0.SUIAplicación width=}
+SIUContextoMódulos width=}
+:::
+::: {.column width="30%"}
+### Representación Arquitectura
+Con una arquitectura orientada a servicios $APLICATIVO recopila:
+
+1. Runtime: Es el servicio que interactúa con el usuario final (GUI) elaborado en Angular 11
+1. API Tx: Servicio api rest base node encargado de realizar las transacciones básicas CRUD
+1. API Config / Seguridad. Servicio Web API .Net Framework encargado de gestionar características con la autenticación y configuración
+:::
+::::::::::::::
+
+
+## Diagrama de Arquitectura de la Solución Propuesta
 :::::::::::::: {.columns}
 ::: {.column width="70%"}
 ![Vista. Migracion.1a.b.SUI Contexto Módulos](images/Migracion.1a.b.SIUContextoMódulos.png){#fig:Migracion.1a.b.SIUContextoMódulos width=}
 :::
 ::: {.column width="30%"}
+### Vista de Integración
 La vista presenta en contexto a los módulos SUI migrados e indica los modos de comunicación, sincrónica/asincrónica, que utilizan.
 :::
 ::::::::::::::
 
-## Diagrama de Arquitectura de la solución propuesta: vista física
+## Diagrama de Arquitectura de la Solución Propuesta
 :::::::::::::: {.columns}
 ::: {.column width="70%"}
 ![Vista. Lineabase.0.SUI Aplicación. Física](images/Lineabase.0.SIUAplicación.Física.png){#fig:Lineabase.0.SIUAplicación.Física width=}
 :::
 ::: {.column width="30%"}
+### Vista Física
 Elementos de infraestructura física (hardware) para la implementación Fase II (presente proyecto) del  Sistema de Información Único, SUI de la PGN
 :::
 ::::::::::::::
 
-## Diagrama de Arquitectura de la Solución Propuesta: motivadores del negocio
+## Diagrama de Arquitectura de la Solución Propuesta
 :::::::::::::: {.columns}
 ::: {.column width="70%"}
 ![Vista. Migracion.1a.a.SUI Contexto Módulo](images/Migracion.1a.a.SIUContextoMódulo.png){#fig:Migracion.1a.a.SIUContextoMódulo width=}
 :::
 ::: {.column width="30%"}
+### Motivadores de Negocio
 Módulos y submódulos del Sistema Único de Información (SUI) de la PGN. Todos los sistemas de información del SUI separan a los componentes misionales de los utilitarios.
 :::
 ::::::::::::::
 
 
-## Diagrama de Arquitectura de la Solución Propuesta: interoperabilidad
+## Diagrama de Arquitectura de la Solución Propuesta
 :::::::::::::: {.columns}
 ::: {.column width="70%"}
 ![Vista. Migracion.1c.SUI Módulos Colaboración](images/Migracion.1c.SIUMódulosColaboración.png){#fig:Migracion.1c.SIUMódulosColaboración width=}
 :::
 ::: {.column width="70%"}
-### Migracion.1c.SUI Módulos Colaboración
+### Interoperabilidad y Colaboración
 Colaboración y comunicación de los componentes internos del SUI mediada por interfaces provistas por el grupo de componentes misionales, PGN SUI: mantener reducido y controlado el número de interfaces.
 :::
 ::::::::::::::
 
 
-## Diagrama de Arquitectura de la Solución Propuesta: gestión de autenticación, usuarios y roles
+## Diagrama de Arquitectura de la Solución Propuesta
 :::::::::::::: {.columns}
 ::: {.column width="70%"}
 ![Vista. Seguridad.2. Lineabase.0.SUI Aplicación](images/Seguridad.2.Lineabase.0.SIUAplicación.png){#fig:Seguridad.2.Lineabase.0.SIUAplicación width=}
 :::
 ::: {.column width="70%"}
-### Lineabase.0.SUI Aplicación
+### Gestión de Autenticación Usuarios y Roles
 Métodos de Seguridad del SUI Migrado
 
 * Control de acceso y autorización basado en roles (RBAC)
@@ -83,7 +105,7 @@ Métodos de Seguridad del SUI Migrado
 ![Vista. Migracion.1b.1. SUI Módulos Componentes](images/Migracion.1b.1.SIUMódulosComponentes.png){#fig:Migracion.1b.1.SIUMódulosComponentes width=}
 :::
 ::: {.column width="70%"}
-### Migracion.1b.1. SUI Módulos Componentes
+### SUI Componentes de Módulos
 Componentes internos de los submódulos del sistema único de información migrado, SUI de PGN. Organización interna de los servicios y paquetes que integran cada submódulo del SUI. Todos los sistemas de información del SUI siguen esta directiva: estarán constituidos por submódulos dispuestos en relación de utilitarios (que sirven) a los componentes misionales del SUI, ubicados en el centro en el diagrama.
 :::
 ::::::::::::::
@@ -95,7 +117,7 @@ Componentes internos de los submódulos del sistema único de información migra
 ![Vista. Migracion.1b.3. SUI Módulos Clases](images/Migracion.1b.3.SIUMódulosClases.png){#fig:Migracion.1b.3.SIUMódulosClases width=}
 :::
 ::: {.column width="70%"}
-### Migracion.1b.3. SUI Módulos Clases
+### SUI Estructura de Clases
 * El diseño actual antepone un servicio como punto de acceso a un caso de uso, de tal forma que este se encarga únicamente (por responsabilidad) de coordinar las entradas y las salidas del caso de uso
 * El modelo propicia la separación de la lógica de aplicación y la lógica de negocio. En este diseño, la primera está encapsulada en el Caso de Uso ejecutable (en el diagrama), mientras que la lógica de negocio lo está en una función de negocio.
 :::
@@ -109,7 +131,7 @@ Componentes internos de los submódulos del sistema único de información migra
 ![Vista. Migracion.4. CI](images/Migracion.4.CI.png){#fig:Migracion.4.CI width=}
 :::
 ::: {.column width="70%"}
-### Migracion.4. CI
+### Integración Continua
 Las cadenas están separadas por tecnologías y plataformas distintas; son independientes y no presentan interbloqueos en cuanto a su ejecución. Pero, requieren administración integral.
 :::
 ::::::::::::::
@@ -121,13 +143,11 @@ Las cadenas están separadas por tecnologías y plataformas distintas; son indep
 ![Vista. Migracion.5. Licenciamiento](images/Migracion.5.Licenciamiento.png){#fig:Migracion.5.Licenciamiento width=}
 :::
 ::: {.column width="70%"}
-### Migracion.5. Licenciamiento
+### Aprovisionamiento de Licencias
 Los elementos resaltados de la vista actual requieren modelos de  licenciamiento variado, bien sea por usuario, núcleo, despliegue (instalación), o renta por consumo.
 :::
 ::::::::::::::
-
-
-## Entregables de # Arquitectura de Información (Datos)
+## Entregables de Arquitectura de Información (Datos)
 * Diagrama Modelo de Datos Conceptual
 * Diagrama Modelo de Datos Físico (diagramas entidad-relación)
 * Diagrama Modelo de Datos Lógico

@@ -91,11 +91,31 @@ Despliegues de Capas</li>
 <li>Documento de Relación de Tecnologías y Licenciamiento</li>
 </ul>
 </section>
-<section
-id="diagrama-de-arquitectura-de-la-solución-propuesta-vista-de-integración"
+<section id="línea-base-sui-pgn" class="slide level2">
+<h2>Línea Base SUI PGN</h2>
+<div class="columns">
+<div class="column" style="width:70%;">
+<p><img data-src="images/Lineabase.0.SUIAplicación.png"
+id="fig:Lineabase.0.SUIAplicación"
+alt="Vista. Lineabase.0.SUI Aplicación" /> SIUContextoMódulos
+width=}</p>
+</div><div class="column" style="width:30%;">
+<h3 id="representación-arquitectura">Representación Arquitectura</h3>
+<p>Con una arquitectura orientada a servicios $APLICATIVO recopila:</p>
+<ol type="1">
+<li>Runtime: Es el servicio que interactúa con el usuario final (GUI)
+elaborado en Angular 11</li>
+<li>API Tx: Servicio api rest base node encargado de realizar las
+transacciones básicas CRUD</li>
+<li>API Config / Seguridad. Servicio Web API .Net Framework encargado de
+gestionar características con la autenticación y configuración</li>
+</ol>
+</div>
+</div>
+</section>
+<section id="diagrama-de-arquitectura-de-la-solución-propuesta"
 class="slide level2">
-<h2>Diagrama de Arquitectura de la Solución Propuesta: vista de
-integración</h2>
+<h2>Diagrama de Arquitectura de la Solución Propuesta</h2>
 <div class="columns">
 <div class="column" style="width:70%;">
 <figure>
@@ -106,15 +126,15 @@ alt="Vista. Migracion.1a.b.SUI Contexto Módulos" />
 Módulos</figcaption>
 </figure>
 </div><div class="column" style="width:30%;">
+<h3 id="vista-de-integración">Vista de Integración</h3>
 <p>La vista presenta en contexto a los módulos SUI migrados e indica los
 modos de comunicación, sincrónica/asincrónica, que utilizan.</p>
 </div>
 </div>
 </section>
-<section
-id="diagrama-de-arquitectura-de-la-solución-propuesta-vista-física"
+<section id="diagrama-de-arquitectura-de-la-solución-propuesta-1"
 class="slide level2">
-<h2>Diagrama de Arquitectura de la solución propuesta: vista física</h2>
+<h2>Diagrama de Arquitectura de la Solución Propuesta</h2>
 <div class="columns">
 <div class="column" style="width:70%;">
 <figure>
@@ -125,17 +145,16 @@ alt="Vista. Lineabase.0.SUI Aplicación. Física" />
 Física</figcaption>
 </figure>
 </div><div class="column" style="width:30%;">
+<h3 id="vista-física">Vista Física</h3>
 <p>Elementos de infraestructura física (hardware) para la implementación
 Fase II (presente proyecto) del Sistema de Información Único, SUI de la
 PGN</p>
 </div>
 </div>
 </section>
-<section
-id="diagrama-de-arquitectura-de-la-solución-propuesta-motivadores-del-negocio"
+<section id="diagrama-de-arquitectura-de-la-solución-propuesta-2"
 class="slide level2">
-<h2>Diagrama de Arquitectura de la Solución Propuesta: motivadores del
-negocio</h2>
+<h2>Diagrama de Arquitectura de la Solución Propuesta</h2>
 <div class="columns">
 <div class="column" style="width:70%;">
 <figure>
@@ -146,17 +165,16 @@ alt="Vista. Migracion.1a.a.SUI Contexto Módulo" />
 Módulo</figcaption>
 </figure>
 </div><div class="column" style="width:30%;">
+<h3 id="motivadores-de-negocio">Motivadores de Negocio</h3>
 <p>Módulos y submódulos del Sistema Único de Información (SUI) de la
 PGN. Todos los sistemas de información del SUI separan a los componentes
 misionales de los utilitarios.</p>
 </div>
 </div>
 </section>
-<section
-id="diagrama-de-arquitectura-de-la-solución-propuesta-interoperabilidad"
+<section id="diagrama-de-arquitectura-de-la-solución-propuesta-3"
 class="slide level2">
-<h2>Diagrama de Arquitectura de la Solución Propuesta:
-interoperabilidad</h2>
+<h2>Diagrama de Arquitectura de la Solución Propuesta</h2>
 <div class="columns">
 <div class="column" style="width:70%;">
 <figure>
@@ -167,7 +185,7 @@ alt="Vista. Migracion.1c.SUI Módulos Colaboración" />
 Colaboración</figcaption>
 </figure>
 </div><div class="column" style="width:70%;">
-<h3 id="migracion.1c.sui-módulos-colaboración">Migracion.1c.SUI Módulos
+<h3 id="interoperabilidad-y-colaboración">Interoperabilidad y
 Colaboración</h3>
 <p>Colaboración y comunicación de los componentes internos del SUI
 mediada por interfaces provistas por el grupo de componentes misionales,
@@ -175,11 +193,9 @@ PGN SUI: mantener reducido y controlado el número de interfaces.</p>
 </div>
 </div>
 </section>
-<section
-id="diagrama-de-arquitectura-de-la-solución-propuesta-gestión-de-autenticación-usuarios-y-roles"
+<section id="diagrama-de-arquitectura-de-la-solución-propuesta-4"
 class="slide level2">
-<h2>Diagrama de Arquitectura de la Solución Propuesta: gestión de
-autenticación, usuarios y roles</h2>
+<h2>Diagrama de Arquitectura de la Solución Propuesta</h2>
 <div class="columns">
 <div class="column" style="width:70%;">
 <figure>
@@ -190,7 +206,8 @@ alt="Vista. Seguridad.2. Lineabase.0.SUI Aplicación" />
 Aplicación</figcaption>
 </figure>
 </div><div class="column" style="width:70%;">
-<h3 id="lineabase.0.sui-aplicación">Lineabase.0.SUI Aplicación</h3>
+<h3 id="gestión-de-autenticación-usuarios-y-roles">Gestión de
+Autenticación Usuarios y Roles</h3>
 <p>Métodos de Seguridad del SUI Migrado</p>
 <ul>
 <li>Control de acceso y autorización basado en roles (RBAC)</li>
@@ -213,8 +230,7 @@ alt="Vista. Migracion.1b.1. SUI Módulos Componentes" />
 Componentes</figcaption>
 </figure>
 </div><div class="column" style="width:70%;">
-<h3 id="migracion.1b.1.-sui-módulos-componentes">Migracion.1b.1. SUI
-Módulos Componentes</h3>
+<h3 id="sui-componentes-de-módulos">SUI Componentes de Módulos</h3>
 <p>Componentes internos de los submódulos del sistema único de
 información migrado, SUI de PGN. Organización interna de los servicios y
 paquetes que integran cada submódulo del SUI. Todos los sistemas de
@@ -238,8 +254,7 @@ alt="Vista. Migracion.1b.3. SUI Módulos Clases" />
 Clases</figcaption>
 </figure>
 </div><div class="column" style="width:70%;">
-<h3 id="migracion.1b.3.-sui-módulos-clases">Migracion.1b.3. SUI Módulos
-Clases</h3>
+<h3 id="sui-estructura-de-clases">SUI Estructura de Clases</h3>
 <ul>
 <li>El diseño actual antepone un servicio como punto de acceso a un caso
 de uso, de tal forma que este se encarga únicamente (por
@@ -266,7 +281,7 @@ alt="Vista. Migracion.4. CI" />
 <figcaption aria-hidden="true">Vista. Migracion.4. CI</figcaption>
 </figure>
 </div><div class="column" style="width:70%;">
-<h3 id="migracion.4.-ci">Migracion.4. CI</h3>
+<h3 id="integración-continua">Integración Continua</h3>
 <p>Las cadenas están separadas por tecnologías y plataformas distintas;
 son independientes y no presentan interbloqueos en cuanto a su
 ejecución. Pero, requieren administración integral.</p>
@@ -286,7 +301,8 @@ alt="Vista. Migracion.5. Licenciamiento" />
 Licenciamiento</figcaption>
 </figure>
 </div><div class="column" style="width:70%;">
-<h3 id="migracion.5.-licenciamiento">Migracion.5. Licenciamiento</h3>
+<h3 id="aprovisionamiento-de-licencias">Aprovisionamiento de
+Licencias</h3>
 <p>Los elementos resaltados de la vista actual requieren modelos de
 licenciamiento variado, bien sea por usuario, núcleo, despliegue
 (instalación), o renta por consumo.</p>
@@ -295,7 +311,7 @@ licenciamiento variado, bien sea por usuario, núcleo, despliegue
 </section>
 <section id="entregables-de-arquitectura-de-información-datos"
 class="slide level2">
-<h2>Entregables de # Arquitectura de Información (Datos)</h2>
+<h2>Entregables de Arquitectura de Información (Datos)</h2>
 <ul>
 <li>Diagrama Modelo de Datos Conceptual</li>
 <li>Diagrama Modelo de Datos Físico (diagramas entidad-relación)</li>
