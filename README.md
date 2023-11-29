@@ -1,7 +1,7 @@
 # Directorio de salida de documentación técnica
 
 The [`gh-pages`](https://github.com/hwong23/pgn-078/tree/gh-pages) branch hosts the contents of this directory at <https://hwong23.github.io/pgn-078/>.
-The permalink for this webpage version is <https://hwong23.github.io/pgn-078/v/2367e9db0c8639a41254554e90c77a7b5c7ec5b0/>.
+The permalink for this webpage version is <https://hwong23.github.io/pgn-078/v/aab09dea8e766a43f7f364dff88522d857d8a3fa/>.
 To redirect to the permalink for the latest manuscript version at anytime, use the link <https://hwong23.github.io/pgn-078/v/freeze/>.
 
 ## Listado
@@ -21,16 +21,16 @@ In general, a version is identified by the commit hash of the source content tha
 |----------------|----------------------------|
 | Palabras clave | SUI, Softgic, PGN, Análisis de brecha, GAP, Comparativa |
 | **Versión**    |                            |
+| 1.aab09de | 2023-11-29. pptx8 |
+| 1.4a5b0d1 | 2023-11-29. pptx7 |
+| 1.be42976 | 2023-11-29. pptx6 |
+| 1.e02cfb7 | 2023-11-29. pptx5 |
 | 1.2367e9d | 2023-11-29. pptx4 |
 | 1.94d1e83 | 2023-11-29. pptx3 |
 | 1.d30df92 | 2023-11-29. pptx2 |
 | 1.2a6090d | 2023-11-29. pptx |
 | 1.ee098b0 | 2023-11-29. doc SUI* |
 | 1.5662116 | 2023-11-29. doc SUI* |
-| 1.c13af5e | 2023-11-29. SUI* |
-| 1.3abe7d3 | 2023-11-28. doc--nov |
-| 1.31a7e7a | 2023-11-28. doc--nov |
-| 1.21c6da3 | 2023-11-28. doc--nov |
 
 
 
@@ -39,4 +39,4 @@ Verifying timestamps with the `ots verify` command requires running a local bitc
 ## Source
 
 The manuscripts in this directory were built from
-[`2367e9db0c8639a41254554e90c77a7b5c7ec5b0`](https://github.com/hwong23/pgn-078/commit/2367e9db0c8639a41254554e90c77a7b5c7ec5b0).
+[`aab09dea8e766a43f7f364dff88522d857d8a3fa`](https://github.com/hwong23/pgn-078/commit/aab09dea8e766a43f7f364dff88522d857d8a3fa).
