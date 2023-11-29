@@ -5,7 +5,7 @@ keywords:
 - gobierno
 - PGN
 lang: en-US
-date-meta: '2023-11-28'
+date-meta: '2023-11-29'
 author-meta:
 - Harry Wong, ing.
 header-includes: |
@@ -15,11 +15,11 @@ header-includes: |
   -->
   <meta name="dc.format" content="text/html" />
   <meta property="og:type" content="article" />
-  <meta name="dc.date" content="2023-11-28" />
-  <meta name="citation_publication_date" content="2023-11-28" />
-  <meta property="article:published_time" content="2023-11-28" />
-  <meta name="dc.modified" content="2023-11-28T14:18:15+00:00" />
-  <meta property="article:modified_time" content="2023-11-28T14:18:15+00:00" />
+  <meta name="dc.date" content="2023-11-29" />
+  <meta name="citation_publication_date" content="2023-11-29" />
+  <meta property="article:published_time" content="2023-11-29" />
+  <meta name="dc.modified" content="2023-11-29T17:06:59+00:00" />
+  <meta property="article:modified_time" content="2023-11-29T17:06:59+00:00" />
   <meta name="dc.language" content="en-US" />
   <meta name="citation_language" content="en-US" />
   <meta name="dc.relation.ispartof" content="Manubot" />
@@ -34,9 +34,9 @@ header-includes: |
   <meta name="citation_fulltext_html_url" content="https://hwong23.github.io/pgn-078/" />
   <meta name="citation_pdf_url" content="https://hwong23.github.io/pgn-078/manuscript.pdf" />
   <link rel="alternate" type="application/pdf" href="https://hwong23.github.io/pgn-078/manuscript.pdf" />
-  <link rel="alternate" type="text/html" href="https://hwong23.github.io/pgn-078/v/3abe7d3770ba8966f287848e7ab3024bc8e6e015/" />
-  <meta name="manubot_html_url_versioned" content="https://hwong23.github.io/pgn-078/v/3abe7d3770ba8966f287848e7ab3024bc8e6e015/" />
-  <meta name="manubot_pdf_url_versioned" content="https://hwong23.github.io/pgn-078/v/3abe7d3770ba8966f287848e7ab3024bc8e6e015/manuscript.pdf" />
+  <link rel="alternate" type="text/html" href="https://hwong23.github.io/pgn-078/v/c13af5ec957f89532cc0783b8a79c4ad932b429f/" />
+  <meta name="manubot_html_url_versioned" content="https://hwong23.github.io/pgn-078/v/c13af5ec957f89532cc0783b8a79c4ad932b429f/" />
+  <meta name="manubot_pdf_url_versioned" content="https://hwong23.github.io/pgn-078/v/c13af5ec957f89532cc0783b8a79c4ad932b429f/manuscript.pdf" />
   <meta property="og:type" content="article" />
   <meta property="twitter:card" content="summary_large_image" />
   <link rel="icon" type="image/png" sizes="192x192" href="https://manubot.org/favicon-192x192.png" />
@@ -77,7 +77,7 @@ tablenos-caption-name: Tabla
 
 <br>
 
-| **Versión** del producto 1.3abe7d3 de 28 Nov 2023
+| **Versión** del producto 1.c13af5e de 29 Nov 2023
 
 | **Presentado a**
 
@@ -87,7 +87,7 @@ tablenos-caption-name: Tabla
 
 | **Fecha**
 
-| 28 Nov 2023
+| 29 Nov 2023
 
 
 <div style="page-break-before: always;"></div>
@@ -95,10 +95,10 @@ tablenos-caption-name: Tabla
 
 
 <small><em>Los productos de esta etapa, Migración Funcional SIU, Contrato 078-2023, 
-([Web](https://hwong23.github.io/pgn-078/v/3abe7d3770ba8966f287848e7ab3024bc8e6e015/))
+([Web](https://hwong23.github.io/pgn-078/v/c13af5ec957f89532cc0783b8a79c4ad932b429f/))
 están basados en el resultado de la Fase 1 del proyecto PGN SIU del 2022,
-[SharePoint Softgic@3abe7d3](http://softgic.sharepoint.com)
-del November 28, 2023.
+[SharePoint Softgic@c13af5e](http://softgic.sharepoint.com)
+del November 29, 2023.
 </em></small>
 
 
@@ -144,6 +144,7 @@ Descripción de los productos del trabajo de arquitectura de la Fase 2, proyecto
 | Autor          |                            |
 | Fuente         |                            |
 | **Versión**    |                            |
+| 1.c13af5e | 2023-11-29. SUI* |
 | 1.3abe7d3 | 2023-11-28. doc--nov |
 | 1.31a7e7a | 2023-11-28. doc--nov |
 | 1.21c6da3 | 2023-11-28. doc--nov |
@@ -153,7 +154,6 @@ Descripción de los productos del trabajo de arquitectura de la Fase 2, proyecto
 | 1.14cba32 | 2023-11-23. upd pptx |
 | 1.0f56322 | 2023-11-23. upd |
 | 1.0ca59db | 2023-11-21. upd |
-| 1.126957b | 2023-11-23. Merge branch 'main' of https://github.com/hwong23/pgn-078 |
 | Vínculos       | [N003a Vista Segmento PGN SIU](N03a%a20Vsta%20aSegenta%20SOA%20PGN.md) |
 
 <br>
@@ -267,23 +267,24 @@ Table: Requisito no. 3, Migración SUI, Flexibilidad. {#tbl:requisito3-id}
 
 # Arquitectura de Software
 * [Diagrama de Arquitectura de la Solución Propuesta: vista de integración](#diagrama-de-arquitectura-de-la-solución-propuesta:-vista-de-integración)
-	* [Migracion.1a.b.SIU Contexto Módulos](#migracion.1a.b.siu-contexto-módulos)
-	* [Migracion.1a.a.SIU Contexto Módulo](#migracion.1a.a.siu-contexto-módulo)
+	* [Migracion.1a.b.SUI Contexto Módulos](#migracion.1a.b.sui-contexto-módulos)
+	* [Migracion.1a.a.SUI Contexto Módulo](#migracion.1a.a.sui-contexto-módulo)
 * [Diagrama de Arquitectura de la solución propuesta: vista física](#diagrama-de-arquitectura-de-la-solución-propuesta:-vista-física)
-	* [Lineabase.0.SIU Aplicación. Física](#lineabase.0.siu-aplicación.-física)
+	* [Lineabase.0.SUI Aplicación. Física](#lineabase.0.sui-aplicación.-física)
 * [Diagrama de Arquitectura de la Solución Propuesta: motivadores del negocio](#diagrama-de-arquitectura-de-la-solución-propuesta:-motivadores-del-negocio)
-	* [Migracion.1a.a.SIU Contexto Módulo](#migracion.1a.a.siu-contexto-módulo)
+	* [Migracion.1a.a.SUI Contexto Módulo](#migracion.1a.a.sui-contexto-módulo)
 	* [Riesgos.1. Migración funcional](#riesgos.1.-migración-funcional)
 	* [Riesgos.2. Modelo Riesgo RSG10](#riesgos.2.-modelo-riesgo-rsg10)
 	* [Riesgos.3. Modelo Riesgo RSG11](#riesgos.3.-modelo-riesgo-rsg11)
 * [Diagrama de Arquitectura de la Solución Propuesta: interoperabilidad](#diagrama-de-arquitectura-de-la-solución-propuesta:-interoperabilidad)
-	* [Migracion.1c.SIU Módulos Colaboración](#migracion.1c.siu-módulos-colaboración)
+	* [Migracion.1c.SUI Módulos Colaboración Aplicaciones](#migracion.1c.sui-módulos-colaboración-aplicaciones)
+	* [Migracion.1d.SUI Módulos Colaboración Datos](#migracion.1d.sui-módulos-colaboración-datos)
 * [Diagrama de Arquitectura de la Solución Propuesta: gestión de autenticación, usuarios y roles](#diagrama-de-arquitectura-de-la-solución-propuesta:-gestión-de-autenticación,-usuarios-y-roles)
-	* [Seguridad.2. Lineabase.0.SIU Aplicación](#seguridad.2.-lineabase.0.siu-aplicación)
+	* [Seguridad.2. Lineabase.0.SUI Aplicación](#seguridad.2.-lineabase.0.sui-aplicación)
 * [Diagrama de Clases y Componentes de solución](#diagrama-de-clases-y-componentes-de-solución)
-	* [Migracion.1b.1. SIU Módulos Componentes](#migracion.1b.1.-siu-módulos-componentes)
-	* [Migracion.1b.3. SIU Módulos Clases](#migracion.1b.3.-siu-módulos-clases)
-	* [Migracion.1b.2. SIU Módulos Componentes. Brecha](#migracion.1b.2.-siu-módulos-componentes.-brecha)
+	* [Migracion.1b.1. SUI Módulos Componentes](#migracion.1b.1.-sui-módulos-componentes)
+	* [Migracion.1b.3. SUI Módulos Clases](#migracion.1b.3.-sui-módulos-clases)
+	* [Migracion.1b.2. SUI Módulos Componentes. Brecha](#migracion.1b.2.-sui-módulos-componentes.-brecha)
 * [Diagrama de Arquitectura de Integración Continua, DevOps y Despliegues de Capas](#diagrama-de-arquitectura-de-integración-continua,-devops-y-despliegues-de-capas)
 	* [Migracion.4. CI](#migracion.4.-ci)
 * [Documento de Relación de Tecnologías y Licenciamiento](#documento-de-relación-de-tecnologías-y-licenciamiento)
@@ -291,7 +292,7 @@ Table: Requisito no. 3, Migración SUI, Flexibilidad. {#tbl:requisito3-id}
 * [Módulos Requerimientos de Seguridad](#módulos-requerimientos-de-seguridad)
 	* [Seguridad.3. Autenticación](#seguridad.3.-autenticación)
 	* [Seguridad.4. Autorización](#seguridad.4.-autorización)
-	* [Seguridad.5.DesarrolloSeguro](#seguridad.5.desarrolloseguro)
+	* [Seguridad.5.Desarrollo Seguro](#seguridad.5.desarrollo-seguro)
 	* [Seguridad. 6. Auditoría](#seguridad.-6.-auditoría)
 	* [Seguridad. 7. Owasp](#seguridad.-7.-owasp)
 
@@ -300,8 +301,8 @@ Table: Requisito no. 3, Migración SUI, Flexibilidad. {#tbl:requisito3-id}
 \newpage
 
 # Diagrama de Arquitectura de la Solución Propuesta: vista de integración
-## Migracion.1a.b.SIU Contexto Módulos
-![Vista. Migracion.1a.b.SIU Contexto Módulos](images/Migracion.1a.b.SIUContextoMódulos.png){#fig:Migracion.1a.b.SIUContextoMódulos width=}
+## Migracion.1a.b.SUI Contexto Módulos
+![Vista. Migracion.1a.b.SUI Contexto Módulos](images/Migracion.1a.b.SUIContextoMódulos.png){#fig:Migracion.1a.b.SUIContextoMódulos width=}
 
 La vista presenta en contexto a los módulos SUI migrados y el estilo de comunicación vía API sincrónica/asincrónica (en verde en la imagen).
 
@@ -346,8 +347,8 @@ La coordinación de transacciones es realizada por la colaboración de las otras
 
 <br>
 
-## Migracion.1a.a.SIU Contexto Módulo
-![Vista. Migracion.1a.a.SIU Contexto Módulo](images/Migracion.1a.a.SIUContextoMódulo.png){#fig:Migracion.1a.a.SIUContextoMódulo width=}
+## Migracion.1a.a.SUI Contexto Módulo
+![Vista. Migracion.1a.a.SUI Contexto Módulo](images/Migracion.1a.a.SUIContextoMódulo.png){#fig:Migracion.1a.a.SUIContextoMódulo width=}
 
 Identificación de submódulos del Sistema Único de Información (SUI) de la PGN. 
 
@@ -401,8 +402,8 @@ La disposición de los módulos y submódulos presentada, denominada SUI Migraci
 \newpage
 
 # Diagrama de Arquitectura de la solución propuesta: vista física
-## Lineabase.0.SIU Aplicación. Física
-![Vista. Lineabase.0.SIU Aplicación. Física](images/Lineabase.0.SIUAplicación.Física.png){#fig:Lineabase.0.SIUAplicación.Física width=}
+## Lineabase.0.SUI Aplicación. Física
+![Vista. Lineabase.0.SUI Aplicación. Física](images/Lineabase.0.SUIAplicación.Física.png){#fig:Lineabase.0.SUIAplicación.Física width=}
 
 Procuraduría General de la Nación (PGN), módulo SIU migrado, 2023. Elementos físicos que soportan a la aplicación Sistema de Información Único (SIU en adelante) de la PGN, actual Fase I y existente en Fase II. Presentación de componentes de software y tecnología física (hardware) implementados en la Fase I y requeridos por Fase II (presente proyecto).
 
@@ -445,8 +446,8 @@ Con una arquitectura orientada a servicios SUI recopila:
 \newpage
 
 # Diagrama de Arquitectura de la Solución Propuesta: motivadores del negocio
-## Migracion.1a.a.SIU Contexto Módulo
-![Vista. Migracion.1a.a.SIU Contexto Módulo](images/Migracion.1a.a.SIUContextoMódulo.png){#fig:Migracion.1a.a.SIUContextoMódulo width=}
+## Migracion.1a.a.SUI Contexto Módulo
+![Vista. Migracion.1a.a.SUI Contexto Módulo](images/Migracion.1a.a.SUIContextoMódulo.png){#fig:Migracion.1a.a.SUIContextoMódulo width=}
 
 Identificación de submódulos del Sistema Único de Información (SUI) de la PGN. 
 
@@ -534,7 +535,7 @@ Riesgos de la migración funcional:
 |**RSG1. Estrategia CMS central**|constraint|Establecer desde el principio el gestor de contenidos compartido que los módulos del SUI migrados van a usar.<br>||
 |**RSG10. Validación decisiones de arquitectura**|constraint|Discutir la arquitectura de referencia de SUI Migración PGN. La arquitectura de referencia SUI informa de todas las fortalezas y consideraciones estructurales y de sistema, como extensibilidad, rendimiento y seguridad, que regirán a todos los módulos del SUI migrado.<br>||
 |**RSG11. Estrategias de Migración de datos**|constraint|Discutir el alcance y los recursos para la correcta migración de datos incluidas en contrato 078, Migración Funcional SIU en atención al numeral 5.6 del anexo técnico del proyecto.<br>| 5.6 MIGRACIÓN DE DATOS<br>| Dentro del alcance de las actividades a desarrollar, el proveedor debe generar los mecanismos adecuados para hacer migración de la información que se encuentre en los sistemas actuales y que, por evolución de este, tenga datos relevantes que deban ser migrados a los ambientes y/o sistemas de información productos de la fábrica.<br>|<br>| Para este servicio el proveedor debe disponer del personal idóneo y las herramientas necesarias para hacer efectiva las actividades de migración de datos, utilizando las mejores prácticas de Extracción-Transformación-Carga (ETL) y protocolos de control de versiones robustos. Esta labor debe ser coordinada con las personas de la entidad que sean designadas por la Oficina de Tecnología, Innovación y Transformación Digital.<br>||
-|**RSG12. Arquitectura de almacenamiento y distribución de datos SIU**|constraint|Definir la opción de organización y distribución de los almacenes de datos del SIU. <br>opc1. Dispositivo físico/virtual (nodo, servidor, y esquema de base de datos) único, central, a todos los módulos del SIU.<br>opc2. Dispositivos virtuales autónomos por dominio de negocio: relatoría, inventario, información estratégica, intercomunicados.<br>||
+|**RSG12. Arquitectura de almacenamiento y distribución de datos SUI**|constraint|Definir la opción de organización y distribución de los almacenes de datos del SIU. <br>opc1. Dispositivo físico/virtual (nodo, servidor, y esquema de base de datos) único, central, a todos los módulos del SIU.<br>opc2. Dispositivos virtuales autónomos por dominio de negocio: relatoría, inventario, información estratégica, intercomunicados.<br>||
 |**RSG13. Sistema de autenticación híbrido**|constraint|Definir la estrategia de autenticación del SIU migrado (aplicable a todos los módulos del SIU migrado).<br>opc1. Híbrida: integrado, directorio empresarial (LDAP), y servicios de autenticación de confianza: Office 365 de PGN.<br>opc2. Servicio de autenticación de confianza: Office 365 de PGN.<br>||
 |**RSG2. Motor de búsqueda compartido**|constraint|Establecer desde el principio el motor de búsqueda de contenidos compartido para los módulos del SUI migrados.<br>||
 |**RSG3. Estratego como BI**|constraint|Definir la arquitectura de Estratego migrado: puede ser una solución de BI simple, o puede ser una aplicación web tradicional.<br>||
@@ -612,8 +613,8 @@ Table: Valoración del riesgo RSG10. Validación decisiones de arquitectura. Mig
 \newpage
 
 # Diagrama de Arquitectura de la Solución Propuesta: interoperabilidad
-## Migracion.1c.SIU Módulos Colaboración
-![Vista. Migracion.1c.SIU Módulos Colaboración](images/Migracion.1c.SIUMódulosColaboración.png){#fig:Migracion.1c.SIUMódulosColaboración width=}
+## Migracion.1c.SUI Módulos Colaboración Aplicaciones
+![Vista. Migracion.1c.SUI Módulos Colaboración Aplicaciones](images/Migracion.1c.SUIMódulosColaboraciónAplicaciones.png){#fig:Migracion.1c.SUIMódulosColaboraciónAplicaciones width=}
 
 Patrón de Distribución y Colaboración estándar para el SUI.
 
@@ -638,12 +639,62 @@ Los únicos elementos para la comunicación (e integración) son los indicados e
 
 <br>
 
+## Migracion.1d.SUI Módulos Colaboración Datos
+![Vista. Migracion.1d.SUI Módulos Colaboración Datos](images/Migracion.1d.SUIMódulosColaboraciónDatos.png){#fig:Migracion.1d.SUIMódulosColaboraciónDatos width=5.32in}
+
+Modelo de acceso a datos de negocio del SIM. 
+
+La imagen siguiente presenta la organización de los ítems de transporte de datos de negocio necesarios para que los módulos del SUI puedan recolectar, procesar, integrar y almacenarlo de forma organizada y escalable.
+
+Mediante esta organización, los datos de negocio son transportados desde sus respectivas fuentes mediante interfaces (principio de extensión y mantenibilidad referidos en las restricciones de la arquitecura del SUI Migrado). Los datos externos, entendidos como los de otros proveedores, son obtenidos mediante un intermediario: una API externa (_reverse proxy_).
+
+Consideramos tres tipos datos: datos transaccionales, históricos y externos, y presentamos una manera distinta de tratarlos y transportarlos.
+
+
+### Catálogo de Elementos
+| Nombre| Tipo| Descripción| Prop.
+|:--------|:--------|:--------|:--------|
+|**cc:PGN SUI (módulo central)**|application-collaboration|Módulo central SUI migrado. Módulo independiente y asignado a un dominio particular de la PGN.<br>||
+|**cc:PGN SUI (módulo central)**|application-collaboration|Módulo central SUI migrado. Módulo independiente y asignado a un dominio particular de la PGN.<br>||
+|**cc:PGN SUI (módulo central) 2**|application-collaboration|Módulo central SUI migrado. Módulo independiente y asignado a un dominio particular de la PGN.<br>||
+|**cc:PGN SUI (módulo central) 2**|application-collaboration|Módulo central SUI migrado. Módulo independiente y asignado a un dominio particular de la PGN.<br>||
+|**cc:PGN SUI (módulo central) 3**|application-collaboration|Módulo central SUI migrado. Módulo independiente y asignado a un dominio particular de la PGN.<br>||
+|**cc:PGN SUI (módulo central) 3**|application-collaboration|Módulo central SUI migrado. Módulo independiente y asignado a un dominio particular de la PGN.<br>||
+|**cc:PGN SUI (módulo central) N**|application-collaboration|Módulo central SUI migrado. Módulo independiente y asignado a un dominio particular de la PGN.<br>||
+|**cc:PGN SUI (módulo central) N**|application-collaboration|Módulo central SUI migrado. Módulo independiente y asignado a un dominio particular de la PGN.<br>||
+|**API SUI**|application-interface|API de representación del módulo. Centralización de la comunicación con otros módulos del SUI migrado.<br>||
+|**API SUI**|application-interface|API de representación del módulo. Centralización de la comunicación con otros módulos del SUI migrado.<br>||
+|**API SUI 2**|application-interface|API de representación del módulo. Centralización de la comunicación con otros módulos del SUI migrado.<br>||
+|**API SUI 2**|application-interface|API de representación del módulo. Centralización de la comunicación con otros módulos del SUI migrado.<br>||
+|**API SUI 3**|application-interface|API de representación del módulo. Centralización de la comunicación con otros módulos del SUI migrado.<br>||
+|**API SUI 3**|application-interface|API de representación del módulo. Centralización de la comunicación con otros módulos del SUI migrado.<br>||
+|**API SUI N**|application-interface|API de representación del módulo. Centralización de la comunicación con otros módulos del SUI migrado.<br>||
+|**API SUI N**|application-interface|API de representación del módulo. Centralización de la comunicación con otros módulos del SUI migrado.<br>||
+|**interfaz**|application-interface|||
+|**interfaz**|application-interface|||
+|**interfaz**|application-interface|||
+|**interfaz**|application-interface|||
+|**interfaz**|application-interface|||
+|**interfaz**|application-interface|||
+|**Communication Network (LAN)**|communication-network|||
+|**Communication Network (LAN)**|communication-network|||
+|**Grouping**|grouping|||
+|**Grouping**|grouping|||
+|**Servidor BDD App**|node|Sistema Operativo Windows Server 2019 Standard o Datacenter x64. RAM	8 GB. CPU 64 Bits, 4 Cores > 2 Ghz. Discos SO C: 126 GB, Backup E: 511 GB, SQL Data F: 510 GB, SQL Log   G: 510 GB, TempDB  G: 63.6 GB.<br>||
+|**Servidor BDD App**|node|Sistema Operativo Windows Server 2019 Standard o Datacenter x64. RAM	8 GB. CPU 64 Bits, 4 Cores > 2 Ghz. Discos SO C: 126 GB, Backup E: 511 GB, SQL Data F: 510 GB, SQL Log   G: 510 GB, TempDB  G: 63.6 GB.<br>||
+|**Servidor BDD App 2**|node|Sistema Operativo Windows Server 2019 Standard o Datacenter x64. RAM	8 GB. CPU 64 Bits, 4 Cores > 2 Ghz<br>Discos	SO C: 126 GB, Backup E: 511 GB, SQL Data F: 510 GB, SQL Log   G: 510 GB, TempDB  G: 63.6 GB.<br>||
+|**Servidor BDD App 3**|node|Sistema Operativo Windows Server 2019 Standard o Datacenter x64. RAM	8 GB. CPU 64 Bits, 4 Cores > 2 Ghz<br>Discos	SO C: 126 GB, Backup E: 511 GB, SQL Data F: 510 GB, SQL Log   G: 510 GB, TempDB  G: 63.6 GB.<br>||
+|**Servidor BDD App 4**|node|Sistema Operativo Windows Server 2019 Standard o Datacenter x64. RAM	8 GB. CPU 64 Bits, 4 Cores > 2 Ghz<br>Discos	SO C: 126 GB, Backup E: 511 GB, SQL Data F: 510 GB, SQL Log   G: 510 GB, TempDB  G: 63.6 GB.<br>||
+|**Servidor BDD Config**|node|Sistema Operativo Windows Server 2019 Standard o Datacenter x64. RAM	8 GB. CPU 64 Bits, 4 Cores > 2 Ghz. Discos SO C: 80 GB, Backup E: 250 GB, SQL Data F: 250 GB, SQL Log G: 250 GB, TempDB  G: 30 GB.<br>||
+
+<br>
+
 <div style="page-break-before: always;"></div>
 \newpage
 
 # Diagrama de Arquitectura de la Solución Propuesta: gestión de autenticación, usuarios y roles
-## Seguridad.2. Lineabase.0.SIU Aplicación
-![Vista. Seguridad.2. Lineabase.0.SIU Aplicación](images/Seguridad.2.Lineabase.0.SIUAplicación.png){#fig:Seguridad.2.Lineabase.0.SIUAplicación width=}
+## Seguridad.2. Lineabase.0.SUI Aplicación
+![Vista. Seguridad.2. Lineabase.0.SUI Aplicación](images/Seguridad.2.Lineabase.0.SUIAplicación.png){#fig:Seguridad.2.Lineabase.0.SUIAplicación width=}
 
 ## Metodología Seguridad SIU Migrado
 Los mecanismos de autorización para el acceso a los sistemas de información de la Procuraduría General de la Nación describen la forma de cómo se restringe el acceso a los diferentes módulos Misionales (SIM), Registros de Inhabilidades (SIRI), Nómina, Control Interno y relatoría, entre otros, y que se considera un mecanismo de protección que ayuda a reaccionar ante cualquier operación no autorizada. 
@@ -771,8 +822,8 @@ Con una arquitectura orientada a servicios SUI recopila:
 \newpage
 
 # Diagrama de Clases y Componentes de solución
-## Migracion.1b.1. SIU Módulos Componentes
-![Vista. Migracion.1b.1. SIU Módulos Componentes](images/Migracion.1b.1.SIUMódulosComponentes.png){#fig:Migracion.1b.1.SIUMódulosComponentes width=}
+## Migracion.1b.1. SUI Módulos Componentes
+![Vista. Migracion.1b.1. SUI Módulos Componentes](images/Migracion.1b.1.SUIMódulosComponentes.png){#fig:Migracion.1b.1.SUIMódulosComponentes width=}
 
 Presentación de los componentes internos de los submódulos del sistema único de información migrado, SUI de PGN. Organización interna de los servicios y paquetes que integran cada submódulo del SUI. Todos los sistemas de información del SUI siguen esta directiva: estarán constituidos por submódulos dispuestos en relación de utilitarios (que sirven) a los componentes misionales del SUI, ubicados en el centro en el diagrama. 
 
@@ -811,7 +862,7 @@ Huella digital SHA1 “8C:48:BD:E2:F5:18:18:C3:85:96:68:44:2E:28:A0:68:08:2F:0A:
 |**CU ejecutable**|application-component||*plataforma:* js<br>|
 |**CU ejecutable (n)**|application-component||*plataforma:* js<br>|
 |**Config**|application-component||*plataforma:* cs<br>|
-|**Configuración reportes**|application-component|Base de datos del servior de reportes del SIU Migrado provisto por plataforma Microsoft SQL Server.<br>||
+|**Configuración reportes**|application-component|Base de datos del servior de reportes del Sistema Único de Información (SUI) provisto por plataforma Microsoft SQL Server.<br>||
 |**Controlador admin**|application-component||*plataforma:* cs<br>|
 |**Controlador frontal mvl**|application-component||*plataforma:* js<br>|
 |**Controlador frontal web**|application-component|-	Verificados los SSL, se recomienda adquirir SSL seguros, con entidades certificadoras. <br>Si se desea continuar con SSL de Let's Encrypt, se recomienda automatizar el proceso de actualización dado que al dejar estos en modo actualización manual es probable el olvido de esta actualización (Estos certificados se deben actualizar trimestralmente y no cuentan con las características de seguridad necesarias. <br>|*plataforma:* js<br>|
@@ -866,12 +917,12 @@ Huella digital SHA1 “8C:48:BD:E2:F5:18:18:C3:85:96:68:44:2E:28:A0:68:08:2F:0A:
 
 <br>
 
-## Migracion.1b.3. SIU Módulos Clases
-![Vista. Migracion.1b.3. SIU Módulos Clases](images/Migracion.1b.3.SIUMódulosClases.png){#fig:Migracion.1b.3.SIUMódulosClases width=}
+## Migracion.1b.3. SUI Módulos Clases
+![Vista. Migracion.1b.3. SUI Módulos Clases](images/Migracion.1b.3.SUIMódulosClases.png){#fig:Migracion.1b.3.SUIMódulosClases width=}
 
 El modelo de negocio del SIU Migrado sigue el patrón de diseño descrito en esta vista.
 
-El diseño actual antepone un servicio como punto de entrada a un caso de uso, de tal forma que este se encarga únicamente (por resposabilidad) de coordinar las entradas y las salidas del caso de uso.
+El diseño actual antepone un servicio como punto de acceso a un caso de uso, de tal forma que este se encarga únicamente (por responsabilidad) de coordinar las entradas y las salidas del caso de uso.
 
 El modelo propicia la separación de la lógica de aplicación y la lógica de negocio. En este diseño, la primera está encapsulada en el Caso de Uso ejecutable (en el diagrama), mientras que la lógica de negocio lo está en una función de negocio.
 
@@ -903,8 +954,8 @@ Los conceptos de negocio están representados por funciones PGN (en el diagrama)
 
 <br>
 
-## Migracion.1b.2. SIU Módulos Componentes. Brecha
-![Vista. Migracion.1b.2. SIU Módulos Componentes. Brecha](images/Migracion.1b.2.SIUMódulosComponentes.Brecha.png){#fig:Migracion.1b.2.SIUMódulosComponentes.Brecha width=}
+## Migracion.1b.2. SUI Módulos Componentes. Brecha
+![Vista. Migracion.1b.2. SUI Módulos Componentes. Brecha](images/Migracion.1b.2.SUIMódulosComponentes.Brecha.png){#fig:Migracion.1b.2.SUIMódulosComponentes.Brecha width=}
 
 Los elementos resaltados indican las extensiones a la arquitectura por concepto de Fase II del proyecto de migración SUI. 
 
@@ -960,7 +1011,7 @@ Todos los sistemas de información del SUI siguen esta directiva: estarán const
 |**Mensaje: JSON**|data-object|||
 |**Administración**|grouping|||
 |**Almacenamiento**|grouping|||
-|**PGN SIU**|grouping|Esta vista presenta y describe los ítems de arquitectura del SUI Migrado que requieren licenciamiento para operar y cumplir con el objetivo principal de la migración que es la centralización de los conceptos misionales: concentrar los conceptos misionales en componentes aislados.<br>Los elementos realtados en verde en el diagrama incurren en una renta, bien sea, o por consumo de cómputo en la nube de Microsoft, o por el costo de una licencia de uso. Por ejemplo, en el caso del servidor de reporte del SUI Migrado, es requerida una licencia de uso Power BI Pro, de pago mensual.<br>||
+|**PGN SUI**|grouping|Esta vista presenta y describe los ítems de arquitectura del SUI Migrado que requieren licenciamiento para operar y cumplir con el objetivo principal de la migración que es la centralización de los conceptos misionales: concentrar los conceptos misionales en componentes aislados.<br>Los elementos realtados en verde en el diagrama incurren en una renta, bien sea, o por consumo de cómputo en la nube de Microsoft, o por el costo de una licencia de uso. Por ejemplo, en el caso del servidor de reporte del SUI Migrado, es requerida una licencia de uso Power BI Pro, de pago mensual.<br>||
 |**Portales**|grouping|Submódulo de portales internos de la PGN a donde llega el SUI. Interfaz web que usa al SUI para llegar a direcciones y subdirecciones de la PGN. La plataforma principal de portales en este contexto es Sharepoint de Microsoft.<br>||
 |**Presentación**|grouping|Submódulo de presentación del SUI. interfaz gráfica, interfaz web visible a los usuarios clientes y funcionarios de la PGN. ||
 |**Servicios de aplicación**|grouping|Submódulo de servicios utilitarios que sirven al SUI. Servicios variados que cumplen roles facilitadores de las actividades misionales del SUI. Ejemplos de estos servicios son los de gestión documental, implementado por Doku en el contexto de PGN.<br>||
@@ -980,7 +1031,7 @@ Todos los sistemas de información del SUI siguen esta directiva: estarán const
 ## Migracion.4. CI
 ![Vista. Migracion.4. CI](images/Migracion.4.CI.png){#fig:Migracion.4.CI width=}
 
-Descripción de las cadenas de integración y despliegue continuo de a) submódulos (aplicaciones web, por ejemplo) del SIU Migrado, 2023; e integración y despliegue continuo de los módulos central del SIU Migrado, 2023.
+Descripción de las cadenas de integración y despliegue continuo de submódulos (aplicaciones web, por ejemplo) del SIU Migrado, 2023; integración y despliegue continuo de los módulos central del SIU Migrado, 2023.
 
 Las cadenas están separadas por tecnologías y plataformas distintas; son independientes y no presentan interbloqueos en cuanto a su ejecución. Pero, requieren administración integral.
 
@@ -1055,7 +1106,7 @@ Los elementos resaltados de la vista actual requieren modelos de  licenciamiento
 |**Proveedores contenidos**|application-service||*brecha:* 100<br>|
 |**Reportería**|application-service|Servicio de diseño, publicación y distribución de reportes del SIU Migrado.<br>|*brecha:* 100<br>|
 |**Mensaje: JSON**|data-object|||
-|**PGN SIU**|grouping|Esta vista presenta y describe los ítems de arquitectura del SUI Migrado que requieren licenciamiento para operar y cumplir con el objetivo principal de la migración que es la centralización de los conceptos misionales: concentrar los conceptos misionales en componentes aislados.<br>Los elementos realtados en verde en el diagrama incurren en una renta, bien sea, o por consumo de cómputo en la nube de Microsoft, o por el costo de una licencia de uso. Por ejemplo, en el caso del servidor de reporte del SUI Migrado, es requerida una licencia de uso Power BI Pro, de pago mensual.<br>||
+|**PGN SUI**|grouping|Esta vista presenta y describe los ítems de arquitectura del SUI Migrado que requieren licenciamiento para operar y cumplir con el objetivo principal de la migración que es la centralización de los conceptos misionales: concentrar los conceptos misionales en componentes aislados.<br>Los elementos realtados en verde en el diagrama incurren en una renta, bien sea, o por consumo de cómputo en la nube de Microsoft, o por el costo de una licencia de uso. Por ejemplo, en el caso del servidor de reporte del SUI Migrado, es requerida una licencia de uso Power BI Pro, de pago mensual.<br>||
 |**RQR. Administrativos**|requirement|||
 |**RQR. Funcionales**|requirement|||
 |**RQR. Ingeniería**|requirement|||
@@ -1185,8 +1236,8 @@ El control definido para los accesos basados en roles RBAC, permitirá que solo 
 
 <br>
 
-## Seguridad.5.DesarrolloSeguro
-![Vista. Seguridad.5.DesarrolloSeguro](images/Seguridad.5.DesarrolloSeguro.png){#fig:Seguridad.5.DesarrolloSeguro width=}
+## Seguridad.5.Desarrollo Seguro
+![Vista. Seguridad.5.Desarrollo Seguro](images/Seguridad.5.DesarrolloSeguro.png){#fig:Seguridad.5.DesarrolloSeguro width=}
 
 METODOLOGÍA DE DESARROLLO.
 
@@ -1398,7 +1449,7 @@ El Login deberá evidenciar el control de errores, al momento de realizar la val
 <br>
 
 
-``Generated on: Wed Nov 15 2023 14:08:35 GMT-0500 (COT)``
+``Generated on: Wed Nov 29 2023 11:59:01 GMT-0500 (COT)``
 
 ## Requerimientos de Administración
 1.	Las soluciones deben permitir la administración de los Roles de Usuarios: esta funcionalidad debe permitir configurar los diferentes roles de los usuarios funcionales de los procesos. 
