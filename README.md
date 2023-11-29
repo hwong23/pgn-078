@@ -1,7 +1,7 @@
 # Directorio de salida de documentación técnica
 
 The [`gh-pages`](https://github.com/hwong23/pgn-078/tree/gh-pages) branch hosts the contents of this directory at <https://hwong23.github.io/pgn-078/>.
-The permalink for this webpage version is <https://hwong23.github.io/pgn-078/v/c13af5ec957f89532cc0783b8a79c4ad932b429f/>.
+The permalink for this webpage version is <https://hwong23.github.io/pgn-078/v/566211660a822ea39582716dee6833bda7448297/>.
 To redirect to the permalink for the latest manuscript version at anytime, use the link <https://hwong23.github.io/pgn-078/v/freeze/>.
 
 ## Listado
@@ -17,10 +17,11 @@ In general, a version is identified by the commit hash of the source content tha
 
 ### Versiones
 
-| Tema           | OP 078-2023 Fase 2, PGN Migración Funcional SIU      |
+| Tema           | OP 078-2023 Fase 2, PGN Migración Funcional SUI      |
 |----------------|----------------------------|
-| Palabras clave | SIU, Softgic, PGN, Análisis de brecha, GAP, Comparativa |
+| Palabras clave | SUI, Softgic, PGN, Análisis de brecha, GAP, Comparativa |
 | **Versión**    |                            |
+| 1.5662116 | 2023-11-29. doc SUI* |
 | 1.c13af5e | 2023-11-29. SUI* |
 | 1.3abe7d3 | 2023-11-28. doc--nov |
 | 1.31a7e7a | 2023-11-28. doc--nov |
@@ -30,7 +31,6 @@ In general, a version is identified by the commit hash of the source content tha
 | 1.cc89d40 | 2023-11-23. upd--pptx |
 | 1.14cba32 | 2023-11-23. upd pptx |
 | 1.0f56322 | 2023-11-23. upd |
-| 1.0ca59db | 2023-11-21. upd |
 
 
 
@@ -39,4 +39,4 @@ Verifying timestamps with the `ots verify` command requires running a local bitc
 ## Source
 
 The manuscripts in this directory were built from
-[`c13af5ec957f89532cc0783b8a79c4ad932b429f`](https://github.com/hwong23/pgn-078/commit/c13af5ec957f89532cc0783b8a79c4ad932b429f).
+[`566211660a822ea39582716dee6833bda7448297`](https://github.com/hwong23/pgn-078/commit/566211660a822ea39582716dee6833bda7448297).
