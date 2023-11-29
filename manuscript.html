@@ -7,7 +7,7 @@
   <meta name="author" content="Harry Wong, ing." />
   <meta name="dcterms.date" content="2023-11-29" />
   <meta name="keywords" content="SOA, madurez, gobierno, PGN" />
-  <title>Documento de Arquitectura Migración Funcional PGN SIU</title>
+  <title>Documento de Arquitectura Migración Funcional PGN SUI</title>
   <style>
     code{white-space: pre-wrap;}
     span.smallcaps{font-variant: small-caps;}
@@ -49,8 +49,8 @@
   <meta name="dc.date" content="2023-11-29" />
   <meta name="citation_publication_date" content="2023-11-29" />
   <meta property="article:published_time" content="2023-11-29" />
-  <meta name="dc.modified" content="2023-11-29T17:06:59+00:00" />
-  <meta property="article:modified_time" content="2023-11-29T17:06:59+00:00" />
+  <meta name="dc.modified" content="2023-11-29T19:08:38+00:00" />
+  <meta property="article:modified_time" content="2023-11-29T19:08:38+00:00" />
   <meta name="dc.language" content="en-US" />
   <meta name="citation_language" content="en-US" />
   <meta name="dc.relation.ispartof" content="Manubot" />
@@ -65,9 +65,9 @@
   <meta name="citation_fulltext_html_url" content="https://hwong23.github.io/pgn-078/" />
   <meta name="citation_pdf_url" content="https://hwong23.github.io/pgn-078/manuscript.pdf" />
   <link rel="alternate" type="application/pdf" href="https://hwong23.github.io/pgn-078/manuscript.pdf" />
-  <link rel="alternate" type="text/html" href="https://hwong23.github.io/pgn-078/v/c13af5ec957f89532cc0783b8a79c4ad932b429f/" />
-  <meta name="manubot_html_url_versioned" content="https://hwong23.github.io/pgn-078/v/c13af5ec957f89532cc0783b8a79c4ad932b429f/" />
-  <meta name="manubot_pdf_url_versioned" content="https://hwong23.github.io/pgn-078/v/c13af5ec957f89532cc0783b8a79c4ad932b429f/manuscript.pdf" />
+  <link rel="alternate" type="text/html" href="https://hwong23.github.io/pgn-078/v/566211660a822ea39582716dee6833bda7448297/" />
+  <meta name="manubot_html_url_versioned" content="https://hwong23.github.io/pgn-078/v/566211660a822ea39582716dee6833bda7448297/" />
+  <meta name="manubot_pdf_url_versioned" content="https://hwong23.github.io/pgn-078/v/566211660a822ea39582716dee6833bda7448297/manuscript.pdf" />
   <meta property="og:type" content="article" />
   <meta property="twitter:card" content="summary_large_image" />
   <link rel="icon" type="image/png" sizes="192x192" href="https://manubot.org/favicon-192x192.png" />
@@ -80,8 +80,8 @@
 </head>
 <body>
 <header id="title-block-header">
-<h1 class="title">Documento de Arquitectura Migración Funcional PGN SIU</h1>
-<p class="subtitle">OP 078-2023 - Fase 2, PGN Migración Funcional SIU</p>
+<h1 class="title">Documento de Arquitectura Migración Funcional PGN SUI</h1>
+<p class="subtitle">OP 078-2023 - Fase 2, PGN Migración Funcional SUI</p>
 </header>
 <p><br></p>
 <p><br></p>
@@ -89,7 +89,7 @@
 <p><br></p>
 <p><br></p>
 <p><br></p>
-<div class="line-block"><strong>Versión</strong> del producto 1.c13af5e de 29 Nov 2023</div>
+<div class="line-block"><strong>Versión</strong> del producto 1.5662116 de 29 Nov 2023</div>
 <div class="line-block"><strong>Presentado a</strong></div>
 <div class="line-block">Procuraduría General de la Nación (PGN)</div>
 <div class="line-block"></div>
@@ -98,10 +98,10 @@
 <div style="page-break-before: always;">
 
 </div>
-<p><small><em>Los productos de esta etapa, Migración Funcional SIU, Contrato 078-2023,
-(<a href="https://hwong23.github.io/pgn-078/v/c13af5ec957f89532cc0783b8a79c4ad932b429f/">Web</a>)
-están basados en el resultado de la Fase 1 del proyecto PGN SIU del 2022,
-<a href="http://softgic.sharepoint.com">SharePoint Softgic@c13af5e</a>
+<p><small><em>Los productos de esta etapa, Migración Funcional SUI, Contrato 078-2023,
+(<a href="https://hwong23.github.io/pgn-078/v/566211660a822ea39582716dee6833bda7448297/">Web</a>)
+están basados en el resultado de la Fase 1 del proyecto PGN SUI del 2022,
+<a href="http://softgic.sharepoint.com">SharePoint Softgic@5662116</a>
 del November 29, 2023.
 </em></small></p>
 <p><br></p>
@@ -121,7 +121,7 @@ Arquitecto, Softgic
 </div>
 <p><br></p>
 <h2 id="objetivo-del-documento">Objetivo del Documento</h2>
-<p>Descripción de los productos del trabajo de arquitectura de la Fase 2, proyecto Migración Funcional SIU de la Procuraduría General de la Nación (PGN en adelante), Contrato 078-2023. El principal propósito de este documento es informar de las decisiones sobre la disposición lógica y física de las partes del sistema. Por tanto, el documento contiene información estratégica, no un diseño detallado. Puntualmente, refleja decisiones sobre la plataforma tecnológica seleccionada, así como consideraciones importantes para el diseño y desarrollo, con procura de garantizar una solución técnicamente viable y óptima para el proyecto.</p>
+<p>Descripción de los productos del trabajo de arquitectura de la Fase 2, proyecto Migración Funcional SUI de la Procuraduría General de la Nación (PGN en adelante), Contrato 078-2023. El principal propósito de este documento es informar de las decisiones sobre la disposición lógica y física de las partes del sistema. Por tanto, el documento contiene información estratégica, no un diseño detallado. Puntualmente, refleja decisiones sobre la plataforma tecnológica seleccionada, así como consideraciones importantes para el diseño y desarrollo, con procura de garantizar una solución técnicamente viable y óptima para el proyecto.</p>
 <p><br></p>
 <h2 class="page_break_before" id="control-de-cambios">Control de Cambios</h2>
 <table>
@@ -132,13 +132,13 @@ Arquitecto, Softgic
 <thead>
 <tr class="header">
 <th>Tema</th>
-<th>OP 078-2023 Fase 2, PGN Migración Funcional SIU</th>
+<th>OP 078-2023 Fase 2, PGN Migración Funcional SUI</th>
 </tr>
 </thead>
 <tbody>
 <tr class="odd">
 <td>Palabras clave</td>
-<td>SIU, Softgic, PGN, Análisis de brecha, GAP, Comparativa</td>
+<td>SUI, Softgic, PGN, Análisis de brecha, GAP, Comparativa</td>
 </tr>
 <tr class="even">
 <td>Autor</td>
@@ -153,48 +153,48 @@ Arquitecto, Softgic
 <td></td>
 </tr>
 <tr class="odd">
+<td>1.5662116</td>
+<td>2023-11-29. doc SUI*</td>
+</tr>
+<tr class="even">
 <td>1.c13af5e</td>
 <td>2023-11-29. SUI*</td>
 </tr>
-<tr class="even">
+<tr class="odd">
 <td>1.3abe7d3</td>
 <td>2023-11-28. doc–nov</td>
 </tr>
-<tr class="odd">
+<tr class="even">
 <td>1.31a7e7a</td>
 <td>2023-11-28. doc–nov</td>
 </tr>
-<tr class="even">
+<tr class="odd">
 <td>1.21c6da3</td>
 <td>2023-11-28. doc–nov</td>
 </tr>
-<tr class="odd">
+<tr class="even">
 <td>1.5216398</td>
 <td>2023-11-23. corrcn</td>
 </tr>
-<tr class="even">
+<tr class="odd">
 <td>1.07b942f</td>
 <td>2023-11-23. arqdoc1</td>
 </tr>
-<tr class="odd">
+<tr class="even">
 <td>1.cc89d40</td>
 <td>2023-11-23. upd–pptx</td>
 </tr>
-<tr class="even">
+<tr class="odd">
 <td>1.14cba32</td>
 <td>2023-11-23. upd pptx</td>
 </tr>
-<tr class="odd">
+<tr class="even">
 <td>1.0f56322</td>
 <td>2023-11-23. upd</td>
 </tr>
-<tr class="even">
-<td>1.0ca59db</td>
-<td>2023-11-21. upd</td>
-</tr>
 <tr class="odd">
 <td>Vínculos</td>
-<td><a href="N03a%a20Vsta%20aSegenta%20SOA%20PGN.md">N003a Vista Segmento PGN SIU</a></td>
+<td><a href="N03a%a20Vsta%20aSegenta%20SOA%20PGN.md">N003a Vista Segmento PGN SUI</a></td>
 </tr>
 </tbody>
 </table>
@@ -225,7 +225,7 @@ Arquitecto, Softgic
 <ol type="1">
 <li>Restricciones de hardware o software en servidores. Los equipos de infraestructura del proyecto actual a tener en cuenta en los diseños de la solución de esta Fase 2 serán los mismos de la anterior Fase 1. Esto es, los que están descritos en el anexo técnico del contrato del proyecto.</li>
 <li>Disponibilidad de recursos. Los recursos de implementación y validación de calidad de esta Fase del proyecto son los mismos a tener en cuenta en los diseños de la solución de esta Fase 2. Otros recursos a considerar son los descritos en el anexo técnico del contrato del proyecto.</li>
-<li>Estándares. Los estándares seleccionados por la solución de este proyecto, (Fase 2, PGN Migración Funcional SIU, están determinados por el uso de las plataformas específicas determinadas por la implementación (desarrollo del software).</li>
+<li>Estándares. Los estándares seleccionados por la solución de este proyecto, (Fase 2, PGN Migración Funcional SUI, están determinados por el uso de las plataformas específicas determinadas por la implementación (desarrollo del software).</li>
 <li>Requerimientos de interoperabilidad. Los recursos de interoperabilidad y colaboración entre sistemas, módulos, submódulos y aplicaciones de terceros relacionados con esta Fase del proyecto son los mismos a tener en cuenta en los diseños de la solución de esta Fase 2. Otros recursos a considerar son los descritos en el anexo técnico del contrato del proyecto.</li>
 <li>Requerimientos de protocolos o interfaces. Los recursos de red, y protocolos de comunicación o transporte de esta Fase del proyecto a tener en cuenta en los diseños de la solución de esta Fase 2 parten de la base de los considerados en la anterior Fase 1. Otros recursos a considerar son los descritos en el anexo técnico del contrato del proyecto.</li>
 <li>Seguridad. Las restricciones de seguridad del proyecto actual a tener en cuenta en los diseños de la solución de esta Fase 2 parten de la base de las de la anterior Fase 1. Esto es, los que están descritos en el anexo técnico del contrato del proyecto.</li>
@@ -764,7 +764,7 @@ Arquitecto, Softgic
 <figcaption aria-hidden="true"><span>Imagen 3:</span> Vista. Lineabase.0.SUI Aplicación. Física</figcaption>
 </figure>
 </div>
-<p>Procuraduría General de la Nación (PGN), módulo SIU migrado, 2023. Elementos físicos que soportan a la aplicación Sistema de Información Único (SIU en adelante) de la PGN, actual Fase I y existente en Fase II. Presentación de componentes de software y tecnología física (hardware) implementados en la Fase I y requeridos por Fase II (presente proyecto).</p>
+<p>Procuraduría General de la Nación (PGN), módulo SUI migrado, 2023. Elementos físicos que soportan a la aplicación Sistema de Información Único (SUI en adelante) de la PGN, actual Fase I y existente en Fase II. Presentación de componentes de software y tecnología física (hardware) implementados en la Fase I y requeridos por Fase II (presente proyecto).</p>
 <h2 id="representación-arquitectónica">Representación Arquitectónica</h2>
 <p>Con una arquitectura orientada a servicios SUI recopila:</p>
 <ol type="1">
@@ -1104,7 +1104,7 @@ Arquitecto, Softgic
 <li>RSG9. Alteración de datos negocio</li>
 <li>RSG10. Validación decisiones de arquitectura</li>
 <li>RSG11. Estrategias de Migración de datos</li>
-<li>RSG12. Arquitectura de almacenamiento y distribución de datos SIU</li>
+<li>RSG12. Arquitectura de almacenamiento y distribución de datos SUI</li>
 <li>RSG13. Sistema de autenticación híbrido</li>
 </ul>
 <h3 id="acciones-de-mitigación">Acciones de Mitigación</h3>
@@ -1112,7 +1112,7 @@ Arquitecto, Softgic
 <li><p>Informar a la PGN de las implicaciones junto con alternativas para la implementación de la acción de aprovechamiento: diseño del SCM central (SharePoint). La PGN debe decidir si o no a la acción propuesta.</p></li>
 <li><p>Informar a la PGN de las implicaciones junto con alternativas para la implementación de la acción de aprovechamiento: diseño del motor de búsqueda compartido (SharePoint). La PGN debe decidir si o no a la acción propuesta.</p></li>
 <li><p>Informar a la PGN de las implicaciones junto con alternativas para la implementación de la acción de manejo del riesgo: diseño de solución de inteligencia de negocio (Power BI). La PGN debe decidir si o no a la acción propuesta.</p></li>
-<li><p>Informar a la PGN de las implicaciones junto con alternativas para la implementación de la acción de manejo del riesgo: ubicar la lógica, los flujos, y los datos misionales dentro del SIU. La PGN debe decidir si o no a la acción propuesta.</p></li>
+<li><p>Informar a la PGN de las implicaciones junto con alternativas para la implementación de la acción de manejo del riesgo: ubicar la lógica, los flujos, y los datos misionales dentro del SUI. La PGN debe decidir si o no a la acción propuesta.</p></li>
 <li><p>Informar a la PGN de las implicaciones junto con alternativas para la implementación de la acción de manejo del riesgo: facilitar la administración de seguridad en un solo lugar (distinto de localizarla en las aplicaciones web). La PGN debe decidir si o no a la acción propuesta.</p></li>
 </ol>
 <h3 id="catálogo-de-elementos-4">Catálogo de Elementos</h3>
@@ -1147,19 +1147,19 @@ Arquitecto, Softgic
 <tr class="odd">
 <td style="text-align: left;"><strong>RSG11. Estrategias de Migración de datos</strong></td>
 <td style="text-align: left;">constraint</td>
-<td style="text-align: left;">Discutir el alcance y los recursos para la correcta migración de datos incluidas en contrato 078, Migración Funcional SIU en atención al numeral 5.6 del anexo técnico del proyecto.<br></td>
+<td style="text-align: left;">Discutir el alcance y los recursos para la correcta migración de datos incluidas en contrato 078, Migración Funcional SUI en atención al numeral 5.6 del anexo técnico del proyecto.<br></td>
 <td style="text-align: left;">5.6 MIGRACIÓN DE DATOS<br></td>
 </tr>
 <tr class="even">
 <td style="text-align: left;"><strong>RSG12. Arquitectura de almacenamiento y distribución de datos SUI</strong></td>
 <td style="text-align: left;">constraint</td>
-<td style="text-align: left;">Definir la opción de organización y distribución de los almacenes de datos del SIU. <br>opc1. Dispositivo físico/virtual (nodo, servidor, y esquema de base de datos) único, central, a todos los módulos del SIU.<br>opc2. Dispositivos virtuales autónomos por dominio de negocio: relatoría, inventario, información estratégica, intercomunicados.<br></td>
+<td style="text-align: left;">Definir la opción de organización y distribución de los almacenes de datos del SUI. <br>opc1. Dispositivo físico/virtual (nodo, servidor, y esquema de base de datos) único, central, a todos los módulos del SUI.<br>opc2. Dispositivos virtuales autónomos por dominio de negocio: relatoría, inventario, información estratégica, intercomunicados.<br></td>
 <td style="text-align: left;"></td>
 </tr>
 <tr class="odd">
 <td style="text-align: left;"><strong>RSG13. Sistema de autenticación híbrido</strong></td>
 <td style="text-align: left;">constraint</td>
-<td style="text-align: left;">Definir la estrategia de autenticación del SIU migrado (aplicable a todos los módulos del SIU migrado).<br>opc1. Híbrida: integrado, directorio empresarial (LDAP), y servicios de autenticación de confianza: Office 365 de PGN.<br>opc2. Servicio de autenticación de confianza: Office 365 de PGN.<br></td>
+<td style="text-align: left;">Definir la estrategia de autenticación del SUI migrado (aplicable a todos los módulos del SUI migrado).<br>opc1. Híbrida: integrado, directorio empresarial (LDAP), y servicios de autenticación de confianza: Office 365 de PGN.<br>opc2. Servicio de autenticación de confianza: Office 365 de PGN.<br></td>
 <td style="text-align: left;"></td>
 </tr>
 <tr class="even">
@@ -1177,7 +1177,7 @@ Arquitecto, Softgic
 <tr class="even">
 <td style="text-align: left;"><strong>RSG4. Conciliación y gestión documental (Doku)</strong></td>
 <td style="text-align: left;">constraint</td>
-<td style="text-align: left;">Definir la ubicación de los componentes misionales de Conciliación Administrativa (SIU). Debe estar fuera de Doku.<br></td>
+<td style="text-align: left;">Definir la ubicación de los componentes misionales de Conciliación Administrativa (SUI). Debe estar fuera de Doku.<br></td>
 <td style="text-align: left;"></td>
 </tr>
 <tr class="odd">
@@ -1399,7 +1399,7 @@ Arquitecto, Softgic
 <tr class="odd">
 <td style="text-align: left;"><strong>RSG11. Estrategias de Migración de datos</strong></td>
 <td style="text-align: left;">constraint</td>
-<td style="text-align: left;">Discutir el alcance y los recursos para la correcta migración de datos incluidas en contrato 078, Migración Funcional SIU en atención al numeral 5.6 del anexo técnico del proyecto.<br></td>
+<td style="text-align: left;">Discutir el alcance y los recursos para la correcta migración de datos incluidas en contrato 078, Migración Funcional SUI en atención al numeral 5.6 del anexo técnico del proyecto.<br></td>
 <td style="text-align: left;">5.6 MIGRACIÓN DE DATOS<br></td>
 </tr>
 <tr class="even">
@@ -1758,7 +1758,7 @@ Arquitecto, Softgic
 <figcaption aria-hidden="true"><span>Imagen 10:</span> Vista. Seguridad.2. Lineabase.0.SUI Aplicación</figcaption>
 </figure>
 </div>
-<h2 id="metodología-seguridad-siu-migrado">Metodología Seguridad SIU Migrado</h2>
+<h2 id="metodología-seguridad-sui-migrado">Metodología Seguridad SUI Migrado</h2>
 <p>Los mecanismos de autorización para el acceso a los sistemas de información de la Procuraduría General de la Nación describen la forma de cómo se restringe el acceso a los diferentes módulos Misionales (SIM), Registros de Inhabilidades (SIRI), Nómina, Control Interno y relatoría, entre otros, y que se considera un mecanismo de protección que ayuda a reaccionar ante cualquier operación no autorizada.</p>
 <p>El control de acceso basado en roles (RBAC), enfoca la idea de que a los funcionarios se les otorgue los permisos de acceso a los recursos, basados en los roles y/o perfiles que este posee. Este control posee dos características fundamentales: i) los accesos son controlados por medio de los roles y/o perfiles asignados, quiere decir, a los servidores públicos, contratistas, terceros y otros colaboradores autorizados para interactuar con los sistemas de información se le asignan los roles y el encargado/responsable definirá los permisos, que a su vez están relacionados con los roles, ii) Los roles pueden ser definidos a nivel jerárquico, es decir que un rol podrá ser miembro de otro rol.</p>
 <p>Un proceso de autorización basado en roles, identifica tres factores importantes, i) Todos los servidores públicos, contratistas, terceros y otros Colaboradores, deben tener un rol asignado, si no es asignado no podrá realizar ninguna acción relacionada con el acceso, ii) un usuario podrá hacer uso de los permisos asociados a los roles asignados, el cual deberá realizar el inicio de sesión el usuario asignado del Directorio activo (DA), iii) los servidores públicos, contratistas, terceros y otros, solo podrán realizar acciones para las cuales han sido autorizados por medio de la activación de sus roles y/o perfiles.</p>
@@ -2126,7 +2126,7 @@ Huella digital SHA1 “8C:48:BD:E2:F5:18:18:C3:85:96:68:44:2E:28:A0:68:08:2F:0A:
 <tr class="even">
 <td style="text-align: left;"><strong>Diseñador reportes</strong></td>
 <td style="text-align: left;">application-component</td>
-<td style="text-align: left;">Apliación de escritorio / web para el diseño, creación y desarrollo de los reportes del SIU Migrado. Provisto por plataforma Microsoft Power Bi.</td>
+<td style="text-align: left;">Apliación de escritorio / web para el diseño, creación y desarrollo de los reportes del SUI Migrado. Provisto por plataforma Microsoft Power Bi.</td>
 <td style="text-align: left;"></td>
 </tr>
 <tr class="odd">
@@ -2174,7 +2174,7 @@ Huella digital SHA1 “8C:48:BD:E2:F5:18:18:C3:85:96:68:44:2E:28:A0:68:08:2F:0A:
 <tr class="even">
 <td style="text-align: left;"><strong>Servidor de Reportes</strong></td>
 <td style="text-align: left;">application-component</td>
-<td style="text-align: left;">Componente SIU de publicación y distribución de reportes diseñados provisto por plataforma Microsoft SQL Server.</td>
+<td style="text-align: left;">Componente SUI de publicación y distribución de reportes diseñados provisto por plataforma Microsoft SQL Server.</td>
 <td style="text-align: left;"></td>
 </tr>
 <tr class="odd">
@@ -2300,7 +2300,7 @@ Huella digital SHA1 “8C:48:BD:E2:F5:18:18:C3:85:96:68:44:2E:28:A0:68:08:2F:0A:
 <tr class="odd">
 <td style="text-align: left;"><strong>Reportería</strong></td>
 <td style="text-align: left;">application-service</td>
-<td style="text-align: left;">Servicio de diseño, publicación y distribución de reportes del SIU Migrado.<br></td>
+<td style="text-align: left;">Servicio de diseño, publicación y distribución de reportes del SUI Migrado.<br></td>
 <td style="text-align: left;"><em>brecha:</em> 100<br></td>
 </tr>
 <tr class="even">
@@ -2415,7 +2415,7 @@ Huella digital SHA1 “8C:48:BD:E2:F5:18:18:C3:85:96:68:44:2E:28:A0:68:08:2F:0A:
 <figcaption aria-hidden="true"><span>Imagen 12:</span> Vista. Migracion.1b.3. SUI Módulos Clases</figcaption>
 </figure>
 </div>
-<p>El modelo de negocio del SIU Migrado sigue el patrón de diseño descrito en esta vista.</p>
+<p>El modelo de negocio del SUI Migrado sigue el patrón de diseño descrito en esta vista.</p>
 <p>El diseño actual antepone un servicio como punto de acceso a un caso de uso, de tal forma que este se encarga únicamente (por responsabilidad) de coordinar las entradas y las salidas del caso de uso.</p>
 <p>El modelo propicia la separación de la lógica de aplicación y la lógica de negocio. En este diseño, la primera está encapsulada en el Caso de Uso ejecutable (en el diagrama), mientras que la lógica de negocio lo está en una función de negocio.</p>
 <p>Los conceptos de negocio están representados por funciones PGN (en el diagrama). Ejemplo: en el dominio de una conciliación, Función PGN 1 puede representar una nueva radicación en cumplimiento de las reglas de ese dominio. Esta función de negocio es completamente independiente del modelo de datos subyacente. Nótese que las entidades de datos de negocio no son accesibles desde la función de negocio.</p>
@@ -2918,7 +2918,7 @@ Huella digital SHA1 “8C:48:BD:E2:F5:18:18:C3:85:96:68:44:2E:28:A0:68:08:2F:0A:
 <figcaption aria-hidden="true"><span>Imagen 14:</span> Vista. Migracion.4. CI</figcaption>
 </figure>
 </div>
-<p>Descripción de las cadenas de integración y despliegue continuo de submódulos (aplicaciones web, por ejemplo) del SIU Migrado, 2023; integración y despliegue continuo de los módulos central del SIU Migrado, 2023.</p>
+<p>Descripción de las cadenas de integración y despliegue continuo de submódulos (aplicaciones web, por ejemplo) del SUI Migrado, 2023; integración y despliegue continuo de los módulos central del SUI Migrado, 2023.</p>
 <p>Las cadenas están separadas por tecnologías y plataformas distintas; son independientes y no presentan interbloqueos en cuanto a su ejecución. Pero, requieren administración integral.</p>
 <p>Los trabajo de despliegue requieren las configuraciones de las cadenas y tareas de conexión tanto a los ambientes productivos y desarrollo.</p>
 <h3 id="catálogo-de-elementos-13">Catálogo de Elementos</h3>
@@ -3054,7 +3054,7 @@ Huella digital SHA1 “8C:48:BD:E2:F5:18:18:C3:85:96:68:44:2E:28:A0:68:08:2F:0A:
 <figcaption aria-hidden="true"><span>Imagen 15:</span> Vista. Migracion.5. Licenciamiento</figcaption>
 </figure>
 </div>
-<p>Listado de los requisitos de licenciamiento a razón de los elementos usados por los módulos centrales del SIU Migrado, 2023.</p>
+<p>Listado de los requisitos de licenciamiento a razón de los elementos usados por los módulos centrales del SUI Migrado, 2023.</p>
 <p>Los elementos resaltados de la vista actual requieren modelos de licenciamiento variado, bien sea por usuario, núcleo, despliegue (instalación), o renta por consumo.</p>
 <h3 id="catálogo-de-elementos-14">Catálogo de Elementos</h3>
 <table>
@@ -3244,7 +3244,7 @@ Huella digital SHA1 “8C:48:BD:E2:F5:18:18:C3:85:96:68:44:2E:28:A0:68:08:2F:0A:
 <tr class="odd">
 <td style="text-align: left;"><strong>Reportería</strong></td>
 <td style="text-align: left;">application-service</td>
-<td style="text-align: left;">Servicio de diseño, publicación y distribución de reportes del SIU Migrado.<br></td>
+<td style="text-align: left;">Servicio de diseño, publicación y distribución de reportes del SUI Migrado.<br></td>
 <td style="text-align: left;"><em>brecha:</em> 100<br></td>
 </tr>
 <tr class="even">
@@ -3864,7 +3864,7 @@ Administrar los Usuarios de la Solución: Esta funcionalidad debe permitir confi
 </ol>
 <p><br></p>
 <h1 id="anexos">Anexos</h1>
-<h2 id="modelo-er-del-siu-migrado">Modelo ER del SIU Migrado</h2>
+<h2 id="modelo-er-del-sui-migrado">Modelo ER del SUI Migrado</h2>
 <p>Documento vista modelo físico de datos (modelo ER, entidad-relación) del Sistema Único de Información (SUI).</p>
 <div style="page-break-before: always;">
 
@@ -3874,7 +3874,7 @@ Administrar los Usuarios de la Solución: Esta funcionalidad debe permitir confi
 <div id="refs" class="references csl-bib-body" role="doc-bibliography">
 <p><span class="citation" data-cites="19ZPD5YjC">[<a href="#ref-19ZPD5YjC" role="doc-biblioref">1</a>]</span> <span class="citation" data-cites="hQTPO0iI">[<a href="#ref-hQTPO0iI" role="doc-biblioref">2</a>]</span> <span class="citation" data-cites="l0mriBft">[<a href="#ref-l0mriBft" role="doc-biblioref">3</a>]</span> <span class="citation" data-cites="eservices5-23">[<a href="#ref-eservices5-23" role="doc-biblioref"><strong>eservices5-23?</strong></a>]</span> <span class="citation" data-cites="eservices6-12">[<a href="#ref-eservices6-12" role="doc-biblioref"><strong>eservices6-12?</strong></a>]</span> <span class="citation" data-cites="eservices7-23">[<a href="#ref-eservices7-23" role="doc-biblioref"><strong>eservices7-23?</strong></a>]</span> <span class="citation" data-cites="bptrends07">[<a href="#ref-bptrends07" role="doc-biblioref"><strong>bptrends07?</strong></a>]</span></p>
 <div id="ref-19ZPD5YjC" class="csl-entry" role="doc-biblioentry">
-<div class="csl-left-margin">1. </div><div class="csl-right-inline"><strong>Softgic. Proyecto de mejoramiento SIU de PGN. Fase i</strong> <div class="csl-block">Softgic, PGN</div> (2022-06) <a href="https://hwong23.github.io/fna-devdoc-f1/v/6497aef0f15c3591f0728e4c42cb2c26c13b43aa/">https://hwong23.github.io/fna-devdoc-f1/v/6497aef0f15c3591f0728e4c42cb2c26c13b43aa/</a></div>
+<div class="csl-left-margin">1. </div><div class="csl-right-inline"><strong>Softgic. Proyecto de mejoramiento SUI de PGN. Fase i</strong> <div class="csl-block">Softgic, PGN</div> (2022-06) <a href="https://hwong23.github.io/fna-devdoc-f1/v/6497aef0f15c3591f0728e4c42cb2c26c13b43aa/">https://hwong23.github.io/fna-devdoc-f1/v/6497aef0f15c3591f0728e4c42cb2c26c13b43aa/</a></div>
 </div>
 <div id="ref-hQTPO0iI" class="csl-entry" role="doc-biblioentry">
 <div class="csl-left-margin">2. </div><div class="csl-right-inline"><strong>Procuraduría general de la nación. Anexo - especificaciones técnicas 19-05-2023</strong> <div class="csl-block">PGN</div> (2023-05) <a href="https://hwong23.github.io/fna-devdoc-f1/v/6497aef0f15c3591f0728e4c42cb2c26c13b43aa/">https://hwong23.github.io/fna-devdoc-f1/v/6497aef0f15c3591f0728e4c42cb2c26c13b43aa/</a></div>
