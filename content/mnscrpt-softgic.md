@@ -27,12 +27,28 @@ date: Noviembre, 2023
 SIUContextoMódulos width=}
 :::
 ::: {.column width="30%"}
-### Representación Arquitectura
-Con una arquitectura orientada a servicios $APLICATIVO recopila:
+### Representación de Arquitectura
+Con una arquitectura orientada a servicios SUI recopila:
 
 1. Runtime: Es el servicio que interactúa con el usuario final (GUI) elaborado en Angular 11
 1. API Tx: Servicio api rest base node encargado de realizar las transacciones básicas CRUD
 1. API Config / Seguridad. Servicio Web API .Net Framework encargado de gestionar características con la autenticación y configuración
+:::
+::::::::::::::
+
+
+## Línea Base Portal PGN
+:::::::::::::: {.columns}
+::: {.column width="70%"}
+![Vista. Linebase.2.Portal](images/Linebase.2.Portal.png){#fig:Linebase.2.Portal width=}
+:::
+::: {.column width="30%"}
+### Representación de Arquitectura
+El portal es el conjunto de los elementos físicos y lógicos necesarios para la implementación de la granja de servidores de SharePoint Server 2019 para el portal de la PROCURADURIA.
+
+* Servidores Web Front End
+* Servidores de Aplicaciones
+* Servidores de SQL Server
 :::
 ::::::::::::::
 
@@ -58,6 +74,7 @@ La vista presenta en contexto a los módulos SUI migrados e indica los modos de 
 Elementos de infraestructura física (hardware) para la implementación Fase II (presente proyecto) del  Sistema de Información Único, SUI de la PGN
 :::
 ::::::::::::::
+
 
 ## Diagrama de Arquitectura de la Solución Propuesta
 :::::::::::::: {.columns}
