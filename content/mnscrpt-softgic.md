@@ -162,7 +162,7 @@ Dominios Principales de Información SUI Migrado
 ## Diagrama Modelo de Datos Físico (diagramas entidad-relación)
 :::::::::::::: {.columns}
 ::: {.column width="30%"}
-![Vista. Migracion.2a.a3. Datos Modelo Físico ](images/ER-SUI.png){#fig:Migracion.2a.a3.DatosModeloFísico width=}
+![Vista. Migracion.2a.a3. Datos Modelo Físico ](images/ER-SIU.png){#fig:Migracion.2a.a3.DatosModeloFísico width=}
 :::
 ::: {.column width="70%"}
 ### Migracion.2a.a3. Datos Modelo Físico 
