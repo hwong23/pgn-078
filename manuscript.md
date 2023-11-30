@@ -5,7 +5,7 @@ keywords:
 - gobierno
 - PGN
 lang: en-US
-date-meta: '2023-11-29'
+date-meta: '2023-11-30'
 author-meta:
 - Harry Wong, ing.
 header-includes: |
@@ -15,11 +15,11 @@ header-includes: |
   -->
   <meta name="dc.format" content="text/html" />
   <meta property="og:type" content="article" />
-  <meta name="dc.date" content="2023-11-29" />
-  <meta name="citation_publication_date" content="2023-11-29" />
-  <meta property="article:published_time" content="2023-11-29" />
-  <meta name="dc.modified" content="2023-11-29T21:51:28+00:00" />
-  <meta property="article:modified_time" content="2023-11-29T21:51:28+00:00" />
+  <meta name="dc.date" content="2023-11-30" />
+  <meta name="citation_publication_date" content="2023-11-30" />
+  <meta property="article:published_time" content="2023-11-30" />
+  <meta name="dc.modified" content="2023-11-30T15:49:43+00:00" />
+  <meta property="article:modified_time" content="2023-11-30T15:49:43+00:00" />
   <meta name="dc.language" content="en-US" />
   <meta name="citation_language" content="en-US" />
   <meta name="dc.relation.ispartof" content="Manubot" />
@@ -34,9 +34,9 @@ header-includes: |
   <meta name="citation_fulltext_html_url" content="https://hwong23.github.io/pgn-078/" />
   <meta name="citation_pdf_url" content="https://hwong23.github.io/pgn-078/manuscript.pdf" />
   <link rel="alternate" type="application/pdf" href="https://hwong23.github.io/pgn-078/manuscript.pdf" />
-  <link rel="alternate" type="text/html" href="https://hwong23.github.io/pgn-078/v/783a11115f038b6bb74410166292525bf49fb52d/" />
-  <meta name="manubot_html_url_versioned" content="https://hwong23.github.io/pgn-078/v/783a11115f038b6bb74410166292525bf49fb52d/" />
-  <meta name="manubot_pdf_url_versioned" content="https://hwong23.github.io/pgn-078/v/783a11115f038b6bb74410166292525bf49fb52d/manuscript.pdf" />
+  <link rel="alternate" type="text/html" href="https://hwong23.github.io/pgn-078/v/d430b1d7c8a917094b11e5136915fc2a22cb944c/" />
+  <meta name="manubot_html_url_versioned" content="https://hwong23.github.io/pgn-078/v/d430b1d7c8a917094b11e5136915fc2a22cb944c/" />
+  <meta name="manubot_pdf_url_versioned" content="https://hwong23.github.io/pgn-078/v/d430b1d7c8a917094b11e5136915fc2a22cb944c/manuscript.pdf" />
   <meta property="og:type" content="article" />
   <meta property="twitter:card" content="summary_large_image" />
   <link rel="icon" type="image/png" sizes="192x192" href="https://manubot.org/favicon-192x192.png" />
@@ -77,7 +77,7 @@ tablenos-caption-name: Tabla
 
 <br>
 
-| **Versión** del producto 1.783a111 de 29 Nov 2023
+| **Versión** del producto 1.d430b1d de 30 Nov 2023
 
 | **Presentado a**
 
@@ -87,7 +87,7 @@ tablenos-caption-name: Tabla
 
 | **Fecha**
 
-| 29 Nov 2023
+| 30 Nov 2023
 
 
 <div style="page-break-before: always;"></div>
@@ -95,10 +95,10 @@ tablenos-caption-name: Tabla
 
 
 <small><em>Los productos de esta etapa, Migración Funcional SUI, Contrato 078-2023, 
-([Web](https://hwong23.github.io/pgn-078/v/783a11115f038b6bb74410166292525bf49fb52d/))
+([Web](https://hwong23.github.io/pgn-078/v/d430b1d7c8a917094b11e5136915fc2a22cb944c/))
 están basados en el resultado de la Fase 1 del proyecto PGN SUI del 2022,
-[SharePoint Softgic@783a111](http://softgic.sharepoint.com)
-del November 29, 2023.
+[SharePoint Softgic@d430b1d](http://softgic.sharepoint.com)
+del November 30, 2023.
 </em></small>
 
 
@@ -144,6 +144,8 @@ Descripción de los productos del trabajo de arquitectura de la Fase 2, proyecto
 | Autor          |                            |
 | Fuente         |                            |
 | **Versión**    |                            |
+| 1.d430b1d | 2023-11-30. ppt--tamaño-upd |
+| 1.f0b7484 | 2023-11-30. ppt--tamaño |
 | 1.783a111 | 2023-11-29. ppt SUI-2 |
 | 1.ef26550 | 2023-11-29. ppt SUI |
 | 1.ead6645 | 2023-11-29. plantilla sftgc |
@@ -152,8 +154,6 @@ Descripción de los productos del trabajo de arquitectura de la Fase 2, proyecto
 | 1.be42976 | 2023-11-29. pptx6 |
 | 1.e02cfb7 | 2023-11-29. pptx5 |
 | 1.2367e9d | 2023-11-29. pptx4 |
-| 1.94d1e83 | 2023-11-29. pptx3 |
-| 1.d30df92 | 2023-11-29. pptx2 |
 | Vínculos       | [N003a Vista Segmento PGN SUI](N03a%a20Vsta%20aSegenta%20SOA%20PGN.md) |
 
 <br>

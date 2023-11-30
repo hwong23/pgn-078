@@ -7,11 +7,11 @@
       "PGN"
     ],
     "lang": "en-US",
-    "date-meta": "2023-11-29",
+    "date-meta": "2023-11-30",
     "author-meta": [
       "Harry Wong, ing."
     ],
-    "header-includes": "<!--\nManubot generated metadata rendered from header-includes-template.html.\nSuggest improvements at https://github.com/manubot/manubot/blob/main/manubot/process/header-includes-template.html\n-->\n<meta name=\"dc.format\" content=\"text/html\" />\n<meta property=\"og:type\" content=\"article\" />\n<meta name=\"dc.date\" content=\"2023-11-29\" />\n<meta name=\"citation_publication_date\" content=\"2023-11-29\" />\n<meta property=\"article:published_time\" content=\"2023-11-29\" />\n<meta name=\"dc.modified\" content=\"2023-11-29T21:51:28+00:00\" />\n<meta property=\"article:modified_time\" content=\"2023-11-29T21:51:28+00:00\" />\n<meta name=\"dc.language\" content=\"en-US\" />\n<meta name=\"citation_language\" content=\"en-US\" />\n<meta name=\"dc.relation.ispartof\" content=\"Manubot\" />\n<meta name=\"dc.publisher\" content=\"Manubot\" />\n<meta name=\"citation_journal_title\" content=\"Manubot\" />\n<meta name=\"citation_technical_report_institution\" content=\"Manubot\" />\n<meta name=\"citation_author\" content=\"Harry Wong, ing.\" />\n<meta name=\"citation_author_institution\" content=\"Arquitecto, Softgic\" />\n<link rel=\"canonical\" href=\"https://hwong23.github.io/pgn-078/\" />\n<meta property=\"og:url\" content=\"https://hwong23.github.io/pgn-078/\" />\n<meta property=\"twitter:url\" content=\"https://hwong23.github.io/pgn-078/\" />\n<meta name=\"citation_fulltext_html_url\" content=\"https://hwong23.github.io/pgn-078/\" />\n<meta name=\"citation_pdf_url\" content=\"https://hwong23.github.io/pgn-078/manuscript.pdf\" />\n<link rel=\"alternate\" type=\"application/pdf\" href=\"https://hwong23.github.io/pgn-078/manuscript.pdf\" />\n<link rel=\"alternate\" type=\"text/html\" href=\"https://hwong23.github.io/pgn-078/v/783a11115f038b6bb74410166292525bf49fb52d/\" />\n<meta name=\"manubot_html_url_versioned\" content=\"https://hwong23.github.io/pgn-078/v/783a11115f038b6bb74410166292525bf49fb52d/\" />\n<meta name=\"manubot_pdf_url_versioned\" content=\"https://hwong23.github.io/pgn-078/v/783a11115f038b6bb74410166292525bf49fb52d/manuscript.pdf\" />\n<meta property=\"og:type\" content=\"article\" />\n<meta property=\"twitter:card\" content=\"summary_large_image\" />\n<link rel=\"icon\" type=\"image/png\" sizes=\"192x192\" href=\"https://manubot.org/favicon-192x192.png\" />\n<link rel=\"mask-icon\" href=\"https://manubot.org/safari-pinned-tab.svg\" color=\"#ad1457\" />\n<meta name=\"theme-color\" content=\"#ad1457\" />\n<!-- end Manubot generated metadata -->\n",
+    "header-includes": "<!--\nManubot generated metadata rendered from header-includes-template.html.\nSuggest improvements at https://github.com/manubot/manubot/blob/main/manubot/process/header-includes-template.html\n-->\n<meta name=\"dc.format\" content=\"text/html\" />\n<meta property=\"og:type\" content=\"article\" />\n<meta name=\"dc.date\" content=\"2023-11-30\" />\n<meta name=\"citation_publication_date\" content=\"2023-11-30\" />\n<meta property=\"article:published_time\" content=\"2023-11-30\" />\n<meta name=\"dc.modified\" content=\"2023-11-30T15:49:43+00:00\" />\n<meta property=\"article:modified_time\" content=\"2023-11-30T15:49:43+00:00\" />\n<meta name=\"dc.language\" content=\"en-US\" />\n<meta name=\"citation_language\" content=\"en-US\" />\n<meta name=\"dc.relation.ispartof\" content=\"Manubot\" />\n<meta name=\"dc.publisher\" content=\"Manubot\" />\n<meta name=\"citation_journal_title\" content=\"Manubot\" />\n<meta name=\"citation_technical_report_institution\" content=\"Manubot\" />\n<meta name=\"citation_author\" content=\"Harry Wong, ing.\" />\n<meta name=\"citation_author_institution\" content=\"Arquitecto, Softgic\" />\n<link rel=\"canonical\" href=\"https://hwong23.github.io/pgn-078/\" />\n<meta property=\"og:url\" content=\"https://hwong23.github.io/pgn-078/\" />\n<meta property=\"twitter:url\" content=\"https://hwong23.github.io/pgn-078/\" />\n<meta name=\"citation_fulltext_html_url\" content=\"https://hwong23.github.io/pgn-078/\" />\n<meta name=\"citation_pdf_url\" content=\"https://hwong23.github.io/pgn-078/manuscript.pdf\" />\n<link rel=\"alternate\" type=\"application/pdf\" href=\"https://hwong23.github.io/pgn-078/manuscript.pdf\" />\n<link rel=\"alternate\" type=\"text/html\" href=\"https://hwong23.github.io/pgn-078/v/d430b1d7c8a917094b11e5136915fc2a22cb944c/\" />\n<meta name=\"manubot_html_url_versioned\" content=\"https://hwong23.github.io/pgn-078/v/d430b1d7c8a917094b11e5136915fc2a22cb944c/\" />\n<meta name=\"manubot_pdf_url_versioned\" content=\"https://hwong23.github.io/pgn-078/v/d430b1d7c8a917094b11e5136915fc2a22cb944c/manuscript.pdf\" />\n<meta property=\"og:type\" content=\"article\" />\n<meta property=\"twitter:card\" content=\"summary_large_image\" />\n<link rel=\"icon\" type=\"image/png\" sizes=\"192x192\" href=\"https://manubot.org/favicon-192x192.png\" />\n<link rel=\"mask-icon\" href=\"https://manubot.org/safari-pinned-tab.svg\" color=\"#ad1457\" />\n<meta name=\"theme-color\" content=\"#ad1457\" />\n<!-- end Manubot generated metadata -->\n",
     "bibliography": [
       "content/manual-references.bib",
       "content/manual-references.json"
@@ -22,10 +22,10 @@
     "manubot-clear-requests-cache": false
   },
   "manubot": {
-    "date": "2023-11-29",
-    "date_long": "November 29, 2023",
-    "generated": "2023-11-29T21:51:28+00:00",
-    "generated_date_long": "November 29, 2023",
+    "date": "2023-11-30",
+    "date_long": "November 30, 2023",
+    "generated": "2023-11-30T15:49:43+00:00",
+    "generated_date_long": "November 30, 2023",
     "randomize_author_order": false,
     "authors": [
       {
@@ -53,15 +53,15 @@
       "repo_slug": "hwong23/pgn-078",
       "repo_owner": "hwong23",
       "repo_name": "pgn-078",
-      "commit": "783a11115f038b6bb74410166292525bf49fb52d",
-      "triggering_commit": "783a11115f038b6bb74410166292525bf49fb52d",
-      "build_url": "https://github.com/hwong23/pgn-078/commit/783a11115f038b6bb74410166292525bf49fb52d/checks",
-      "job_url": "https://github.com/hwong23/pgn-078/actions/runs/7038922910"
+      "commit": "d430b1d7c8a917094b11e5136915fc2a22cb944c",
+      "triggering_commit": "d430b1d7c8a917094b11e5136915fc2a22cb944c",
+      "build_url": "https://github.com/hwong23/pgn-078/commit/d430b1d7c8a917094b11e5136915fc2a22cb944c/checks",
+      "job_url": "https://github.com/hwong23/pgn-078/actions/runs/7048886248"
     },
     "html_url": "https://hwong23.github.io/pgn-078/",
     "pdf_url": "https://hwong23.github.io/pgn-078/manuscript.pdf",
-    "html_url_versioned": "https://hwong23.github.io/pgn-078/v/783a11115f038b6bb74410166292525bf49fb52d/",
-    "pdf_url_versioned": "https://hwong23.github.io/pgn-078/v/783a11115f038b6bb74410166292525bf49fb52d/manuscript.pdf",
+    "html_url_versioned": "https://hwong23.github.io/pgn-078/v/d430b1d7c8a917094b11e5136915fc2a22cb944c/",
+    "pdf_url_versioned": "https://hwong23.github.io/pgn-078/v/d430b1d7c8a917094b11e5136915fc2a22cb944c/manuscript.pdf",
     "manubot_version": "0.5.5",
     "rootstock_commit": "8c1a803748961dcf6b7e8ed4d5ec8f8ce6d5a2a9",
     "manuscript_stats": {
