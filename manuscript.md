@@ -5,7 +5,7 @@ keywords:
 - gobierno
 - PGN
 lang: en-US
-date-meta: '2023-11-30'
+date-meta: '2023-12-04'
 author-meta:
 - Harry Wong, ing.
 header-includes: |
@@ -15,11 +15,11 @@ header-includes: |
   -->
   <meta name="dc.format" content="text/html" />
   <meta property="og:type" content="article" />
-  <meta name="dc.date" content="2023-11-30" />
-  <meta name="citation_publication_date" content="2023-11-30" />
-  <meta property="article:published_time" content="2023-11-30" />
-  <meta name="dc.modified" content="2023-11-30T15:56:02+00:00" />
-  <meta property="article:modified_time" content="2023-11-30T15:56:02+00:00" />
+  <meta name="dc.date" content="2023-12-04" />
+  <meta name="citation_publication_date" content="2023-12-04" />
+  <meta property="article:published_time" content="2023-12-04" />
+  <meta name="dc.modified" content="2023-12-04T15:50:06+00:00" />
+  <meta property="article:modified_time" content="2023-12-04T15:50:06+00:00" />
   <meta name="dc.language" content="en-US" />
   <meta name="citation_language" content="en-US" />
   <meta name="dc.relation.ispartof" content="Manubot" />
@@ -34,9 +34,9 @@ header-includes: |
   <meta name="citation_fulltext_html_url" content="https://hwong23.github.io/pgn-078/" />
   <meta name="citation_pdf_url" content="https://hwong23.github.io/pgn-078/manuscript.pdf" />
   <link rel="alternate" type="application/pdf" href="https://hwong23.github.io/pgn-078/manuscript.pdf" />
-  <link rel="alternate" type="text/html" href="https://hwong23.github.io/pgn-078/v/9fe2cc201df367b9696c6167f18903141817118f/" />
-  <meta name="manubot_html_url_versioned" content="https://hwong23.github.io/pgn-078/v/9fe2cc201df367b9696c6167f18903141817118f/" />
-  <meta name="manubot_pdf_url_versioned" content="https://hwong23.github.io/pgn-078/v/9fe2cc201df367b9696c6167f18903141817118f/manuscript.pdf" />
+  <link rel="alternate" type="text/html" href="https://hwong23.github.io/pgn-078/v/a001bb6a9d745a33534dca57af66e5c0c1000af9/" />
+  <meta name="manubot_html_url_versioned" content="https://hwong23.github.io/pgn-078/v/a001bb6a9d745a33534dca57af66e5c0c1000af9/" />
+  <meta name="manubot_pdf_url_versioned" content="https://hwong23.github.io/pgn-078/v/a001bb6a9d745a33534dca57af66e5c0c1000af9/manuscript.pdf" />
   <meta property="og:type" content="article" />
   <meta property="twitter:card" content="summary_large_image" />
   <link rel="icon" type="image/png" sizes="192x192" href="https://manubot.org/favicon-192x192.png" />
@@ -77,7 +77,7 @@ tablenos-caption-name: Tabla
 
 <br>
 
-| **Versión** del producto 1.9fe2cc2 de 30 Nov 2023
+| **Versión** del producto 1.a001bb6 de 04 Dec 2023
 
 | **Presentado a**
 
@@ -87,7 +87,7 @@ tablenos-caption-name: Tabla
 
 | **Fecha**
 
-| 30 Nov 2023
+| 04 Dec 2023
 
 
 <div style="page-break-before: always;"></div>
@@ -95,10 +95,10 @@ tablenos-caption-name: Tabla
 
 
 <small><em>Los productos de esta etapa, Migración Funcional SUI, Contrato 078-2023, 
-([Web](https://hwong23.github.io/pgn-078/v/9fe2cc201df367b9696c6167f18903141817118f/))
+([Web](https://hwong23.github.io/pgn-078/v/a001bb6a9d745a33534dca57af66e5c0c1000af9/))
 están basados en el resultado de la Fase 1 del proyecto PGN SUI del 2022,
-[SharePoint Softgic@9fe2cc2](http://softgic.sharepoint.com)
-del November 30, 2023.
+[SharePoint Softgic@a001bb6](http://softgic.sharepoint.com)
+del December 4, 2023.
 </em></small>
 
 
@@ -144,6 +144,7 @@ Descripción de los productos del trabajo de arquitectura de la Fase 2, proyecto
 | Autor          |                            |
 | Fuente         |                            |
 | **Versión**    |                            |
+| 1.a001bb6 | 2023-12-04. upd pptx |
 | 1.9fe2cc2 | 2023-11-30. pptx--pgn |
 | 1.d430b1d | 2023-11-30. ppt--tamaño-upd |
 | 1.f0b7484 | 2023-11-30. ppt--tamaño |
@@ -153,7 +154,6 @@ Descripción de los productos del trabajo de arquitectura de la Fase 2, proyecto
 | 1.aab09de | 2023-11-29. pptx8 |
 | 1.4a5b0d1 | 2023-11-29. pptx7 |
 | 1.be42976 | 2023-11-29. pptx6 |
-| 1.e02cfb7 | 2023-11-29. pptx5 |
 | Vínculos       | [N003a Vista Segmento PGN SUI](N03a%a20Vsta%20aSegenta%20SOA%20PGN.md) |
 
 <br>
@@ -239,7 +239,7 @@ Definiremos estos requisitos de la solución a tener en cuenta al momento del de
 
 ### Consistencia SUI (lógica)
 
-| Requisito      | Extensibilidad SUI |
+| Requisito      | Consistencia SUI |
 |----------------|--------------------|
 | Descripción | Unifica las entidades de negocio PGN, entre las que se incluyen a conciliaciones, publicaciones de relatoría, resoluciones, en artefactos reutilizables. Distinto de que estas entidades (y su lógica de negocio) estén dispersos entre los sistemas del SUI, estarán concentradas en un único artefacto correspondiente. |
 | Calidad sistémica | La consistencia persigue que el resultado de la lógica de negocio sea la misma entre los módulos del SUI migrado. Esto redunda a mantenibilidad y gestión: tiende a tener un solo punto de cambio y dificulta la transferencia de dependencias implícitas a otros procesos. |
