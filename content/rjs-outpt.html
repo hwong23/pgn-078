@@ -128,7 +128,7 @@ alt="Vista. Linebase.2.Portal" />
 Arquitectura</h3>
 <p>El portal es el conjunto de los elementos físicos y lógicos
 necesarios para la implementación de la granja de servidores de
-SharePoint Server 2019 para el portal de la PROCURADURIA.</p>
+SharePoint Server 2019 para el portal de la Procuraduria.</p>
 <ul>
 <li>Servidores Web Front End</li>
 <li>Servidores de Aplicaciones</li>
@@ -292,19 +292,94 @@ negocio lo está en una función de negocio.</li>
 </div>
 </div>
 </section>
+<section id="arquitectura.-2.-escalabilidad.-funcional"
+class="slide level2">
+<h2>Arquitectura. 2. Escalabilidad. Funcional</h2>
+<div class="columns">
+<div class="column" style="width:30%;">
+<figure>
+<img data-src="images/Arquitectura.2.Escalabilidad.Funcional.png"
+id="fig:Arquitectura.2.Escalabilidad.Funcional"
+alt="Vista. Arquitectura. 2. Escalabilidad. Funcional" />
+<figcaption aria-hidden="true">Vista. Arquitectura. 2. Escalabilidad.
+Funcional</figcaption>
+</figure>
+</div><div class="column" style="width:70%;">
+<h3 id="casos-de-uso-ejecutables">Casos de Uso Ejecutables</h3>
+<p>Escalabilidad funcional realizada mediante la agregación (o
+incremento de versión) de los casos de uso, que a su vez están
+implementados por componentes ejecutables, como servicio, u objetos
+C#.</p>
+<p>En lo posible, los requerimientos nuevos no interfieren con los
+requerimientos base.</p>
+</div>
+</div>
+</section>
+<section id="arquitectura.-2a.-escalabilidad.-física"
+class="slide level2">
+<h2>Arquitectura. 2a. Escalabilidad. Física</h2>
+<div class="columns">
+<div class="column" style="width:70%;">
+<figure>
+<img data-src="images/Arquitectura.2a.Escalabilidad.Física.png"
+id="fig:Arquitectura.2a.Escalabilidad.Física"
+alt="Vista. Arquitectura. 2a. Escalabilidad. Física" />
+<figcaption aria-hidden="true">Vista. Arquitectura. 2a. Escalabilidad.
+Física</figcaption>
+</figure>
+</div><div class="column" style="width:30%;">
+<h3 id="escalabilidad-horizontal">Escalabilidad Horizontal</h3>
+<p>Escalabilidad física (escalabilidad horizontal) realizada mediante el
+incremente de procesamiento (servidores) para ejecutar los casos de uso,
+que a su vez están implementados por componentes ejecutables, como
+servicio, u objetos C#.</p>
+<p>En lo posible, los equipos de hardware, o máquinas virtuales nuevas
+no interfieren con la base actual.</p>
+</div>
+</div>
+</section>
+<section id="arquitectura.-3.-decisiones-de-arquitectura-sui"
+class="slide level2">
+<h2>Arquitectura. 3. Decisiones de Arquitectura SUI</h2>
+<div class="columns">
+<div class="column" style="width:70%;">
+<figure>
+<img data-src="images/Arquitectura.3.Decisiones.png"
+id="fig:Arquitectura.3.Decisiones"
+alt="Vista. Arquitectura. 3. Decisiones" />
+<figcaption aria-hidden="true">Vista. Arquitectura. 3.
+Decisiones</figcaption>
+</figure>
+</div><div class="column" style="width:30%;">
+<h3 id="restricciones-de-diseño">Restricciones de Diseño</h3>
+<ul>
+<li>Consistencia. La consistencia persigue que el resultado de la lógica
+de negocio sea la misma entre los módulos del SUI migrado.</li>
+<li>Mantenibilidad. La mantenibilidad por control de dependencias que
+optimiza el diseño Migración SUI está dada por el control de cambios no
+programados sobre los componentes misionales del SUI (corrupción de
+componentes).</li>
+<li>Extensibilidad. La extensibilidad que optimiza el diseño Migración
+SUI está dada por el intercambio de submódulos no misionales, como el
+gestor documental, sin afectación de los componentes misionales que este
+diseño protege.</li>
+</ul>
+</div>
+</div>
+</section>
 <section
 id="diagrama-de-arquitectura-de-integración-continua-devops-y-despliegues-de-capas"
 class="slide level2">
 <h2>Diagrama de Arquitectura de Integración Continua, DevOps y
 Despliegues de Capas</h2>
 <div class="columns">
-<div class="column" style="width:30%;">
+<div class="column" style="width:70%;">
 <figure>
 <img data-src="images/Migracion.4.CI.png" id="fig:Migracion.4.CI"
 alt="Vista. Migracion.4. CI" />
 <figcaption aria-hidden="true">Vista. Migracion.4. CI</figcaption>
 </figure>
-</div><div class="column" style="width:70%;">
+</div><div class="column" style="width:30%;">
 <h3 id="integración-continua">Integración Continua</h3>
 <p>Las cadenas están separadas por tecnologías y plataformas distintas;
 son independientes y no presentan interbloqueos en cuanto a su
@@ -316,7 +391,7 @@ ejecución. Pero, requieren administración integral.</p>
 class="slide level2">
 <h2>Documento de Relación de Tecnologías y Licenciamiento</h2>
 <div class="columns">
-<div class="column" style="width:30%;">
+<div class="column" style="width:70%;">
 <figure>
 <img data-src="images/Migracion.5.Licenciamiento.png"
 id="fig:Migracion.5.Licenciamiento"
@@ -324,12 +399,40 @@ alt="Vista. Migracion.5. Licenciamiento" />
 <figcaption aria-hidden="true">Vista. Migracion.5.
 Licenciamiento</figcaption>
 </figure>
-</div><div class="column" style="width:70%;">
+</div><div class="column" style="width:30%;">
 <h3 id="aprovisionamiento-de-licencias">Aprovisionamiento de
 Licencias</h3>
 <p>Los elementos resaltados de la vista actual requieren modelos de
 licenciamiento variado, bien sea por usuario, núcleo, despliegue
 (instalación), o renta por consumo.</p>
+</div>
+</div>
+</section>
+<section id="arquitectura.-1.-dev-docs" class="slide level2">
+<h2>Arquitectura. 1. Dev Docs</h2>
+<div class="columns">
+<div class="column" style="width:70%;">
+<figure>
+<img data-src="images/Arquitectura.1.DevDocs.png"
+id="fig:Arquitectura.1.DevDocs"
+alt="Vista. Arquitectura. 1. Dev Docs" />
+<figcaption aria-hidden="true">Vista. Arquitectura. 1. Dev
+Docs</figcaption>
+</figure>
+</div><div class="column" style="width:30%;">
+<h3
+id="flujo-de-trabajo-repositorio-de-arquitectura-sui-migrado-pgn">Flujo
+de Trabajo Repositorio de Arquitectura SUI Migrado, PGN</h3>
+<p>El repositorio de arquitectura es parte de los entregables del
+Proyecto.</p>
+<p>Partes del repositorio de arquitectura</p>
+<ol type="1">
+<li>Bitácora de decisiones de arquitectura</li>
+<li>El depósito de modelos y descripciones de los ítems de
+arquitectura</li>
+<li>Los anexos de análisis de riesgos e impactos relacionados con los
+los ítems de arquitectura</li>
+</ol>
 </div>
 </div>
 </section>

@@ -44,7 +44,7 @@ Con una arquitectura orientada a servicios SUI recopila:
 :::
 ::: {.column width="30%"}
 ### Representación de Arquitectura
-El portal es el conjunto de los elementos físicos y lógicos necesarios para la implementación de la granja de servidores de SharePoint Server 2019 para el portal de la PROCURADURIA.
+El portal es el conjunto de los elementos físicos y lógicos necesarios para la implementación de la granja de servidores de SharePoint Server 2019 para el portal de la Procuraduria.
 
 * Servidores Web Front End
 * Servidores de Aplicaciones
@@ -141,13 +141,54 @@ Componentes internos de los submódulos del sistema único de información migra
 ::::::::::::::
 
 
+## Arquitectura. 2. Escalabilidad. Funcional
+:::::::::::::: {.columns}
+::: {.column width="30%"}
+![Vista. Arquitectura. 2. Escalabilidad. Funcional](images/Arquitectura.2.Escalabilidad.Funcional.png){#fig:Arquitectura.2.Escalabilidad.Funcional width=}
+:::
+::: {.column width="70%"}
+### Casos de Uso Ejecutables
+Escalabilidad funcional realizada mediante la agregación (o incremento de versión) de los casos de uso, que a su vez están implementados por componentes ejecutables, como servicio, u objetos C#.
+
+En lo posible, los requerimientos nuevos no interfieren con los requerimientos base.
+:::
+::::::::::::::
+
+
+## Arquitectura. 2a. Escalabilidad. Física
+:::::::::::::: {.columns}
+::: {.column width="70%"}
+![Vista. Arquitectura. 2a. Escalabilidad. Física](images/Arquitectura.2a.Escalabilidad.Física.png){#fig:Arquitectura.2a.Escalabilidad.Física width=}
+:::
+::: {.column width="30%"}
+### Escalabilidad Horizontal
+Escalabilidad física (escalabilidad horizontal) realizada mediante el incremente de procesamiento (servidores) para ejecutar los casos de uso, que a su vez están implementados por componentes ejecutables, como servicio, u objetos C#.
+
+En lo posible, los equipos de hardware, o máquinas virtuales nuevas no interfieren con la base actual.
+:::
+::::::::::::::
+
+## Arquitectura. 3. Decisiones de Arquitectura SUI
+:::::::::::::: {.columns}
+::: {.column width="70%"}
+![Vista. Arquitectura. 3. Decisiones](images/Arquitectura.3.Decisiones.png){#fig:Arquitectura.3.Decisiones width=}
+:::
+::: {.column width="30%"}
+### Restricciones de Diseño
+* Consistencia. La consistencia persigue que el resultado de la lógica de negocio sea la misma entre los módulos del SUI migrado.
+* Mantenibilidad. La mantenibilidad por control de dependencias que optimiza el diseño Migración SUI está dada por el control de cambios no programados sobre los componentes misionales del SUI (corrupción de componentes).
+* Extensibilidad. La extensibilidad que optimiza el diseño Migración SUI está dada por el intercambio de submódulos no misionales, como el gestor documental, sin afectación de los componentes misionales que este diseño protege.
+:::
+::::::::::::::
+
+
 
 ## Diagrama de Arquitectura de Integración Continua, DevOps y Despliegues de Capas
 :::::::::::::: {.columns}
-::: {.column width="30%"}
+::: {.column width="70%"}
 ![Vista. Migracion.4. CI](images/Migracion.4.CI.png){#fig:Migracion.4.CI width=}
 :::
-::: {.column width="70%"}
+::: {.column width="30%"}
 ### Integración Continua
 Las cadenas están separadas por tecnologías y plataformas distintas; son independientes y no presentan interbloqueos en cuanto a su ejecución. Pero, requieren administración integral.
 :::
@@ -156,14 +197,34 @@ Las cadenas están separadas por tecnologías y plataformas distintas; son indep
 
 ## Documento de Relación de Tecnologías y Licenciamiento
 :::::::::::::: {.columns}
-::: {.column width="30%"}
+::: {.column width="70%"}
 ![Vista. Migracion.5. Licenciamiento](images/Migracion.5.Licenciamiento.png){#fig:Migracion.5.Licenciamiento width=}
 :::
-::: {.column width="70%"}
+::: {.column width="30%"}
 ### Aprovisionamiento de Licencias
 Los elementos resaltados de la vista actual requieren modelos de  licenciamiento variado, bien sea por usuario, núcleo, despliegue (instalación), o renta por consumo.
 :::
 ::::::::::::::
+
+
+## Arquitectura. 1. Dev Docs
+:::::::::::::: {.columns}
+::: {.column width="70%"}
+![Vista. Arquitectura. 1. Dev Docs](images/Arquitectura.1.DevDocs.png){#fig:Arquitectura.1.DevDocs width=}
+:::
+::: {.column width="30%"}
+### Flujo de Trabajo Repositorio de Arquitectura SUI Migrado, PGN
+El repositorio de arquitectura es parte de los entregables del Proyecto. 
+
+Partes del repositorio de arquitectura
+
+1. Bitácora de decisiones de arquitectura
+1. El depósito de modelos y descripciones de los ítems de arquitectura
+1. Los anexos de análisis de riesgos e impactos relacionados con los los ítems de arquitectura
+:::
+::::::::::::::
+
+
 ## Entregables de Arquitectura de Información (Datos)
 * Diagrama Modelo de Datos Conceptual
 * Diagrama Modelo de Datos Físico (diagramas entidad-relación)
@@ -171,6 +232,8 @@ Los elementos resaltados de la vista actual requieren modelos de  licenciamiento
 * Documento Diccionarios de Datos
 * Mapa de Información (flujos de información)
 * Modelo Ontológico
+
+
 
 ------
 
