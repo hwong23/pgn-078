@@ -1,0 +1,289 @@
+---
+author: Softgic - PGN
+title: Declaración de Arquitectura Migración Funcional SUI, PGN, 2023
+subtitle: 
+date: Noviembre, 2023
+---
+
+
+## Entregables de Arquitectura de Software
+* Diagrama de Arquitectura de la Solución Propuesta: vista de integración
+* Diagrama de Arquitectura de la solución propuesta: vista física
+* Diagrama de Arquitectura de la Solución Propuesta: motivadores del negocio
+* Diagrama de Arquitectura de la Solución Propuesta: interoperabilidad
+* Diagrama de Arquitectura de la Solución Propuesta: gestión de autenticación, usuarios y roles
+* Diagrama de Clases y Componentes de Solución
+* Diagrama de Arquitectura de Integración Continua, DevOps y Despliegues de Capas
+* Documento de Relación de Tecnologías y Licenciamiento
+
+------
+
+
+
+## Línea Base SUI PGN
+:::::::::::::: {.columns}
+::: {.column width="70%"}
+![Vista. Lineabase.0.SUI Aplicación](images/Lineabase.0.SUIAplicación.png){#fig:Lineabase.0.SUIAplicación width=}
+SIUContextoMódulos width=}
+:::
+::: {.column width="30%"}
+### Representación de Arquitectura
+Con una arquitectura orientada a servicios SUI recopila:
+
+1. Runtime: Es el servicio que interactúa con el usuario final (GUI) elaborado en Angular 11
+1. API Tx: Servicio api rest base node encargado de realizar las transacciones básicas CRUD
+1. API Config / Seguridad. Servicio Web API .Net Framework encargado de gestionar características con la autenticación y configuración
+:::
+::::::::::::::
+
+
+## Línea Base Portal PGN
+:::::::::::::: {.columns}
+::: {.column width="70%"}
+![Vista. Linebase.2.Portal](images/Linebase.2.Portal.png){#fig:Linebase.2.Portal width=}
+:::
+::: {.column width="30%"}
+### Representación de Arquitectura
+El portal es el conjunto de los elementos físicos y lógicos necesarios para la implementación de la granja de servidores de SharePoint Server 2019 para el portal de la Procuraduria.
+
+* Servidores Web Front End
+* Servidores de Aplicaciones
+* Servidores de SQL Server
+:::
+::::::::::::::
+
+
+## Diagrama de Arquitectura de la Solución Propuesta
+:::::::::::::: {.columns}
+::: {.column width="70%"}
+![Vista. Migracion.1a.b.SUI Contexto Módulos](images/Migracion.1a.b.SIUContextoMódulos.png){#fig:Migracion.1a.b.SIUContextoMódulos width=}
+:::
+::: {.column width="30%"}
+### Vista de Integración
+La vista presenta en contexto a los módulos SUI migrados e indica los modos de comunicación, sincrónica/asincrónica, que utilizan.
+:::
+::::::::::::::
+
+## Diagrama de Arquitectura de la Solución Propuesta
+:::::::::::::: {.columns}
+::: {.column width="70%"}
+![Vista. Lineabase.0.SUI Aplicación. Física](images/Lineabase.0.SIUAplicación.Física.png){#fig:Lineabase.0.SIUAplicación.Física width=}
+:::
+::: {.column width="30%"}
+### Vista Física
+Elementos de infraestructura física (hardware) para la implementación Fase II (presente proyecto) del  Sistema de Información Único, SUI de la PGN
+:::
+::::::::::::::
+
+
+## Diagrama de Arquitectura de la Solución Propuesta
+:::::::::::::: {.columns}
+::: {.column width="70%"}
+![Vista. Migracion.1a.a.SUI Contexto Módulo](images/Migracion.1a.a.SIUContextoMódulo.png){#fig:Migracion.1a.a.SIUContextoMódulo width=}
+:::
+::: {.column width="30%"}
+### Motivadores de Negocio
+Módulos y submódulos del Sistema Único de Información (SUI) de la PGN. Todos los sistemas de información del SUI separan a los componentes misionales de los utilitarios.
+:::
+::::::::::::::
+
+
+## Diagrama de Arquitectura de la Solución Propuesta
+:::::::::::::: {.columns}
+::: {.column width="70%"}
+![Vista. Migracion.1c.SUI Módulos Colaboración](images/Migracion.1c.SIUMódulosColaboración.png){#fig:Migracion.1c.SIUMódulosColaboración width=}
+:::
+::: {.column width="70%"}
+### Interoperabilidad y Colaboración
+Colaboración y comunicación de los componentes internos del SUI mediada por interfaces provistas por el grupo de componentes misionales, PGN SUI: mantener reducido y controlado el número de interfaces.
+:::
+::::::::::::::
+
+
+## Diagrama de Arquitectura de la Solución Propuesta
+:::::::::::::: {.columns}
+::: {.column width="70%"}
+![Vista. Seguridad.2. Lineabase.0.SUI Aplicación](images/Seguridad.2.Lineabase.0.SIUAplicación.png){#fig:Seguridad.2.Lineabase.0.SIUAplicación width=}
+:::
+::: {.column width="70%"}
+### Gestión de Autenticación Usuarios y Roles
+Métodos de Seguridad del SUI Migrado
+
+* Control de acceso y autorización basado en roles (RBAC)
+* Gestión de identidades
+* Aprovisionamiento de Cuentas
+:::
+::::::::::::::
+
+
+## Diagrama de Clases y Componentes de Solución (a)
+:::::::::::::: {.columns}
+::: {.column width="30%"}
+![Vista. Migracion.1b.1. SUI Módulos Componentes](images/Migracion.1b.1.SIUMódulosComponentes.png){#fig:Migracion.1b.1.SIUMódulosComponentes width=}
+:::
+::: {.column width="70%"}
+### SUI Componentes de Módulos
+Componentes internos de los submódulos del sistema único de información migrado, SUI de PGN. Organización interna de los servicios y paquetes que integran cada submódulo del SUI. Todos los sistemas de información del SUI siguen esta directiva: estarán constituidos por submódulos dispuestos en relación de utilitarios (que sirven) a los componentes misionales del SUI, ubicados en el centro en el diagrama.
+:::
+::::::::::::::
+
+
+## Diagrama de Clases y Componentes de Solución (b)
+:::::::::::::: {.columns}
+::: {.column width="30%"}
+![Vista. Migracion.1b.3. SUI Módulos Clases](images/Migracion.1b.3.SIUMódulosClases.png){#fig:Migracion.1b.3.SIUMódulosClases width=}
+:::
+::: {.column width="70%"}
+### SUI Estructura de Clases
+* El diseño actual antepone un servicio como punto de acceso a un caso de uso, de tal forma que este se encarga únicamente (por responsabilidad) de coordinar las entradas y las salidas del caso de uso
+* El modelo propicia la separación de la lógica de aplicación y la lógica de negocio. En este diseño, la primera está encapsulada en el Caso de Uso ejecutable (en el diagrama), mientras que la lógica de negocio lo está en una función de negocio.
+:::
+::::::::::::::
+
+
+## Arquitectura. 2. Escalabilidad. Funcional
+:::::::::::::: {.columns}
+::: {.column width="30%"}
+![Vista. Arquitectura. 2. Escalabilidad. Funcional](images/Arquitectura.2.Escalabilidad.Funcional.png){#fig:Arquitectura.2.Escalabilidad.Funcional width=}
+:::
+::: {.column width="70%"}
+### Casos de Uso Ejecutables
+Escalabilidad funcional realizada mediante la agregación (o incremento de versión) de los casos de uso, que a su vez están implementados por componentes ejecutables, como servicio, u objetos C#.
+
+En lo posible, los requerimientos nuevos no interfieren con los requerimientos base.
+:::
+::::::::::::::
+
+
+## Arquitectura. 2a. Escalabilidad. Física
+:::::::::::::: {.columns}
+::: {.column width="70%"}
+![Vista. Arquitectura. 2a. Escalabilidad. Física](images/Arquitectura.2a.Escalabilidad.Física.png){#fig:Arquitectura.2a.Escalabilidad.Física width=}
+:::
+::: {.column width="30%"}
+### Escalabilidad Horizontal
+Escalabilidad física (escalabilidad horizontal) realizada mediante el incremente de procesamiento (servidores) para ejecutar los casos de uso, que a su vez están implementados por componentes ejecutables, como servicio, u objetos C#.
+
+En lo posible, los equipos de hardware, o máquinas virtuales nuevas no interfieren con la base actual.
+:::
+::::::::::::::
+
+## Arquitectura. 3. Decisiones de Arquitectura SUI
+:::::::::::::: {.columns}
+::: {.column width="70%"}
+![Vista. Arquitectura. 3. Decisiones](images/Arquitectura.3.Decisiones.png){#fig:Arquitectura.3.Decisiones width=}
+:::
+::: {.column width="30%"}
+### Restricciones de Diseño
+* Consistencia. La consistencia persigue que el resultado de la lógica de negocio sea la misma entre los módulos del SUI migrado.
+* Mantenibilidad. La mantenibilidad por control de dependencias que optimiza el diseño Migración SUI está dada por el control de cambios no programados sobre los componentes misionales del SUI (corrupción de componentes).
+* Extensibilidad. La extensibilidad que optimiza el diseño Migración SUI está dada por el intercambio de submódulos no misionales, como el gestor documental, sin afectación de los componentes misionales que este diseño protege.
+:::
+::::::::::::::
+
+
+
+## Diagrama de Arquitectura de Integración Continua, DevOps y Despliegues de Capas
+:::::::::::::: {.columns}
+::: {.column width="70%"}
+![Vista. Migracion.4. CI](images/Migracion.4.CI.png){#fig:Migracion.4.CI width=}
+:::
+::: {.column width="30%"}
+### Integración Continua
+Las cadenas están separadas por tecnologías y plataformas distintas; son independientes y no presentan interbloqueos en cuanto a su ejecución. Pero, requieren administración integral.
+:::
+::::::::::::::
+
+
+## Documento de Relación de Tecnologías y Licenciamiento
+:::::::::::::: {.columns}
+::: {.column width="70%"}
+![Vista. Migracion.5. Licenciamiento](images/Migracion.5.Licenciamiento.png){#fig:Migracion.5.Licenciamiento width=}
+:::
+::: {.column width="30%"}
+### Aprovisionamiento de Licencias
+Los elementos resaltados de la vista actual requieren modelos de  licenciamiento variado, bien sea por usuario, núcleo, despliegue (instalación), o renta por consumo.
+:::
+::::::::::::::
+
+
+## Arquitectura. 1. Dev Docs
+:::::::::::::: {.columns}
+::: {.column width="70%"}
+![Vista. Arquitectura. 1. Dev Docs](images/Arquitectura.1.DevDocs.png){#fig:Arquitectura.1.DevDocs width=}
+:::
+::: {.column width="30%"}
+### Flujo de Trabajo Repositorio de Arquitectura SUI Migrado, PGN
+El repositorio de arquitectura es parte de los entregables del Proyecto. 
+
+Partes del repositorio de arquitectura
+
+1. Bitácora de decisiones de arquitectura
+1. El depósito de modelos y descripciones de los ítems de arquitectura
+1. Los anexos de análisis de riesgos e impactos relacionados con los los ítems de arquitectura
+:::
+::::::::::::::
+
+
+## Entregables de Arquitectura de Información (Datos)
+* Diagrama Modelo de Datos Conceptual
+* Diagrama Modelo de Datos Físico (diagramas entidad-relación)
+* Diagrama Modelo de Datos Lógico
+* Documento Diccionarios de Datos
+* Mapa de Información (flujos de información)
+* Modelo Ontológico
+
+
+
+------
+
+
+## Diagrama Modelo de Datos Conceptual
+:::::::::::::: {.columns}
+::: {.column width="30%"}
+![Vista. Migracion.2a.a1.Datos Información](images/Migracion.2a.a1.DatosInformación.png){#fig:Migracion.2a.a1.DatosInformación width=5.32in}
+:::
+::: {.column width="70%"}
+### Migracion.2a.a1.Datos Información
+Modelo de información. Organización y jerarquía de los grupos de datos (dominios) del SUI Migrado, 2023. 
+
+Dominios Principales de Información SUI Migrado
+
+* Dominio común: SIM
+* Dominios individuales
+	* Hominis: Planta de personal, Hojas de vida, Seguimiento de desempeño, Carrera administrativa
+	* Conjunto de datos Relatoría
+	* Control Interno
+	* Conciliación Administrativa
+:::
+::::::::::::::
+
+
+## Diagrama Modelo de Datos Físico (diagramas entidad-relación)
+:::::::::::::: {.columns}
+::: {.column width="30%"}
+![Vista. Migracion.2a.a3. Datos Modelo Físico ](images/ER-SIU.png){#fig:Migracion.2a.a3.DatosModeloFísico width=}
+:::
+::: {.column width="70%"}
+### Migracion.2a.a3. Datos Modelo Físico 
+Los modelos físicos representados en diagramas entidad - relación (ER) de los módulos SUI Migrado, como Hominis, Control Interno, Relatoría, SIRI, serán entregados como documentos aparte, anexos al documento actual en formato reproducible.
+
+El formato reproducible en el que entregamos el modelo físico mediante la herramienta libre Draw.io.
+:::
+::::::::::::::
+
+
+## Diagrama Modelo de Datos Lógico
+:::::::::::::: {.columns}
+::: {.column width="30%"}
+![Vista. Migracion.2c1. Datos SIM](images/Migracion.2c1.DatosSIM.png){#fig:Migracion.2c1.DatosSIM width=}
+:::
+::: {.column width="70%"}
+### Migracion.2c1. Datos SIM
+
+Identificación de entidades de datos de negocio relacionadas a los módulos SUI Migrado.
+
+Las entidades de negocio son tipos de datos internos del SUI consideradas para el manejo del ciclo de vida de los datos.
+:::
+::::::::::::::
+
