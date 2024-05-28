@@ -5,7 +5,7 @@ keywords:
 - gobierno
 - PGN
 lang: en-US
-date-meta: '2023-12-26'
+date-meta: '2024-05-28'
 author-meta:
 - Harry Wong, ing.
 header-includes: |
@@ -15,11 +15,11 @@ header-includes: |
   -->
   <meta name="dc.format" content="text/html" />
   <meta property="og:type" content="article" />
-  <meta name="dc.date" content="2023-12-26" />
-  <meta name="citation_publication_date" content="2023-12-26" />
-  <meta property="article:published_time" content="2023-12-26" />
-  <meta name="dc.modified" content="2023-12-26T20:26:15+00:00" />
-  <meta property="article:modified_time" content="2023-12-26T20:26:15+00:00" />
+  <meta name="dc.date" content="2024-05-28" />
+  <meta name="citation_publication_date" content="2024-05-28" />
+  <meta property="article:published_time" content="2024-05-28" />
+  <meta name="dc.modified" content="2024-05-28T21:38:31+00:00" />
+  <meta property="article:modified_time" content="2024-05-28T21:38:31+00:00" />
   <meta name="dc.language" content="en-US" />
   <meta name="citation_language" content="en-US" />
   <meta name="dc.relation.ispartof" content="Manubot" />
@@ -34,9 +34,9 @@ header-includes: |
   <meta name="citation_fulltext_html_url" content="https://hwong23.github.io/pgn-078/" />
   <meta name="citation_pdf_url" content="https://hwong23.github.io/pgn-078/manuscript.pdf" />
   <link rel="alternate" type="application/pdf" href="https://hwong23.github.io/pgn-078/manuscript.pdf" />
-  <link rel="alternate" type="text/html" href="https://hwong23.github.io/pgn-078/v/b195654294865d2c06421eb66ac50b6a07c6de13/" />
-  <meta name="manubot_html_url_versioned" content="https://hwong23.github.io/pgn-078/v/b195654294865d2c06421eb66ac50b6a07c6de13/" />
-  <meta name="manubot_pdf_url_versioned" content="https://hwong23.github.io/pgn-078/v/b195654294865d2c06421eb66ac50b6a07c6de13/manuscript.pdf" />
+  <link rel="alternate" type="text/html" href="https://hwong23.github.io/pgn-078/v/8bf5d959b67d6c3bec88722f09ff22043352ac97/" />
+  <meta name="manubot_html_url_versioned" content="https://hwong23.github.io/pgn-078/v/8bf5d959b67d6c3bec88722f09ff22043352ac97/" />
+  <meta name="manubot_pdf_url_versioned" content="https://hwong23.github.io/pgn-078/v/8bf5d959b67d6c3bec88722f09ff22043352ac97/manuscript.pdf" />
   <meta property="og:type" content="article" />
   <meta property="twitter:card" content="summary_large_image" />
   <link rel="icon" type="image/png" sizes="192x192" href="https://manubot.org/favicon-192x192.png" />
@@ -77,7 +77,7 @@ tablenos-caption-name: Tabla
 
 <br>
 
-| **Versión** del producto 1.b195654 de 26 Dec 2023
+| **Versión** del producto 1.8bf5d95 de 28 May 2024
 
 | **Presentado a**
 
@@ -87,7 +87,7 @@ tablenos-caption-name: Tabla
 
 | **Fecha**
 
-| 26 Dec 2023
+| 28 May 2024
 
 
 <div style="page-break-before: always;"></div>
@@ -95,10 +95,10 @@ tablenos-caption-name: Tabla
 
 
 <small><em>Los productos de esta etapa, Migración Funcional SUI, Contrato 078-2023, 
-([Web](https://hwong23.github.io/pgn-078/v/b195654294865d2c06421eb66ac50b6a07c6de13/))
+([Web](https://hwong23.github.io/pgn-078/v/8bf5d959b67d6c3bec88722f09ff22043352ac97/))
 están basados en el resultado de la Fase 1 del proyecto PGN SUI del 2022,
-[SharePoint Softgic@b195654](http://softgic.sharepoint.com)
-del December 26, 2023.
+[SharePoint Softgic@8bf5d95](http://softgic.sharepoint.com)
+del May 28, 2024.
 </em></small>
 
 
@@ -144,6 +144,7 @@ Descripción de los productos del trabajo de arquitectura de la Fase 2, proyecto
 | Autor          |                            |
 | Fuente         |                            |
 | **Versión**    |                            |
+| 1.8bf5d95 | 2024-05-28. Observaciones OCI (Control Interno y Arquitectura). 1 |
 | 1.b195654 | 2023-12-26. upd |
 | 1.be86e37 | 2023-12-18. docseg--dic |
 | 1.eab1fd3 | 2023-12-14. doc--dic |
@@ -153,7 +154,6 @@ Descripción de los productos del trabajo de arquitectura de la Fase 2, proyecto
 | 1.d430b1d | 2023-11-30. ppt--tamaño-upd |
 | 1.f0b7484 | 2023-11-30. ppt--tamaño |
 | 1.783a111 | 2023-11-29. ppt SUI-2 |
-| 1.ef26550 | 2023-11-29. ppt SUI |
 | Vínculos       | [N003a Vista Segmento PGN SUI](N03a%a20Vsta%20aSegenta%20SOA%20PGN.md) |
 
 <br>
@@ -1514,6 +1514,8 @@ Table: Valoración del riesgo RSG10. Validación decisiones de arquitectura. Mig
 	* [Seguridad.5.Desarrollo Seguro](#seguridad.5.desarrollo-seguro)
 	* [Seguridad. 6. Auditoría](#seguridad.-6.-auditoría)
 	* [Seguridad. 7. Owasp](#seguridad.-7.-owasp)
+* [Documento de Relación de Tecnologías y Licenciamiento](#documento-de-relación-de-tecnologías-y-licenciamiento)
+	* [Doc.6.Anexos.1a. Archimate](#doc.6.anexos.1a.-archimate)
 
 
 <div style="page-break-before: always;"></div>
@@ -2716,8 +2718,31 @@ Se tiene propuesto realizar nuevas pruebas en ambiente productivo para determina
 
 <br>
 
+<div style="page-break-before: always;"></div>
+\newpage
 
-``Generated on: Mon Dec 18 2023 09:40:27 GMT-0500 (COT)``
+# Documento de Relación de Tecnologías y Licenciamiento
+## Doc.6.Anexos.1a. Archimate
+![Vista. Doc.6.Anexos.1a. Archimate](images/Doc.6.Anexos.1a.Archimate.png){#fig:Doc.6.Anexos.1a.Archimate width=}
+
+Simplificación del lengiuaje estándar de descripción de arquitectura usado en el proyecto actual,  Módulos Central Sistema Único de Información, de PGN.
+
+A manera de leyenda, el siguiente ejemplo hace demostración breve de la manera cómo el estándar Archimate 3.0+ puede representar a los procesos de negocio, componentes de aplicación, y tecnologías e infraestructura dentro de los aspectos del proyecto actual. Así mismo demuestra, la relación entre elementos y cómo se soportan mutuamente con el objeto de especificar, en este caso, un proceso.
+
+| Fuente: https://www.leanix.net/en/wiki/ea/what-is-archimate#ArchiMate-example
+
+El estandar completo puede ser complementado de los sitios oficiales y públicos del OpenGroup, https://www.google.com/url?sa=t&source=web&rct=j&opi=89978449&url=https://www.opengroup.org/archimate-forum/archimate-overview&ved=2ahUKEwjuibvxlLGGAxW5VzABHQBgBgwQFnoECBAQAQ&usg=AOvVaw28xEDPm1BrbapO4oCaUYb9.
+
+
+
+### Catálogo de Elementos
+| Nombre| Tipo| Descripción| Prop.
+|:--------|:--------|:--------|:--------|
+
+<br>
+
+
+``Generated on: Tue May 28 2024 16:27:41 GMT-0500 (COT)``
 
 # Arquitectura de Software: Infraestructura
 * [Diagrama de Infraestructura de TI](#diagrama-de-infraestructura-de-ti)
