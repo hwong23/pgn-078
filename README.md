@@ -14,3 +14,5 @@ Objetivo.- Migrtación Funcional Sistema Único de Información (SUI), PGN, 2023
 - Observaciones OCI (Control Interno y Arquitectura). 1
 - Observaciones OCI (Control Interno y Arquitectura). 2
 - Observaciones OCI (Control Interno y Arquitectura). 3
+- Observaciones OCI (Control Interno y Arquitectura). 4
+- Observaciones OCI (Control Interno y Arquitectura). 5
