@@ -1,11 +1,13 @@
 development:
-  adapter: mysql2
-  encoding: utf8
-  database: my_database
-  username: root
-  password:
   rutausr: /Users/hwo/gh
   rutamodelo: /Users/hwo/gh/model/pgn-078-arq
-  rutaprg: /Users/hwo/gh/jarchi-hwo/hwo/markdownDrivingViews-devdocsCLI.ajs
+  rutaprg: /Users/hwo/gh/jarchi-hwo/scr/markdownDrivingViews-devdocsCLI.ajs
   vistadoc: arqdoc
-  rutaexpportprg: /Users/hwo/gh/jarchi-hwo/hwo/exportSingle-htmlCLI.ajs
+  rutaexpportprg: /Users/hwo/gh/jarchi-hwo/scr/exportSingle-htmlCLI.ajs
+deploy:
+  origenmd: /Users/hwo/Downloads/tmpr/pgnmd
+  destinomd: /Users/hwo/gh/pgn/pgn-078
+  origenhtml: /Users/hwo/Downloads/tmpr/pgnarchidoc
+ccambio:
+  gitorigen: /Users/hwo/gh/pgn/pgn-078
+
