@@ -10,4 +10,8 @@ deploy:
   origenhtml: /Users/hwo/Downloads/tmpr/pgnarchidoc
 ccambio:
   gitorigen: /Users/hwo/gh/pgn/pgn-078
+publish:
+  gitorigen: /Users/hwo/gh/pgn/pgn-078 
+
+
 
