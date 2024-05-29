@@ -1,7 +1,7 @@
 # Directorio de salida de documentación técnica
 
 The [`gh-pages`](https://github.com/hwong23/pgn-078/tree/gh-pages) branch hosts the contents of this directory at <https://hwong23.github.io/pgn-078/>.
-The permalink for this webpage version is <https://hwong23.github.io/pgn-078/v/3d5c8a285c10d879414550eb550037d8cf947432/>.
+The permalink for this webpage version is <https://hwong23.github.io/pgn-078/v/ff6172cef47e55aa02f61c6deda48794e2dba0f2/>.
 To redirect to the permalink for the latest manuscript version at anytime, use the link <https://hwong23.github.io/pgn-078/v/freeze/>.
 
 ## Listado
@@ -21,6 +21,7 @@ In general, a version is identified by the commit hash of the source content tha
 |----------------|----------------------------|
 | Palabras clave | SUI, Softgic, PGN, Análisis de brecha, GAP, Comparativa |
 | **Versión**    |                            |
+| 1.ff6172c | 2024-05-29. Observaciones OCI (Control Interno y Arquitectura). Anexos |
 | 1.3d5c8a2 | 2024-05-29. - Observaciones OCI (Control Interno y Arquitectura). 3.1 |
 | 1.4005d36 | 2024-05-29. Observaciones OCI (Control Interno y Arquitectura). 3 |
 | 1.55548b5 | 2024-05-29. Observaciones OCI (Control Interno y Arquitectura). 5 |
@@ -30,7 +31,6 @@ In general, a version is identified by the commit hash of the source content tha
 | 1.9b55dc5 | 2024-05-29. cfg |
 | 1.8bf5d95 | 2024-05-28. Observaciones OCI (Control Interno y Arquitectura). 1 |
 | 1.b195654 | 2023-12-26. upd |
-| 1.be86e37 | 2023-12-18. docseg--dic |
 
 
 
@@ -39,4 +39,4 @@ Verifying timestamps with the `ots verify` command requires running a local bitc
 ## Source
 
 The manuscripts in this directory were built from
-[`3d5c8a285c10d879414550eb550037d8cf947432`](https://github.com/hwong23/pgn-078/commit/3d5c8a285c10d879414550eb550037d8cf947432).
+[`ff6172cef47e55aa02f61c6deda48794e2dba0f2`](https://github.com/hwong23/pgn-078/commit/ff6172cef47e55aa02f61c6deda48794e2dba0f2).
