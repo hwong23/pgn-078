@@ -2,7 +2,7 @@ development:
   rutausr: /Users/hwo/gh
   rutamodelo: /Users/hwo/gh/model/pgn-078-arq
   rutaprg: /Users/hwo/gh/jarchi-hwo/scr/markdownDrivingViews-devdocsCLI.ajs
-  vistadoc: arqdoc
+  vistadoc: pgndoc
   rutaexpportprg: /Users/hwo/gh/jarchi-hwo/scr/exportSingle-htmlCLI.ajs
 deploy:
   origenmd: /Users/hwo/Downloads/tmpr/pgnmd
