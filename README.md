@@ -1,7 +1,7 @@
 # Directorio de salida de documentación técnica
 
 The [`gh-pages`](https://github.com/hwong23/pgn-078/tree/gh-pages) branch hosts the contents of this directory at <https://hwong23.github.io/pgn-078/>.
-The permalink for this webpage version is <https://hwong23.github.io/pgn-078/v/55548b5905da63e1193f4dd6dea958e8a1c3730e/>.
+The permalink for this webpage version is <https://hwong23.github.io/pgn-078/v/4005d36c966b5ae65b43dc7d750e52cacae4da2f/>.
 To redirect to the permalink for the latest manuscript version at anytime, use the link <https://hwong23.github.io/pgn-078/v/freeze/>.
 
 ## Listado
@@ -21,6 +21,7 @@ In general, a version is identified by the commit hash of the source content tha
 |----------------|----------------------------|
 | Palabras clave | SUI, Softgic, PGN, Análisis de brecha, GAP, Comparativa |
 | **Versión**    |                            |
+| 1.4005d36 | 2024-05-29. Observaciones OCI (Control Interno y Arquitectura). 3 |
 | 1.55548b5 | 2024-05-29. Observaciones OCI (Control Interno y Arquitectura). 5 |
 | 1.ece78f0 | 2024-05-29. cambio |
 | 1.d9bab76 | 2024-05-29. - Observaciones OCI (Control Interno y Arquitectura). 3 |
@@ -30,7 +31,6 @@ In general, a version is identified by the commit hash of the source content tha
 | 1.b195654 | 2023-12-26. upd |
 | 1.be86e37 | 2023-12-18. docseg--dic |
 | 1.eab1fd3 | 2023-12-14. doc--dic |
-| 1.0001165 | 2023-12-05. upd.pptx |
 
 
 
@@ -39,4 +39,4 @@ Verifying timestamps with the `ots verify` command requires running a local bitc
 ## Source
 
 The manuscripts in this directory were built from
-[`55548b5905da63e1193f4dd6dea958e8a1c3730e`](https://github.com/hwong23/pgn-078/commit/55548b5905da63e1193f4dd6dea958e8a1c3730e).
+[`4005d36c966b5ae65b43dc7d750e52cacae4da2f`](https://github.com/hwong23/pgn-078/commit/4005d36c966b5ae65b43dc7d750e52cacae4da2f).
